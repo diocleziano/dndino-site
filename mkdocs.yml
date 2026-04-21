@@ -55,6 +55,7 @@ plugins:
             - Supporto:
                 - FAQ: support/faq.md
                 - Glossario: support/glossary.md
+                - Privacy: support/privacy.md
         - locale: en
           default: true
           name: English
@@ -77,6 +78,7 @@ plugins:
             - Support:
                 - FAQ: support/faq.md
                 - Glossary: support/glossary.md
+                - Privacy Policy: support/privacy.md
         - locale: fr
           name: Français
           build: true
@@ -98,6 +100,7 @@ plugins:
             - Support:
                 - FAQ: support/faq.md
                 - Glossaire: support/glossary.md
+                - Confidentialite: support/privacy.md
         - locale: de
           name: Deutsch
           build: true
@@ -119,6 +122,7 @@ plugins:
             - Support:
                 - FAQ: support/faq.md
                 - Glossar: support/glossary.md
+                - Datenschutz: support/privacy.md
         - locale: es
           name: Español
           build: true
@@ -140,6 +144,7 @@ plugins:
             - Soporte:
                 - FAQ: support/faq.md
                 - Glosario: support/glossary.md
+                - Privacidad: support/privacy.md
         - locale: pt-PT
           name: Português (Portugal)
           build: true
@@ -163,6 +168,7 @@ plugins:
             - Suporte:
                 - FAQ: support/faq.md
                 - Glossario: support/glossary.md
+                - Privacidade: support/privacy.md
         - locale: pt-BR
           name: Português (Brasil)
           build: true
@@ -186,6 +192,7 @@ plugins:
             - Suporte:
                 - FAQ: support/faq.md
                 - Glossario: support/glossary.md
+                - Privacidade: support/privacy.md
 
 markdown_extensions:
   - admonition
@@ -224,3 +231,4 @@ nav:
   - Support:
       - FAQ: support/faq.md
       - Glossary: support/glossary.md
+      - Privacy Policy: support/privacy.md
