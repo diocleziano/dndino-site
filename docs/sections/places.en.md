@@ -92,15 +92,30 @@ In tree mode, you can **right-click a place** to open a context menu with quick 
 
 The available actions are:
 
-- `Remove link`
-- `Add link`
 - `Add sub-place`
-- `Add character`
+- `Add occupant`
+- `Add link`
+- `Remove link`
 - `Create concept map`
 - `Create combat`
 - `Edit`
+- `Delete place`
 
 This menu is one of the fastest ways to build the structure of the adventure while working in the tree.
+
+In practice, it lets you reorganize the tree quickly without opening the full place form every time.
+
+### Quick Reordering with Drag and Drop
+
+The place tree also supports a quick drag-and-drop workflow.
+
+You can:
+
+- change the order of sibling places
+- move a place under another place
+- move a place back to the root if you drag it out of a parent branch
+
+This makes it much faster to refine the narrative structure while preparing the adventure.
 
 ### Filters and Summary
 
@@ -169,6 +184,20 @@ This means a place can:
 - sit at the root of the adventure
 - exist as a sub-place of another place
 - also be linked in more than one point of the structure when needed
+
+This is useful, for example, when you want to:
+
+- attach a whole group of places under a quest
+- show the same place in more than one branch of the tree
+- create different narrative paths without duplicating the record
+
+In these cases, the place is **not duplicated**: the tree only gains an additional link to the same place.
+
+When you remove a link:
+
+- the place itself is not deleted
+- if it has multiple parents, only the extra link is removed
+- if it loses its only parent, it returns to the root of the tree
 
 The form still prevents cycles, automatically excluding the place itself and its subtree from the list of possible parents.
 

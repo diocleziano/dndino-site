@@ -92,15 +92,30 @@ No modo em árvore você pode **clicar com o botão direito em um local** para a
 
 As ações disponíveis são:
 
-- `Remover vínculo`
-- `Adicionar vínculo`
 - `Adicionar sublocal`
-- `Adicionar personagem`
+- `Adicionar presença`
+- `Adicionar vínculo`
+- `Remover vínculo`
 - `Criar mapa conceitual`
 - `Criar combate`
 - `Editar`
+- `Excluir local`
 
 Esse menu é uma das formas mais rápidas de construir a estrutura da aventura enquanto você trabalha na árvore.
+
+Na prática, ele permite reorganizar a árvore rapidamente sem abrir toda hora o formulário completo do local.
+
+### Reordenação rápida com arrastar e soltar
+
+A árvore de locais também suporta um fluxo rápido de arrastar e soltar.
+
+Você pode:
+
+- mudar a ordem dos locais irmãos
+- mover um local para baixo de outro local
+- devolver um local para a raiz se arrastá-lo para fora de um ramo pai
+
+Isso torna muito mais rápido ajustar a estrutura narrativa durante a preparação.
 
 ### Filtros e resumo
 
@@ -169,6 +184,20 @@ Isso significa que um local pode:
 - estar na raiz da aventura
 - existir como sublocal de outro local
 - estar vinculado em mais de um ponto da estrutura, quando fizer sentido
+
+Isso é útil, por exemplo, quando você quer:
+
+- colocar um grupo inteiro de locais sob uma missão
+- mostrar o mesmo local em mais de um ramo da árvore
+- criar caminhos narrativos diferentes sem duplicar o registro
+
+Nesses casos, o local **não é duplicado**: a árvore apenas ganha um vínculo adicional para o mesmo local.
+
+Quando você remove um vínculo:
+
+- o local não é apagado
+- se ele tiver vários pais, apenas o vínculo extra é removido
+- se ele perder o seu único pai, volta para a raiz da árvore
 
 O formulário ainda impede ciclos, excluindo automaticamente o próprio local e sua subárvore da lista de possíveis pais.
 

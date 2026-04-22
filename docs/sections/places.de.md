@@ -92,15 +92,30 @@ Im Baum-Modus kannst du **mit der rechten Maustaste auf einen Ort klicken**, um 
 
 Verfügbare Aktionen sind:
 
-- `Verknüpfung entfernen`
-- `Verknüpfung hinzufügen`
 - `Unterort hinzufügen`
-- `Charakter hinzufügen`
+- `Präsenz hinzufügen`
+- `Verknüpfung hinzufügen`
+- `Verknüpfung entfernen`
 - `Beziehungsdiagramm erstellen`
 - `Kampf erstellen`
 - `Bearbeiten`
+- `Ort löschen`
 
 Dieses Menü ist einer der schnellsten Wege, die Struktur des Abenteuers direkt im Baum aufzubauen.
+
+In der Praxis kannst du damit den Baum schnell umorganisieren, ohne jedes Mal das vollständige Ortsformular zu öffnen.
+
+### Schnelles Umordnen per Drag-and-drop
+
+Der Ortsbaum unterstützt außerdem einen schnellen Drag-and-drop-Workflow.
+
+Du kannst:
+
+- die Reihenfolge von Geschwisterorten ändern
+- einen Ort unter einen anderen Ort verschieben
+- einen Ort zurück in die Wurzel verschieben, wenn du ihn aus einem Elternzweig herausziehst
+
+So lässt sich die narrative Struktur bei der Vorbereitung sehr schnell verfeinern.
 
 ### Filter und Zusammenfassung
 
@@ -171,6 +186,20 @@ Das bedeutet, ein Ort kann:
 - an der Wurzel des Abenteuers liegen
 - als Unterort eines anderen Ortes existieren
 - bei Bedarf an mehreren Stellen der Struktur verknüpft sein
+
+Das ist zum Beispiel nützlich, wenn du:
+
+- eine ganze Gruppe von Orten unter eine Quest hängen willst
+- denselben Ort in mehreren Zweigen des Baums zeigen möchtest
+- verschiedene Erzählpfade aufbauen willst, ohne den Datensatz zu duplizieren
+
+In diesen Fällen wird der Ort **nicht dupliziert**: Im Baum wird nur eine zusätzliche Verknüpfung zum selben Ort angelegt.
+
+Wenn du eine Verknüpfung entfernst:
+
+- wird der Ort selbst nicht gelöscht
+- bei mehreren Eltern wird nur die zusätzliche Verknüpfung entfernt
+- verliert der Ort seinen einzigen Elternteil, kehrt er an die Wurzel des Baums zurück
 
 Das Formular verhindert trotzdem Zyklen, indem es den Ort selbst und seinen Unterbaum automatisch aus der Liste möglicher Eltern ausschließt.
 

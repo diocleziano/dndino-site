@@ -92,15 +92,30 @@ En el modo árbol puedes **hacer clic derecho sobre un lugar** para abrir un men
 
 Las acciones disponibles son:
 
-- `Eliminar enlace`
-- `Añadir enlace`
 - `Añadir sublugar`
-- `Añadir personaje`
+- `Añadir presencia`
+- `Añadir enlace`
+- `Eliminar enlace`
 - `Crear mapa conceptual`
 - `Crear combate`
 - `Editar`
+- `Eliminar lugar`
 
 Este menú es una de las formas más rápidas de construir la estructura de la aventura mientras trabajas en el árbol.
+
+En la práctica, te permite reorganizar el árbol rápidamente sin abrir cada vez el formulario completo del lugar.
+
+### Reordenación rápida con arrastrar y soltar
+
+El árbol de lugares también admite un flujo rápido mediante arrastrar y soltar.
+
+Puedes:
+
+- cambiar el orden de los lugares hermanos
+- mover un lugar debajo de otro lugar
+- devolver un lugar a la raíz si lo arrastras fuera de una rama padre
+
+Esto hace mucho más rápido ajustar la estructura narrativa mientras preparas la aventura.
 
 ### Filtros y resumen
 
@@ -169,6 +184,20 @@ Esto significa que un lugar puede:
 - estar en la raíz de la aventura
 - existir como sublugar de otro lugar
 - estar enlazado en más de un punto de la estructura cuando haga falta
+
+Esto es útil, por ejemplo, cuando quieres:
+
+- colocar un grupo entero de lugares bajo una misión
+- mostrar el mismo lugar en más de una rama del árbol
+- crear rutas narrativas distintas sin duplicar el registro
+
+En estos casos, el lugar **no se duplica**: el árbol solo añade un enlace adicional al mismo lugar.
+
+Cuando eliminas un enlace:
+
+- el lugar no se borra
+- si tiene varios padres, solo se elimina el enlace adicional
+- si pierde su único padre, vuelve a la raíz del árbol
 
 El formulario sigue evitando ciclos, excluyendo automáticamente el propio lugar y su subárbol de la lista de posibles padres.
 

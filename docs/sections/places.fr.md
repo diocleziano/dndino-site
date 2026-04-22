@@ -92,15 +92,30 @@ En mode arborescent, tu peux faire un **clic droit sur un lieu** pour ouvrir un 
 
 Les actions disponibles sont :
 
-- `Retirer le lien`
-- `Ajouter un lien`
 - `Ajouter un sous-lieu`
-- `Ajouter un personnage`
+- `Ajouter une présence`
+- `Ajouter un lien`
+- `Retirer le lien`
 - `Créer une carte conceptuelle`
 - `Créer un combat`
 - `Modifier`
+- `Supprimer le lieu`
 
 Ce menu est l'un des moyens les plus rapides de construire la structure de l'aventure pendant que tu travailles dans l'arbre.
+
+En pratique, il te permet de réorganiser l'arbre très vite sans ouvrir à chaque fois le formulaire complet du lieu.
+
+### Réorganisation rapide par glisser-déposer
+
+L'arbre des lieux prend aussi en charge une méthode rapide par glisser-déposer.
+
+Tu peux :
+
+- changer l'ordre des lieux frères
+- déplacer un lieu sous un autre lieu
+- renvoyer un lieu à la racine si tu le fais glisser hors d'une branche parente
+
+Cela rend la mise au point de la structure narrative beaucoup plus rapide pendant la préparation.
 
 ### Filtres et résumé
 
@@ -169,6 +184,20 @@ Cela signifie qu'un lieu peut :
 - se trouver à la racine de l'aventure
 - exister comme sous-lieu d'un autre lieu
 - être lié à plusieurs endroits de la structure quand cela a du sens
+
+Cela est utile, par exemple, si tu veux :
+
+- rattacher tout un groupe de lieux à une quête
+- faire apparaître le même lieu dans plusieurs branches de l'arbre
+- créer plusieurs parcours narratifs sans dupliquer la fiche
+
+Dans ces cas, le lieu **n'est pas dupliqué** : l'arbre ajoute simplement un lien supplémentaire vers le même lieu.
+
+Quand tu retires un lien :
+
+- le lieu lui-même n'est pas supprimé
+- s'il a plusieurs parents, seul le lien supplémentaire est retiré
+- s'il perd son unique parent, il revient à la racine de l'arbre
 
 Le formulaire empêche toutefois de créer des cycles, en excluant automatiquement le lieu lui-même et son sous-arbre des parents sélectionnables.
 

@@ -92,15 +92,30 @@ Nella modalità ad albero puoi fare **tasto destro su un luogo** per aprire un m
 
 Le azioni disponibili nel menu contestuale sono:
 
-- `Rimuovi collegamento`
-- `Aggiungi collegamento`
 - `Aggiungi sottoluogo`
-- `Aggiungi personaggio`
+- `Aggiungi presenza`
+- `Aggiungi collegamento`
+- `Rimuovi collegamento`
 - `Crea Mappa Conc.`
 - `Crea Combattimento`
 - `Modifica`
+- `Elimina luogo`
 
 Questo menu è uno dei modi più rapidi per costruire la struttura dell’avventura mentre lavori nell’albero.
+
+In pratica puoi usarlo per riorganizzare rapidamente l’albero senza dover aprire ogni volta il form completo del luogo.
+
+### Riordino rapido con trascinamento
+
+L’albero dei luoghi supporta anche una modalità rapida di riordino tramite trascinamento.
+
+Puoi:
+
+- cambiare l’ordine dei luoghi tra fratelli
+- spostare un luogo sotto un altro luogo
+- riportare un luogo nella root quando lo trascini fuori da un padre
+
+Questo rende molto veloce rifinire la struttura narrativa mentre prepari l’avventura.
 
 ### Filtri e riepilogo
 
@@ -169,6 +184,20 @@ Questo significa che un luogo può:
 - stare alla radice dell’avventura
 - vivere come sottoluogo di un altro luogo
 - essere collegato anche in più punti della struttura, quando serve
+
+Questo è utile, per esempio, quando vuoi:
+
+- agganciare un intero gruppo di luoghi sotto una quest
+- far comparire lo stesso luogo in più rami dell’albero
+- creare percorsi narrativi diversi senza duplicare il record
+
+In questi casi il luogo **non viene duplicato**: viene solo aggiunto un collegamento aggiuntivo nella vista ad albero.
+
+Quando rimuovi un collegamento:
+
+- il luogo non viene eliminato
+- se aveva più padri, viene rimosso solo il collegamento aggiuntivo
+- se invece perde il suo unico padre, torna nella root dell’albero
 
 Il form impedisce comunque di creare cicli, perché esclude automaticamente il luogo stesso e il suo sottoalbero dai possibili padri selezionabili.
 
