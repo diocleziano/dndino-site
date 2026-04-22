@@ -1,5 +1,7 @@
 # Page d'accueil
 
+![Home Page](../images/homepage/en_home.png){ .img-hero }
+
 La **page d'accueil** est l'écran d'ouverture de DnDino. Ce n'est pas un panneau opérationnel destiné à gérer directement chaque module de l'application, mais un **point d'accès rapide** pensé pour :
 
 - reprendre immédiatement la dernière aventure utilisée

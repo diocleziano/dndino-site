@@ -1,5 +1,7 @@
 # Home Page
 
+![Home Page](../images/homepage/en_home.png){ .img-hero }
+
 La **Home Page** è la schermata iniziale di DnDino. Non è un pannello operativo per gestire direttamente ogni modulo dell’app, ma un **punto di accesso rapido** pensato per:
 
 - riprendere subito l’ultima avventura usata

@@ -1,5 +1,7 @@
 # Home Page
 
+![Home Page](../images/homepage/en_home.png){ .img-hero }
+
 The **Home Page** is the opening screen of DnDino. It isn't meant to be the place where you directly manage every module of the app. Instead, it's a **quick access hub** designed to:
 
 - jump back into your most recently used adventure

@@ -1,5 +1,7 @@
 # Startseite
 
+![Home Page](../images/homepage/en_home.png){ .img-hero }
+
 Die **Startseite** ist der Einstiegsbildschirm von DnDino. Sie ist kein Arbeitsbereich, in dem du jedes Modul der App direkt verwaltest, sondern ein **schneller Zugangspunkt**, der dazu dient:
 
 - sofort zum zuletzt verwendeten Abenteuer zurückzukehren
