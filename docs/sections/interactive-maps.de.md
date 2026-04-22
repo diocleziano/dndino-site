@@ -171,9 +171,9 @@ Der Marker wird relativ zu den Kartenkoordinaten gespeichert und bleibt deshalb 
 
 Marker ändern außerdem ihre Farbe je nach Status des verknüpften Ortes, damit der Fortschritt der Erkundung auf der Karte schneller auf einen Blick erkennbar ist:
 
-- eine Farbe für `Unbesuchte` Orte
-- eine Farbe für Orte `Im Besuch`
-- eine Farbe für `Besuchte` Orte
+- `Grau` für `Unbesuchte` Orte
+- `Orange` für Orte `Im Besuch`
+- `Grün` für `Besuchte` Orte
 
 Diese Farben sind fest und ändern sich nicht mit dem aktiven Thema, damit ihre Bedeutung in der ganzen App konsistent bleibt.
 

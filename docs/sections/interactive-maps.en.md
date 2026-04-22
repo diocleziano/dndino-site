@@ -171,9 +171,9 @@ The marker is saved relative to the map coordinates and therefore stays in the c
 
 Markers also change color based on the status of the linked place, so the map gives you a clearer at-a-glance sense of exploration progress:
 
-- one color for `Unvisited` places
-- one color for places `Currently visiting`
-- one color for `Visited` places
+- `gray` for `Unvisited` places
+- `orange` for places `Currently visiting`
+- `green` for `Visited` places
 
 These colors are fixed and do not change with the active theme, so their meaning stays consistent across the app.
 

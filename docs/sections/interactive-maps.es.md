@@ -171,9 +171,9 @@ El marcador se guarda respecto a las coordenadas del mapa, por lo que sigue perm
 
 Los marcadores también cambian de color según el estado del lugar vinculado, para que el avance de la exploración se entienda mejor de un vistazo:
 
-- un color para los lugares `No visitados`
-- un color para los lugares `En visita`
-- un color para los lugares `Visitados`
+- `gris` para los lugares `No visitados`
+- `naranja` para los lugares `En visita`
+- `verde` para los lugares `Visitados`
 
 Estos colores son fijos y no cambian con el tema activo, para que su significado siga siendo coherente en toda la aplicación.
 

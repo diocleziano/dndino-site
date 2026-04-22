@@ -171,9 +171,9 @@ Il marker viene salvato rispetto alle coordinate della mappa e quindi continua a
 
 I marker cambiano anche colore in base allo stato del luogo collegato, così la mappa comunica meglio l'avanzamento dell'esplorazione a colpo d'occhio:
 
-- un colore per i luoghi `Non visitati`
-- un colore per i luoghi `In visita`
-- un colore per i luoghi `Visitati`
+- `grigio` per i luoghi `Non visitati`
+- `arancione` per i luoghi `In visita`
+- `verde` per i luoghi `Visitati`
 
 Questi colori sono fissi e non cambiano da tema a tema, così il loro significato resta coerente in tutta l'app.
 

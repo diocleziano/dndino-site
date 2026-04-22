@@ -171,9 +171,9 @@ Le marqueur est enregistré relativement aux coordonnées de la carte, et reste 
 
 Les marqueurs changent aussi de couleur selon l'état du lieu lié, ce qui permet de lire plus facilement la progression de l'exploration d'un seul coup d'oeil :
 
-- une couleur pour les lieux `Non visités`
-- une couleur pour les lieux `En visite`
-- une couleur pour les lieux `Visités`
+- `gris` pour les lieux `Non visités`
+- `orange` pour les lieux `En visite`
+- `vert` pour les lieux `Visités`
 
 Ces couleurs sont fixes et ne changent pas selon le thème actif, afin que leur signification reste cohérente dans toute l'application.
 
