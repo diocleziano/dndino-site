@@ -1,579 +1,506 @@
 # Kampf
 
-Der **Kampf**-Modus von DnDino ist als zentraler operativer Tracker für eine Begegnung gedacht. Diese Seite beschreibt den Standard-Kampfmodus von DnDino.
+Der Bereich **Kampf** ist DnDinos operativer Begegnungs-Tracker. Er ist schnell, kompakt und gut lesbar, wenn am Spieltisch gerade alles gleichzeitig passiert.
 
-Ein Kampf entsteht immer im Kontext eines **Ortes** und übernimmt die verknüpften Charaktere, lokalen Anwesenden sowie alle Monster oder NSC, die zu dieser Szene gehören.
+Ein Kampf entsteht immer aus einem **Ort** heraus und kann die Helden des Abenteuers, lokale Präsenzen, NSC und Monster dieser Szene enthalten.
 
-Diese Seite erklärt den vollständigen Ablauf:
+Diese Seite erklärt:
 
-- Vorbereitung im Vorkampf
-- Verwaltung der Teilnehmenden
-- Start der Begegnung
-- Nutzung des Panels für den aktuellen Zug
-- Anwenden von Schaden, Heilung, Zuständen und Rettungswürfen
-- Integration mit dem **Spielerfenster**
-- Abschluss der Begegnung und die Endzusammenfassung
+- Vorbereitung vor dem Kampf
+- Initiative eingeben und sortieren
+- Hauptansicht des Kampfes
+- Runden- und Zugsteuerung
+- Angriffe, Schaden, Heilung, Zustände und Rettungswürfe
+- interne Links in Angriffen und Fähigkeiten
+- Seitenübersicht, letzte Ereignisse und Rückgängig-Funktion
+- Spielerfenster
+- Abschlussübersicht und Statistiken
 
-## Nutzung mit einem oder zwei Bildschirmen
+## Ein oder Zwei Bildschirme
 
-DnDinos Kampf funktioniert auch auf **einem einzigen Bildschirm** sehr gut: Die komplette operative Seite bleibt im Hauptpanel, und du kannst Teilnehmende, Züge, Schaden, Zustände und die Endzusammenfassung ohne zweiten Monitor verwalten.
+Der Kampf funktioniert auch auf **einem Bildschirm** gut: Die komplette SL-Arbeit bleibt im Hauptfenster, mit Initiative-Tracker, kompakten Datenkarten und Übersicht.
 
-Wenn du jedoch ein Setup mit zwei Bildschirmen hast, kannst du verwenden:
+Mit einem zweiten Bildschirm kannst du zusätzlich das **Spielerfenster** nutzen:
 
-- einen Hauptbildschirm für das Kontrollpanel des SL
-- einen zweiten Bildschirm oder Monitor für das **Spielerfenster**
-
-In dieser Konfiguration wird der Ablauf noch angenehmer:
-
-- auf dem SL-Bildschirm bleiben Teilnehmendenliste, Rundenkontrollen, aktueller Zug, Angriffstexte, SL-Notizen und Schnellbearbeitungen sichtbar
-- auf dem Bildschirm der Spielenden erscheint eine saubere Präsentation des aktiven Teilnehmenden mit Bild und kontextbezogenem Overlay
-
-Praktisch bedeutet das:
-
-- auf einem Bildschirm steuerst du den gesamten Kampf über die Hauptansicht
-- mit zwei Bildschirmen trennst du das technische SL-Panel von der Darstellung für die Spielenden
+- auf dem SL-Bildschirm bleiben Steuerung, Karten, Ziele, Zustände und Statistiken
+- auf dem Spielerbildschirm erscheint eine klarere Präsentation mit Bildern und Einblendungen
 
 !!! tip
-    Ein zweiter Bildschirm ist nicht Pflicht. Er ist einfach eine sehr nützliche Erweiterung, wenn du den Spielenden Bilder und Informationen zum aktuellen Zug zeigen möchtest, ohne das technische Panel des SL offenzulegen.
+    Ein zweiter Bildschirm ist optional. Er dient nur dazu, die technische SL-Ansicht von der stimmungsvolleren Spieleransicht zu trennen.
 
-## So funktioniert das Spielerfenster während des Kampfes
+## Spielerfenster im Kampf
 
-Wenn der Kampf gestartet wird, kann DnDino das **Spielerfenster** automatisch öffnen oder aktualisieren.
+Wenn eine Begegnung startet, kann DnDino das **Spielerfenster** öffnen oder aktualisieren.
 
-Wenn die Präsentation für die Spielenden aktiv ist:
+Wenn die Präsentation aktiv ist, kann sie zeigen:
 
-- kann zu Beginn des Kampfes eine kurze **Intro** mit den Teilnehmenden erscheinen
-- aktualisiert sich das Fenster während des Kampfes auf den **Teilnehmenden des aktuellen Zugs**
-- kann am Ende der Begegnung eine **Endzusammenfassung** erscheinen
+- Kampfeinstieg mit Teilnehmern
+- Teilnehmer am aktuellen Zug
+- Angriffsanimationen
+- Abschlussübersicht
 
-Während des Kampfes zeigt das Spielerfenster nicht das technische Panel des SL, sondern eine visuelle Präsentation mit:
+Die Einblendung kann enthalten:
 
-- dem Bild des aktiven Teilnehmenden
-- dem Namen, der den Spielenden gezeigt wird
-- Overlay-Informationen, sofern aktiviert
-
-Das Overlay kann enthalten:
-
-- aktuelle Runde
+- Runde
 - aktuelle, maximale und temporäre TP
 - Zustände
 - nächster Zug
 
-Informationen über Feinde können getrennt von Informationen über Helden behandelt werden.
+Für Gegner, Monster und NSC legst du in den Einstellungen fest, ob Namen und Details für Spieler sichtbar sind.
 
-## Einstellungen für Spielerfenster und zweiten Bildschirm
+## Nützliche Einstellungen
 
-Die wichtigsten Optionen befinden sich in **Einstellungen**, im Bereich für Kampfpräsentation und Spielerfenster.
+Die wichtigsten Optionen findest du in **Einstellungen**, in den Bereichen Kampf und Spielerfenster.
 
-### Öffnung und allgemeines Verhalten
+Wichtig sind vor allem:
 
-Die wichtigsten Einstellungen sind:
+- `Spielerfenster auch mit einem Monitor öffnen`
+- `Spielerfenster-Steuerung in der oberen Leiste anzeigen`
+- `Kampf-Intro für Spieler anzeigen`
+- `Abschlussübersicht für Spieler anzeigen`
+- `Runde auf Spielerbildschirm anzeigen`
+- `TP auf Spielerbildschirm anzeigen`
+- `Zustände auf Spielerbildschirm anzeigen`
+- `Nächsten Zug auf Spielerbildschirm anzeigen`
+- `Details von NSC und Monstern für Spieler anzeigen`
+- `Zustände von Gegnern für Spieler anzeigen`
+- `Namen von Gegnern für Spieler anzeigen`
 
-- `Spielerfenster auch mit nur einem Monitor öffnen`
-- `Steuerung des Spielerfensters in der Topbar anzeigen`
-- `Kampf-Intro für Spielende anzeigen`
-- `Endzusammenfassung für Spielende anzeigen`
+Das Beenden eines Kampfes fragt immer nach Bestätigung, weil dabei Zustand und Statistiken synchronisiert werden.
 
-#### Spielerfenster auch mit nur einem Monitor öffnen
+## Wo der Kampf Geöffnet Wird
 
-Wenn diese Option aktiv ist, kann DnDino das Spielerfenster auch dann automatisch öffnen, wenn du nur mit einem Monitor arbeitest.
+Ein Kampf wird aus einem **Ort** erstellt. Danach wechselt die Ansicht je nach Zustand:
 
-Wenn sie deaktiviert ist:
+- **Vor dem Kampf**: Teilnehmer, Namen und Initiative vorbereiten.
+- **Aktiver Kampf**: Züge, Karten, Ziele und Übersicht verwalten.
+- **Abgeschlossener Kampf**: SL-Abschlussübersicht ansehen.
 
-- öffnet sich das Fenster auf einem einzelnen Monitor nicht automatisch
-- ist es bereits geöffnet, wird es trotzdem weiter aktualisiert
+## Vor dem Kampf
 
-#### Steuerung des Spielerfensters in der Topbar anzeigen
+Die Vorkampf-Ansicht bereitet die Begegnung vor dem ersten Zug vor.
 
-Wenn du diese Option aktivierst, erscheinen in der oberen Leiste Schaltflächen, um:
+Sie besteht aus drei Hauptbereichen:
 
-- das Spielerfenster manuell zu öffnen
-- es manuell zu schließen
+- **Helden**
+- **Monster und NSC**
+- **Endgültige Reihenfolge**
 
-#### Kampf-Intro für Spielende anzeigen
+Oben siehst du außerdem Namen der Begegnung, Teilnehmerzahl und Hauptaktionen.
 
-Wenn du `Begegnung starten` drückst, kann das Spielerfenster eine kurze Einleitung anzeigen mit:
+## Aktionen vor dem Kampf
 
-- Titel der Begegnung
-- beteiligten Teilnehmenden
-- Anzahl der Teilnehmenden
+Die Hauptaktionen sind:
 
-Wenn du diese Option deaktivierst, springt der Kampf direkt zur Darstellung des ersten aktiven Teilnehmenden.
+- `Hinzufügen`
+- `Begegnung starten`
+- `NSC/Monster-Initiative`, in der Spalte Monster und NSC
 
-#### Endzusammenfassung für Spielende anzeigen
+`Hinzufügen` öffnet die Teilnehmerauswahl.
 
-Wenn der Kampf endet, kann das Spielerfenster eine Endzusammenfassung anzeigen.
+`Begegnung starten` startet den Kampf. Hat mindestens ein Teilnehmer Initiative `0`, fragt DnDino nach Bestätigung.
 
-Die spielerseitige Zusammenfassung zeigt nur Informationen, die für Spielende nützlich sind, zum Beispiel:
+`NSC/Monster-Initiative` würfelt automatisch nur für Monster und NSC. Helden sind meist für manuelle Eingabe gedacht, weil ihre Initiative vom Tisch kommt.
 
-- von Helden verursachter Schaden
-- von Helden erlittenen Schaden
-- das Bild des gefährlichsten Gegners
+## Namen und Initiative Bearbeiten
 
-Die Endzusammenfassung bleibt sichtbar, bis du den Inhalt des Fensters änderst oder es schließt.
+Vor dem Kampf kannst du ändern:
 
-### Informationen während eines Zugs
+- angezeigter Teilnehmername
+- Initiative
 
-Die Einstellungen, die das Overlay des aktiven Teilnehmenden steuern, sind:
+Das ist besonders bei Monstern praktisch, zum Beispiel:
 
-- `Runde im Spielerfenster anzeigen`
-- `TP im Spielerfenster anzeigen`
-- `Zustände im Spielerfenster anzeigen`
-- `Nächsten Zug im Spielerfenster anzeigen`
+- Goblin 1
+- Goblin 2
+- Goblin-Hauptmann
 
-### Informationen zu Feinden, Monstern und NSC
+Die Initiative wird während der Eingabe übernommen, ohne dass das Feld den Fokus verlieren muss. Die Arbeitslisten werden beim Tippen nicht ständig neu sortiert: Die endgültige Sortierung passiert beim Start.
 
-Für Teilnehmende, die keine Helden sind, gibt es eigene Steuerelemente:
+## Endgültige Reihenfolge
 
-- `NSC- und Monsterdetails für Spielende anzeigen`
-- `Zustände von Feinden für Spielende anzeigen`
-- `Namen von Feinden für Spielende anzeigen`
+Der Bereich **Endgültige Reihenfolge** zeigt laufend die Reihenfolge, die beim Start verwendet wird.
 
-Damit kannst du entscheiden, ob das Spielerfenster:
+Sortiert wird so:
 
-- die Kreatur eher atmosphärisch zeigt
-- oder zusätzlich technische Informationen einblendet
+1. höchste Initiative
+2. bei Gleichstand höchster Geschicklichkeitsmodifikator
+3. bei weiterem Gleichstand zufälliger Entscheid
 
-## Wo der Kampf geöffnet wird
+So kannst du die Reihenfolge prüfen, ohne die Eingabe zu stören.
 
-Der Kampf wird aus dem Kontext eines **Ortes** erstellt. Nach dem Öffnen zeigt DnDino ein Layout mit zwei Hauptspalten:
+## Herkunft der Teilnehmer
 
-- links den operativen Kampf-Tracker
-- in der Mitte das Hauptpanel der Szene oder des aktuellen Zugs
+Die Auswahl kann anbieten:
 
-Bevor der Kampf begonnen hat, zeigt das mittlere Panel die **Vorkampf-Zusammenfassung**.
+- `Helden`
+- `Ortspräsenzen`
+- `Global`
 
-Sobald die Begegnung aktiv ist, wird dieses Panel zum Bereich für den **Aktuellen Zug**.
+Helden, die bereits mit dem Abenteuer verknüpft sind, können in derselben Begegnung nur einmal hinzugefügt werden.
 
-Wenn der Kampf beendet ist, zeigt das mittlere Panel die **Abschlusszusammenfassung der Begegnung** für den SL.
+Ortspräsenzen verwenden ihren lokalen Zustand, wenn vorhanden.
 
-## Allgemeine Struktur des Bildschirms
+Globale Monster können mehrfach hinzugefügt werden, weil sie oft mehrere Exemplare derselben Kreatur darstellen.
 
-### Linke Spalte
+## Aktiver Kampf
 
-Die linke Spalte enthält:
+Nach dem Start wechselt DnDino in die operative Kampfansicht.
 
-- `Kampfsteuerung`
-- die Kopfzeile der Teilnehmendenliste
-- die sortierte Liste der Teilnehmenden
+Sie ist in drei Zonen gegliedert:
 
-Die Liste ist von zwei dekorativen und funktionalen Zeilen eingerahmt:
+- links der **Initiative-Tracker**
+- in der Mitte kompakte Karten für **aktuellen Zug** und **Auswahl**
+- rechts die **Übersicht** mit Gesundheit, Schaden und Ereignissen
 
-- `Rundenbeginn`
-- `Rundenende`
+Ziel ist, möglichst viele nützliche Informationen sichtbar zu halten, ohne große Fenster zu öffnen.
 
-### Mittleres Panel
+## Zugsteuerung
 
-Das mittlere Panel wechselt je nach Kampfstatus:
+Die Hauptsteuerung liegt oben.
 
-- **vor dem Start** zeigt es die Vorkampf-Zusammenfassung
-- **während des Kampfes** zeigt es den Teilnehmenden des aktuellen Zugs
-- **nach dem Kampf** zeigt es die Abschlusszusammenfassung des SL
+Links:
 
-## Vorkampf
+- `Zurück`
+- `Pause` / `Fortsetzen`
+- `Weiter`
+- `Ereignis rückgängig`
 
-Der Vorkampf dient dazu, die Begegnung vorzubereiten, bevor der erste Zug beginnt.
-
-Hier lohnt es sich vor allem, drei Dinge anzupassen:
-
-- die Namen der Monster, wenn du sie am Tisch klarer unterscheiden möchtest
-- die Initiative der Helden, indem du sie manuell einträgst
-- die Initiative von NSC und Monstern, indem du sie automatisch würfelst oder manuell einträgst
-
-## Vorkampf-Zusammenfassung
-
-Die Startkarte zeigt eine schnelle Übersicht mit Kennzahlen wie:
-
-- Teilnehmende
-- Helden
-- Verbündete
-- Feinde
-- gesamte TP der Feinde
-- Teilnehmende, die bereits in einem kritischen Zustand sind
-
-## Charakterinitiative
-
-Der Bereich `Charakterinitiative` sammelt die wichtigsten Helden und erlaubt es dir, ihre Initiative schnell zu bearbeiten, bevor die Begegnung sortiert wird.
-
-Jede Zeile enthält:
-
-- Namen des Teilnehmenden
-- kontextbezogenen Untertitel
-- Initiativfeld
-- Schaltfläche `Löschen`
-
-## NSC und Monster
-
-Der Bereich `NSC und Monster` ist für Teilnehmende gedacht, die keine Helden sind.
-
-Hier kannst du:
-
-- Initiative schnell bearbeiten
-- Monster und NSC im Handumdrehen umbenennen
-- `Init NSC/Monster` verwenden, um Initiative automatisch zu würfeln
-- Initiative manuell eintragen, wenn du den Wurf außerhalb der App benutzt
-- einen Teilnehmenden schnell mit `Löschen` entfernen
-
-## Hauptaktionen im Vorkampf
-
-Die wichtigsten Aktionen in der Vorkampf-Zusammenfassung sind:
+Rechts:
 
 - `Hinzufügen`
 - `Sortieren`
-- `Begegnung starten`
+- `Kampf beenden`
 
-Wenn mindestens ein Teilnehmender noch Initiative `0` hat, fragt DnDino vor dem Start nach einer Bestätigung.
+`Zurück` und `Weiter` wechseln den Zug.
 
-## Woher Teilnehmende kommen können
+`Pause` hält den Kampftimer an. In Pause wird daraus `Fortsetzen`.
 
-Das Panel zum Hinzufügen von Teilnehmenden kann aus drei Quellen ziehen:
+`Ereignis rückgängig` stellt eines der letzten rückgängig machbaren Ereignisse wieder her.
 
-- `Helden`
-- `Anwesende am Ort`
-- `Global`
+`Hinzufügen` fügt auch während des Kampfes neue Teilnehmer hinzu.
 
-### Helden
+`Sortieren` baut die Initiative-Reihenfolge neu auf.
 
-Hier findest du Abenteuercharaktere, die bereits mit der Kampagne verknüpft sind. Jeder Held kann nur einmal in den Kampf eintreten.
+`Kampf beenden` schließt die Begegnung nach Bestätigung.
 
-### Anwesende am Ort
+## Initiative-Tracker
 
-Hier findest du Charaktere, die bereits an dem Ort anwesend sind, aus dem der Kampf entsteht. Ihr lokaler Zustand kann als Basis für die Begegnung wiederverwendet werden.
+Die linke Spalte zeigt alle Teilnehmer kompakt.
 
-### Global
+Jede Zeile zeigt:
 
-Hier findest du Grundbögen, die nicht bereits als Abenteuerhelden verknüpft sind.
-
-Für globale Einträge gilt:
-
-- `Monster` können mehrfach hinzugefügt werden
-- globale `Helden` und `NSC` können nicht als reine globale Bögen dupliziert werden
-
-## Kampfsteuerung
-
-Sobald die Begegnung begonnen hat, bleibt das Panel `Kampfsteuerung` oberhalb der Liste fixiert und enthält die wichtigsten Aktionen der Runde.
-
-Die Schaltflächen sind in folgenden Zeilen angeordnet:
-
-1. `Hinzufügen` und `Sortieren`
-2. `Start/Pause` oder `Fortsetzen` und `Ende`
-3. `Zurück` und `Weiter`
-
-Wenn es einen rückgängig machbaren letzten Angriff gibt, erscheint zusätzlich:
-
-- `Letzten Angriff rückgängig machen`
-
-## Teilnehmendenliste
-
-Die Liste auf der linken Seite ist das Herzstück des taktischen Trackings.
-
-Jede eingeklappte Zeile zeigt:
-
-- Position in der Zugreihenfolge, zum Beispiel `1/8`
-- Name des Teilnehmenden
-- bis zu drei Zustands-Icons
-- Badge `Zug`, wenn es sich um den aktiven Teilnehmenden handelt
-- RK
-- TP
-- temporäre TP
 - Initiative
-
-Der aktive Teilnehmende ist deutlich stärker hervorgehoben als die anderen:
-
-- farbiges Seitenband
-- stärkere Umrandung
-- wärmerer Hintergrund
-- automatisches Scrollen, um ihn sichtbar zu halten
-
-Die Zeile verwendet außerdem Wirkungseffekte, wenn der Teilnehmende:
-
-- Schaden erhält
-- getötet wird
-- durch ein Undo wiederhergestellt wird
-
-## Kontextmenü einer Zeile
-
-Mit einem **Rechtsklick** auf die Karte eines Teilnehmenden kannst du das Kontextmenü öffnen.
-
-Derzeit verfügbare Aktion:
-
-- `Löschen`
-
-## Aufklappen einer Teilnehmendenzeile
-
-Wenn du auf eine Zeile klickst, wird sie erweitert und zeigt ihre Schnellkontrollen.
-
-Im erweiterten Bereich findest du:
-
-- bearbeitbaren Namen
-- schnelle Zahlenfelder:
-  - Initiative
-  - TP
-  - temporäre TP
-  - RK
-- Aktionsschaltflächen
-- Zustandsblock
-- Zugriff auf Fähigkeiten, Spezialfähigkeiten und Zauber, falls vorhanden
-
-## Schnellschaltflächen der Zeile
-
-Die Schnellaktionen können enthalten:
-
-- `Angriff`
-- `Schaden`
-- `Heilung`
-- `RW`
-- `SL-Notizen`
-- `Bearbeiten`
-- `Zustände`
-
-Einige Schaltflächen erscheinen nur, wenn sie für diesen Teilnehmenden sinnvoll sind.
-
-## Angriff
-
-`Angriff` öffnet ein Popover, in dem du auswählen kannst:
-
-- ein oder mehrere Ziele
-- den anzuwendenden Schaden
-
-Die Zielauswahl verwendet eine kompakte Liste mit:
-
 - Name
 - RK
 - TP
-- Zustände
+- temporäre TP
+- Zustandsanzeige, falls vorhanden
+- Rollenfarbe
 
-Die Zielreihenfolge ist nicht zufällig. DnDino versucht, dir zuerst die sinnvollsten Teilnehmenden vorzuschlagen – abhängig davon, wer angreift.
+Die Seitenfarbe hilft zu unterscheiden:
 
-Im Allgemeinen:
+- Helden
+- Verbündete
+- Neutrale
+- Gegner
 
-- wenn ein **Held** angreift, kommen zuerst **Feinde**, dann Verbündete, dann Neutrale und zuletzt niedrig priorisierte Monster
-- wenn ein Nicht-Held angreift, kommen zuerst **Helden**, dann Verbündete, dann Neutrale und zuletzt weniger passende Feinde
+Ein Klick auf eine Zeile:
 
-Innerhalb jeder Gruppe werden die Namen anschließend alphabetisch sortiert.
+- öffnet den Teilnehmer als **Auswahl**
+- schließt die Auswahlspalte, wenn derselbe Teilnehmer bereits ausgewählt war
 
-Das Popover wählt nie automatisch ein Ziel vor. Die Auswahl muss manuell erfolgen.
+Der Papierkorb entfernt den Teilnehmer aus dem Kampf.
 
-Wenn du einen Angriff auf mehrere Ziele anwendest:
+## Karten für Zug und Auswahl
 
-- wird der Schaden auf alle ausgewählten Ziele angewendet
-- zeigt das obere Banner mehrere Zeilen, eine pro getroffenem Ziel
-- speichert das Undo des letzten Angriffs die gesamte Gruppe zusammen
+In der Mitte können bis zu zwei Karten sichtbar sein:
 
-## Schaden und Heilung
+- Teilnehmer am Zug
+- aus der Liste ausgewählter Teilnehmer
 
-`Schaden` wendet direkten Schaden auf den Teilnehmenden an.
+Die Karten haben feste Breite und eigenes vertikales Scrollen, damit die Seite auch bei langen Texten stabil bleibt.
 
-`Heilung` wendet direkte Heilung an.
+Oben auf der Karte stehen:
 
-## RW
+- Name
+- Typ, Volk oder Untertyp
+- Sprachen, falls vorhanden
+- Herausforderungsgrad und EP, falls vorhanden
+- Bildvorschau
+- Aktionsknöpfe
 
-`RW` öffnet das Popover für den **Rettungswurf** auf Basis der Werte des Teilnehmenden.
+## Schnellfelder
+
+Direkt auf der Karte kannst du ändern:
+
+- aktuelle TP
+- temporäre TP
+- Initiative
+
+RK wird kompakt mit Schildsymbol angezeigt.
+
+Bei Abenteurerhelden kann auch **Heldeninspiration** erscheinen.
+
+TP-Änderungen bleiben mit linker Liste und rechter Übersicht synchron.
+
+## Teilnehmeraktionen
+
+Eine Karte kann zeigen:
+
+- `Angreifen`
+- `Schaden`
+- `Heilen`
+- `RW`
+- `Zustände`
+- `SL-Notizen`
+- `Bearbeiten`
+
+`Angreifen` öffnet ein Fenster mit Angreifer und Zielliste.
+
+`Schaden` wendet direkten Schaden auf den Teilnehmer an.
+
+`Heilen` wendet direkte Heilung an.
+
+`RW` öffnet die verfügbaren Rettungswürfe.
+
+`Zustände` öffnet ein eigenes Fenster zur Zustandsverwaltung.
+
+`SL-Notizen` speichert Notizen zum Teilnehmer. Notizen gehören nicht zur Rückgängig-Funktion.
+
+`Bearbeiten` öffnet den vollständigen Editor.
+
+## Ziellisten
+
+Ziellisten werden nach Angreifer sortiert.
+
+Wenn der Angreifer ein Gegner ist:
+
+- zuerst Helden und Verbündete
+- dann Neutrale
+- dann Gegner
+
+Wenn der Angreifer ein Held, Verbündeter oder Neutraler ist:
+
+- zuerst Gegner
+- dann Neutrale
+- dann Helden und Verbündete
+
+Innerhalb jeder Gruppe sind Namen alphabetisch sortiert.
+
+Die farbige Seitenlinie hilft, die Rolle des Ziels zu erkennen.
+
+## Angriffe, Fähigkeiten und Interne Links
+
+Die Hauptbereiche sind:
+
+- `Zustände`
+- `Angriffe`
+- `Besondere Fähigkeiten`
+- `Fähigkeiten`
+- `Zauber`
+- `Beschreibung`
+
+Die Bereiche sind einklappbar und haben einen leichten Verlauf passend zur Titelfarbe.
+
+Texte von Angriffen, besonderen Fähigkeiten und Fähigkeiten können interne Links enthalten, die beim Erstellen oder Bearbeiten des Charakters angelegt wurden.
+
+Im Kampf öffnen diese Links eigene Fenster, damit genug Platz zum Abwickeln der Aktion bleibt.
+
+Die nützlichsten Links sind:
+
+- `Vollständiger Angriff`
+- `1W20 + MOD`
+- freier Wurf
+- Schadenswurf
+- Links zu internen Einträgen
+
+## Vollständiger Angriff
+
+`Vollständiger Angriff` ist für Angriffstexte von Monstern, NSC oder Helden gedacht.
+
+Du bereitest ihn im Erstellen- oder Bearbeiten-Dialog des Charakters vor: Markiere den Angriffstext und erstelle einen Link vom Typ `Vollständiger Angriff`. Im Kampf wird dieser Text zu einer vorbereiteten Aktion.
+
+Im Kampf:
+
+- zeigt das Fenster den Namen des Angriffs
+- der Angreifer ist klar sichtbar
+- du wählst ein oder mehrere Ziele
+- du verwaltest mehrere Schadenszeilen
+- du wendest den ausgewählten Schaden auf die gewählten Ziele an
+
+Beim Erstellen ist der Schaden modular: Mit `+` fügst du Zeilen hinzu, angezeigt werden nur ausgefüllte Zeilen.
+
+## Zauber
+
+Hat der Teilnehmer Zauber, erscheint der Bereich `Zauber`.
+
+Zauber sind nach Grad gruppiert.
+
+Für Monster und NSC kann die Grad-Zeile auch den Verbrauchszähler zeigen, zum Beispiel:
+
+- `0/3`
+- `2/3`
+- `3/3`
+
+Der Knopf `Benutzen` beim einzelnen Zauber erhöht den Zähler dieses Grades.
+
+Der Zähler blockiert nicht, wenn er das Maximum erreicht. Er ist nur eine Gedächtnisstütze für die SL.
+
+Zaubertricks verbrauchen keine Plätze.
 
 ## Zustände
 
-Die Schaltfläche `Zustände` öffnet das Popover zur Verwaltung aktiver Zustände.
-
-Von dort aus kannst du:
+Das Fenster `Zustände` erlaubt:
 
 - Zustände hinzufügen
-- Dauer und Ablaufregeln festlegen
-- das Ende eines Zustands an den Zug eines anderen Teilnehmenden koppeln
+- Zustände entfernen
+- Dauer wählen
+- Ablauf an den Zug eines Teilnehmers binden
+- zugehörige Notizen verwalten
 
-## SL-Notizen
+Wenn ein Zustand angewendet wird, zeigt DnDino visuelles Feedback auf dem Bildschirm und in der betroffenen Zeile.
 
-Die Schaltfläche `SL-Notizen` ist immer sichtbar.
+## Helden mit 0 TP oder Weniger
 
-Sie öffnet ein bearbeitbares Popover, in dem du kontextbezogene Notizen zum Teilnehmenden schreiben kannst. Der Inhalt wird gespeichert, sobald das Popover geschlossen wird.
+Helden folgen anderen Regeln als Monster und NSC.
 
-## Bearbeiten
+Ein Held kann unter `0` TP fallen.
 
-`Bearbeiten` öffnet den Editor des Teilnehmenden.
+Die Regel:
 
-Er ist nützlich, wenn du tiefer eingreifen musst in:
+- von `0` bis `-(maximale TP - 1)` ist der Held **Bewusstlos**
+- bei `-maximale TP` oder darunter stirbt er
+- er stirbt auch nach 3 misslungenen Todesrettungswürfen
 
-- Initiative
-- RK
-- maximale, aktuelle und temporäre TP
-- Rolle im Kampf
-- verknüpfte Kontextdaten
+Wenn ein Held bei `0` TP oder darunter ist, aber nicht tot, zeigt die Karte die **Todesrettungswürfe**.
 
-## Aktueller Zug
+Nach 3 Erfolgen kehrt der Held auf `1` TP zurück.
 
-Wenn der Kampf aktiv ist, konzentriert sich das mittlere Panel vollständig auf den Teilnehmenden, der gerade am Zug ist.
+## NSC und Monster mit 0 TP
 
-Die obere Karte zeigt:
+Für NSC und Monster ist es einfacher:
 
-- Bild des Teilnehmenden
-- Name
-- Untertitel
-- RK
-- TP
-- temporäre TP
-- Initiative
-- Bewegungsrate
-- Inspiration, wenn der Teilnehmende ein Abenteuerheld ist
-- aktive Zustände
-- wichtigste Werte
+- bei `0` TP oder weniger gelten sie als tot
+- sie werden aus dem Zugzyklus entfernt
+- die Übersicht kann sie als tot anzeigen
 
-## Mittlere Panels während des Zugs
+## Seitenübersicht
 
-Unter der Zugübersicht werden nur Panels mit echtem Inhalt angezeigt.
+Die rechte Spalte zeigt die **Übersicht**.
 
-Mögliche Bereiche sind:
+Dort findest du:
 
-- `Angriffe`
-- `Spezialfähigkeiten`
-- `Fähigkeiten`
-- `Beschreibung`
-- `Zauber`
+- Runde
+- Dauer
+- aktuellen Zug
+- Gesundheit von Helden und Verbündeten
+- Gesundheit von NSC und Monstern
+- verursachten Schaden
+- erlittenen Schaden
+- letzte 5 Ereignisse
 
-Alle diese Panels sind einklappbar.
+Das ist eine Kontrollansicht: Sie dient dem schnellen Lesen, nicht dem Bearbeiten.
 
-Außerdem nutzen sie leichte visuelle Akzente:
+TP wechseln die Farbe:
 
-- `Angriffe` rot
-- `Fähigkeiten` gelb
-- `Spezialfähigkeiten` grün
-- `Zauber` hellblau
-- `Beschreibung` grau
+- normal, wenn der Teilnehmer in gutem Zustand ist
+- gelb unter 50 %
+- orange unter 10 %
+- rot bei 0 oder weniger
 
-## Angriffe und interne Links
+Bei Helden werden TP nur durchgestrichen, wenn der Charakter wirklich tot ist, nicht nur unter 0 TP.
 
-Der Bereich `Angriffe` ist eine der stärksten Seiten des Flat-Kampfes.
+## Letzte 5 Ereignisse und Rückgängig
 
-Wenn du im Angriffstext des Grundbogens interne Links vorbereitet hast, kannst du sie direkt im Kampf verwenden.
+Der Kampf behält die letzten rückgängig machbaren Ereignisse.
 
-Insbesondere der Link **Kompletter Angriff** ist sehr nützlich, weil er:
+Dazu können gehören:
 
-- Angriffswurf und Schaden im selben Popover ausführt
-- ein oder mehrere Ziele auswählen lässt
-- automatisch `Anzuwendender Schaden` vorschlägt
-- erlaubt, einzelne Schadenszeilen auszuschließen, wenn du mehrere Komponenten gewürfelt hast und nur einige anwenden willst
-- das Popover schließt, sobald der Schaden angewendet wurde
+- Angriffe
+- durch Angriffe angewendeter Schaden
+- Heilung, wenn sie als rückgängig machbares Ereignis erfasst ist
+- angewendete oder geänderte Zustände
 
-Dadurch lassen sich Monsterangriffe am Tisch sehr schnell abwickeln.
+`SL-Notizen` werden nicht rückgängig gemacht.
 
-## Charaktere bei 0 TP oder weniger
+Rückgängig stellt auch verbundene Statistiken wieder her, damit verursachter und erlittener Schaden stimmig bleiben.
 
-Im Kampf folgen **Helden** einer anderen Regel als NSC und Monster.
+## Visuelles Feedback
 
-### Helden
+Wenn im Kampf etwas passiert, zeigt DnDino sofort Feedback:
 
-Helden können unter `0` TP fallen.
+- Banner oben
+- Animation auf der betroffenen Teilnehmerzeile
+- Effekt auf `Anwenden`, wenn vorhanden
+- Aktualisierung der Übersicht
 
-Die Regel lautet:
+So ist klar, dass der Befehl angekommen ist.
 
-- zwischen `0` und `-(max. TP - 1)` ist der Charakter **Bewusstlos**
-- bei `-max. TP` oder weniger stirbt der Charakter endgültig
+## Abschlussübersicht
 
-Wenn ein Held `0` TP oder weniger hat, aber nicht endgültig tot ist:
+Nach Bestätigung des Kampfendes ist die Begegnung nicht mehr bearbeitbar.
 
-- bleibt er in der Begegnung
-- zeigt das mittlere Panel die Karte `Todesrettungswürfe`
-
-Diese Karte verfolgt:
-
-- Erfolge
-- Fehlschläge
-
-und erlaubt es dir, schnell zu markieren:
-
-- `Erfolg`
-- `Fehlschlag`
-
-Bei 3 Erfolgen kehrt der Charakter mit `1` TP zurück. Bei 3 Fehlschlägen stirbt er.
-
-### NSC und Monster
-
-Für Nicht-Helden ist das Verhalten einfacher:
-
-- bei `0` TP oder weniger sind sie tot
-
-## Züge, Runden und aus dem Zyklus entfernte Teilnehmende
-
-Innerhalb des Zugzyklus gilt:
-
-- endgültig tote Helden werden ausgeschlossen
-- NSC und Monster bei `0` TP oder weniger werden ausgeschlossen
-
-Das bedeutet, dass ein **bewusstloser** Held weiterhin einen Zug haben kann, weil seine Todesrettungswürfe noch verwaltet werden müssen.
-
-## Trefferbanner und visuelles Feedback
-
-Wenn ein Angriff trifft, zeigt DnDino oben ein großes Banner mit einer sofortigen Zusammenfassung.
-
-Zum Beispiel:
-
-- wer getroffen hat
-- wer getroffen wurde
-- wie viel Schaden angewendet wurde
-- ob der Schlag das Ziel getötet hat
-
-Wenn es mehrere Ziele gibt, zeigt das Banner mehrere Zeilen im selben Kasten.
-
-Auch das **Spielerfenster** kann die Trefferanimation zeigen, einschließlich aller Ziele, die in denselben Mehrfachangriff einbezogen waren.
-
-## Letzten Angriff rückgängig machen
-
-Wenn du einen Angriff anwendest, erscheint das Panel
-
-- `Letzten Angriff rückgängig machen`
-
-Unter der Schaltfläche wird eine kurze Zusammenfassung dessen angezeigt, was gerade passiert ist.
-
-Wenn der letzte Angriff mehrere Ziele getroffen hat, zeigt das Panel die vollständige Liste der Zeilen, die wiederhergestellt werden.
-
-Wenn du das Undo bestätigst:
-
-- kehren die Ziele in ihren vorherigen Zustand zurück
-- erscheint eine Wiederherstellungsbenachrichtigung
-- wird auch das visuelle Feedback der Karten aktualisiert
-
-## Abschlusszusammenfassung der Begegnung
-
-Wenn der Kampf endet, wechselt das mittlere Panel zur **Abschlusszusammenfassung der Begegnung** für den SL.
-
-Dieser Bildschirm zeigt:
+Die Abschlussansicht zeigt:
 
 - gesamte Runden
 - Dauer
-- getötete Feinde
+- getötete Gegner
 - verursachten Schaden
 - erlittenen Schaden
+- Endzustand der Teilnehmer
 
-## Was am Ende synchronisiert wird
+Endgültige TP und Zustände werden mit den verknüpften Einträgen synchronisiert.
 
-Wenn du den Kampf schließt, speichert DnDino das Ergebnis zurück in die verknüpften Datensätze.
+## Abschlusssynchronisierung
 
-Für Abenteuerhelden werden synchronisiert:
+Beim Schließen synchronisiert DnDino nötige Daten.
+
+Für Abenteuerhelden:
 
 - aktuelle TP
 - temporäre TP
-- manuelle Zustände
+- Zustände
 - Endzustand
 
-Für Orts-Anwesende mit lokalem Zustand werden synchronisiert:
+Für Ortspräsenzen mit lokalem Zustand:
 
 - aktuelle TP
 - temporäre TP
-- manuelle Zustände
+- Zustände
 - Endzustand
 
-Der Kampf aktualisiert außerdem die verknüpften Daten der **Live-Session**, darunter:
+Der Kampf kann außerdem **Live-Sitzungsdaten** und Statistiken speisen.
 
-- verursachten Schaden
-- erlittenen Schaden
-- gefallene Helden
+## Statistiken
 
-## Wann der Kampf am meisten glänzt
+DnDino nutzt abgeschlossene Kämpfe für Statistiken und Diagramme.
 
-DnDinos Kampf glänzt am meisten, wenn du ihn so einsetzt:
+Dazu gehören:
 
-1. du bereitest den Vorkampf gut vor
-2. du nutzt zwei Bildschirme zusammen mit dem **Spielerfenster**
-3. du nutzt Angriffslinks für Monster und NSC
-4. du behältst den SL auf dem Tracker und die Spielenden auf der Präsentation
+- verursachter Schaden
+- erlittener Schaden
+- Kampfdauer
+- Anzahl Kämpfe
+- getötete Gegner
+- Schadensverlauf pro Tag
+- durchschnittliche Sitzungsdauer
+
+Im Abenteuer-Dashboard sammelt **Abenteuerstatistiken** abgeschlossene Kämpfe, auch außerhalb einer einzelnen Live-Sitzung, und gruppiert sie lesbar.
+
+Die Live-Sitzungsübersicht kann Diagramme der in dieser Sitzung abgeschlossenen Kämpfe zeigen.
+
+## Am Sinnvollsten
+
+Der Kampf funktioniert am besten, wenn du:
+
+1. die Vorkampfphase sauber vorbereitest
+2. Initiative und Namen vor dem Start setzt
+3. den linken Tracker nutzt, um die ganze Szene im Blick zu behalten
+4. die Karte des aktuellen Zuges und bei Bedarf die Zielkarte offen hält
+5. Links in Angriffen und Fähigkeiten nutzt
+6. die Übersicht für Gesundheit, Schaden und Ereignisse verwendest
+7. den Kampf erst beendest, wenn alles stimmt, damit Statistiken und Synchronisierung sauber bleiben
 
 !!! tip
-    Auch wenn der Kampf viele Automatismen für Würfe, komplette Angriffe und schnelles Anwenden von Schaden bietet, lässt DnDino weiterhin Raum für eine klassischere Nutzung von Würfeln. Du kannst weiterhin physisch würfeln oder den Wurf außerhalb der App handhaben und den Kampf vor allem dafür nutzen, Werte schnell und konsistent anzuwenden – ohne den mühsamsten Teil: TP-Änderungen jedes Mal von Hand neu auszurechnen.
+    Auch wenn DnDino viele Vorgänge automatisiert, kannst du weiterhin echte Würfel verwenden. Nutze den Kampf dann vor allem, um Schaden, Heilung und Zustände schnell anzuwenden, ohne TP und Statistiken ständig von Hand nachzurechnen.

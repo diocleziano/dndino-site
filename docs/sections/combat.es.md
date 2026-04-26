@@ -1,579 +1,506 @@
 # Combate
 
-El modo **Combate** de DnDino está pensado para ser el tracker operativo principal del enfrentamiento. Esta página describe el modo de combate estándar de DnDino.
+La sección **Combate** es el rastreador operativo de encuentros de DnDino. Está pensada para ser rápida, compacta y legible cuando la mesa está en el momento más intenso de la sesión.
 
-El combate nace siempre en el contexto de un **lugar** y arrastra consigo a los personajes, las presencias locales y los posibles monstruos o PNJ vinculados a esa escena.
+El combate siempre nace desde un **lugar** y puede incluir a los héroes de la aventura, presencias locales, PNJ y monstruos vinculados a la escena.
 
-Esta página explica todo el flujo:
+Esta página explica:
 
-- preparación del precombate
-- gestión de participantes
-- inicio del enfrentamiento
-- uso del panel del turno actual
-- aplicación de daño, curación, condiciones y tiradas de salvación
-- integración con la **Ventana de Jugadores**
-- cierre del enfrentamiento y resumen final
+- la preparación del precombate
+- la introducción y ordenación de iniciativa
+- la pantalla principal de combate
+- los controles del turno
+- ataques, daño, curación, estados y tiradas de salvación
+- enlaces internos en ataques y habilidades
+- resumen lateral, últimos eventos y deshacer
+- Ventana de Jugadores
+- resumen final y estadísticas
 
-## Uso con una o dos pantallas
+## Uno o Dos Monitores
 
-El combate de DnDino funciona muy bien también con **una sola pantalla**: toda la parte operativa permanece en el panel principal y puedes gestionar participantes, turnos, daño, condiciones y el resumen final sin necesidad de un segundo monitor.
+El combate funciona bien en **un solo monitor**: toda la gestión del DJ permanece en la ventana principal, con rastreador de iniciativa, fichas compactas y resumen.
 
-Dicho esto, si tienes una configuración con dos pantallas, puedes usar:
+Con un segundo monitor también puedes usar la **Ventana de Jugadores**:
 
-- una pantalla principal para el panel de control del DM
-- una segunda pantalla o monitor para la **Ventana de Jugadores**
-
-En esta configuración el flujo resulta todavía más cómodo:
-
-- en la pantalla del DM permanecen visibles la lista de participantes, los controles del asalto, el turno actual, los textos de ataque, las notas DM y las ediciones rápidas
-- en la pantalla de los jugadores se muestra una presentación limpia del participante activo, con imagen y overlay contextual
-
-En la práctica:
-
-- con una sola pantalla controlas todo el combate desde la pantalla principal
-- con dos pantallas separas el panel técnico del DM de la presentación para los jugadores
+- en la pantalla del DJ quedan controles, fichas, objetivos, estados y estadísticas
+- en la pantalla de jugadores aparece una presentación más limpia, con imágenes e información visible
 
 !!! tip
-    La segunda pantalla no es obligatoria. Es simplemente una mejora muy útil cuando quieres mostrar a los jugadores imágenes e información del turno actual sin exponer el panel técnico del DM.
+    El segundo monitor es opcional. Sirve para separar la vista operativa del DJ de la presentación más narrativa para los jugadores.
 
-## Cómo funciona la Ventana de Jugadores durante el combate
+## Ventana de Jugadores Durante el Combate
 
-Cuando el combate se inicia, DnDino puede abrir o actualizar automáticamente la **Ventana de Jugadores**.
+Cuando empieza el encuentro, DnDino puede abrir o actualizar la **Ventana de Jugadores**.
 
-Si la presentación para jugadores está activa:
+Si la presentación está activa, puede mostrar:
 
-- al principio del combate puede aparecer una breve **intro** con los participantes
-- durante el combate la ventana se actualiza al **participante del turno actual**
-- al final del enfrentamiento puede aparecer un **resumen final**
+- introducción inicial con los participantes
+- participante del turno actual
+- animaciones de ataque
+- resumen final
 
-Durante el combate, la Ventana de Jugadores no muestra el panel técnico del DM, sino una presentación visual con:
+La superposición puede incluir:
 
-- imagen del participante activo
-- nombre mostrado a los jugadores
-- información de overlay, si está activada
-
-El overlay puede incluir:
-
-- asalto actual
+- ronda
 - PG actuales, máximos y temporales
-- condiciones
+- estados
 - siguiente turno
 
-La información sobre enemigos puede gestionarse por separado respecto a la de los héroes.
+Para enemigos, monstruos y PNJ puedes decidir en ajustes si se muestran nombres y detalles a los jugadores.
 
-## Ajustes de la Ventana de Jugadores y de la segunda pantalla
+## Ajustes Útiles
 
-Las opciones más importantes se encuentran en **Ajustes**, dentro del área dedicada a la presentación del combate y de la ventana de jugadores.
+Las opciones principales están en **Ajustes**, en las secciones de Combate y Ventana de Jugadores.
 
-### Apertura y comportamiento general
+Las más importantes son:
 
-Los ajustes principales son:
-
-- `Abrir ventana de jugadores incluso con un solo monitor`
-- `Mostrar controles de la ventana de jugadores en la barra superior`
-- `Mostrar intro de combate a los jugadores`
+- `Abrir la Ventana de Jugadores también con un solo monitor`
+- `Mostrar controles de la Ventana de Jugadores en la barra superior`
+- `Mostrar introducción de combate a los jugadores`
 - `Mostrar resumen final a los jugadores`
-
-#### Abrir ventana de jugadores incluso con un solo monitor
-
-Si esta opción está activa, DnDino puede abrir automáticamente la Ventana de Jugadores incluso cuando trabajas con un solo monitor.
-
-Si está desactivada:
-
-- con un solo monitor la ventana no se abre automáticamente
-- si ya está abierta, seguirá actualizándose igualmente
-
-#### Mostrar controles de la ventana de jugadores en la barra superior
-
-Si activas esta opción, en la barra superior aparecen botones para:
-
-- abrir manualmente la ventana de jugadores
-- cerrarla manualmente
-
-#### Mostrar intro de combate a los jugadores
-
-Cuando pulsas `Iniciar enfrentamiento`, la Ventana de Jugadores puede mostrar una breve introducción con:
-
-- título del enfrentamiento
-- participantes implicados
-- número de participantes
-
-Si desactivas esta opción, el combate pasa directamente a la presentación del primer participante activo.
-
-#### Mostrar resumen final a los jugadores
-
-Cuando el combate termina, la Ventana de Jugadores puede mostrar un resumen final.
-
-El resumen para jugadores solo muestra datos útiles para ellos, como:
-
-- daño infligido por los héroes
-- daño sufrido por los héroes
-- imagen del enemigo más peligroso
-
-El resumen final para jugadores permanece visible hasta que cambies el contenido de la ventana o la cierres.
-
-### Información mostrada durante el turno
-
-Los ajustes que controlan el overlay del participante activo son:
-
-- `Mostrar asalto en la ventana de jugadores`
-- `Mostrar PG en la ventana de jugadores`
-- `Mostrar condiciones en la ventana de jugadores`
-- `Mostrar siguiente turno en la ventana de jugadores`
-
-### Información sobre enemigos, monstruos y PNJ
-
-Para participantes que no son héroes existen controles dedicados:
-
+- `Mostrar ronda en la pantalla de jugadores`
+- `Mostrar PG en la pantalla de jugadores`
+- `Mostrar estados en la pantalla de jugadores`
+- `Mostrar siguiente turno en la pantalla de jugadores`
 - `Mostrar detalles de PNJ y monstruos a los jugadores`
-- `Mostrar condiciones de los enemigos a los jugadores`
-- `Mostrar nombres de los enemigos a los jugadores`
+- `Mostrar estados de enemigos a los jugadores`
+- `Mostrar nombres de enemigos a los jugadores`
 
-Esto permite decidir si la Ventana de Jugadores debe:
+Terminar un combate siempre pide confirmación, porque al cerrarlo se sincronizan estado y estadísticas.
 
-- mostrar la criatura de una forma más evocadora
-- o mostrar también datos más técnicos
+## Dónde se Abre el Combate
 
-## Dónde se abre el combate
+El combate se crea desde un **lugar**. Una vez abierto, la pantalla cambia según el estado del encuentro:
 
-El combate se crea desde el contexto de un **lugar**. Una vez abierto, DnDino muestra una pantalla dividida en dos columnas principales:
-
-- a la izquierda, el tracker operativo del combate
-- en el centro, el panel principal de la escena o del turno actual
-
-Antes de empezar el combate, el panel central muestra el **Resumen previo al combate**.
-
-Cuando el enfrentamiento está activo, ese mismo panel se convierte en el área del **Turno actual**.
-
-Cuando el combate ha terminado, el panel central muestra el **Resumen final del enfrentamiento** para el DM.
-
-## Estructura general de la pantalla
-
-### Columna izquierda
-
-La columna izquierda contiene:
-
-- `Control de combate`
-- encabezado de la lista de participantes
-- lista ordenada de participantes
-
-La lista queda enmarcada por dos líneas decorativas y funcionales:
-
-- `Inicio del asalto`
-- `Fin del asalto`
-
-### Panel central
-
-El panel central cambia según el estado del combate:
-
-- **antes de empezar** muestra el resumen previo al combate
-- **durante el enfrentamiento** muestra al participante del turno actual
-- **al final del combate** muestra el resumen final del DM
+- **Precombate**: preparas participantes, nombres e iniciativas.
+- **Combate activo**: gestionas turnos, fichas, objetivos y resumen.
+- **Combate concluido**: consultas el resumen final del DJ.
 
 ## Precombate
 
-El precombate sirve para preparar el enfrentamiento antes de lanzar el primer turno.
+El precombate sirve para preparar el encuentro antes del primer turno.
 
-Es la fase en la que más conviene ajustar tres cosas:
+La pantalla usa tres áreas principales:
 
-- el nombre de los monstruos, cuando quieres distinguirlos mejor en mesa
-- la iniciativa de los héroes, introduciéndola manualmente
-- la iniciativa de PNJ y monstruos, tirándola automáticamente o escribiéndola a mano
+- **Héroes**
+- **Monstruos y PNJ**
+- **Orden final**
 
-## Resumen previo al combate
+Arriba también ves el nombre del encuentro, el número de participantes y las acciones principales.
 
-La tarjeta inicial muestra una panorámica rápida con métricas como:
+## Acciones del Precombate
 
-- participantes
-- héroes
-- aliados
-- enemigos
-- PG totales de los enemigos
-- participantes ya en condiciones críticas
-
-## Iniciativa de personajes
-
-La sección `Iniciativa de personajes` reúne a los héroes principales y permite modificar rápidamente la iniciativa antes de ordenar el enfrentamiento.
-
-En cada fila encontrarás:
-
-- nombre del participante
-- subtítulo contextual
-- campo de iniciativa
-- botón `Eliminar`
-
-## PNJ y monstruos
-
-La sección `PNJ y monstruos` está dedicada a los participantes no héroes.
-
-Aquí puedes:
-
-- modificar rápidamente la iniciativa
-- renombrar al vuelo monstruos y PNJ para distinguirlos mejor
-- usar `Init PNJ/Monstruos` para tirar automáticamente la iniciativa
-- introducir manualmente el valor si prefieres usar una tirada hecha fuera de la aplicación
-- eliminar rápidamente a un participante con `Eliminar`
-
-## Acciones principales del precombate
-
-En el resumen previo al combate las acciones principales son:
+Las acciones principales son:
 
 - `Añadir`
-- `Ordenar`
-- `Iniciar enfrentamiento`
+- `Iniciar encuentro`
+- `Init PNJ/Monstruos`, en la columna de monstruos y PNJ
 
-Si al menos un participante sigue con iniciativa `0`, DnDino pide confirmación antes de empezar.
+`Añadir` abre el selector de participantes.
 
-## De dónde pueden salir los participantes
+`Iniciar encuentro` comienza el combate. Si al menos un participante tiene iniciativa `0`, DnDino pide confirmación.
 
-El panel de añadir participantes puede recurrir a tres orígenes:
+`Init PNJ/Monstruos` tira automáticamente la iniciativa solo para monstruos y PNJ. Los héroes están pensados para entrada manual, porque su valor suele venir de la mesa.
+
+## Modificar Nombres e Iniciativa
+
+En precombate puedes corregir:
+
+- nombre mostrado del participante
+- iniciativa
+
+Esto es especialmente útil para monstruos, por ejemplo:
+
+- Goblin 1
+- Goblin 2
+- Capitán goblin
+
+La iniciativa se recoge mientras escribes, sin tener que salir del campo. Las columnas de trabajo no se reordenan continuamente mientras introduces valores: el orden definitivo se aplica al iniciar el combate.
+
+## Orden Final
+
+El panel **Orden final** muestra una vista previa siempre actualizada del orden que se usará al iniciar.
+
+El orden se calcula así:
+
+1. iniciativa más alta
+2. en caso de empate, modificador de Destreza más alto
+3. si el empate continúa, desempate aleatorio
+
+Este panel permite revisar el resultado sin molestar la fase de entrada.
+
+## De Dónde Vienen los Participantes
+
+El panel de añadido puede proponer:
 
 - `Héroes`
 - `Presencias del lugar`
 - `Globales`
 
-### Héroes
+Los héroes ya vinculados a la aventura solo pueden entrar una vez en el mismo combate.
 
-Aquí aparecen los personajes de aventura ya vinculados a la campaña. Cada héroe solo puede entrar una vez en el combate.
+Las presencias del lugar reutilizan su estado local si está disponible.
 
-### Presencias del lugar
+Los monstruos globales pueden añadirse varias veces, porque suelen representar varias copias de la misma criatura.
 
-Aquí aparecen los personajes que ya están presentes en el lugar desde el que nace el combate. Su estado local puede reutilizarse como base para el enfrentamiento.
+## Combate Activo
 
-### Globales
+Al iniciar el encuentro, la pantalla pasa a la gestión operativa.
 
-Aquí aparecen fichas base no vinculadas ya como héroes de la aventura.
+Se divide en tres zonas:
 
-En el caso de los globales:
+- a la izquierda, el **rastreador de iniciativa**
+- en el centro, las fichas compactas del **turno actual** y del **seleccionado**
+- a la derecha, el **resumen** de salud, daño y eventos
 
-- los `Monstruos` pueden añadirse varias veces
-- los `Héroes` y `PNJ` globales no pueden duplicarse como fichas globales puras
+El objetivo es ver la mayor cantidad de información útil posible sin abrir paneles enormes.
 
-## Control de combate
+## Controles del Turno
 
-Una vez iniciado el enfrentamiento, el panel `Control de combate` permanece fijo encima de la lista y contiene las acciones principales del asalto.
+Los controles principales están arriba.
 
-Las filas de botones son:
+A la izquierda:
 
-1. `Añadir` y `Ordenar`
-2. `Iniciar/Pausar` o `Reanudar` y `Finalizar`
-3. `Ant.` y `Sig.`
+- `Anterior`
+- `Pausa` / `Reanudar`
+- `Siguiente`
+- `Deshacer evento`
 
-Además, si existe un último ataque reversible, aparece también:
+A la derecha:
 
-- `Deshacer último ataque`
+- `Añadir`
+- `Ordenar`
+- `Fin combate`
 
-## Lista de participantes
+`Anterior` y `Siguiente` cambian el turno.
 
-La lista de la izquierda es el corazón del seguimiento táctico.
+`Pausa` detiene el temporizador del combate. Cuando está en pausa se convierte en `Reanudar`.
 
-Cada fila cerrada muestra:
+`Deshacer evento` restaura uno de los últimos eventos anulables.
 
-- posición en el orden del turno, por ejemplo `1/8`
-- nombre del participante
-- hasta tres iconos de condiciones
-- distintivo `Turno` si es el participante activo
+`Añadir` inserta más participantes incluso con el combate empezado.
+
+`Ordenar` reconstruye el orden de iniciativa.
+
+`Fin combate` cierra el encuentro tras confirmación.
+
+## Rastreador de Iniciativa
+
+La columna izquierda muestra todos los participantes de forma compacta.
+
+Cada fila muestra:
+
+- iniciativa
+- nombre
 - CA
 - PG
 - PG temporales
+- indicador de estado, si existe
+- color de rol
+
+El color lateral ayuda a distinguir:
+
+- héroes
+- aliados
+- neutrales
+- enemigos
+
+Al hacer clic en una fila:
+
+- el participante se abre como **seleccionado**
+- si ya estaba seleccionado, se cierra la columna del seleccionado
+
+El botón de papelera elimina el participante del combate.
+
+## Fichas del Turno y del Seleccionado
+
+En el centro puedes ver hasta dos fichas:
+
+- el participante del turno
+- el participante seleccionado en la lista
+
+Las fichas tienen anchura fija y desplazamiento vertical propio, para que la página se mantenga estable incluso con textos largos.
+
+En la parte superior aparecen:
+
+- nombre
+- tipo, linaje o subtipo
+- idiomas, si existen
+- valor de desafío y PX, si existen
+- vista previa de imagen
+- botones operativos
+
+## Campos Rápidos
+
+En la ficha puedes modificar directamente:
+
+- PG actuales
+- PG temporales
 - iniciativa
 
-El participante en turno actual se destaca mucho más que los demás:
+La CA se muestra como un valor compacto con icono de escudo.
 
-- franja lateral de color
-- borde reforzado
-- fondo más cálido
-- desplazamiento automático para mantenerlo visible
+Para héroes de la aventura puede aparecer también el botón de **Inspiración heroica**.
 
-La fila también usa efectos de impacto cuando el participante:
+Los cambios de PG se mantienen sincronizados con la lista izquierda y el resumen derecho.
 
-- recibe daño
-- muere
-- es restaurado mediante un undo
+## Acciones del Participante
 
-## Menú contextual en una fila
-
-Con **clic derecho** sobre la tarjeta del participante puedes abrir el menú contextual.
-
-Actualmente la acción disponible es:
-
-- `Eliminar`
-
-## Expansión de la fila del participante
-
-Al hacer clic en la fila, el participante se expande y muestra sus controles rápidos.
-
-En la parte expandida encontrarás:
-
-- nombre editable
-- campos numéricos rápidos:
-  - iniciativa
-  - PG
-  - PG temporales
-  - CA
-- botones de acción
-- bloque de condiciones
-- acceso a habilidades, especiales y conjuros, si existen
-
-## Botones rápidos de la fila
-
-Las acciones rápidas pueden incluir:
+Cada ficha puede mostrar:
 
 - `Atacar`
 - `Daño`
 - `Curar`
-- `Salvación`
-- `Notas DM`
-- `Editar`
-- `Condiciones`
+- `TS`
+- `Estados`
+- `Notas DJ`
+- `Modificar`
 
-Algunos botones solo aparecen cuando tienen sentido para ese participante.
-
-## Atacar
-
-`Atacar` abre un popover donde puedes seleccionar:
-
-- uno o varios objetivos
-- el daño a aplicar
-
-El selector de objetivos usa una lista compacta con:
-
-- nombre
-- CA
-- PG
-- condiciones
-
-El orden de los objetivos no es aleatorio. DnDino intenta proponerte primero los participantes más lógicos según quién esté atacando.
-
-En general:
-
-- si ataca un **Héroe**, primero se proponen los **enemigos**, luego aliados, luego neutrales y por último monstruos de menor prioridad
-- si ataca un participante no héroe, primero se proponen los **héroes**, luego aliados, luego neutrales y por último enemigos menos adecuados
-
-Dentro de cada grupo, los nombres se ordenan alfabéticamente.
-
-El popover no preselecciona nunca un objetivo de forma automática: la elección debe ser manual.
-
-Cuando aplicas un ataque a varios objetivos:
-
-- el daño se aplica a todos los seleccionados
-- el banner superior muestra varias líneas, una por cada objetivo golpeado
-- el undo del último ataque conserva todo el grupo
-
-## Daño y Curación
+`Atacar` abre una ventana con el atacante y la lista de objetivos.
 
 `Daño` aplica daño directo al participante.
 
 `Curar` aplica curación directa.
 
-## Salvación
+`TS` abre las tiradas de salvación disponibles.
 
-`Salvación` abre el popover de **tirada de salvación** basado en las características del participante.
+`Estados` abre una ventana dedicada a gestionar estados.
 
-## Condiciones
+`Notas DJ` guarda apuntes sobre el participante. Las notas no forman parte de deshacer.
 
-El botón `Condiciones` abre el popover dedicado a gestionar estados activos.
+`Modificar` abre el editor completo del participante.
 
-Desde aquí puedes:
+## Lista de Objetivos
 
-- añadir condiciones
-- elegir duración y reglas de expiración
-- vincular el final de una condición al turno de otro participante
+Las listas de objetivos se ordenan según el atacante.
 
-## Notas DM
+Si el atacante es un enemigo:
 
-El botón `Notas DM` siempre está visible.
+- primero héroes y aliados
+- luego neutrales
+- luego enemigos
 
-Abre un popover editable donde puedes escribir notas contextuales sobre el participante. El contenido se guarda al cerrar el popover.
+Si el atacante es un héroe, aliado o neutral:
 
-## Editar
+- primero enemigos
+- luego neutrales
+- luego héroes y aliados
 
-`Editar` abre el panel de edición del participante.
+Dentro de cada grupo, los nombres se ordenan alfabéticamente.
 
-Sirve cuando necesitas intervenir de forma más profunda sobre:
+La línea lateral de color ayuda a reconocer el rol del objetivo.
 
-- iniciativa
-- CA
-- PG máximos, actuales y temporales
-- rol en combate
-- datos contextuales vinculados
+## Ataques, Habilidades y Enlaces Internos
 
-## Turno actual
+Las secciones principales son:
 
-Cuando el combate está activo, el panel central se centra por completo en el participante cuyo turno está en curso.
-
-La tarjeta superior muestra:
-
-- imagen del participante
-- nombre
-- subtítulo
-- CA
-- PG
-- PG temporales
-- iniciativa
-- velocidad
-- inspiración, si el participante es un héroe de aventura
-- condiciones activas
-- características principales
-
-## Paneles centrales durante el turno
-
-Debajo del resumen del turno solo aparecen los paneles que tienen contenido real.
-
-Las secciones posibles son:
-
+- `Estados`
 - `Ataques`
 - `Habilidades especiales`
 - `Habilidades`
-- `Descripción`
 - `Conjuros`
+- `Descripción`
 
-Todos estos paneles son plegables.
+Las secciones son plegables y usan un ligero degradado coherente con el color del título.
 
-Además, usan un ligero acento visual:
+Los textos de ataques, habilidades especiales y habilidades pueden contener enlaces internos creados durante la creación o modificación del personaje.
 
-- `Ataques` rojo
-- `Habilidades` amarillo
-- `Habilidades especiales` verde
-- `Conjuros` celeste
-- `Descripción` gris
+Durante el combate, esos enlaces abren ventanas dedicadas para resolver la acción con más espacio.
 
-## Ataques y enlaces internos
+Los enlaces más útiles son:
 
-La sección `Ataques` es uno de los puntos más fuertes del combate flat.
+- `Ataque completo`
+- `1d20 + MOD`
+- tirada libre
+- tirada de daño
+- enlaces a entidades internas
 
-Si has preparado enlaces internos dentro de los ataques de la ficha base, puedes usarlos directamente durante el combate.
+## Ataque Completo
 
-En particular, el enlace **Ataque completo** es muy útil porque:
+`Ataque completo` está pensado para textos de ataque de monstruos, PNJ o héroes.
 
-- ejecuta tirada de ataque y daño en el mismo popover
-- permite seleccionar uno o varios objetivos
-- propone automáticamente `Daño a aplicar`
-- te deja excluir líneas de daño individuales si has tirado varios componentes y solo quieres aplicar algunos
-- cierra el popover en cuanto aplicas el daño
+Se prepara en la pantalla de creación o modificación del personaje: seleccionas el texto del ataque y creas un enlace de tipo `Ataque completo`. Durante el combate, ese texto se convierte en una acción lista para abrir y resolver.
 
-Esto hace que los ataques de monstruos se resuelvan mucho más rápido en mesa.
+Cuando lo usas en combate:
 
-## Personajes con 0 PG o menos
+- la ventana muestra el nombre del ataque
+- el atacante queda indicado claramente
+- puedes elegir uno o más objetivos
+- puedes gestionar varias líneas de daño
+- aplicas el daño seleccionado a los objetivos elegidos
 
-En combate, los **Héroes** siguen una regla distinta de la de PNJ y monstruos.
+Al crear el enlace, el daño es modular: con el botón `+` añades filas y solo se muestran las que tienen valores.
 
-### Héroes
+## Conjuros
 
-Los héroes pueden bajar de `0` PG.
+Si el participante tiene conjuros, la ficha muestra la sección `Conjuros`.
+
+Los conjuros se agrupan por nivel.
+
+Para monstruos y PNJ, la fila del nivel también puede mostrar el contador de espacios usados, por ejemplo:
+
+- `0/3`
+- `2/3`
+- `3/3`
+
+El botón `Usar` en cada conjuro incrementa el contador de ese nivel.
+
+El contador no bloquea el uso al llegar al máximo: solo sirve como recordatorio para el DJ.
+
+Los trucos no usan espacios.
+
+## Estados
+
+La ventana `Estados` permite:
+
+- añadir estados
+- eliminar estados
+- elegir duración
+- vincular la expiración al turno de un participante
+- gestionar notas relacionadas
+
+Cuando se aplica un estado, DnDino muestra feedback visual en la pantalla y en la fila afectada.
+
+## Héroes a 0 PG o Menos
+
+Los héroes siguen una regla distinta a monstruos y PNJ.
+
+Un héroe puede bajar de `0` PG.
 
 La regla es:
 
-- entre `0` y `-(PG máximos - 1)`, el personaje está **Inconsciente**
-- a `-PG máximos` o menos, el personaje muere de forma definitiva
+- entre `0` y `-(PG máximos - 1)` está **Inconsciente**
+- a `-PG máximos` o menos muere
+- también muere con 3 fallos en las tiradas de salvación contra muerte
 
-Cuando un héroe está a `0` PG o menos pero no ha muerto definitivamente:
+Cuando un héroe está a `0` PG o menos pero no ha muerto, la ficha muestra las **tiradas de salvación contra muerte**.
 
-- permanece en el enfrentamiento
-- en el panel central aparece la tarjeta `Tiradas de salvación contra la muerte`
+Con 3 éxitos vuelve a `1` PG.
 
-Esta tarjeta registra:
+## PNJ y Monstruos a 0 PG
 
-- éxitos
-- fallos
+Para PNJ y monstruos la regla es más simple:
 
-y permite marcar rápidamente:
+- a `0` PG o menos se consideran muertos
+- quedan excluidos del ciclo de turnos
+- el resumen puede mostrarlos como muertos
 
-- `Éxito`
-- `Fallo`
+## Resumen Lateral
 
-Con 3 éxitos, el personaje vuelve a `1` PG. Con 3 fallos, muere.
+La columna derecha muestra el **Resumen**.
 
-### PNJ y Monstruos
+Incluye:
 
-Para los no héroes, el comportamiento es más simple:
-
-- a `0` PG o menos, están muertos
-
-## Turnos, asaltos y participantes fuera del ciclo
-
-Dentro del ciclo de turnos:
-
-- los héroes muertos definitivamente quedan excluidos
-- PNJ y monstruos con `0` PG o menos quedan excluidos
-
-Esto significa que un héroe **Inconsciente** todavía puede tener turno, precisamente porque aún debe gestionar sus tiradas de salvación contra la muerte.
-
-## Banner de impacto y feedback visual
-
-Cuando un ataque impacta, DnDino muestra un gran banner en la parte superior con un resumen inmediato.
-
-Por ejemplo:
-
-- quién golpeó
-- quién fue golpeado
-- cuánto daño se aplicó
-- si el golpe mató al objetivo
-
-Si hay varios objetivos, el banner muestra varias líneas dentro del mismo cuadro.
-
-La **Ventana de Jugadores** también puede mostrar la animación del golpe, incluyendo a todos los objetivos implicados en el mismo ataque multiblanco.
-
-## Deshacer último ataque
-
-Cuando aplicas un ataque, aparece el panel:
-
-- `Deshacer último ataque`
-
-Debajo del botón aparece un breve resumen de lo que acaba de suceder.
-
-Si el último ataque golpeó a varios objetivos, el panel muestra la lista completa de filas que serán restauradas.
-
-Cuando confirmas el undo:
-
-- los objetivos vuelven a su estado anterior
-- aparece una notificación de restauración
-- también se actualiza el feedback visual de las tarjetas
-
-## Resumen final del enfrentamiento
-
-Cuando termina el combate, el panel central pasa al **Resumen final del enfrentamiento** para el DM.
-
-Esta pantalla muestra:
-
-- asaltos totales
+- ronda
 - duración
-- enemigos abatidos
+- turno actual
+- salud de héroes y aliados
+- salud de PNJ y monstruos
 - daño infligido
-- daño sufrido
+- daño recibido
+- últimos 5 eventos
 
-## Qué se sincroniza al final
+Es una vista de control: sirve para leer la situación de un vistazo.
 
-Cuando cierras el combate, DnDino guarda el resultado en los registros vinculados.
+Los PG cambian de color:
 
-Para los héroes de aventura se sincronizan:
+- normal si el participante está bien
+- amarillo por debajo del 50 %
+- naranja por debajo del 10 %
+- rojo a 0 o menos
+
+Para héroes, los PG se tachan solo cuando el personaje ha muerto de verdad, no solo por estar bajo 0 PG.
+
+## Últimos 5 Eventos y Deshacer
+
+El combate conserva los últimos eventos anulables.
+
+Deshacer puede incluir:
+
+- ataques
+- daño aplicado por ataques
+- curación, si se gestiona como evento anulable
+- estados aplicados o modificados
+
+Las `Notas DJ` no se deshacen.
+
+Deshacer también restaura las estadísticas vinculadas, para que daño infligido y recibido sigan siendo coherentes.
+
+## Feedback Visual
+
+Cuando ocurre algo en combate, DnDino muestra feedback inmediato:
+
+- banner superior
+- animación en la fila del participante afectado
+- efecto en el botón `Aplicar`, cuando corresponde
+- actualización del resumen lateral
+
+Así queda claro que el comando se ha recibido.
+
+## Resumen Final del Encuentro
+
+Cuando confirmas el fin del combate, el encuentro deja de ser modificable.
+
+La pantalla final muestra:
+
+- rondas totales
+- duración
+- enemigos derrotados
+- daño infligido
+- daño recibido
+- estado final de los participantes
+
+Los PG finales y los estados se sincronizan con los registros vinculados.
+
+## Sincronización Final
+
+Al cerrar el combate, DnDino sincroniza los datos necesarios.
+
+Para héroes de la aventura:
 
 - PG actuales
 - PG temporales
-- condiciones manuales
+- estados
 - estado final
 
-Para las presencias del lugar con estado local se sincronizan:
+Para presencias del lugar con estado local:
 
 - PG actuales
 - PG temporales
-- condiciones manuales
+- estados
 - estado final
 
-Además, el combate actualiza también los datos de la **sesión en vivo**, incluidos:
+El combate también puede alimentar los datos de la **sesión en vivo** y las estadísticas.
+
+## Estadísticas
+
+DnDino usa los combates concluidos para alimentar estadísticas y gráficos.
+
+Las estadísticas pueden incluir:
 
 - daño infligido
-- daño sufrido
-- héroes caídos
+- daño recibido
+- duración de encuentros
+- número de combates
+- enemigos derrotados
+- evolución del daño por día
+- duración media de sesiones
 
-## Cuándo brilla más el combate
+En el panel de la aventura está disponible **Estadísticas de Aventura**, que reúne combates completados, incluso fuera de una sesión en vivo concreta, y los agrupa de forma consultable.
 
-El combate de DnDino da lo mejor de sí cuando lo usas así:
+El resumen de sesión en vivo puede mostrar gráficos de los combates completados durante esa sesión.
+
+## Cuándo Rinde Mejor
+
+El combate de DnDino funciona mejor cuando:
 
 1. preparas bien el precombate
-2. usas doble pantalla con la **Ventana de Jugadores**
-3. aprovechas los enlaces en los `Ataques` de monstruos y PNJ
-4. mantienes al DM en el tracker y a los jugadores en la presentación
+2. asignas iniciativas y nombres antes de empezar
+3. usas el rastreador izquierdo para no perder la visión general
+4. mantienes abierta la ficha del turno y, si hace falta, la del objetivo seleccionado
+5. aprovechas los enlaces en ataques y habilidades
+6. usas el resumen lateral para salud, daño y eventos recientes
+7. terminas el combate solo cuando estás seguro, para mantener limpias estadísticas y sincronización
 
 !!! tip
-    Aunque el combate ofrece muchas automatizaciones para tiradas, ataques completos y aplicación rápida del daño, DnDino sigue dejando espacio para un uso más clásico de los dados. Puedes seguir tirando físicamente o resolver la tirada fuera de la aplicación y usar el combate sobre todo para aplicar los valores de forma rápida y coherente, evitando la parte más incómoda: recalcular a mano los cambios y actualizaciones de puntos de golpe cada vez.
+    Aunque DnDino automatiza muchas operaciones, puedes seguir tirando dados físicos. En ese caso, usa el combate sobre todo para aplicar daño, curación y estados rápidamente, sin recalcular PG y estadísticas a mano cada vez.

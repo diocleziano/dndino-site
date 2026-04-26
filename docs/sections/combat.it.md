@@ -1,577 +1,508 @@
 # Combattimento
 
-La modalità **Combattimento** di DnDino è pensata per essere il tracker operativo principale dello scontro. Questa pagina descrive la modalità di combattimento standard di DnDino.
+La sezione **Combattimento** di DnDino è il tracker operativo dello scontro. È pensata per essere rapida, compatta e leggibile mentre il tavolo è nel momento più concitato della sessione.
 
-Il combattimento nasce sempre nel contesto di un **luogo** e porta con sé i personaggi, le presenze locali e gli eventuali mostri o PNG collegati a quella scena.
+Il combattimento nasce sempre nel contesto di un **luogo** e porta con sé gli eroi dell'avventura, le presenze locali e gli eventuali mostri o PNG collegati alla scena.
 
-Questa pagina spiega il flusso completo:
+Questa pagina spiega:
 
-- preparazione del pre-combattimento
-- gestione dei partecipanti
-- avvio dello scontro
-- utilizzo del turno corrente
-- applicazione di danni, cure, condizioni e tiri salvezza
-- integrazione con la **Finestra Giocatori**
-- chiusura e riepilogo finale
+- la preparazione del pre-combattimento
+- l'inserimento e l'ordinamento dell'iniziativa
+- la schermata principale del combattimento
+- i controlli del turno
+- attacchi, danni, cure, condizioni e tiri salvezza
+- uso dei link interni negli attacchi e nelle abilità
+- riepilogo laterale, ultimi eventi e undo
+- Finestra Giocatori
+- riepilogo finale e statistiche
 
 ## Utilizzo con uno o due schermi
 
-Il combattimento di DnDino funziona bene anche su **schermo singolo**: tutta la parte operativa resta nel pannello principale e puoi gestire normalmente partecipanti, turni, danni, condizioni e riepilogo finale senza bisogno di un secondo monitor.
+Il combattimento funziona bene anche su **schermo singolo**: tutta la parte operativa resta nella schermata principale, con tracker iniziativa, schede compatte e riepilogo.
 
-Detto questo, se hai a disposizione una configurazione con due schermi, puoi usare:
+Con un secondo schermo puoi usare anche la **Finestra Giocatori**:
 
-- uno schermo principale per il pannello di controllo
-- un secondo schermo o monitor per la **Finestra Giocatori**
-
-In questa configurazione il flusso diventa ancora più comodo:
-
-- sullo schermo del DM restano visibili la lista dei partecipanti, i controlli del round, il turno corrente, i testi di attacco, le note DM e le modifiche rapide
-- sullo schermo dei giocatori viene mostrata una presentazione pulita del partecipante attivo, con immagine e overlay contestuale
-
-In pratica:
-
-- su schermo singolo usi tutto il combattimento dalla schermata principale
-- con due schermi separi il pannello tecnico del DM dalla presentazione per i giocatori
+- sullo schermo del DM restano controlli, schede, bersagli, condizioni e statistiche
+- sullo schermo dei giocatori appare una presentazione pulita con immagini e overlay
 
 !!! tip
-    Il secondo schermo non è obbligatorio: è semplicemente un potenziamento molto utile quando vuoi mostrare ai giocatori immagini e informazioni del turno corrente senza esporre il pannello tecnico del DM.
+    Il secondo schermo non è obbligatorio. Serve solo se vuoi separare il pannello tecnico del DM dalla presentazione evocativa per i giocatori.
 
-## Come funziona la Finestra Giocatori durante il combattimento
+## Finestra Giocatori durante il combattimento
 
-Quando il combattimento viene avviato, DnDino può aprire o aggiornare automaticamente la **Finestra Giocatori**.
+Quando lo scontro viene avviato, DnDino può aprire o aggiornare automaticamente la **Finestra Giocatori**.
 
-Se la presentazione ai giocatori è attiva:
+Se la presentazione è attiva, può mostrare:
 
-- all’inizio del combattimento può comparire una breve **intro** con i partecipanti
-- durante il combattimento la finestra si aggiorna sul **partecipante del turno corrente**
-- alla fine dello scontro può comparire un **riepilogo finale**
+- intro iniziale con i partecipanti
+- partecipante del turno corrente
+- animazione degli attacchi
+- riepilogo finale
 
-Durante il combattimento la finestra dei giocatori non mostra il pannello tecnico del DM, ma una presentazione visiva con:
+L'overlay può includere:
 
-- immagine del partecipante attivo
-- nome mostrato ai giocatori
-- informazioni di overlay, se abilitate
-
-L’overlay può includere:
-
-- round corrente
+- round
 - PF attuali, massimi e temporanei
 - condizioni
 - prossimo turno
 
-Per i nemici, alcune informazioni possono essere trattate in modo separato rispetto agli eroi.
+Per nemici, mostri e PNG puoi scegliere se mostrare nomi e dettagli ai giocatori dalle impostazioni.
 
-## Impostazioni della Finestra Giocatori e del secondo schermo
+## Impostazioni utili
 
-Le impostazioni più importanti si trovano in **Impostazioni**, nella sezione dedicata alla presentazione del combattimento e della finestra giocatori.
+Le opzioni principali sono in **Impostazioni**, nelle sezioni dedicate a combattimento e Finestra Giocatori.
 
-### Apertura e comportamento generale
-
-Le impostazioni principali sono:
+Le più importanti sono:
 
 - `Apri la finestra giocatori anche con un solo monitor`
 - `Mostra controlli finestra giocatori nella topbar`
 - `Mostra intro combattimento ai giocatori`
 - `Mostra riepilogo finale ai giocatori`
-
-#### Apri la finestra giocatori anche con un solo monitor
-
-Se questa opzione è attiva, DnDino può aprire automaticamente la finestra dei giocatori anche quando stai lavorando con un solo monitor.
-
-Se è disattiva:
-
-- con un solo monitor la finestra non si apre automaticamente
-- se però la finestra è già aperta, continua comunque ad aggiornarsi
-
-#### Mostra controlli finestra giocatori nella topbar
-
-Se attivi questa opzione, nella barra superiore dell’app compaiono i pulsanti per:
-
-- aprire manualmente la finestra giocatori
-- chiuderla manualmente
-
-#### Mostra intro combattimento ai giocatori
-
-Quando premi `Avvia scontro`, la finestra dei giocatori può mostrare una breve introduzione con:
-
-- titolo dello scontro
-- partecipanti coinvolti
-- conteggio dei partecipanti
-
-Se disattivi questa opzione, il combattimento passa direttamente alla presentazione del primo partecipante attivo.
-
-#### Mostra riepilogo finale ai giocatori
-
-Quando il combattimento termina, la finestra dei giocatori può mostrare un riepilogo finale.
-
-Nel riepilogo per i giocatori vengono mostrati solo i dati utili a loro, come:
-
-- danni inflitti dagli eroi
-- danni subiti dagli eroi
-- immagine del peggior nemico
-
-Il riepilogo finale dei giocatori resta visibile finché non cambi contenuto nella finestra oppure non la chiudi.
-
-### Informazioni mostrate durante il turno
-
-Le impostazioni che regolano l’overlay del partecipante attivo sono:
-
 - `Mostra round nella schermata giocatori`
 - `Mostra PF nella schermata giocatori`
 - `Mostra condizioni nella schermata giocatori`
 - `Mostra prossimo turno nella schermata giocatori`
-
-### Informazioni su nemici, mostri e PNG
-
-Per i partecipanti che non sono eroi esistono controlli dedicati:
-
 - `Mostra dettagli di PNG e mostri ai giocatori`
 - `Mostra condizioni dei nemici ai giocatori`
 - `Mostra i nomi dei nemici ai giocatori`
 
-Questo permette di decidere se la finestra dei giocatori deve:
-
-- mostrare solo la creatura in modo evocativo
-- oppure mostrare anche dati più tecnici
+La conferma di fine combattimento viene sempre richiesta, perché chiudere uno scontro sincronizza dati e statistiche.
 
 ## Dove si apre il combattimento
 
-Il combattimento viene creato dal contesto del **luogo**. Una volta aperto, DnDino mostra una schermata divisa in due colonne principali:
+Il combattimento si crea dal contesto di un **luogo**. Una volta aperto, la schermata cambia in base allo stato dello scontro:
 
-- a sinistra il tracker operativo del combattimento
-- al centro il pannello principale della scena o del turno corrente
-
-Quando il combattimento non è ancora iniziato, il pannello centrale mostra il **Riepilogo pre-combattimento**.
-
-Quando lo scontro è attivo, lo stesso pannello diventa l’area dedicata al **Turno corrente**.
-
-Quando il combattimento è terminato, il pannello centrale mostra il **Riepilogo finale dello scontro** per il DM.
-
-## La struttura generale della schermata
-
-### Colonna sinistra
-
-La colonna sinistra contiene:
-
-- `Controllo combattimento`
-- intestazione della lista partecipanti
-- lista ordinata dei partecipanti
-
-La lista è racchiusa tra due righe decorative e funzionali:
-
-- `Inizio Round`
-- `Fine Round`
-
-### Pannello centrale
-
-Il pannello centrale cambia in base allo stato del combattimento:
-
-- **prima dell’avvio** mostra il riepilogo pre-combattimento
-- **durante lo scontro** mostra il personaggio o partecipante del turno corrente
-- **a fine combattimento** mostra il riepilogo finale del DM
+- **Pre-combattimento**: prepari partecipanti, nomi e iniziative.
+- **Combattimento attivo**: gestisci turno, schede, bersagli e riepilogo.
+- **Combattimento concluso**: consulti il riepilogo finale del DM.
 
 ## Pre-combattimento
 
-Il pre-combattimento serve per preparare lo scontro prima di far partire il primo turno.
+Il pre-combattimento serve a preparare lo scontro prima del primo turno.
 
-È la fase in cui conviene sistemare soprattutto tre cose:
+In questa fase la schermata usa tre aree principali:
 
-- il nome dei mostri, quando vuoi distinguerli meglio al tavolo
-- le iniziative degli eroi, inserendole a mano
-- le iniziative di PNG e mostri, tirandole automaticamente oppure scrivendole manualmente
+- colonna **Eroi**
+- colonna **Mostri e PNG**
+- pannello **Ordine finale**
 
-## Riepilogo pre-combattimento
+In alto trovi anche il nome dell'incontro, il numero dei partecipanti e le azioni principali.
 
-La card iniziale mostra una panoramica rapida con metriche come:
+## Azioni del pre-combattimento
 
-- partecipanti
-- eroi
-- alleati
-- nemici
-- PF totali dei nemici
-- eventuali partecipanti già in condizioni critiche
-
-## Iniziativa personaggi
-
-La sezione `Iniziativa personaggi` raccoglie gli eroi principali e permette di modificare rapidamente l’iniziativa prima di ordinare lo scontro.
-
-Per ogni riga trovi:
-
-- nome del partecipante
-- sottotitolo contestuale
-- campo iniziativa
-- pulsante `Elimina`
-
-## PNG e mostri
-
-La sezione `PNG e mostri` è dedicata ai partecipanti non eroi.
-
-Qui puoi:
-
-- modificare rapidamente l’iniziativa
-- rinominare al volo mostri e PNG, così da distinguerli meglio per comodità operativa
-- usare `Init PNG/Mostri` per tirare automaticamente l’iniziativa dei non eroi
-- inserire a mano il valore dell’iniziativa se preferisci usare il tiro fatto fuori dall’app
-- rimuovere rapidamente un partecipante con `Elimina`
-
-## Azioni principali del pre-combattimento
-
-Nel riepilogo pre-combattimento le azioni principali sono:
+Le azioni principali sono:
 
 - `Aggiungi`
-- `Ordina`
 - `Avvia scontro`
+- `Init PNG/Mostri`, nella colonna di mostri e PNG
 
-Se almeno un partecipante ha iniziativa `0`, DnDino chiede conferma prima di iniziare.
+`Aggiungi` apre il selettore dei partecipanti.
 
-## Da dove possono arrivare i partecipanti
+`Avvia scontro` avvia il combattimento. Se almeno un partecipante ha iniziativa `0`, DnDino chiede conferma.
 
-Il pannello di aggiunta può raccogliere partecipanti da tre origini:
+`Init PNG/Mostri` tira automaticamente l'iniziativa solo per mostri e PNG. Gli eroi restano pensati per l'inserimento manuale, perché di solito il valore arriva dal tavolo.
+
+## Modifica di nomi e iniziativa
+
+Nel pre-combattimento puoi correggere:
+
+- nome mostrato del partecipante
+- iniziativa
+
+Questo è utile soprattutto per i mostri, per esempio quando vuoi distinguere:
+
+- Goblin 1
+- Goblin 2
+- Capitano Goblin
+
+L'iniziativa viene recepita mentre scrivi, senza dover uscire dal campo. L'ordine delle colonne operative non viene rimescolato continuamente mentre stai digitando: l'ordinamento definitivo viene applicato all'avvio dello scontro.
+
+## Ordine finale
+
+Il pannello **Ordine finale** mostra l'anteprima sempre aggiornata dell'ordine che verrà usato quando avvii lo scontro.
+
+L'ordine viene calcolato così:
+
+1. iniziativa più alta
+2. in caso di pareggio, modificatore di Destrezza più alto
+3. se il pareggio resta, spareggio casuale
+
+Questo pannello serve a controllare il risultato senza disturbare la fase di inserimento.
+
+## Da dove arrivano i partecipanti
+
+Il pannello di aggiunta può proporre:
 
 - `Eroi`
 - `Presenze Luogo`
 - `Globali`
 
-### Eroi
+Gli eroi già collegati all'avventura possono entrare una sola volta nello stesso combattimento.
 
-Qui trovi i personaggi avventura già collegati alla campagna. Ogni eroe può entrare nel combattimento una sola volta.
+Le presenze del luogo riusano lo stato locale, se disponibile.
 
-### Presenze Luogo
+I mostri globali possono essere aggiunti più volte, perché spesso rappresentano più copie della stessa creatura.
 
-Qui trovi i personaggi che sono già presenti nel luogo da cui nasce il combattimento. Il loro stato locale può essere riusato come base per lo scontro.
+## Combattimento attivo
 
-### Globali
+Quando avvii lo scontro, la schermata passa alla gestione operativa.
 
-Qui trovi schede base non già collegate come eroi dell’avventura.
+La struttura è divisa in tre zone:
 
-Nel caso dei globali:
+- a sinistra il **tracker iniziativa**
+- al centro le schede compatte del **turno corrente** e del **selezionato**
+- a destra il **riepilogo** di salute, danni ed eventi
 
-- i `Mostri` possono essere aggiunti più volte
-- `Eroi` e `PNG` globali non possono essere aggiunti in duplicato come schede globali pure
+L'obiettivo è vedere più informazioni possibili senza aprire pannelli enormi.
 
-## Controllo combattimento
+## Controlli del turno
 
-Una volta iniziato lo scontro, il pannello `Controllo combattimento` resta fisso sopra la lista e contiene le azioni principali del round.
+In alto trovi i controlli principali.
 
-Le righe dei pulsanti sono:
+A sinistra:
 
-1. `Aggiungi` e `Ordina`
-2. `Avvia/Pausa` o `Riprendi` e `Fine`
-3. `Prec.` e `Succ.`
+- `Precedente`
+- `Pausa` / `Riprendi`
+- `Successivo`
+- `Annulla evento`
 
-In più, se esiste un ultimo attacco annullabile, compare anche il riquadro:
+A destra:
 
-- `Annulla ultimo attacco`
+- `Aggiungi`
+- `Ordina`
+- `Fine combattimento`
 
-## Lista partecipanti
+`Precedente` e `Successivo` cambiano turno.
 
-La lista a sinistra è il cuore del tracking tattico.
+`Pausa` ferma il timer del combattimento. Quando il combattimento è in pausa diventa `Riprendi`.
 
-Ogni riga chiusa mostra:
+`Annulla evento` permette di ripristinare uno degli ultimi eventi annullabili.
 
-- posizione nel turno, per esempio `1/8`
-- nome del partecipante
-- fino a tre icone condizioni
-- badge `Turno` se è il partecipante attivo
+`Aggiungi` inserisce altri partecipanti anche a combattimento iniziato.
+
+`Ordina` ricostruisce l'ordine di iniziativa.
+
+`Fine combattimento` chiude lo scontro dopo conferma.
+
+## Tracker iniziativa
+
+La colonna sinistra mostra tutti i partecipanti in modo compatto.
+
+Ogni riga mostra:
+
+- iniziativa
+- nome
 - CA
 - PF
 - PF temporanei
+- eventuale indicatore condizioni
+- colore del ruolo
+
+Il colore laterale aiuta a distinguere:
+
+- eroi
+- alleati
+- neutrali
+- nemici
+
+Cliccando una riga:
+
+- il partecipante viene aperto come **selezionato**
+- se era già selezionato, la colonna del selezionato si richiude
+
+Il cestino sulla riga rimuove il partecipante dal combattimento.
+
+## Schede compatte del turno e del selezionato
+
+Al centro puoi vedere fino a due schede:
+
+- il partecipante di turno
+- il partecipante selezionato dalla lista
+
+Le schede hanno larghezza fissa e scroll verticale interno, così la pagina resta stabile anche con testi lunghi.
+
+Nella parte superiore della scheda trovi:
+
+- nome
+- tipo, razza o sottotipo
+- linguaggi, se presenti
+- grado sfida e PE, se presenti
+- anteprima immagine
+- pulsanti operativi
+
+## Campi rapidi nella scheda
+
+Nella scheda puoi modificare direttamente:
+
+- PF attuali
+- PF temporanei
 - iniziativa
 
-Il partecipante di turno è evidenziato in modo molto più forte rispetto agli altri:
+La CA viene mostrata come valore compatto con icona scudo.
 
-- fascia colorata laterale
-- bordo accentuato
-- fondo più caldo
-- scroll automatico della lista per mantenerlo visibile
+Per gli eroi collegati all'avventura può comparire anche il pulsante di **Ispirazione Eroica**.
 
-La riga usa anche effetti di impatto quando il partecipante:
+Le modifiche ai PF vengono tenute allineate con la lista a sinistra e con il riepilogo a destra.
 
-- subisce danni
-- viene ucciso
-- viene ripristinato da un undo
+## Azioni del partecipante
 
-## Menu contestuale sulla riga
-
-Con il **tasto destro** sulla card del partecipante puoi aprire il menu contestuale.
-
-Attualmente l’azione disponibile è:
-
-- `Elimina`
-
-## Espansione della riga partecipante
-
-Cliccando sulla riga, il partecipante si espande e mostra i suoi controlli rapidi.
-
-Nella parte espansa trovi:
-
-- nome modificabile
-- campi numerici rapidi:
-  - iniziativa
-  - PF
-  - PF temporanei
-  - CA
-- pulsanti operativi
-- blocco condizioni
-- accesso ad abilità, speciali e incantesimi, se presenti
-
-## Pulsanti rapidi della riga
-
-Le azioni rapide possono includere:
+Ogni scheda può mostrare i pulsanti:
 
 - `Attacca`
 - `Danni`
 - `Cura`
 - `TS`
+- `Condizioni`
 - `Note DM`
 - `Modifica`
-- `Condizioni`
 
-Alcuni pulsanti compaiono solo se hanno senso per quel partecipante.
-
-## Attacca
-
-`Attacca` apre un popover per selezionare:
-
-- uno o più bersagli
-- il danno da applicare
-
-Il selettore bersagli usa una lista compatta con:
-
-- nome
-- CA
-- PF
-- condizioni
-
-L’ordine dei bersagli non è casuale: DnDino prova a proporti prima i partecipanti più sensati in base a chi sta attaccando.
-
-In generale:
-
-- se attacca un **Eroe**, vengono proposti prima i **nemici**, poi gli alleati, poi i neutrali e infine i mostri fuori da quel contesto prioritario
-- se attacca un partecipante non eroe, vengono proposti prima gli **eroi**, poi gli alleati, poi i neutrali e infine i nemici meno adatti
-
-Dentro ogni gruppo, i nomi vengono poi ordinati alfabeticamente.
-
-Il popover non pre-seleziona automaticamente un bersaglio: la scelta deve essere fatta manualmente.
-
-Quando applichi un attacco a più bersagli:
-
-- il danno viene applicato a tutti i selezionati
-- il banner in alto mostra più righe, una per ogni bersaglio colpito
-- l’undo dell’ultimo attacco conserva tutto il gruppo
-
-## Danni e Cura
+`Attacca` apre una finestra con l'attaccante e la lista dei bersagli.
 
 `Danni` applica danni diretti al partecipante.
 
 `Cura` applica guarigione diretta.
 
-## TS
+`TS` apre i tiri salvezza disponibili.
 
-`TS` apre il popover del **Tiro salvezza** basato sulle caratteristiche del partecipante.
+`Condizioni` apre una finestra dedicata, utile perché la gestione delle condizioni richiede più spazio.
 
-## Condizioni
+`Note DM` salva appunti sul partecipante. Le note non rientrano nell'undo.
 
-Il pulsante `Condizioni` apre il popover dedicato alla gestione degli stati attivi.
+`Modifica` apre la scheda completa del partecipante.
 
-Da qui puoi:
+## Lista bersagli
 
-- aggiungere condizioni
-- scegliere durata e regole di scadenza
-- collegare la fine di una condizione al turno di un altro partecipante
+Le liste bersagli sono ordinate in modo contestuale.
 
-## Note DM
+Se l'attaccante è un nemico:
 
-Il pulsante `Note DM` è sempre visibile.
+- prima eroi e alleati
+- poi neutrali
+- poi nemici
 
-Apre un popover modificabile in cui puoi scrivere note contestuali sul partecipante. Il contenuto viene salvato alla chiusura del popover.
+Se l'attaccante è un eroe, un alleato o un neutrale:
 
-## Modifica
+- prima nemici
+- poi neutrali
+- poi eroi e alleati
 
-`Modifica` apre il pannello editor del partecipante.
+Dentro ogni gruppo i nomi sono ordinati alfabeticamente.
 
-Serve quando hai bisogno di intervenire in modo più profondo su:
+La linea colorata laterale aiuta a riconoscere il ruolo del bersaglio.
 
-- iniziativa
-- CA
-- PF massimi, attuali e temporanei
-- ruolo nel combattimento
-- dati contestuali collegati
+## Attacchi, abilità e link interni
 
-## Turno corrente
+Le sezioni principali sono:
 
-Quando il combattimento è attivo, il pannello centrale si concentra completamente sul partecipante di turno.
-
-La card superiore mostra:
-
-- immagine del partecipante
-- nome
-- sottotitolo
-- CA
-- PF
-- PF temporanei
-- iniziativa
-- velocità
-- ispirazione, se il partecipante è un eroe dell’avventura
-- condizioni attive
-- caratteristiche principali
-
-## Pannelli centrali del turno
-
-Sotto al riepilogo del turno compaiono solo i pannelli che hanno davvero contenuto.
-
-Le sezioni possibili sono:
-
+- `Condizioni`
 - `Attacchi`
 - `Abilità speciali`
 - `Abilità`
-- `Descrizione`
 - `Incantesimi`
+- `Descrizione`
 
-Tutti questi pannelli sono collassabili.
+Le sezioni sono collassabili e usano un leggero gradiente colorato coerente con il titolo.
 
-Inoltre hanno un leggero accento visivo differenziato:
+I testi di attacchi, abilità speciali e abilità possono contenere link interni creati nella scheda del personaggio, durante la creazione o la modifica.
 
-- `Attacchi` rosso
-- `Abilità` giallo
-- `Abilità speciali` verde
-- `Incantesimi` celeste
-- `Descrizione` grigio
+Durante il combattimento questi link aprono finestre dedicate, così puoi risolvere l'azione con più spazio.
 
-## Attacchi e link interni
+I link più utili sono:
 
-La sezione `Attacchi` è uno dei punti più forti del combattimento flat.
+- `Attacco completo`
+- `1d20 + MOD`
+- tiro libero
+- tiro di danno
+- collegamenti a entità interne
 
-Se nella scheda base del personaggio hai preparato i link interni negli attacchi, durante il combattimento puoi usarli direttamente da qui.
+## Attacco completo
 
-In particolare, il link **Attacco completo** è molto utile perché:
+`Attacco completo` è pensato per i testi di attacco dei mostri, PNG o eroi.
 
-- esegue tiro per colpire e danni nello stesso popover
-- permette di selezionare uno o più bersagli
-- propone automaticamente `Danno da applicare`
-- ti lascia escludere singole righe danno se hai tirato più componenti e vuoi applicarne solo alcune
-- chiude il popover appena applichi i danni
+Lo prepari nella schermata di creazione o modifica del personaggio: selezioni il testo dell'attacco e crei un link di tipo `Attacco completo`. Da quel momento, durante il combattimento, quel testo diventa un'azione pronta da aprire e risolvere.
 
-## Personaggi a 0 PF o meno
+Quando lo usi in combattimento:
 
-Nel combattimento i personaggi di tipo **Eroe** seguono una regola diversa da PNG e mostri.
+- la finestra mostra il nome dell'attacco
+- viene indicato l'attaccante
+- puoi scegliere uno o più bersagli
+- puoi gestire più righe di danno
+- applichi il danno selezionato ai bersagli scelti
 
-### Eroi
+In fase di creazione il danno è modulare: puoi aggiungere righe con il pulsante `+` e visualizzare solo quelle valorizzate.
 
-Gli eroi possono scendere sotto `0` PF.
+## Incantesimi
+
+Se il partecipante ha incantesimi, la scheda mostra la sezione `Incantesimi`.
+
+Gli incantesimi sono raggruppati per livello.
+
+Per mostri e PNG, la riga del livello può mostrare anche il contatore degli slot usati, per esempio:
+
+- `0/3`
+- `2/3`
+- `3/3`
+
+Il pulsante `Usa` sul singolo incantesimo incrementa il contatore del livello.
+
+Il contatore non blocca l'utilizzo quando arriva al massimo: serve come promemoria per il DM.
+
+I trucchetti non usano slot.
+
+## Condizioni
+
+La finestra `Condizioni` permette di:
+
+- aggiungere condizioni
+- rimuovere condizioni
+- scegliere durata
+- collegare la scadenza al turno di un partecipante
+- gestire note collegate
+
+Quando una condizione viene applicata, DnDino mostra feedback visivo sulla schermata e sulla riga interessata.
+
+## Eroi a 0 PF o meno
+
+Gli eroi seguono una regola diversa rispetto a mostri e PNG.
+
+Un eroe può scendere sotto `0` PF.
 
 La regola è:
 
-- tra `0` e `-(PF massimi - 1)` il personaggio è **Incosciente**
-- a `-PF massimi` o meno il personaggio muore definitivamente
+- tra `0` e `-(PF massimi - 1)` è **Incosciente**
+- a `-PF massimi` o meno muore
+- muore anche se raggiunge 3 fallimenti nei tiri salvezza contro la morte
 
-Quando un eroe è a `0` PF o meno ma non è morto in modo definitivo:
+Quando un eroe è a `0` PF o meno ma non è morto, nella scheda compare la sezione per i **Tiri salvezza contro la morte**.
 
-- resta nello scontro
-- nel pannello centrale compare la card `Tiri salvezza contro la morte`
+Se raggiunge 3 successi, torna a `1` PF.
 
-Questa card tiene traccia di:
+## PNG e mostri a 0 PF
 
-- successi
-- fallimenti
+Per PNG e mostri la regola è più semplice:
 
-e permette di registrare rapidamente:
+- a `0` PF o meno sono considerati morti
+- vengono esclusi dal ciclo dei turni
+- nel riepilogo possono apparire con stato morto
 
-- `Successo`
-- `Fallimento`
+## Riepilogo laterale
 
-Se raggiunge 3 successi, il personaggio torna a `1` PF. Se raggiunge 3 fallimenti, muore.
+La colonna destra mostra il **Riepilogo**.
 
-### PNG e Mostri
+Qui trovi:
 
-Per i non eroi il comportamento è più semplice:
+- round
+- durata
+- turno corrente
+- salute di eroi e alleati
+- salute di PNG e mostri
+- danni fatti
+- danni subiti
+- ultimi 5 eventi
 
-- a `0` PF o meno risultano morti
+È una vista di controllo: non serve per modificare, ma per leggere subito la situazione dello scontro.
 
-## Turni, round e partecipanti esclusi dal ciclo
+I PF cambiano colore:
 
-Nel ciclo dei turni:
+- normale se il partecipante è in buone condizioni
+- giallo sotto il 50%
+- arancione sotto il 10%
+- rosso se è a 0 o meno
 
-- gli eroi morti definitivamente vengono esclusi
-- PNG e mostri a `0` PF o meno vengono esclusi
+Per gli eroi i PF vengono barrati solo quando il personaggio è morto davvero, non quando è semplicemente sotto 0 PF.
 
-Questo significa che un eroe **Incosciente** può ancora avere un turno, proprio perché deve poter gestire i tiri salvezza contro la morte.
+## Ultimi 5 eventi e undo
 
-## Banner di impatto e feedback visivo
+Il combattimento conserva gli ultimi eventi annullabili.
 
-Quando un attacco va a segno, DnDino mostra un grande banner in alto con un riepilogo immediato.
+Possono rientrare nell'undo:
 
-Per esempio:
+- attacchi
+- danni applicati da attacchi
+- cure, se gestite come evento annullabile
+- condizioni applicate o modificate
 
-- chi colpisce
-- chi viene colpito
-- quanti danni sono stati applicati
-- se il colpo ha ucciso il bersaglio
+Le `Note DM` non vengono annullate.
 
-Se i bersagli sono più di uno, il banner mostra più righe nello stesso riquadro.
+L'undo ripristina anche le statistiche collegate, così i danni fatti e subiti non restano sballati.
 
-Anche la **Finestra Giocatori** può mostrare l’animazione del colpo, includendo tutti i bersagli coinvolti nello stesso attacco multi-target.
+Questo è importante perché la somma dei danni inflitti dai partecipanti deve restare coerente con la somma dei danni subiti.
 
-## Annulla ultimo attacco
+## Feedback visivo
 
-Quando applichi un attacco, compare il pannello:
+Quando succede qualcosa nel combattimento, DnDino mostra feedback immediato:
 
-- `Annulla ultimo attacco`
+- banner in alto
+- animazione sulla riga del partecipante coinvolto
+- effetto sul pulsante `Applica`, quando previsto
+- aggiornamento del riepilogo laterale
 
-Sotto al pulsante viene mostrato un piccolo riepilogo di quello che è successo.
-
-Se l’ultimo attacco ha colpito più bersagli, il pannello mostra l’elenco completo delle righe che verranno ripristinate.
-
-Quando confermi l’annullamento:
-
-- i bersagli tornano allo stato precedente
-- compare una notifica di ripristino
-- anche il feedback visivo delle card viene aggiornato
+Questo serve a capire subito che il comando è stato recepito.
 
 ## Riepilogo finale dello scontro
 
-Quando termini il combattimento, il pannello centrale passa al **Riepilogo finale dello scontro** per il DM.
+Quando confermi la fine del combattimento, lo scontro non è più modificabile.
 
-Questa schermata mostra:
+La schermata finale mostra:
 
 - round totali
 - durata
 - nemici uccisi
 - danni inflitti
 - danni subiti
+- stato finale dei partecipanti
 
-## Cosa viene sincronizzato alla fine
+I PF finali e le condizioni vengono sincronizzati con i record collegati.
 
-Quando chiudi il combattimento, DnDino salva il risultato sui record collegati.
+## Sincronizzazione finale
 
-Per gli eroi dell’avventura vengono sincronizzati:
+Alla chiusura del combattimento, DnDino sincronizza i dati dove serve.
 
-- PF attuali
-- PF temporanei
-- condizioni manuali
-- stato finale
-
-Per le presenze del luogo con stato locale vengono sincronizzati:
+Per gli eroi dell'avventura:
 
 - PF attuali
 - PF temporanei
-- condizioni manuali
+- condizioni
 - stato finale
 
-Inoltre il combattimento aggiorna anche i dati collegati alla **sessione live**, compresi:
+Per le presenze del luogo con stato locale:
+
+- PF attuali
+- PF temporanei
+- condizioni
+- stato finale
+
+Inoltre il combattimento può alimentare i dati della **sessione live** e delle statistiche.
+
+## Statistiche
+
+DnDino usa i combattimenti conclusi per alimentare statistiche e grafici.
+
+Le statistiche possono includere:
 
 - danni inflitti
 - danni subiti
-- eroi caduti
+- durata degli scontri
+- numero di combattimenti
+- nemici uccisi
+- andamento dei danni per giorno
+- durata media delle sessioni
+
+Nella dashboard dell'avventura è disponibile una vista **Statistiche Avventura** che raccoglie i combattimenti completati, anche fuori da una singola sessione live, e li raggruppa in modo consultabile.
+
+Nel riepilogo della sessione live, invece, i grafici possono mostrare i dati dei combattimenti completati durante quella sessione.
 
 ## Quando il combattimento rende di più
 
-Il combattimento di DnDino rende al massimo quando lo usi così:
+Il combattimento di DnDino rende al massimo quando:
 
 1. prepari bene il pre-combattimento
-2. usi il doppio schermo con la **Finestra Giocatori**
-3. sfrutti i link negli `Attacchi` per mostri e PNG
-4. tieni il DM sul tracker e i giocatori sulla presentazione
+2. assegni iniziative e nomi prima di partire
+3. usi il tracker sinistro per non perdere mai il quadro generale
+4. tieni aperta la scheda del turno e, quando serve, quella del bersaglio selezionato
+5. sfrutti i link negli attacchi e nelle abilità
+6. usi il riepilogo laterale per controllare salute, danni e ultimi eventi
+7. chiudi lo scontro solo quando sei sicuro, così statistiche e sincronizzazioni restano pulite
 
 !!! tip
-    Anche se il combattimento offre molte automazioni per tiri, attacchi completi e applicazione rapida dei danni, DnDino lascia comunque spazio a un uso più classico del dado. Puoi continuare a tirare fisicamente o gestire il lancio fuori dall’app e usare il combattimento soprattutto per applicare i valori in modo veloce e coerente, evitando solo la parte più scomoda: ricalcolare ogni volta a mano differenze e aggiornamenti dei punti ferita.
+    Anche se DnDino automatizza molte operazioni, puoi continuare a tirare fisicamente i dadi. In quel caso usa il combattimento soprattutto per applicare danni, cure e condizioni in modo rapido, evitando calcoli manuali ripetuti sui PF e sulle statistiche.

@@ -1,581 +1,508 @@
 # Combat
 
-DnDino’s **Combat** mode is designed to be the main operational tracker for an encounter. This page describes the standard combat mode used in DnDino.
+The **Combat** section is DnDino's encounter tracker. It is designed to be fast, compact, and readable when the table is in the busiest part of the session.
 
-Combat always begins in the context of a **place** and carries with it the linked characters, local occupants, and any monsters or NPCs tied to that scene.
+Combat always starts from a **place** and can include the adventure heroes, local presences, NPCs, and monsters tied to that scene.
 
-This page explains the full flow:
+This page explains:
 
-- pre-combat setup
-- participant management
-- starting the encounter
-- using the current turn panel
-- applying damage, healing, conditions, and saving throws
-- integration with the **Players Window**
-- ending the encounter and reviewing the final summary
+- preparing the pre-combat screen
+- entering and sorting initiative
+- the main combat layout
+- turn controls
+- attacks, damage, healing, conditions, and saving throws
+- internal links in attacks and abilities
+- the side summary, recent events, and undo
+- Player Window support
+- final summary and statistics
 
-## Using One or Two Screens
+## One Screen or Two
 
-DnDino combat works well even on a **single screen**: the full operational side remains in the main panel, and you can manage participants, turns, damage, conditions, and the final summary without needing a second monitor.
+Combat works well on a **single screen**: the whole DM workflow stays in the main window, with the initiative tracker, compact stat blocks, and summary.
 
-That said, if you do have a dual-screen setup, you can use:
+With a second display you can also use the **Player Window**:
 
-- one main screen for the DM control panel
-- a second screen or monitor for the **Players Window**
-
-In that setup the flow becomes even smoother:
-
-- on the DM screen you keep the participant list, round controls, current turn, attack text, DM notes, and quick edits visible
-- on the players’ screen you show a clean presentation of the active participant, with image and contextual overlay
-
-In practice:
-
-- on a single screen, you run the whole encounter from the main combat screen
-- with two screens, you separate the DM’s technical tracker from the player-facing presentation
+- the DM screen keeps controls, sheets, targets, conditions, and statistics
+- the player screen shows a cleaner visual presentation with images and overlays
 
 !!! tip
-    A second screen is not required. It is simply a very useful upgrade when you want to show images and turn information to the players without exposing the DM’s technical panel.
+    A second display is optional. Use it only when you want to separate the DM's operational view from the evocative player presentation.
 
-## How the Players Window Works During Combat
+## Player Window During Combat
 
-When combat starts, DnDino can automatically open or update the **Players Window**.
+When an encounter starts, DnDino can open or update the **Player Window**.
 
-If player presentation is active:
+If the presentation is enabled, it can show:
 
-- at the start of combat it may show a short **intro** with the participants
-- during combat it updates to the **current turn participant**
-- at the end of the encounter it may show a **final summary**
-
-During combat, the Players Window does not show the DM’s technical panel. Instead, it shows a visual presentation with:
-
-- the image of the active participant
-- the name shown to players
-- overlay information, if enabled
+- the combat intro with participants
+- the current turn participant
+- attack animations
+- the final summary
 
 The overlay can include:
 
-- current round
+- round
 - current, maximum, and temporary HP
 - conditions
 - next turn
 
-Enemy information can be handled separately from hero information.
+For enemies, monsters, and NPCs you can decide in settings whether names and details are shown to players.
 
-## Players Window and Second-Screen Settings
+## Useful Settings
 
-The most important options live in **Settings**, in the area dedicated to combat presentation and the players window.
+The main options are in **Settings**, under Combat and Player Window.
 
-### Opening and General Behavior
+The most important ones are:
 
-The main settings are:
-
-- `Open players window even with one monitor`
-- `Show players window controls in the top bar`
+- `Open Player Window even with one monitor`
+- `Show Player Window controls in the top bar`
 - `Show combat intro to players`
 - `Show final summary to players`
-
-#### Open players window even with one monitor
-
-If this option is enabled, DnDino can automatically open the Players Window even when you are working on a single monitor.
-
-If it is disabled:
-
-- on a single monitor the window does not open automatically
-- if it is already open, it will still continue updating
-
-#### Show players window controls in the top bar
-
-If enabled, the top bar shows buttons to:
-
-- open the Players Window manually
-- close it manually
-
-#### Show combat intro to players
-
-When you press `Start encounter`, the Players Window can show a short introduction with:
-
-- encounter title
-- involved participants
-- participant count
-
-If you disable this option, combat jumps straight to the first active participant.
-
-#### Show final summary to players
-
-When combat ends, the Players Window can show a final summary.
-
-The player-facing summary only shows information useful to players, such as:
-
-- damage dealt by heroes
-- damage taken by heroes
-- the image of the most dangerous enemy
-
-The final player summary stays visible until you change the content in the window or close it.
-
-### Information Shown During a Turn
-
-The settings that control the active participant overlay are:
-
-- `Show round in players window`
-- `Show HP in players window`
-- `Show conditions in players window`
-- `Show next turn in players window`
-
-### Information About Enemies, Monsters, and NPCs
-
-For non-hero participants there are dedicated controls:
-
+- `Show round on player screen`
+- `Show HP on player screen`
+- `Show conditions on player screen`
+- `Show next turn on player screen`
 - `Show NPC and monster details to players`
 - `Show enemy conditions to players`
 - `Show enemy names to players`
 
-This lets you decide whether the Players Window should:
-
-- show the creature in a more atmospheric way
-- or display more technical information as well
+Ending combat always asks for confirmation, because closing an encounter synchronizes state and statistics.
 
 ## Where Combat Opens
 
-Combat is created from the context of a **place**. Once opened, DnDino shows a layout with two main columns:
+Combat is created from a **place**. Once opened, the screen changes according to the encounter state:
 
-- on the left, the operational combat tracker
-- in the center, the main scene panel or the current turn panel
-
-Before combat has started, the center panel shows the **Pre-Combat Summary**.
-
-Once the encounter is active, that same panel becomes the **Current Turn** area.
-
-When combat has ended, the center panel shows the **Final Encounter Summary** for the DM.
-
-## General Screen Structure
-
-### Left Column
-
-The left column contains:
-
-- `Combat controls`
-- the participant list header
-- the ordered list of participants
-
-The list is framed by two decorative and functional rows:
-
-- `Round Start`
-- `Round End`
-
-### Center Panel
-
-The center panel changes depending on combat state:
-
-- **before combat starts**, it shows the pre-combat summary
-- **during combat**, it shows the current-turn participant
-- **after combat**, it shows the DM final summary
+- **Pre-combat**: prepare participants, names, and initiative.
+- **Active combat**: manage turns, sheets, targets, and the summary.
+- **Completed combat**: review the DM final summary.
 
 ## Pre-Combat
 
-Pre-combat is where you prepare the encounter before starting the first turn.
+Pre-combat is where you prepare the encounter before the first turn.
 
-This is the stage where it is most useful to adjust three things:
+The screen has three main areas:
 
-- monster names, when you want to distinguish them more clearly at the table
-- hero initiative values, by entering them manually
-- NPC and monster initiative, by rolling automatically or typing it manually
+- **Heroes**
+- **Monsters and NPCs**
+- **Final Order**
 
-## Pre-Combat Summary
+The top area also shows the encounter name, participant count, and main actions.
 
-The opening card shows a quick overview with metrics such as:
+## Pre-Combat Actions
 
-- participants
-- heroes
-- allies
-- enemies
-- total enemy HP
-- participants already in critical condition
+The main actions are:
 
-## Character Initiative
+- `Add`
+- `Start Encounter`
+- `NPC/Monster Init`, inside the monsters and NPCs column
 
-The `Character Initiative` section gathers the main heroes and lets you quickly edit initiative before sorting the encounter.
+`Add` opens the participant picker.
 
-Each row includes:
+`Start Encounter` begins combat. If at least one participant has initiative `0`, DnDino asks for confirmation.
 
-- participant name
-- contextual subtitle
-- initiative field
-- `Delete` button
+`NPC/Monster Init` rolls initiative automatically only for monsters and NPCs. Heroes are normally entered manually, because their initiative usually comes from the table.
 
-## NPCs and Monsters
+## Editing Names and Initiative
 
-The `NPCs and Monsters` section is dedicated to non-hero participants.
+In pre-combat you can adjust:
 
-Here you can:
+- displayed participant name
+- initiative
 
-- edit initiative quickly
-- rename monsters and NPCs on the fly to distinguish them more clearly
-- use `Init NPCs/Monsters` to roll initiative automatically
-- enter initiative manually if you prefer using a roll made outside the app
-- remove a participant quickly with `Delete`
+This is especially useful for monsters, for example:
 
-## Main Pre-Combat Actions
+- Goblin 1
+- Goblin 2
+- Goblin Captain
 
-The main actions in the pre-combat summary are:
+Initiative is read while you type, without waiting for the field to lose focus. The working columns are not continuously reordered while you enter values: final sorting is applied when combat starts.
+
+## Final Order
+
+The **Final Order** panel shows a live preview of the order that will be used when the encounter starts.
+
+The order is calculated as follows:
+
+1. highest initiative
+2. on a tie, highest Dexterity modifier
+3. if still tied, random tiebreaker
+
+This lets you check the result without disturbing initiative entry.
+
+## Where Participants Come From
+
+The add panel can offer:
+
+- `Heroes`
+- `Place Presences`
+- `Global`
+
+Heroes already linked to the adventure can be added only once to the same encounter.
+
+Place presences reuse local state when available.
+
+Global monsters can be added multiple times, because they often represent several copies of the same creature.
+
+## Active Combat
+
+When the encounter starts, the screen switches to the operational combat view.
+
+It is divided into three zones:
+
+- left: the **initiative tracker**
+- center: compact sheets for the **current turn** and the **selected participant**
+- right: the **summary** with health, damage, and recent events
+
+The goal is to keep as much useful information visible as possible without opening oversized panels.
+
+## Turn Controls
+
+The main controls are at the top.
+
+On the left:
+
+- `Previous`
+- `Pause` / `Resume`
+- `Next`
+- `Undo event`
+
+On the right:
 
 - `Add`
 - `Sort`
-- `Start encounter`
+- `End combat`
 
-If at least one participant still has initiative `0`, DnDino asks for confirmation before starting.
+`Previous` and `Next` change the turn.
 
-## Where Participants Can Come From
+`Pause` stops the combat timer. When paused, it becomes `Resume`.
 
-The add-participant panel can pull from three sources:
+`Undo event` restores one of the most recent undoable events.
 
-- `Heroes`
-- `Place Occupants`
-- `Global`
+`Add` inserts new participants during combat.
 
-### Heroes
+`Sort` rebuilds initiative order.
 
-These are the adventure characters already linked to the campaign. Each hero can enter combat only once.
+`End combat` closes the encounter after confirmation.
 
-### Place Occupants
+## Initiative Tracker
 
-These are characters already present in the place from which combat begins. Their local state can be reused as the basis for the encounter.
+The left column shows every participant in a compact list.
 
-### Global
+Each row shows:
 
-These are base sheets not already linked as campaign heroes.
-
-For global entries:
-
-- `Monsters` can be added multiple times
-- global `Heroes` and `NPCs` cannot be duplicated as pure global sheets
-
-## Combat Controls
-
-Once the encounter has started, the `Combat controls` panel stays fixed above the participant list and contains the main round actions.
-
-The button rows are:
-
-1. `Add` and `Sort`
-2. `Start/Pause` or `Resume` and `End`
-3. `Prev.` and `Next`
-
-If there is a reversible last attack, an extra panel also appears:
-
-- `Undo last attack`
-
-## Participant List
-
-The list on the left is the heart of tactical tracking.
-
-Each collapsed row shows:
-
-- turn position, for example `1/8`
-- participant name
-- up to three condition icons
-- `Turn` badge if it is the active participant
+- initiative
+- name
 - AC
 - HP
 - temporary HP
+- condition indicator, when present
+- role color
+
+The side color helps distinguish:
+
+- heroes
+- allies
+- neutral participants
+- enemies
+
+Clicking a row:
+
+- opens that participant as **selected**
+- closes the selected column if the same participant was already selected
+
+The trash button on the row removes that participant from combat.
+
+## Current and Selected Sheets
+
+The center can show up to two sheets:
+
+- the current turn participant
+- the participant selected from the list
+
+Sheets have fixed width and their own vertical scroll, so the page stays stable even with long text.
+
+The top part of the sheet shows:
+
+- name
+- type, ancestry, or subtype
+- languages, when present
+- challenge rating and XP, when present
+- image preview
+- action buttons
+
+## Quick Fields
+
+From the sheet you can edit:
+
+- current HP
+- temporary HP
 - initiative
 
-The active participant is highlighted much more strongly than the others:
+AC is shown as a compact shield value.
 
-- colored side band
-- stronger border
-- warmer background
-- automatic scroll to keep it visible
+Adventure heroes can also show the **Heroic Inspiration** button.
 
-The row also uses impact effects when the participant:
+HP changes stay synchronized with the left list and the right summary.
 
-- takes damage
-- is killed
-- is restored by an undo
+## Participant Actions
 
-## Context Menu on a Row
-
-By **right-clicking** a participant card you can open the context menu.
-
-Currently the available action is:
-
-- `Delete`
-
-## Expanding a Participant Row
-
-Clicking a row expands it and reveals its quick controls.
-
-In the expanded area you will find:
-
-- editable name
-- quick numeric fields:
-  - initiative
-  - HP
-  - temporary HP
-  - AC
-- action buttons
-- conditions block
-- access to abilities, specials, and spells, when present
-
-## Quick Row Buttons
-
-The quick actions can include:
+Each sheet can show:
 
 - `Attack`
 - `Damage`
 - `Heal`
 - `Save`
+- `Conditions`
 - `DM Notes`
 - `Edit`
-- `Conditions`
 
-Some buttons only appear when they make sense for that participant.
-
-## Attack
-
-`Attack` opens a popover where you can select:
-
-- one or more targets
-- the damage to apply
-
-The target selector uses a compact list with:
-
-- name
-- AC
-- HP
-- conditions
-
-Target ordering is not random. DnDino tries to suggest the most relevant participants first depending on who is attacking.
-
-In general:
-
-- if a **Hero** attacks, **enemies** come first, then allies, then neutrals, and finally lower-priority monsters
-- if a non-hero attacks, **heroes** come first, then allies, then neutrals, and finally less relevant enemies
-
-Inside each group, names are then sorted alphabetically.
-
-The popover never pre-selects a target automatically: target selection must be manual.
-
-When you apply one attack to multiple targets:
-
-- damage is applied to all selected targets
-- the top banner shows multiple rows, one for each hit target
-- the last-attack undo keeps the whole group together
-
-## Damage and Heal
+`Attack` opens a window with the attacker and target list.
 
 `Damage` applies direct damage to the participant.
 
 `Heal` applies direct healing.
 
-## Save
+`Save` opens the available saving throws.
 
-`Save` opens the **Saving Throw** popover based on the participant’s stats.
+`Conditions` opens a dedicated window for managing conditions.
 
-## Conditions
+`DM Notes` stores notes about the participant. Notes are not part of undo.
 
-The `Conditions` button opens the dedicated popover for active states.
+`Edit` opens the full participant editor.
 
-From here you can:
+## Target Lists
 
-- add conditions
-- set duration and expiration rules
-- link the end of a condition to another participant’s turn
+Target lists are ordered according to the attacker.
 
-## DM Notes
+If the attacker is an enemy:
 
-The `DM Notes` button is always visible.
+- heroes and allies first
+- then neutral participants
+- then enemies
 
-It opens an editable popover where you can write contextual notes about the participant. The content is saved when the popover closes.
+If the attacker is a hero, ally, or neutral participant:
 
-## Edit
+- enemies first
+- then neutral participants
+- then heroes and allies
 
-`Edit` opens the participant editor panel.
+Names are sorted alphabetically inside each group.
 
-This is useful when you need to make deeper changes to:
+The colored side line helps identify the target's role.
 
-- initiative
-- AC
-- maximum, current, and temporary HP
-- combat role
-- linked contextual data
+## Attacks, Abilities, and Internal Links
 
-## Current Turn
+The main collapsible sections are:
 
-When combat is active, the center panel focuses completely on the participant whose turn it is.
-
-The top card shows:
-
-- participant image
-- name
-- subtitle
-- AC
-- HP
-- temporary HP
-- initiative
-- speed
-- inspiration, if the participant is an adventure hero
-- active conditions
-- main stats
-
-## Center Panels During the Turn
-
-Below the turn summary, only panels with real content are shown.
-
-Possible sections are:
-
+- `Conditions`
 - `Attacks`
 - `Special Abilities`
 - `Abilities`
-- `Description`
 - `Spells`
+- `Description`
 
-All of them are collapsible.
+Each section uses a subtle gradient tied to its title color.
 
-They also use light visual accents:
+Attack, special ability, and ability text can contain internal links created while creating or editing the character.
 
-- `Attacks` red
-- `Abilities` yellow
-- `Special Abilities` green
-- `Spells` light blue
-- `Description` gray
+During combat, these links open dedicated windows so you have more room to resolve the action.
 
-## Attacks and Internal Links
+The most useful links are:
 
-The `Attacks` section is one of the strongest parts of flat combat.
+- `Full Attack`
+- `1d20 + MOD`
+- free roll
+- damage roll
+- links to internal entities
 
-If you prepared internal links inside the base sheet attack text, you can use them directly during combat.
+## Full Attack
 
-In particular, the **Full Attack** link is extremely useful because it:
+`Full Attack` is meant for monster, NPC, or hero attack text.
 
-- rolls attack and damage inside the same popover
-- lets you select one or more targets
-- automatically suggests `Damage to apply`
-- lets you exclude individual damage rows if you rolled multiple components and only want to apply some of them
-- closes the popover as soon as damage is applied
+You prepare it in the character creation or editing screen: select the attack text and create a `Full Attack` link. During combat, that text becomes an action ready to open and resolve.
 
-This makes monster attacks much faster to run at the table.
+When used in combat:
 
-## Characters at 0 HP or Lower
+- the window shows the attack name
+- the attacker is clearly shown
+- you can choose one or more targets
+- you can manage multiple damage rows
+- you apply selected damage to the chosen targets
 
-In combat, **Heroes** follow a different rule from NPCs and monsters.
+While creating the link, damage is modular: use the `+` button to add rows and show only the rows that have values.
 
-### Heroes
+## Spells
 
-Heroes can go below `0` HP.
+If the participant has spells, the sheet shows the `Spells` section.
+
+Spells are grouped by level.
+
+For monsters and NPCs, the level row can also show the used slot counter, for example:
+
+- `0/3`
+- `2/3`
+- `3/3`
+
+The `Use` button on each spell increases the counter for that spell level.
+
+The counter does not block usage when it reaches the maximum. It is only a reminder for the DM.
+
+Cantrips do not use slots.
+
+## Conditions
+
+The `Conditions` window lets you:
+
+- add conditions
+- remove conditions
+- choose duration
+- bind expiration to a participant's turn
+- manage related notes
+
+When a condition is applied, DnDino shows visual feedback on the screen and on the affected row.
+
+## Heroes at 0 HP or Less
+
+Heroes follow different rules from monsters and NPCs.
+
+A hero can drop below `0` HP.
 
 The rule is:
 
-- between `0` and `-(max HP - 1)`, the character is **Unconscious**
-- at `-max HP` or lower, the character dies permanently
+- from `0` to `-(maximum HP - 1)`, the hero is **Unconscious**
+- at `-maximum HP` or below, the hero dies
+- the hero also dies after 3 failed death saving throws
 
-When a hero is at `0` HP or lower but not permanently dead:
+When a hero is at `0` HP or less but not dead, the sheet shows **Death Saving Throws**.
 
-- they remain in the encounter
-- the center panel shows the `Death Saving Throws` card
+After 3 successes, the hero returns to `1` HP.
 
-This card tracks:
+## NPCs and Monsters at 0 HP
 
-- successes
-- failures
+For NPCs and monsters, the rule is simpler:
 
-and lets you quickly register:
+- at `0` HP or less, they are considered dead
+- they are excluded from the turn cycle
+- the summary can show them as dead
 
-- `Success`
-- `Failure`
+## Side Summary
 
-At 3 successes, the character returns to `1` HP. At 3 failures, they die.
+The right column shows the **Summary**.
 
-### NPCs and Monsters
+It includes:
 
-For non-heroes, behavior is simpler:
+- round
+- duration
+- current turn
+- hero and ally health
+- NPC and monster health
+- damage dealt
+- damage taken
+- last 5 events
 
-- at `0` HP or lower, they are dead
+This is a read-only control view: it helps you understand the encounter at a glance.
 
-## Turns, Rounds, and Participants Excluded from the Cycle
+HP changes color:
 
-Inside the turn cycle:
+- normal when the participant is in good shape
+- yellow below 50%
+- orange below 10%
+- red at 0 or less
 
-- permanently dead heroes are excluded
-- NPCs and monsters at `0` HP or lower are excluded
+For heroes, HP is struck through only when the hero is truly dead, not merely below 0 HP.
 
-This means an **Unconscious** hero can still receive a turn, precisely because death saves still need to be handled.
+## Last 5 Events and Undo
 
-## Impact Banners and Visual Feedback
+Combat keeps the latest undoable events.
 
-When an attack hits, DnDino shows a large banner at the top with an immediate recap.
+Undo can include:
 
-For example:
+- attacks
+- damage applied by attacks
+- healing, when handled as an undoable event
+- applied or modified conditions
 
-- who hit
-- who was hit
-- how much damage was applied
-- whether the blow killed the target
+`DM Notes` are not undone.
 
-If there are multiple targets, the banner shows multiple lines in the same box.
+Undo also restores linked statistics, so damage dealt and taken stay consistent.
 
-The **Players Window** can also show the hit animation, including all targets involved in the same multi-target attack.
+This matters because total damage dealt by participants should stay coherent with total damage taken.
 
-## Undo Last Attack
+## Visual Feedback
 
-When you apply an attack, the panel
+When something happens in combat, DnDino gives immediate feedback:
 
-- `Undo last attack`
+- top banner
+- animation on the affected participant row
+- feedback on the `Apply` button, when available
+- side summary update
 
-appears.
-
-Below the button you see a short summary of what just happened.
-
-If the last attack hit multiple targets, the panel shows the full list of rows that will be restored.
-
-When you confirm the undo:
-
-- targets return to their previous state
-- a restore notification appears
-- card visual feedback updates as well
+This makes it clear that the command was received.
 
 ## Final Encounter Summary
 
-When combat ends, the center panel switches to the **Final Encounter Summary** for the DM.
+When you confirm the end of combat, the encounter can no longer be edited.
 
-This screen shows:
+The final screen shows:
 
 - total rounds
 - duration
 - enemies killed
 - damage dealt
 - damage taken
+- final participant state
 
-## What Gets Synchronized at the End
+Final HP and conditions are synchronized with linked records.
 
-When you close combat, DnDino saves the outcome back to the linked records.
+## Final Synchronization
 
-For adventure heroes it synchronizes:
+When combat closes, DnDino synchronizes the data where needed.
 
-- current HP
-- temporary HP
-- manual conditions
-- final state
-
-For place occupants with local state it synchronizes:
+For adventure heroes:
 
 - current HP
 - temporary HP
-- manual conditions
+- conditions
 - final state
 
-Combat also updates the linked **live session** data, including:
+For place presences with local state:
+
+- current HP
+- temporary HP
+- conditions
+- final state
+
+Combat can also feed **live session** data and statistics.
+
+## Statistics
+
+DnDino uses completed combats to build statistics and charts.
+
+Statistics can include:
 
 - damage dealt
 - damage taken
-- fallen heroes
+- encounter duration
+- number of combats
+- enemies killed
+- damage trends by day
+- average session duration
 
-## When Combat Shines the Most
+The adventure dashboard includes **Adventure Statistics**, which collects completed combats, even outside a single live session, and groups them in a readable way.
 
-DnDino combat shines most when you use it like this:
+The live session summary can show charts for combats completed during that session.
 
-1. you prepare pre-combat carefully
-2. you use a second screen with the **Players Window**
-3. you rely on attack links for monsters and NPCs
-4. you keep the DM on the tracker and the players on the presentation
+## Best Use
+
+DnDino combat works best when you:
+
+1. prepare pre-combat carefully
+2. assign initiative and names before starting
+3. use the left tracker to keep the whole encounter visible
+4. keep the current turn sheet open and, when useful, also the selected target sheet
+5. use links in attacks and abilities
+6. use the side summary for health, damage, and recent events
+7. end combat only when you are sure, so statistics and synchronization stay clean
 
 !!! tip
-    Even though combat offers many automations for rolls, full attacks, and fast damage application, DnDino still leaves room for a more traditional way of using dice. You can keep rolling physically or handle the roll outside the app and use combat mainly to apply values quickly and consistently, avoiding the most tedious part: recalculating HP changes by hand every time.
+    Even though DnDino automates many operations, you can still roll physical dice. In that case, use combat mainly to apply damage, healing, and conditions quickly, without repeatedly recalculating HP and statistics by hand.

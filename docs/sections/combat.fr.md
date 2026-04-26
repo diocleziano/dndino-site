@@ -1,581 +1,506 @@
 # Combat
 
-Le mode **Combat** de DnDino est pensé pour être le tracker opérationnel principal d’un affrontement. Cette page décrit le mode de combat standard utilisé dans DnDino.
+La section **Combat** est le suivi opérationnel des affrontements dans DnDino. Elle est conçue pour rester rapide, compacte et lisible quand la scène devient la plus intense autour de la table.
 
-Le combat naît toujours dans le contexte d’un **lieu** et emporte avec lui les personnages, les présences locales et les éventuels monstres ou PNJ liés à cette scène.
+Un combat naît toujours depuis un **lieu** et peut inclure les héros de l'aventure, les présences locales, les PNJ et les monstres liés à la scène.
 
-Cette page explique tout le flux :
+Cette page explique :
 
-- préparation du pré-combat
-- gestion des participants
-- lancement de l’affrontement
-- utilisation du tour en cours
-- application des dégâts, soins, conditions et jets de sauvegarde
-- intégration avec la **Fenêtre Joueurs**
-- clôture de l’affrontement et résumé final
+- la préparation du pré-combat
+- la saisie et le tri de l'initiative
+- l'écran principal de combat
+- les contrôles de tour
+- attaques, dégâts, soins, états et jets de sauvegarde
+- les liens internes dans les attaques et capacités
+- le récapitulatif latéral, les derniers événements et l'annulation
+- la Fenêtre Joueurs
+- le résumé final et les statistiques
 
-## Utilisation avec un ou deux écrans
+## Un ou Deux Écrans
 
-Le combat de DnDino fonctionne très bien aussi sur **un seul écran** : toute la partie opérationnelle reste dans le panneau principal, et tu peux gérer normalement les participants, les tours, les dégâts, les conditions et le résumé final sans second moniteur.
+Le combat fonctionne très bien sur **un seul écran** : tout le travail du MJ reste dans la fenêtre principale, avec le suivi d'initiative, les fiches compactes et le récapitulatif.
 
-Cela dit, si tu disposes d’une configuration à deux écrans, tu peux utiliser :
+Avec un second écran, tu peux aussi utiliser la **Fenêtre Joueurs** :
 
-- un écran principal pour le panneau de contrôle du MJ
-- un deuxième écran ou moniteur pour la **Fenêtre Joueurs**
-
-Dans cette configuration, le flux devient encore plus confortable :
-
-- sur l’écran du MJ restent visibles la liste des participants, les contrôles de round, le tour en cours, les textes d’attaque, les notes MJ et les modifications rapides
-- sur l’écran des joueurs apparaît une présentation propre du participant actif, avec image et overlay contextuel
-
-En pratique :
-
-- sur un seul écran, tu utilises tout le combat depuis l’écran principal
-- avec deux écrans, tu sépares le panneau technique du MJ de la présentation destinée aux joueurs
+- l'écran du MJ garde les contrôles, fiches, cibles, états et statistiques
+- l'écran des joueurs affiche une présentation plus propre, avec images et informations visibles
 
 !!! tip
-    Le second écran n’est pas obligatoire. C’est simplement un excellent confort lorsque tu veux montrer aux joueurs des images et les informations du tour en cours sans exposer le panneau technique du MJ.
+    Le second écran est optionnel. Il sert surtout à séparer la vue technique du MJ de la présentation destinée aux joueurs.
 
-## Fonctionnement de la Fenêtre Joueurs pendant le combat
+## Fenêtre Joueurs Pendant le Combat
 
-Quand le combat démarre, DnDino peut ouvrir ou mettre à jour automatiquement la **Fenêtre Joueurs**.
+Quand l'affrontement commence, DnDino peut ouvrir ou mettre à jour la **Fenêtre Joueurs**.
 
-Si la présentation joueurs est active :
+Si la présentation est active, elle peut montrer :
 
-- au début du combat, une courte **intro** peut apparaître avec les participants
-- pendant le combat, la fenêtre se met à jour sur le **participant du tour en cours**
-- à la fin de l’affrontement, un **résumé final** peut apparaître
+- l'introduction du combat avec les participants
+- le participant dont c'est le tour
+- les animations d'attaque
+- le résumé final
 
-Pendant le combat, la Fenêtre Joueurs n’affiche pas le panneau technique du MJ, mais une présentation visuelle avec :
+L'affichage peut inclure :
 
-- l’image du participant actif
-- le nom affiché aux joueurs
-- les informations d’overlay, si elles sont activées
-
-L’overlay peut inclure :
-
-- round en cours
-- PV actuels, maximum et temporaires
-- conditions
+- round
+- PV actuels, maximums et temporaires
+- états
 - prochain tour
 
-Les informations sur les ennemis peuvent être gérées séparément de celles des héros.
+Pour les ennemis, monstres et PNJ, les réglages permettent de choisir si les noms et détails sont visibles par les joueurs.
 
-## Réglages de la Fenêtre Joueurs et du second écran
+## Réglages Utiles
 
-Les options les plus importantes se trouvent dans **Réglages**, dans la section dédiée à la présentation du combat et à la fenêtre joueurs.
+Les options principales se trouvent dans **Réglages**, dans les sections Combat et Fenêtre Joueurs.
 
-### Ouverture et comportement général
+Les plus importantes sont :
 
-Les principaux réglages sont :
-
-- `Ouvrir la fenêtre joueurs même avec un seul moniteur`
-- `Afficher les contrôles de la fenêtre joueurs dans la topbar`
-- `Afficher l’intro du combat aux joueurs`
+- `Ouvrir la Fenêtre Joueurs même avec un seul écran`
+- `Afficher les contrôles de la Fenêtre Joueurs dans la barre supérieure`
+- `Afficher l'intro du combat aux joueurs`
 - `Afficher le résumé final aux joueurs`
-
-#### Ouvrir la fenêtre joueurs même avec un seul moniteur
-
-Si cette option est active, DnDino peut ouvrir automatiquement la Fenêtre Joueurs même lorsque tu travailles avec un seul écran.
-
-Si elle est désactivée :
-
-- sur un seul écran, la fenêtre ne s’ouvre pas automatiquement
-- si elle est déjà ouverte, elle continue malgré tout à se mettre à jour
-
-#### Afficher les contrôles de la fenêtre joueurs dans la topbar
-
-Si tu actives cette option, la barre supérieure de l’application affiche des boutons pour :
-
-- ouvrir manuellement la fenêtre joueurs
-- la fermer manuellement
-
-#### Afficher l’intro du combat aux joueurs
-
-Quand tu appuies sur `Démarrer l’affrontement`, la Fenêtre Joueurs peut afficher une courte introduction avec :
-
-- titre de l’affrontement
-- participants impliqués
-- nombre de participants
-
-Si tu désactives cette option, le combat passe directement à la présentation du premier participant actif.
-
-#### Afficher le résumé final aux joueurs
-
-Quand le combat se termine, la Fenêtre Joueurs peut afficher un résumé final.
-
-Le résumé destiné aux joueurs ne montre que les données utiles pour eux, comme :
-
-- dégâts infligés par les héros
-- dégâts subis par les héros
-- image du pire ennemi
-
-Le résumé final des joueurs reste visible tant que tu ne changes pas le contenu de la fenêtre ou que tu ne la fermes pas.
-
-### Informations affichées pendant le tour
-
-Les réglages qui contrôlent l’overlay du participant actif sont :
-
-- `Afficher le round dans la fenêtre joueurs`
-- `Afficher les PV dans la fenêtre joueurs`
-- `Afficher les conditions dans la fenêtre joueurs`
-- `Afficher le prochain tour dans la fenêtre joueurs`
-
-### Informations sur ennemis, monstres et PNJ
-
-Pour les participants non héros, il existe des contrôles dédiés :
-
+- `Afficher le round sur l'écran joueurs`
+- `Afficher les PV sur l'écran joueurs`
+- `Afficher les états sur l'écran joueurs`
+- `Afficher le prochain tour sur l'écran joueurs`
 - `Afficher les détails des PNJ et monstres aux joueurs`
-- `Afficher les conditions des ennemis aux joueurs`
+- `Afficher les états des ennemis aux joueurs`
 - `Afficher les noms des ennemis aux joueurs`
 
-Cela permet de décider si la Fenêtre Joueurs doit :
+La fin du combat demande toujours confirmation, car fermer un affrontement synchronise l'état et les statistiques.
 
-- montrer la créature de façon plus évocatrice
-- ou afficher aussi des données plus techniques
+## Où S'ouvre le Combat
 
-## Où s’ouvre le combat
+Le combat est créé depuis un **lieu**. Une fois ouvert, l'écran change selon l'état de l'affrontement :
 
-Le combat est créé depuis le contexte du **lieu**. Une fois ouvert, DnDino affiche un écran divisé en deux colonnes principales :
+- **Pré-combat** : préparer participants, noms et initiatives.
+- **Combat actif** : gérer tours, fiches, cibles et récapitulatif.
+- **Combat terminé** : consulter le résumé final du MJ.
 
-- à gauche, le tracker opérationnel du combat
-- au centre, le panneau principal de la scène ou du tour en cours
+## Pré-Combat
 
-Avant le début du combat, le panneau central affiche le **Résumé pré-combat**.
+Le pré-combat sert à préparer l'affrontement avant le premier tour.
 
-Quand l’affrontement est actif, ce même panneau devient la zone du **Tour en cours**.
+L'écran comporte trois zones principales :
 
-Quand le combat est terminé, le panneau central affiche le **Résumé final de l’affrontement** pour le MJ.
+- **Héros**
+- **Monstres et PNJ**
+- **Ordre final**
 
-## Structure générale de l’écran
+En haut, tu vois aussi le nom de l'affrontement, le nombre de participants et les actions principales.
 
-### Colonne de gauche
+## Actions du Pré-Combat
 
-La colonne de gauche contient :
-
-- `Contrôle du combat`
-- l’en-tête de la liste des participants
-- la liste ordonnée des participants
-
-La liste est encadrée par deux lignes décoratives et fonctionnelles :
-
-- `Début du round`
-- `Fin du round`
-
-### Panneau central
-
-Le panneau central change selon l’état du combat :
-
-- **avant le démarrage**, il affiche le résumé pré-combat
-- **pendant l’affrontement**, il affiche le participant du tour en cours
-- **à la fin du combat**, il affiche le résumé final du MJ
-
-## Pré-combat
-
-Le pré-combat sert à préparer l’affrontement avant de lancer le premier tour.
-
-C’est le moment où il est surtout utile d’ajuster trois choses :
-
-- le nom des monstres, quand tu veux mieux les distinguer à la table
-- les initiatives des héros, en les saisissant manuellement
-- les initiatives des PNJ et monstres, en les lançant automatiquement ou en les écrivant à la main
-
-## Résumé pré-combat
-
-La carte initiale montre une vue rapide avec des indicateurs comme :
-
-- participants
-- héros
-- alliés
-- ennemis
-- PV totaux des ennemis
-- éventuels participants déjà dans un état critique
-
-## Initiative des personnages
-
-La section `Initiative des personnages` rassemble les héros principaux et permet de modifier rapidement l’initiative avant de trier l’affrontement.
-
-Chaque ligne contient :
-
-- nom du participant
-- sous-titre contextuel
-- champ initiative
-- bouton `Supprimer`
-
-## PNJ et monstres
-
-La section `PNJ et monstres` est dédiée aux participants non héros.
-
-Ici, tu peux :
-
-- modifier rapidement l’initiative
-- renommer à la volée monstres et PNJ pour mieux les distinguer
-- utiliser `Init PNJ/Monstres` pour lancer automatiquement leur initiative
-- saisir manuellement la valeur d’initiative si tu préfères utiliser un lancer fait hors de l’application
-- retirer rapidement un participant avec `Supprimer`
-
-## Actions principales du pré-combat
-
-Dans le résumé pré-combat, les actions principales sont :
+Les actions principales sont :
 
 - `Ajouter`
-- `Trier`
-- `Démarrer l’affrontement`
+- `Démarrer l'affrontement`
+- `Init PNJ/Monstres`, dans la colonne monstres et PNJ
 
-Si au moins un participant a encore une initiative à `0`, DnDino demande une confirmation avant de démarrer.
+`Ajouter` ouvre le sélecteur de participants.
 
-## D’où peuvent venir les participants
+`Démarrer l'affrontement` lance le combat. Si au moins un participant a une initiative à `0`, DnDino demande confirmation.
 
-Le panneau d’ajout de participants peut aller chercher des participants depuis trois origines :
+`Init PNJ/Monstres` lance automatiquement l'initiative uniquement pour les monstres et PNJ. Les héros restent prévus pour une saisie manuelle, car leur initiative vient généralement de la table.
+
+## Modifier Noms et Initiative
+
+Dans le pré-combat, tu peux corriger :
+
+- le nom affiché du participant
+- l'initiative
+
+C'est surtout utile pour les monstres, par exemple :
+
+- Gobelin 1
+- Gobelin 2
+- Capitaine gobelin
+
+L'initiative est prise en compte pendant la saisie, sans attendre de quitter le champ. Les colonnes de travail ne se réordonnent pas sans cesse pendant que tu écris : le tri définitif est appliqué au lancement du combat.
+
+## Ordre Final
+
+Le panneau **Ordre final** montre l'aperçu toujours à jour de l'ordre qui sera utilisé au lancement.
+
+L'ordre est calculé ainsi :
+
+1. initiative la plus haute
+2. en cas d'égalité, modificateur de Dextérité le plus haut
+3. si l'égalité persiste, départage aléatoire
+
+Ce panneau permet de vérifier le résultat sans gêner la saisie.
+
+## Origine des Participants
+
+Le panneau d'ajout peut proposer :
 
 - `Héros`
 - `Présences du lieu`
 - `Globaux`
 
-### Héros
+Les héros déjà liés à l'aventure ne peuvent entrer qu'une seule fois dans le même combat.
 
-Ici, tu trouves les personnages d’aventure déjà liés à la campagne. Chaque héros ne peut entrer dans le combat qu’une seule fois.
+Les présences du lieu réutilisent leur état local si disponible.
 
-### Présences du lieu
+Les monstres globaux peuvent être ajoutés plusieurs fois, car ils représentent souvent plusieurs exemplaires d'une même créature.
 
-Ici, tu trouves les personnages déjà présents dans le lieu d’où naît le combat. Leur état local peut être réutilisé comme base pour l’affrontement.
+## Combat Actif
 
-### Globaux
+Quand l'affrontement démarre, l'écran passe à la gestion opérationnelle.
 
-Ici, tu trouves des fiches de base qui ne sont pas déjà liées comme héros de l’aventure.
+Il est divisé en trois zones :
 
-Dans le cas des globaux :
+- à gauche, le **suivi d'initiative**
+- au centre, les fiches compactes du **tour courant** et du **participant sélectionné**
+- à droite, le **récapitulatif** de santé, dégâts et événements
 
-- les `Monstres` peuvent être ajoutés plusieurs fois
-- les `Héros` et `PNJ` globaux ne peuvent pas être dupliqués comme simples fiches globales
+L'objectif est de garder un maximum d'informations utiles visibles sans ouvrir de grands panneaux.
 
-## Contrôle du combat
+## Contrôles du Tour
 
-Une fois l’affrontement commencé, le panneau `Contrôle du combat` reste fixe au-dessus de la liste et contient les actions principales du round.
+Les contrôles principaux sont en haut.
 
-Les lignes de boutons sont :
+À gauche :
 
-1. `Ajouter` et `Trier`
-2. `Démarrer/Pause` ou `Reprendre` et `Fin`
-3. `Préc.` et `Suiv.`
+- `Précédent`
+- `Pause` / `Reprendre`
+- `Suivant`
+- `Annuler événement`
 
-S’il existe une dernière attaque annulable, un panneau supplémentaire apparaît aussi :
+À droite :
 
-- `Annuler la dernière attaque`
+- `Ajouter`
+- `Trier`
+- `Fin du combat`
 
-## Liste des participants
+`Précédent` et `Suivant` changent le tour.
 
-La liste de gauche est le cœur du suivi tactique.
+`Pause` arrête le chronomètre du combat. En pause, le bouton devient `Reprendre`.
 
-Chaque ligne repliée affiche :
+`Annuler événement` restaure l'un des derniers événements annulables.
 
-- position dans l’ordre des tours, par exemple `1/8`
-- nom du participant
-- jusqu’à trois icônes de conditions
-- badge `Tour` s’il s’agit du participant actif
+`Ajouter` insère d'autres participants pendant le combat.
+
+`Trier` reconstruit l'ordre d'initiative.
+
+`Fin du combat` clôt l'affrontement après confirmation.
+
+## Suivi d'Initiative
+
+La colonne de gauche montre tous les participants sous forme compacte.
+
+Chaque ligne affiche :
+
+- initiative
+- nom
 - CA
 - PV
 - PV temporaires
+- indicateur d'état, si présent
+- couleur de rôle
+
+La couleur latérale aide à distinguer :
+
+- héros
+- alliés
+- neutres
+- ennemis
+
+Cliquer sur une ligne :
+
+- ouvre ce participant comme **sélectionné**
+- referme la colonne sélectionnée si ce participant était déjà sélectionné
+
+Le bouton corbeille de la ligne retire le participant du combat.
+
+## Fiches du Tour et du Sélectionné
+
+Au centre, tu peux voir jusqu'à deux fiches :
+
+- le participant dont c'est le tour
+- le participant sélectionné dans la liste
+
+Les fiches ont une largeur fixe et leur propre défilement vertical, pour garder la page stable même avec de longs textes.
+
+La partie supérieure montre :
+
+- nom
+- type, ascendance ou sous-type
+- langues, si présentes
+- facteur de puissance et PX, si présents
+- aperçu d'image
+- boutons d'action
+
+## Champs Rapides
+
+Depuis la fiche, tu peux modifier :
+
+- PV actuels
+- PV temporaires
 - initiative
 
-Le participant actif est mis en évidence bien plus fortement que les autres :
+La CA est affichée de façon compacte avec une icône de bouclier.
 
-- bande colorée latérale
-- bordure plus marquée
-- fond plus chaud
-- défilement automatique pour le garder visible
+Les héros de l'aventure peuvent aussi afficher le bouton d'**Inspiration héroïque**.
 
-La ligne utilise aussi des effets d’impact quand le participant :
+Les changements de PV restent synchronisés avec la liste de gauche et le récapitulatif de droite.
 
-- subit des dégâts
-- est tué
-- est restauré par un undo
+## Actions du Participant
 
-## Menu contextuel sur une ligne
-
-Avec un **clic droit** sur la carte du participant, tu peux ouvrir le menu contextuel.
-
-Pour le moment, l’action disponible est :
-
-- `Supprimer`
-
-## Déploiement d’une ligne participant
-
-En cliquant sur une ligne, le participant se déploie et affiche ses contrôles rapides.
-
-Dans la partie développée, tu trouves :
-
-- nom modifiable
-- champs numériques rapides :
-  - initiative
-  - PV
-  - PV temporaires
-  - CA
-- boutons d’action
-- bloc conditions
-- accès aux capacités, capacités spéciales et sorts, si présents
-
-## Boutons rapides de la ligne
-
-Les actions rapides peuvent inclure :
+Chaque fiche peut afficher :
 
 - `Attaquer`
 - `Dégâts`
 - `Soins`
 - `JS`
+- `États`
 - `Notes MJ`
 - `Modifier`
-- `Conditions`
 
-Certains boutons n’apparaissent que lorsqu’ils ont du sens pour ce participant.
-
-## Attaquer
-
-`Attaquer` ouvre un popover pour sélectionner :
-
-- une ou plusieurs cibles
-- les dégâts à appliquer
-
-Le sélecteur de cibles utilise une liste compacte avec :
-
-- nom
-- CA
-- PV
-- conditions
-
-L’ordre des cibles n’est pas aléatoire. DnDino essaie de proposer d’abord les participants les plus pertinents selon celui qui attaque.
-
-En général :
-
-- si un **Héros** attaque, les **ennemis** viennent d’abord, puis les alliés, puis les neutres, puis les monstres moins prioritaires
-- si un participant non héros attaque, les **héros** viennent d’abord, puis les alliés, puis les neutres, puis les ennemis moins pertinents
-
-À l’intérieur de chaque groupe, les noms sont ensuite triés par ordre alphabétique.
-
-Le popover ne présélectionne jamais automatiquement une cible : le choix doit être fait manuellement.
-
-Quand tu appliques une attaque à plusieurs cibles :
-
-- les dégâts sont appliqués à toutes les cibles sélectionnées
-- la bannière du haut affiche plusieurs lignes, une par cible touchée
-- l’undo de la dernière attaque conserve tout le groupe
-
-## Dégâts et Soins
+`Attaquer` ouvre une fenêtre avec l'attaquant et la liste des cibles.
 
 `Dégâts` applique des dégâts directs au participant.
 
-`Soins` applique des soins directs.
+`Soins` applique une guérison directe.
 
-## JS
+`JS` ouvre les jets de sauvegarde disponibles.
 
-`JS` ouvre le popover du **Jet de sauvegarde** basé sur les caractéristiques du participant.
+`États` ouvre une fenêtre dédiée à la gestion des états.
 
-## Conditions
+`Notes MJ` enregistre des notes sur le participant. Les notes ne font pas partie de l'annulation.
 
-Le bouton `Conditions` ouvre le popover dédié à la gestion des états actifs.
+`Modifier` ouvre l'éditeur complet du participant.
 
-Depuis là, tu peux :
+## Listes de Cibles
 
-- ajouter des conditions
-- choisir la durée et les règles d’expiration
-- lier la fin d’une condition au tour d’un autre participant
+Les listes de cibles sont ordonnées selon l'attaquant.
 
-## Notes MJ
+Si l'attaquant est un ennemi :
 
-Le bouton `Notes MJ` est toujours visible.
+- héros et alliés d'abord
+- puis neutres
+- puis ennemis
 
-Il ouvre un popover modifiable dans lequel tu peux écrire des notes contextuelles sur le participant. Le contenu est sauvegardé à la fermeture du popover.
+Si l'attaquant est un héros, un allié ou un neutre :
 
-## Modifier
+- ennemis d'abord
+- puis neutres
+- puis héros et alliés
 
-`Modifier` ouvre le panneau d’édition du participant.
+Dans chaque groupe, les noms sont triés alphabétiquement.
 
-Il sert quand tu dois intervenir plus en profondeur sur :
+La ligne colorée latérale aide à reconnaître le rôle de la cible.
 
-- initiative
-- CA
-- PV maximum, actuels et temporaires
-- rôle en combat
-- données contextuelles liées
+## Attaques, Capacités et Liens Internes
 
-## Tour en cours
+Les sections principales sont :
 
-Quand le combat est actif, le panneau central se concentre entièrement sur le participant dont c’est le tour.
-
-La carte supérieure montre :
-
-- image du participant
-- nom
-- sous-titre
-- CA
-- PV
-- PV temporaires
-- initiative
-- vitesse
-- inspiration, si le participant est un héros de l’aventure
-- conditions actives
-- caractéristiques principales
-
-## Panneaux centraux pendant le tour
-
-Sous le résumé du tour, seuls les panneaux qui ont réellement du contenu s’affichent.
-
-Les sections possibles sont :
-
+- `États`
 - `Attaques`
 - `Capacités spéciales`
 - `Capacités`
-- `Description`
 - `Sorts`
+- `Description`
 
-Tous ces panneaux sont repliables.
+Les sections sont repliables et utilisent un léger dégradé lié à la couleur du titre.
 
-Ils utilisent aussi un léger accent visuel :
+Les textes d'attaques, capacités spéciales et capacités peuvent contenir des liens internes créés pendant la création ou la modification du personnage.
 
-- `Attaques` rouge
-- `Capacités` jaune
-- `Capacités spéciales` vert
-- `Sorts` bleu clair
-- `Description` gris
+Pendant le combat, ces liens ouvrent des fenêtres dédiées pour résoudre l'action avec plus d'espace.
 
-## Attaques et liens internes
+Les liens les plus utiles sont :
 
-La section `Attaques` est l’un des points les plus forts du combat flat.
+- `Attaque complète`
+- `1d20 + MOD`
+- jet libre
+- jet de dégâts
+- liens vers des entités internes
 
-Si tu as préparé des liens internes dans les attaques de la fiche de base, tu peux les utiliser directement pendant le combat.
+## Attaque Complète
 
-En particulier, le lien **Attaque complète** est très utile parce qu’il :
+`Attaque complète` est pensée pour les textes d'attaque des monstres, PNJ ou héros.
 
-- exécute le jet d’attaque et les dégâts dans le même popover
-- permet de sélectionner une ou plusieurs cibles
-- propose automatiquement `Dégâts à appliquer`
-- te laisse exclure certaines lignes de dégâts si tu as lancé plusieurs composantes et ne veux en appliquer qu’une partie
-- ferme le popover dès que les dégâts sont appliqués
+Tu la prépares dans l'écran de création ou de modification du personnage : sélectionne le texte de l'attaque et crée un lien de type `Attaque complète`. Pendant le combat, ce texte devient une action prête à ouvrir et résoudre.
 
-Cela rend les attaques de monstres très rapides à utiliser à la table.
+Quand tu l'utilises en combat :
 
-## Personnages à 0 PV ou moins
+- la fenêtre montre le nom de l'attaque
+- l'attaquant est indiqué clairement
+- tu peux choisir une ou plusieurs cibles
+- tu peux gérer plusieurs lignes de dégâts
+- tu appliques les dégâts sélectionnés aux cibles choisies
 
-En combat, les **Héros** suivent une règle différente de celle des PNJ et monstres.
+Lors de la création du lien, les dégâts sont modulaires : le bouton `+` ajoute des lignes et seules les lignes renseignées sont affichées.
 
-### Héros
+## Sorts
 
-Les héros peuvent descendre sous `0` PV.
+Si le participant possède des sorts, la fiche affiche la section `Sorts`.
+
+Les sorts sont regroupés par niveau.
+
+Pour les monstres et PNJ, la ligne de niveau peut aussi montrer le compteur d'emplacements utilisés, par exemple :
+
+- `0/3`
+- `2/3`
+- `3/3`
+
+Le bouton `Utiliser` sur un sort augmente le compteur du niveau correspondant.
+
+Le compteur ne bloque pas l'utilisation quand il atteint le maximum : il sert seulement de pense-bête pour le MJ.
+
+Les tours de magie n'utilisent pas d'emplacements.
+
+## États
+
+La fenêtre `États` permet de :
+
+- ajouter des états
+- retirer des états
+- choisir une durée
+- lier l'expiration au tour d'un participant
+- gérer des notes associées
+
+Quand un état est appliqué, DnDino affiche un retour visuel sur l'écran et sur la ligne concernée.
+
+## Héros à 0 PV ou Moins
+
+Les héros suivent une règle différente des monstres et PNJ.
+
+Un héros peut descendre sous `0` PV.
 
 La règle est :
 
-- entre `0` et `-(PV max - 1)`, le personnage est **Inconscient**
-- à `-PV max` ou moins, le personnage meurt définitivement
+- de `0` à `-(PV maximums - 1)`, le héros est **Inconscient**
+- à `-PV maximums` ou moins, le héros meurt
+- il meurt aussi après 3 échecs aux jets de sauvegarde contre la mort
 
-Quand un héros est à `0` PV ou moins mais n’est pas mort définitivement :
+Quand un héros est à `0` PV ou moins sans être mort, la fiche affiche les **jets de sauvegarde contre la mort**.
 
-- il reste dans l’affrontement
-- le panneau central affiche la carte `Jets de sauvegarde contre la mort`
+Après 3 réussites, le héros revient à `1` PV.
 
-Cette carte suit :
+## PNJ et Monstres à 0 PV
 
-- réussites
-- échecs
+Pour les PNJ et les monstres, la règle est plus simple :
 
-et permet d’enregistrer rapidement :
+- à `0` PV ou moins, ils sont considérés morts
+- ils sont exclus du cycle des tours
+- le récapitulatif peut les afficher comme morts
 
-- `Réussite`
-- `Échec`
+## Récapitulatif Latéral
 
-À 3 réussites, le personnage revient à `1` PV. À 3 échecs, il meurt.
+La colonne de droite affiche le **Récapitulatif**.
 
-### PNJ et Monstres
+Tu y trouves :
 
-Pour les non-héros, le comportement est plus simple :
+- round
+- durée
+- tour courant
+- santé des héros et alliés
+- santé des PNJ et monstres
+- dégâts infligés
+- dégâts subis
+- 5 derniers événements
 
-- à `0` PV ou moins, ils sont morts
+C'est une vue de contrôle : elle sert à lire la situation d'un coup d'oeil.
 
-## Tours, rounds et participants exclus du cycle
+Les PV changent de couleur :
 
-Dans le cycle des tours :
+- normal si le participant est en bonne condition
+- jaune sous 50 %
+- orange sous 10 %
+- rouge à 0 ou moins
 
-- les héros morts définitivement sont exclus
-- les PNJ et monstres à `0` PV ou moins sont exclus
+Pour les héros, les PV ne sont barrés que lorsque le personnage est vraiment mort, pas simplement sous 0 PV.
 
-Cela signifie qu’un héros **Inconscient** peut encore avoir un tour, justement parce qu’il doit pouvoir gérer ses jets de sauvegarde contre la mort.
+## 5 Derniers Événements et Annulation
 
-## Bannières d’impact et feedback visuel
+Le combat conserve les derniers événements annulables.
 
-Quand une attaque touche, DnDino affiche une grande bannière en haut avec un résumé immédiat.
+L'annulation peut inclure :
 
-Par exemple :
+- attaques
+- dégâts appliqués par des attaques
+- soins, s'ils sont gérés comme événement annulable
+- états appliqués ou modifiés
 
-- qui a frappé
-- qui a été touché
-- combien de dégâts ont été appliqués
-- si le coup a tué la cible
+Les `Notes MJ` ne sont pas annulées.
 
-S’il y a plusieurs cibles, la bannière affiche plusieurs lignes dans le même encadré.
+L'annulation restaure aussi les statistiques liées, afin que dégâts infligés et subis restent cohérents.
 
-La **Fenêtre Joueurs** peut aussi montrer l’animation du coup, en incluant toutes les cibles impliquées dans la même attaque multi-cible.
+## Retour Visuel
 
-## Annuler la dernière attaque
+Quand quelque chose arrive en combat, DnDino donne un retour immédiat :
 
-Quand tu appliques une attaque, le panneau
+- bannière en haut
+- animation sur la ligne du participant concerné
+- effet sur le bouton `Appliquer`, si présent
+- mise à jour du récapitulatif
 
-- `Annuler la dernière attaque`
+Cela permet de comprendre tout de suite que la commande a été prise en compte.
 
-apparaît.
+## Résumé Final
 
-Sous le bouton, tu vois un petit résumé de ce qui vient de se passer.
+Quand tu confirmes la fin du combat, l'affrontement n'est plus modifiable.
 
-Si la dernière attaque a touché plusieurs cibles, le panneau montre la liste complète des lignes qui seront restaurées.
-
-Quand tu confirmes l’annulation :
-
-- les cibles reviennent à leur état précédent
-- une notification de restauration apparaît
-- le feedback visuel des cartes se met aussi à jour
-
-## Résumé final de l’affrontement
-
-Quand le combat se termine, le panneau central passe au **Résumé final de l’affrontement** pour le MJ.
-
-Cet écran montre :
+L'écran final montre :
 
 - rounds totaux
 - durée
 - ennemis tués
 - dégâts infligés
 - dégâts subis
+- état final des participants
 
-## Ce qui est synchronisé à la fin
+Les PV finaux et les états sont synchronisés avec les fiches liées.
 
-Quand tu fermes le combat, DnDino enregistre le résultat dans les enregistrements liés.
+## Synchronisation Finale
 
-Pour les héros de l’aventure, il synchronise :
+À la fermeture du combat, DnDino synchronise les données nécessaires.
 
-- PV actuels
-- PV temporaires
-- conditions manuelles
-- état final
-
-Pour les présences du lieu avec état local, il synchronise :
+Pour les héros de l'aventure :
 
 - PV actuels
 - PV temporaires
-- conditions manuelles
+- états
 - état final
 
-Le combat met aussi à jour les données liées à la **session live**, y compris :
+Pour les présences du lieu avec état local :
+
+- PV actuels
+- PV temporaires
+- états
+- état final
+
+Le combat peut aussi alimenter les données de **session live** et les statistiques.
+
+## Statistiques
+
+DnDino utilise les combats terminés pour alimenter statistiques et graphiques.
+
+Les statistiques peuvent inclure :
 
 - dégâts infligés
 - dégâts subis
-- héros tombés
+- durée des affrontements
+- nombre de combats
+- ennemis tués
+- évolution des dégâts par jour
+- durée moyenne des sessions
 
-## Quand le combat donne le meilleur de lui-même
+Dans le tableau de bord de l'aventure, la vue **Statistiques d'aventure** rassemble les combats terminés, même hors d'une session live unique, et les regroupe de façon lisible.
 
-Le combat de DnDino donne le meilleur de lui-même quand tu l’utilises ainsi :
+Le résumé de session live peut afficher les graphiques des combats terminés pendant cette session.
 
-1. tu prépares bien le pré-combat
-2. tu utilises le double écran avec la **Fenêtre Joueurs**
-3. tu exploites les liens dans les `Attaques` pour monstres et PNJ
-4. tu gardes le MJ sur le tracker et les joueurs sur la présentation
+## Bon Usage
+
+Le combat de DnDino fonctionne au mieux quand tu :
+
+1. prépares soigneusement le pré-combat
+2. attribues initiatives et noms avant de commencer
+3. utilises le suivi de gauche pour garder toute la scène sous les yeux
+4. gardes ouverte la fiche du tour et, si utile, celle de la cible sélectionnée
+5. utilises les liens dans les attaques et capacités
+6. consultes le récapitulatif pour santé, dégâts et événements récents
+7. termines le combat seulement quand tu es sûr, pour garder statistiques et synchronisations propres
 
 !!! tip
-    Même si le combat offre beaucoup d’automatisations pour les jets, les attaques complètes et l’application rapide des dégâts, DnDino laisse toujours de la place à une utilisation plus classique des dés. Tu peux continuer à lancer physiquement ou gérer le lancer hors de l’application, et utiliser surtout le combat pour appliquer les valeurs de manière rapide et cohérente, en évitant la partie la plus pénible : recalculer à la main les variations et mises à jour des points de vie à chaque fois.
+    Même si DnDino automatise de nombreuses opérations, tu peux continuer à lancer de vrais dés. Dans ce cas, utilise surtout le combat pour appliquer rapidement dégâts, soins et états, sans refaire les calculs de PV et de statistiques à la main.
