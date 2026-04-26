@@ -170,8 +170,6 @@ Les événements les plus importants enregistrés automatiquement par DnDino inc
 - `Quête terminée`
 - `Combat commencé`
 - `Combat terminé`
-- `Dégâts infligés en combat`
-- `Dégâts subis en combat`
 - `Note MJ`
 
 ## Lien avec les lieux
@@ -225,10 +223,9 @@ Quand tu démarres un combat pendant une session live, DnDino enregistre :
 
 - `Combat commencé`
 
-Pendant le combat, il peut enregistrer :
+Pendant le combat, il peut collecter :
 
-- `Dégâts infligés en combat`
-- `Dégâts subis en combat`
+- les données agrégées utiles au résumé et aux statistiques
 
 Quand tu fermes le combat, il enregistre :
 
@@ -245,6 +242,15 @@ La session live suit les dégâts à travers deux classements séparés :
 - `Dégâts subis par les personnages`
 
 Ce comptage est pensé uniquement pour les héros de l’aventure, et non pour tous les participants du combat.
+
+Le détail de session sauvegardée peut aussi afficher des graphiques dédiés aux combats terminés pendant cette session :
+
+- dégâts infligés par combat
+- dégâts subis par combat
+
+Chaque combat reste sur l'axe horizontal en ordre chronologique. Les personnages qui ont participé apparaissent même lorsqu'ils ont infligé ou subi `0` dégât dans un combat, afin de conserver une série lisible. Si un personnage n'a pas participé à un combat, il n'est pas ajouté à ce point.
+
+Ces graphiques permettent de comprendre qui a le plus pesé pendant la session et qui a absorbé le plus de dégâts.
 
 ## Héros tombés
 
@@ -287,6 +293,7 @@ Dans le panneau de détail, tu trouves :
 - ennemis vaincus
 - héros tombés
 - classements des dégâts infligés et subis par les personnages
+- graphiques des dégâts infligés et subis dans les combats de la session
 
 ## Quand il est pertinent d’utiliser la session live
 

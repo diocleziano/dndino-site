@@ -183,6 +183,7 @@ Atualmente eles são:
 - `Imagens`
 - `Mapas`
 - `Mapas Conceituais`
+- `Estatísticas`
 - `Metadados`
 
 !!! tip
@@ -251,6 +252,36 @@ A partir daqui você também pode criar uma nova sessão de texto. As sessões f
 
 Essa área será aprofundada na página dedicada à **Sessão ao vivo** e à gestão de sessões.
 
+### Estatísticas da Aventura
+
+O painel **Estatísticas** abre uma janela dedicada à leitura da evolução da campanha.
+
+Essa visão reúne os combates concluídos da aventura, incluindo os que foram terminados fora de uma sessão ao vivo, e organiza tudo em ordem cronológica.
+
+Entre os dados principais você pode encontrar:
+
+- número total de combates
+- duração média dos encontros
+- duração média das sessões
+- inimigos derrotados
+- personagens de aventura com mais dano causado
+- personagens de aventura com mais dano sofrido
+
+Os gráficos ajudam a ler a evolução ao longo do tempo:
+
+- dano causado por combate
+- dano sofrido por combate
+- dano causado por dia
+- dano sofrido por dia
+- duração das sessões agrupada por dia
+
+Nos gráficos diários você pode alternar entre `Todos` e `Por personagem`. A visão por personagem usa uma linha por cada personagem de aventura envolvido; a legenda permite mostrar ou ocultar personagens individuais quando o gráfico fica cheio demais.
+
+Os valores numéricos podem ser mostrados ou ocultados com o controle dedicado, para escolher entre legibilidade e detalhe.
+
+!!! note
+    As classificações principais de dano focam nos personagens de aventura. NPCs e monstros continuam importantes em combate, mas nas estatísticas de longo prazo teriam um peso variável demais.
+
 ### Imagens
 
 O painel **Imagens** reúne as imagens globais da aventura, ou seja, aquelas que não estão ligadas a um lugar específico.
@@ -308,6 +339,7 @@ As subpáginas deste guia serão:
 
 - **Lugares e Missões**
 - **Mapas Conceituais**
+- **Estatísticas da Aventura**
 - **Imagens**
 - **Mapas**
 - **Mapas interativos**
@@ -329,3 +361,4 @@ A seção Aventura é o ponto certo quando você quer:
 - entrar no painel principal
 - iniciar uma sessão ao vivo
 - chegar rapidamente aos lugares, personagens, sessões, imagens e mapas da campanha
+- consultar estatísticas e gráficos dos combates concluídos

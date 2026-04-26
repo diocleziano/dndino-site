@@ -183,6 +183,7 @@ Aktuell sind dies:
 - `Bilder`
 - `Karten`
 - `Konzeptkarten`
+- `Statistiken`
 - `Metadaten`
 
 !!! tip
@@ -251,6 +252,36 @@ Von hier aus kannst du auch eine neue Textsitzung erstellen. Sitzungen sind dami
 
 Dieser Bereich wird auf der Unterseite **Live-Sitzung** und in den Sitzungsabläufen weiter vertieft.
 
+### Abenteuerstatistiken
+
+Das Panel **Statistiken** öffnet ein eigenes Fenster, in dem du die Entwicklung der Kampagne lesen kannst.
+
+Diese Ansicht sammelt abgeschlossene Kämpfe des Abenteuers, auch solche außerhalb einer Live-Sitzung, und ordnet sie chronologisch.
+
+Zu den wichtigsten Daten gehören:
+
+- Gesamtzahl der Kämpfe
+- durchschnittliche Begegnungsdauer
+- durchschnittliche Sitzungsdauer
+- besiegte Gegner
+- Abenteuercharaktere mit dem meisten verursachten Schaden
+- Abenteuercharaktere mit dem meisten erlittenen Schaden
+
+Diagramme zeigen die Entwicklung über die Zeit:
+
+- verursachter Schaden pro Kampf
+- erlittener Schaden pro Kampf
+- verursachter Schaden pro Tag
+- erlittener Schaden pro Tag
+- Sitzungsdauer nach Tagen gruppiert
+
+In den Tagesdiagrammen kannst du zwischen `Alle` und `Pro Charakter` wechseln. Die Charakteransicht nutzt eine Linie pro beteiligtem Abenteuercharakter; über die Legende kannst du einzelne Charaktere ein- oder ausblenden.
+
+Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen werden, je nachdem ob du mehr Lesbarkeit oder mehr Detail möchtest.
+
+!!! note
+    Die wichtigsten Schadensranglisten konzentrieren sich auf Abenteuercharaktere. NSC und Monster bleiben im Kampf wichtig, wären in langfristigen Statistiken aber zu wechselhaft, um dauerhaft nützlich zu bleiben.
+
 ### Bilder
 
 Das Panel **Bilder** sammelt die globalen Abenteuerbilder, also diejenigen, die nicht an einen bestimmten Ort gebunden sind.
@@ -308,6 +339,7 @@ Die Unterseiten dieses Handbuchs werden sein:
 
 - **Orte und Quests**
 - **Konzeptkarten**
+- **Abenteuerstatistiken**
 - **Bilder**
 - **Karten**
 - **Interaktive Karten**
@@ -329,3 +361,4 @@ Der Bereich Abenteuer ist genau richtig, wenn du:
 - das Haupt-Dashboard öffnen willst
 - eine Live-Sitzung starten möchtest
 - schnell zu Orten, Charakteren, Sitzungen, Bildern und Karten der Kampagne gelangen möchtest
+- Statistiken und Diagramme abgeschlossener Kämpfe auswerten möchtest

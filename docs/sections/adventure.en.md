@@ -183,6 +183,7 @@ At the moment, they are:
 - `Images`
 - `Maps`
 - `Concept Maps`
+- `Statistics`
 - `Metadata`
 
 !!! tip
@@ -251,6 +252,36 @@ From here you can also create a new text session. Sessions therefore serve as bo
 
 This area is explored in more detail in the dedicated **Live Session** page and in the session workflows.
 
+### Adventure Statistics
+
+The **Statistics** panel opens a dedicated window for reading the campaign's progress over time.
+
+This view collects completed combats from the adventure, including combats completed outside a live session, and organizes them chronologically.
+
+The main data can include:
+
+- total number of combats
+- average encounter duration
+- average session duration
+- defeated enemies
+- adventure characters with the most damage dealt
+- adventure characters with the most damage taken
+
+Charts help you read the trend over time:
+
+- damage dealt by combat
+- damage taken by combat
+- damage dealt by day
+- damage taken by day
+- session duration grouped by day
+
+Daily charts can switch between `All` and `By Character`. The character view uses one line for each involved adventure character; the legend lets you show or hide individual characters when the chart gets too dense.
+
+Numeric values can be shown or hidden with the dedicated control, so you can choose between readability and detail.
+
+!!! note
+    The main damage rankings focus on adventure characters. NPCs and monsters still matter in combat, but over a long campaign their weight would be too variable to remain useful.
+
 ### Images
 
 The **Images** panel gathers the global adventure images, meaning those not tied to a specific place.
@@ -308,6 +339,7 @@ The child pages of this guide will be:
 
 - **Places and Quests**
 - **Concept Maps**
+- **Adventure Statistics**
 - **Images**
 - **Maps**
 - **Interactive Maps**
@@ -329,3 +361,4 @@ The Adventure section is the right place when you want to:
 - enter the main dashboard
 - start a live session
 - quickly reach the campaign's places, characters, sessions, images, and maps
+- review statistics and charts for completed combats

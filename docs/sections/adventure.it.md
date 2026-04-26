@@ -183,6 +183,7 @@ Quelli previsti attualmente sono:
 - `Immagini`
 - `Mappe`
 - `Mappe Concettuali`
+- `Statistiche`
 - `Metadati`
 
 !!! tip
@@ -251,6 +252,36 @@ Da qui puoi anche creare una nuova sessione testuale. Le sessioni sono quindi la
 
 Questa area sarà approfondita nella sottopagina dedicata alla **Sessione live** e alla gestione delle sessioni.
 
+### Statistiche Avventura
+
+Il pannello **Statistiche** apre una finestra dedicata alla lettura dell'andamento della campagna.
+
+Questa vista raccoglie i combattimenti completati dell'avventura, anche quelli conclusi fuori da una sessione live, e li organizza in modo cronologico e consultabile.
+
+Tra i dati principali puoi trovare:
+
+- numero totale di combattimenti
+- durata media degli incontri
+- durata media delle sessioni
+- nemici sconfitti
+- personaggi avventura con più danni inflitti
+- personaggi avventura con più danni subiti
+
+I grafici aiutano a leggere l'andamento nel tempo:
+
+- danni inflitti per combattimento
+- danni subiti per combattimento
+- danni inflitti per giorno
+- danni subiti per giorno
+- durata delle sessioni raggruppata per giorno
+
+Nei grafici giornalieri puoi passare tra vista `Tutti` e `Per Personaggio`. La vista per personaggio usa una linea per ogni personaggio avventura coinvolto; dalla legenda puoi mostrare o nascondere singoli personaggi quando vuoi alleggerire il grafico.
+
+I valori numerici possono essere mostrati o nascosti dal relativo controllo, utile quando ci sono molti punti e vuoi scegliere tra leggibilità e dettaglio.
+
+!!! note
+    Le classifiche principali dei danni considerano i personaggi avventura. PNG e mostri restano importanti nel combattimento, ma nelle statistiche di lungo periodo avrebbero un peso troppo variabile e meno utile.
+
 ### Immagini
 
 Il pannello **Immagini** raccoglie le immagini globali dell’avventura, cioè quelle non legate a un luogo specifico.
@@ -308,6 +339,7 @@ Le sottopagine di questa guida saranno:
 
 - **Luoghi e Quest**
 - **Mappe concettuali**
+- **Statistiche Avventura**
 - **Immagini**
 - **Mappe**
 - **Mappe interattive**
@@ -329,3 +361,4 @@ La sezione Avventura è il punto giusto quando vuoi:
 - entrare nella dashboard principale
 - avviare una sessione live
 - raggiungere velocemente luoghi, personaggi, sessioni, immagini e mappe della campagna
+- consultare statistiche e grafici sui combattimenti completati

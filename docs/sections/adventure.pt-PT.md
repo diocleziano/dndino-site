@@ -183,6 +183,7 @@ Atualmente são:
 - `Imagens`
 - `Mapas`
 - `Mapas Conceptuais`
+- `Estatísticas`
 - `Metadados`
 
 !!! tip
@@ -251,6 +252,36 @@ A partir daqui também podes criar uma nova sessão textual. As sessões são, p
 
 Esta área será aprofundada na página dedicada à **Sessão em direto** e à gestão de sessões.
 
+### Estatísticas da Aventura
+
+O painel **Estatísticas** abre uma janela dedicada à leitura da evolução da campanha.
+
+Esta vista reúne os combates concluídos da aventura, incluindo os que foram terminados fora de uma sessão em direto, e organiza-os cronologicamente.
+
+Entre os dados principais podes encontrar:
+
+- número total de combates
+- duração média dos encontros
+- duração média das sessões
+- inimigos derrotados
+- personagens de aventura com mais dano causado
+- personagens de aventura com mais dano sofrido
+
+Os gráficos ajudam a ler a evolução ao longo do tempo:
+
+- dano causado por combate
+- dano sofrido por combate
+- dano causado por dia
+- dano sofrido por dia
+- duração das sessões agrupada por dia
+
+Nos gráficos diários podes alternar entre `Todos` e `Por personagem`. A vista por personagem usa uma linha por cada personagem de aventura envolvida; a legenda permite mostrar ou esconder personagens individuais quando o gráfico fica demasiado cheio.
+
+Os valores numéricos podem ser mostrados ou ocultados com o controlo dedicado, para escolher entre legibilidade e detalhe.
+
+!!! note
+    As classificações principais de dano focam-se nas personagens de aventura. NPCs e monstros continuam importantes em combate, mas nas estatísticas de longo prazo teriam um peso demasiado variável.
+
 ### Imagens
 
 O painel **Imagens** reúne as imagens globais da aventura, ou seja, aquelas que não estão ligadas a um local específico.
@@ -308,6 +339,7 @@ As subpáginas deste guia serão:
 
 - **Locais e Missões**
 - **Mapas Conceptuais**
+- **Estatísticas da Aventura**
 - **Imagens**
 - **Mapas**
 - **Mapas interativos**
@@ -329,3 +361,4 @@ A secção Aventura é o ponto certo quando queres:
 - entrar na dashboard principal
 - iniciar uma sessão em direto
 - chegar rapidamente aos locais, personagens, sessões, imagens e mapas da campanha
+- consultar estatísticas e gráficos dos combates concluídos

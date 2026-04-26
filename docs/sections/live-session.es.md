@@ -170,8 +170,6 @@ Los eventos más importantes que DnDino registra automáticamente incluyen:
 - `Misión completada`
 - `Combate iniciado`
 - `Combate finalizado`
-- `Daño infligido en combate`
-- `Daño recibido en combate`
 - `Nota DM`
 
 ## Vinculación con los lugares
@@ -225,10 +223,9 @@ Cuando inicias un combate durante una sesión en vivo, DnDino registra:
 
 - `Combate iniciado`
 
-Durante el combate puede registrar:
+Durante el combate puede recopilar:
 
-- `Daño infligido en combate`
-- `Daño recibido en combate`
+- datos agregados útiles para el resumen y las estadísticas
 
 Cuando cierras el combate registra:
 
@@ -245,6 +242,15 @@ La sesión en vivo sigue el daño a través de dos clasificaciones separadas:
 - `Daño recibido por los personajes`
 
 Este recuento está pensado solo para los héroes de la aventura, no para todos los participantes del combate.
+
+El detalle de la sesión guardada también puede mostrar gráficos de los combates concluidos durante esa sesión:
+
+- daño infligido por combate
+- daño recibido por combate
+
+Cada combate permanece en el eje horizontal en orden cronológico. Los personajes que participaron se muestran incluso si en un combate infligieron o recibieron `0` daño, para mantener la serie coherente. Si un personaje no participa en un combate, no se añade en ese punto.
+
+Estos gráficos ayudan a entender quién tuvo más impacto durante la sesión y quién absorbió más daño a lo largo de los encuentros.
 
 ## Héroes caídos
 
@@ -287,6 +293,7 @@ En el panel de detalle encontrarás:
 - enemigos derrotados
 - héroes caídos
 - clasificaciones de daño infligido y recibido por los personajes
+- gráficos de daño infligido y recibido en los combates de la sesión
 
 ## Cuándo conviene usar la sesión en vivo
 

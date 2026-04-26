@@ -183,6 +183,7 @@ Actualmente son:
 - `Imágenes`
 - `Mapas`
 - `Mapas conceptuales`
+- `Estadísticas`
 - `Metadatos`
 
 !!! tip
@@ -251,6 +252,36 @@ Desde aquí también puedes crear una nueva sesión de texto. Las sesiones son, 
 
 Esta área se desarrollará más a fondo en la página dedicada a la **Sesión en vivo** y a la gestión de sesiones.
 
+### Estadísticas de Aventura
+
+El panel **Estadísticas** abre una ventana dedicada a leer la evolución de la campaña.
+
+Esta vista reúne los combates completados de la aventura, incluso los concluidos fuera de una sesión en vivo, y los organiza cronológicamente.
+
+Entre los datos principales puedes encontrar:
+
+- número total de combates
+- duración media de los encuentros
+- duración media de las sesiones
+- enemigos derrotados
+- personajes de aventura con más daño infligido
+- personajes de aventura con más daño recibido
+
+Los gráficos ayudan a leer la evolución en el tiempo:
+
+- daño infligido por combate
+- daño recibido por combate
+- daño infligido por día
+- daño recibido por día
+- duración de sesiones agrupada por día
+
+En los gráficos diarios puedes cambiar entre `Todos` y `Por personaje`. La vista por personaje usa una línea por cada personaje de aventura implicado; la leyenda permite mostrar u ocultar personajes individuales cuando el gráfico está demasiado cargado.
+
+Los valores numéricos pueden mostrarse u ocultarse con el control correspondiente, para elegir entre claridad y detalle.
+
+!!! note
+    Las clasificaciones principales de daño se centran en los personajes de aventura. Los PNJ y monstruos siguen siendo importantes en combate, pero a largo plazo tendrían un peso demasiado variable.
+
 ### Imágenes
 
 El panel **Imágenes** reúne las imágenes globales de la aventura, es decir, las que no están ligadas a un lugar concreto.
@@ -308,6 +339,7 @@ Las subpáginas de esta guía serán:
 
 - **Lugares y Misiones**
 - **Mapas conceptuales**
+- **Estadísticas de Aventura**
 - **Imágenes**
 - **Mapas**
 - **Mapas interactivos**
@@ -329,3 +361,4 @@ La sección Aventura es el lugar adecuado cuando quieres:
 - entrar en el panel principal
 - iniciar una sesión en vivo
 - llegar rápidamente a los lugares, personajes, sesiones, imágenes y mapas de la campaña
+- consultar estadísticas y gráficos de combates completados

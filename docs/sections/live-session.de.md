@@ -170,8 +170,6 @@ Zu den wichtigsten Ereignissen, die DnDino automatisch protokolliert, gehören:
 - `Quest abgeschlossen`
 - `Kampf begonnen`
 - `Kampf beendet`
-- `Im Kampf verursachter Schaden`
-- `Im Kampf erlittener Schaden`
 - `SL-Notiz`
 
 ## Verbindung mit Orten
@@ -225,10 +223,9 @@ Wenn du während einer Live-Session einen Kampf startest, protokolliert DnDino:
 
 - `Kampf begonnen`
 
-Während des Kampfes kann es protokollieren:
+Während des Kampfes kann es sammeln:
 
-- `Im Kampf verursachter Schaden`
-- `Im Kampf erlittener Schaden`
+- aggregierte Daten für Zusammenfassung und Statistiken
 
 Wenn du den Kampf schließt, protokolliert es:
 
@@ -245,6 +242,15 @@ Die Live-Session verfolgt Schaden in zwei getrennten Ranglisten:
 - `Von Charakteren erlittener Schaden`
 
 Diese Zählung ist nur für die Abenteuerhelden gedacht, nicht für alle Teilnehmenden eines Kampfes.
+
+Die Detailansicht einer gespeicherten Sitzung kann außerdem Diagramme für die in dieser Sitzung abgeschlossenen Kämpfe zeigen:
+
+- verursachter Schaden pro Kampf
+- erlittener Schaden pro Kampf
+
+Jeder Kampf bleibt chronologisch auf der horizontalen Achse. Charaktere, die teilgenommen haben, werden auch dann angezeigt, wenn sie in einem Kampf `0` Schaden verursacht oder erlitten haben. Hat ein Charakter an einem Kampf nicht teilgenommen, erscheint er an diesem Punkt nicht.
+
+Diese Diagramme zeigen, wer während der Sitzung den größten Einfluss hatte und wer über die Begegnungen hinweg den meisten Schaden aufgenommen hat.
 
 ## Gefallene Helden
 
@@ -287,6 +293,7 @@ Im Detailpanel findest du:
 - besiegte Feinde
 - gefallene Helden
 - Ranglisten zu verursachtem und erlittenem Schaden der Charaktere
+- Diagramme zu verursachtem und erlittenem Schaden in den Kämpfen der Sitzung
 
 ## Wann die Live-Session besonders sinnvoll ist
 

@@ -168,8 +168,6 @@ Gli eventi più importanti che DnDino registra automaticamente includono:
 - `Quest completata`
 - `Combattimento iniziato`
 - `Combattimento finito`
-- `Danno inflitto in combattimento`
-- `Danno subito in combattimento`
 - `Nota DM`
 
 ## Collegamento con i luoghi
@@ -225,8 +223,7 @@ Quando avvii un combattimento durante una sessione live, DnDino registra:
 
 Durante il combattimento può registrare:
 
-- `Danno inflitto in combattimento`
-- `Danno subito in combattimento`
+- i dati aggregati utili al riepilogo e alle statistiche
 
 Quando chiudi il combattimento registra:
 
@@ -243,6 +240,15 @@ La sessione live traccia i danni con due classifiche separate:
 - `Danni subiti dai personaggi`
 
 Il conteggio è pensato solo per gli eroi dell’avventura, non per tutti i partecipanti dello scontro.
+
+Nel dettaglio della sessione salvata possono comparire anche grafici dedicati ai combattimenti conclusi durante quella sessione:
+
+- danni inflitti per combattimento
+- danni subiti per combattimento
+
+Ogni combattimento resta sull'asse orizzontale in ordine cronologico. I personaggi che hanno partecipato vengono mostrati anche quando in uno scontro hanno fatto o subito `0` danni, così la lettura della serie resta coerente. Se un personaggio non partecipa a un combattimento, invece, non viene inserito in quel punto.
+
+Questi grafici servono a capire chi ha inciso di più durante la sessione e chi ha assorbito più danni nel corso degli scontri.
 
 ## Eroi caduti
 
@@ -285,6 +291,7 @@ Nel pannello di dettaglio trovi:
 - nemici sconfitti
 - eroi caduti
 - classifiche di danni inflitti e subiti dai personaggi
+- grafici dei danni inflitti e subiti nei combattimenti della sessione
 
 ## Quando conviene usare la sessione live
 

@@ -183,6 +183,7 @@ Ceux prévus actuellement sont :
 - `Images`
 - `Cartes`
 - `Cartes conceptuelles`
+- `Statistiques`
 - `Métadonnées`
 
 !!! tip
@@ -251,6 +252,36 @@ Depuis là, tu peux aussi créer une nouvelle session textuelle. Les sessions co
 
 Cette zone sera approfondie dans la page dédiée à la **Session live** et à la gestion des sessions.
 
+### Statistiques d'aventure
+
+Le panneau **Statistiques** ouvre une fenêtre dédiée à la lecture de l'évolution de la campagne.
+
+Cette vue rassemble les combats terminés de l'aventure, y compris ceux conclus hors d'une session live, et les organise chronologiquement.
+
+Parmi les données principales, tu peux trouver :
+
+- nombre total de combats
+- durée moyenne des rencontres
+- durée moyenne des sessions
+- ennemis vaincus
+- personnages d'aventure ayant infligé le plus de dégâts
+- personnages d'aventure ayant subi le plus de dégâts
+
+Les graphiques aident à lire l'évolution dans le temps :
+
+- dégâts infligés par combat
+- dégâts subis par combat
+- dégâts infligés par jour
+- dégâts subis par jour
+- durée des sessions regroupée par jour
+
+Dans les graphiques journaliers, tu peux passer entre `Tous` et `Par personnage`. La vue par personnage utilise une ligne pour chaque personnage d'aventure impliqué ; la légende permet d'afficher ou masquer certains personnages quand le graphique devient trop chargé.
+
+Les valeurs numériques peuvent être affichées ou masquées avec le contrôle dédié, pour choisir entre lisibilité et détail.
+
+!!! note
+    Les classements principaux de dégâts se concentrent sur les personnages d'aventure. Les PNJ et monstres restent essentiels en combat, mais sur le long terme leur poids serait trop variable pour rester utile.
+
 ### Images
 
 Le panneau **Images** rassemble les images globales de l'aventure, c'est-à-dire celles qui ne sont pas liées à un lieu spécifique.
@@ -308,6 +339,7 @@ Les sous-pages de ce guide seront :
 
 - **Lieux et Quêtes**
 - **Cartes conceptuelles**
+- **Statistiques d'aventure**
 - **Images**
 - **Cartes**
 - **Cartes interactives**
@@ -329,3 +361,4 @@ La section Aventure est le bon point d'entrée quand tu veux :
 - entrer dans la dashboard principale
 - lancer une session live
 - atteindre rapidement les lieux, personnages, sessions, images et cartes de la campagne
+- consulter les statistiques et graphiques des combats terminés

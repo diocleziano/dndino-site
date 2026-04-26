@@ -170,8 +170,6 @@ The most important events that DnDino records automatically include:
 - `Quest completed`
 - `Combat started`
 - `Combat finished`
-- `Damage dealt in combat`
-- `Damage taken in combat`
 - `DM Note`
 
 ## Connection with Places
@@ -225,10 +223,9 @@ When you start a combat during a live session, DnDino records:
 
 - `Combat started`
 
-During combat it can record:
+During combat it can collect:
 
-- `Damage dealt in combat`
-- `Damage taken in combat`
+- aggregated data used by the summary and statistics
 
 When you close combat it records:
 
@@ -245,6 +242,15 @@ The live session tracks damage through two separate rankings:
 - `Damage taken by characters`
 
 This count is designed only for the adventure heroes, not for every participant in the encounter.
+
+The saved session detail can also show charts for combats completed during that session:
+
+- damage dealt by combat
+- damage taken by combat
+
+Each combat stays on the horizontal axis in chronological order. Characters who participated are shown even when they dealt or took `0` damage in a combat, so the series remains readable. If a character did not participate in a combat, they are not added for that point.
+
+These charts help you understand who had the most impact during the session and who absorbed the most damage across encounters.
 
 ## Fallen Heroes
 
@@ -287,6 +293,7 @@ In the detail panel you will find:
 - defeated enemies
 - fallen heroes
 - rankings of damage dealt and taken by the characters
+- charts for damage dealt and taken in the session's combats
 
 ## When It Is Most Useful
 
