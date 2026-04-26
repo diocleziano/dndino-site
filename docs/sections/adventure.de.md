@@ -266,6 +266,11 @@ Dieser Bereich wird auf der Unterseite **Live-Sitzung** und in den Sitzungsablä
 
 ### Abenteuerstatistiken
 
+![Übersicht der Abenteuerstatistiken](../images/en_stastisticheavventura_1.png){ .img-shot }
+![Diagramme der Abenteuerstatistiken](../images/en_stastisticheavventura_2.png){ .img-shot }
+![Detail der Abenteuerstatistiken](../images/en_stastisticheavventura_3.png){ .img-shot }
+
+
 Das Panel **Statistiken** öffnet ein eigenes Fenster, in dem du die Entwicklung der Kampagne lesen kannst.
 
 Diese Ansicht sammelt abgeschlossene Kämpfe des Abenteuers, auch solche außerhalb einer Live-Sitzung, und ordnet sie chronologisch.

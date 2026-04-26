@@ -255,12 +255,6 @@ TP-Änderungen bleiben mit linker Liste und rechter Übersicht synchron.
 
 ## Teilnehmeraktionen
 
-![Kampfaktionsfenster](../images/en_combat_attaccosemplice.png){ .img-shot }
-![Kampfaktionsfenster](../images/en_combat_danni.png){ .img-detail }
-![Kampfaktionsfenster](../images/en_combat_cura.png){ .img-detail }
-![Rettungswurf-Erinnerung](../images/en_combat_tirosalvezza.png){ .img-detail }
-
-
 Eine Karte kann zeigen:
 
 - `Angreifen`
@@ -273,11 +267,19 @@ Eine Karte kann zeigen:
 
 `Angreifen` öffnet ein Fenster mit Angreifer und Zielliste.
 
+![Angreifen-Fenster](../images/en_combat_attaccosemplice.png){ .img-shot }
+
 `Schaden` wendet direkten Schaden auf den Teilnehmer an.
+
+![Schaden-Fenster](../images/en_combat_danni.png){ .img-detail }
 
 `Heilen` wendet direkte Heilung an.
 
+![Heilen-Fenster](../images/en_combat_cura.png){ .img-detail }
+
 `RW` öffnet die verfügbaren Rettungswürfe.
+
+![Rettungswurf-Fenster](../images/en_combat_tirosalvezza.png){ .img-detail }
 
 `Zustände` öffnet ein eigenes Fenster zur Zustandsverwaltung.
 

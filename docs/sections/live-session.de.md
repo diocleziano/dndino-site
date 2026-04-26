@@ -197,6 +197,10 @@ Diese Funktion gilt nur, wenn eine aktive Live-Session existiert, und ist sehr n
 
 ## Live-Zusammenfassung
 
+![Live-Sitzungsübersicht](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Live-Sitzungsdiagramme](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 Die Live-Zusammenfassung aggregiert die wichtigsten Daten, die während der Sitzung gesammelt wurden.
 
 Zu den wichtigsten Werten gehören:

@@ -255,12 +255,6 @@ Le modifiche ai PF vengono tenute allineate con la lista a sinistra e con il rie
 
 ## Azioni del partecipante
 
-![Finestre azioni combattimento](../images/en_combat_attaccosemplice.png){ .img-shot }
-![Finestre azioni combattimento](../images/en_combat_danni.png){ .img-detail }
-![Finestre azioni combattimento](../images/en_combat_cura.png){ .img-detail }
-![Promemoria tiro salvezza](../images/en_combat_tirosalvezza.png){ .img-detail }
-
-
 Ogni scheda può mostrare i pulsanti:
 
 - `Attacca`
@@ -273,11 +267,19 @@ Ogni scheda può mostrare i pulsanti:
 
 `Attacca` apre una finestra con l'attaccante e la lista dei bersagli.
 
+![Finestra Attacca](../images/en_combat_attaccosemplice.png){ .img-shot }
+
 `Danni` applica danni diretti al partecipante.
+
+![Finestra Danni](../images/en_combat_danni.png){ .img-detail }
 
 `Cura` applica guarigione diretta.
 
+![Finestra Cura](../images/en_combat_cura.png){ .img-detail }
+
 `TS` apre i tiri salvezza disponibili.
+
+![Finestra tiro salvezza](../images/en_combat_tirosalvezza.png){ .img-detail }
 
 `Condizioni` apre una finestra dedicata, utile perché la gestione delle condizioni richiede più spazio.
 

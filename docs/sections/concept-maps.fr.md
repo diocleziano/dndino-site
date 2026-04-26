@@ -1,5 +1,8 @@
 # Cartes conceptuelles
 
+![Vue d’ensemble des cartes conceptuelles](../images/en_mappeconcettuali.png){ .img-hero }
+
+
 La section **Cartes conceptuelles** sert à construire une représentation visuelle des relations entre lieux, personnages, autres cartes conceptuelles et notes libres.
 
 Ce n’est ni une carte géographique ni un tableau blanc générique : c’est un outil pensé pour relier les nœuds de la campagne de façon rapide, lisible et navigable.

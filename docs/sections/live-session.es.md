@@ -197,6 +197,10 @@ Esta función solo se aplica cuando existe una sesión en vivo activa y es muy �
 
 ## Resumen en vivo
 
+![Resumen de sesión en vivo](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Gráficos de sesión en vivo](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 El resumen en vivo agrega los datos más importantes recogidos durante la sesión.
 
 Entre los valores principales están:

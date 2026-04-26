@@ -1,5 +1,8 @@
 # Mappe concettuali
 
+![Panoramica mappe concettuali](../images/en_mappeconcettuali.png){ .img-hero }
+
+
 La sezione **Mappe concettuali** serve a costruire una rappresentazione visiva delle relazioni tra luoghi, personaggi, mappe concettuali e note libere.
 
 Non è una mappa geografica e non è una lavagna generica: è uno strumento pensato per collegare i nodi della campagna in modo rapido, leggibile e navigabile.

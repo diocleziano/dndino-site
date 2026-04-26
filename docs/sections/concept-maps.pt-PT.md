@@ -1,5 +1,8 @@
 # Mapas conceptuais
 
+![Visão geral dos mapas conceptuais](../images/en_mappeconcettuali.png){ .img-hero }
+
+
 A secção **Mapas conceptuais** serve para construir uma representação visual das relações entre locais, personagens, outros mapas conceptuais e notas livres.
 
 Não é um mapa geográfico e não é um quadro genérico: é uma ferramenta pensada para ligar os nós da campanha de forma rápida, legível e navegável.

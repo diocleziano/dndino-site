@@ -1,5 +1,8 @@
 # Beziehungsdiagramme
 
+![Übersicht der Konzeptkarten](../images/en_mappeconcettuali.png){ .img-hero }
+
+
 Der Bereich **Beziehungsdiagramme** dient dazu, eine visuelle Darstellung der Beziehungen zwischen Orten, Charakteren, anderen Beziehungsdiagrammen und freien Notizen aufzubauen.
 
 Es ist keine geografische Karte und auch kein generisches Whiteboard, sondern ein Werkzeug, das dafür gedacht ist, die Knoten einer Kampagne schnell, lesbar und navigierbar miteinander zu verbinden.

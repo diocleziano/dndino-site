@@ -255,12 +255,6 @@ HP changes stay synchronized with the left list and the right summary.
 
 ## Participant Actions
 
-![Combat action windows](../images/en_combat_attaccosemplice.png){ .img-shot }
-![Combat action windows](../images/en_combat_danni.png){ .img-detail }
-![Combat action windows](../images/en_combat_cura.png){ .img-detail }
-![Saving throw reminder](../images/en_combat_tirosalvezza.png){ .img-detail }
-
-
 Each sheet can show:
 
 - `Attack`
@@ -273,11 +267,19 @@ Each sheet can show:
 
 `Attack` opens a window with the attacker and target list.
 
+![Attack window](../images/en_combat_attaccosemplice.png){ .img-shot }
+
 `Damage` applies direct damage to the participant.
+
+![Damage window](../images/en_combat_danni.png){ .img-detail }
 
 `Heal` applies direct healing.
 
+![Heal window](../images/en_combat_cura.png){ .img-detail }
+
 `Save` opens the available saving throws.
+
+![Saving throw window](../images/en_combat_tirosalvezza.png){ .img-detail }
 
 `Conditions` opens a dedicated window for managing conditions.
 

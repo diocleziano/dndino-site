@@ -197,6 +197,10 @@ Cette fonction ne vaut que lorsqu’une session live active existe et elle est t
 
 ## Résumé live
 
+![Résumé de session live](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Graphiques de session live](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 Le résumé live agrège les données les plus importantes collectées pendant la session.
 
 Parmi les principales valeurs, on trouve :

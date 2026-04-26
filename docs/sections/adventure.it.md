@@ -266,6 +266,11 @@ Questa area sarà approfondita nella sottopagina dedicata alla **Sessione live**
 
 ### Statistiche Avventura
 
+![Panoramica Statistiche Avventura](../images/en_stastisticheavventura_1.png){ .img-shot }
+![Grafici Statistiche Avventura](../images/en_stastisticheavventura_2.png){ .img-shot }
+![Dettaglio Statistiche Avventura](../images/en_stastisticheavventura_3.png){ .img-shot }
+
+
 Il pannello **Statistiche** apre una finestra dedicata alla lettura dell'andamento della campagna.
 
 Questa vista raccoglie i combattimenti completati dell'avventura, anche quelli conclusi fuori da una sessione live, e li organizza in modo cronologico e consultabile.

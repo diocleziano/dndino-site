@@ -195,6 +195,10 @@ Questa funzione vale solo quando esiste una sessione live attiva ed è molto uti
 
 ## Riepilogo live
 
+![Riepilogo sessione live](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Grafici sessione live](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 Il riepilogo live aggrega i dati più importanti raccolti durante la sessione.
 
 Tra i valori principali ci sono:

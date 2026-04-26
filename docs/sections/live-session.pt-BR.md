@@ -197,6 +197,10 @@ Essa função só vale quando existe uma sessão ao vivo ativa e é muito útil 
 
 ## Resumo da sessão ao vivo
 
+![Resumo da sessão ao vivo](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Gráficos da sessão ao vivo](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 O resumo da sessão ao vivo agrega os dados mais importantes recolhidos durante a sessão.
 
 Entre os principais valores estão:

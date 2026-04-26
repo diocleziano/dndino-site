@@ -197,6 +197,10 @@ Esta função só se aplica quando existe uma sessão live ativa e é muito úti
 
 ## Resumo live
 
+![Resumo da sessão live](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Gráficos da sessão live](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 O resumo live agrega os dados mais importantes recolhidos durante a sessão.
 
 Entre os principais valores estão:

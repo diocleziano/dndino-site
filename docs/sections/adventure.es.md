@@ -266,6 +266,11 @@ Esta área se desarrollará más a fondo en la página dedicada a la **Sesión e
 
 ### Estadísticas de Aventura
 
+![Vista general de estadísticas de aventura](../images/en_stastisticheavventura_1.png){ .img-shot }
+![Gráficos de estadísticas de aventura](../images/en_stastisticheavventura_2.png){ .img-shot }
+![Detalle de estadísticas de aventura](../images/en_stastisticheavventura_3.png){ .img-shot }
+
+
 El panel **Estadísticas** abre una ventana dedicada a leer la evolución de la campaña.
 
 Esta vista reúne los combates completados de la aventura, incluso los concluidos fuera de una sesión en vivo, y los organiza cronológicamente.

@@ -197,6 +197,10 @@ This only applies when a live session is active, and it is very useful for keepi
 
 ## Live Summary
 
+![Live session summary](../images/en_sessionelive_riepilogo_1.png){ .img-shot }
+![Live session charts](../images/en_sessionelive_riepilogo_2.png){ .img-shot }
+
+
 The live summary aggregates the most important data collected during the session.
 
 Among the main values are:

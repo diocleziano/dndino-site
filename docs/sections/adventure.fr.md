@@ -266,6 +266,11 @@ Cette zone sera approfondie dans la page dédiée à la **Session live** et à l
 
 ### Statistiques d'aventure
 
+![Vue d’ensemble des statistiques d’aventure](../images/en_stastisticheavventura_1.png){ .img-shot }
+![Graphiques des statistiques d’aventure](../images/en_stastisticheavventura_2.png){ .img-shot }
+![Détail des statistiques d’aventure](../images/en_stastisticheavventura_3.png){ .img-shot }
+
+
 Le panneau **Statistiques** ouvre une fenêtre dédiée à la lecture de l'évolution de la campagne.
 
 Cette vue rassemble les combats terminés de l'aventure, y compris ceux conclus hors d'une session live, et les organise chronologiquement.

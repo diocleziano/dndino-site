@@ -255,12 +255,6 @@ Les changements de PV restent synchronisés avec la liste de gauche et le récap
 
 ## Actions du Participant
 
-![Fenêtres d’actions de combat](../images/en_combat_attaccosemplice.png){ .img-shot }
-![Fenêtres d’actions de combat](../images/en_combat_danni.png){ .img-detail }
-![Fenêtres d’actions de combat](../images/en_combat_cura.png){ .img-detail }
-![Rappel de jet de sauvegarde](../images/en_combat_tirosalvezza.png){ .img-detail }
-
-
 Chaque fiche peut afficher :
 
 - `Attaquer`
@@ -273,11 +267,19 @@ Chaque fiche peut afficher :
 
 `Attaquer` ouvre une fenêtre avec l'attaquant et la liste des cibles.
 
+![Fenêtre Attaquer](../images/en_combat_attaccosemplice.png){ .img-shot }
+
 `Dégâts` applique des dégâts directs au participant.
+
+![Fenêtre Dégâts](../images/en_combat_danni.png){ .img-detail }
 
 `Soins` applique une guérison directe.
 
+![Fenêtre Soins](../images/en_combat_cura.png){ .img-detail }
+
 `JS` ouvre les jets de sauvegarde disponibles.
+
+![Fenêtre jet de sauvegarde](../images/en_combat_tirosalvezza.png){ .img-detail }
 
 `États` ouvre une fenêtre dédiée à la gestion des états.
 

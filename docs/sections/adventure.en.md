@@ -266,6 +266,11 @@ This area is explored in more detail in the dedicated **Live Session** page and 
 
 ### Adventure Statistics
 
+![Adventure statistics overview](../images/en_stastisticheavventura_1.png){ .img-shot }
+![Adventure statistics charts](../images/en_stastisticheavventura_2.png){ .img-shot }
+![Adventure statistics detail](../images/en_stastisticheavventura_3.png){ .img-shot }
+
+
 The **Statistics** panel opens a dedicated window for reading the campaign's progress over time.
 
 This view collects completed combats from the adventure, including combats completed outside a live session, and organizes them chronologically.

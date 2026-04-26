@@ -255,12 +255,6 @@ As alterações de PV permanecem sincronizadas com a lista esquerda e o resumo d
 
 ## Ações do Participante
 
-![Janelas de ações de combate](../images/en_combat_attaccosemplice.png){ .img-shot }
-![Janelas de ações de combate](../images/en_combat_danni.png){ .img-detail }
-![Janelas de ações de combate](../images/en_combat_cura.png){ .img-detail }
-![Lembrete de teste de resistência](../images/en_combat_tirosalvezza.png){ .img-detail }
-
-
 Cada ficha pode mostrar:
 
 - `Atacar`
@@ -273,11 +267,19 @@ Cada ficha pode mostrar:
 
 `Atacar` abre uma janela com o atacante e a lista de alvos.
 
+![Janela Atacar](../images/en_combat_attaccosemplice.png){ .img-shot }
+
 `Dano` aplica dano direto ao participante.
+
+![Janela Dano](../images/en_combat_danni.png){ .img-detail }
 
 `Cura` aplica cura direta.
 
+![Janela Cura](../images/en_combat_cura.png){ .img-detail }
+
 `Teste` abre os testes de resistência disponíveis.
+
+![Janela teste de resistência](../images/en_combat_tirosalvezza.png){ .img-detail }
 
 `Condições` abre uma janela dedicada à gestão de condições.
 

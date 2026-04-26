@@ -1,5 +1,8 @@
 # Concept Maps
 
+![Concept map overview](../images/en_mappeconcettuali.png){ .img-hero }
+
+
 The **Concept Maps** section is used to build a visual representation of the relationships between places, characters, other concept maps, and free notes.
 
 It is not a geographical map and it is not a generic whiteboard: it is a tool designed to connect the nodes of a campaign in a way that is fast, readable, and navigable.

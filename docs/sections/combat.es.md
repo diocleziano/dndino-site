@@ -255,12 +255,6 @@ Los cambios de PG se mantienen sincronizados con la lista izquierda y el resumen
 
 ## Acciones del Participante
 
-![Ventanas de acciones de combate](../images/en_combat_attaccosemplice.png){ .img-shot }
-![Ventanas de acciones de combate](../images/en_combat_danni.png){ .img-detail }
-![Ventanas de acciones de combate](../images/en_combat_cura.png){ .img-detail }
-![Aviso de tirada de salvación](../images/en_combat_tirosalvezza.png){ .img-detail }
-
-
 Cada ficha puede mostrar:
 
 - `Atacar`
@@ -273,11 +267,19 @@ Cada ficha puede mostrar:
 
 `Atacar` abre una ventana con el atacante y la lista de objetivos.
 
+![Ventana Atacar](../images/en_combat_attaccosemplice.png){ .img-shot }
+
 `Daño` aplica daño directo al participante.
+
+![Ventana Daño](../images/en_combat_danni.png){ .img-detail }
 
 `Curar` aplica curación directa.
 
+![Ventana Curar](../images/en_combat_cura.png){ .img-detail }
+
 `TS` abre las tiradas de salvación disponibles.
+
+![Ventana tirada de salvación](../images/en_combat_tirosalvezza.png){ .img-detail }
 
 `Estados` abre una ventana dedicada a gestionar estados.
 
