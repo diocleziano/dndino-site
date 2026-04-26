@@ -1,6 +1,6 @@
 # Aventura
 
-![Painel da Aventura](../images/avventura/it_dashboardavventura.png){ .img-hero }
+![Painel da Aventura](../images/en_dashboardavventura.png){ .img-hero }
 
 A seção **Aventura** é o centro organizacional de uma campanha no DnDino. É aqui que nasce a estrutura principal do seu trabalho: o título da campanha, sua identidade visual, os personagens vinculados, as sessões, os lugares, as imagens compartilhadas, os mapas e os acessos rápidos aos combates.
 
@@ -157,6 +157,9 @@ A partir daqui você também pode entrar em **Editar** para voltar ao formulári
 
 ## Sessão ao vivo
 
+![Painel de sessão ao vivo](../images/en_dashavv_sessionelive.png){ .img-shot }
+
+
 Ao lado do cabeçalho fica o painel **Sessão ao vivo**.
 
 Essa seção serve para:
@@ -191,6 +194,9 @@ Atualmente eles são:
 
 ### Lugares e Missões
 
+![Painel Lugares e Missões](../images/en_dashavv_luoghiequest.png){ .img-shot }
+
+
 Este painel é o ponto de entrada para o dashboard de lugares.
 
 A partir daqui você vê rapidamente:
@@ -218,6 +224,9 @@ Essa parte será descrita com mais detalhes na página dedicada a **Lugares**.
 
 ### Personagens
 
+![Painel Personagens](../images/en_dashavv_personaggi.png){ .img-shot }
+
+
 O painel **Personagens** mostra os personagens vinculados à campanha.
 
 Aqui você pode:
@@ -239,6 +248,9 @@ A diferença entre:
 será aprofundada na página dedicada a **Personagens**.
 
 ### Sessões
+
+![Painel Sessões](../images/en_dashavv_sessioni.png){ .img-shot }
+
 
 O painel **Sessões** reúne:
 
@@ -284,6 +296,9 @@ Os valores numéricos podem ser mostrados ou ocultados com o controle dedicado, 
 
 ### Imagens
 
+![Painel Imagens](../images/en_dashavv_immagini.png){ .img-shot }
+
+
 O painel **Imagens** reúne as imagens globais da aventura, ou seja, aquelas que não estão ligadas a um lugar específico.
 
 A partir daqui você pode:
@@ -296,6 +311,9 @@ A partir daqui você pode:
 Esta é a área certa para todo o material visual “de campanha” que não pertence a um lugar específico.
 
 ### Mapas
+
+![Painel Mapas](../images/en_dashavv_mappe.png){ .img-shot }
+
 
 O painel **Mapas** mostra todos os mapas vinculados aos lugares da aventura.
 
@@ -310,6 +328,9 @@ A partir deste cartão você pode:
 Essa parte será aprofundada nas páginas dedicadas a **Mapas** e **Mapas interativos**.
 
 ### Mapas Conceituais
+
+![Painel Mapas Conceituais](../images/en_dashavv_mappeconcettuali.png){ .img-shot }
+
 
 O painel **Mapas Conceituais** reúne os mapas globais da aventura.
 

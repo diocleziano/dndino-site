@@ -1,6 +1,6 @@
 # Avventura
 
-![Dashboard Avventura](../images/avventura/it_dashboardavventura.png){ .img-hero }
+![Dashboard Avventura](../images/en_dashboardavventura.png){ .img-hero }
 
 La sezione **Avventura** è il centro organizzativo di una campagna in DnDino. Qui nasce la struttura principale del tuo lavoro: il titolo della campagna, la sua identità visiva, i personaggi collegati, le sessioni, i luoghi, le immagini condivise, le mappe e gli accessi rapidi ai combattimenti.
 
@@ -157,6 +157,9 @@ Da qui puoi anche entrare in **Modifica** per tornare al form dell’avventura e
 
 ## Sessione live
 
+![Pannello Sessione live](../images/en_dashavv_sessionelive.png){ .img-shot }
+
+
 Accanto all’intestazione c’è il pannello **Sessione live**.
 
 Questa sezione serve per:
@@ -191,6 +194,9 @@ Quelli previsti attualmente sono:
 
 ### Luoghi e Quest
 
+![Pannello Luoghi e Quest](../images/en_dashavv_luoghiequest.png){ .img-shot }
+
+
 Questo pannello è il punto di ingresso alla dashboard dei luoghi.
 
 Da qui vedi rapidamente:
@@ -218,6 +224,9 @@ Questa parte verrà descritta meglio nella sottopagina dedicata ai **Luoghi**.
 
 ### Personaggi
 
+![Pannello Personaggi](../images/en_dashavv_personaggi.png){ .img-shot }
+
+
 Il pannello **Personaggi** mostra i personaggi collegati alla campagna.
 
 Qui puoi:
@@ -239,6 +248,9 @@ La differenza tra:
 verrà approfondita nella sottopagina dedicata ai **Personaggi**.
 
 ### Sessioni
+
+![Pannello Sessioni](../images/en_dashavv_sessioni.png){ .img-shot }
+
 
 Il pannello **Sessioni** raccoglie:
 
@@ -284,6 +296,9 @@ I valori numerici possono essere mostrati o nascosti dal relativo controllo, uti
 
 ### Immagini
 
+![Pannello Immagini](../images/en_dashavv_immagini.png){ .img-shot }
+
+
 Il pannello **Immagini** raccoglie le immagini globali dell’avventura, cioè quelle non legate a un luogo specifico.
 
 Da qui puoi:
@@ -296,6 +311,9 @@ Da qui puoi:
 Questa è la zona giusta per tutto il materiale visivo “di campagna” che non appartiene a un singolo luogo.
 
 ### Mappe
+
+![Pannello Mappe](../images/en_dashavv_mappe.png){ .img-shot }
+
 
 Il pannello **Mappe** mostra tutte le mappe collegate ai luoghi dell’avventura.
 
@@ -310,6 +328,9 @@ Da questa card puoi:
 Questa parte sarà approfondita nella sottopagina dedicata a **Mappe** e **Mappe interattive**.
 
 ### Mappe Concettuali
+
+![Pannello Mappe Concettuali](../images/en_dashavv_mappeconcettuali.png){ .img-shot }
+
 
 Il pannello **Mappe Concettuali** raccoglie le mappe globali dell’avventura.
 

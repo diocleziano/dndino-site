@@ -1,6 +1,6 @@
 # Aventura
 
-![Panel de Aventura](../images/avventura/it_dashboardavventura.png){ .img-hero }
+![Panel de Aventura](../images/en_dashboardavventura.png){ .img-hero }
 
 La sección **Aventura** es el centro organizativo de una campaña en DnDino. Aquí nace la estructura principal de tu trabajo: el título de la campaña, su identidad visual, los personajes vinculados, las sesiones, los lugares, las imágenes compartidas, los mapas y los accesos rápidos a los combates.
 
@@ -157,6 +157,9 @@ Desde aquí también puedes entrar en **Editar** para volver al formulario de la
 
 ## Sesión en vivo
 
+![Panel de sesión en vivo](../images/en_dashavv_sessionelive.png){ .img-shot }
+
+
 Junto al encabezado se encuentra el panel **Sesión en vivo**.
 
 Esta sección sirve para:
@@ -191,6 +194,9 @@ Actualmente son:
 
 ### Lugares y Misiones
 
+![Panel Lugares y Misiones](../images/en_dashavv_luoghiequest.png){ .img-shot }
+
+
 Este panel es el punto de entrada al dashboard de lugares.
 
 Desde aquí puedes ver rápidamente:
@@ -218,6 +224,9 @@ Esta parte se describe con más detalle en la página dedicada a **Lugares**.
 
 ### Personajes
 
+![Panel Personajes](../images/en_dashavv_personaggi.png){ .img-shot }
+
+
 El panel **Personajes** muestra los personajes vinculados a la campaña.
 
 Aquí puedes:
@@ -239,6 +248,9 @@ La diferencia entre:
 se explica con más detalle en la página dedicada a **Personajes**.
 
 ### Sesiones
+
+![Panel Sesiones](../images/en_dashavv_sessioni.png){ .img-shot }
+
 
 El panel **Sesiones** reúne:
 
@@ -284,6 +296,9 @@ Los valores numéricos pueden mostrarse u ocultarse con el control correspondien
 
 ### Imágenes
 
+![Panel Imágenes](../images/en_dashavv_immagini.png){ .img-shot }
+
+
 El panel **Imágenes** reúne las imágenes globales de la aventura, es decir, las que no están ligadas a un lugar concreto.
 
 Desde aquí puedes:
@@ -296,6 +311,9 @@ Desde aquí puedes:
 Es la zona adecuada para todo el material visual “de campaña” que no pertenece a un lugar concreto.
 
 ### Mapas
+
+![Panel Mapas](../images/en_dashavv_mappe.png){ .img-shot }
+
 
 El panel **Mapas** muestra todos los mapas vinculados a los lugares de la aventura.
 
@@ -310,6 +328,9 @@ Desde esta tarjeta puedes:
 Esta parte se desarrolla en las páginas dedicadas a **Mapas** y **Mapas interactivos**.
 
 ### Mapas conceptuales
+
+![Panel Mapas conceptuales](../images/en_dashavv_mappeconcettuali.png){ .img-shot }
+
 
 El panel **Mapas conceptuales** reúne los mapas conceptuales globales de la aventura.
 

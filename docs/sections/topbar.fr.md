@@ -1,5 +1,8 @@
 # Topbar
 
+![Topbar](../images/en_topbar.png){ .img-hero }
+
+
 La **topbar** est la zone de raccourcis globale de DnDino. Elle garde à portée de main les outils utilisés le plus souvent pendant la préparation ou la session.
 
 Elle peut afficher seulement les icônes, ou les icônes avec leur nom, selon le réglage choisi dans **Réglages**.

@@ -78,6 +78,9 @@ Il combattimento si crea dal contesto di un **luogo**. Una volta aperto, la sche
 
 ## Pre-combattimento
 
+![Schermata pre-combattimento](../images/en_combat_precombat.png){ .img-hero }
+
+
 Il pre-combattimento serve a preparare lo scontro prima del primo turno.
 
 In questa fase la schermata usa tre aree principali:
@@ -119,6 +122,9 @@ L'iniziativa viene recepita mentre scrivi, senza dover uscire dal campo. L'ordin
 
 ## Ordine finale
 
+![Ordine iniziativa preparato](../images/en_combat_precombat_valorizzato.png){ .img-hero }
+
+
 Il pannello **Ordine finale** mostra l'anteprima sempre aggiornata dell'ordine che verrà usato quando avvii lo scontro.
 
 L'ordine viene calcolato così:
@@ -144,6 +150,9 @@ Le presenze del luogo riusano lo stato locale, se disponibile.
 I mostri globali possono essere aggiunti più volte, perché spesso rappresentano più copie della stessa creatura.
 
 ## Combattimento attivo
+
+![Combattimento attivo](../images/en_combat_main.png){ .img-hero }
+
 
 Quando avvii lo scontro, la schermata passa alla gestione operativa.
 
@@ -246,6 +255,12 @@ Le modifiche ai PF vengono tenute allineate con la lista a sinistra e con il rie
 
 ## Azioni del partecipante
 
+![Finestre azioni combattimento](../images/en_combat_attaccosemplice.png){ .img-shot }
+![Finestre azioni combattimento](../images/en_combat_danni.png){ .img-detail }
+![Finestre azioni combattimento](../images/en_combat_cura.png){ .img-detail }
+![Promemoria tiro salvezza](../images/en_combat_tirosalvezza.png){ .img-detail }
+
+
 Ogni scheda può mostrare i pulsanti:
 
 - `Attacca`
@@ -317,6 +332,10 @@ I link più utili sono:
 
 ## Attacco completo
 
+![Finestra Attacco completo](../images/en_combat_attaccocompleto.png){ .img-shot }
+![Creazione link Attacco completo](../images/en_combat_attaccocompleto_link.png){ .img-shot }
+
+
 `Attacco completo` è pensato per i testi di attacco dei mostri, PNG o eroi.
 
 Lo prepari nella schermata di creazione o modifica del personaggio: selezioni il testo dell'attacco e crei un link di tipo `Attacco completo`. Da quel momento, durante il combattimento, quel testo diventa un'azione pronta da aprire e risolvere.
@@ -350,6 +369,9 @@ Il contatore non blocca l'utilizzo quando arriva al massimo: serve come promemor
 I trucchetti non usano slot.
 
 ## Condizioni
+
+![Finestra Condizioni](../images/en_combat_condizioni.png){ .img-shot }
+
 
 La finestra `Condizioni` permette di:
 
@@ -440,6 +462,9 @@ Quando succede qualcosa nel combattimento, DnDino mostra feedback immediato:
 Questo serve a capire subito che il comando è stato recepito.
 
 ## Riepilogo finale dello scontro
+
+![Riepilogo finale combattimento](../images/en_combat_postcombat.png){ .img-hero }
+
 
 Quando confermi la fine del combattimento, lo scontro non è più modificabile.
 

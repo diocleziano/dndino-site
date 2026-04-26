@@ -50,7 +50,7 @@ und in zwei Hauptbereiche gegliedert:
 
 ### Normaler Modus
 
-![Normaler Orte-Modus](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Orte-Baum](../images/en_luoghiequest_albero.png){ .img-hero }
 
 Das ist der klassische Modus, gedacht für die direkte Arbeit an:
 
@@ -65,7 +65,7 @@ Er ist der beste Modus, um das Abenteuer vorzubereiten und zu bearbeiten.
 
 ### Interaktiver Modus
 
-![Interaktiver Orte-Modus](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Interaktiver Orte-Modus](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 Der Modus `Interaktiv` wird verfügbar, wenn es im Abenteuer nutzbare interaktive Karten gibt.
 
@@ -356,6 +356,9 @@ Der Tab `Überblick` bündelt:
 
 ### Anwesende
 
+![Anwesende-Tab](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 Der Tab `Anwesende` zeigt die Charaktere, die sich an diesem Ort befinden.
 
 Von hier aus kannst du:
@@ -369,6 +372,9 @@ Von hier aus kannst du:
 
 ### Kämpfe
 
+![Kämpfe-Tab](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 Der Tab `Kämpfe` zeigt alle Auseinandersetzungen, die mit diesem Ort verknüpft sind.
 
 Von hier aus kannst du:
@@ -379,6 +385,9 @@ Von hier aus kannst du:
 - einen Kampf löschen
 
 ### Medien
+
+![Medien-Tab](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 Der Tab `Medien` bündelt:
 
@@ -395,6 +404,9 @@ Von hier aus kannst du:
 - direkt eine interaktive Karte öffnen
 
 ### Notizen
+
+![Notizen-Tab](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 Der Tab `Notizen` ist den schnellen Notizen der Spielleitung für diesen Ort gewidmet.
 

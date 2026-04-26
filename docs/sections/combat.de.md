@@ -78,6 +78,9 @@ Ein Kampf wird aus einem **Ort** erstellt. Danach wechselt die Ansicht je nach Z
 
 ## Vor dem Kampf
 
+![Vorkampf-Bildschirm](../images/en_combat_precombat.png){ .img-hero }
+
+
 Die Vorkampf-Ansicht bereitet die Begegnung vor dem ersten Zug vor.
 
 Sie besteht aus drei Hauptbereichen:
@@ -119,6 +122,9 @@ Die Initiative wird während der Eingabe übernommen, ohne dass das Feld den Fok
 
 ## Endgültige Reihenfolge
 
+![Vorbereitete Initiative](../images/en_combat_precombat_valorizzato.png){ .img-hero }
+
+
 Der Bereich **Endgültige Reihenfolge** zeigt laufend die Reihenfolge, die beim Start verwendet wird.
 
 Sortiert wird so:
@@ -144,6 +150,9 @@ Ortspräsenzen verwenden ihren lokalen Zustand, wenn vorhanden.
 Globale Monster können mehrfach hinzugefügt werden, weil sie oft mehrere Exemplare derselben Kreatur darstellen.
 
 ## Aktiver Kampf
+
+![Aktiver Kampf](../images/en_combat_main.png){ .img-hero }
+
 
 Nach dem Start wechselt DnDino in die operative Kampfansicht.
 
@@ -246,6 +255,12 @@ TP-Änderungen bleiben mit linker Liste und rechter Übersicht synchron.
 
 ## Teilnehmeraktionen
 
+![Kampfaktionsfenster](../images/en_combat_attaccosemplice.png){ .img-shot }
+![Kampfaktionsfenster](../images/en_combat_danni.png){ .img-detail }
+![Kampfaktionsfenster](../images/en_combat_cura.png){ .img-detail }
+![Rettungswurf-Erinnerung](../images/en_combat_tirosalvezza.png){ .img-detail }
+
+
 Eine Karte kann zeigen:
 
 - `Angreifen`
@@ -317,6 +332,10 @@ Die nützlichsten Links sind:
 
 ## Vollständiger Angriff
 
+![Fenster Vollständiger Angriff](../images/en_combat_attaccocompleto.png){ .img-shot }
+![Link-Erstellung Vollständiger Angriff](../images/en_combat_attaccocompleto_link.png){ .img-shot }
+
+
 `Vollständiger Angriff` ist für Angriffstexte von Monstern, NSC oder Helden gedacht.
 
 Du bereitest ihn im Erstellen- oder Bearbeiten-Dialog des Charakters vor: Markiere den Angriffstext und erstelle einen Link vom Typ `Vollständiger Angriff`. Im Kampf wird dieser Text zu einer vorbereiteten Aktion.
@@ -350,6 +369,9 @@ Der Zähler blockiert nicht, wenn er das Maximum erreicht. Er ist nur eine Gedä
 Zaubertricks verbrauchen keine Plätze.
 
 ## Zustände
+
+![Zustände-Fenster](../images/en_combat_condizioni.png){ .img-shot }
+
 
 Das Fenster `Zustände` erlaubt:
 
@@ -438,6 +460,9 @@ Wenn im Kampf etwas passiert, zeigt DnDino sofort Feedback:
 So ist klar, dass der Befehl angekommen ist.
 
 ## Abschlussübersicht
+
+![Abschlussübersicht Kampf](../images/en_combat_postcombat.png){ .img-hero }
+
 
 Nach Bestätigung des Kampfendes ist die Begegnung nicht mehr bearbeitbar.
 

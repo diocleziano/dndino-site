@@ -1,5 +1,8 @@
 # Topbar
 
+![Topbar](../images/en_topbar.png){ .img-hero }
+
+
 La **topbar** è la barra superiore di DnDino. Raccoglie le scorciatoie globali che servono più spesso mentre prepari o conduci un'avventura, senza obbligarti a tornare alla home o cambiare sezione.
 
 Può essere mostrata con sole icone oppure con icona e nome sotto, in base alla preferenza scelta in **Impostazioni**.

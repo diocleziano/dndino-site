@@ -78,6 +78,9 @@ Le combat est créé depuis un **lieu**. Une fois ouvert, l'écran change selon 
 
 ## Pré-Combat
 
+![Écran de pré-combat](../images/en_combat_precombat.png){ .img-hero }
+
+
 Le pré-combat sert à préparer l'affrontement avant le premier tour.
 
 L'écran comporte trois zones principales :
@@ -119,6 +122,9 @@ L'initiative est prise en compte pendant la saisie, sans attendre de quitter le 
 
 ## Ordre Final
 
+![Ordre d’initiative préparé](../images/en_combat_precombat_valorizzato.png){ .img-hero }
+
+
 Le panneau **Ordre final** montre l'aperçu toujours à jour de l'ordre qui sera utilisé au lancement.
 
 L'ordre est calculé ainsi :
@@ -144,6 +150,9 @@ Les présences du lieu réutilisent leur état local si disponible.
 Les monstres globaux peuvent être ajoutés plusieurs fois, car ils représentent souvent plusieurs exemplaires d'une même créature.
 
 ## Combat Actif
+
+![Combat actif](../images/en_combat_main.png){ .img-hero }
+
 
 Quand l'affrontement démarre, l'écran passe à la gestion opérationnelle.
 
@@ -246,6 +255,12 @@ Les changements de PV restent synchronisés avec la liste de gauche et le récap
 
 ## Actions du Participant
 
+![Fenêtres d’actions de combat](../images/en_combat_attaccosemplice.png){ .img-shot }
+![Fenêtres d’actions de combat](../images/en_combat_danni.png){ .img-detail }
+![Fenêtres d’actions de combat](../images/en_combat_cura.png){ .img-detail }
+![Rappel de jet de sauvegarde](../images/en_combat_tirosalvezza.png){ .img-detail }
+
+
 Chaque fiche peut afficher :
 
 - `Attaquer`
@@ -317,6 +332,10 @@ Les liens les plus utiles sont :
 
 ## Attaque Complète
 
+![Fenêtre Attaque complète](../images/en_combat_attaccocompleto.png){ .img-shot }
+![Création du lien Attaque complète](../images/en_combat_attaccocompleto_link.png){ .img-shot }
+
+
 `Attaque complète` est pensée pour les textes d'attaque des monstres, PNJ ou héros.
 
 Tu la prépares dans l'écran de création ou de modification du personnage : sélectionne le texte de l'attaque et crée un lien de type `Attaque complète`. Pendant le combat, ce texte devient une action prête à ouvrir et résoudre.
@@ -350,6 +369,9 @@ Le compteur ne bloque pas l'utilisation quand il atteint le maximum : il sert se
 Les tours de magie n'utilisent pas d'emplacements.
 
 ## États
+
+![Fenêtre États](../images/en_combat_condizioni.png){ .img-shot }
+
 
 La fenêtre `États` permet de :
 
@@ -438,6 +460,9 @@ Quand quelque chose arrive en combat, DnDino donne un retour immédiat :
 Cela permet de comprendre tout de suite que la commande a été prise en compte.
 
 ## Résumé Final
+
+![Résumé final du combat](../images/en_combat_postcombat.png){ .img-hero }
+
 
 Quand tu confirmes la fin du combat, l'affrontement n'est plus modifiable.
 

@@ -50,7 +50,7 @@ e in una struttura a due aree:
 
 ### Modalità Normale
 
-![Modalità Normale Luoghi](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Albero Luoghi](../images/en_luoghiequest_albero.png){ .img-hero }
 
 È la modalità classica, pensata per lavorare direttamente su:
 
@@ -65,7 +65,7 @@ e in una struttura a due aree:
 
 ### Modalità Interattiva
 
-![Modalità Interattiva Luoghi](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Modalità Interattiva Luoghi](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 La modalità `Interattiva` si attiva quando nell’avventura esistono mappe interattive disponibili.
 
@@ -354,6 +354,9 @@ La scheda `Panoramica` raccoglie:
 
 ### Presenze
 
+![Scheda Presenze](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 La scheda `Presenze` raccoglie i personaggi presenti nel luogo.
 
 Da qui puoi:
@@ -367,6 +370,9 @@ Da qui puoi:
 
 ### Combattimenti
 
+![Scheda Combattimenti](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 La scheda `Combattimenti` mostra tutti gli scontri collegati al luogo.
 
 Da qui puoi:
@@ -377,6 +383,9 @@ Da qui puoi:
 - eliminare un combattimento
 
 ### Media
+
+![Scheda Media](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 La scheda `Media` raccoglie:
 
@@ -393,6 +402,9 @@ Da qui puoi:
 - aprire direttamente una mappa interattiva
 
 ### Note
+
+![Scheda Note](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 La scheda `Note` è dedicata alle note rapide del luogo per il DM.
 

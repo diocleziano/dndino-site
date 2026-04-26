@@ -1,6 +1,6 @@
 # Abenteuer
 
-![Abenteuer-Dashboard](../images/avventura/it_dashboardavventura.png){ .img-hero }
+![Abenteuer-Dashboard](../images/en_dashboardavventura.png){ .img-hero }
 
 Der Bereich **Abenteuer** ist das organisatorische Zentrum einer Kampagne in DnDino. Hier entsteht die Hauptstruktur deiner Arbeit: der Titel der Kampagne, ihre visuelle Identität, die verknüpften Charaktere, Sitzungen, Orte, gemeinsame Bilder, Karten und die Schnellzugriffe auf Kämpfe.
 
@@ -157,6 +157,9 @@ Von hier aus kannst du auch **Bearbeiten** öffnen, um zum Abenteuerformular zur
 
 ## Live-Sitzung
 
+![Live-Sitzungs-Panel](../images/en_dashavv_sessionelive.png){ .img-shot }
+
+
 Neben der Kopfzeile befindet sich das Panel **Live-Sitzung**.
 
 Dieser Bereich dient dazu:
@@ -191,6 +194,9 @@ Aktuell sind dies:
 
 ### Orte und Quests
 
+![Orte-und-Quests-Panel](../images/en_dashavv_luoghiequest.png){ .img-shot }
+
+
 Dieses Panel ist der Einstieg in das Orte-Dashboard.
 
 Hier siehst du schnell:
@@ -218,6 +224,9 @@ Dieser Teil wird auf der Unterseite **Orte** genauer beschrieben.
 
 ### Charaktere
 
+![Charaktere-Panel](../images/en_dashavv_personaggi.png){ .img-shot }
+
+
 Das Panel **Charaktere** zeigt die mit der Kampagne verknüpften Charaktere.
 
 Hier kannst du:
@@ -239,6 +248,9 @@ Der Unterschied zwischen:
 wird auf der Unterseite **Charaktere** ausführlicher erklärt.
 
 ### Sitzungen
+
+![Sitzungen-Panel](../images/en_dashavv_sessioni.png){ .img-shot }
+
 
 Das Panel **Sitzungen** sammelt:
 
@@ -284,6 +296,9 @@ Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen wer
 
 ### Bilder
 
+![Bilder-Panel](../images/en_dashavv_immagini.png){ .img-shot }
+
+
 Das Panel **Bilder** sammelt die globalen Abenteuerbilder, also diejenigen, die nicht an einen bestimmten Ort gebunden sind.
 
 Von hier aus kannst du:
@@ -296,6 +311,9 @@ Von hier aus kannst du:
 Das ist der richtige Bereich für kampagnenweites Bildmaterial, das nicht zu einem einzelnen Ort gehört.
 
 ### Karten
+
+![Karten-Panel](../images/en_dashavv_mappe.png){ .img-shot }
+
 
 Das Panel **Karten** zeigt alle Karten, die mit den Orten des Abenteuers verbunden sind.
 
@@ -310,6 +328,9 @@ Von dieser Karte aus kannst du:
 Dieser Teil wird auf den Unterseiten **Karten** und **Interaktive Karten** weiter ausgeführt.
 
 ### Konzeptkarten
+
+![Konzeptkarten-Panel](../images/en_dashavv_mappeconcettuali.png){ .img-shot }
+
 
 Das Panel **Konzeptkarten** sammelt die globalen Konzeptkarten des Abenteuers.
 

@@ -50,7 +50,7 @@ et de deux zones :
 
 ### Mode Normal
 
-![Mode Normal des Lieux](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Arbre des lieux](../images/en_luoghiequest_albero.png){ .img-hero }
 
 Il s'agit du mode classique, pensé pour travailler directement sur :
 
@@ -65,7 +65,7 @@ C'est le mode le plus adapté pour préparer et modifier l'aventure.
 
 ### Mode Interactif
 
-![Mode Interactif des Lieux](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Mode interactif des lieux](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 Le mode `Interactif` devient disponible lorsqu'il existe des cartes interactives utilisables dans l'aventure.
 
@@ -354,6 +354,9 @@ L'onglet `Panoramique` rassemble :
 
 ### Présences
 
+![Onglet Présences](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 L'onglet `Présences` rassemble les personnages présents dans le lieu.
 
 Depuis là, tu peux :
@@ -367,6 +370,9 @@ Depuis là, tu peux :
 
 ### Combats
 
+![Onglet Combats](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 L'onglet `Combats` montre tous les affrontements liés au lieu.
 
 Depuis là, tu peux :
@@ -377,6 +383,9 @@ Depuis là, tu peux :
 - supprimer un combat
 
 ### Médias
+
+![Onglet Médias](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 L'onglet `Médias` rassemble :
 
@@ -393,6 +402,9 @@ Depuis là, tu peux :
 - ouvrir directement une carte interactive
 
 ### Notes
+
+![Onglet Notes](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 L'onglet `Notes` est consacré aux notes rapides du MJ pour le lieu.
 

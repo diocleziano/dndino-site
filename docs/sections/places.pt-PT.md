@@ -50,7 +50,7 @@ e em torno de duas áreas:
 
 ### Modo Normal
 
-![Modo Normal dos Locais](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Árvore de locais](../images/en_luoghiequest_albero.png){ .img-hero }
 
 É o modo clássico, pensado para trabalhar diretamente sobre:
 
@@ -65,7 +65,7 @@ e em torno de duas áreas:
 
 ### Modo Interativo
 
-![Modo Interativo dos Locais](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Modo interativo de locais](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 O modo `Interativo` fica disponível quando a aventura tem mapas interativos prontos a usar.
 
@@ -354,6 +354,9 @@ O separador `Panorâmica` reúne:
 
 ### Presenças
 
+![Separador Presenças](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 O separador `Presenças` reúne as personagens presentes no local.
 
 A partir daqui podes:
@@ -367,6 +370,9 @@ A partir daqui podes:
 
 ### Combates
 
+![Separador Combates](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 O separador `Combates` mostra todos os confrontos ligados ao local.
 
 A partir daqui podes:
@@ -377,6 +383,9 @@ A partir daqui podes:
 - eliminar um combate
 
 ### Média
+
+![Separador Média](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 O separador `Média` reúne:
 
@@ -393,6 +402,9 @@ A partir daqui podes:
 - abrir diretamente um mapa interativo
 
 ### Notas
+
+![Separador Notas](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 O separador `Notas` é dedicado às notas rápidas do DM para o local.
 

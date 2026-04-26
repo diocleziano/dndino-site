@@ -50,7 +50,7 @@ e de duas áreas:
 
 ### Modo Normal
 
-![Modo Normal dos Locais](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Árvore de locais](../images/en_luoghiequest_albero.png){ .img-hero }
 
 É o modo clássico, pensado para trabalhar diretamente sobre:
 
@@ -65,7 +65,7 @@ e de duas áreas:
 
 ### Modo Interativo
 
-![Modo Interativo dos Locais](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Modo interativo de locais](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 O modo `Interativo` fica disponível quando a aventura possui mapas interativos prontos para uso.
 
@@ -354,6 +354,9 @@ A aba `Panorama` reúne:
 
 ### Presenças
 
+![Aba Presenças](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 A aba `Presenças` reúne os personagens presentes no local.
 
 A partir daqui você pode:
@@ -367,6 +370,9 @@ A partir daqui você pode:
 
 ### Combates
 
+![Aba Combates](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 A aba `Combates` mostra todos os confrontos ligados ao local.
 
 A partir daqui você pode:
@@ -377,6 +383,9 @@ A partir daqui você pode:
 - excluir um combate
 
 ### Mídia
+
+![Aba Mídia](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 A aba `Mídia` reúne:
 
@@ -393,6 +402,9 @@ A partir daqui você pode:
 - abrir diretamente um mapa interativo
 
 ### Notas
+
+![Aba Notas](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 A aba `Notas` é dedicada às notas rápidas do DM para o local.
 

@@ -78,6 +78,9 @@ El combate se crea desde un **lugar**. Una vez abierto, la pantalla cambia segú
 
 ## Precombate
 
+![Pantalla de precombate](../images/en_combat_precombat.png){ .img-hero }
+
+
 El precombate sirve para preparar el encuentro antes del primer turno.
 
 La pantalla usa tres áreas principales:
@@ -119,6 +122,9 @@ La iniciativa se recoge mientras escribes, sin tener que salir del campo. Las co
 
 ## Orden Final
 
+![Orden de iniciativa preparado](../images/en_combat_precombat_valorizzato.png){ .img-hero }
+
+
 El panel **Orden final** muestra una vista previa siempre actualizada del orden que se usará al iniciar.
 
 El orden se calcula así:
@@ -144,6 +150,9 @@ Las presencias del lugar reutilizan su estado local si está disponible.
 Los monstruos globales pueden añadirse varias veces, porque suelen representar varias copias de la misma criatura.
 
 ## Combate Activo
+
+![Combate activo](../images/en_combat_main.png){ .img-hero }
+
 
 Al iniciar el encuentro, la pantalla pasa a la gestión operativa.
 
@@ -246,6 +255,12 @@ Los cambios de PG se mantienen sincronizados con la lista izquierda y el resumen
 
 ## Acciones del Participante
 
+![Ventanas de acciones de combate](../images/en_combat_attaccosemplice.png){ .img-shot }
+![Ventanas de acciones de combate](../images/en_combat_danni.png){ .img-detail }
+![Ventanas de acciones de combate](../images/en_combat_cura.png){ .img-detail }
+![Aviso de tirada de salvación](../images/en_combat_tirosalvezza.png){ .img-detail }
+
+
 Cada ficha puede mostrar:
 
 - `Atacar`
@@ -317,6 +332,10 @@ Los enlaces más útiles son:
 
 ## Ataque Completo
 
+![Ventana Ataque completo](../images/en_combat_attaccocompleto.png){ .img-shot }
+![Creación de enlace Ataque completo](../images/en_combat_attaccocompleto_link.png){ .img-shot }
+
+
 `Ataque completo` está pensado para textos de ataque de monstruos, PNJ o héroes.
 
 Se prepara en la pantalla de creación o modificación del personaje: seleccionas el texto del ataque y creas un enlace de tipo `Ataque completo`. Durante el combate, ese texto se convierte en una acción lista para abrir y resolver.
@@ -350,6 +369,9 @@ El contador no bloquea el uso al llegar al máximo: solo sirve como recordatorio
 Los trucos no usan espacios.
 
 ## Estados
+
+![Ventana Estados](../images/en_combat_condizioni.png){ .img-shot }
+
 
 La ventana `Estados` permite:
 
@@ -438,6 +460,9 @@ Cuando ocurre algo en combate, DnDino muestra feedback inmediato:
 Así queda claro que el comando se ha recibido.
 
 ## Resumen Final del Encuentro
+
+![Resumen final del combate](../images/en_combat_postcombat.png){ .img-hero }
+
 
 Cuando confirmas el fin del combate, el encuentro deja de ser modificable.
 

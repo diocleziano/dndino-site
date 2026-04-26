@@ -1,5 +1,8 @@
 # Barra Superior
 
+![Barra superior](../images/en_topbar.png){ .img-hero }
+
+
 La **barra superior** es la zona de accesos rápidos globales de DnDino. Mantiene a mano las herramientas que más se usan al preparar o dirigir una aventura.
 
 Puede mostrarse solo con iconos o con icono y nombre debajo, según la preferencia elegida en **Ajustes**.

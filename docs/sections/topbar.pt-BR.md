@@ -1,5 +1,8 @@
 # Topbar
 
+![Topbar](../images/en_topbar.png){ .img-hero }
+
+
 A **topbar** é a área de atalhos globais do DnDino. Ela mantém por perto as ferramentas mais usadas durante a preparação ou condução de uma aventura.
 
 Pode mostrar só ícones ou ícones com nome abaixo, conforme a preferência escolhida em **Configurações**.

@@ -1,6 +1,6 @@
 # Adventure
 
-![Adventure Dashboard](../images/avventura/it_dashboardavventura.png){ .img-hero }
+![Adventure Dashboard](../images/en_dashboardavventura.png){ .img-hero }
 
 The **Adventure** section is the organizational center of a campaign in DnDino. This is where the main structure of your work takes shape: the campaign title, its visual identity, the linked characters, sessions, places, shared images, maps, and quick access to combat.
 
@@ -157,6 +157,9 @@ From here you can also enter **Edit** to return to the adventure form and update
 
 ## Live Session
 
+![Live Session panel](../images/en_dashavv_sessionelive.png){ .img-shot }
+
+
 Next to the header there is the **Live session** panel.
 
 This section is used to:
@@ -191,6 +194,9 @@ At the moment, they are:
 
 ### Places and Quests
 
+![Places and Quests panel](../images/en_dashavv_luoghiequest.png){ .img-shot }
+
+
 This panel is the entry point to the places dashboard.
 
 From here you can quickly see:
@@ -218,6 +224,9 @@ This area is described in more detail in the dedicated **Places** page.
 
 ### Characters
 
+![Characters panel](../images/en_dashavv_personaggi.png){ .img-shot }
+
+
 The **Characters** panel shows the characters linked to the campaign.
 
 Here you can:
@@ -239,6 +248,9 @@ The difference between:
 is explained in more detail in the dedicated **Characters** page.
 
 ### Sessions
+
+![Sessions panel](../images/en_dashavv_sessioni.png){ .img-shot }
+
 
 The **Sessions** panel gathers:
 
@@ -284,6 +296,9 @@ Numeric values can be shown or hidden with the dedicated control, so you can cho
 
 ### Images
 
+![Images panel](../images/en_dashavv_immagini.png){ .img-shot }
+
+
 The **Images** panel gathers the global adventure images, meaning those not tied to a specific place.
 
 From here you can:
@@ -296,6 +311,9 @@ From here you can:
 This is the right area for campaign-wide visual material that doesn't belong to a single place.
 
 ### Maps
+
+![Maps panel](../images/en_dashavv_mappe.png){ .img-shot }
+
 
 The **Maps** panel shows all maps linked to the places of the adventure.
 
@@ -310,6 +328,9 @@ From this card you can:
 This part is covered further in the dedicated **Maps** and **Interactive Maps** pages.
 
 ### Concept Maps
+
+![Concept Maps panel](../images/en_dashavv_mappeconcettuali.png){ .img-shot }
+
 
 The **Concept Maps** panel gathers the adventure's global concept maps.
 

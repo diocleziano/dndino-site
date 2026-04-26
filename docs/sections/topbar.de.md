@@ -1,5 +1,8 @@
 # Topbar
 
+![Topbar](../images/en_topbar.png){ .img-hero }
+
+
 Die **Topbar** ist DnDinos globale Schnellzugriffsleiste. Sie hält die Werkzeuge bereit, die du beim Vorbereiten oder Leiten am häufigsten brauchst.
 
 Sie kann nur Symbole anzeigen oder Symbole mit Text darunter, je nach Einstellung unter **Einstellungen**.

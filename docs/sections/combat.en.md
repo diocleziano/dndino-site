@@ -78,6 +78,9 @@ Combat is created from a **place**. Once opened, the screen changes according to
 
 ## Pre-Combat
 
+![Pre-combat screen](../images/en_combat_precombat.png){ .img-hero }
+
+
 Pre-combat is where you prepare the encounter before the first turn.
 
 The screen has three main areas:
@@ -119,6 +122,9 @@ Initiative is read while you type, without waiting for the field to lose focus. 
 
 ## Final Order
 
+![Prepared initiative order](../images/en_combat_precombat_valorizzato.png){ .img-hero }
+
+
 The **Final Order** panel shows a live preview of the order that will be used when the encounter starts.
 
 The order is calculated as follows:
@@ -144,6 +150,9 @@ Place presences reuse local state when available.
 Global monsters can be added multiple times, because they often represent several copies of the same creature.
 
 ## Active Combat
+
+![Active combat screen](../images/en_combat_main.png){ .img-hero }
+
 
 When the encounter starts, the screen switches to the operational combat view.
 
@@ -246,6 +255,12 @@ HP changes stay synchronized with the left list and the right summary.
 
 ## Participant Actions
 
+![Combat action windows](../images/en_combat_attaccosemplice.png){ .img-shot }
+![Combat action windows](../images/en_combat_danni.png){ .img-detail }
+![Combat action windows](../images/en_combat_cura.png){ .img-detail }
+![Saving throw reminder](../images/en_combat_tirosalvezza.png){ .img-detail }
+
+
 Each sheet can show:
 
 - `Attack`
@@ -317,6 +332,10 @@ The most useful links are:
 
 ## Full Attack
 
+![Full Attack window](../images/en_combat_attaccocompleto.png){ .img-shot }
+![Full Attack link creation](../images/en_combat_attaccocompleto_link.png){ .img-shot }
+
+
 `Full Attack` is meant for monster, NPC, or hero attack text.
 
 You prepare it in the character creation or editing screen: select the attack text and create a `Full Attack` link. During combat, that text becomes an action ready to open and resolve.
@@ -350,6 +369,9 @@ The counter does not block usage when it reaches the maximum. It is only a remin
 Cantrips do not use slots.
 
 ## Conditions
+
+![Conditions window](../images/en_combat_condizioni.png){ .img-shot }
+
 
 The `Conditions` window lets you:
 
@@ -440,6 +462,9 @@ When something happens in combat, DnDino gives immediate feedback:
 This makes it clear that the command was received.
 
 ## Final Encounter Summary
+
+![Final combat summary](../images/en_combat_postcombat.png){ .img-hero }
+
 
 When you confirm the end of combat, the encounter can no longer be edited.
 

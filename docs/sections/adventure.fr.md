@@ -1,6 +1,6 @@
 # Aventure
 
-![Dashboard Aventure](../images/avventura/it_dashboardavventura.png){ .img-hero }
+![Dashboard Aventure](../images/en_dashboardavventura.png){ .img-hero }
 
 La section **Aventure** est le centre d'organisation d'une campagne dans DnDino. C'est ici que prend forme la structure principale de ton travail : le titre de la campagne, son identité visuelle, les personnages liés, les sessions, les lieux, les images partagées, les cartes et les accès rapides aux combats.
 
@@ -157,6 +157,9 @@ Depuis cette zone, tu peux aussi entrer dans **Modifier** pour revenir au formul
 
 ## Session live
 
+![Panneau Session live](../images/en_dashavv_sessionelive.png){ .img-shot }
+
+
 À côté de l'en-tête se trouve le panneau **Session live**.
 
 Cette section sert à :
@@ -191,6 +194,9 @@ Ceux prévus actuellement sont :
 
 ### Lieux et Quêtes
 
+![Panneau Lieux et Quêtes](../images/en_dashavv_luoghiequest.png){ .img-shot }
+
+
 Ce panneau est le point d'entrée vers la dashboard des lieux.
 
 Tu peux y voir rapidement :
@@ -218,6 +224,9 @@ Cette partie sera décrite plus en détail dans la page dédiée aux **Lieux**.
 
 ### Personnages
 
+![Panneau Personnages](../images/en_dashavv_personaggi.png){ .img-shot }
+
+
 Le panneau **Personnages** montre les personnages liés à la campagne.
 
 Ici tu peux :
@@ -239,6 +248,9 @@ La différence entre :
 sera approfondie dans la page dédiée aux **Personnages**.
 
 ### Sessions
+
+![Panneau Sessions](../images/en_dashavv_sessioni.png){ .img-shot }
+
 
 Le panneau **Sessions** rassemble :
 
@@ -284,6 +296,9 @@ Les valeurs numériques peuvent être affichées ou masquées avec le contrôle 
 
 ### Images
 
+![Panneau Images](../images/en_dashavv_immagini.png){ .img-shot }
+
+
 Le panneau **Images** rassemble les images globales de l'aventure, c'est-à-dire celles qui ne sont pas liées à un lieu spécifique.
 
 Depuis là, tu peux :
@@ -296,6 +311,9 @@ Depuis là, tu peux :
 C'est la bonne zone pour tout le matériel visuel de campagne qui n'appartient pas à un lieu précis.
 
 ### Cartes
+
+![Panneau Cartes](../images/en_dashavv_mappe.png){ .img-shot }
+
 
 Le panneau **Cartes** montre toutes les cartes liées aux lieux de l'aventure.
 
@@ -310,6 +328,9 @@ Depuis cette carte, tu peux :
 Cette partie sera détaillée dans les pages dédiées aux **Cartes** et aux **Cartes interactives**.
 
 ### Cartes conceptuelles
+
+![Panneau Cartes conceptuelles](../images/en_dashavv_mappeconcettuali.png){ .img-shot }
+
 
 Le panneau **Cartes conceptuelles** rassemble les cartes globales de l'aventure.
 

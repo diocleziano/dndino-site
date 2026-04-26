@@ -1,5 +1,8 @@
 # Top Bar
 
+![Top Bar](../images/en_topbar.png){ .img-hero }
+
+
 The **top bar** is DnDino's global shortcut area. It keeps the tools you use most often close at hand while preparing or running an adventure.
 
 It can show icons only, or icons with labels below, depending on the preference set in **Settings**.

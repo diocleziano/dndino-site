@@ -78,6 +78,9 @@ O combate é criado a partir de um **local**. Depois de aberto, o ecrã muda con
 
 ## Pré-Combate
 
+![Ecrã de pré-combate](../images/en_combat_precombat.png){ .img-hero }
+
+
 O pré-combate serve para preparar o encontro antes do primeiro turno.
 
 O ecrã tem três áreas principais:
@@ -119,6 +122,9 @@ A iniciativa é recebida enquanto escreves, sem ser necessário sair do campo. A
 
 ## Ordem Final
 
+![Ordem de iniciativa preparada](../images/en_combat_precombat_valorizzato.png){ .img-hero }
+
+
 O painel **Ordem final** mostra a pré-visualização sempre actualizada da ordem que será usada ao iniciar.
 
 A ordem é calculada assim:
@@ -144,6 +150,9 @@ As presenças do local reutilizam o estado local, se disponível.
 Monstros globais podem ser adicionados várias vezes, porque muitas vezes representam várias cópias da mesma criatura.
 
 ## Combate Activo
+
+![Combate ativo](../images/en_combat_main.png){ .img-hero }
+
 
 Quando o encontro começa, o ecrã passa para a gestão operacional.
 
@@ -246,6 +255,12 @@ As alterações aos PV mantêm-se sincronizadas com a lista esquerda e o resumo 
 
 ## Acções do Participante
 
+![Janelas de ações de combate](../images/en_combat_attaccosemplice.png){ .img-shot }
+![Janelas de ações de combate](../images/en_combat_danni.png){ .img-detail }
+![Janelas de ações de combate](../images/en_combat_cura.png){ .img-detail }
+![Lembrete de teste de resistência](../images/en_combat_tirosalvezza.png){ .img-detail }
+
+
 Cada ficha pode mostrar:
 
 - `Atacar`
@@ -317,6 +332,10 @@ As ligações mais úteis são:
 
 ## Ataque Completo
 
+![Janela Ataque completo](../images/en_combat_attaccocompleto.png){ .img-shot }
+![Criação de ligação Ataque completo](../images/en_combat_attaccocompleto_link.png){ .img-shot }
+
+
 `Ataque completo` foi pensado para textos de ataque de monstros, NPCs ou heróis.
 
 Prepara-se no ecrã de criação ou modificação da personagem: selecciona o texto do ataque e cria uma ligação do tipo `Ataque completo`. Durante o combate, esse texto torna-se uma acção pronta a abrir e resolver.
@@ -350,6 +369,9 @@ O contador não bloqueia a utilização quando chega ao máximo: serve apenas de
 Truques não usam espaços.
 
 ## Condições
+
+![Janela Condições](../images/en_combat_condizioni.png){ .img-shot }
+
 
 A janela `Condições` permite:
 
@@ -438,6 +460,9 @@ Quando algo acontece no combate, DnDino mostra feedback imediato:
 Assim percebes logo que o comando foi recebido.
 
 ## Resumo Final do Encontro
+
+![Resumo final do combate](../images/en_combat_postcombat.png){ .img-hero }
+
 
 Quando confirmas o fim do combate, o encontro deixa de ser modificável.
 

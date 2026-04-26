@@ -50,7 +50,7 @@ y en torno a dos áreas:
 
 ### Modo Normal
 
-![Modo Normal de Lugares](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Árbol de lugares](../images/en_luoghiequest_albero.png){ .img-hero }
 
 Es el modo clásico, pensado para trabajar directamente sobre:
 
@@ -65,7 +65,7 @@ Es el modo más adecuado para preparar y editar la aventura.
 
 ### Modo Interactivo
 
-![Modo Interactivo de Lugares](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Modo interactivo de lugares](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 El modo `Interactivo` se activa cuando la aventura dispone de mapas interactivos listos para usar.
 
@@ -354,6 +354,9 @@ La pestaña `Panorámica` reúne:
 
 ### Presencias
 
+![Pestaña Presencias](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 La pestaña `Presencias` reúne los personajes presentes en el lugar.
 
 Desde aquí puedes:
@@ -367,6 +370,9 @@ Desde aquí puedes:
 
 ### Combates
 
+![Pestaña Combates](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 La pestaña `Combates` muestra todos los enfrentamientos vinculados al lugar.
 
 Desde aquí puedes:
@@ -377,6 +383,9 @@ Desde aquí puedes:
 - eliminar un combate
 
 ### Medios
+
+![Pestaña Medios](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 La pestaña `Medios` reúne:
 
@@ -393,6 +402,9 @@ Desde aquí puedes:
 - abrir directamente un mapa interactivo
 
 ### Notas
+
+![Pestaña Notas](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 La pestaña `Notas` está dedicada a las notas rápidas del DM para el lugar.
 

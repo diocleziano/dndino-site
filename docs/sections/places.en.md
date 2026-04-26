@@ -50,7 +50,7 @@ and around two main areas:
 
 ### Normal Mode
 
-![Normal Places Mode](../images/avventura/it_LuoghiNormale.png){ .img-hero }
+![Places tree](../images/en_luoghiequest_albero.png){ .img-hero }
 
 This is the classic mode, designed for directly working on:
 
@@ -65,7 +65,7 @@ It is the best mode for preparing and editing the adventure.
 
 ### Interactive Mode
 
-![Interactive Places Mode](../images/avventura/it_LuoghiInterattiva.png){ .img-hero }
+![Interactive Places mode](../images/en_luoghiequest_interattiva.png){ .img-hero }
 
 `Interactive` mode becomes available when the adventure has interactive maps ready to use.
 
@@ -354,6 +354,9 @@ The `Overview` tab gathers:
 
 ### Occupants
 
+![Occupants tab](../images/en_luoghiequest_presenze.png){ .img-shot }
+
+
 The `Occupants` tab gathers the characters present in the place.
 
 From here you can:
@@ -367,6 +370,9 @@ From here you can:
 
 ### Combats
 
+![Combats tab](../images/en_luoghiequest_combattimenti.png){ .img-shot }
+
+
 The `Combats` tab shows all encounters linked to the place.
 
 From here you can:
@@ -377,6 +383,9 @@ From here you can:
 - delete a combat
 
 ### Media
+
+![Media tab](../images/en_luoghiequest_media.png){ .img-shot }
+
 
 The `Media` tab gathers:
 
@@ -393,6 +402,9 @@ From here you can:
 - open an interactive map directly
 
 ### Notes
+
+![Notes tab](../images/en_luoghiequest_note.png){ .img-shot }
+
 
 The `Notes` tab is dedicated to quick DM notes for the place.
 
