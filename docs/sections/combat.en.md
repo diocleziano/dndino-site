@@ -39,12 +39,17 @@ If the presentation is enabled, it can show:
 - attack animations
 - the final summary
 
+![Player screen during pre-combat](../images/en_combat_schermogiocatori_precombat.png){ .img-shot }
+
 The overlay can include:
 
 - round
 - current, maximum, and temporary HP
 - conditions
 - next turn
+
+![Player screen during a hero turn](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
+![Player screen during a monster turn](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 For enemies, monsters, and NPCs you can decide in settings whether names and details are shown to players.
 
@@ -467,6 +472,7 @@ This makes it clear that the command was received.
 
 ![Final combat summary](../images/en_combat_postcombat.png){ .img-hero }
 
+![Final summary on the player screen](../images/en_combat_schermogiocatori_postcombat.png){ .img-shot }
 
 When you confirm the end of combat, the encounter can no longer be edited.
 

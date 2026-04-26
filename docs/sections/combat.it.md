@@ -39,12 +39,17 @@ Se la presentazione è attiva, può mostrare:
 - animazione degli attacchi
 - riepilogo finale
 
+![Schermata giocatori nel pre-combattimento](../images/en_combat_schermogiocatori_precombat.png){ .img-shot }
+
 L'overlay può includere:
 
 - round
 - PF attuali, massimi e temporanei
 - condizioni
 - prossimo turno
+
+![Schermata giocatori durante il turno di un eroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
+![Schermata giocatori durante il turno di un mostro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 Per nemici, mostri e PNG puoi scegliere se mostrare nomi e dettagli ai giocatori dalle impostazioni.
 
@@ -467,6 +472,7 @@ Questo serve a capire subito che il comando è stato recepito.
 
 ![Riepilogo finale combattimento](../images/en_combat_postcombat.png){ .img-hero }
 
+![Riepilogo finale nella schermata giocatori](../images/en_combat_schermogiocatori_postcombat.png){ .img-shot }
 
 Quando confermi la fine del combattimento, lo scontro non è più modificabile.
 

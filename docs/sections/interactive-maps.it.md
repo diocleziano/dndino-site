@@ -209,6 +209,8 @@ Quando premi `Modifica`:
 - puoi selezionare marker esistenti per modificarli
 - puoi trascinare i marker per riposizionarli
 
+![Mappa interattiva in modalità modifica](../images/en_mappainterattiva_edit.png){ .img-hero }
+
 Quando premi `Blocca`, esci dalla modalità di modifica.
 
 ## Nuovo marker

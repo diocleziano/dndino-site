@@ -39,12 +39,17 @@ Wenn die Präsentation aktiv ist, kann sie zeigen:
 - Angriffsanimationen
 - Abschlussübersicht
 
+![Spielerfenster im Vorkampf](../images/en_combat_schermogiocatori_precombat.png){ .img-shot }
+
 Die Einblendung kann enthalten:
 
 - Runde
 - aktuelle, maximale und temporäre TP
 - Zustände
 - nächster Zug
+
+![Spielerfenster während des Zugs eines Helden](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
+![Spielerfenster während des Zugs eines Monsters](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 Für Gegner, Monster und NSC legst du in den Einstellungen fest, ob Namen und Details für Spieler sichtbar sind.
 
@@ -465,6 +470,7 @@ So ist klar, dass der Befehl angekommen ist.
 
 ![Abschlussübersicht Kampf](../images/en_combat_postcombat.png){ .img-hero }
 
+![Abschlussübersicht im Spielerfenster](../images/en_combat_schermogiocatori_postcombat.png){ .img-shot }
 
 Nach Bestätigung des Kampfendes ist die Begegnung nicht mehr bearbeitbar.
 

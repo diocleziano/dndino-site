@@ -209,6 +209,8 @@ When you press `Edit`:
 - you can select existing markers to edit them
 - you can drag markers to reposition them
 
+![Interactive map in edit mode](../images/en_mappainterattiva_edit.png){ .img-hero }
+
 When you press `Lock`, you leave edit mode.
 
 ## New Marker

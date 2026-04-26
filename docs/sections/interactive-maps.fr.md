@@ -209,6 +209,8 @@ Quand tu appuies sur `Modifier` :
 - tu peux sélectionner des marqueurs existants pour les modifier
 - tu peux faire glisser les marqueurs pour les repositionner
 
+![Carte interactive en mode modification](../images/en_mappainterattiva_edit.png){ .img-hero }
+
 Quand tu appuies sur `Verrouiller`, tu sors du mode édition.
 
 ## Nouveau marqueur

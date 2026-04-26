@@ -209,6 +209,8 @@ Quando você pressiona `Editar`:
 - pode selecionar marcadores existentes para editá-los
 - pode arrastar os marcadores para os reposicionar
 
+![Mapa interativo em modo de edição](../images/en_mappainterattiva_edit.png){ .img-hero }
+
 Quando você pressiona `Bloquear`, sai do modo de edição.
 
 ## Novo marcador

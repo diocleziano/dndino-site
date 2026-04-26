@@ -39,12 +39,17 @@ Si la présentation est active, elle peut montrer :
 - les animations d'attaque
 - le résumé final
 
+![Écran joueurs pendant le pré-combat](../images/en_combat_schermogiocatori_precombat.png){ .img-shot }
+
 L'affichage peut inclure :
 
 - round
 - PV actuels, maximums et temporaires
 - états
 - prochain tour
+
+![Écran joueurs pendant le tour d'un héros](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
+![Écran joueurs pendant le tour d'un monstre](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 Pour les ennemis, monstres et PNJ, les réglages permettent de choisir si les noms et détails sont visibles par les joueurs.
 
@@ -465,6 +470,7 @@ Cela permet de comprendre tout de suite que la commande a été prise en compte.
 
 ![Résumé final du combat](../images/en_combat_postcombat.png){ .img-hero }
 
+![Résumé final sur l'écran joueurs](../images/en_combat_schermogiocatori_postcombat.png){ .img-shot }
 
 Quand tu confirmes la fin du combat, l'affrontement n'est plus modifiable.
 

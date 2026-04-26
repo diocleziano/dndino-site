@@ -209,6 +209,8 @@ Wenn du `Bearbeiten` drückst:
 - kannst du bestehende Marker auswählen und bearbeiten
 - kannst du Marker ziehen, um sie neu zu positionieren
 
+![Interaktive Karte im Bearbeitungsmodus](../images/en_mappainterattiva_edit.png){ .img-hero }
+
 Wenn du `Sperren` drückst, verlässt du den Bearbeitungsmodus.
 
 ## Neuer Marker

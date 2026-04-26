@@ -39,12 +39,17 @@ Si la presentación está activa, puede mostrar:
 - animaciones de ataque
 - resumen final
 
+![Pantalla de jugadores durante el precombate](../images/en_combat_schermogiocatori_precombat.png){ .img-shot }
+
 La superposición puede incluir:
 
 - ronda
 - PG actuales, máximos y temporales
 - estados
 - siguiente turno
+
+![Pantalla de jugadores durante el turno de un héroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
+![Pantalla de jugadores durante el turno de un monstruo](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 Para enemigos, monstruos y PNJ puedes decidir en ajustes si se muestran nombres y detalles a los jugadores.
 
@@ -465,6 +470,7 @@ Así queda claro que el comando se ha recibido.
 
 ![Resumen final del combate](../images/en_combat_postcombat.png){ .img-hero }
 
+![Resumen final en la pantalla de jugadores](../images/en_combat_schermogiocatori_postcombat.png){ .img-shot }
 
 Cuando confirmas el fin del combate, el encuentro deja de ser modificable.
 
