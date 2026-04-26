@@ -1,6 +1,20 @@
 :root {
-  --md-primary-fg-color: #35589a;
-  --md-accent-fg-color: #67a1ff;
+  --md-primary-fg-color: #477fdb;
+  --md-primary-fg-color--light: #6fa2f4;
+  --md-primary-fg-color--dark: #2856a4;
+  --md-accent-fg-color: #477fdb;
+}
+
+.md-header,
+.md-tabs {
+  background: #477fdb;
+}
+
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
 }
 
 .md-typeset h1,

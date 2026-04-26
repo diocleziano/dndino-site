@@ -11,6 +11,8 @@ markdown_extensions:
 theme:
   name: material
   language: en
+  logo: images/icons/appicon.png
+  favicon: images/icons/appicon.png
   features:
     - navigation.sections
     - navigation.expand
@@ -23,7 +25,7 @@ theme:
     - content.code.copy
   palette:
     - scheme: default
-      primary: indigo
+      primary: blue
       accent: blue
 
 plugins:
