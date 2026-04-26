@@ -161,6 +161,18 @@ In più:
 
 Il riepilogo pubblico è centrato sui personaggi e non sui nemici.
 
+## Perché nei grafici di sessione o avventura alcuni personaggi non compaiono?
+
+I grafici usano solo i dati registrati durante i combattimenti completati.
+
+In generale:
+
+- se un personaggio partecipa a un combattimento ma fa o subisce `0` danni, DnDino può mostrarlo comunque con un punto a zero
+- se un personaggio non partecipa a quel combattimento, non viene disegnato in quel punto del grafico
+- nella legenda puoi nascondere o mostrare una riga per concentrarti sui personaggi che ti interessano
+
+Nei grafici della singola sessione l'asse orizzontale indica l'ordine degli incontri dentro quella sessione. Nelle statistiche dell'avventura, invece, i grafici possono raggruppare i dati per combattimento o per giorno, a seconda del pannello.
+
 ## Cosa succede se un eroe scende sotto 0 PF?
 
 Gli eroi possono andare in negativo.

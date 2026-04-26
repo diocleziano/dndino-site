@@ -161,6 +161,18 @@ Além disso:
 
 O resumo público é focado nos personagens, e não nos inimigos.
 
+## Por que alguns personagens não aparecem nos gráficos de sessão ou aventura?
+
+Os gráficos usam apenas os dados registrados durante combates concluídos.
+
+Em geral:
+
+- se um personagem participa de um combate mas causa ou sofre `0` de dano, o DnDino ainda pode mostrá-lo com um ponto em zero
+- se um personagem não participa daquele combate, nenhum ponto é desenhado para ele naquela posição
+- você pode clicar na legenda para ocultar ou mostrar uma linha e focar nos personagens que interessam
+
+Nos gráficos de uma sessão, o eixo horizontal indica a ordem dos encontros dentro daquela sessão. Nas estatísticas da aventura, os gráficos podem agrupar os dados por combate ou por dia, dependendo do painel.
+
 ## O que acontece se um herói cair abaixo de 0 PV?
 
 Os heróis podem ficar com valores negativos.

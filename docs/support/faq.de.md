@@ -161,6 +161,18 @@ Zusätzlich gilt:
 
 Die öffentliche Zusammenfassung konzentriert sich auf die Spielercharaktere und nicht auf die Gegner.
 
+## Warum fehlen manche Charaktere in Sitzungs- oder Abenteuerdiagrammen?
+
+Die Diagramme verwenden nur Daten aus abgeschlossenen Kämpfen.
+
+Grundsätzlich gilt:
+
+- wenn ein Charakter an einem Kampf teilnimmt, aber `0` Schaden verursacht oder erleidet, kann DnDino trotzdem einen Nullpunkt anzeigen
+- wenn ein Charakter an diesem Kampf nicht teilnimmt, wird an dieser Stelle kein Punkt für ihn gezeichnet
+- über die Legende können Sie eine Linie ein- oder ausblenden, um sich auf bestimmte Charaktere zu konzentrieren
+
+In Diagrammen einer einzelnen Sitzung zeigt die horizontale Achse die Reihenfolge der Begegnungen innerhalb dieser Sitzung. In den Abenteuerstatistiken können die Diagramme die Daten je nach Bereich nach Kampf oder nach Tag gruppieren.
+
 ## Was passiert, wenn ein Held unter 0 TP fällt?
 
 Helden können in den negativen Bereich fallen.

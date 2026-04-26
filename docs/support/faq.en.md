@@ -161,6 +161,18 @@ In addition:
 
 The public summary is focused on the player characters, not the enemies.
 
+## Why are some characters missing from session or adventure charts?
+
+Charts use only the data recorded during completed combats.
+
+In general:
+
+- if a character takes part in a combat but deals or takes `0` damage, DnDino can still show a zero point
+- if a character does not take part in that combat, no point is drawn for that character there
+- you can click the legend to hide or show a line and focus on the characters you care about
+
+In single-session charts, the horizontal axis shows the encounter order within that session. In adventure statistics, charts can group data by combat or by day depending on the panel.
+
 ## What happens if a hero drops below 0 HP?
 
 Heroes can go into negative HP.
