@@ -1,6 +1,6 @@
 site_name: DnDino Guide
 site_description: Complete guide to using DnDino
-site_url: https://example.local/dndino
+site_url: https://diocleziano.github.io/dndino-site/
 docs_dir: docs
 not_in_nav: |
   page-template.md
