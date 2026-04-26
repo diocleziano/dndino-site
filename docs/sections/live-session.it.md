@@ -113,19 +113,11 @@ Se una sessione è attiva ma appartiene a un’altra avventura:
 
 ## La sessione live nella topbar
 
-Quando una sessione live è attiva, la barra superiore dell’app mostra un indicatore dedicato.
+Quando una sessione live è attiva, la topbar mostra un controllo dedicato con stato e timer. La descrizione completa della topbar è nella pagina `Topbar`.
 
-Questo elemento contiene:
+## Il pannello rapido della sessione live
 
-- titolo della sessione
-- timer
-- indicatore di stato
-
-Cliccandolo si apre un popover di controllo rapido.
-
-## Il popover della sessione live nella topbar
-
-Dal popover della topbar puoi fare operazioni molto veloci senza lasciare la schermata attuale.
+Dal pannello rapido della sessione puoi fare operazioni molto veloci senza lasciare la schermata attuale.
 
 Qui trovi:
 

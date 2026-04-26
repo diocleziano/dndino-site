@@ -87,7 +87,7 @@ The `Reset First Use` button tells DnDino to consider contextual guides and onbo
 
 ## Top Bar
 
-The `Top Bar` section defines how the quick tools in the top bar behave.
+The `Top Bar` section defines how the quick tools in the top bar behave. For a full explanation of each button, see the `Top Bar` page.
 
 ### Top Bar Look
 
@@ -98,11 +98,11 @@ You can choose whether the top bar is displayed:
 
 ### Default Die
 
-DnDino includes a quick dice roller in the top bar. Here you can choose the **default die type** shown when you open it.
+Here you can choose the **default die type** shown by the quick dice roller.
 
 ### Quick Character Opening
 
-This setting controls how quick opening of characters from the top bar behaves.
+This setting controls how quick opening of characters behaves.
 
 You can decide whether the shortcut should lead to:
 
@@ -111,7 +111,7 @@ You can decide whether the shortcut should lead to:
 
 ### Quick Rules Opening
 
-The top bar also allows fast opening of `Rules`.
+This setting controls quick opening of `Rules`.
 
 Here you can decide whether that shortcut should open:
 
@@ -120,7 +120,7 @@ Here you can decide whether that shortcut should open:
 
 ### Players Window Controls in the Top Bar
 
-The `Show players window controls in the top bar` option adds controls in the top bar to manually open or close the `Players Window`.
+The `Show players window controls in the top bar` option shows quick controls to manually open or close the `Players Window`.
 
 ## Places
 

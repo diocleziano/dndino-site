@@ -115,17 +115,11 @@ Se existir uma sessão ativa, mas pertencer a outra aventura:
 
 Quando uma sessão live está ativa, a barra superior da aplicação mostra um indicador dedicado.
 
-Este elemento contém:
+Para a descrição completa da topbar, consulta a página `Topbar`.
 
-- título da sessão
-- temporizador
-- indicador de estado
+## O painel rápido da sessão live
 
-Ao clicares nele, abre-se um popover de controlo rápido.
-
-## O popover da sessão live na topbar
-
-No popover da topbar podes fazer operações muito rápidas sem sair do ecrã atual.
+No painel rápido da sessão podes fazer operações muito rápidas sem sair do ecrã atual.
 
 Aqui encontras:
 

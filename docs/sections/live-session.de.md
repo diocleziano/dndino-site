@@ -115,17 +115,11 @@ Wenn eine Sitzung aktiv ist, aber zu einem anderen Abenteuer gehört:
 
 Wenn eine Live-Session aktiv ist, zeigt die obere Leiste der App einen eigenen Indikator an.
 
-Dieses Element enthält:
+Die vollständige Beschreibung der Topbar findest du auf der Seite `Topbar`.
 
-- Sitzungstitel
-- Timer
-- Statusanzeige
+## Schnellfenster der Live-Sitzung
 
-Ein Klick darauf öffnet ein Popover zur Schnellsteuerung.
-
-## Das Live-Session-Popover in der Topbar
-
-Über das Popover in der Topbar kannst du sehr schnelle Aktionen ausführen, ohne den aktuellen Bildschirm zu verlassen.
+Über das Schnellfenster der Sitzung kannst du sehr schnelle Aktionen ausführen, ohne den aktuellen Bildschirm zu verlassen.
 
 Dort findest du:
 

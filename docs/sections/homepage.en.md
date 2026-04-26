@@ -178,7 +178,7 @@ Opens the tool for quickly generating useful names during preparation or improvi
 - unexpected encounters
 
 !!! tip
-    During a session, the mini name generator in the top bar is often even more convenient, because it lets you create names without leaving the screen you're currently using.
+    The quick name generator is also available from the top bar, without leaving the current screen.
 
 ### Settings
 

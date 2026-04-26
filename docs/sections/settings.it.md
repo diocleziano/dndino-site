@@ -87,7 +87,7 @@ Il pulsante `Ripristina Primo Utilizzo` fa in modo che DnDino consideri di nuovo
 
 ## Topbar
 
-La sezione `Topbar` definisce il comportamento degli strumenti rapidi presenti nella barra superiore dell'app.
+La sezione `Topbar` definisce il comportamento degli strumenti rapidi presenti nella barra superiore dell'app. Per la descrizione completa di ogni pulsante, vedi la pagina `Topbar`.
 
 ### Aspetto topbar
 
@@ -98,11 +98,11 @@ Puoi scegliere se visualizzare la topbar:
 
 ### Dado predefinito
 
-DnDino include un lanciadadi rapido nella topbar. Qui puoi scegliere il **tipo di dado predefinito** proposto quando apri quel pannello.
+Qui puoi scegliere il **tipo di dado predefinito** proposto dal lanciadadi rapido.
 
 ### Apertura rapida personaggi
 
-Questa impostazione controlla il comportamento dell'apertura rapida dei personaggi dalla topbar.
+Questa impostazione controlla il comportamento dell'apertura rapida dei personaggi.
 
 Puoi decidere se l'apertura veloce deve portare:
 
@@ -111,7 +111,7 @@ Puoi decidere se l'apertura veloce deve portare:
 
 ### Apertura rapida regole
 
-La topbar permette anche un'apertura veloce delle `Regole`.
+Questa impostazione controlla l'apertura veloce delle `Regole`.
 
 Da qui puoi decidere se la scorciatoia deve aprire:
 
@@ -120,7 +120,7 @@ Da qui puoi decidere se la scorciatoia deve aprire:
 
 ### Controlli finestra giocatori nella topbar
 
-L'opzione `Mostra controlli finestra giocatori nella topbar` aggiunge nella barra superiore i controlli per aprire o chiudere manualmente la `Finestra Giocatori`.
+L'opzione `Mostra controlli finestra giocatori nella topbar` mostra i controlli rapidi per aprire o chiudere manualmente la `Finestra Giocatori`.
 
 ## Luoghi
 

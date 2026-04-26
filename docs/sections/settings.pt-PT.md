@@ -87,7 +87,7 @@ O botão `Restaurar Primeiro Uso` faz com que o DnDino volte a considerar como n
 
 ## Topbar
 
-A secção `Topbar` define o comportamento das ferramentas rápidas presentes na barra superior da aplicação.
+A secção `Topbar` define o comportamento das ferramentas rápidas presentes na barra superior da aplicação. Para a descrição completa de cada botão, consulta a página `Topbar`.
 
 ### Aspeto da topbar
 
@@ -98,11 +98,11 @@ Podes escolher se queres ver a topbar:
 
 ### Dado predefinido
 
-O DnDino inclui um lançador de dados rápido na topbar. Aqui podes escolher o **tipo de dado predefinido** que é proposto quando abres esse painel.
+Aqui podes escolher o **tipo de dado predefinido** do lançador de dados rápido.
 
 ### Abertura rápida de personagens
 
-Esta definição controla o comportamento da abertura rápida de personagens a partir da topbar.
+Esta definição controla o comportamento da abertura rápida de personagens.
 
 Podes decidir se o atalho deve abrir:
 
@@ -111,7 +111,7 @@ Podes decidir se o atalho deve abrir:
 
 ### Abertura rápida de regras
 
-A topbar também permite abrir rapidamente as `Regras`.
+Esta definição controla a abertura rápida das `Regras`.
 
 Daqui podes decidir se esse atalho deve abrir:
 
@@ -120,7 +120,7 @@ Daqui podes decidir se esse atalho deve abrir:
 
 ### Controlos da janela dos jogadores na topbar
 
-A opção `Mostrar controlos da janela dos jogadores na topbar` adiciona na barra superior os controlos para abrir ou fechar manualmente a `Janela dos Jogadores`.
+A opção `Mostrar controlos da janela dos jogadores na topbar` mostra controlos rápidos para abrir ou fechar manualmente a `Janela dos Jogadores`.
 
 ## Locais
 

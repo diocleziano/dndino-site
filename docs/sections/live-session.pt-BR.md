@@ -115,17 +115,11 @@ Se houver uma sessão ativa, mas ela pertencer a outra aventura:
 
 Quando uma sessão ao vivo está ativa, a barra superior do aplicativo mostra um indicador dedicado.
 
-Esse elemento contém:
+Para a descrição completa da topbar, consulte a página `Topbar`.
 
-- título da sessão
-- temporizador
-- indicador de estado
+## O painel rápido da sessão ao vivo
 
-Ao clicar nele, abre-se um popover de controle rápido.
-
-## O popover da sessão ao vivo na barra superior
-
-Pelo popover da barra superior você pode fazer operações muito rápidas sem sair da tela atual.
+Pelo painel rápido da sessão você pode fazer operações muito rápidas sem sair da tela atual.
 
 Aqui você encontra:
 

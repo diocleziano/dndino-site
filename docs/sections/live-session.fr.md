@@ -115,17 +115,11 @@ Si une session est active mais appartient à une autre aventure :
 
 Quand une session live est active, la barre supérieure de l’application affiche un indicateur dédié.
 
-Cet élément contient :
+Pour la description complète de la topbar, consulte la page `Topbar`.
 
-- titre de la session
-- minuteur
-- indicateur d’état
+## Le panneau rapide de la session live
 
-En cliquant dessus, tu ouvres un popover de contrôle rapide.
-
-## Le popover de la session live dans la topbar
-
-Depuis le popover de la topbar, tu peux effectuer des actions très rapides sans quitter l’écran actuel.
+Depuis le panneau rapide de la session, tu peux effectuer des actions très rapides sans quitter l’écran actuel.
 
 Tu y trouves :
 

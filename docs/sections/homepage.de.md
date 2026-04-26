@@ -178,7 +178,7 @@ Jede Karte enthält:
 - unerwartete Begegnungen
 
 !!! tip
-    Während einer Sitzung ist der kleine Namensgenerator in der Topbar oft noch praktischer, weil du damit Namen erzeugen kannst, ohne den aktuellen Bildschirm zu verlassen.
+    Der schnelle Namensgenerator ist auch über die Topbar verfügbar, ohne den aktuellen Bildschirm zu verlassen.
 
 ### Einstellungen
 

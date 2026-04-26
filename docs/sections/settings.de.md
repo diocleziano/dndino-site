@@ -87,7 +87,7 @@ Die Schaltfläche `Erstnutzung zurücksetzen` weist DnDino an, kontextbezogene H
 
 ## Topbar
 
-Der Bereich `Topbar` definiert das Verhalten der Schnellwerkzeuge in der oberen Leiste der App.
+Der Bereich `Topbar` definiert das Verhalten der Schnellwerkzeuge in der oberen Leiste der App. Die vollständige Beschreibung aller Schaltflächen findest du auf der Seite `Topbar`.
 
 ### Darstellung der Topbar
 
@@ -98,11 +98,11 @@ Du kannst wählen, ob die Topbar angezeigt wird:
 
 ### Standardwürfel
 
-DnDino enthält einen schnellen Würfelroller in der Topbar. Hier kannst du den **Standardwürfeltyp** festlegen, der beim Öffnen vorgeschlagen wird.
+Hier kannst du den **Standardwürfeltyp** des schnellen Würfelrollers festlegen.
 
 ### Schnelles Öffnen von Charakteren
 
-Diese Einstellung steuert das Verhalten des schnellen Öffnens von Charakteren aus der Topbar.
+Diese Einstellung steuert das Verhalten des schnellen Öffnens von Charakteren.
 
 Du kannst entscheiden, ob die Abkürzung zu:
 
@@ -113,7 +113,7 @@ führen soll.
 
 ### Schnelles Öffnen von Regeln
 
-Die Topbar erlaubt auch ein schnelles Öffnen der `Regeln`.
+Diese Einstellung steuert das schnelle Öffnen der `Regeln`.
 
 Hier kannst du festlegen, ob diese Abkürzung:
 
@@ -124,7 +124,7 @@ Hier kannst du festlegen, ob diese Abkürzung:
 
 ### Steuerung des Spielerfensters in der Topbar
 
-Die Option `Steuerung des Spielerfensters in der Topbar anzeigen` fügt in der oberen Leiste Schaltflächen hinzu, um das `Spielerfenster` manuell zu öffnen oder zu schließen.
+Die Option `Steuerung des Spielerfensters in der Topbar anzeigen` zeigt Schnellsteuerungen, um das `Spielerfenster` manuell zu öffnen oder zu schließen.
 
 ## Orte
 

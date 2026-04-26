@@ -115,17 +115,11 @@ If a session is active but belongs to another adventure:
 
 When a live session is active, the app top bar shows a dedicated indicator.
 
-This element contains:
+For the full description of the top bar, see the `Top Bar` page.
 
-- session title
-- timer
-- state indicator
+## The Live Session Quick Panel
 
-Clicking it opens a quick-control popover.
-
-## The Live Session Popover in the Top Bar
-
-From the top-bar popover you can perform quick actions without leaving your current screen.
+From the quick session panel you can perform actions without leaving your current screen.
 
 Here you will find:
 

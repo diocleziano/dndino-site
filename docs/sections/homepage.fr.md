@@ -178,7 +178,7 @@ Ouvre l'outil qui permet de générer rapidement des noms utiles pendant la pré
 - les rencontres imprévues
 
 !!! tip
-    Pendant une séance, le mini générateur de noms de la topbar est souvent encore plus pratique, car il permet de produire un nom sans quitter l'écran sur lequel tu travailles.
+    Le générateur rapide de noms est aussi disponible depuis la topbar, sans quitter l'écran courant.
 
 ### Paramètres
 

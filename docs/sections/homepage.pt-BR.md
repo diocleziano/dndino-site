@@ -178,7 +178,7 @@ Abre a ferramenta para gerar rapidamente nomes úteis durante a preparação ou 
 - encontros inesperados
 
 !!! tip
-    Durante a sessão, o mini gerador de nomes da barra superior costuma ser ainda mais prático, porque permite criar nomes sem sair da tela em que você está trabalhando.
+    O gerador rápido de nomes também está disponível na topbar, sem sair da tela atual.
 
 ### Configurações
 

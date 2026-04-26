@@ -178,7 +178,7 @@ Apre lo strumento per generare rapidamente nomi utili durante la preparazione o 
 - incontri improvvisi
 
 !!! tip
-    Durante la sessione ti tornerà spesso più comodo usare il mini generatore di nomi direttamente dalla topbar, senza uscire dalla schermata in cui ti trovi.
+    Il generatore rapido è disponibile anche dalla topbar, senza uscire dalla schermata in cui ti trovi.
 
 ### Impostazioni
 

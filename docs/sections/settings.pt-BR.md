@@ -87,7 +87,7 @@ O botão `Restaurar Primeiro Uso` faz com que o DnDino volte a considerar como n
 
 ## Barra superior
 
-A seção `Barra superior` define o comportamento das ferramentas rápidas presentes na barra superior do aplicativo.
+A seção `Barra superior` define o comportamento das ferramentas rápidas presentes na barra superior do aplicativo. Para a descrição completa de cada botão, consulte a página `Topbar`.
 
 ### Aparência da barra superior
 
@@ -98,11 +98,11 @@ Você pode escolher se quer ver a barra superior:
 
 ### Dado padrão
 
-O DnDino inclui um lançador de dados rápido na barra superior. Aqui você pode escolher o **tipo de dado padrão** apresentado quando abre esse painel.
+Aqui você pode escolher o **tipo de dado padrão** do rolador rápido.
 
 ### Abertura rápida de personagens
 
-Esta configuração controla o comportamento da abertura rápida de personagens a partir da barra superior.
+Esta configuração controla o comportamento da abertura rápida de personagens.
 
 Você pode decidir se o atalho deve abrir:
 
@@ -111,7 +111,7 @@ Você pode decidir se o atalho deve abrir:
 
 ### Abertura rápida de regras
 
-A barra superior também permite abrir rapidamente as `Regras`.
+Esta configuração controla a abertura rápida de `Regras`.
 
 Daqui você pode decidir se esse atalho deve abrir:
 
@@ -120,7 +120,7 @@ Daqui você pode decidir se esse atalho deve abrir:
 
 ### Controles da janela dos jogadores na barra superior
 
-A opção `Mostrar controles da janela dos jogadores na barra superior` adiciona na barra os controles para abrir ou fechar manualmente a `Janela dos Jogadores`.
+A opção `Mostrar controles da janela dos jogadores na barra superior` mostra controles rápidos para abrir ou fechar manualmente a `Janela dos Jogadores`.
 
 ## Locais
 

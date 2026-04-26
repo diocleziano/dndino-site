@@ -44,6 +44,7 @@ plugins:
             - Iniziare: getting-started/overview.md
             - Sezioni:
                 - Home Page: sections/homepage.md
+                - Topbar: sections/topbar.md
                 - Eroi, PNG e Mostri: sections/characters.md
                 - Avventura: sections/adventure.md
                 - Luoghi e Quest: sections/places.md
@@ -67,6 +68,7 @@ plugins:
             - Getting Started: getting-started/overview.md
             - Sections:
                 - Home Page: sections/homepage.md
+                - Top Bar: sections/topbar.md
                 - Heroes, NPCs, and Monsters: sections/characters.md
                 - Adventure: sections/adventure.md
                 - Places and Quests: sections/places.md
@@ -89,6 +91,7 @@ plugins:
             - Demarrer: getting-started/overview.md
             - Sections:
                 - Page d'accueil: sections/homepage.md
+                - Topbar: sections/topbar.md
                 - Heros, PNJ et Monstres: sections/characters.md
                 - Aventure: sections/adventure.md
                 - Lieux et Quetes: sections/places.md
@@ -111,6 +114,7 @@ plugins:
             - Einstieg: getting-started/overview.md
             - Bereiche:
                 - Home: sections/homepage.md
+                - Topbar: sections/topbar.md
                 - Helden, NSCs und Monster: sections/characters.md
                 - Abenteuer: sections/adventure.md
                 - Orte und Quests: sections/places.md
@@ -133,6 +137,7 @@ plugins:
             - Primeros pasos: getting-started/overview.md
             - Secciones:
                 - Pagina de inicio: sections/homepage.md
+                - Barra superior: sections/topbar.md
                 - Heroes, PNJ y Monstruos: sections/characters.md
                 - Aventura: sections/adventure.md
                 - Lugares y Misiones: sections/places.md
@@ -157,6 +162,7 @@ plugins:
             - Comecar: getting-started/overview.md
             - Secoes:
                 - Pagina inicial: sections/homepage.md
+                - Topbar: sections/topbar.md
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Aventura: sections/adventure.md
                 - Locais e Quests: sections/places.md
@@ -181,6 +187,7 @@ plugins:
             - Primeiros passos: getting-started/overview.md
             - Secoes:
                 - Pagina inicial: sections/homepage.md
+                - Topbar: sections/topbar.md
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Aventura: sections/adventure.md
                 - Locais e Quests: sections/places.md
@@ -220,6 +227,7 @@ nav:
   - Getting Started: getting-started/overview.md
   - Sections:
       - Home Page: sections/homepage.md
+      - Top Bar: sections/topbar.md
       - Heroes, NPCs, and Monsters: sections/characters.md
       - Adventure: sections/adventure.md
       - Places and Quests: sections/places.md

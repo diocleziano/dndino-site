@@ -115,17 +115,11 @@ Si hay una sesión activa pero pertenece a otra aventura:
 
 Cuando una sesión en vivo está activa, la barra superior de la aplicación muestra un indicador específico.
 
-Este elemento contiene:
+Para la descripción completa de la barra superior, consulta la página `Barra superior`.
 
-- título de la sesión
-- temporizador
-- indicador de estado
+## El panel rápido de la sesión en vivo
 
-Al pulsarlo se abre un popover de control rápido.
-
-## El popover de la sesión en vivo en la barra superior
-
-Desde el popover de la barra superior puedes hacer operaciones muy rápidas sin salir de la pantalla actual.
+Desde el panel rápido de la sesión puedes hacer operaciones muy rápidas sin salir de la pantalla actual.
 
 Aquí encontrarás:
 

@@ -87,7 +87,7 @@ Le bouton `Réinitialiser le premier lancement` indique à DnDino de considérer
 
 ## Topbar
 
-La section `Topbar` définit le comportement des outils rapides présents dans la barre supérieure de l’application.
+La section `Topbar` définit le comportement des outils rapides présents dans la barre supérieure de l’application. Pour la description complète de chaque bouton, consulte la page `Topbar`.
 
 ### Apparence de la topbar
 
@@ -98,11 +98,11 @@ Tu peux choisir d’afficher la topbar :
 
 ### Dé par défaut
 
-DnDino inclut un lanceur de dés rapide dans la topbar. Ici, tu peux choisir le **type de dé par défaut** proposé quand tu ouvres ce panneau.
+Ici, tu peux choisir le **type de dé par défaut** proposé par le lanceur de dés rapide.
 
 ### Ouverture rapide des personnages
 
-Ce réglage contrôle le comportement de l’ouverture rapide des personnages depuis la topbar.
+Ce réglage contrôle le comportement de l’ouverture rapide des personnages.
 
 Tu peux décider si le raccourci doit mener :
 
@@ -111,7 +111,7 @@ Tu peux décider si le raccourci doit mener :
 
 ### Ouverture rapide des règles
 
-La topbar permet aussi une ouverture rapide des `Règles`.
+Ce réglage contrôle l’ouverture rapide des `Règles`.
 
 Depuis ici, tu peux décider si ce raccourci doit ouvrir :
 
@@ -120,7 +120,7 @@ Depuis ici, tu peux décider si ce raccourci doit ouvrir :
 
 ### Contrôles de la fenêtre joueurs dans la topbar
 
-L’option `Afficher les contrôles de la fenêtre joueurs dans la topbar` ajoute dans la barre supérieure les contrôles pour ouvrir ou fermer manuellement la `Fenêtre Joueurs`.
+L’option `Afficher les contrôles de la fenêtre joueurs dans la topbar` affiche les contrôles rapides pour ouvrir ou fermer manuellement la `Fenêtre Joueurs`.
 
 ## Lieux
 
