@@ -117,6 +117,8 @@ Quando uma sessão ao vivo está ativa, a barra superior do aplicativo mostra um
 
 Para a descrição completa da topbar, consulte a página `Topbar`.
 
+![Sessão ao vivo ativa na topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## O painel rápido da sessão ao vivo
 
 Pelo painel rápido da sessão você pode fazer operações muito rápidas sem sair da tela atual.

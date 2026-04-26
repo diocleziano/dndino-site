@@ -117,6 +117,8 @@ Quand une session live est active, la barre supérieure de l’application affic
 
 Pour la description complète de la topbar, consulte la page `Topbar`.
 
+![Session live active dans la topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## Le panneau rapide de la session live
 
 Depuis le panneau rapide de la session, tu peux effectuer des actions très rapides sans quitter l’écran actuel.

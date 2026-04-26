@@ -117,6 +117,8 @@ Quando uma sessão live está ativa, a barra superior da aplicação mostra um i
 
 Para a descrição completa da topbar, consulta a página `Topbar`.
 
+![Sessão live ativa na topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## O painel rápido da sessão live
 
 No painel rápido da sessão podes fazer operações muito rápidas sem sair do ecrã atual.

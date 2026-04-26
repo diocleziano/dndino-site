@@ -117,6 +117,8 @@ Cuando una sesión en vivo está activa, la barra superior de la aplicación mue
 
 Para la descripción completa de la barra superior, consulta la página `Barra superior`.
 
+![Sesión en vivo activa en la barra superior](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## El panel rápido de la sesión en vivo
 
 Desde el panel rápido de la sesión puedes hacer operaciones muy rápidas sin salir de la pantalla actual.

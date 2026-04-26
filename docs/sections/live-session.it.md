@@ -115,6 +115,8 @@ Se una sessione è attiva ma appartiene a un’altra avventura:
 
 Quando una sessione live è attiva, la topbar mostra un controllo dedicato con stato e timer. La descrizione completa della topbar è nella pagina `Topbar`.
 
+![Sessione live attiva nella topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## Il pannello rapido della sessione live
 
 Dal pannello rapido della sessione puoi fare operazioni molto veloci senza lasciare la schermata attuale.

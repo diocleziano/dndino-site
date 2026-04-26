@@ -117,6 +117,8 @@ Wenn eine Live-Session aktiv ist, zeigt die obere Leiste der App einen eigenen I
 
 Die vollständige Beschreibung der Topbar findest du auf der Seite `Topbar`.
 
+![Aktive Live-Session in der Topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## Schnellfenster der Live-Sitzung
 
 Über das Schnellfenster der Sitzung kannst du sehr schnelle Aktionen ausführen, ohne den aktuellen Bildschirm zu verlassen.

@@ -117,6 +117,8 @@ When a live session is active, the app top bar shows a dedicated indicator.
 
 For the full description of the top bar, see the `Top Bar` page.
 
+![Active live session in the top bar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+
 ## The Live Session Quick Panel
 
 From the quick session panel you can perform actions without leaving your current screen.
