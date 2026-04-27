@@ -47,6 +47,7 @@ plugins:
             - Sezioni:
                 - Home Page: sections/homepage.md
                 - Topbar: sections/topbar.md
+                - Regole ed Equipaggiamento: sections/rules-equipment.md
                 - Eroi, PNG e Mostri: sections/characters.md
                 - Avventura: sections/adventure.md
                 - Luoghi e Quest: sections/places.md
@@ -71,6 +72,7 @@ plugins:
             - Sections:
                 - Home Page: sections/homepage.md
                 - Top Bar: sections/topbar.md
+                - Rules and Equipment: sections/rules-equipment.md
                 - Heroes, NPCs, and Monsters: sections/characters.md
                 - Adventure: sections/adventure.md
                 - Places and Quests: sections/places.md
@@ -94,6 +96,7 @@ plugins:
             - Sections:
                 - Page d'accueil: sections/homepage.md
                 - Topbar: sections/topbar.md
+                - Regles et equipement: sections/rules-equipment.md
                 - Heros, PNJ et Monstres: sections/characters.md
                 - Aventure: sections/adventure.md
                 - Lieux et Quetes: sections/places.md
@@ -117,6 +120,7 @@ plugins:
             - Bereiche:
                 - Home: sections/homepage.md
                 - Topbar: sections/topbar.md
+                - Regeln und Ausrustung: sections/rules-equipment.md
                 - Helden, NSCs und Monster: sections/characters.md
                 - Abenteuer: sections/adventure.md
                 - Orte und Quests: sections/places.md
@@ -140,6 +144,7 @@ plugins:
             - Secciones:
                 - Pagina de inicio: sections/homepage.md
                 - Barra superior: sections/topbar.md
+                - Reglas y equipamiento: sections/rules-equipment.md
                 - Heroes, PNJ y Monstruos: sections/characters.md
                 - Aventura: sections/adventure.md
                 - Lugares y Misiones: sections/places.md
@@ -165,6 +170,7 @@ plugins:
             - Secoes:
                 - Pagina inicial: sections/homepage.md
                 - Topbar: sections/topbar.md
+                - Regras e equipamento: sections/rules-equipment.md
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Aventura: sections/adventure.md
                 - Locais e Quests: sections/places.md
@@ -190,6 +196,7 @@ plugins:
             - Secoes:
                 - Pagina inicial: sections/homepage.md
                 - Topbar: sections/topbar.md
+                - Regras e equipamento: sections/rules-equipment.md
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Aventura: sections/adventure.md
                 - Locais e Quests: sections/places.md
@@ -230,6 +237,7 @@ nav:
   - Sections:
       - Home Page: sections/homepage.md
       - Top Bar: sections/topbar.md
+      - Rules and Equipment: sections/rules-equipment.md
       - Heroes, NPCs, and Monsters: sections/characters.md
       - Adventure: sections/adventure.md
       - Places and Quests: sections/places.md

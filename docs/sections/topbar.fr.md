@@ -62,18 +62,6 @@ Elle couvre :
 
 Tu peux chercher par nom, catégorie, prérequis, type de règle, école ou description. Les sorts s'ouvrent dans une fenêtre dédiée ; les dons et entrées de glossaire peuvent s'ouvrir en consultation ou modification selon les réglages.
 
-### Renseigner les sorts
-
-Quand tu ajoutes ou modifies un sort, les champs restent libres : tu peux les remplir de la manière qui convient le mieux à ta campagne.
-
-Pour obtenir des filtres et des regroupements plus propres, il est toutefois conseillé de suivre quelques conventions :
-
-- pour les **tours de magie**, choisis `Tour de magie` dans le menu du niveau
-- dans le champ **classes**, sépare les noms de classes par des virgules, par exemple `Magicien, Clerc, Druide`
-- dans le champ **école**, indique seulement le nom de l'école, sans texte supplémentaire
-
-Ainsi, DnDino peut mieux répartir les sorts par classe, niveau et école lorsque tu les recherches ou les consultes pendant la partie.
-
 ## Dés
 
 `Dés` ouvre le lanceur de dés rapide.

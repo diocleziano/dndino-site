@@ -64,18 +64,6 @@ You can search by name, category, prerequisites, rule type, school, or descripti
 
 The lower buttons open the full feats, glossary, and spells sections.
 
-### Filling In Spells
-
-When you add or edit a spell, the fields are intentionally flexible: you can fill them in however best fits your campaign.
-
-For cleaner filters and grouping, though, it helps to follow a few conventions:
-
-- for **cantrips**, choose `Cantrip` from the level menu
-- in the **classes** field, separate class names with commas, for example `Wizard, Cleric, Druid`
-- in the **school** field, enter only the school name, without extra notes
-
-This helps DnDino split spells more reliably by class, level, and school when you search or reference them during play.
-
 ## Dice
 
 `Dice` opens the quick dice roller.

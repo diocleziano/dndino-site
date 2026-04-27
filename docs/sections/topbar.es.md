@@ -62,18 +62,6 @@ Busca en:
 
 Puedes buscar por nombre, categoría, prerrequisitos, tipo de regla, escuela o descripción. Los conjuros se abren en una ventana dedicada; dotes y glosario pueden abrirse en consulta o modificación según los ajustes.
 
-### Completar conjuros
-
-Cuando añades o modificas un conjuro, los campos son libres: puedes rellenarlos como mejor encaje con tu campaña.
-
-Para que los filtros y agrupaciones funcionen de forma más limpia, conviene seguir algunas convenciones:
-
-- para los **trucos**, elige `Truco` en el menú de nivel
-- en el campo **clases**, separa los nombres con comas, por ejemplo `Mago, Clérigo, Druida`
-- en el campo **escuela**, escribe solo el nombre de la escuela, sin texto adicional
-
-Así DnDino puede separar mejor los conjuros por clase, nivel y escuela cuando los buscas o los consultas durante la partida.
-
 ## Dados
 
 `Dados` abre el lanzador rápido de dados.
