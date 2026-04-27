@@ -62,6 +62,18 @@ Sie durchsucht:
 
 Du kannst nach Name, Kategorie, Voraussetzungen, Regeltyp, Schule oder Beschreibung suchen. Zauber öffnen sich in einem eigenen Fenster; Talente und Glossareinträge je nach Einstellung als Ansicht oder Bearbeitung.
 
+### Zauber eintragen
+
+Wenn du einen Zauber hinzufügst oder bearbeitest, bleiben die Felder bewusst frei: Du kannst sie so ausfüllen, wie es für deine Kampagne am besten passt.
+
+Für sauberere Filter und Gruppierungen helfen aber ein paar Konventionen:
+
+- für **Zaubertricks** im Grad-Menü `Zaubertrick` wählen
+- im Feld **Klassen** die Klassennamen mit Kommas trennen, zum Beispiel `Magier, Kleriker, Druide`
+- im Feld **Schule** nur den Namen der Magieschule eintragen, ohne zusätzliche Hinweise
+
+So kann DnDino Zauber zuverlässiger nach Klasse, Grad und Schule aufteilen, wenn du sie suchst oder während des Spiels nachschlägst.
+
 ## Würfel
 
 `Würfel` öffnet den schnellen Würfelroller.

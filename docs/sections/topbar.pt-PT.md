@@ -62,6 +62,18 @@ Pesquisa em:
 
 Podes pesquisar por nome, categoria, pré-requisitos, tipo de regra, escola ou descrição. As magias abrem numa janela dedicada; talentos e glossário podem abrir em consulta ou modificação conforme as definições.
 
+### Preencher magias
+
+Quando adicionas ou editas uma magia, os campos continuam livres: podes preenchê-los da forma que fizer mais sentido para a tua campanha.
+
+Para obter filtros e agrupamentos mais limpos, convém seguir algumas convenções:
+
+- para **truques**, escolhe `Truque` no menu de nível
+- no campo **classes**, separa os nomes por vírgulas, por exemplo `Mago, Clérigo, Druida`
+- no campo **escola**, escreve apenas o nome da escola, sem texto adicional
+
+Assim, o DnDino consegue separar melhor as magias por classe, nível e escola quando as pesquisas ou consultas durante o jogo.
+
 ## Dados
 
 `Dados` abre o lançador rápido de dados.

@@ -66,6 +66,18 @@ Puoi cercare per nome, categoria, prerequisiti, tipo di regola, scuola o descriz
 
 I pulsanti inferiori aprono direttamente le sezioni complete di talenti, glossario e incantesimi.
 
+### Compilare gli incantesimi
+
+Quando aggiungi o modifichi un incantesimo, i campi restano liberi: puoi compilarli nel modo più adatto alla tua campagna.
+
+Per ottenere filtri e raggruppamenti più puliti, però, conviene usare alcuni accorgimenti:
+
+- per i **trucchetti**, scegli `Trucchetto` nel menu del livello
+- nel campo **classi**, scrivi i nomi separati da virgola, ad esempio `Mago, Chierico, Druido`
+- nel campo **scuola**, inserisci solo il nome della scuola, senza testo aggiuntivo
+
+In questo modo DnDino riesce a separare meglio gli incantesimi per classe, livello e scuola quando li cerchi o li consulti durante il gioco.
+
 ## Dadi
 
 `Dadi` apre il lanciadadi rapido.
