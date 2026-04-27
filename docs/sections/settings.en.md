@@ -148,17 +148,7 @@ When a place is marked as `Being visited`, the place that was previously `Being 
 
 The `Combat` section gathers the global preferences of the combat system.
 
-Here you find both presentation options and settings that influence the practical flow of encounters and the `Players Window`.
-
-## Center Panel Order
-
-You can reorder the center combat panels by dragging elements such as:
-
-- `Attacks`
-- `Special Abilities`
-- `Abilities`
-- `Spells`
-- `Description`
+Here you find presentation options and preferences that influence the `Players Window`.
 
 ## Combat Presentation
 
@@ -178,17 +168,6 @@ When the turn changes, the app can:
 
 - automatically select the active participant
 - also open their detail
-
-### Automatically Sort by Initiative When Starting
-
-When you press `Start combat`, DnDino can automatically reorder participants by initiative before starting the round.
-
-### Ask for Confirmation Before Ending Combat
-
-This option matters because ending combat is not just a visual close:
-
-- it synchronizes HP and state back into linked records
-- it closes the encounter flow
 
 ### Show Combat Intro to Players
 

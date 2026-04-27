@@ -148,17 +148,7 @@ Quando un luogo viene segnato `In visita`, il luogo che era prima `In visita` vi
 
 La sezione `Combattimento` raccoglie le preferenze globali del sistema di combattimento.
 
-Qui trovi sia opzioni di presentazione, sia scelte che influenzano il flusso pratico dello scontro e della `Finestra Giocatori`.
-
-## Ordine pannelli centrali
-
-Puoi riordinare l'ordine dei pannelli centrali del combattimento trascinando elementi come:
-
-- `Attacchi`
-- `Abilità speciali`
-- `Abilità`
-- `Incantesimi`
-- `Descrizione`
+Qui trovi le opzioni di presentazione e le preferenze che influenzano la `Finestra Giocatori`.
 
 ## Presentazione combattimento
 
@@ -178,17 +168,6 @@ Quando il turno cambia, l'app può:
 
 - selezionare automaticamente il partecipante attivo
 - aprirne anche il dettaglio
-
-### Ordina automaticamente per iniziativa all'avvio
-
-Quando premi `Avvia combattimento`, DnDino può riordinare automaticamente i partecipanti in base all'iniziativa prima di iniziare il round.
-
-### Chiedi conferma prima di terminare il combattimento
-
-Questa opzione è importante perché la fine del combattimento non è solo una chiusura visiva:
-
-- sincronizza PF e stato sui record collegati
-- chiude il flusso dello scontro
 
 ### Mostra intro combattimento ai giocatori
 

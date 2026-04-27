@@ -152,17 +152,7 @@ Wenn ein Ort auf `In Besuch` gesetzt wird, wird der zuvor `In Besuch` befindlich
 
 Der Bereich `Kampf` bündelt die globalen Einstellungen des Kampfsystems.
 
-Hier findest du sowohl Darstellungsoptionen als auch Einstellungen, die den praktischen Ablauf einer Begegnung und des `Spielerfensters` beeinflussen.
-
-## Reihenfolge der mittleren Panels
-
-Du kannst die Reihenfolge der mittleren Kampfpanels ändern, indem du Elemente wie diese ziehst:
-
-- `Angriffe`
-- `Spezialfähigkeiten`
-- `Fähigkeiten`
-- `Zauber`
-- `Beschreibung`
+Hier findest du Darstellungsoptionen und Einstellungen für das `Spielerfenster`.
 
 ## Kampfpräsentation
 
@@ -182,17 +172,6 @@ Wenn der Zug wechselt, kann die App:
 
 - den aktiven Teilnehmenden automatisch auswählen
 - auch dessen Detailansicht öffnen
-
-### Beim Start automatisch nach Initiative sortieren
-
-Wenn du `Kampf starten` drückst, kann DnDino die Teilnehmenden automatisch nach Initiative sortieren, bevor die Runde beginnt.
-
-### Vor dem Beenden des Kampfs Bestätigung anfordern
-
-Diese Option ist wichtig, weil das Beenden eines Kampfs nicht nur eine visuelle Schließung ist:
-
-- TP und Status werden auf verknüpfte Datensätze zurückgeschrieben
-- der Begegnungsfluss wird abgeschlossen
 
 ### Kampf-Intro für Spielende anzeigen
 

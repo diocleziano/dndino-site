@@ -148,17 +148,7 @@ Quand un lieu est marqué `En visite`, le lieu qui était auparavant `En visite`
 
 La section `Combat` regroupe les préférences globales du système de combat.
 
-Tu y trouves à la fois des options de présentation et des choix qui influencent le flux pratique de l’affrontement et de la `Fenêtre Joueurs`.
-
-## Ordre des panneaux centraux
-
-Tu peux réorganiser l’ordre des panneaux centraux du combat en faisant glisser des éléments comme :
-
-- `Attaques`
-- `Capacités spéciales`
-- `Capacités`
-- `Sorts`
-- `Description`
+Tu y trouves les options de présentation et les préférences qui influencent la `Fenêtre Joueurs`.
 
 ## Présentation du combat
 
@@ -178,17 +168,6 @@ Quand le tour change, l’application peut :
 
 - sélectionner automatiquement le participant actif
 - ouvrir aussi son détail
-
-### Trier automatiquement par initiative au démarrage
-
-Quand tu appuies sur `Démarrer le combat`, DnDino peut réordonner automatiquement les participants selon l’initiative avant de lancer le round.
-
-### Demander confirmation avant de terminer le combat
-
-Cette option est importante car la fin du combat n’est pas qu’une fermeture visuelle :
-
-- elle synchronise les PV et l’état dans les enregistrements liés
-- elle ferme le flux de l’affrontement
 
 ### Afficher l’intro du combat aux joueurs
 

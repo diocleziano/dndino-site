@@ -148,17 +148,7 @@ Cuando un lugar se marca como `En visita`, el lugar que antes estaba `En visita`
 
 La sección `Combate` reúne las preferencias globales del sistema de combate.
 
-Aquí encontrarás tanto opciones de presentación como elecciones que influyen en el flujo práctico del enfrentamiento y de la `Ventana de Jugadores`.
-
-## Orden de los paneles centrales
-
-Puedes reordenar el orden de los paneles centrales del combate arrastrando elementos como:
-
-- `Ataques`
-- `Habilidades especiales`
-- `Habilidades`
-- `Conjuros`
-- `Descripción`
+Aquí encontrarás opciones de presentación y preferencias que influyen en la `Ventana de Jugadores`.
 
 ## Presentación del combate
 
@@ -178,17 +168,6 @@ Cuando cambia el turno, la aplicación puede:
 
 - seleccionar automáticamente al participante activo
 - abrir también su detalle
-
-### Ordenar automáticamente por iniciativa al empezar
-
-Cuando pulsas `Iniciar combate`, DnDino puede reordenar automáticamente a los participantes por iniciativa antes de comenzar el asalto.
-
-### Pedir confirmación antes de terminar el combate
-
-Esta opción es importante porque terminar un combate no es solo un cierre visual:
-
-- sincroniza PG y estado en los registros vinculados
-- cierra el flujo del enfrentamiento
 
 ### Mostrar intro del combate a los jugadores
 
