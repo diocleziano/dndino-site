@@ -142,11 +142,10 @@ Oui.
 Dans `Réglages > Combat`, vous pouvez notamment décider si les joueurs voient :
 
 - le numéro du round
-- les PV
-- les conditions
+- les PV et états des héros
+- les PV, états et noms des PNJ
+- les PV, états et noms des monstres/ennemis
 - le prochain tour
-- le vrai nom des ennemis
-- les détails des PNJ et des monstres
 
 Cela vous permet de choisir entre un combat plus transparent ou une présentation plus proche d'un écran de MJ.
 

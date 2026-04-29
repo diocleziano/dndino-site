@@ -51,7 +51,7 @@ L'affichage peut inclure :
 ![Écran joueurs pendant le tour d'un héros](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Écran joueurs pendant le tour d'un monstre](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Pour les ennemis, monstres et PNJ, les réglages permettent de choisir si les noms et détails sont visibles par les joueurs.
+Pour les héros, PNJ et monstres, les réglages permettent de choisir séparément quelles informations sont visibles par les joueurs.
 
 ## Réglages Utiles
 
@@ -64,11 +64,14 @@ Les plus importantes sont :
 - `Afficher l'intro du combat aux joueurs`
 - `Afficher le résumé final aux joueurs`
 - `Afficher le round sur l'écran joueurs`
-- `Afficher les PV sur l'écran joueurs`
-- `Afficher les états sur l'écran joueurs`
 - `Afficher le prochain tour sur l'écran joueurs`
-- `Afficher les détails des PNJ et monstres aux joueurs`
-- `Afficher les états des ennemis aux joueurs`
+- `Afficher les PV des héros sur l'écran joueurs`
+- `Afficher les états des héros sur l'écran joueurs`
+- `Afficher les PV des PNJ aux joueurs`
+- `Afficher les états des PNJ aux joueurs`
+- `Afficher les noms des PNJ aux joueurs`
+- `Afficher les PV des monstres aux joueurs`
+- `Afficher les états des monstres aux joueurs`
 - `Afficher les noms des ennemis aux joueurs`
 
 La fin du combat demande toujours confirmation, car fermer un affrontement synchronise l'état et les statistiques.

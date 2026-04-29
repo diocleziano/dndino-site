@@ -51,7 +51,7 @@ Die Einblendung kann enthalten:
 ![Spielerfenster während des Zugs eines Helden](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Spielerfenster während des Zugs eines Monsters](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Für Gegner, Monster und NSC legst du in den Einstellungen fest, ob Namen und Details für Spieler sichtbar sind.
+Für Helden, NSC und Monster legst du in den Einstellungen getrennt fest, welche Informationen für Spieler sichtbar sind.
 
 ## Nützliche Einstellungen
 
@@ -64,11 +64,14 @@ Wichtig sind vor allem:
 - `Kampf-Intro für Spieler anzeigen`
 - `Abschlussübersicht für Spieler anzeigen`
 - `Runde auf Spielerbildschirm anzeigen`
-- `TP auf Spielerbildschirm anzeigen`
-- `Zustände auf Spielerbildschirm anzeigen`
 - `Nächsten Zug auf Spielerbildschirm anzeigen`
-- `Details von NSC und Monstern für Spieler anzeigen`
-- `Zustände von Gegnern für Spieler anzeigen`
+- `TP der Helden auf dem Spielerbildschirm anzeigen`
+- `Zustände der Helden auf dem Spielerbildschirm anzeigen`
+- `TP von NSC für Spieler anzeigen`
+- `Zustände von NSC für Spieler anzeigen`
+- `Namen der NSC für Spieler anzeigen`
+- `TP von Monstern für Spieler anzeigen`
+- `Zustände von Monstern für Spieler anzeigen`
 - `Namen von Gegnern für Spieler anzeigen`
 
 Das Beenden eines Kampfes fragt immer nach Bestätigung, weil dabei Zustand und Statistiken synchronisiert werden.

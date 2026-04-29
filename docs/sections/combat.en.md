@@ -51,7 +51,7 @@ The overlay can include:
 ![Player screen during a hero turn](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Player screen during a monster turn](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-For enemies, monsters, and NPCs you can decide in settings whether names and details are shown to players.
+For heroes, NPCs, and monsters you can decide separately which information is shown to players in settings.
 
 ## Useful Settings
 
@@ -64,11 +64,14 @@ The most important ones are:
 - `Show combat intro to players`
 - `Show final summary to players`
 - `Show round on player screen`
-- `Show HP on player screen`
-- `Show conditions on player screen`
 - `Show next turn on player screen`
-- `Show NPC and monster details to players`
-- `Show enemy conditions to players`
+- `Show hero HP on the players screen`
+- `Show hero conditions on the players screen`
+- `Show NPC HP to players`
+- `Show NPC conditions to players`
+- `Show NPC names to players`
+- `Show monster HP to players`
+- `Show monster conditions to players`
 - `Show enemy names to players`
 
 Ending combat always asks for confirmation, because closing an encounter synchronizes state and statistics.

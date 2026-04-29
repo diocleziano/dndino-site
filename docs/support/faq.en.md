@@ -142,11 +142,10 @@ Yes.
 In `Settings > Combat`, among other things, you can decide whether players see:
 
 - round number
-- HP
-- conditions
+- hero HP and conditions
+- NPC HP, conditions, and names
+- monster/enemy HP, conditions, and names
 - next turn
-- enemies' real names
-- NPC and monster details
 
 This lets you decide whether you want a more transparent combat flow or a more classic DM-screen style.
 

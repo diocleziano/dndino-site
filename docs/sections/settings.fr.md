@@ -150,57 +150,53 @@ La section `Combat` regroupe les préférences globales du système de combat.
 
 Tu y trouves les options de présentation et les préférences qui influencent la `Fenêtre Joueurs`.
 
-## Présentation du combat
+### Activer l’écran de combat pour les joueurs
 
-Cette sous-section contrôle le comportement général du combat et de la présentation aux joueurs.
+C’est l’interrupteur principal. S’il est désactivé, DnDino n’utilise pas la fenêtre joueurs pour afficher l’intro, le tour courant, le round ou le résumé final du combat, et les options liées sont masquées.
 
-### Afficher le tour aux joueurs par défaut
+### Ouvrir la fenêtre joueurs si elle est fermée
 
-Si cette option est active, les nouveaux combats démarrent avec la présentation automatique du tour déjà activée.
+Si cette option est active, DnDino ouvre automatiquement la `Fenêtre Joueurs` quand le combat commence. Sinon, la présentation est mise à jour seulement si la fenêtre est déjà ouverte.
 
 ### Ouvrir la fenêtre joueurs même avec un seul moniteur
 
-Cette préférence contrôle le comportement automatique de la `Fenêtre Joueurs` dans les configurations à un seul écran.
+Cette option apparaît seulement si l’ouverture automatique est active. Elle sert à utiliser la `Fenêtre Joueurs` même sans second écran.
 
-### Afficher automatiquement le détail du joueur de tour
+## Présentation du combat
 
-Quand le tour change, l’application peut :
+Cette sous-section contrôle les informations générales affichées aux joueurs pendant l’affrontement :
 
-- sélectionner automatiquement le participant actif
-- ouvrir aussi son détail
+- `Afficher l’intro du combat aux joueurs`
+- `Afficher le résumé final aux joueurs`
+- `Afficher le round sur l’écran joueurs`
+- `Afficher le prochain tour sur l’écran joueurs`
 
-### Afficher l’intro du combat aux joueurs
+## Informations des héros
 
-Si elle est active, quand le combat démarre, la `Fenêtre Joueurs` affiche une courte introduction avec les participants de l’affrontement.
+Ces options s’appliquent uniquement lorsque le participant actif est un héros. Tu peux choisir d’afficher :
 
-### Afficher le résumé final aux joueurs
+- les PV actuels, maximums et temporaires
+- les états actifs
 
-Si elle est active, à la fin de l’affrontement, la `Fenêtre Joueurs` montre un résumé final avec les principales données des personnages.
+## Informations des PNJ
 
-## Informations du participant actif
+Ces options s’appliquent uniquement lorsque le participant actif est un PNJ. Tu peux choisir séparément d’afficher :
 
-Cette sous-section décide quelles informations du tour en cours sont montrées aux joueurs.
+- les PV actuels, maximums et temporaires
+- les états actifs
+- le vrai nom du PNJ
 
-Tu peux choisir de rendre visibles :
+Si les noms des PNJ sont masqués, la `Fenêtre Joueurs` utilise le nom générique `PNJ`.
 
-- `Round`
-- `PV`
-- `Conditions`
-- `Prochain tour`
+## Informations des monstres
 
-## Informations sur les ennemis et PNJ
+Ces options s’appliquent uniquement lorsque le participant actif est un monstre. Tu peux choisir séparément d’afficher :
 
-Cette partie gère séparément ce que les joueurs voient lorsque le participant actif est :
+- les PV actuels, maximums et temporaires
+- les états actifs
+- le vrai nom des ennemis
 
-- un ennemi
-- un monstre
-- un PNJ
-
-Tu peux contrôler indépendamment :
-
-- la visibilité des PV et PV temporaires
-- la visibilité des conditions
-- la visibilité du vrai nom de l’ennemi
+Si les noms des monstres/ennemis sont masqués, la `Fenêtre Joueurs` utilise le nom générique `Ennemi`.
 
 ## Médias
 

@@ -51,7 +51,7 @@ L'overlay può includere:
 ![Schermata giocatori durante il turno di un eroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Schermata giocatori durante il turno di un mostro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Per nemici, mostri e PNG puoi scegliere se mostrare nomi e dettagli ai giocatori dalle impostazioni.
+Per eroi, PNG e mostri puoi scegliere separatamente quali informazioni mostrare ai giocatori dalle impostazioni.
 
 ## Impostazioni utili
 
@@ -64,11 +64,14 @@ Le più importanti sono:
 - `Mostra intro combattimento ai giocatori`
 - `Mostra riepilogo finale ai giocatori`
 - `Mostra round nella schermata giocatori`
-- `Mostra PF nella schermata giocatori`
-- `Mostra condizioni nella schermata giocatori`
 - `Mostra prossimo turno nella schermata giocatori`
-- `Mostra dettagli di PNG e mostri ai giocatori`
-- `Mostra condizioni dei nemici ai giocatori`
+- `Mostra PF degli eroi nella schermata giocatori`
+- `Mostra condizioni degli eroi nella schermata giocatori`
+- `Mostra PF dei PNG ai giocatori`
+- `Mostra condizioni dei PNG ai giocatori`
+- `Mostra i nomi dei PNG ai giocatori`
+- `Mostra PF dei mostri ai giocatori`
+- `Mostra condizioni dei mostri ai giocatori`
 - `Mostra i nomi dei nemici ai giocatori`
 
 La conferma di fine combattimento viene sempre richiesta, perché chiudere uno scontro sincronizza dati e statistiche.

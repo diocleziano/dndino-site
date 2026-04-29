@@ -142,11 +142,10 @@ Sim.
 Em `Definições > Combate`, entre outras coisas, pode decidir se os jogadores veem:
 
 - ronda
-- PV
-- condições
+- PV e condições dos heróis
+- PV, condições e nomes dos PNJ
+- PV, condições e nomes dos monstros/inimigos
 - próximo turno
-- nome real dos inimigos
-- detalhes de NPCs e monstros
 
 Isto permite-lhe escolher entre um combate mais transparente ou mais ao estilo de ecrã de DM.
 

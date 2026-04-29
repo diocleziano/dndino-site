@@ -142,11 +142,10 @@ Sim.
 Em `Configurações > Combate`, entre outras coisas, você pode decidir se os jogadores veem:
 
 - rodada
-- PV
-- condições
+- PV e condições dos heróis
+- PV, condições e nomes dos NPCs
+- PV, condições e nomes dos monstros/inimigos
 - próximo turno
-- nome real dos inimigos
-- detalhes de NPCs e monstros
 
 Isso permite escolher entre um combate mais transparente ou mais no estilo de escudo do mestre.
 

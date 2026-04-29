@@ -150,57 +150,53 @@ La sezione `Combattimento` raccoglie le preferenze globali del sistema di combat
 
 Qui trovi le opzioni di presentazione e le preferenze che influenzano la `Finestra Giocatori`.
 
-## Presentazione combattimento
+### Abilita schermata combattimento per i giocatori
 
-Questa sottosezione controlla il comportamento generale del combattimento e della presentazione ai giocatori.
+Questa è l'opzione principale. Se è disattivata, DnDino non usa la finestra giocatori per mostrare intro, turno corrente, round o riepilogo finale del combattimento, e le opzioni collegate vengono nascoste.
 
-### Mostra turno ai giocatori di default
+### Apri la finestra giocatori se chiusa
 
-Se attivo, i nuovi combattimenti partono già con la presentazione automatica del turno abilitata.
+Se attiva, quando parte il combattimento DnDino apre automaticamente la `Finestra Giocatori`. Se è disattivata, la presentazione viene aggiornata solo quando la finestra è già aperta.
 
 ### Apri la finestra giocatori anche con un solo monitor
 
-Questa preferenza controlla il comportamento automatico della `Finestra Giocatori` nei setup a schermo singolo.
+Questa preferenza compare solo se l'apertura automatica è attiva. Serve quando vuoi usare la `Finestra Giocatori` anche senza un secondo schermo.
 
-### Mostra automaticamente il dettaglio del giocatore di turno
+## Presentazione combattimento
 
-Quando il turno cambia, l'app può:
+Questa sottosezione controlla le informazioni generali mostrate ai giocatori durante lo scontro:
 
-- selezionare automaticamente il partecipante attivo
-- aprirne anche il dettaglio
+- `Mostra intro combattimento ai giocatori`
+- `Mostra riepilogo finale ai giocatori`
+- `Mostra round nella schermata giocatori`
+- `Mostra prossimo turno nella schermata giocatori`
 
-### Mostra intro combattimento ai giocatori
+## Informazioni eroi
 
-Se attiva, quando il combattimento parte la `Finestra Giocatori` mostra una breve introduzione con i partecipanti allo scontro.
+Queste opzioni valgono solo quando il partecipante di turno è un eroe. Puoi decidere se mostrare:
 
-### Mostra riepilogo finale ai giocatori
+- PF attuali, massimi e temporanei
+- condizioni attive
 
-Se attiva, alla fine dello scontro la `Finestra Giocatori` mostra un riepilogo finale con i dati principali dei personaggi.
+## Informazioni PNG
 
-## Informazioni partecipante attivo
+Queste opzioni valgono solo quando il partecipante di turno è un PNG. Puoi decidere separatamente se mostrare:
 
-Questa sottosezione decide quali informazioni del turno corrente mostrare ai giocatori.
+- PF attuali, massimi e temporanei
+- condizioni attive
+- nome reale del PNG
 
-Puoi scegliere se rendere visibili:
+Se il nome dei PNG è nascosto, nella `Finestra Giocatori` viene usato il nome generico `PNG`.
 
-- `Round`
-- `PF`
-- `Condizioni`
-- `Prossimo turno`
+## Informazioni mostri
 
-## Informazioni nemici e PNG
+Queste opzioni valgono solo quando il partecipante di turno è un mostro. Puoi decidere separatamente se mostrare:
 
-Questa parte gestisce separatamente ciò che i giocatori vedono quando il partecipante attivo è un:
+- PF attuali, massimi e temporanei
+- condizioni attive
+- nome reale dei nemici
 
-- nemico
-- mostro
-- PNG
-
-Puoi controllare in modo indipendente:
-
-- visibilità di PF e PF temporanei
-- visibilità delle condizioni
-- visibilità del nome reale del nemico
+Se il nome dei mostri/nemici è nascosto, nella `Finestra Giocatori` viene usato il nome generico `Nemico`.
 
 ## Media
 

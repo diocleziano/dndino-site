@@ -154,59 +154,53 @@ Der Bereich `Kampf` bündelt die globalen Einstellungen des Kampfsystems.
 
 Hier findest du Darstellungsoptionen und Einstellungen für das `Spielerfenster`.
 
-## Kampfpräsentation
+### Kampfbildschirm für Spieler aktivieren
 
-Dieser Unterbereich steuert das allgemeine Verhalten des Kampfs und der Darstellung für Spielende.
+Das ist der Hauptschalter. Wenn er deaktiviert ist, zeigt DnDino im Spielerfenster kein Kampf-Intro, keinen aktuellen Zug, keine Runde und keine Endzusammenfassung; die zugehörigen Optionen werden ausgeblendet.
 
-### Zug standardmäßig für Spielende anzeigen
+### Spielerfenster öffnen, wenn es geschlossen ist
 
-Wenn aktiv, starten neue Kämpfe bereits mit aktivierter automatischer Zugpräsentation.
+Wenn aktiv, öffnet DnDino das `Spielerfenster` automatisch beim Start des Kampfs. Wenn deaktiviert, wird die Darstellung nur aktualisiert, wenn das Fenster bereits offen ist.
 
 ### Spielerfenster auch mit nur einem Monitor öffnen
 
-Diese Einstellung steuert das automatische Verhalten des `Spielerfensters` in Ein-Bildschirm-Setups.
+Diese Option erscheint nur, wenn das automatische Öffnen aktiv ist. Sie ist für Setups ohne zweiten Bildschirm gedacht.
 
-### Details des Teilnehmenden im aktuellen Zug automatisch anzeigen
+## Kampfpräsentation
 
-Wenn der Zug wechselt, kann die App:
+Dieser Unterbereich steuert die allgemeinen Informationen, die während der Begegnung angezeigt werden:
 
-- den aktiven Teilnehmenden automatisch auswählen
-- auch dessen Detailansicht öffnen
+- `Kampf-Intro für Spielende anzeigen`
+- `Endzusammenfassung für Spielende anzeigen`
+- `Runde auf dem Spielerbildschirm anzeigen`
+- `Nächsten Zug auf dem Spielerbildschirm anzeigen`
 
-### Kampf-Intro für Spielende anzeigen
+## Heldeninformationen
 
-Wenn aktiv, zeigt das `Spielerfenster` beim Start eines Kampfs eine kurze Einführung mit den Teilnehmenden der Begegnung.
+Diese Optionen gelten nur, wenn der aktive Teilnehmende ein Held ist. Du kannst anzeigen:
 
-### Endzusammenfassung für Spielende anzeigen
+- aktuelle, maximale und temporäre TP
+- aktive Zustände
 
-Wenn aktiv, zeigt das `Spielerfenster` am Ende der Begegnung eine Endzusammenfassung mit den wichtigsten Charakterdaten.
+## NSC-Informationen
 
-## Informationen zum aktiven Teilnehmenden
+Diese Optionen gelten nur, wenn der aktive Teilnehmende ein NSC ist. Du kannst getrennt anzeigen:
 
-Dieser Unterbereich entscheidet, welche Informationen über den aktuellen Zug den Spielenden angezeigt werden.
+- aktuelle, maximale und temporäre TP
+- aktive Zustände
+- den echten Namen des NSC
 
-Du kannst auswählen, ob sichtbar sein sollen:
+Wenn NSC-Namen verborgen sind, verwendet das `Spielerfenster` den generischen Namen `NSC`.
 
-- `Runde`
-- `TP`
-- `Zustände`
-- `Nächster Zug`
+## Monsterinformationen
 
-## Informationen zu Feinden und NSC
+Diese Optionen gelten nur, wenn der aktive Teilnehmende ein Monster ist. Du kannst getrennt anzeigen:
 
-Dieser Teil verwaltet separat, was Spielende sehen, wenn der aktive Teilnehmende ein:
+- aktuelle, maximale und temporäre TP
+- aktive Zustände
+- den echten Namen der Feinde
 
-- Feind
-- Monster
-- NSC
-
-ist.
-
-Du kannst unabhängig steuern:
-
-- Sichtbarkeit von TP und temporären TP
-- Sichtbarkeit von Zuständen
-- Sichtbarkeit des echten Feindnamens
+Wenn Monster-/Feindnamen verborgen sind, verwendet das `Spielerfenster` den generischen Namen `Feind`.
 
 ## Medien
 

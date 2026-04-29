@@ -51,7 +51,7 @@ A sobreposição pode incluir:
 ![Ecrã dos jogadores durante o turno de um herói](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Ecrã dos jogadores durante o turno de um monstro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Para inimigos, monstros e NPCs podes decidir nas definições se nomes e detalhes são mostrados aos jogadores.
+Para heróis, PNJ e monstros podes decidir separadamente nas definições que informações são mostradas aos jogadores.
 
 ## Definições Úteis
 
@@ -64,11 +64,14 @@ As mais importantes são:
 - `Mostrar introdução do combate aos jogadores`
 - `Mostrar resumo final aos jogadores`
 - `Mostrar round no ecrã dos jogadores`
-- `Mostrar PV no ecrã dos jogadores`
-- `Mostrar condições no ecrã dos jogadores`
 - `Mostrar próximo turno no ecrã dos jogadores`
-- `Mostrar detalhes de NPCs e monstros aos jogadores`
-- `Mostrar condições dos inimigos aos jogadores`
+- `Mostrar PV dos heróis no ecrã dos jogadores`
+- `Mostrar condições dos heróis no ecrã dos jogadores`
+- `Mostrar PV dos PNJ aos jogadores`
+- `Mostrar condições dos PNJ aos jogadores`
+- `Mostrar nomes dos PNJ aos jogadores`
+- `Mostrar PV dos monstros aos jogadores`
+- `Mostrar condições dos monstros aos jogadores`
 - `Mostrar nomes dos inimigos aos jogadores`
 
 Terminar um combate pede sempre confirmação, porque fechar o encontro sincroniza estado e estatísticas.

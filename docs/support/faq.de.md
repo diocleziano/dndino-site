@@ -142,11 +142,10 @@ Ja.
 Unter `Einstellungen > Kampf` können Sie unter anderem steuern, ob die Spieler Folgendes sehen:
 
 - Rundennummer
-- TP
-- Zustände
+- TP und Zustände der Helden
+- TP, Zustände und Namen von NSC
+- TP, Zustände und Namen von Monstern/Gegnern
 - nächster Zug
-- den echten Namen von Gegnern
-- Details zu NSCs und Monstern
 
 So können Sie entscheiden, ob der Kampf transparenter oder eher klassisch hinter dem DM-Schirm ablaufen soll.
 

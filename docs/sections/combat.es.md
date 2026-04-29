@@ -51,7 +51,7 @@ La superposición puede incluir:
 ![Pantalla de jugadores durante el turno de un héroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Pantalla de jugadores durante el turno de un monstruo](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Para enemigos, monstruos y PNJ puedes decidir en ajustes si se muestran nombres y detalles a los jugadores.
+Para héroes, PNJ y monstruos puedes decidir por separado en ajustes qué información se muestra a los jugadores.
 
 ## Ajustes Útiles
 
@@ -64,11 +64,14 @@ Las más importantes son:
 - `Mostrar introducción de combate a los jugadores`
 - `Mostrar resumen final a los jugadores`
 - `Mostrar ronda en la pantalla de jugadores`
-- `Mostrar PG en la pantalla de jugadores`
-- `Mostrar estados en la pantalla de jugadores`
 - `Mostrar siguiente turno en la pantalla de jugadores`
-- `Mostrar detalles de PNJ y monstruos a los jugadores`
-- `Mostrar estados de enemigos a los jugadores`
+- `Mostrar PG de los héroes en la pantalla de jugadores`
+- `Mostrar condiciones de los héroes en la pantalla de jugadores`
+- `Mostrar PG de PNJ a los jugadores`
+- `Mostrar condiciones de PNJ a los jugadores`
+- `Mostrar nombres de PNJ a los jugadores`
+- `Mostrar PG de monstruos a los jugadores`
+- `Mostrar condiciones de monstruos a los jugadores`
 - `Mostrar nombres de enemigos a los jugadores`
 
 Terminar un combate siempre pide confirmación, porque al cerrarlo se sincronizan estado y estadísticas.

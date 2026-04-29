@@ -150,57 +150,53 @@ A seção `Combate` reúne as preferências globais do sistema de combate.
 
 Aqui você encontra opções de apresentação e preferências que influenciam a `Janela dos Jogadores`.
 
-## Apresentação do combate
+### Habilitar tela de combate para os jogadores
 
-Esta subseção controla o comportamento geral do combate e da apresentação aos jogadores.
+Este é o controle principal. Se estiver desativado, o DnDino não usa a janela dos jogadores para mostrar intro, turno atual, round ou resumo final do combate, e as opções relacionadas ficam ocultas.
 
-### Mostrar turno aos jogadores por padrão
+### Abrir a janela dos jogadores se estiver fechada
 
-Se estiver ativa, os novos combates já começam com a apresentação automática do turno habilitada.
+Se estiver ativo, o DnDino abre automaticamente a `Janela dos Jogadores` quando o combate começa. Se estiver desativado, a apresentação só é atualizada se a janela já estiver aberta.
 
 ### Abrir a janela dos jogadores mesmo com um único monitor
 
-Esta preferência controla o comportamento automático da `Janela dos Jogadores` em configurações de uma única tela.
+Esta opção aparece apenas se a abertura automática estiver ativa. Use quando quiser usar a `Janela dos Jogadores` mesmo sem uma segunda tela.
 
-### Mostrar automaticamente o detalhe do jogador do turno
+## Apresentação do combate
 
-Quando o turno muda, o aplicativo pode:
+Esta subseção controla as informações gerais mostradas aos jogadores durante o confronto:
 
-- selecionar automaticamente o participante ativo
-- abrir também o seu detalhe
+- `Mostrar intro do combate aos jogadores`
+- `Mostrar resumo final aos jogadores`
+- `Mostrar round na tela dos jogadores`
+- `Mostrar próximo turno na tela dos jogadores`
 
-### Mostrar intro do combate aos jogadores
+## Informações dos heróis
 
-Se estiver ativa, quando o combate começa, a `Janela dos Jogadores` mostra uma breve introdução com os participantes do confronto.
+Estas opções valem apenas quando o participante ativo é um herói. Você pode decidir se mostra:
 
-### Mostrar resumo final aos jogadores
+- PV atuais, máximos e temporários
+- condições ativas
 
-Se estiver ativa, no fim do confronto, a `Janela dos Jogadores` mostra um resumo final com os principais dados dos personagens.
+## Informações dos NPCs
 
-## Informações do participante ativo
+Estas opções valem apenas quando o participante ativo é um NPC. Você pode decidir separadamente se mostra:
 
-Esta subseção decide quais informações do turno atual são mostradas aos jogadores.
+- PV atuais, máximos e temporários
+- condições ativas
+- o nome real do NPC
 
-Você pode escolher se quer tornar visíveis:
+Se os nomes dos NPCs estiverem ocultos, a `Janela dos Jogadores` usa o nome genérico `NPC`.
 
-- `Round`
-- `PV`
-- `Condições`
-- `Próximo turno`
+## Informações dos monstros
 
-## Informações sobre inimigos e NPCs
+Estas opções valem apenas quando o participante ativo é um monstro. Você pode decidir separadamente se mostra:
 
-Esta parte gere separadamente o que os jogadores veem quando o participante ativo é:
+- PV atuais, máximos e temporários
+- condições ativas
+- o nome real dos inimigos
 
-- um inimigo
-- um monstro
-- um NPC
-
-Você pode controlar de forma independente:
-
-- visibilidade de PV e PV temporários
-- visibilidade das condições
-- visibilidade do nome real do inimigo
+Se os nomes dos monstros/inimigos estiverem ocultos, a `Janela dos Jogadores` usa o nome genérico `Inimigo`.
 
 ## Mídia
 

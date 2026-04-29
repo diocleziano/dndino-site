@@ -150,57 +150,53 @@ The `Combat` section gathers the global preferences of the combat system.
 
 Here you find presentation options and preferences that influence the `Players Window`.
 
-## Combat Presentation
+### Enable Combat Screen for Players
 
-This subsection controls the overall behavior of combat and player presentation.
+This is the main switch. If disabled, DnDino does not use the players window to show the combat intro, current turn, round, or final summary, and the related options are hidden.
 
-### Show Turn to Players by Default
+### Open the Players Window if Closed
 
-If enabled, new combats start with automatic turn presentation already active.
+If enabled, DnDino automatically opens the `Players Window` when combat starts. If disabled, the presentation is updated only when the window is already open.
 
 ### Open the Players Window Even with One Monitor
 
-This setting controls the automatic behavior of the `Players Window` in single-screen setups.
+This setting appears only when automatic opening is enabled. Use it if you want to use the `Players Window` even without a second display.
 
-### Automatically Show the Current Turn Participant Detail
+## Combat Presentation
 
-When the turn changes, the app can:
+This subsection controls the general information shown to players during the encounter:
 
-- automatically select the active participant
-- also open their detail
+- `Show combat intro to players`
+- `Show final summary to players`
+- `Show round on player screen`
+- `Show next turn on player screen`
 
-### Show Combat Intro to Players
+## Hero Information
 
-If enabled, when combat starts the `Players Window` shows a short introduction with the encounter participants.
+These options apply only when the active participant is a hero. You can decide whether to show:
 
-### Show Final Summary to Players
+- current, maximum, and temporary HP
+- active conditions
 
-If enabled, at the end of the encounter the `Players Window` shows a final summary with the main character data.
+## NPC Information
 
-## Active Participant Information
+These options apply only when the active participant is an NPC. You can separately decide whether to show:
 
-This subsection decides which current-turn information is shown to players.
+- current, maximum, and temporary HP
+- active conditions
+- the NPC's real name
 
-You can choose to display:
+If NPC names are hidden, the `Players Window` uses the generic name `NPC`.
 
-- `Round`
-- `HP`
-- `Conditions`
-- `Next turn`
+## Monster Information
 
-## Enemy and NPC Information
+These options apply only when the active participant is a monster. You can separately decide whether to show:
 
-This area separately manages what players can see when the active participant is:
+- current, maximum, and temporary HP
+- active conditions
+- the real name of enemies
 
-- an enemy
-- a monster
-- an NPC
-
-You can independently control:
-
-- visibility of HP and temporary HP
-- visibility of conditions
-- visibility of the enemy’s real name
+If monster/enemy names are hidden, the `Players Window` uses the generic name `Enemy`.
 
 ## Media
 

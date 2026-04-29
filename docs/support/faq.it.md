@@ -142,11 +142,10 @@ Sì.
 Nelle `Impostazioni > Combattimento` puoi controllare, tra le altre cose, se mostrare ai giocatori:
 
 - round
-- PF
-- condizioni
+- PF e condizioni degli eroi
+- PF, condizioni e nomi dei PNG
+- PF, condizioni e nomi dei mostri/nemici
 - prossimo turno
-- nome reale dei nemici
-- dettagli di PNG e mostri
 
 Questo ti permette di scegliere se vuoi un combattimento più trasparente oppure più “da DM screen”.
 

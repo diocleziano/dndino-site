@@ -142,11 +142,10 @@ Sí.
 En `Ajustes > Combate`, entre otras cosas, puedes decidir si los jugadores ven:
 
 - la ronda
-- los PG
-- las condiciones
+- los PG y condiciones de los héroes
+- los PG, condiciones y nombres de los PNJ
+- los PG, condiciones y nombres de monstruos/enemigos
 - el siguiente turno
-- el nombre real de los enemigos
-- detalles de PNJ y monstruos
 
 Esto te permite elegir entre un combate más transparente o uno más propio de una pantalla de DM.
 

@@ -150,57 +150,53 @@ La sección `Combate` reúne las preferencias globales del sistema de combate.
 
 Aquí encontrarás opciones de presentación y preferencias que influyen en la `Ventana de Jugadores`.
 
-## Presentación del combate
+### Activar pantalla de combate para los jugadores
 
-Esta subsección controla el comportamiento general del combate y de la presentación para los jugadores.
+Es el interruptor principal. Si está desactivado, DnDino no usa la ventana de jugadores para mostrar la intro, el turno actual, el asalto o el resumen final del combate, y oculta las opciones relacionadas.
 
-### Mostrar turno a los jugadores por defecto
+### Abrir la ventana de jugadores si está cerrada
 
-Si está activo, los nuevos combates empiezan ya con la presentación automática del turno habilitada.
+Si está activo, DnDino abre automáticamente la `Ventana de Jugadores` al empezar el combate. Si está desactivado, la presentación solo se actualiza si la ventana ya está abierta.
 
 ### Abrir la ventana de jugadores incluso con un solo monitor
 
-Este ajuste controla el comportamiento automático de la `Ventana de Jugadores` en configuraciones de una sola pantalla.
+Esta opción aparece solo si la apertura automática está activa. Sirve para usar la `Ventana de Jugadores` aunque no tengas una segunda pantalla.
 
-### Mostrar automáticamente el detalle del jugador en turno
+## Presentación del combate
 
-Cuando cambia el turno, la aplicación puede:
+Esta subsección controla la información general que se muestra a los jugadores durante el enfrentamiento:
 
-- seleccionar automáticamente al participante activo
-- abrir también su detalle
+- `Mostrar intro del combate a los jugadores`
+- `Mostrar resumen final a los jugadores`
+- `Mostrar asalto en la pantalla de jugadores`
+- `Mostrar siguiente turno en la pantalla de jugadores`
 
-### Mostrar intro del combate a los jugadores
+## Información de héroes
 
-Si está activa, cuando el combate empieza la `Ventana de Jugadores` muestra una breve introducción con los participantes del enfrentamiento.
+Estas opciones se aplican solo cuando el participante activo es un héroe. Puedes decidir si mostrar:
 
-### Mostrar resumen final a los jugadores
+- PG actuales, máximos y temporales
+- condiciones activas
 
-Si está activa, al final del enfrentamiento la `Ventana de Jugadores` muestra un resumen final con los datos principales de los personajes.
+## Información de PNJ
 
-## Información del participante activo
+Estas opciones se aplican solo cuando el participante activo es un PNJ. Puedes decidir por separado si mostrar:
 
-Esta subsección decide qué información del turno actual se muestra a los jugadores.
+- PG actuales, máximos y temporales
+- condiciones activas
+- el nombre real del PNJ
 
-Puedes elegir si hacer visibles:
+Si los nombres de PNJ están ocultos, la `Ventana de Jugadores` usa el nombre genérico `PNJ`.
 
-- `Asalto`
-- `PG`
-- `Condiciones`
-- `Siguiente turno`
+## Información de monstruos
 
-## Información de enemigos y PNJ
+Estas opciones se aplican solo cuando el participante activo es un monstruo. Puedes decidir por separado si mostrar:
 
-Esta parte gestiona por separado lo que ven los jugadores cuando el participante activo es:
+- PG actuales, máximos y temporales
+- condiciones activas
+- el nombre real de los enemigos
 
-- un enemigo
-- un monstruo
-- un PNJ
-
-Puedes controlar de forma independiente:
-
-- la visibilidad de PG y PG temporales
-- la visibilidad de las condiciones
-- la visibilidad del nombre real del enemigo
+Si los nombres de monstruos/enemigos están ocultos, la `Ventana de Jugadores` usa el nombre genérico `Enemigo`.
 
 ## Medios
 
