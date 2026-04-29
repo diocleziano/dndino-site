@@ -832,10 +832,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-live-session-panel-in-the-adventure-dashboard" class="md-nav__link">
+  <a href="#live-session-control-in-the-top-bar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Live Session Panel in the Adventure Dashboard
+        Live Session Control in the Top Bar
       
     </span>
   </a>
@@ -1336,10 +1336,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-live-session-panel-in-the-adventure-dashboard" class="md-nav__link">
+  <a href="#live-session-control-in-the-top-bar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Live Session Panel in the Adventure Dashboard
+        Live Session Control in the Top Bar
       
     </span>
   </a>
@@ -1563,13 +1563,9 @@
 <li>automatically collect data coming from combat</li>
 </ul>
 <h2 id="where-it-starts">Where It Starts<a class="headerlink" href="#where-it-starts" title="Permanent link">&para;</a></h2>
-<p>The live session starts from the <strong>adventure dashboard</strong>, in the <code>Live Session</code> panel.</p>
-<p>If no session is active, the panel shows:</p>
-<ul>
-<li>ready state</li>
-<li><code>Start Live Session</code> button</li>
-</ul>
-<p>When you press the button, DnDino creates a new live session and marks it as the globally active session.</p>
+<p>The live session starts from the control in the center of the <strong>top bar</strong> while you are inside an adventure page, such as the dashboard, places, or combat.</p>
+<p>If no session is active, the control shows the start action. When you press it, DnDino asks for confirmation and then creates a new live session for the current adventure.</p>
+<p>This means you do not have to return to the dashboard just to start the session: the command stays available where you are actually working.</p>
 <h2 id="only-one-live-session-at-a-time">Only One Live Session at a Time<a class="headerlink" href="#only-one-live-session-at-a-time" title="Permanent link">&para;</a></h2>
 <p>DnDino only manages one active live session at a time.</p>
 <p>If a session is already open in another adventure:</p>
@@ -1597,7 +1593,7 @@
 <h3 id="active">Active<a class="headerlink" href="#active" title="Permanent link">&para;</a></h3>
 <p>This is the normal state while the session is running. The timer keeps moving and events are recorded with the correct elapsed time.</p>
 <h3 id="paused">Paused<a class="headerlink" href="#paused" title="Permanent link">&para;</a></h3>
-<p>The session can be paused from the adventure dashboard or from the top bar.</p>
+<p>The session can be paused from the top bar.</p>
 <p>When paused:</p>
 <ul>
 <li>the timer stops</li>
@@ -1612,25 +1608,21 @@
 <li>understand that an interruption happened</li>
 <li>resume work manually</li>
 </ul>
-<h2 id="the-live-session-panel-in-the-adventure-dashboard">The Live Session Panel in the Adventure Dashboard<a class="headerlink" href="#the-live-session-panel-in-the-adventure-dashboard" title="Permanent link">&para;</a></h2>
-<p>Inside the adventure dashboard, the panel shows the current session state.</p>
-<p>If the session belongs to the currently open adventure, the panel shows:</p>
+<h2 id="live-session-control-in-the-top-bar">Live Session Control in the Top Bar<a class="headerlink" href="#live-session-control-in-the-top-bar" title="Permanent link">&para;</a></h2>
+<p>Inside adventure pages, the top bar shows the live session control in the center.</p>
+<p>If the session belongs to the currently open adventure, the control shows:</p>
 <ul>
 <li>session title</li>
 <li>real-time timer</li>
 <li>state (<code>Running</code> or <code>Paused</code>)</li>
-<li>note that the player is global</li>
-<li>buttons:</li>
-<li><code>Pause</code> or <code>Resume</code></li>
-<li><code>Close and Save</code></li>
 </ul>
 <p>If there is no active live session:</p>
 <ul>
-<li>the <code>Start Live Session</code> button appears</li>
+<li>the command to start the current adventure's live session appears</li>
 </ul>
 <p>If a session is active but belongs to another adventure:</p>
 <ul>
-<li>the panel shows that the live session is currently in use elsewhere</li>
+<li>the control shows that the live session is currently in use elsewhere</li>
 </ul>
 <h2 id="live-session-in-the-top-bar">Live Session in the Top Bar<a class="headerlink" href="#live-session-in-the-top-bar" title="Permanent link">&para;</a></h2>
 <p>When a live session is active, the app top bar shows a dedicated indicator.</p>
@@ -1719,6 +1711,7 @@
 <ul>
 <li>damage dealt by heroes</li>
 <li>damage taken by heroes</li>
+<li>average turn time, when it comes from completed combats</li>
 </ul>
 <h2 id="integration-with-combat">Integration with Combat<a class="headerlink" href="#integration-with-combat" title="Permanent link">&para;</a></h2>
 <p>The live session and combat are tightly connected.</p>
@@ -1748,9 +1741,11 @@
 <ul>
 <li>damage dealt by combat</li>
 <li>damage taken by combat</li>
+<li>average turn time by combat</li>
 </ul>
 <p>Each combat stays on the horizontal axis in chronological order. Characters who participated are shown even when they dealt or took <code>0</code> damage in a combat, so the series remains readable. If a character did not participate in a combat, they are not added for that point.</p>
 <p>These charts help you understand who had the most impact during the session and who absorbed the most damage across encounters.</p>
+<p>The turn-time chart helps you understand how long heroes and the DM take on average during the session's combats.</p>
 <h2 id="fallen-heroes">Fallen Heroes<a class="headerlink" href="#fallen-heroes" title="Permanent link">&para;</a></h2>
 <p>When combat ends, the live session summary can also increase the count of <strong>fallen heroes</strong>.</p>
 <p>This value is fed directly by the final combat result.</p>
@@ -1783,6 +1778,7 @@
 <li>fallen heroes</li>
 <li>rankings of damage dealt and taken by the characters</li>
 <li>charts for damage dealt and taken in the session's combats</li>
+<li>average turn-time chart, when available</li>
 </ul>
 <h2 id="when-it-is-most-useful">When It Is Most Useful<a class="headerlink" href="#when-it-is-most-useful" title="Permanent link">&para;</a></h2>
 <p>The live session is especially useful when you want to:</p>

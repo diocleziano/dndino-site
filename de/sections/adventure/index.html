@@ -1621,7 +1621,7 @@
 <p>Wenn du in der Liste auf ein Abenteuer klickst, gelangst du in dessen <strong>Dashboard</strong>, das das eigentliche operative Zentrum der Kampagne ist.</p>
 <p>Das Dashboard ist als Bildschirm mit Panels organisiert:</p>
 <ul>
-<li>ein oberer Bereich mit Kopfzeile und Live-Sitzungssteuerung</li>
+<li>ein oberer Bereich mit der Abenteuer-Kopfzeile</li>
 <li>zwei untere Spalten mit Karten für die verschiedenen Kampagnenbereiche</li>
 </ul>
 <p>Die Reihenfolge der Panels kann in den App-Einstellungen angepasst werden.</p>
@@ -1638,9 +1638,8 @@
 <p>Wenn das Abenteuer auch eine lange Beschreibung besitzt, erscheint ein eigener Button, um sie in einem Popover zu öffnen und zu lesen, ohne das Dashboard zu verlassen.</p>
 <p>Von hier aus kannst du auch <strong>Bearbeiten</strong> öffnen, um zum Abenteuerformular zurückzukehren und die Daten zu aktualisieren.</p>
 <h2 id="live-sitzung">Live-Sitzung<a class="headerlink" href="#live-sitzung" title="Permanent link">&para;</a></h2>
-<p><img alt="Live-Sitzungs-Panel" class="img-shot" src="../../../images/en_dashavv_sessionelive.png" /></p>
-<p>Neben der Kopfzeile befindet sich das Panel <strong>Live-Sitzung</strong>.</p>
-<p>Dieser Bereich dient dazu:</p>
+<p>Die <strong>Live-Sitzung</strong> liegt nicht mehr in einem festen Dashboard-Panel: sie wird in der Mitte der Topbar gestartet und gesteuert, wenn du dich in einer Abenteuerseite befindest.</p>
+<p>Die zentrale Steuerung dient dazu:</p>
 <ul>
 <li>eine neue Live-Sitzung für das Abenteuer zu starten</li>
 <li>zu sehen, ob eine Sitzung läuft oder pausiert ist</li>
@@ -1648,8 +1647,8 @@
 <li>die Sitzung zu pausieren</li>
 <li>sie zu beenden und zu speichern</li>
 </ul>
-<p>Wenn die Live-Sitzung des Abenteuers aktiv ist, folgen der <strong>globale Spieler-Kontext</strong> und die <strong>Orte</strong> diesem Sitzungszusammenhang.</p>
-<p>Falls bereits in einem anderen Abenteuer eine Live-Sitzung offen ist, macht das Dashboard das klar sichtbar und erlaubt kein paralleles Starten einer zweiten Sitzung.</p>
+<p>Wenn die Live-Sitzung des Abenteuers aktiv ist, bleibt die Steuerung auch in Orten und Kämpfen verfügbar, damit du nicht zum Dashboard zurückkehren musst.</p>
+<p>Falls bereits in einem anderen Abenteuer eine Live-Sitzung offen ist, macht die Topbar das klar sichtbar und erlaubt kein paralleles Starten einer zweiten Sitzung.</p>
 <h2 id="die-panels-des-dashboards">Die Panels des Dashboards<a class="headerlink" href="#die-panels-des-dashboards" title="Permanent link">&para;</a></h2>
 <p>Unterhalb der Kopfzeile zeigt das Dashboard die Hauptpanels des Abenteuers.</p>
 <p>Aktuell sind dies:</p>
@@ -1734,6 +1733,7 @@
 <li>Gesamtzahl der Kämpfe</li>
 <li>durchschnittliche Begegnungsdauer</li>
 <li>durchschnittliche Sitzungsdauer</li>
+<li>durchschnittliche Zugdauer für Helden und SL</li>
 <li>besiegte Gegner</li>
 <li>Abenteuercharaktere mit dem meisten verursachten Schaden</li>
 <li>Abenteuercharaktere mit dem meisten erlittenen Schaden</li>
@@ -1745,9 +1745,10 @@
 <li>verursachter Schaden pro Tag</li>
 <li>erlittener Schaden pro Tag</li>
 <li>Sitzungsdauer nach Tagen gruppiert</li>
+<li>durchschnittliche Zugdauer, gruppiert nach Sitzung oder Kampf</li>
 </ul>
 <p>In den Tagesdiagrammen kannst du zwischen <code>Alle</code> und <code>Pro Charakter</code> wechseln. Die Charakteransicht nutzt eine Linie pro beteiligtem Abenteuercharakter; über die Legende kannst du einzelne Charaktere ein- oder ausblenden.</p>
-<p>Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen werden, je nachdem ob du mehr Lesbarkeit oder mehr Detail möchtest.</p>
+<p>Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen werden, je nachdem ob du mehr Lesbarkeit oder mehr Detail möchtest. Diagramme können horizontal gescrollt werden und besitzen unabhängige Zoom-Steuerungen, damit du eine Ansicht erweitern oder komprimieren kannst, ohne andere Diagramme zu beeinflussen.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Die wichtigsten Schadensranglisten konzentrieren sich auf Abenteuercharaktere. NSC und Monster bleiben im Kampf wichtig, wären in langfristigen Statistiken aber zu wechselhaft, um dauerhaft nützlich zu bleiben.</p>

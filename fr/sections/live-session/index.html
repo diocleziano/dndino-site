@@ -832,10 +832,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#le-panneau-session-live-dans-la-dashboard-de-laventure" class="md-nav__link">
+  <a href="#controle-session-live-dans-la-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Le panneau Session Live dans la dashboard de l’aventure
+        Contrôle Session live dans la topbar
       
     </span>
   </a>
@@ -1336,10 +1336,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#le-panneau-session-live-dans-la-dashboard-de-laventure" class="md-nav__link">
+  <a href="#controle-session-live-dans-la-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Le panneau Session Live dans la dashboard de l’aventure
+        Contrôle Session live dans la topbar
       
     </span>
   </a>
@@ -1563,13 +1563,9 @@
 <li>récupérer automatiquement les données venant du combat</li>
 </ul>
 <h2 id="ou-elle-se-lance">Où elle se lance<a class="headerlink" href="#ou-elle-se-lance" title="Permanent link">&para;</a></h2>
-<p>La session live se lance depuis la <strong>dashboard de l’aventure</strong>, dans le panneau <code>Session Live</code>.</p>
-<p>S’il n’existe aucune session active, le panneau affiche :</p>
-<ul>
-<li>état prêt</li>
-<li>bouton <code>Démarrer la session live</code></li>
-</ul>
-<p>Quand tu appuies sur ce bouton, DnDino crée une nouvelle session de type live et la définit comme session globale active.</p>
+<p>La session live se lance depuis le contrôle au centre de la <strong>topbar</strong> quand tu es dans une page de l'aventure, par exemple dashboard, lieux ou combat.</p>
+<p>S'il n'existe aucune session active, le contrôle affiche l'action de démarrage. Quand tu l'utilises, DnDino demande confirmation puis crée une nouvelle session live pour l'aventure courante.</p>
+<p>Tu n'as donc pas besoin de revenir à la dashboard uniquement pour lancer la session : la commande reste disponible là où tu travailles.</p>
 <h2 id="une-seule-session-live-a-la-fois">Une seule session live à la fois<a class="headerlink" href="#une-seule-session-live-a-la-fois" title="Permanent link">&para;</a></h2>
 <p>DnDino ne gère qu’une seule session live active à la fois.</p>
 <p>Si une session est déjà ouverte dans une autre aventure :</p>
@@ -1597,7 +1593,7 @@
 <h3 id="active">Active<a class="headerlink" href="#active" title="Permanent link">&para;</a></h3>
 <p>C’est l’état normal pendant que la session est en cours. Le minuteur continue d’avancer et les événements sont enregistrés avec le bon temps écoulé.</p>
 <h3 id="en-pause">En pause<a class="headerlink" href="#en-pause" title="Permanent link">&para;</a></h3>
-<p>La session peut être mise en pause depuis la dashboard de l’aventure ou depuis la barre supérieure.</p>
+<p>La session peut être mise en pause depuis la topbar.</p>
 <p>Quand elle est en pause :</p>
 <ul>
 <li>le minuteur s’arrête</li>
@@ -1612,25 +1608,23 @@
 <li>comprendre qu’une interruption a eu lieu</li>
 <li>reprendre le travail manuellement</li>
 </ul>
-<h2 id="le-panneau-session-live-dans-la-dashboard-de-laventure">Le panneau Session Live dans la dashboard de l’aventure<a class="headerlink" href="#le-panneau-session-live-dans-la-dashboard-de-laventure" title="Permanent link">&para;</a></h2>
-<p>Dans la dashboard de l’aventure, le panneau affiche l’état courant de la session.</p>
-<p>Si la session appartient à l’aventure ouverte, le panneau affiche :</p>
+<h2 id="controle-session-live-dans-la-topbar">Contrôle Session live dans la topbar<a class="headerlink" href="#controle-session-live-dans-la-topbar" title="Permanent link">&para;</a></h2>
+<p>Dans les pages de l'aventure, la topbar affiche le contrôle de session live au centre.</p>
+<p>Si la session appartient à l’aventure ouverte, le contrôle affiche :</p>
 <ul>
 <li>titre de la session</li>
 <li>minuteur en temps réel</li>
-<li>état (<code>En cours</code> ou <code>En pause</code>)</li>
-<li>indication que le player est global</li>
-<li>boutons :</li>
-<li><code>Pause</code> ou <code>Reprendre</code></li>
-<li><code>Fermer et sauvegarder</code></li>
-</ul>
-<p>S’il n’y a pas de session live active :</p>
-<ul>
-<li>le bouton <code>Démarrer la session live</code> apparaît</li>
+<li>
+<p>état (<code>En cours</code> ou <code>En pause</code>)
+S’il n’y a pas de session live active :</p>
+</li>
+<li>
+<p>la commande pour lancer la session live de l'aventure courante apparaît</p>
+</li>
 </ul>
 <p>Si une session est active mais appartient à une autre aventure :</p>
 <ul>
-<li>le panneau montre que la session live est déjà utilisée ailleurs</li>
+<li>le contrôle indique que la session live est déjà utilisée ailleurs</li>
 </ul>
 <h2 id="la-session-live-dans-la-topbar">La session live dans la topbar<a class="headerlink" href="#la-session-live-dans-la-topbar" title="Permanent link">&para;</a></h2>
 <p>Quand une session live est active, la barre supérieure de l’application affiche un indicateur dédié.</p>
@@ -1719,6 +1713,7 @@
 <ul>
 <li>dégâts infligés par les héros</li>
 <li>dégâts subis par les héros</li>
+<li>temps moyen des tours, lorsqu'il provient de combats terminés</li>
 </ul>
 <h2 id="integration-avec-le-combat">Intégration avec le combat<a class="headerlink" href="#integration-avec-le-combat" title="Permanent link">&para;</a></h2>
 <p>La session live et le combat sont étroitement liés.</p>
@@ -1748,9 +1743,11 @@
 <ul>
 <li>dégâts infligés par combat</li>
 <li>dégâts subis par combat</li>
+<li>temps moyen des tours par combat</li>
 </ul>
 <p>Chaque combat reste sur l'axe horizontal en ordre chronologique. Les personnages qui ont participé apparaissent même lorsqu'ils ont infligé ou subi <code>0</code> dégât dans un combat, afin de conserver une série lisible. Si un personnage n'a pas participé à un combat, il n'est pas ajouté à ce point.</p>
 <p>Ces graphiques permettent de comprendre qui a le plus pesé pendant la session et qui a absorbé le plus de dégâts.</p>
+<p>Le graphique des temps de tour aide à voir combien de temps les héros et le MJ prennent en moyenne pendant les combats de la session.</p>
 <h2 id="heros-tombes">Héros tombés<a class="headerlink" href="#heros-tombes" title="Permanent link">&para;</a></h2>
 <p>Quand un combat se termine, le résumé de la session live peut aussi augmenter le compteur des <strong>héros tombés</strong>.</p>
 <p>Cette donnée est alimentée directement par le résultat final du combat.</p>

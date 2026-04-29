@@ -1621,7 +1621,7 @@
 <p>Ao clicar em uma aventura na lista, você entra no seu <strong>painel principal</strong>, que é o verdadeiro centro operacional da campanha.</p>
 <p>O painel principal é organizado como uma tela em blocos:</p>
 <ul>
-<li>uma faixa superior com cabeçalho e controle da sessão ao vivo</li>
+<li>uma faixa superior com o cabeçalho da aventura</li>
 <li>duas colunas inferiores com cartões dedicados às várias áreas da campanha</li>
 </ul>
 <p>A ordem dos painéis pode ser personalizada nas configurações do aplicativo.</p>
@@ -1638,9 +1638,8 @@
 <p>Se a aventura também tiver uma descrição longa, aparece um botão dedicado para abri-la em um popover e lê-la sem sair do painel.</p>
 <p>A partir daqui você também pode entrar em <strong>Editar</strong> para voltar ao formulário da aventura e atualizar os dados.</p>
 <h2 id="sessao-ao-vivo">Sessão ao vivo<a class="headerlink" href="#sessao-ao-vivo" title="Permanent link">&para;</a></h2>
-<p><img alt="Painel de sessão ao vivo" class="img-shot" src="../../../images/en_dashavv_sessionelive.png" /></p>
-<p>Ao lado do cabeçalho fica o painel <strong>Sessão ao vivo</strong>.</p>
-<p>Essa seção serve para:</p>
+<p>A <strong>Sessão ao vivo</strong> não ocupa mais um painel fixo do dashboard: ela é iniciada e controlada a partir do centro da topbar quando você está dentro de uma página da aventura.</p>
+<p>O controle central serve para:</p>
 <ul>
 <li>iniciar uma nova sessão ao vivo para a aventura</li>
 <li>ver se uma sessão está em andamento ou em pausa</li>
@@ -1648,8 +1647,8 @@
 <li>pausar a sessão</li>
 <li>encerrá-la e salvá-la</li>
 </ul>
-<p>Quando a sessão ao vivo da aventura está ativa, o <strong>contexto global dos jogadores</strong> e os <strong>lugares</strong> seguem esse contexto.</p>
-<p>Se já existir uma sessão ao vivo aberta em outra aventura, o painel mostra isso claramente e não permite iniciar uma segunda em paralelo.</p>
+<p>Quando a sessão ao vivo da aventura está ativa, o controle continua disponível também em lugares e combates, para gerenciá-la sem voltar ao dashboard.</p>
+<p>Se já existir uma sessão ao vivo aberta em outra aventura, a topbar mostra isso claramente e não permite iniciar uma segunda em paralelo.</p>
 <h2 id="os-paineis-do-dashboard">Os painéis do dashboard<a class="headerlink" href="#os-paineis-do-dashboard" title="Permanent link">&para;</a></h2>
 <p>Abaixo do cabeçalho, o dashboard mostra os principais painéis da aventura.</p>
 <p>Atualmente eles são:</p>
@@ -1734,6 +1733,7 @@
 <li>número total de combates</li>
 <li>duração média dos encontros</li>
 <li>duração média das sessões</li>
+<li>tempo médio dos turnos para heróis e Mestre</li>
 <li>inimigos derrotados</li>
 <li>personagens de aventura com mais dano causado</li>
 <li>personagens de aventura com mais dano sofrido</li>
@@ -1745,9 +1745,10 @@
 <li>dano causado por dia</li>
 <li>dano sofrido por dia</li>
 <li>duração das sessões agrupada por dia</li>
+<li>tempo médio dos turnos, agrupado por sessão ou por combate</li>
 </ul>
 <p>Nos gráficos diários você pode alternar entre <code>Todos</code> e <code>Por personagem</code>. A visão por personagem usa uma linha por cada personagem de aventura envolvido; a legenda permite mostrar ou ocultar personagens individuais quando o gráfico fica cheio demais.</p>
-<p>Os valores numéricos podem ser mostrados ou ocultados com o controle dedicado, para escolher entre legibilidade e detalhe.</p>
+<p>Os valores numéricos podem ser mostrados ou ocultados com o controle dedicado, para escolher entre legibilidade e detalhe. Os gráficos podem ser rolados horizontalmente e têm controles de zoom independentes, para expandir ou comprimir uma leitura sem afetar as outras.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>As classificações principais de dano focam nos personagens de aventura. NPCs e monstros continuam importantes em combate, mas nas estatísticas de longo prazo teriam um peso variável demais.</p>

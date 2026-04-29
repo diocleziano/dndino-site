@@ -832,10 +832,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#il-pannello-sessione-live-nella-dashboard-avventura" class="md-nav__link">
+  <a href="#controllo-sessione-live-nella-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Il pannello Sessione Live nella dashboard avventura
+        Controllo Sessione Live nella topbar
       
     </span>
   </a>
@@ -1336,10 +1336,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#il-pannello-sessione-live-nella-dashboard-avventura" class="md-nav__link">
+  <a href="#controllo-sessione-live-nella-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Il pannello Sessione Live nella dashboard avventura
+        Controllo Sessione Live nella topbar
       
     </span>
   </a>
@@ -1563,13 +1563,9 @@
 <li>raccogliere automaticamente i dati provenienti dal combattimento</li>
 </ul>
 <h2 id="dove-si-avvia">Dove si avvia<a class="headerlink" href="#dove-si-avvia" title="Permanent link">&para;</a></h2>
-<p>La sessione live si avvia dalla <strong>dashboard dell’avventura</strong>, nel pannello <code>Sessione Live</code>.</p>
-<p>Se non esiste una sessione attiva, il pannello mostra:</p>
-<ul>
-<li>stato pronto</li>
-<li>pulsante <code>Avvia Sessione Live</code></li>
-</ul>
-<p>Quando premi il pulsante, DnDino crea una nuova sessione di tipo live e la imposta come sessione globale attiva.</p>
+<p>La sessione live si avvia dal controllo al centro della <strong>topbar</strong> quando sei dentro una pagina dell'avventura, per esempio dashboard, luoghi o combattimenti.</p>
+<p>Se non esiste una sessione attiva, il controllo mostra l'azione di avvio. Quando la premi, DnDino chiede conferma e poi crea una nuova sessione live per l'avventura corrente.</p>
+<p>Questo evita di dover tornare alla dashboard solo per avviare la sessione: il comando resta nel punto più comodo mentre lavori nei luoghi o prepari un combattimento.</p>
 <h2 id="una-sola-sessione-live-alla-volta">Una sola sessione live alla volta<a class="headerlink" href="#una-sola-sessione-live-alla-volta" title="Permanent link">&para;</a></h2>
 <p>DnDino gestisce una sola sessione live attiva per volta.</p>
 <p>Se una sessione è già aperta in un’altra avventura:</p>
@@ -1612,25 +1608,21 @@
 <li>capire che si è verificata un’interruzione</li>
 <li>riprendere manualmente il lavoro</li>
 </ul>
-<h2 id="il-pannello-sessione-live-nella-dashboard-avventura">Il pannello Sessione Live nella dashboard avventura<a class="headerlink" href="#il-pannello-sessione-live-nella-dashboard-avventura" title="Permanent link">&para;</a></h2>
-<p>Nella dashboard dell’avventura il pannello mostra lo stato corrente della sessione.</p>
-<p>Se la sessione appartiene all’avventura aperta, il pannello mostra:</p>
+<h2 id="controllo-sessione-live-nella-topbar">Controllo Sessione Live nella topbar<a class="headerlink" href="#controllo-sessione-live-nella-topbar" title="Permanent link">&para;</a></h2>
+<p>Nelle pagine dell'avventura, la topbar mostra il controllo della sessione live al centro.</p>
+<p>Se la sessione appartiene all’avventura aperta, il controllo mostra:</p>
 <ul>
 <li>titolo della sessione</li>
 <li>timer in tempo reale</li>
 <li>stato (<code>In corso</code> oppure <code>In pausa</code>)</li>
-<li>indicazione che il player è globale</li>
-<li>pulsanti:</li>
-<li><code>Pausa</code> o <code>Riprendi</code></li>
-<li><code>Chiudi e salva</code></li>
 </ul>
 <p>Se invece non c’è una sessione live attiva:</p>
 <ul>
-<li>compare il pulsante <code>Avvia Sessione Live</code></li>
+<li>compare il comando per avviare la sessione live dell'avventura corrente</li>
 </ul>
 <p>Se una sessione è attiva ma appartiene a un’altra avventura:</p>
 <ul>
-<li>il pannello mostra che la sessione live è occupata altrove</li>
+<li>il controllo segnala che la sessione live è in uso altrove</li>
 </ul>
 <h2 id="la-sessione-live-nella-topbar">La sessione live nella topbar<a class="headerlink" href="#la-sessione-live-nella-topbar" title="Permanent link">&para;</a></h2>
 <p>Quando una sessione live è attiva, la topbar mostra un controllo dedicato con stato e timer. La descrizione completa della topbar è nella pagina <code>Topbar</code>.</p>
@@ -1718,6 +1710,7 @@
 <ul>
 <li>danni inflitti dagli eroi</li>
 <li>danni subiti dagli eroi</li>
+<li>tempo medio dei turni, quando arriva dai combattimenti conclusi</li>
 </ul>
 <h2 id="integrazione-con-il-combattimento">Integrazione con il combattimento<a class="headerlink" href="#integrazione-con-il-combattimento" title="Permanent link">&para;</a></h2>
 <p>La sessione live e il combattimento sono strettamente collegati.</p>
@@ -1747,9 +1740,11 @@
 <ul>
 <li>danni inflitti per combattimento</li>
 <li>danni subiti per combattimento</li>
+<li>tempo medio dei turni per combattimento</li>
 </ul>
 <p>Ogni combattimento resta sull'asse orizzontale in ordine cronologico. I personaggi che hanno partecipato vengono mostrati anche quando in uno scontro hanno fatto o subito <code>0</code> danni, così la lettura della serie resta coerente. Se un personaggio non partecipa a un combattimento, invece, non viene inserito in quel punto.</p>
 <p>Questi grafici servono a capire chi ha inciso di più durante la sessione e chi ha assorbito più danni nel corso degli scontri.</p>
+<p>Il grafico dei turni aiuta invece a capire quanto tempo richiedono in media gli eroi e il DM durante gli scontri della sessione.</p>
 <h2 id="eroi-caduti">Eroi caduti<a class="headerlink" href="#eroi-caduti" title="Permanent link">&para;</a></h2>
 <p>Quando un combattimento termina, il riepilogo della sessione live può incrementare anche il conteggio degli <strong>eroi caduti</strong>.</p>
 <p>Questo dato viene alimentato direttamente dal risultato finale del combattimento.</p>
@@ -1782,6 +1777,7 @@
 <li>eroi caduti</li>
 <li>classifiche di danni inflitti e subiti dai personaggi</li>
 <li>grafici dei danni inflitti e subiti nei combattimenti della sessione</li>
+<li>grafico del tempo medio dei turni, se disponibile</li>
 </ul>
 <h2 id="quando-conviene-usare-la-sessione-live">Quando conviene usare la sessione live<a class="headerlink" href="#quando-conviene-usare-la-sessione-live" title="Permanent link">&para;</a></h2>
 <p>La sessione live è particolarmente utile quando vuoi:</p>

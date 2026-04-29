@@ -1621,7 +1621,7 @@
 <p>En cliquant sur une aventure dans la liste, tu entres dans sa <strong>dashboard</strong>, qui est le véritable centre opérationnel de la campagne.</p>
 <p>La dashboard est organisée comme un écran à panneaux :</p>
 <ul>
-<li>une bande supérieure avec l'en-tête et le contrôle de la session live</li>
+<li>une bande supérieure avec l'en-tête de l'aventure</li>
 <li>deux colonnes inférieures avec des cartes dédiées aux différentes zones de la campagne</li>
 </ul>
 <p>L'ordre des panneaux peut être personnalisé depuis les paramètres de l'application.</p>
@@ -1638,9 +1638,8 @@
 <p>Si l'aventure possède aussi une description longue, un bouton dédié permet de l'ouvrir dans un popover et de la lire sans quitter la dashboard.</p>
 <p>Depuis cette zone, tu peux aussi entrer dans <strong>Modifier</strong> pour revenir au formulaire de l'aventure et mettre à jour ses données.</p>
 <h2 id="session-live">Session live<a class="headerlink" href="#session-live" title="Permanent link">&para;</a></h2>
-<p><img alt="Panneau Session live" class="img-shot" src="../../../images/en_dashavv_sessionelive.png" /></p>
-<p>À côté de l'en-tête se trouve le panneau <strong>Session live</strong>.</p>
-<p>Cette section sert à :</p>
+<p>La <strong>Session live</strong> n'occupe plus un panneau fixe de la dashboard : elle se lance et se contrôle depuis le centre de la topbar quand tu es dans une page de l'aventure.</p>
+<p>Le contrôle central sert à :</p>
 <ul>
 <li>lancer une nouvelle session live pour l'aventure</li>
 <li>voir si une session est en cours ou en pause</li>
@@ -1648,8 +1647,8 @@
 <li>mettre la session en pause</li>
 <li>la fermer et l'enregistrer</li>
 </ul>
-<p>Quand la session live de l'aventure est active, le <strong>lecteur global</strong> et les <strong>lieux</strong> suivent ce contexte.</p>
-<p>S'il existe déjà une session live ouverte dans une autre aventure, la dashboard le signale clairement et ne te laisse pas en démarrer une deuxième en parallèle.</p>
+<p>Quand la session live de l'aventure est active, le contrôle reste disponible aussi dans les lieux et les combats, pour la gérer sans revenir à la dashboard.</p>
+<p>S'il existe déjà une session live ouverte dans une autre aventure, la topbar le signale clairement et ne te laisse pas en démarrer une deuxième en parallèle.</p>
 <h2 id="les-panneaux-de-la-dashboard">Les panneaux de la dashboard<a class="headerlink" href="#les-panneaux-de-la-dashboard" title="Permanent link">&para;</a></h2>
 <p>Sous l'en-tête, la dashboard affiche les panneaux principaux de l'aventure.</p>
 <p>Ceux prévus actuellement sont :</p>
@@ -1734,6 +1733,7 @@
 <li>nombre total de combats</li>
 <li>durée moyenne des rencontres</li>
 <li>durée moyenne des sessions</li>
+<li>temps moyen des tours pour les héros et le MJ</li>
 <li>ennemis vaincus</li>
 <li>personnages d'aventure ayant infligé le plus de dégâts</li>
 <li>personnages d'aventure ayant subi le plus de dégâts</li>
@@ -1745,9 +1745,10 @@
 <li>dégâts infligés par jour</li>
 <li>dégâts subis par jour</li>
 <li>durée des sessions regroupée par jour</li>
+<li>temps moyen des tours, regroupé par session ou par combat</li>
 </ul>
 <p>Dans les graphiques journaliers, tu peux passer entre <code>Tous</code> et <code>Par personnage</code>. La vue par personnage utilise une ligne pour chaque personnage d'aventure impliqué ; la légende permet d'afficher ou masquer certains personnages quand le graphique devient trop chargé.</p>
-<p>Les valeurs numériques peuvent être affichées ou masquées avec le contrôle dédié, pour choisir entre lisibilité et détail.</p>
+<p>Les valeurs numériques peuvent être affichées ou masquées avec le contrôle dédié, pour choisir entre lisibilité et détail. Les graphiques peuvent défiler horizontalement et disposent de contrôles de zoom indépendants, afin d'agrandir ou de compresser une lecture sans modifier les autres.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les classements principaux de dégâts se concentrent sur les personnages d'aventure. Les PNJ et monstres restent essentiels en combat, mais sur le long terme leur poids serait trop variable pour rester utile.</p>

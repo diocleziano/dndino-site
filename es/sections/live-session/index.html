@@ -832,10 +832,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#el-panel-de-sesion-en-vivo-en-la-aventura" class="md-nav__link">
+  <a href="#control-de-sesion-en-vivo-en-la-barra-superior" class="md-nav__link">
     <span class="md-ellipsis">
       
-        El panel de Sesión en vivo en la aventura
+        Control de Sesión en vivo en la barra superior
       
     </span>
   </a>
@@ -1336,10 +1336,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#el-panel-de-sesion-en-vivo-en-la-aventura" class="md-nav__link">
+  <a href="#control-de-sesion-en-vivo-en-la-barra-superior" class="md-nav__link">
     <span class="md-ellipsis">
       
-        El panel de Sesión en vivo en la aventura
+        Control de Sesión en vivo en la barra superior
       
     </span>
   </a>
@@ -1563,13 +1563,9 @@
 <li>recoger automáticamente los datos procedentes del combate</li>
 </ul>
 <h2 id="donde-se-inicia">Dónde se inicia<a class="headerlink" href="#donde-se-inicia" title="Permanent link">&para;</a></h2>
-<p>La sesión en vivo se inicia desde el <strong>panel de aventura</strong>, en el bloque <code>Sesión en vivo</code>.</p>
-<p>Si no existe una sesión activa, el panel muestra:</p>
-<ul>
-<li>estado listo</li>
-<li>botón <code>Iniciar sesión en vivo</code></li>
-</ul>
-<p>Cuando pulsas el botón, DnDino crea una nueva sesión de tipo live y la marca como sesión global activa.</p>
+<p>La sesión en vivo se inicia desde el control situado en el centro de la <strong>barra superior</strong> cuando estás dentro de una página de la aventura, como el panel principal, lugares o combate.</p>
+<p>Si no existe una sesión activa, el control muestra la acción de inicio. Al pulsarla, DnDino pide confirmación y crea una nueva sesión en vivo para la aventura actual.</p>
+<p>Así no necesitas volver al panel principal solo para iniciar la sesión: el comando permanece disponible donde estés trabajando.</p>
 <h2 id="solo-una-sesion-en-vivo-a-la-vez">Solo una sesión en vivo a la vez<a class="headerlink" href="#solo-una-sesion-en-vivo-a-la-vez" title="Permanent link">&para;</a></h2>
 <p>DnDino gestiona una sola sesión en vivo activa a la vez.</p>
 <p>Si ya hay una sesión abierta en otra aventura:</p>
@@ -1597,7 +1593,7 @@
 <h3 id="activa">Activa<a class="headerlink" href="#activa" title="Permanent link">&para;</a></h3>
 <p>Es el estado normal mientras la sesión está en marcha. El temporizador sigue corriendo y los eventos se registran con el tiempo transcurrido correcto.</p>
 <h3 id="en-pausa">En pausa<a class="headerlink" href="#en-pausa" title="Permanent link">&para;</a></h3>
-<p>La sesión puede ponerse en pausa desde el panel de aventura o desde la barra superior.</p>
+<p>La sesión puede ponerse en pausa desde la barra superior.</p>
 <p>Cuando está en pausa:</p>
 <ul>
 <li>el temporizador se detiene</li>
@@ -1612,25 +1608,23 @@
 <li>entender que se produjo una interrupción</li>
 <li>reanudar el trabajo manualmente</li>
 </ul>
-<h2 id="el-panel-de-sesion-en-vivo-en-la-aventura">El panel de Sesión en vivo en la aventura<a class="headerlink" href="#el-panel-de-sesion-en-vivo-en-la-aventura" title="Permanent link">&para;</a></h2>
-<p>Dentro del panel de aventura, el bloque muestra el estado actual de la sesión.</p>
-<p>Si la sesión pertenece a la aventura abierta, el panel muestra:</p>
+<h2 id="control-de-sesion-en-vivo-en-la-barra-superior">Control de Sesión en vivo en la barra superior<a class="headerlink" href="#control-de-sesion-en-vivo-en-la-barra-superior" title="Permanent link">&para;</a></h2>
+<p>Dentro de las páginas de la aventura, la barra superior muestra el control de sesión en vivo en el centro.</p>
+<p>Si la sesión pertenece a la aventura abierta, el control muestra:</p>
 <ul>
 <li>título de la sesión</li>
 <li>temporizador en tiempo real</li>
-<li>estado (<code>En curso</code> o <code>En pausa</code>)</li>
-<li>indicación de que el player es global</li>
-<li>botones:</li>
-<li><code>Pausa</code> o <code>Reanudar</code></li>
-<li><code>Cerrar y guardar</code></li>
-</ul>
-<p>Si no hay una sesión en vivo activa:</p>
-<ul>
-<li>aparece el botón <code>Iniciar sesión en vivo</code></li>
+<li>
+<p>estado (<code>En curso</code> o <code>En pausa</code>)
+Si no hay una sesión en vivo activa:</p>
+</li>
+<li>
+<p>aparece el comando para iniciar la sesión en vivo de la aventura actual</p>
+</li>
 </ul>
 <p>Si hay una sesión activa pero pertenece a otra aventura:</p>
 <ul>
-<li>el panel muestra que la sesión en vivo está ocupada en otra parte</li>
+<li>el control muestra que la sesión en vivo está ocupada en otra parte</li>
 </ul>
 <h2 id="la-sesion-en-vivo-en-la-barra-superior">La sesión en vivo en la barra superior<a class="headerlink" href="#la-sesion-en-vivo-en-la-barra-superior" title="Permanent link">&para;</a></h2>
 <p>Cuando una sesión en vivo está activa, la barra superior de la aplicación muestra un indicador específico.</p>
@@ -1719,6 +1713,7 @@
 <ul>
 <li>daño infligido por los héroes</li>
 <li>daño sufrido por los héroes</li>
+<li>tiempo medio de turno, cuando llega de combates completados</li>
 </ul>
 <h2 id="integracion-con-el-combate">Integración con el combate<a class="headerlink" href="#integracion-con-el-combate" title="Permanent link">&para;</a></h2>
 <p>La sesión en vivo y el combate están estrechamente relacionados.</p>
@@ -1748,9 +1743,11 @@
 <ul>
 <li>daño infligido por combate</li>
 <li>daño recibido por combate</li>
+<li>tiempo medio de turno por combate</li>
 </ul>
 <p>Cada combate permanece en el eje horizontal en orden cronológico. Los personajes que participaron se muestran incluso si en un combate infligieron o recibieron <code>0</code> daño, para mantener la serie coherente. Si un personaje no participa en un combate, no se añade en ese punto.</p>
 <p>Estos gráficos ayudan a entender quién tuvo más impacto durante la sesión y quién absorbió más daño a lo largo de los encuentros.</p>
+<p>El gráfico de tiempo de turno ayuda a entender cuánto tardan de media los héroes y el DJ durante los combates de la sesión.</p>
 <h2 id="heroes-caidos">Héroes caídos<a class="headerlink" href="#heroes-caidos" title="Permanent link">&para;</a></h2>
 <p>Cuando un combate termina, el resumen de la sesión en vivo también puede incrementar el recuento de <strong>héroes caídos</strong>.</p>
 <p>Este dato se alimenta directamente del resultado final del combate.</p>
@@ -1783,6 +1780,7 @@
 <li>héroes caídos</li>
 <li>clasificaciones de daño infligido y recibido por los personajes</li>
 <li>gráficos de daño infligido y recibido en los combates de la sesión</li>
+<li>gráfico de tiempo medio de turno, si está disponible</li>
 </ul>
 <h2 id="cuando-conviene-usar-la-sesion-en-vivo">Cuándo conviene usar la sesión en vivo<a class="headerlink" href="#cuando-conviene-usar-la-sesion-en-vivo" title="Permanent link">&para;</a></h2>
 <p>La sesión en vivo es especialmente útil cuando quieres:</p>

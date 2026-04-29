@@ -832,10 +832,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#das-live-session-panel-im-abenteuer-dashboard" class="md-nav__link">
+  <a href="#live-sitzungssteuerung-in-der-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Das Live-Session-Panel im Abenteuer-Dashboard
+        Live-Sitzungssteuerung in der Topbar
       
     </span>
   </a>
@@ -1336,10 +1336,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#das-live-session-panel-im-abenteuer-dashboard" class="md-nav__link">
+  <a href="#live-sitzungssteuerung-in-der-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Das Live-Session-Panel im Abenteuer-Dashboard
+        Live-Sitzungssteuerung in der Topbar
       
     </span>
   </a>
@@ -1563,13 +1563,9 @@
 <li>automatisch Daten aus dem Kampf zu sammeln</li>
 </ul>
 <h2 id="wo-sie-gestartet-wird">Wo sie gestartet wird<a class="headerlink" href="#wo-sie-gestartet-wird" title="Permanent link">&para;</a></h2>
-<p>Die Live-Session wird über das <strong>Abenteuer-Dashboard</strong> im Panel <code>Live-Session</code> gestartet.</p>
-<p>Wenn keine Sitzung aktiv ist, zeigt das Panel:</p>
-<ul>
-<li>Status bereit</li>
-<li>Schaltfläche <code>Live-Session starten</code></li>
-</ul>
-<p>Wenn du diese Schaltfläche drückst, erstellt DnDino eine neue Live-Session und setzt sie als global aktive Sitzung.</p>
+<p>Die Live-Session wird über die Steuerung in der Mitte der <strong>Topbar</strong> gestartet, wenn du dich in einer Abenteuerseite befindest, etwa Dashboard, Orte oder Kampf.</p>
+<p>Wenn keine Sitzung aktiv ist, zeigt die Steuerung die Startaktion. Beim Auslösen fragt DnDino nach Bestätigung und erstellt danach eine neue Live-Sitzung für das aktuelle Abenteuer.</p>
+<p>Du musst also nicht zum Dashboard zurückkehren, nur um die Sitzung zu starten: der Befehl bleibt dort verfügbar, wo du gerade arbeitest.</p>
 <h2 id="nur-eine-live-session-gleichzeitig">Nur eine Live-Session gleichzeitig<a class="headerlink" href="#nur-eine-live-session-gleichzeitig" title="Permanent link">&para;</a></h2>
 <p>DnDino verwaltet immer nur eine aktive Live-Session gleichzeitig.</p>
 <p>Wenn bereits in einem anderen Abenteuer eine Sitzung geöffnet ist:</p>
@@ -1597,7 +1593,7 @@
 <h3 id="aktiv">Aktiv<a class="headerlink" href="#aktiv" title="Permanent link">&para;</a></h3>
 <p>Das ist der normale Zustand, solange die Sitzung läuft. Der Timer zählt weiter und Ereignisse werden mit der korrekten verstrichenen Zeit gespeichert.</p>
 <h3 id="pausiert">Pausiert<a class="headerlink" href="#pausiert" title="Permanent link">&para;</a></h3>
-<p>Die Sitzung kann über das Abenteuer-Dashboard oder die obere Leiste pausiert werden.</p>
+<p>Die Sitzung kann über die Topbar pausiert werden.</p>
 <p>Wenn sie pausiert ist:</p>
 <ul>
 <li>stoppt der Timer</li>
@@ -1612,25 +1608,23 @@
 <li>zu erkennen, dass eine Unterbrechung stattgefunden hat</li>
 <li>die Arbeit manuell wieder aufzunehmen</li>
 </ul>
-<h2 id="das-live-session-panel-im-abenteuer-dashboard">Das Live-Session-Panel im Abenteuer-Dashboard<a class="headerlink" href="#das-live-session-panel-im-abenteuer-dashboard" title="Permanent link">&para;</a></h2>
-<p>Im Abenteuer-Dashboard zeigt das Panel den aktuellen Sitzungsstatus.</p>
-<p>Wenn die Sitzung zum geöffneten Abenteuer gehört, zeigt das Panel:</p>
+<h2 id="live-sitzungssteuerung-in-der-topbar">Live-Sitzungssteuerung in der Topbar<a class="headerlink" href="#live-sitzungssteuerung-in-der-topbar" title="Permanent link">&para;</a></h2>
+<p>Auf den Abenteuerseiten zeigt die Topbar die Live-Sitzungssteuerung in der Mitte.</p>
+<p>Wenn die Sitzung zum geöffneten Abenteuer gehört, zeigt die Steuerung:</p>
 <ul>
 <li>Sitzungstitel</li>
 <li>Echtzeit-Timer</li>
-<li>Status (<code>Läuft</code> oder <code>Pausiert</code>)</li>
-<li>Hinweis, dass der Player global ist</li>
-<li>Schaltflächen:</li>
-<li><code>Pause</code> oder <code>Fortsetzen</code></li>
-<li><code>Schließen und speichern</code></li>
-</ul>
-<p>Wenn keine Live-Session aktiv ist:</p>
-<ul>
-<li>erscheint die Schaltfläche <code>Live-Session starten</code></li>
+<li>
+<p>Status (<code>Läuft</code> oder <code>Pausiert</code>)
+Wenn keine Live-Session aktiv ist:</p>
+</li>
+<li>
+<p>erscheint der Befehl zum Starten der Live-Sitzung des aktuellen Abenteuers</p>
+</li>
 </ul>
 <p>Wenn eine Sitzung aktiv ist, aber zu einem anderen Abenteuer gehört:</p>
 <ul>
-<li>zeigt das Panel, dass die Live-Session derzeit anderswo belegt ist</li>
+<li>zeigt die Steuerung, dass die Live-Session derzeit anderswo belegt ist</li>
 </ul>
 <h2 id="die-live-session-in-der-topbar">Die Live-Session in der Topbar<a class="headerlink" href="#die-live-session-in-der-topbar" title="Permanent link">&para;</a></h2>
 <p>Wenn eine Live-Session aktiv ist, zeigt die obere Leiste der App einen eigenen Indikator an.</p>
@@ -1719,6 +1713,7 @@
 <ul>
 <li>von Helden verursachter Schaden</li>
 <li>von Helden erlittener Schaden</li>
+<li>durchschnittliche Zugdauer, wenn sie aus abgeschlossenen Kämpfen stammt</li>
 </ul>
 <h2 id="integration-mit-dem-kampf">Integration mit dem Kampf<a class="headerlink" href="#integration-mit-dem-kampf" title="Permanent link">&para;</a></h2>
 <p>Die Live-Session und der Kampf sind eng miteinander verbunden.</p>
@@ -1748,9 +1743,11 @@
 <ul>
 <li>verursachter Schaden pro Kampf</li>
 <li>erlittener Schaden pro Kampf</li>
+<li>durchschnittliche Zugdauer pro Kampf</li>
 </ul>
 <p>Jeder Kampf bleibt chronologisch auf der horizontalen Achse. Charaktere, die teilgenommen haben, werden auch dann angezeigt, wenn sie in einem Kampf <code>0</code> Schaden verursacht oder erlitten haben. Hat ein Charakter an einem Kampf nicht teilgenommen, erscheint er an diesem Punkt nicht.</p>
 <p>Diese Diagramme zeigen, wer während der Sitzung den größten Einfluss hatte und wer über die Begegnungen hinweg den meisten Schaden aufgenommen hat.</p>
+<p>Das Diagramm zur Zugdauer hilft zu verstehen, wie viel Zeit Helden und SL im Durchschnitt während der Kämpfe der Sitzung benötigen.</p>
 <h2 id="gefallene-helden">Gefallene Helden<a class="headerlink" href="#gefallene-helden" title="Permanent link">&para;</a></h2>
 <p>Wenn ein Kampf endet, kann die Live-Zusammenfassung auch den Zähler der <strong>gefallenen Helden</strong> erhöhen.</p>
 <p>Dieser Wert wird direkt aus dem Endergebnis des Kampfes gespeist.</p>
@@ -1783,6 +1780,7 @@
 <li>gefallene Helden</li>
 <li>Ranglisten zu verursachtem und erlittenem Schaden der Charaktere</li>
 <li>Diagramme zu verursachtem und erlittenem Schaden in den Kämpfen der Sitzung</li>
+<li>Diagramm zur durchschnittlichen Zugdauer, sofern verfügbar</li>
 </ul>
 <h2 id="wann-die-live-session-besonders-sinnvoll-ist">Wann die Live-Session besonders sinnvoll ist<a class="headerlink" href="#wann-die-live-session-besonders-sinnvoll-ist" title="Permanent link">&para;</a></h2>
 <p>Die Live-Session ist besonders nützlich, wenn du:</p>

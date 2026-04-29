@@ -1621,7 +1621,7 @@
 <p>Clicking an adventure in the list takes you into its <strong>dashboard</strong>, which is the real operational center of the campaign.</p>
 <p>The dashboard is organized as a panel-based screen:</p>
 <ul>
-<li>a top band with the header and live session controls</li>
+<li>a top band with the adventure header</li>
 <li>two lower columns with cards for the various campaign areas</li>
 </ul>
 <p>The order of the panels can be customized in the app settings.</p>
@@ -1638,9 +1638,8 @@
 <p>If the adventure also has a long description, a dedicated button appears to open it in a popover without leaving the dashboard.</p>
 <p>From here you can also enter <strong>Edit</strong> to return to the adventure form and update the data.</p>
 <h2 id="live-session">Live Session<a class="headerlink" href="#live-session" title="Permanent link">&para;</a></h2>
-<p><img alt="Live Session panel" class="img-shot" src="../../images/en_dashavv_sessionelive.png" /></p>
-<p>Next to the header there is the <strong>Live session</strong> panel.</p>
-<p>This section is used to:</p>
+<p>The <strong>Live Session</strong> no longer lives in a fixed dashboard panel: it is started and controlled from the center of the top bar while you are inside an adventure page.</p>
+<p>The central control is used to:</p>
 <ul>
 <li>start a new live session for the adventure</li>
 <li>see whether a session is running or paused</li>
@@ -1648,8 +1647,8 @@
 <li>pause the session</li>
 <li>close and save it</li>
 </ul>
-<p>When the adventure's live session is active, the <strong>global player context</strong> and the <strong>places</strong> follow that session context.</p>
-<p>If another adventure already has an active live session, the dashboard makes that clear and won't let you start a second one in parallel.</p>
+<p>When the adventure's live session is active, the control remains available in places and combat too, so you can manage it without returning to the dashboard.</p>
+<p>If another adventure already has an active live session, the top bar makes that clear and won't let you start a second one in parallel.</p>
 <h2 id="dashboard-panels">Dashboard Panels<a class="headerlink" href="#dashboard-panels" title="Permanent link">&para;</a></h2>
 <p>Below the header, the dashboard shows the main panels of the adventure.</p>
 <p>At the moment, they are:</p>
@@ -1734,6 +1733,7 @@
 <li>total number of combats</li>
 <li>average encounter duration</li>
 <li>average session duration</li>
+<li>average turn time for heroes and the DM</li>
 <li>defeated enemies</li>
 <li>adventure characters with the most damage dealt</li>
 <li>adventure characters with the most damage taken</li>
@@ -1745,9 +1745,10 @@
 <li>damage dealt by day</li>
 <li>damage taken by day</li>
 <li>session duration grouped by day</li>
+<li>average turn time, grouped by session or by combat</li>
 </ul>
 <p>Daily charts can switch between <code>All</code> and <code>By Character</code>. The character view uses one line for each involved adventure character; the legend lets you show or hide individual characters when the chart gets too dense.</p>
-<p>Numeric values can be shown or hidden with the dedicated control, so you can choose between readability and detail.</p>
+<p>Numeric values can be shown or hidden with the dedicated control, so you can choose between readability and detail. Charts can be scrolled horizontally and have independent zoom controls, letting you expand or compress one chart without affecting the others.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The main damage rankings focus on adventure characters. NPCs and monsters still matter in combat, but over a long campaign their weight would be too variable to remain useful.</p>

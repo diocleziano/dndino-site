@@ -832,10 +832,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#o-painel-sessao-live-no-painel-da-aventura" class="md-nav__link">
+  <a href="#controlo-sessao-live-na-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        O painel Sessão Live no painel da aventura
+        Controlo Sessão live na topbar
       
     </span>
   </a>
@@ -1336,10 +1336,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#o-painel-sessao-live-no-painel-da-aventura" class="md-nav__link">
+  <a href="#controlo-sessao-live-na-topbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        O painel Sessão Live no painel da aventura
+        Controlo Sessão live na topbar
       
     </span>
   </a>
@@ -1563,13 +1563,9 @@
 <li>recolher automaticamente os dados provenientes do combate</li>
 </ul>
 <h2 id="onde-se-inicia">Onde se inicia<a class="headerlink" href="#onde-se-inicia" title="Permanent link">&para;</a></h2>
-<p>A sessão live é iniciada a partir do <strong>painel da aventura</strong>, no painel <code>Sessão Live</code>.</p>
-<p>Se não existir uma sessão ativa, o painel mostra:</p>
-<ul>
-<li>estado pronto</li>
-<li>botão <code>Iniciar Sessão Live</code></li>
-</ul>
-<p>Quando carregas no botão, o DnDino cria uma nova sessão do tipo live e define-a como sessão global ativa.</p>
+<p>A sessão live é iniciada a partir do controlo no centro da <strong>topbar</strong> quando estás dentro de uma página da aventura, como dashboard, locais ou combate.</p>
+<p>Se não existir uma sessão ativa, o controlo mostra a ação de início. Ao carregares nela, o DnDino pede confirmação e cria uma nova sessão live para a aventura atual.</p>
+<p>Assim não precisas de voltar à dashboard só para iniciar a sessão: o comando fica disponível onde estás a trabalhar.</p>
 <h2 id="apenas-uma-sessao-live-de-cada-vez">Apenas uma sessão live de cada vez<a class="headerlink" href="#apenas-uma-sessao-live-de-cada-vez" title="Permanent link">&para;</a></h2>
 <p>O DnDino gere apenas uma sessão live ativa de cada vez.</p>
 <p>Se já existir uma sessão aberta noutra aventura:</p>
@@ -1597,7 +1593,7 @@
 <h3 id="ativa">Ativa<a class="headerlink" href="#ativa" title="Permanent link">&para;</a></h3>
 <p>É o estado normal enquanto a sessão está a decorrer. O temporizador continua a avançar e os acontecimentos são registados com o tempo decorrido correto.</p>
 <h3 id="em-pausa">Em pausa<a class="headerlink" href="#em-pausa" title="Permanent link">&para;</a></h3>
-<p>A sessão pode ser colocada em pausa a partir do painel da aventura ou da barra superior.</p>
+<p>A sessão pode ser colocada em pausa a partir da topbar.</p>
 <p>Quando está em pausa:</p>
 <ul>
 <li>o temporizador pára</li>
@@ -1612,25 +1608,23 @@
 <li>perceber que houve uma interrupção</li>
 <li>retomar o trabalho manualmente</li>
 </ul>
-<h2 id="o-painel-sessao-live-no-painel-da-aventura">O painel Sessão Live no painel da aventura<a class="headerlink" href="#o-painel-sessao-live-no-painel-da-aventura" title="Permanent link">&para;</a></h2>
-<p>No painel da aventura, este bloco mostra o estado atual da sessão.</p>
-<p>Se a sessão pertencer à aventura aberta, o painel mostra:</p>
+<h2 id="controlo-sessao-live-na-topbar">Controlo Sessão live na topbar<a class="headerlink" href="#controlo-sessao-live-na-topbar" title="Permanent link">&para;</a></h2>
+<p>Nas páginas da aventura, a topbar mostra o controlo da sessão live ao centro.</p>
+<p>Se a sessão pertencer à aventura aberta, o controlo mostra:</p>
 <ul>
 <li>título da sessão</li>
 <li>temporizador em tempo real</li>
-<li>estado (<code>Em curso</code> ou <code>Em pausa</code>)</li>
-<li>indicação de que o player é global</li>
-<li>botões:</li>
-<li><code>Pausa</code> ou <code>Retomar</code></li>
-<li><code>Fechar e guardar</code></li>
-</ul>
-<p>Se não existir nenhuma sessão live ativa:</p>
-<ul>
-<li>aparece o botão <code>Iniciar Sessão Live</code></li>
+<li>
+<p>estado (<code>Em curso</code> ou <code>Em pausa</code>)
+Se não existir nenhuma sessão live ativa:</p>
+</li>
+<li>
+<p>aparece o comando para iniciar a sessão live da aventura atual</p>
+</li>
 </ul>
 <p>Se existir uma sessão ativa, mas pertencer a outra aventura:</p>
 <ul>
-<li>o painel mostra que a sessão live está ocupada noutro lado</li>
+<li>o controlo mostra que a sessão live está ocupada noutro lado</li>
 </ul>
 <h2 id="a-sessao-live-na-topbar">A sessão live na topbar<a class="headerlink" href="#a-sessao-live-na-topbar" title="Permanent link">&para;</a></h2>
 <p>Quando uma sessão live está ativa, a barra superior da aplicação mostra um indicador dedicado.</p>
@@ -1719,6 +1713,7 @@
 <ul>
 <li>dano causado pelos heróis</li>
 <li>dano sofrido pelos heróis</li>
+<li>tempo médio dos turnos, quando vem de combates concluídos</li>
 </ul>
 <h2 id="integracao-com-o-combate">Integração com o combate<a class="headerlink" href="#integracao-com-o-combate" title="Permanent link">&para;</a></h2>
 <p>A sessão live e o combate estão fortemente ligados.</p>
@@ -1748,9 +1743,11 @@
 <ul>
 <li>dano causado por combate</li>
 <li>dano sofrido por combate</li>
+<li>tempo médio dos turnos por combate</li>
 </ul>
 <p>Cada combate fica no eixo horizontal em ordem cronológica. As personagens que participaram aparecem mesmo quando num combate causaram ou sofreram <code>0</code> dano, para manter a série coerente. Se uma personagem não participou num combate, não é adicionada nesse ponto.</p>
 <p>Estes gráficos ajudam a perceber quem teve mais impacto durante a sessão e quem absorveu mais dano ao longo dos encontros.</p>
+<p>O gráfico do tempo dos turnos ajuda a perceber quanto tempo os heróis e o Mestre demoram em média durante os combates da sessão.</p>
 <h2 id="herois-caidos">Heróis caídos<a class="headerlink" href="#herois-caidos" title="Permanent link">&para;</a></h2>
 <p>Quando um combate termina, o resumo da sessão live também pode aumentar a contagem de <strong>heróis caídos</strong>.</p>
 <p>Este dado é alimentado diretamente pelo resultado final do combate.</p>
@@ -1783,6 +1780,7 @@
 <li>heróis caídos</li>
 <li>classificações de dano causado e sofrido pelas personagens</li>
 <li>gráficos de dano causado e sofrido nos combates da sessão</li>
+<li>gráfico do tempo médio dos turnos, quando disponível</li>
 </ul>
 <h2 id="quando-vale-a-pena-usar-a-sessao-live">Quando vale a pena usar a sessão live<a class="headerlink" href="#quando-vale-a-pena-usar-a-sessao-live" title="Permanent link">&para;</a></h2>
 <p>A sessão live é especialmente útil quando queres:</p>

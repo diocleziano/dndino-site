@@ -1621,7 +1621,7 @@
 <p>Cliccando su un’avventura nella lista entri nella sua <strong>dashboard</strong>, che è il vero centro operativo della campagna.</p>
 <p>La dashboard è organizzata come una schermata a pannelli:</p>
 <ul>
-<li>una fascia superiore con intestazione e controllo sessione live</li>
+<li>una fascia superiore con intestazione dell'avventura</li>
 <li>due colonne inferiori con card dedicate alle varie aree della campagna</li>
 </ul>
 <p>L’ordine dei pannelli può essere personalizzato dalle impostazioni dell’app.</p>
@@ -1638,9 +1638,8 @@
 <p>Se l’avventura ha anche una descrizione lunga, compare un pulsante dedicato per aprirla in un popover e leggerla senza uscire dalla dashboard.</p>
 <p>Da qui puoi anche entrare in <strong>Modifica</strong> per tornare al form dell’avventura e aggiornarne i dati.</p>
 <h2 id="sessione-live">Sessione live<a class="headerlink" href="#sessione-live" title="Permanent link">&para;</a></h2>
-<p><img alt="Pannello Sessione live" class="img-shot" src="../../../images/en_dashavv_sessionelive.png" /></p>
-<p>Accanto all’intestazione c’è il pannello <strong>Sessione live</strong>.</p>
-<p>Questa sezione serve per:</p>
+<p>La <strong>Sessione live</strong> non occupa più un pannello fisso della dashboard: si avvia e si controlla dal centro della topbar quando sei dentro una pagina dell'avventura.</p>
+<p>Il controllo centrale serve per:</p>
 <ul>
 <li>avviare una nuova sessione live per l’avventura</li>
 <li>vedere se una sessione è in corso oppure in pausa</li>
@@ -1648,8 +1647,8 @@
 <li>mettere in pausa la sessione</li>
 <li>chiuderla e salvarla</li>
 </ul>
-<p>Quando la sessione live dell’avventura è attiva, il <strong>player globale</strong> e i <strong>luoghi</strong> seguono questo contesto.</p>
-<p>Se esiste già una sessione live aperta in un’altra avventura, la dashboard lo segnala chiaramente e non ti lascia avviarne una seconda in parallelo.</p>
+<p>Quando la sessione live dell’avventura è attiva, il controllo resta disponibile anche in luoghi e combattimenti, così puoi gestirla senza tornare alla dashboard.</p>
+<p>Se esiste già una sessione live aperta in un’altra avventura, la topbar lo segnala chiaramente e non ti lascia avviarne una seconda in parallelo.</p>
 <h2 id="i-pannelli-della-dashboard">I pannelli della dashboard<a class="headerlink" href="#i-pannelli-della-dashboard" title="Permanent link">&para;</a></h2>
 <p>Sotto l’intestazione la dashboard mostra i pannelli principali dell’avventura.</p>
 <p>Quelli previsti attualmente sono:</p>
@@ -1734,6 +1733,7 @@
 <li>numero totale di combattimenti</li>
 <li>durata media degli incontri</li>
 <li>durata media delle sessioni</li>
+<li>tempo medio dei turni per eroi e DM</li>
 <li>nemici sconfitti</li>
 <li>personaggi avventura con più danni inflitti</li>
 <li>personaggi avventura con più danni subiti</li>
@@ -1745,9 +1745,10 @@
 <li>danni inflitti per giorno</li>
 <li>danni subiti per giorno</li>
 <li>durata delle sessioni raggruppata per giorno</li>
+<li>tempo medio dei turni, raggruppabile per sessione o per combattimento</li>
 </ul>
 <p>Nei grafici giornalieri puoi passare tra vista <code>Tutti</code> e <code>Per Personaggio</code>. La vista per personaggio usa una linea per ogni personaggio avventura coinvolto; dalla legenda puoi mostrare o nascondere singoli personaggi quando vuoi alleggerire il grafico.</p>
-<p>I valori numerici possono essere mostrati o nascosti dal relativo controllo, utile quando ci sono molti punti e vuoi scegliere tra leggibilità e dettaglio.</p>
+<p>I valori numerici possono essere mostrati o nascosti dal relativo controllo, utile quando ci sono molti punti e vuoi scegliere tra leggibilità e dettaglio. I grafici possono essere scorsi orizzontalmente e hanno controlli di zoom indipendenti, così puoi allargare o comprimere la lettura senza influenzare gli altri grafici.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Le classifiche principali dei danni considerano i personaggi avventura. PNG e mostri restano importanti nel combattimento, ma nelle statistiche di lungo periodo avrebbero un peso troppo variabile e meno utile.</p>
@@ -1817,7 +1818,7 @@
 <li>definire copertina, stato e descrizione dell’avventura</li>
 <li>riprendere il lavoro da una campagna esistente</li>
 <li>entrare nella dashboard principale</li>
-<li>avviare una sessione live</li>
+<li>avviare una sessione live dalla topbar centrale</li>
 <li>raggiungere velocemente luoghi, personaggi, sessioni, immagini e mappe della campagna</li>
 <li>consultare statistiche e grafici sui combattimenti completati</li>
 </ul>

@@ -1621,7 +1621,7 @@
 <p>Ao clicar numa aventura da lista, entras na respetiva <strong>dashboard</strong>, que é o verdadeiro centro operativo da campanha.</p>
 <p>A dashboard está organizada como um ecrã de painéis:</p>
 <ul>
-<li>uma faixa superior com cabeçalho e controlo da sessão em direto</li>
+<li>uma faixa superior com o cabeçalho da aventura</li>
 <li>duas colunas inferiores com cartões dedicados às várias áreas da campanha</li>
 </ul>
 <p>A ordem dos painéis pode ser personalizada nas definições da aplicação.</p>
@@ -1638,9 +1638,8 @@
 <p>Se a aventura também tiver uma descrição longa, surge um botão dedicado para a abrir num popover e lê-la sem sair da dashboard.</p>
 <p>A partir daqui também podes entrar em <strong>Editar</strong> para voltar ao formulário da aventura e atualizar os respetivos dados.</p>
 <h2 id="sessao-em-direto">Sessão em direto<a class="headerlink" href="#sessao-em-direto" title="Permanent link">&para;</a></h2>
-<p><img alt="Painel de sessão em direto" class="img-shot" src="../../../images/en_dashavv_sessionelive.png" /></p>
-<p>Ao lado do cabeçalho encontra-se o painel <strong>Sessão em direto</strong>.</p>
-<p>Esta secção serve para:</p>
+<p>A <strong>Sessão em direto</strong> já não ocupa um painel fixo da dashboard: é iniciada e controlada a partir do centro da topbar quando estás dentro de uma página da aventura.</p>
+<p>O controlo central serve para:</p>
 <ul>
 <li>iniciar uma nova sessão em direto para a aventura</li>
 <li>ver se uma sessão está em curso ou em pausa</li>
@@ -1648,8 +1647,8 @@
 <li>colocar a sessão em pausa</li>
 <li>fechá-la e guardá-la</li>
 </ul>
-<p>Quando a sessão em direto da aventura está ativa, o <strong>contexto global dos jogadores</strong> e os <strong>locais</strong> seguem esse contexto.</p>
-<p>Se já existir uma sessão em direto aberta noutra aventura, a dashboard assinala-o claramente e não te deixa iniciar uma segunda em paralelo.</p>
+<p>Quando a sessão em direto da aventura está ativa, o controlo continua disponível também em locais e combates, para a gerires sem voltar à dashboard.</p>
+<p>Se já existir uma sessão em direto aberta noutra aventura, a topbar assinala-o claramente e não te deixa iniciar uma segunda em paralelo.</p>
 <h2 id="os-paineis-da-dashboard">Os painéis da dashboard<a class="headerlink" href="#os-paineis-da-dashboard" title="Permanent link">&para;</a></h2>
 <p>Por baixo do cabeçalho, a dashboard mostra os painéis principais da aventura.</p>
 <p>Atualmente são:</p>
@@ -1734,6 +1733,7 @@
 <li>número total de combates</li>
 <li>duração média dos encontros</li>
 <li>duração média das sessões</li>
+<li>tempo médio dos turnos para heróis e Mestre</li>
 <li>inimigos derrotados</li>
 <li>personagens de aventura com mais dano causado</li>
 <li>personagens de aventura com mais dano sofrido</li>
@@ -1745,9 +1745,10 @@
 <li>dano causado por dia</li>
 <li>dano sofrido por dia</li>
 <li>duração das sessões agrupada por dia</li>
+<li>tempo médio dos turnos, agrupado por sessão ou por combate</li>
 </ul>
 <p>Nos gráficos diários podes alternar entre <code>Todos</code> e <code>Por personagem</code>. A vista por personagem usa uma linha por cada personagem de aventura envolvida; a legenda permite mostrar ou esconder personagens individuais quando o gráfico fica demasiado cheio.</p>
-<p>Os valores numéricos podem ser mostrados ou ocultados com o controlo dedicado, para escolher entre legibilidade e detalhe.</p>
+<p>Os valores numéricos podem ser mostrados ou ocultados com o controlo dedicado, para escolher entre legibilidade e detalhe. Os gráficos podem deslocar-se horizontalmente e têm controlos de zoom independentes, para expandires ou comprimires uma leitura sem afetar as outras.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>As classificações principais de dano focam-se nas personagens de aventura. NPCs e monstros continuam importantes em combate, mas nas estatísticas de longo prazo teriam um peso demasiado variável.</p>
