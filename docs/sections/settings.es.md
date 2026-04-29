@@ -173,14 +173,14 @@ Esta subsección controla la información general que se muestra a los jugadores
 
 ## Información de héroes
 
-Estas opciones se aplican solo cuando el participante activo es un héroe. Puedes decidir si mostrar:
+Estas opciones se aplican cuando el participante activo es un héroe o un aliado. Un PNJ o monstruo marcado como `Aliado` usa también estos ajustes. Puedes decidir si mostrar:
 
 - PG actuales, máximos y temporales
 - condiciones activas
 
 ## Información de PNJ
 
-Estas opciones se aplican solo cuando el participante activo es un PNJ. Puedes decidir por separado si mostrar:
+Estas opciones se aplican solo cuando el participante activo es un PNJ no aliado. Los PNJ marcados como `Aliado` usan los ajustes de héroes/aliados. Puedes decidir por separado si mostrar:
 
 - PG actuales, máximos y temporales
 - condiciones activas
@@ -190,7 +190,7 @@ Si los nombres de PNJ están ocultos, la `Ventana de Jugadores` usa el nombre ge
 
 ## Información de monstruos
 
-Estas opciones se aplican solo cuando el participante activo es un monstruo. Puedes decidir por separado si mostrar:
+Estas opciones se aplican solo cuando el participante activo es un monstruo no aliado. Los monstruos marcados como `Aliado` usan los ajustes de héroes/aliados. Puedes decidir por separado si mostrar:
 
 - PG actuales, máximos y temporales
 - condiciones activas

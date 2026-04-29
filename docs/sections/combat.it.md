@@ -51,7 +51,7 @@ L'overlay può includere:
 ![Schermata giocatori durante il turno di un eroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Schermata giocatori durante il turno di un mostro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Per eroi, PNG e mostri puoi scegliere separatamente quali informazioni mostrare ai giocatori dalle impostazioni.
+Per eroi/alleati, PNG e mostri puoi scegliere separatamente quali informazioni mostrare ai giocatori dalle impostazioni. Se un PNG o un mostro è marcato come `Alleato`, viene trattato come un eroe/alleato anche nella schermata giocatori.
 
 ## Impostazioni utili
 

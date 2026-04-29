@@ -51,7 +51,7 @@ La superposición puede incluir:
 ![Pantalla de jugadores durante el turno de un héroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Pantalla de jugadores durante el turno de un monstruo](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Para héroes, PNJ y monstruos puedes decidir por separado en ajustes qué información se muestra a los jugadores.
+Para héroes/aliados, PNJ y monstruos puedes decidir por separado en ajustes qué información se muestra a los jugadores. Si un PNJ o monstruo está marcado como `Aliado`, también se trata como héroe/aliado en la pantalla de jugadores.
 
 ## Ajustes Útiles
 

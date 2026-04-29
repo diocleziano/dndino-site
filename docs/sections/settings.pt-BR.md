@@ -173,14 +173,14 @@ Esta subseção controla as informações gerais mostradas aos jogadores durante
 
 ## Informações dos heróis
 
-Estas opções valem apenas quando o participante ativo é um herói. Você pode decidir se mostra:
+Estas opções valem quando o participante ativo é um herói ou aliado. Um NPC ou monstro marcado como `Aliado` também usa essas configurações. Você pode decidir se mostra:
 
 - PV atuais, máximos e temporários
 - condições ativas
 
 ## Informações dos NPCs
 
-Estas opções valem apenas quando o participante ativo é um NPC. Você pode decidir separadamente se mostra:
+Estas opções valem apenas quando o participante ativo é um NPC não aliado. NPCs marcados como `Aliado` usam as configurações de heróis/aliados. Você pode decidir separadamente se mostra:
 
 - PV atuais, máximos e temporários
 - condições ativas
@@ -190,7 +190,7 @@ Se os nomes dos NPCs estiverem ocultos, a `Janela dos Jogadores` usa o nome gen�
 
 ## Informações dos monstros
 
-Estas opções valem apenas quando o participante ativo é um monstro. Você pode decidir separadamente se mostra:
+Estas opções valem apenas quando o participante ativo é um monstro não aliado. Monstros marcados como `Aliado` usam as configurações de heróis/aliados. Você pode decidir separadamente se mostra:
 
 - PV atuais, máximos e temporários
 - condições ativas

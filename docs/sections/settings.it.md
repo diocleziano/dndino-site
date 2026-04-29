@@ -173,14 +173,14 @@ Questa sottosezione controlla le informazioni generali mostrate ai giocatori dur
 
 ## Informazioni eroi
 
-Queste opzioni valgono solo quando il partecipante di turno è un eroe. Puoi decidere se mostrare:
+Queste opzioni valgono quando il partecipante di turno è un eroe o un alleato. Anche un PNG o un mostro marcato come `Alleato` usa quindi queste impostazioni. Puoi decidere se mostrare:
 
 - PF attuali, massimi e temporanei
 - condizioni attive
 
 ## Informazioni PNG
 
-Queste opzioni valgono solo quando il partecipante di turno è un PNG. Puoi decidere separatamente se mostrare:
+Queste opzioni valgono solo quando il partecipante di turno è un PNG non alleato. I PNG marcati come `Alleato` ricadono nelle impostazioni degli eroi/alleati. Puoi decidere separatamente se mostrare:
 
 - PF attuali, massimi e temporanei
 - condizioni attive
@@ -190,7 +190,7 @@ Se il nome dei PNG è nascosto, nella `Finestra Giocatori` viene usato il nome g
 
 ## Informazioni mostri
 
-Queste opzioni valgono solo quando il partecipante di turno è un mostro. Puoi decidere separatamente se mostrare:
+Queste opzioni valgono solo quando il partecipante di turno è un mostro non alleato. I mostri marcati come `Alleato` ricadono nelle impostazioni degli eroi/alleati. Puoi decidere separatamente se mostrare:
 
 - PF attuali, massimi e temporanei
 - condizioni attive

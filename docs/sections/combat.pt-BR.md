@@ -51,7 +51,7 @@ A sobreposição pode incluir:
 ![Tela dos jogadores durante o turno de um herói](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Tela dos jogadores durante o turno de um monstro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Para heróis, NPCs e monstros você pode decidir separadamente nas configurações quais informações serão mostradas aos jogadores.
+Para heróis/aliados, NPCs e monstros você pode decidir separadamente nas configurações quais informações serão mostradas aos jogadores. Se um NPC ou monstro estiver marcado como `Aliado`, ele também é tratado como herói/aliado na tela dos jogadores.
 
 ## Configurações Úteis
 

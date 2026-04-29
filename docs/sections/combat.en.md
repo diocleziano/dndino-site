@@ -51,7 +51,7 @@ The overlay can include:
 ![Player screen during a hero turn](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Player screen during a monster turn](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-For heroes, NPCs, and monsters you can decide separately which information is shown to players in settings.
+For heroes/allies, NPCs, and monsters you can decide separately which information is shown to players in settings. If an NPC or monster is marked as `Ally`, it is treated as a hero/ally on the player screen too.
 
 ## Useful Settings
 

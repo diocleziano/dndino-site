@@ -51,7 +51,7 @@ A sobreposição pode incluir:
 ![Ecrã dos jogadores durante o turno de um herói](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Ecrã dos jogadores durante o turno de um monstro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Para heróis, PNJ e monstros podes decidir separadamente nas definições que informações são mostradas aos jogadores.
+Para heróis/aliados, PNJ e monstros podes decidir separadamente nas definições que informações são mostradas aos jogadores. Se um PNJ ou monstro estiver marcado como `Aliado`, também é tratado como herói/aliado no ecrã dos jogadores.
 
 ## Definições Úteis
 

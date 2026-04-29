@@ -173,14 +173,14 @@ This subsection controls the general information shown to players during the enc
 
 ## Hero Information
 
-These options apply only when the active participant is a hero. You can decide whether to show:
+These options apply when the active participant is a hero or an ally. An NPC or monster marked as `Ally` therefore uses these settings too. You can decide whether to show:
 
 - current, maximum, and temporary HP
 - active conditions
 
 ## NPC Information
 
-These options apply only when the active participant is an NPC. You can separately decide whether to show:
+These options apply only when the active participant is a non-allied NPC. NPCs marked as `Ally` fall back to the hero/ally settings. You can separately decide whether to show:
 
 - current, maximum, and temporary HP
 - active conditions
@@ -190,7 +190,7 @@ If NPC names are hidden, the `Players Window` uses the generic name `NPC`.
 
 ## Monster Information
 
-These options apply only when the active participant is a monster. You can separately decide whether to show:
+These options apply only when the active participant is a non-allied monster. Monsters marked as `Ally` fall back to the hero/ally settings. You can separately decide whether to show:
 
 - current, maximum, and temporary HP
 - active conditions

@@ -173,14 +173,14 @@ Cette sous-section contrôle les informations générales affichées aux joueurs
 
 ## Informations des héros
 
-Ces options s’appliquent uniquement lorsque le participant actif est un héros. Tu peux choisir d’afficher :
+Ces options s’appliquent lorsque le participant actif est un héros ou un allié. Un PNJ ou un monstre marqué comme `Allié` utilise donc aussi ces réglages. Tu peux choisir d’afficher :
 
 - les PV actuels, maximums et temporaires
 - les états actifs
 
 ## Informations des PNJ
 
-Ces options s’appliquent uniquement lorsque le participant actif est un PNJ. Tu peux choisir séparément d’afficher :
+Ces options s’appliquent uniquement lorsque le participant actif est un PNJ non allié. Les PNJ marqués comme `Allié` utilisent les réglages héros/alliés. Tu peux choisir séparément d’afficher :
 
 - les PV actuels, maximums et temporaires
 - les états actifs
@@ -190,7 +190,7 @@ Si les noms des PNJ sont masqués, la `Fenêtre Joueurs` utilise le nom généri
 
 ## Informations des monstres
 
-Ces options s’appliquent uniquement lorsque le participant actif est un monstre. Tu peux choisir séparément d’afficher :
+Ces options s’appliquent uniquement lorsque le participant actif est un monstre non allié. Les monstres marqués comme `Allié` utilisent les réglages héros/alliés. Tu peux choisir séparément d’afficher :
 
 - les PV actuels, maximums et temporaires
 - les états actifs

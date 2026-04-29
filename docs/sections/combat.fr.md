@@ -51,7 +51,7 @@ L'affichage peut inclure :
 ![Écran joueurs pendant le tour d'un héros](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Écran joueurs pendant le tour d'un monstre](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Pour les héros, PNJ et monstres, les réglages permettent de choisir séparément quelles informations sont visibles par les joueurs.
+Pour les héros/alliés, PNJ et monstres, les réglages permettent de choisir séparément quelles informations sont visibles par les joueurs. Si un PNJ ou un monstre est marqué comme `Allié`, il est aussi traité comme un héros/allié sur l’écran joueurs.
 
 ## Réglages Utiles
 

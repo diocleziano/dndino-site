@@ -51,7 +51,7 @@ Die Einblendung kann enthalten:
 ![Spielerfenster während des Zugs eines Helden](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Spielerfenster während des Zugs eines Monsters](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Für Helden, NSC und Monster legst du in den Einstellungen getrennt fest, welche Informationen für Spieler sichtbar sind.
+Für Helden/Verbündete, NSC und Monster legst du in den Einstellungen getrennt fest, welche Informationen für Spieler sichtbar sind. Wenn ein NSC oder Monster als `Verbündeter` markiert ist, wird es auch im Spielerfenster wie ein Held/Verbündeter behandelt.
 
 ## Nützliche Einstellungen
 

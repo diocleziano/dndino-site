@@ -177,14 +177,14 @@ Dieser Unterbereich steuert die allgemeinen Informationen, die während der Bege
 
 ## Heldeninformationen
 
-Diese Optionen gelten nur, wenn der aktive Teilnehmende ein Held ist. Du kannst anzeigen:
+Diese Optionen gelten, wenn der aktive Teilnehmende ein Held oder Verbündeter ist. Ein NSC oder Monster mit der Rolle `Verbündeter` verwendet also ebenfalls diese Einstellungen. Du kannst anzeigen:
 
 - aktuelle, maximale und temporäre TP
 - aktive Zustände
 
 ## NSC-Informationen
 
-Diese Optionen gelten nur, wenn der aktive Teilnehmende ein NSC ist. Du kannst getrennt anzeigen:
+Diese Optionen gelten nur, wenn der aktive Teilnehmende ein nicht verbündeter NSC ist. NSCs mit der Rolle `Verbündeter` verwenden die Helden-/Verbündeten-Einstellungen. Du kannst getrennt anzeigen:
 
 - aktuelle, maximale und temporäre TP
 - aktive Zustände
@@ -194,7 +194,7 @@ Wenn NSC-Namen verborgen sind, verwendet das `Spielerfenster` den generischen Na
 
 ## Monsterinformationen
 
-Diese Optionen gelten nur, wenn der aktive Teilnehmende ein Monster ist. Du kannst getrennt anzeigen:
+Diese Optionen gelten nur, wenn der aktive Teilnehmende ein nicht verbündetes Monster ist. Monster mit der Rolle `Verbündeter` verwenden die Helden-/Verbündeten-Einstellungen. Du kannst getrennt anzeigen:
 
 - aktuelle, maximale und temporäre TP
 - aktive Zustände
