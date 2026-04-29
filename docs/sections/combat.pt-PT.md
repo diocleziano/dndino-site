@@ -44,6 +44,7 @@ Se a apresentação estiver activa, pode mostrar:
 A sobreposição pode incluir:
 
 - round
+- duração do encontro
 - PV actuais, máximos e temporários
 - condições
 - próximo turno
@@ -64,6 +65,7 @@ As mais importantes são:
 - `Mostrar introdução do combate aos jogadores`
 - `Mostrar resumo final aos jogadores`
 - `Mostrar round no ecrã dos jogadores`
+- `Mostrar duração do encontro no ecrã dos jogadores`
 - `Mostrar próximo turno no ecrã dos jogadores`
 - `Mostrar PV dos heróis no ecrã dos jogadores`
 - `Mostrar condições dos heróis no ecrã dos jogadores`
@@ -98,6 +100,8 @@ O ecrã tem três áreas principais:
 - **Ordem final**
 
 No topo vês também o nome do encontro, o número de participantes e as acções principais.
+
+Os cartões dos participantes já usam a cor do papel nesta fase, para distinguir de imediato heróis, aliados, neutros e inimigos antes de iniciar o encontro.
 
 ## Acções do Pré-Combate
 
@@ -484,6 +488,7 @@ O ecrã final mostra:
 - inimigos mortos
 - dano causado
 - dano sofrido
+- tempo médio dos turnos para heróis e Mestre
 - estado final dos participantes
 
 Os PV finais e as condições são sincronizados com os registos ligados.
@@ -517,6 +522,7 @@ As estatísticas podem incluir:
 - dano causado
 - dano sofrido
 - duração dos encontros
+- tempo médio dos turnos para heróis e Mestre
 - número de combates
 - inimigos mortos
 - evolução do dano por dia

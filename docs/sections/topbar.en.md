@@ -97,7 +97,11 @@ This is where you manage language, theme, top bar, panel behavior, combat, Playe
 
 ## Live Session in the Center
 
-When a live session is active, the top bar shows the session control in the center.
+Inside adventure pages, the center of the top bar shows the **Live Session** control.
+
+If no live session is active, the control lets you start one for the current adventure. DnDino asks for confirmation first, so you do not start a session by accident.
+
+If a live session is already active, the same control shows its current state.
 
 It shows:
 
@@ -106,6 +110,8 @@ It shows:
 - session status
 
 Clicking it opens the quick session panel. From there you can pause or resume, close and save, add a DM note, read the timeline, and check a compact live summary.
+
+If you open another adventure while a live session is already running, the central control tells you that the session is currently in use by another adventure.
 
 ## Player Window in the Center
 

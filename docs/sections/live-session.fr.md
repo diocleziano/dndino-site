@@ -27,14 +27,11 @@ Elle sert à :
 
 ## Où elle se lance
 
-La session live se lance depuis la **dashboard de l’aventure**, dans le panneau `Session Live`.
+La session live se lance depuis le contrôle au centre de la **topbar** quand tu es dans une page de l'aventure, par exemple dashboard, lieux ou combat.
 
-S’il n’existe aucune session active, le panneau affiche :
+S'il n'existe aucune session active, le contrôle affiche l'action de démarrage. Quand tu l'utilises, DnDino demande confirmation puis crée une nouvelle session live pour l'aventure courante.
 
-- état prêt
-- bouton `Démarrer la session live`
-
-Quand tu appuies sur ce bouton, DnDino crée une nouvelle session de type live et la définit comme session globale active.
+Tu n'as donc pas besoin de revenir à la dashboard uniquement pour lancer la session : la commande reste disponible là où tu travailles.
 
 ## Une seule session live à la fois
 
@@ -71,7 +68,7 @@ C’est l’état normal pendant que la session est en cours. Le minuteur contin
 
 ### En pause
 
-La session peut être mise en pause depuis la dashboard de l’aventure ou depuis la barre supérieure.
+La session peut être mise en pause depuis la topbar.
 
 Quand elle est en pause :
 
@@ -89,27 +86,22 @@ Cela permet de :
 - comprendre qu’une interruption a eu lieu
 - reprendre le travail manuellement
 
-## Le panneau Session Live dans la dashboard de l’aventure
+## Contrôle Session live dans la topbar
 
-Dans la dashboard de l’aventure, le panneau affiche l’état courant de la session.
+Dans les pages de l'aventure, la topbar affiche le contrôle de session live au centre.
 
-Si la session appartient à l’aventure ouverte, le panneau affiche :
+Si la session appartient à l’aventure ouverte, le contrôle affiche :
 
 - titre de la session
 - minuteur en temps réel
 - état (`En cours` ou `En pause`)
-- indication que le player est global
-- boutons :
-  - `Pause` ou `Reprendre`
-  - `Fermer et sauvegarder`
-
 S’il n’y a pas de session live active :
 
-- le bouton `Démarrer la session live` apparaît
+- la commande pour lancer la session live de l'aventure courante apparaît
 
 Si une session est active mais appartient à une autre aventure :
 
-- le panneau montre que la session live est déjà utilisée ailleurs
+- le contrôle indique que la session live est déjà utilisée ailleurs
 
 ## La session live dans la topbar
 
@@ -220,6 +212,7 @@ La session live conserve aussi deux résumés très utiles pour les personnages 
 
 - dégâts infligés par les héros
 - dégâts subis par les héros
+- temps moyen des tours, lorsqu'il provient de combats terminés
 
 ## Intégration avec le combat
 
@@ -253,10 +246,13 @@ Le détail de session sauvegardée peut aussi afficher des graphiques dédiés a
 
 - dégâts infligés par combat
 - dégâts subis par combat
+- temps moyen des tours par combat
 
 Chaque combat reste sur l'axe horizontal en ordre chronologique. Les personnages qui ont participé apparaissent même lorsqu'ils ont infligé ou subi `0` dégât dans un combat, afin de conserver une série lisible. Si un personnage n'a pas participé à un combat, il n'est pas ajouté à ce point.
 
 Ces graphiques permettent de comprendre qui a le plus pesé pendant la session et qui a absorbé le plus de dégâts.
+
+Le graphique des temps de tour aide à voir combien de temps les héros et le MJ prennent en moyenne pendant les combats de la session.
 
 ## Héros tombés
 

@@ -27,14 +27,11 @@ Sirve para:
 
 ## Dónde se inicia
 
-La sesión en vivo se inicia desde el **panel de aventura**, en el bloque `Sesión en vivo`.
+La sesión en vivo se inicia desde el control situado en el centro de la **barra superior** cuando estás dentro de una página de la aventura, como el panel principal, lugares o combate.
 
-Si no existe una sesión activa, el panel muestra:
+Si no existe una sesión activa, el control muestra la acción de inicio. Al pulsarla, DnDino pide confirmación y crea una nueva sesión en vivo para la aventura actual.
 
-- estado listo
-- botón `Iniciar sesión en vivo`
-
-Cuando pulsas el botón, DnDino crea una nueva sesión de tipo live y la marca como sesión global activa.
+Así no necesitas volver al panel principal solo para iniciar la sesión: el comando permanece disponible donde estés trabajando.
 
 ## Solo una sesión en vivo a la vez
 
@@ -71,7 +68,7 @@ Es el estado normal mientras la sesión está en marcha. El temporizador sigue c
 
 ### En pausa
 
-La sesión puede ponerse en pausa desde el panel de aventura o desde la barra superior.
+La sesión puede ponerse en pausa desde la barra superior.
 
 Cuando está en pausa:
 
@@ -89,27 +86,22 @@ Esto permite:
 - entender que se produjo una interrupción
 - reanudar el trabajo manualmente
 
-## El panel de Sesión en vivo en la aventura
+## Control de Sesión en vivo en la barra superior
 
-Dentro del panel de aventura, el bloque muestra el estado actual de la sesión.
+Dentro de las páginas de la aventura, la barra superior muestra el control de sesión en vivo en el centro.
 
-Si la sesión pertenece a la aventura abierta, el panel muestra:
+Si la sesión pertenece a la aventura abierta, el control muestra:
 
 - título de la sesión
 - temporizador en tiempo real
 - estado (`En curso` o `En pausa`)
-- indicación de que el player es global
-- botones:
-  - `Pausa` o `Reanudar`
-  - `Cerrar y guardar`
-
 Si no hay una sesión en vivo activa:
 
-- aparece el botón `Iniciar sesión en vivo`
+- aparece el comando para iniciar la sesión en vivo de la aventura actual
 
 Si hay una sesión activa pero pertenece a otra aventura:
 
-- el panel muestra que la sesión en vivo está ocupada en otra parte
+- el control muestra que la sesión en vivo está ocupada en otra parte
 
 ## La sesión en vivo en la barra superior
 
@@ -220,6 +212,7 @@ La sesión en vivo también mantiene dos resúmenes muy útiles para los persona
 
 - daño infligido por los héroes
 - daño sufrido por los héroes
+- tiempo medio de turno, cuando llega de combates completados
 
 ## Integración con el combate
 
@@ -253,10 +246,13 @@ El detalle de la sesión guardada también puede mostrar gráficos de los combat
 
 - daño infligido por combate
 - daño recibido por combate
+- tiempo medio de turno por combate
 
 Cada combate permanece en el eje horizontal en orden cronológico. Los personajes que participaron se muestran incluso si en un combate infligieron o recibieron `0` daño, para mantener la serie coherente. Si un personaje no participa en un combate, no se añade en ese punto.
 
 Estos gráficos ayudan a entender quién tuvo más impacto durante la sesión y quién absorbió más daño a lo largo de los encuentros.
+
+El gráfico de tiempo de turno ayuda a entender cuánto tardan de media los héroes y el DJ durante los combates de la sesión.
 
 ## Héroes caídos
 
@@ -300,6 +296,7 @@ En el panel de detalle encontrarás:
 - héroes caídos
 - clasificaciones de daño infligido y recibido por los personajes
 - gráficos de daño infligido y recibido en los combates de la sesión
+- gráfico de tiempo medio de turno, si está disponible
 
 ## Cuándo conviene usar la sesión en vivo
 

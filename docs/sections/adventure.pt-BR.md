@@ -135,7 +135,7 @@ Ao clicar em uma aventura na lista, você entra no seu **painel principal**, que
 
 O painel principal é organizado como uma tela em blocos:
 
-- uma faixa superior com cabeçalho e controle da sessão ao vivo
+- uma faixa superior com o cabeçalho da aventura
 - duas colunas inferiores com cartões dedicados às várias áreas da campanha
 
 A ordem dos painéis pode ser personalizada nas configurações do aplicativo.
@@ -157,12 +157,9 @@ A partir daqui você também pode entrar em **Editar** para voltar ao formulári
 
 ## Sessão ao vivo
 
-![Painel de sessão ao vivo](../images/en_dashavv_sessionelive.png){ .img-shot }
+A **Sessão ao vivo** não ocupa mais um painel fixo do dashboard: ela é iniciada e controlada a partir do centro da topbar quando você está dentro de uma página da aventura.
 
-
-Ao lado do cabeçalho fica o painel **Sessão ao vivo**.
-
-Essa seção serve para:
+O controle central serve para:
 
 - iniciar uma nova sessão ao vivo para a aventura
 - ver se uma sessão está em andamento ou em pausa
@@ -170,9 +167,9 @@ Essa seção serve para:
 - pausar a sessão
 - encerrá-la e salvá-la
 
-Quando a sessão ao vivo da aventura está ativa, o **contexto global dos jogadores** e os **lugares** seguem esse contexto.
+Quando a sessão ao vivo da aventura está ativa, o controle continua disponível também em lugares e combates, para gerenciá-la sem voltar ao dashboard.
 
-Se já existir uma sessão ao vivo aberta em outra aventura, o painel mostra isso claramente e não permite iniciar uma segunda em paralelo.
+Se já existir uma sessão ao vivo aberta em outra aventura, a topbar mostra isso claramente e não permite iniciar uma segunda em paralelo.
 
 ## Os painéis do dashboard
 
@@ -280,6 +277,7 @@ Entre os dados principais você pode encontrar:
 - número total de combates
 - duração média dos encontros
 - duração média das sessões
+- tempo médio dos turnos para heróis e Mestre
 - inimigos derrotados
 - personagens de aventura com mais dano causado
 - personagens de aventura com mais dano sofrido
@@ -291,10 +289,11 @@ Os gráficos ajudam a ler a evolução ao longo do tempo:
 - dano causado por dia
 - dano sofrido por dia
 - duração das sessões agrupada por dia
+- tempo médio dos turnos, agrupado por sessão ou por combate
 
 Nos gráficos diários você pode alternar entre `Todos` e `Por personagem`. A visão por personagem usa uma linha por cada personagem de aventura envolvido; a legenda permite mostrar ou ocultar personagens individuais quando o gráfico fica cheio demais.
 
-Os valores numéricos podem ser mostrados ou ocultados com o controle dedicado, para escolher entre legibilidade e detalhe.
+Os valores numéricos podem ser mostrados ou ocultados com o controle dedicado, para escolher entre legibilidade e detalhe. Os gráficos podem ser rolados horizontalmente e têm controles de zoom independentes, para expandir ou comprimir uma leitura sem afetar as outras.
 
 !!! note
     As classificações principais de dano focam nos personagens de aventura. NPCs e monstros continuam importantes em combate, mas nas estatísticas de longo prazo teriam um peso variável demais.

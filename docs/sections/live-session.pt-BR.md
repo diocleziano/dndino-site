@@ -27,14 +27,11 @@ Ela serve para:
 
 ## Onde ela é iniciada
 
-A sessão ao vivo é iniciada a partir do **painel da aventura**, no bloco `Sessão ao vivo`.
+A sessão ao vivo é iniciada a partir do controle no centro da **topbar** quando você está dentro de uma página da aventura, como dashboard, lugares ou combate.
 
-Se não existir uma sessão ativa, o painel mostra:
+Se não existir uma sessão ativa, o controle mostra a ação de início. Ao pressioná-la, o DnDino pede confirmação e cria uma nova sessão ao vivo para a aventura atual.
 
-- estado pronto
-- botão `Iniciar Sessão ao vivo`
-
-Quando você pressiona esse botão, o DnDino cria uma nova sessão do tipo live e a define como sessão global ativa.
+Assim você não precisa voltar ao dashboard só para iniciar a sessão: o comando fica disponível onde você está trabalhando.
 
 ## Apenas uma sessão ao vivo por vez
 
@@ -71,7 +68,7 @@ A sessão ao vivo pode estar em três estados:
 
 ### Em pausa
 
-A sessão pode ser colocada em pausa a partir do painel da aventura ou da barra superior.
+A sessão pode ser colocada em pausa a partir da topbar.
 
 Quando está em pausa:
 
@@ -89,27 +86,22 @@ Isso permite:
 - entender que houve uma interrupção
 - retomar o trabalho manualmente
 
-## O painel Sessão ao vivo no painel da aventura
+## Controle Sessão ao vivo na topbar
 
-No painel da aventura, esse bloco mostra o estado atual da sessão.
+Nas páginas da aventura, a topbar mostra o controle da sessão ao vivo no centro.
 
-Se a sessão pertencer à aventura aberta, o painel mostra:
+Se a sessão pertencer à aventura aberta, o controle mostra:
 
 - título da sessão
 - temporizador em tempo real
 - estado (`Em andamento` ou `Em pausa`)
-- indicação de que o player é global
-- botões:
-  - `Pausa` ou `Retomar`
-  - `Fechar e salvar`
-
 Se não houver uma sessão ao vivo ativa:
 
-- aparece o botão `Iniciar Sessão ao vivo`
+- aparece o comando para iniciar a sessão ao vivo da aventura atual
 
 Se houver uma sessão ativa, mas ela pertencer a outra aventura:
 
-- o painel mostra que a sessão ao vivo está ocupada em outro lugar
+- o controle mostra que a sessão ao vivo está ocupada em outro lugar
 
 ## A sessão ao vivo na barra superior
 
@@ -220,6 +212,7 @@ A sessão ao vivo também mantém dois resumos muito úteis para os personagens:
 
 - dano causado pelos heróis
 - dano sofrido pelos heróis
+- tempo médio dos turnos, quando vem de combates concluídos
 
 ## Integração com o combate
 
@@ -253,10 +246,13 @@ O detalhe da sessão salva também pode mostrar gráficos dos combates concluíd
 
 - dano causado por combate
 - dano sofrido por combate
+- tempo médio dos turnos por combate
 
 Cada combate fica no eixo horizontal em ordem cronológica. Os personagens que participaram aparecem mesmo quando em um combate causaram ou sofreram `0` dano, para manter a série coerente. Se um personagem não participou de um combate, ele não é adicionado naquele ponto.
 
 Esses gráficos ajudam a entender quem teve mais impacto durante a sessão e quem absorveu mais dano ao longo dos encontros.
+
+O gráfico do tempo dos turnos ajuda a entender quanto tempo os heróis e o Mestre levam em média durante os combates da sessão.
 
 ## Heróis caídos
 
@@ -300,6 +296,7 @@ No painel de detalhe você encontra:
 - heróis caídos
 - rankings de dano causado e sofrido pelos personagens
 - gráficos de dano causado e sofrido nos combates da sessão
+- gráfico do tempo médio dos turnos, quando disponível
 
 ## Quando vale a pena usar a sessão ao vivo
 

@@ -135,7 +135,7 @@ En cliquant sur une aventure dans la liste, tu entres dans sa **dashboard**, qui
 
 La dashboard est organisée comme un écran à panneaux :
 
-- une bande supérieure avec l'en-tête et le contrôle de la session live
+- une bande supérieure avec l'en-tête de l'aventure
 - deux colonnes inférieures avec des cartes dédiées aux différentes zones de la campagne
 
 L'ordre des panneaux peut être personnalisé depuis les paramètres de l'application.
@@ -157,12 +157,9 @@ Depuis cette zone, tu peux aussi entrer dans **Modifier** pour revenir au formul
 
 ## Session live
 
-![Panneau Session live](../images/en_dashavv_sessionelive.png){ .img-shot }
+La **Session live** n'occupe plus un panneau fixe de la dashboard : elle se lance et se contrôle depuis le centre de la topbar quand tu es dans une page de l'aventure.
 
-
-À côté de l'en-tête se trouve le panneau **Session live**.
-
-Cette section sert à :
+Le contrôle central sert à :
 
 - lancer une nouvelle session live pour l'aventure
 - voir si une session est en cours ou en pause
@@ -170,9 +167,9 @@ Cette section sert à :
 - mettre la session en pause
 - la fermer et l'enregistrer
 
-Quand la session live de l'aventure est active, le **lecteur global** et les **lieux** suivent ce contexte.
+Quand la session live de l'aventure est active, le contrôle reste disponible aussi dans les lieux et les combats, pour la gérer sans revenir à la dashboard.
 
-S'il existe déjà une session live ouverte dans une autre aventure, la dashboard le signale clairement et ne te laisse pas en démarrer une deuxième en parallèle.
+S'il existe déjà une session live ouverte dans une autre aventure, la topbar le signale clairement et ne te laisse pas en démarrer une deuxième en parallèle.
 
 ## Les panneaux de la dashboard
 
@@ -280,6 +277,7 @@ Parmi les données principales, tu peux trouver :
 - nombre total de combats
 - durée moyenne des rencontres
 - durée moyenne des sessions
+- temps moyen des tours pour les héros et le MJ
 - ennemis vaincus
 - personnages d'aventure ayant infligé le plus de dégâts
 - personnages d'aventure ayant subi le plus de dégâts
@@ -291,10 +289,11 @@ Les graphiques aident à lire l'évolution dans le temps :
 - dégâts infligés par jour
 - dégâts subis par jour
 - durée des sessions regroupée par jour
+- temps moyen des tours, regroupé par session ou par combat
 
 Dans les graphiques journaliers, tu peux passer entre `Tous` et `Par personnage`. La vue par personnage utilise une ligne pour chaque personnage d'aventure impliqué ; la légende permet d'afficher ou masquer certains personnages quand le graphique devient trop chargé.
 
-Les valeurs numériques peuvent être affichées ou masquées avec le contrôle dédié, pour choisir entre lisibilité et détail.
+Les valeurs numériques peuvent être affichées ou masquées avec le contrôle dédié, pour choisir entre lisibilité et détail. Les graphiques peuvent défiler horizontalement et disposent de contrôles de zoom indépendants, afin d'agrandir ou de compresser une lecture sans modifier les autres.
 
 !!! note
     Les classements principaux de dégâts se concentrent sur les personnages d'aventure. Les PNJ et monstres restent essentiels en combat, mais sur le long terme leur poids serait trop variable pour rester utile.

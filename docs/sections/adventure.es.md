@@ -135,7 +135,7 @@ Al hacer clic en una aventura de la lista entras en su **panel principal**, que 
 
 El panel principal está organizado como una pantalla con bloques:
 
-- una banda superior con encabezado y control de sesión en vivo
+- una banda superior con el encabezado de la aventura
 - dos columnas inferiores con tarjetas dedicadas a las distintas áreas de la campaña
 
 El orden de los paneles puede personalizarse desde los ajustes de la aplicación.
@@ -157,12 +157,9 @@ Desde aquí también puedes entrar en **Editar** para volver al formulario de la
 
 ## Sesión en vivo
 
-![Panel de sesión en vivo](../images/en_dashavv_sessionelive.png){ .img-shot }
+La **Sesión en vivo** ya no ocupa un panel fijo del dashboard: se inicia y se controla desde el centro de la barra superior cuando estás dentro de una página de la aventura.
 
-
-Junto al encabezado se encuentra el panel **Sesión en vivo**.
-
-Esta sección sirve para:
+El control central sirve para:
 
 - iniciar una nueva sesión en vivo para la aventura
 - ver si una sesión está en curso o en pausa
@@ -170,9 +167,9 @@ Esta sección sirve para:
 - pausar la sesión
 - cerrarla y guardarla
 
-Cuando la sesión en vivo de la aventura está activa, el **contexto global de jugadores** y los **lugares** siguen ese contexto.
+Cuando la sesión en vivo de la aventura está activa, el control sigue disponible también en lugares y combates, para gestionarla sin volver al dashboard.
 
-Si ya existe una sesión en vivo abierta en otra aventura, el panel lo señala claramente y no te permite iniciar una segunda en paralelo.
+Si ya existe una sesión en vivo abierta en otra aventura, la barra superior lo señala claramente y no te permite iniciar una segunda en paralelo.
 
 ## Los paneles del dashboard
 
@@ -280,6 +277,7 @@ Entre los datos principales puedes encontrar:
 - número total de combates
 - duración media de los encuentros
 - duración media de las sesiones
+- tiempo medio de turno para héroes y DJ
 - enemigos derrotados
 - personajes de aventura con más daño infligido
 - personajes de aventura con más daño recibido
@@ -291,10 +289,11 @@ Los gráficos ayudan a leer la evolución en el tiempo:
 - daño infligido por día
 - daño recibido por día
 - duración de sesiones agrupada por día
+- tiempo medio de turno, agrupado por sesión o por combate
 
 En los gráficos diarios puedes cambiar entre `Todos` y `Por personaje`. La vista por personaje usa una línea por cada personaje de aventura implicado; la leyenda permite mostrar u ocultar personajes individuales cuando el gráfico está demasiado cargado.
 
-Los valores numéricos pueden mostrarse u ocultarse con el control correspondiente, para elegir entre claridad y detalle.
+Los valores numéricos pueden mostrarse u ocultarse con el control correspondiente, para elegir entre claridad y detalle. Los gráficos pueden desplazarse horizontalmente y tienen controles de zoom independientes, para ampliar o comprimir una lectura sin afectar a los demás.
 
 !!! note
     Las clasificaciones principales de daño se centran en los personajes de aventura. Los PNJ y monstruos siguen siendo importantes en combate, pero a largo plazo tendrían un peso demasiado variable.

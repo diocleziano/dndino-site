@@ -44,6 +44,7 @@ Wenn die Präsentation aktiv ist, kann sie zeigen:
 Die Einblendung kann enthalten:
 
 - Runde
+- Kampfdauer
 - aktuelle, maximale und temporäre TP
 - Zustände
 - nächster Zug
@@ -64,6 +65,7 @@ Wichtig sind vor allem:
 - `Kampf-Intro für Spieler anzeigen`
 - `Abschlussübersicht für Spieler anzeigen`
 - `Runde auf Spielerbildschirm anzeigen`
+- `Kampfdauer auf Spielerbildschirm anzeigen`
 - `Nächsten Zug auf Spielerbildschirm anzeigen`
 - `TP der Helden auf dem Spielerbildschirm anzeigen`
 - `Zustände der Helden auf dem Spielerbildschirm anzeigen`
@@ -98,6 +100,8 @@ Sie besteht aus drei Hauptbereichen:
 - **Endgültige Reihenfolge**
 
 Oben siehst du außerdem Namen der Begegnung, Teilnehmerzahl und Hauptaktionen.
+
+Die Teilnehmerkarten nutzen bereits in dieser Phase Rollenfarben, damit du Helden, Verbündete, Neutrale und Gegner vor Kampfbeginn sofort unterscheiden kannst.
 
 ## Aktionen vor dem Kampf
 
@@ -484,6 +488,7 @@ Die Abschlussansicht zeigt:
 - getötete Gegner
 - verursachten Schaden
 - erlittenen Schaden
+- durchschnittliche Zugdauer für Helden und SL
 - Endzustand der Teilnehmer
 
 Endgültige TP und Zustände werden mit den verknüpften Einträgen synchronisiert.
@@ -517,6 +522,7 @@ Dazu gehören:
 - verursachter Schaden
 - erlittener Schaden
 - Kampfdauer
+- durchschnittliche Zugdauer für Helden und SL
 - Anzahl Kämpfe
 - getötete Gegner
 - Schadensverlauf pro Tag

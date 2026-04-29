@@ -135,7 +135,7 @@ Clicking an adventure in the list takes you into its **dashboard**, which is the
 
 The dashboard is organized as a panel-based screen:
 
-- a top band with the header and live session controls
+- a top band with the adventure header
 - two lower columns with cards for the various campaign areas
 
 The order of the panels can be customized in the app settings.
@@ -157,12 +157,9 @@ From here you can also enter **Edit** to return to the adventure form and update
 
 ## Live Session
 
-![Live Session panel](../images/en_dashavv_sessionelive.png){ .img-shot }
+The **Live Session** no longer lives in a fixed dashboard panel: it is started and controlled from the center of the top bar while you are inside an adventure page.
 
-
-Next to the header there is the **Live session** panel.
-
-This section is used to:
+The central control is used to:
 
 - start a new live session for the adventure
 - see whether a session is running or paused
@@ -170,9 +167,9 @@ This section is used to:
 - pause the session
 - close and save it
 
-When the adventure's live session is active, the **global player context** and the **places** follow that session context.
+When the adventure's live session is active, the control remains available in places and combat too, so you can manage it without returning to the dashboard.
 
-If another adventure already has an active live session, the dashboard makes that clear and won't let you start a second one in parallel.
+If another adventure already has an active live session, the top bar makes that clear and won't let you start a second one in parallel.
 
 ## Dashboard Panels
 
@@ -280,6 +277,7 @@ The main data can include:
 - total number of combats
 - average encounter duration
 - average session duration
+- average turn time for heroes and the DM
 - defeated enemies
 - adventure characters with the most damage dealt
 - adventure characters with the most damage taken
@@ -291,10 +289,11 @@ Charts help you read the trend over time:
 - damage dealt by day
 - damage taken by day
 - session duration grouped by day
+- average turn time, grouped by session or by combat
 
 Daily charts can switch between `All` and `By Character`. The character view uses one line for each involved adventure character; the legend lets you show or hide individual characters when the chart gets too dense.
 
-Numeric values can be shown or hidden with the dedicated control, so you can choose between readability and detail.
+Numeric values can be shown or hidden with the dedicated control, so you can choose between readability and detail. Charts can be scrolled horizontally and have independent zoom controls, letting you expand or compress one chart without affecting the others.
 
 !!! note
     The main damage rankings focus on adventure characters. NPCs and monsters still matter in combat, but over a long campaign their weight would be too variable to remain useful.

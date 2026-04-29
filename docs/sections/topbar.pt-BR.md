@@ -93,7 +93,11 @@ Você pode escolher linhagem e sexo, gerar novos resultados e copiar um nome.
 
 ## Sessão Live no Centro
 
-Quando uma sessão live está ativa, a topbar mostra o controle da sessão no centro.
+Dentro das páginas de uma aventura, a topbar mostra no centro o controle da **Sessão ao vivo**.
+
+Se não houver uma sessão ao vivo ativa, esse controle permite iniciar uma para a aventura atual. O DnDino pede confirmação antes, para evitar iniciar uma sessão por engano.
+
+Se já houver uma sessão ao vivo ativa, o mesmo controle mostra o estado atual.
 
 Mostra:
 
@@ -102,6 +106,8 @@ Mostra:
 - estado
 
 Ao clicar, abre o painel rápido: pausa ou retomada, fechar e salvar, nota do Mestre, timeline e resumo live compacto.
+
+Se você abrir outra aventura enquanto uma sessão ao vivo já está em andamento, o controle central indica que ela está sendo usada por outra aventura.
 
 ## Janela dos Jogadores no Centro
 

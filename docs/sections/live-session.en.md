@@ -27,14 +27,11 @@ It is used to:
 
 ## Where It Starts
 
-The live session starts from the **adventure dashboard**, in the `Live Session` panel.
+The live session starts from the control in the center of the **top bar** while you are inside an adventure page, such as the dashboard, places, or combat.
 
-If no session is active, the panel shows:
+If no session is active, the control shows the start action. When you press it, DnDino asks for confirmation and then creates a new live session for the current adventure.
 
-- ready state
-- `Start Live Session` button
-
-When you press the button, DnDino creates a new live session and marks it as the globally active session.
+This means you do not have to return to the dashboard just to start the session: the command stays available where you are actually working.
 
 ## Only One Live Session at a Time
 
@@ -71,7 +68,7 @@ This is the normal state while the session is running. The timer keeps moving an
 
 ### Paused
 
-The session can be paused from the adventure dashboard or from the top bar.
+The session can be paused from the top bar.
 
 When paused:
 
@@ -89,27 +86,23 @@ This makes it possible to:
 - understand that an interruption happened
 - resume work manually
 
-## The Live Session Panel in the Adventure Dashboard
+## Live Session Control in the Top Bar
 
-Inside the adventure dashboard, the panel shows the current session state.
+Inside adventure pages, the top bar shows the live session control in the center.
 
-If the session belongs to the currently open adventure, the panel shows:
+If the session belongs to the currently open adventure, the control shows:
 
 - session title
 - real-time timer
 - state (`Running` or `Paused`)
-- note that the player is global
-- buttons:
-  - `Pause` or `Resume`
-  - `Close and Save`
 
 If there is no active live session:
 
-- the `Start Live Session` button appears
+- the command to start the current adventure's live session appears
 
 If a session is active but belongs to another adventure:
 
-- the panel shows that the live session is currently in use elsewhere
+- the control shows that the live session is currently in use elsewhere
 
 ## Live Session in the Top Bar
 
@@ -220,6 +213,7 @@ The live session also keeps two very useful summaries for characters:
 
 - damage dealt by heroes
 - damage taken by heroes
+- average turn time, when it comes from completed combats
 
 ## Integration with Combat
 
@@ -253,10 +247,13 @@ The saved session detail can also show charts for combats completed during that 
 
 - damage dealt by combat
 - damage taken by combat
+- average turn time by combat
 
 Each combat stays on the horizontal axis in chronological order. Characters who participated are shown even when they dealt or took `0` damage in a combat, so the series remains readable. If a character did not participate in a combat, they are not added for that point.
 
 These charts help you understand who had the most impact during the session and who absorbed the most damage across encounters.
+
+The turn-time chart helps you understand how long heroes and the DM take on average during the session's combats.
 
 ## Fallen Heroes
 
@@ -300,6 +297,7 @@ In the detail panel you will find:
 - fallen heroes
 - rankings of damage dealt and taken by the characters
 - charts for damage dealt and taken in the session's combats
+- average turn-time chart, when available
 
 ## When It Is Most Useful
 

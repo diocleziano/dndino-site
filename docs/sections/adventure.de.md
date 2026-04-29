@@ -135,7 +135,7 @@ Wenn du in der Liste auf ein Abenteuer klickst, gelangst du in dessen **Dashboar
 
 Das Dashboard ist als Bildschirm mit Panels organisiert:
 
-- ein oberer Bereich mit Kopfzeile und Live-Sitzungssteuerung
+- ein oberer Bereich mit der Abenteuer-Kopfzeile
 - zwei untere Spalten mit Karten für die verschiedenen Kampagnenbereiche
 
 Die Reihenfolge der Panels kann in den App-Einstellungen angepasst werden.
@@ -157,12 +157,9 @@ Von hier aus kannst du auch **Bearbeiten** öffnen, um zum Abenteuerformular zur
 
 ## Live-Sitzung
 
-![Live-Sitzungs-Panel](../images/en_dashavv_sessionelive.png){ .img-shot }
+Die **Live-Sitzung** liegt nicht mehr in einem festen Dashboard-Panel: sie wird in der Mitte der Topbar gestartet und gesteuert, wenn du dich in einer Abenteuerseite befindest.
 
-
-Neben der Kopfzeile befindet sich das Panel **Live-Sitzung**.
-
-Dieser Bereich dient dazu:
+Die zentrale Steuerung dient dazu:
 
 - eine neue Live-Sitzung für das Abenteuer zu starten
 - zu sehen, ob eine Sitzung läuft oder pausiert ist
@@ -170,9 +167,9 @@ Dieser Bereich dient dazu:
 - die Sitzung zu pausieren
 - sie zu beenden und zu speichern
 
-Wenn die Live-Sitzung des Abenteuers aktiv ist, folgen der **globale Spieler-Kontext** und die **Orte** diesem Sitzungszusammenhang.
+Wenn die Live-Sitzung des Abenteuers aktiv ist, bleibt die Steuerung auch in Orten und Kämpfen verfügbar, damit du nicht zum Dashboard zurückkehren musst.
 
-Falls bereits in einem anderen Abenteuer eine Live-Sitzung offen ist, macht das Dashboard das klar sichtbar und erlaubt kein paralleles Starten einer zweiten Sitzung.
+Falls bereits in einem anderen Abenteuer eine Live-Sitzung offen ist, macht die Topbar das klar sichtbar und erlaubt kein paralleles Starten einer zweiten Sitzung.
 
 ## Die Panels des Dashboards
 
@@ -280,6 +277,7 @@ Zu den wichtigsten Daten gehören:
 - Gesamtzahl der Kämpfe
 - durchschnittliche Begegnungsdauer
 - durchschnittliche Sitzungsdauer
+- durchschnittliche Zugdauer für Helden und SL
 - besiegte Gegner
 - Abenteuercharaktere mit dem meisten verursachten Schaden
 - Abenteuercharaktere mit dem meisten erlittenen Schaden
@@ -291,10 +289,11 @@ Diagramme zeigen die Entwicklung über die Zeit:
 - verursachter Schaden pro Tag
 - erlittener Schaden pro Tag
 - Sitzungsdauer nach Tagen gruppiert
+- durchschnittliche Zugdauer, gruppiert nach Sitzung oder Kampf
 
 In den Tagesdiagrammen kannst du zwischen `Alle` und `Pro Charakter` wechseln. Die Charakteransicht nutzt eine Linie pro beteiligtem Abenteuercharakter; über die Legende kannst du einzelne Charaktere ein- oder ausblenden.
 
-Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen werden, je nachdem ob du mehr Lesbarkeit oder mehr Detail möchtest.
+Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen werden, je nachdem ob du mehr Lesbarkeit oder mehr Detail möchtest. Diagramme können horizontal gescrollt werden und besitzen unabhängige Zoom-Steuerungen, damit du eine Ansicht erweitern oder komprimieren kannst, ohne andere Diagramme zu beeinflussen.
 
 !!! note
     Die wichtigsten Schadensranglisten konzentrieren sich auf Abenteuercharaktere. NSC und Monster bleiben im Kampf wichtig, wären in langfristigen Statistiken aber zu wechselhaft, um dauerhaft nützlich zu bleiben.

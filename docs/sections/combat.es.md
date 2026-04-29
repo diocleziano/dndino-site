@@ -44,6 +44,7 @@ Si la presentación está activa, puede mostrar:
 La superposición puede incluir:
 
 - ronda
+- duración del encuentro
 - PG actuales, máximos y temporales
 - estados
 - siguiente turno
@@ -64,6 +65,7 @@ Las más importantes son:
 - `Mostrar introducción de combate a los jugadores`
 - `Mostrar resumen final a los jugadores`
 - `Mostrar ronda en la pantalla de jugadores`
+- `Mostrar duración del encuentro en la pantalla de jugadores`
 - `Mostrar siguiente turno en la pantalla de jugadores`
 - `Mostrar PG de los héroes en la pantalla de jugadores`
 - `Mostrar condiciones de los héroes en la pantalla de jugadores`
@@ -98,6 +100,8 @@ La pantalla usa tres áreas principales:
 - **Orden final**
 
 Arriba también ves el nombre del encuentro, el número de participantes y las acciones principales.
+
+Las tarjetas de participantes ya usan el color del rol en esta fase, para distinguir de inmediato héroes, aliados, neutrales y enemigos antes de iniciar el encuentro.
 
 ## Acciones del Precombate
 
@@ -484,6 +488,7 @@ La pantalla final muestra:
 - enemigos derrotados
 - daño infligido
 - daño recibido
+- tiempo medio de turno para héroes y DJ
 - estado final de los participantes
 
 Los PG finales y los estados se sincronizan con los registros vinculados.
@@ -517,6 +522,7 @@ Las estadísticas pueden incluir:
 - daño infligido
 - daño recibido
 - duración de encuentros
+- tiempo medio de turno para héroes y DJ
 - número de combates
 - enemigos derrotados
 - evolución del daño por día

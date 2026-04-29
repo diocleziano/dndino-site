@@ -169,7 +169,10 @@ Questa sottosezione controlla le informazioni generali mostrate ai giocatori dur
 - `Mostra intro combattimento ai giocatori`
 - `Mostra riepilogo finale ai giocatori`
 - `Mostra round nella schermata giocatori`
+- `Mostra durata scontro nella schermata giocatori`
 - `Mostra prossimo turno nella schermata giocatori`
+
+La durata dello scontro viene mostrata come timer leggibile; se il combattimento è in pausa, il conteggio si ferma.
 
 ## Informazioni eroi
 

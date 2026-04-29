@@ -169,7 +169,10 @@ Cette sous-section contrôle les informations générales affichées aux joueurs
 - `Afficher l’intro du combat aux joueurs`
 - `Afficher le résumé final aux joueurs`
 - `Afficher le round sur l’écran joueurs`
+- `Afficher la durée de l’affrontement sur l’écran joueurs`
 - `Afficher le prochain tour sur l’écran joueurs`
+
+La durée de l'affrontement est affichée comme un minuteur lisible ; si le combat est en pause, le compteur s'arrête.
 
 ## Informations des héros
 

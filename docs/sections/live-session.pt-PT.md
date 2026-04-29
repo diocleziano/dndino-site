@@ -27,14 +27,11 @@ Serve para:
 
 ## Onde se inicia
 
-A sessão live é iniciada a partir do **painel da aventura**, no painel `Sessão Live`.
+A sessão live é iniciada a partir do controlo no centro da **topbar** quando estás dentro de uma página da aventura, como dashboard, locais ou combate.
 
-Se não existir uma sessão ativa, o painel mostra:
+Se não existir uma sessão ativa, o controlo mostra a ação de início. Ao carregares nela, o DnDino pede confirmação e cria uma nova sessão live para a aventura atual.
 
-- estado pronto
-- botão `Iniciar Sessão Live`
-
-Quando carregas no botão, o DnDino cria uma nova sessão do tipo live e define-a como sessão global ativa.
+Assim não precisas de voltar à dashboard só para iniciar a sessão: o comando fica disponível onde estás a trabalhar.
 
 ## Apenas uma sessão live de cada vez
 
@@ -71,7 +68,7 @@ A sessão live pode encontrar-se em três estados:
 
 ### Em pausa
 
-A sessão pode ser colocada em pausa a partir do painel da aventura ou da barra superior.
+A sessão pode ser colocada em pausa a partir da topbar.
 
 Quando está em pausa:
 
@@ -89,27 +86,22 @@ Isto permite:
 - perceber que houve uma interrupção
 - retomar o trabalho manualmente
 
-## O painel Sessão Live no painel da aventura
+## Controlo Sessão live na topbar
 
-No painel da aventura, este bloco mostra o estado atual da sessão.
+Nas páginas da aventura, a topbar mostra o controlo da sessão live ao centro.
 
-Se a sessão pertencer à aventura aberta, o painel mostra:
+Se a sessão pertencer à aventura aberta, o controlo mostra:
 
 - título da sessão
 - temporizador em tempo real
 - estado (`Em curso` ou `Em pausa`)
-- indicação de que o player é global
-- botões:
-  - `Pausa` ou `Retomar`
-  - `Fechar e guardar`
-
 Se não existir nenhuma sessão live ativa:
 
-- aparece o botão `Iniciar Sessão Live`
+- aparece o comando para iniciar a sessão live da aventura atual
 
 Se existir uma sessão ativa, mas pertencer a outra aventura:
 
-- o painel mostra que a sessão live está ocupada noutro lado
+- o controlo mostra que a sessão live está ocupada noutro lado
 
 ## A sessão live na topbar
 
@@ -220,6 +212,7 @@ A sessão live mantém também dois resumos muito úteis para as personagens:
 
 - dano causado pelos heróis
 - dano sofrido pelos heróis
+- tempo médio dos turnos, quando vem de combates concluídos
 
 ## Integração com o combate
 
@@ -253,10 +246,13 @@ O detalhe da sessão guardada também pode mostrar gráficos dos combates conclu
 
 - dano causado por combate
 - dano sofrido por combate
+- tempo médio dos turnos por combate
 
 Cada combate fica no eixo horizontal em ordem cronológica. As personagens que participaram aparecem mesmo quando num combate causaram ou sofreram `0` dano, para manter a série coerente. Se uma personagem não participou num combate, não é adicionada nesse ponto.
 
 Estes gráficos ajudam a perceber quem teve mais impacto durante a sessão e quem absorveu mais dano ao longo dos encontros.
+
+O gráfico do tempo dos turnos ajuda a perceber quanto tempo os heróis e o Mestre demoram em média durante os combates da sessão.
 
 ## Heróis caídos
 
@@ -300,6 +296,7 @@ No painel de detalhe encontras:
 - heróis caídos
 - classificações de dano causado e sofrido pelas personagens
 - gráficos de dano causado e sofrido nos combates da sessão
+- gráfico do tempo médio dos turnos, quando disponível
 
 ## Quando vale a pena usar a sessão live
 

@@ -93,7 +93,11 @@ Du kannst Abstammung und Geschlecht wählen, neue Ergebnisse erzeugen und Namen 
 
 ## Live-Sitzung in der Mitte
 
-Wenn eine Live-Sitzung aktiv ist, erscheint ihre Steuerung in der Mitte der Topbar.
+Innerhalb der Abenteuerseiten erscheint die Steuerung der **Live-Sitzung** in der Mitte der Topbar.
+
+Wenn keine Live-Sitzung aktiv ist, kannst du dort eine Sitzung für das aktuelle Abenteuer starten. DnDino fragt vorher nach Bestätigung, damit du nicht versehentlich eine Sitzung öffnest.
+
+Wenn bereits eine Live-Sitzung aktiv ist, zeigt dieselbe Steuerung ihren aktuellen Zustand.
 
 Sie zeigt:
 
@@ -102,6 +106,8 @@ Sie zeigt:
 - Sitzungsstatus
 
 Ein Klick öffnet das Schnellfenster für Pause oder Fortsetzen, Schließen und Speichern, SL-Notiz, Timeline und kompakte Live-Übersicht.
+
+Wenn du ein anderes Abenteuer öffnest, während bereits eine Live-Sitzung läuft, zeigt die zentrale Steuerung an, dass sie von einem anderen Abenteuer verwendet wird.
 
 ## Spielerfenster in der Mitte
 

@@ -93,7 +93,11 @@ Puedes elegir linaje y sexo, regenerar resultados y copiar un nombre.
 
 ## Sesión en Vivo en el Centro
 
-Cuando hay una sesión en vivo activa, la barra superior muestra su control en el centro.
+Dentro de las páginas de una aventura, la barra superior muestra en el centro el control de **Sesión en vivo**.
+
+Si no hay una sesión en vivo activa, ese control permite iniciar una para la aventura actual. DnDino pide confirmación antes, para evitar iniciar una sesión por error.
+
+Si ya hay una sesión en vivo activa, el mismo control muestra su estado.
 
 Muestra:
 
@@ -102,6 +106,8 @@ Muestra:
 - estado
 
 Al hacer clic se abre el panel rápido: pausa o reanudación, cerrar y guardar, nota del DJ, timeline y resumen compacto.
+
+Si abres otra aventura mientras ya hay una sesión en vivo en curso, el control central indica que está siendo usada por otra aventura.
 
 ## Ventana de Jugadores en el Centro
 

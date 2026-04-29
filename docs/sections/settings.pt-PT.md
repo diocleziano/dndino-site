@@ -169,7 +169,10 @@ Esta subsecção controla as informações gerais mostradas aos jogadores durant
 - `Mostrar intro do combate aos jogadores`
 - `Mostrar resumo final aos jogadores`
 - `Mostrar round no ecrã dos jogadores`
+- `Mostrar duração do encontro no ecrã dos jogadores`
 - `Mostrar próximo turno no ecrã dos jogadores`
+
+A duração do encontro é mostrada como um temporizador legível; se o combate estiver em pausa, a contagem pára.
 
 ## Informações dos heróis
 

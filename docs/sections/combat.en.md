@@ -44,6 +44,7 @@ If the presentation is enabled, it can show:
 The overlay can include:
 
 - round
+- encounter duration
 - current, maximum, and temporary HP
 - conditions
 - next turn
@@ -64,6 +65,7 @@ The most important ones are:
 - `Show combat intro to players`
 - `Show final summary to players`
 - `Show round on player screen`
+- `Show encounter duration on player screen`
 - `Show next turn on player screen`
 - `Show hero HP on the players screen`
 - `Show hero conditions on the players screen`
@@ -98,6 +100,8 @@ The screen has three main areas:
 - **Final Order**
 
 The top area also shows the encounter name, participant count, and main actions.
+
+Participant cards already use role colors in this phase, so you can immediately distinguish heroes, allies, neutral participants, and enemies before starting the encounter.
 
 ## Pre-Combat Actions
 
@@ -486,6 +490,7 @@ The final screen shows:
 - enemies killed
 - damage dealt
 - damage taken
+- average turn time for heroes and the DM
 - final participant state
 
 Final HP and conditions are synchronized with linked records.
@@ -519,6 +524,7 @@ Statistics can include:
 - damage dealt
 - damage taken
 - encounter duration
+- average turn time for heroes and the DM
 - number of combats
 - enemies killed
 - damage trends by day

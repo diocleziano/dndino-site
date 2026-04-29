@@ -173,7 +173,10 @@ Dieser Unterbereich steuert die allgemeinen Informationen, die während der Bege
 - `Kampf-Intro für Spielende anzeigen`
 - `Endzusammenfassung für Spielende anzeigen`
 - `Runde auf dem Spielerbildschirm anzeigen`
+- `Kampfdauer auf dem Spielerbildschirm anzeigen`
 - `Nächsten Zug auf dem Spielerbildschirm anzeigen`
+
+Die Kampfdauer wird als lesbarer Timer angezeigt; wenn der Kampf pausiert ist, hält die Zeit an.
 
 ## Heldeninformationen
 

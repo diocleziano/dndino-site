@@ -99,7 +99,11 @@ Da qui gestisci lingua, tema, topbar, comportamento dei pannelli, combattimento,
 
 ## Sessione Live al centro
 
-Quando una sessione live è attiva, al centro della topbar compare il controllo della sessione.
+Nelle pagine di un'avventura, al centro della topbar compare il controllo della **Sessione Live**.
+
+Se non c'è una sessione attiva, il controllo permette di avviarne una per l'avventura corrente. Prima dell'avvio DnDino chiede conferma, così non rischi di aprire una sessione per errore.
+
+Se una sessione live è già attiva, lo stesso controllo mostra lo stato della sessione.
 
 Mostra:
 
@@ -108,6 +112,8 @@ Mostra:
 - stato della sessione
 
 Cliccandolo si apre il pannello rapido della sessione. Da lì puoi mettere in pausa o riprendere, chiudere e salvare, aggiungere una nota DM, leggere la timeline e vedere un riepilogo live.
+
+Se apri un'altra avventura mentre una sessione live è già in uso, il controllo centrale lo segnala e indica che la sessione appartiene a un'altra avventura.
 
 ## Finestra Giocatori al centro
 

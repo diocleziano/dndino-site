@@ -93,7 +93,11 @@ Tu peux choisir l'ascendance et le sexe, régénérer les résultats et copier u
 
 ## Session Live au Centre
 
-Quand une session live est active, la topbar affiche son contrôle au centre.
+Dans les pages d'une aventure, la topbar affiche le contrôle de **Session live** au centre.
+
+Si aucune session live n'est active, ce contrôle permet d'en lancer une pour l'aventure courante. DnDino demande d'abord confirmation, pour éviter de démarrer une session par erreur.
+
+Si une session live est déjà active, le même contrôle affiche son état.
 
 Il montre :
 
@@ -102,6 +106,8 @@ Il montre :
 - état de la session
 
 Un clic ouvre le panneau rapide : pause ou reprise, fermeture et sauvegarde, note MJ, timeline et résumé live compact.
+
+Si tu ouvres une autre aventure alors qu'une session live est déjà en cours, le contrôle central indique qu'elle est utilisée par une autre aventure.
 
 ## Fenêtre Joueurs au Centre
 

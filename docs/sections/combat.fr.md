@@ -44,6 +44,7 @@ Si la présentation est active, elle peut montrer :
 L'affichage peut inclure :
 
 - round
+- durée de l'affrontement
 - PV actuels, maximums et temporaires
 - états
 - prochain tour
@@ -64,6 +65,7 @@ Les plus importantes sont :
 - `Afficher l'intro du combat aux joueurs`
 - `Afficher le résumé final aux joueurs`
 - `Afficher le round sur l'écran joueurs`
+- `Afficher la durée de l'affrontement sur l'écran joueurs`
 - `Afficher le prochain tour sur l'écran joueurs`
 - `Afficher les PV des héros sur l'écran joueurs`
 - `Afficher les états des héros sur l'écran joueurs`
@@ -98,6 +100,8 @@ L'écran comporte trois zones principales :
 - **Ordre final**
 
 En haut, tu vois aussi le nom de l'affrontement, le nombre de participants et les actions principales.
+
+Les cartes des participants utilisent déjà la couleur du rôle dans cette phase, pour distinguer immédiatement héros, alliés, neutres et ennemis avant de lancer l'affrontement.
 
 ## Actions du Pré-Combat
 
@@ -484,6 +488,7 @@ L'écran final montre :
 - ennemis tués
 - dégâts infligés
 - dégâts subis
+- temps moyen des tours pour les héros et le MJ
 - état final des participants
 
 Les PV finaux et les états sont synchronisés avec les fiches liées.
@@ -517,6 +522,7 @@ Les statistiques peuvent inclure :
 - dégâts infligés
 - dégâts subis
 - durée des affrontements
+- temps moyen des tours pour les héros et le MJ
 - nombre de combats
 - ennemis tués
 - évolution des dégâts par jour

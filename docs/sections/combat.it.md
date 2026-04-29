@@ -44,6 +44,7 @@ Se la presentazione è attiva, può mostrare:
 L'overlay può includere:
 
 - round
+- durata dello scontro
 - PF attuali, massimi e temporanei
 - condizioni
 - prossimo turno
@@ -64,6 +65,7 @@ Le più importanti sono:
 - `Mostra intro combattimento ai giocatori`
 - `Mostra riepilogo finale ai giocatori`
 - `Mostra round nella schermata giocatori`
+- `Mostra durata scontro nella schermata giocatori`
 - `Mostra prossimo turno nella schermata giocatori`
 - `Mostra PF degli eroi nella schermata giocatori`
 - `Mostra condizioni degli eroi nella schermata giocatori`
@@ -98,6 +100,8 @@ In questa fase la schermata usa tre aree principali:
 - pannello **Ordine finale**
 
 In alto trovi anche il nome dell'incontro, il numero dei partecipanti e le azioni principali.
+
+Le card dei partecipanti usano il colore del ruolo anche in questa fase, così puoi distinguere subito eroi, alleati, neutrali e nemici prima di avviare lo scontro.
 
 ## Azioni del pre-combattimento
 
@@ -486,6 +490,7 @@ La schermata finale mostra:
 - nemici uccisi
 - danni inflitti
 - danni subiti
+- tempo medio dei turni per eroi e DM
 - stato finale dei partecipanti
 
 I PF finali e le condizioni vengono sincronizzati con i record collegati.
@@ -519,6 +524,7 @@ Le statistiche possono includere:
 - danni inflitti
 - danni subiti
 - durata degli scontri
+- tempo medio dei turni per eroi e DM
 - numero di combattimenti
 - nemici uccisi
 - andamento dei danni per giorno

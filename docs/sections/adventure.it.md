@@ -135,7 +135,7 @@ Cliccando su un’avventura nella lista entri nella sua **dashboard**, che è il
 
 La dashboard è organizzata come una schermata a pannelli:
 
-- una fascia superiore con intestazione e controllo sessione live
+- una fascia superiore con intestazione dell'avventura
 - due colonne inferiori con card dedicate alle varie aree della campagna
 
 L’ordine dei pannelli può essere personalizzato dalle impostazioni dell’app.
@@ -157,12 +157,9 @@ Da qui puoi anche entrare in **Modifica** per tornare al form dell’avventura e
 
 ## Sessione live
 
-![Pannello Sessione live](../images/en_dashavv_sessionelive.png){ .img-shot }
+La **Sessione live** non occupa più un pannello fisso della dashboard: si avvia e si controlla dal centro della topbar quando sei dentro una pagina dell'avventura.
 
-
-Accanto all’intestazione c’è il pannello **Sessione live**.
-
-Questa sezione serve per:
+Il controllo centrale serve per:
 
 - avviare una nuova sessione live per l’avventura
 - vedere se una sessione è in corso oppure in pausa
@@ -170,9 +167,9 @@ Questa sezione serve per:
 - mettere in pausa la sessione
 - chiuderla e salvarla
 
-Quando la sessione live dell’avventura è attiva, il **player globale** e i **luoghi** seguono questo contesto.
+Quando la sessione live dell’avventura è attiva, il controllo resta disponibile anche in luoghi e combattimenti, così puoi gestirla senza tornare alla dashboard.
 
-Se esiste già una sessione live aperta in un’altra avventura, la dashboard lo segnala chiaramente e non ti lascia avviarne una seconda in parallelo.
+Se esiste già una sessione live aperta in un’altra avventura, la topbar lo segnala chiaramente e non ti lascia avviarne una seconda in parallelo.
 
 ## I pannelli della dashboard
 
@@ -280,6 +277,7 @@ Tra i dati principali puoi trovare:
 - numero totale di combattimenti
 - durata media degli incontri
 - durata media delle sessioni
+- tempo medio dei turni per eroi e DM
 - nemici sconfitti
 - personaggi avventura con più danni inflitti
 - personaggi avventura con più danni subiti
@@ -291,10 +289,11 @@ I grafici aiutano a leggere l'andamento nel tempo:
 - danni inflitti per giorno
 - danni subiti per giorno
 - durata delle sessioni raggruppata per giorno
+- tempo medio dei turni, raggruppabile per sessione o per combattimento
 
 Nei grafici giornalieri puoi passare tra vista `Tutti` e `Per Personaggio`. La vista per personaggio usa una linea per ogni personaggio avventura coinvolto; dalla legenda puoi mostrare o nascondere singoli personaggi quando vuoi alleggerire il grafico.
 
-I valori numerici possono essere mostrati o nascosti dal relativo controllo, utile quando ci sono molti punti e vuoi scegliere tra leggibilità e dettaglio.
+I valori numerici possono essere mostrati o nascosti dal relativo controllo, utile quando ci sono molti punti e vuoi scegliere tra leggibilità e dettaglio. I grafici possono essere scorsi orizzontalmente e hanno controlli di zoom indipendenti, così puoi allargare o comprimere la lettura senza influenzare gli altri grafici.
 
 !!! note
     Le classifiche principali dei danni considerano i personaggi avventura. PNG e mostri restano importanti nel combattimento, ma nelle statistiche di lungo periodo avrebbero un peso troppo variabile e meno utile.
@@ -385,6 +384,6 @@ La sezione Avventura è il punto giusto quando vuoi:
 - definire copertina, stato e descrizione dell’avventura
 - riprendere il lavoro da una campagna esistente
 - entrare nella dashboard principale
-- avviare una sessione live
+- avviare una sessione live dalla topbar centrale
 - raggiungere velocemente luoghi, personaggi, sessioni, immagini e mappe della campagna
 - consultare statistiche e grafici sui combattimenti completati

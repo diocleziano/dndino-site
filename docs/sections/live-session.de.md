@@ -27,14 +27,11 @@ Sie dient dazu:
 
 ## Wo sie gestartet wird
 
-Die Live-Session wird über das **Abenteuer-Dashboard** im Panel `Live-Session` gestartet.
+Die Live-Session wird über die Steuerung in der Mitte der **Topbar** gestartet, wenn du dich in einer Abenteuerseite befindest, etwa Dashboard, Orte oder Kampf.
 
-Wenn keine Sitzung aktiv ist, zeigt das Panel:
+Wenn keine Sitzung aktiv ist, zeigt die Steuerung die Startaktion. Beim Auslösen fragt DnDino nach Bestätigung und erstellt danach eine neue Live-Sitzung für das aktuelle Abenteuer.
 
-- Status bereit
-- Schaltfläche `Live-Session starten`
-
-Wenn du diese Schaltfläche drückst, erstellt DnDino eine neue Live-Session und setzt sie als global aktive Sitzung.
+Du musst also nicht zum Dashboard zurückkehren, nur um die Sitzung zu starten: der Befehl bleibt dort verfügbar, wo du gerade arbeitest.
 
 ## Nur eine Live-Session gleichzeitig
 
@@ -71,7 +68,7 @@ Das ist der normale Zustand, solange die Sitzung läuft. Der Timer zählt weiter
 
 ### Pausiert
 
-Die Sitzung kann über das Abenteuer-Dashboard oder die obere Leiste pausiert werden.
+Die Sitzung kann über die Topbar pausiert werden.
 
 Wenn sie pausiert ist:
 
@@ -89,27 +86,22 @@ Das macht es möglich:
 - zu erkennen, dass eine Unterbrechung stattgefunden hat
 - die Arbeit manuell wieder aufzunehmen
 
-## Das Live-Session-Panel im Abenteuer-Dashboard
+## Live-Sitzungssteuerung in der Topbar
 
-Im Abenteuer-Dashboard zeigt das Panel den aktuellen Sitzungsstatus.
+Auf den Abenteuerseiten zeigt die Topbar die Live-Sitzungssteuerung in der Mitte.
 
-Wenn die Sitzung zum geöffneten Abenteuer gehört, zeigt das Panel:
+Wenn die Sitzung zum geöffneten Abenteuer gehört, zeigt die Steuerung:
 
 - Sitzungstitel
 - Echtzeit-Timer
 - Status (`Läuft` oder `Pausiert`)
-- Hinweis, dass der Player global ist
-- Schaltflächen:
-  - `Pause` oder `Fortsetzen`
-  - `Schließen und speichern`
-
 Wenn keine Live-Session aktiv ist:
 
-- erscheint die Schaltfläche `Live-Session starten`
+- erscheint der Befehl zum Starten der Live-Sitzung des aktuellen Abenteuers
 
 Wenn eine Sitzung aktiv ist, aber zu einem anderen Abenteuer gehört:
 
-- zeigt das Panel, dass die Live-Session derzeit anderswo belegt ist
+- zeigt die Steuerung, dass die Live-Session derzeit anderswo belegt ist
 
 ## Die Live-Session in der Topbar
 
@@ -220,6 +212,7 @@ Die Live-Session hält außerdem zwei sehr nützliche Übersichten für Charakte
 
 - von Helden verursachter Schaden
 - von Helden erlittener Schaden
+- durchschnittliche Zugdauer, wenn sie aus abgeschlossenen Kämpfen stammt
 
 ## Integration mit dem Kampf
 
@@ -253,10 +246,13 @@ Die Detailansicht einer gespeicherten Sitzung kann außerdem Diagramme für die 
 
 - verursachter Schaden pro Kampf
 - erlittener Schaden pro Kampf
+- durchschnittliche Zugdauer pro Kampf
 
 Jeder Kampf bleibt chronologisch auf der horizontalen Achse. Charaktere, die teilgenommen haben, werden auch dann angezeigt, wenn sie in einem Kampf `0` Schaden verursacht oder erlitten haben. Hat ein Charakter an einem Kampf nicht teilgenommen, erscheint er an diesem Punkt nicht.
 
 Diese Diagramme zeigen, wer während der Sitzung den größten Einfluss hatte und wer über die Begegnungen hinweg den meisten Schaden aufgenommen hat.
+
+Das Diagramm zur Zugdauer hilft zu verstehen, wie viel Zeit Helden und SL im Durchschnitt während der Kämpfe der Sitzung benötigen.
 
 ## Gefallene Helden
 
@@ -300,6 +296,7 @@ Im Detailpanel findest du:
 - gefallene Helden
 - Ranglisten zu verursachtem und erlittenem Schaden der Charaktere
 - Diagramme zu verursachtem und erlittenem Schaden in den Kämpfen der Sitzung
+- Diagramm zur durchschnittlichen Zugdauer, sofern verfügbar
 
 ## Wann die Live-Session besonders sinnvoll ist
 

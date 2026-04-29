@@ -169,7 +169,10 @@ This subsection controls the general information shown to players during the enc
 - `Show combat intro to players`
 - `Show final summary to players`
 - `Show round on player screen`
+- `Show encounter duration on player screen`
 - `Show next turn on player screen`
+
+Encounter duration is shown as a readable timer; if combat is paused, the count stops.
 
 ## Hero Information
 

@@ -27,14 +27,11 @@ Serve per:
 
 ## Dove si avvia
 
-La sessione live si avvia dalla **dashboard dell’avventura**, nel pannello `Sessione Live`.
+La sessione live si avvia dal controllo al centro della **topbar** quando sei dentro una pagina dell'avventura, per esempio dashboard, luoghi o combattimenti.
 
-Se non esiste una sessione attiva, il pannello mostra:
+Se non esiste una sessione attiva, il controllo mostra l'azione di avvio. Quando la premi, DnDino chiede conferma e poi crea una nuova sessione live per l'avventura corrente.
 
-- stato pronto
-- pulsante `Avvia Sessione Live`
-
-Quando premi il pulsante, DnDino crea una nuova sessione di tipo live e la imposta come sessione globale attiva.
+Questo evita di dover tornare alla dashboard solo per avviare la sessione: il comando resta nel punto più comodo mentre lavori nei luoghi o prepari un combattimento.
 
 ## Una sola sessione live alla volta
 
@@ -89,27 +86,23 @@ Questo permette di:
 - capire che si è verificata un’interruzione
 - riprendere manualmente il lavoro
 
-## Il pannello Sessione Live nella dashboard avventura
+## Controllo Sessione Live nella topbar
 
-Nella dashboard dell’avventura il pannello mostra lo stato corrente della sessione.
+Nelle pagine dell'avventura, la topbar mostra il controllo della sessione live al centro.
 
-Se la sessione appartiene all’avventura aperta, il pannello mostra:
+Se la sessione appartiene all’avventura aperta, il controllo mostra:
 
 - titolo della sessione
 - timer in tempo reale
 - stato (`In corso` oppure `In pausa`)
-- indicazione che il player è globale
-- pulsanti:
-  - `Pausa` o `Riprendi`
-  - `Chiudi e salva`
 
 Se invece non c’è una sessione live attiva:
 
-- compare il pulsante `Avvia Sessione Live`
+- compare il comando per avviare la sessione live dell'avventura corrente
 
 Se una sessione è attiva ma appartiene a un’altra avventura:
 
-- il pannello mostra che la sessione live è occupata altrove
+- il controllo segnala che la sessione live è in uso altrove
 
 ## La sessione live nella topbar
 
@@ -218,6 +211,7 @@ La sessione live tiene anche due riepiloghi molto utili per i personaggi:
 
 - danni inflitti dagli eroi
 - danni subiti dagli eroi
+- tempo medio dei turni, quando arriva dai combattimenti conclusi
 
 ## Integrazione con il combattimento
 
@@ -251,10 +245,13 @@ Nel dettaglio della sessione salvata possono comparire anche grafici dedicati ai
 
 - danni inflitti per combattimento
 - danni subiti per combattimento
+- tempo medio dei turni per combattimento
 
 Ogni combattimento resta sull'asse orizzontale in ordine cronologico. I personaggi che hanno partecipato vengono mostrati anche quando in uno scontro hanno fatto o subito `0` danni, così la lettura della serie resta coerente. Se un personaggio non partecipa a un combattimento, invece, non viene inserito in quel punto.
 
 Questi grafici servono a capire chi ha inciso di più durante la sessione e chi ha assorbito più danni nel corso degli scontri.
+
+Il grafico dei turni aiuta invece a capire quanto tempo richiedono in media gli eroi e il DM durante gli scontri della sessione.
 
 ## Eroi caduti
 
@@ -298,6 +295,7 @@ Nel pannello di dettaglio trovi:
 - eroi caduti
 - classifiche di danni inflitti e subiti dai personaggi
 - grafici dei danni inflitti e subiti nei combattimenti della sessione
+- grafico del tempo medio dei turni, se disponibile
 
 ## Quando conviene usare la sessione live
 
