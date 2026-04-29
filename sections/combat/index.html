@@ -1,0 +1,2105 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete guide to using DnDino">
+      
+      
+      
+        <link rel="canonical" href="https://diocleziano.github.io/dndino-site/sections/combat/">
+      
+      
+        <link rel="prev" href="../interactive-maps/">
+      
+      
+        <link rel="next" href="../live-session/">
+      
+      
+        
+          <link rel="alternate" href="../../it/sections/combat/" hreflang="it">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../fr/sections/combat/" hreflang="fr">
+        
+          <link rel="alternate" href="../../de/sections/combat/" hreflang="de">
+        
+          <link rel="alternate" href="../../es/sections/combat/" hreflang="es">
+        
+          <link rel="alternate" href="../../pt-PT/sections/combat/" hreflang="pt-PT">
+        
+          <link rel="alternate" href="../../pt-BR/sections/combat/" hreflang="pt-BR">
+        
+      
+      
+      <link rel="icon" href="../../images/icons/appicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Combat - DnDino Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#combat" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DnDino Guide" class="md-header__button md-logo" aria-label="DnDino Guide" data-md-component="logo">
+      
+  <img src="../../images/icons/appicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DnDino Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Combat
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../it/sections/combat/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../fr/sections/combat/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../de/sections/combat/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/sections/combat/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../pt-PT/sections/combat/" hreflang="pt-PT" class="md-select__link">
+              Português (Portugal)
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../pt-BR/sections/combat/" hreflang="pt-BR" class="md-select__link">
+              Português (Brasil)
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DnDino Guide" class="md-nav__button md-logo" aria-label="DnDino Guide" data-md-component="logo">
+      
+  <img src="../../images/icons/appicon.png" alt="logo">
+
+    </a>
+    DnDino Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homepage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topbar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Top Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rules-equipment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rules and Equipment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heroes, NPCs, and Monsters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adventure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adventure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../places/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Places and Quests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concept Maps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interactive-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interactive Maps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Combat
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Combat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#one-screen-or-two" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Screen or Two
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-window-during-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Player Window During Combat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Useful Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-combat-opens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Combat Opens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Combat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-combat-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Combat Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-names-and-initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Names and Initiative
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Order
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-participants-come-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Participants Come From
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Combat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turn Controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initiative-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initiative Tracker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-and-selected-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current and Selected Sheets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participant-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Participant Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target Lists
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attacks-abilities-and-internal-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attacks, Abilities, and Internal Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full Attack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spells
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heroes-at-0-hp-or-less" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heroes at 0 HP or Less
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#npcs-and-monsters-at-0-hp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NPCs and Monsters at 0 HP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#side-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Side Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#last-5-events-and-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Last 5 Events and Undo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-encounter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Encounter Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Synchronization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Use
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../live-session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Live Session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#one-screen-or-two" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Screen or Two
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-window-during-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Player Window During Combat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Useful Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-combat-opens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Combat Opens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Combat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-combat-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Combat Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-names-and-initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Names and Initiative
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Order
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-participants-come-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Participants Come From
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Combat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turn Controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initiative-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initiative Tracker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-and-selected-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current and Selected Sheets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participant-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Participant Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target Lists
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attacks-abilities-and-internal-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attacks, Abilities, and Internal Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full Attack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spells
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heroes-at-0-hp-or-less" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heroes at 0 HP or Less
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#npcs-and-monsters-at-0-hp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NPCs and Monsters at 0 HP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#side-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Side Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#last-5-events-and-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Last 5 Events and Undo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-encounter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Encounter Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Synchronization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Use
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="combat">Combat<a class="headerlink" href="#combat" title="Permanent link">&para;</a></h1>
+<p>The <strong>Combat</strong> section is DnDino's encounter tracker. It is designed to be fast, compact, and readable when the table is in the busiest part of the session.</p>
+<p>Combat always starts from a <strong>place</strong> and can include the adventure heroes, local presences, NPCs, and monsters tied to that scene.</p>
+<p>This page explains:</p>
+<ul>
+<li>preparing the pre-combat screen</li>
+<li>entering and sorting initiative</li>
+<li>the main combat layout</li>
+<li>turn controls</li>
+<li>attacks, damage, healing, conditions, and saving throws</li>
+<li>internal links in attacks and abilities</li>
+<li>the side summary, recent events, and undo</li>
+<li>Player Window support</li>
+<li>final summary and statistics</li>
+</ul>
+<h2 id="one-screen-or-two">One Screen or Two<a class="headerlink" href="#one-screen-or-two" title="Permanent link">&para;</a></h2>
+<p>Combat works well on a <strong>single screen</strong>: the whole DM workflow stays in the main window, with the initiative tracker, compact stat blocks, and summary.</p>
+<p>With a second display you can also use the <strong>Player Window</strong>:</p>
+<ul>
+<li>the DM screen keeps controls, sheets, targets, conditions, and statistics</li>
+<li>the player screen shows a cleaner visual presentation with images and overlays</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A second display is optional. Use it only when you want to separate the DM's operational view from the evocative player presentation.</p>
+</div>
+<h2 id="player-window-during-combat">Player Window During Combat<a class="headerlink" href="#player-window-during-combat" title="Permanent link">&para;</a></h2>
+<p>When an encounter starts, DnDino can open or update the <strong>Player Window</strong>.</p>
+<p>If the presentation is enabled, it can show:</p>
+<ul>
+<li>the combat intro with participants</li>
+<li>the current turn participant</li>
+<li>attack animations</li>
+<li>the final summary</li>
+</ul>
+<p><img alt="Player screen during pre-combat" class="img-shot" src="../../images/en_combat_schermogiocatori_precombat.png" /></p>
+<p>The overlay can include:</p>
+<ul>
+<li>round</li>
+<li>current, maximum, and temporary HP</li>
+<li>conditions</li>
+<li>next turn</li>
+</ul>
+<p><img alt="Player screen during a hero turn" class="img-shot" src="../../images/en_combat_schermogiocatori_turnoeroi.png" />
+<img alt="Player screen during a monster turn" class="img-shot" src="../../images/en_combat_schermogiocatori_turnomostri.png" /></p>
+<p>For heroes, NPCs, and monsters you can decide separately which information is shown to players in settings.</p>
+<h2 id="useful-settings">Useful Settings<a class="headerlink" href="#useful-settings" title="Permanent link">&para;</a></h2>
+<p>The main options are in <strong>Settings</strong>, under Combat and Player Window.</p>
+<p>The most important ones are:</p>
+<ul>
+<li><code>Open Player Window even with one monitor</code></li>
+<li><code>Show Player Window controls in the top bar</code></li>
+<li><code>Show combat intro to players</code></li>
+<li><code>Show final summary to players</code></li>
+<li><code>Show round on player screen</code></li>
+<li><code>Show next turn on player screen</code></li>
+<li><code>Show hero HP on the players screen</code></li>
+<li><code>Show hero conditions on the players screen</code></li>
+<li><code>Show NPC HP to players</code></li>
+<li><code>Show NPC conditions to players</code></li>
+<li><code>Show NPC names to players</code></li>
+<li><code>Show monster HP to players</code></li>
+<li><code>Show monster conditions to players</code></li>
+<li><code>Show enemy names to players</code></li>
+</ul>
+<p>Ending combat always asks for confirmation, because closing an encounter synchronizes state and statistics.</p>
+<h2 id="where-combat-opens">Where Combat Opens<a class="headerlink" href="#where-combat-opens" title="Permanent link">&para;</a></h2>
+<p>Combat is created from a <strong>place</strong>. Once opened, the screen changes according to the encounter state:</p>
+<ul>
+<li><strong>Pre-combat</strong>: prepare participants, names, and initiative.</li>
+<li><strong>Active combat</strong>: manage turns, sheets, targets, and the summary.</li>
+<li><strong>Completed combat</strong>: review the DM final summary.</li>
+</ul>
+<h2 id="pre-combat">Pre-Combat<a class="headerlink" href="#pre-combat" title="Permanent link">&para;</a></h2>
+<p><img alt="Pre-combat screen" class="img-hero" src="../../images/en_combat_precombat.png" /></p>
+<p>Pre-combat is where you prepare the encounter before the first turn.</p>
+<p>The screen has three main areas:</p>
+<ul>
+<li><strong>Heroes</strong></li>
+<li><strong>Monsters and NPCs</strong></li>
+<li><strong>Final Order</strong></li>
+</ul>
+<p>The top area also shows the encounter name, participant count, and main actions.</p>
+<h2 id="pre-combat-actions">Pre-Combat Actions<a class="headerlink" href="#pre-combat-actions" title="Permanent link">&para;</a></h2>
+<p>The main actions are:</p>
+<ul>
+<li><code>Add</code></li>
+<li><code>Start Encounter</code></li>
+<li><code>NPC/Monster Init</code>, inside the monsters and NPCs column</li>
+</ul>
+<p><code>Add</code> opens the participant picker.</p>
+<p><code>Start Encounter</code> begins combat. If at least one participant has initiative <code>0</code>, DnDino asks for confirmation.</p>
+<p><code>NPC/Monster Init</code> rolls initiative automatically only for monsters and NPCs. Heroes are normally entered manually, because their initiative usually comes from the table.</p>
+<h2 id="editing-names-and-initiative">Editing Names and Initiative<a class="headerlink" href="#editing-names-and-initiative" title="Permanent link">&para;</a></h2>
+<p>In pre-combat you can adjust:</p>
+<ul>
+<li>displayed participant name</li>
+<li>initiative</li>
+</ul>
+<p>This is especially useful for monsters, for example:</p>
+<ul>
+<li>Goblin 1</li>
+<li>Goblin 2</li>
+<li>Goblin Captain</li>
+</ul>
+<p>Initiative is read while you type, without waiting for the field to lose focus. The working columns are not continuously reordered while you enter values: final sorting is applied when combat starts.</p>
+<h2 id="final-order">Final Order<a class="headerlink" href="#final-order" title="Permanent link">&para;</a></h2>
+<p><img alt="Prepared initiative order" class="img-hero" src="../../images/en_combat_precombat_valorizzato.png" /></p>
+<p>The <strong>Final Order</strong> panel shows a live preview of the order that will be used when the encounter starts.</p>
+<p>The order is calculated as follows:</p>
+<ol>
+<li>highest initiative</li>
+<li>on a tie, highest Dexterity modifier</li>
+<li>if still tied, random tiebreaker</li>
+</ol>
+<p>This lets you check the result without disturbing initiative entry.</p>
+<h2 id="where-participants-come-from">Where Participants Come From<a class="headerlink" href="#where-participants-come-from" title="Permanent link">&para;</a></h2>
+<p>The add panel can offer:</p>
+<ul>
+<li><code>Heroes</code></li>
+<li><code>Place Presences</code></li>
+<li><code>Global</code></li>
+</ul>
+<p>Heroes already linked to the adventure can be added only once to the same encounter.</p>
+<p>Place presences reuse local state when available.</p>
+<p>Global monsters can be added multiple times, because they often represent several copies of the same creature.</p>
+<h2 id="active-combat">Active Combat<a class="headerlink" href="#active-combat" title="Permanent link">&para;</a></h2>
+<p><img alt="Active combat screen" class="img-hero" src="../../images/en_combat_main.png" /></p>
+<p>When the encounter starts, the screen switches to the operational combat view.</p>
+<p>It is divided into three zones:</p>
+<ul>
+<li>left: the <strong>initiative tracker</strong></li>
+<li>center: compact sheets for the <strong>current turn</strong> and the <strong>selected participant</strong></li>
+<li>right: the <strong>summary</strong> with health, damage, and recent events</li>
+</ul>
+<p>The goal is to keep as much useful information visible as possible without opening oversized panels.</p>
+<h2 id="turn-controls">Turn Controls<a class="headerlink" href="#turn-controls" title="Permanent link">&para;</a></h2>
+<p>The main controls are at the top.</p>
+<p>On the left:</p>
+<ul>
+<li><code>Previous</code></li>
+<li><code>Pause</code> / <code>Resume</code></li>
+<li><code>Next</code></li>
+<li><code>Undo event</code></li>
+</ul>
+<p>On the right:</p>
+<ul>
+<li><code>Add</code></li>
+<li><code>Sort</code></li>
+<li><code>End combat</code></li>
+</ul>
+<p><code>Previous</code> and <code>Next</code> change the turn.</p>
+<p><code>Pause</code> stops the combat timer. When paused, it becomes <code>Resume</code>.</p>
+<p><code>Undo event</code> restores one of the most recent undoable events.</p>
+<p><code>Add</code> inserts new participants during combat.</p>
+<p><code>Sort</code> rebuilds initiative order.</p>
+<p><code>End combat</code> closes the encounter after confirmation.</p>
+<h2 id="initiative-tracker">Initiative Tracker<a class="headerlink" href="#initiative-tracker" title="Permanent link">&para;</a></h2>
+<p>The left column shows every participant in a compact list.</p>
+<p>Each row shows:</p>
+<ul>
+<li>initiative</li>
+<li>name</li>
+<li>AC</li>
+<li>HP</li>
+<li>temporary HP</li>
+<li>condition indicator, when present</li>
+<li>role color</li>
+</ul>
+<p>The side color helps distinguish:</p>
+<ul>
+<li>heroes</li>
+<li>allies</li>
+<li>neutral participants</li>
+<li>enemies</li>
+</ul>
+<p>Clicking a row:</p>
+<ul>
+<li>opens that participant as <strong>selected</strong></li>
+<li>closes the selected column if the same participant was already selected</li>
+</ul>
+<p>The trash button on the row removes that participant from combat.</p>
+<h2 id="current-and-selected-sheets">Current and Selected Sheets<a class="headerlink" href="#current-and-selected-sheets" title="Permanent link">&para;</a></h2>
+<p>The center can show up to two sheets:</p>
+<ul>
+<li>the current turn participant</li>
+<li>the participant selected from the list</li>
+</ul>
+<p>Sheets have fixed width and their own vertical scroll, so the page stays stable even with long text.</p>
+<p>The top part of the sheet shows:</p>
+<ul>
+<li>name</li>
+<li>type, ancestry, or subtype</li>
+<li>languages, when present</li>
+<li>challenge rating and XP, when present</li>
+<li>image preview</li>
+<li>action buttons</li>
+</ul>
+<h2 id="quick-fields">Quick Fields<a class="headerlink" href="#quick-fields" title="Permanent link">&para;</a></h2>
+<p>From the sheet you can edit:</p>
+<ul>
+<li>current HP</li>
+<li>temporary HP</li>
+<li>initiative</li>
+</ul>
+<p>AC is shown as a compact shield value.</p>
+<p>Adventure heroes can also show the <strong>Heroic Inspiration</strong> button.</p>
+<p>HP changes stay synchronized with the left list and the right summary.</p>
+<h2 id="participant-actions">Participant Actions<a class="headerlink" href="#participant-actions" title="Permanent link">&para;</a></h2>
+<p>Each sheet can show:</p>
+<ul>
+<li><code>Attack</code></li>
+<li><code>Damage</code></li>
+<li><code>Heal</code></li>
+<li><code>Save</code></li>
+<li><code>Conditions</code></li>
+<li><code>DM Notes</code></li>
+<li><code>Edit</code></li>
+</ul>
+<p><code>Attack</code> opens a window with the attacker and target list.</p>
+<p><img alt="Attack window" class="img-shot" src="../../images/en_combat_attaccosemplice.png" /></p>
+<p><code>Damage</code> applies direct damage to the participant.</p>
+<p><img alt="Damage window" class="img-detail" src="../../images/en_combat_danni.png" /></p>
+<p><code>Heal</code> applies direct healing.</p>
+<p><img alt="Heal window" class="img-detail" src="../../images/en_combat_cura.png" /></p>
+<p><code>Save</code> opens the available saving throws.</p>
+<p><img alt="Saving throw window" class="img-detail" src="../../images/en_combat_tirosalvezza.png" /></p>
+<p><code>Conditions</code> opens a dedicated window for managing conditions.</p>
+<p><code>DM Notes</code> stores notes about the participant. Notes are not part of undo.</p>
+<p><code>Edit</code> opens the full participant editor.</p>
+<h2 id="target-lists">Target Lists<a class="headerlink" href="#target-lists" title="Permanent link">&para;</a></h2>
+<p>Target lists are ordered according to the attacker.</p>
+<p>If the attacker is an enemy:</p>
+<ul>
+<li>heroes and allies first</li>
+<li>then neutral participants</li>
+<li>then enemies</li>
+</ul>
+<p>If the attacker is a hero, ally, or neutral participant:</p>
+<ul>
+<li>enemies first</li>
+<li>then neutral participants</li>
+<li>then heroes and allies</li>
+</ul>
+<p>Names are sorted alphabetically inside each group.</p>
+<p>The colored side line helps identify the target's role.</p>
+<h2 id="attacks-abilities-and-internal-links">Attacks, Abilities, and Internal Links<a class="headerlink" href="#attacks-abilities-and-internal-links" title="Permanent link">&para;</a></h2>
+<p>The main collapsible sections are:</p>
+<ul>
+<li><code>Conditions</code></li>
+<li><code>Attacks</code></li>
+<li><code>Special Abilities</code></li>
+<li><code>Abilities</code></li>
+<li><code>Spells</code></li>
+<li><code>Description</code></li>
+</ul>
+<p>Each section uses a subtle gradient tied to its title color.</p>
+<p>Attack, special ability, and ability text can contain internal links created while creating or editing the character.</p>
+<p>During combat, these links open dedicated windows so you have more room to resolve the action.</p>
+<p>The most useful links are:</p>
+<ul>
+<li><code>Full Attack</code></li>
+<li><code>1d20 + MOD</code></li>
+<li>free roll</li>
+<li>damage roll</li>
+<li>links to internal entities</li>
+</ul>
+<h2 id="full-attack">Full Attack<a class="headerlink" href="#full-attack" title="Permanent link">&para;</a></h2>
+<p><img alt="Full Attack window" class="img-shot" src="../../images/en_combat_attaccocompleto.png" />
+<img alt="Full Attack link creation" class="img-shot" src="../../images/en_combat_attaccocompleto_link.png" /></p>
+<p><code>Full Attack</code> is meant for monster, NPC, or hero attack text.</p>
+<p>You prepare it in the character creation or editing screen: select the attack text and create a <code>Full Attack</code> link. During combat, that text becomes an action ready to open and resolve.</p>
+<p>When used in combat:</p>
+<ul>
+<li>the window shows the attack name</li>
+<li>the attacker is clearly shown</li>
+<li>you can choose one or more targets</li>
+<li>you can manage multiple damage rows</li>
+<li>you apply selected damage to the chosen targets</li>
+</ul>
+<p>While creating the link, damage is modular: use the <code>+</code> button to add rows and show only the rows that have values.</p>
+<h2 id="spells">Spells<a class="headerlink" href="#spells" title="Permanent link">&para;</a></h2>
+<p>If the participant has spells, the sheet shows the <code>Spells</code> section.</p>
+<p>Spells are grouped by level.</p>
+<p>For monsters and NPCs, the level row can also show the used slot counter, for example:</p>
+<ul>
+<li><code>0/3</code></li>
+<li><code>2/3</code></li>
+<li><code>3/3</code></li>
+</ul>
+<p>The <code>Use</code> button on each spell increases the counter for that spell level.</p>
+<p>The counter does not block usage when it reaches the maximum. It is only a reminder for the DM.</p>
+<p>Cantrips do not use slots.</p>
+<h2 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">&para;</a></h2>
+<p><img alt="Conditions window" class="img-shot" src="../../images/en_combat_condizioni.png" /></p>
+<p>The <code>Conditions</code> window lets you:</p>
+<ul>
+<li>add conditions</li>
+<li>remove conditions</li>
+<li>choose duration</li>
+<li>bind expiration to a participant's turn</li>
+<li>manage related notes</li>
+</ul>
+<p>When a condition is applied, DnDino shows visual feedback on the screen and on the affected row.</p>
+<h2 id="heroes-at-0-hp-or-less">Heroes at 0 HP or Less<a class="headerlink" href="#heroes-at-0-hp-or-less" title="Permanent link">&para;</a></h2>
+<p>Heroes follow different rules from monsters and NPCs.</p>
+<p>A hero can drop below <code>0</code> HP.</p>
+<p>The rule is:</p>
+<ul>
+<li>from <code>0</code> to <code>-(maximum HP - 1)</code>, the hero is <strong>Unconscious</strong></li>
+<li>at <code>-maximum HP</code> or below, the hero dies</li>
+<li>the hero also dies after 3 failed death saving throws</li>
+</ul>
+<p>When a hero is at <code>0</code> HP or less but not dead, the sheet shows <strong>Death Saving Throws</strong>.</p>
+<p>After 3 successes, the hero returns to <code>1</code> HP.</p>
+<h2 id="npcs-and-monsters-at-0-hp">NPCs and Monsters at 0 HP<a class="headerlink" href="#npcs-and-monsters-at-0-hp" title="Permanent link">&para;</a></h2>
+<p>For NPCs and monsters, the rule is simpler:</p>
+<ul>
+<li>at <code>0</code> HP or less, they are considered dead</li>
+<li>they are excluded from the turn cycle</li>
+<li>the summary can show them as dead</li>
+</ul>
+<h2 id="side-summary">Side Summary<a class="headerlink" href="#side-summary" title="Permanent link">&para;</a></h2>
+<p>The right column shows the <strong>Summary</strong>.</p>
+<p>It includes:</p>
+<ul>
+<li>round</li>
+<li>duration</li>
+<li>current turn</li>
+<li>hero and ally health</li>
+<li>NPC and monster health</li>
+<li>damage dealt</li>
+<li>damage taken</li>
+<li>last 5 events</li>
+</ul>
+<p>This is a read-only control view: it helps you understand the encounter at a glance.</p>
+<p>HP changes color:</p>
+<ul>
+<li>normal when the participant is in good shape</li>
+<li>yellow below 50%</li>
+<li>orange below 10%</li>
+<li>red at 0 or less</li>
+</ul>
+<p>For heroes, HP is struck through only when the hero is truly dead, not merely below 0 HP.</p>
+<h2 id="last-5-events-and-undo">Last 5 Events and Undo<a class="headerlink" href="#last-5-events-and-undo" title="Permanent link">&para;</a></h2>
+<p>Combat keeps the latest undoable events.</p>
+<p>Undo can include:</p>
+<ul>
+<li>attacks</li>
+<li>damage applied by attacks</li>
+<li>healing, when handled as an undoable event</li>
+<li>applied or modified conditions</li>
+</ul>
+<p><code>DM Notes</code> are not undone.</p>
+<p>Undo also restores linked statistics, so damage dealt and taken stay consistent.</p>
+<p>This matters because total damage dealt by participants should stay coherent with total damage taken.</p>
+<h2 id="visual-feedback">Visual Feedback<a class="headerlink" href="#visual-feedback" title="Permanent link">&para;</a></h2>
+<p>When something happens in combat, DnDino gives immediate feedback:</p>
+<ul>
+<li>top banner</li>
+<li>animation on the affected participant row</li>
+<li>feedback on the <code>Apply</code> button, when available</li>
+<li>side summary update</li>
+</ul>
+<p>This makes it clear that the command was received.</p>
+<h2 id="final-encounter-summary">Final Encounter Summary<a class="headerlink" href="#final-encounter-summary" title="Permanent link">&para;</a></h2>
+<p><img alt="Final combat summary" class="img-hero" src="../../images/en_combat_postcombat.png" /></p>
+<p><img alt="Final summary on the player screen" class="img-shot" src="../../images/en_combat_schermogiocatori_postcombat.png" /></p>
+<p>When you confirm the end of combat, the encounter can no longer be edited.</p>
+<p>The final screen shows:</p>
+<ul>
+<li>total rounds</li>
+<li>duration</li>
+<li>enemies killed</li>
+<li>damage dealt</li>
+<li>damage taken</li>
+<li>final participant state</li>
+</ul>
+<p>Final HP and conditions are synchronized with linked records.</p>
+<h2 id="final-synchronization">Final Synchronization<a class="headerlink" href="#final-synchronization" title="Permanent link">&para;</a></h2>
+<p>When combat closes, DnDino synchronizes the data where needed.</p>
+<p>For adventure heroes:</p>
+<ul>
+<li>current HP</li>
+<li>temporary HP</li>
+<li>conditions</li>
+<li>final state</li>
+</ul>
+<p>For place presences with local state:</p>
+<ul>
+<li>current HP</li>
+<li>temporary HP</li>
+<li>conditions</li>
+<li>final state</li>
+</ul>
+<p>Combat can also feed <strong>live session</strong> data and statistics.</p>
+<h2 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Permanent link">&para;</a></h2>
+<p>DnDino uses completed combats to build statistics and charts.</p>
+<p>Statistics can include:</p>
+<ul>
+<li>damage dealt</li>
+<li>damage taken</li>
+<li>encounter duration</li>
+<li>number of combats</li>
+<li>enemies killed</li>
+<li>damage trends by day</li>
+<li>average session duration</li>
+</ul>
+<p>The adventure dashboard includes <strong>Adventure Statistics</strong>, which collects completed combats, even outside a single live session, and groups them in a readable way.</p>
+<p>The live session summary can show charts for combats completed during that session.</p>
+<h2 id="best-use">Best Use<a class="headerlink" href="#best-use" title="Permanent link">&para;</a></h2>
+<p>DnDino combat works best when you:</p>
+<ol>
+<li>prepare pre-combat carefully</li>
+<li>assign initiative and names before starting</li>
+<li>use the left tracker to keep the whole encounter visible</li>
+<li>keep the current turn sheet open and, when useful, also the selected target sheet</li>
+<li>use links in attacks and abilities</li>
+<li>use the side summary for health, damage, and recent events</li>
+<li>end combat only when you are sure, so statistics and synchronization stay clean</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Even though DnDino automates many operations, you can still roll physical dice. In that case, use combat mainly to apply damage, healing, and conditions quickly, without repeatedly recalculating HP and statistics by hand.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
