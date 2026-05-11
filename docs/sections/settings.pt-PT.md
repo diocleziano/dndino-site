@@ -323,3 +323,12 @@ Atualmente inclui, em particular, a parte relativa ao **System Reference Documen
 
 !!! tip
     Se estás a configurar o DnDino pela primeira vez, as secções mais úteis para verificar logo são `Geral`, `Topbar`, `Combate` e `Base de dados`. Normalmente são as que mais influenciam o uso diário e a segurança dos dados.
+## Novidades da versão 1.4
+
+A secção `Base de dados` agora é `Base de dados e multimédia`.
+
+Nas versões de lançamento, DnDino já não mostra caminhos técnicos internos. Em vez disso, a secção foca-se em informações úteis: tamanho da base de dados, número de imagens guardadas, tamanho total das imagens, instantâneos, exportação de backup e exportação de multimédia.
+
+Instantâneos e multimédia da app podem ser exportados para uma localização escolhida pelo utilizador usando o painel padrão de guardar do macOS. A multimédia continua copiada dentro da sandbox da app, para que DnDino não perca referências caso os ficheiros originais sejam movidos ou apagados.
+
+A secção Diagnóstico fica reservada para builds de debug e não aparece na versão de lançamento.

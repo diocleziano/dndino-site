@@ -40,6 +40,7 @@ La dashboard `Luoghi` è organizzata in due modalità principali:
 
 - `Normale`
 - `Interattiva`
+- `Ombra`
 
 e in una struttura a due aree:
 
@@ -78,6 +79,22 @@ In questa modalità il focus si sposta sulla navigazione tramite mappa:
 - è possibile gestire zoom e spostamento sulla mappa
 
 Dal pannello `Media` puoi comunque aprire rapidamente la mappa interattiva associata a una mappa del luogo, ma nella modalità `Interattiva` la mappa diventa proprio il contenuto principale della parte sinistra della dashboard.
+
+### Modalità Ombra
+
+La modalità `Ombra` usa una **Mappa Ombra** direttamente nella parte sinistra della dashboard dei luoghi.
+
+È pensata per gestire una mappa da rivelare gradualmente ai giocatori:
+
+- puoi disegnare annotazioni sopra la mappa
+- puoi usare frecce per indicare percorsi o punti importanti
+- puoi usare la gomma per cancellare annotazioni senza toccare la nebbia
+- puoi rivelare parti della mappa con strumenti circolari o rettangolari
+- puoi mostrare o aggiornare la mappa nella finestra giocatori
+
+Le annotazioni vengono inviate ai giocatori in modo più immediato, mentre la parte di nebbia/rivelazione viene aggiornata quando usi il pulsante di mostra/aggiorna.
+
+Come per le mappe interattive, DnDino prova a scegliere la mappa più adatta al luogo selezionato: prima cerca una Mappa Ombra del luogo corrente, poi risale ai luoghi padre. Se esistono più Mappe Ombra nell’avventura, puoi sceglierle dal selettore.
 
 ## La colonna di sinistra
 
@@ -313,6 +330,10 @@ Per ogni asset puoi configurare:
 - visibilità per `Giocatori`
 - visibilità per `Master`
 - testo di presentazione
+- se una mappa può essere usata come `Mappa interattiva`
+- se una mappa può essere usata come `Mappa Ombra`
+
+Una mappa non deve essere per forza interattiva. Se una mappa serve solo come immagine da mostrare ai giocatori o al master, puoi lasciarla senza flag: resterà comunque visibile nei media del luogo, ma non mostrerà i comandi dedicati alle mappe interattive o alle Mappe Ombra.
 
 ## Hero del luogo
 
@@ -399,7 +420,9 @@ Da qui puoi:
 - sfogliare le mappe
 - mostrarle ai giocatori
 - mostrarle al master
+- condividere le immagini tramite il sistema di condivisione di macOS
 - aprire direttamente una mappa interattiva
+- aprire o usare una Mappa Ombra quando la mappa è abilitata per quella funzione
 
 ### Note
 
@@ -544,6 +567,22 @@ Conviene pensare a queste tre cose come a livelli diversi:
 - il **luogo** è il contenitore narrativo e strutturale
 - la **mappa** è un asset visuale collegato al luogo
 - la **mappa interattiva** è una mappa scelta come supporto navigabile, arricchita da marker
+
+## Mappa Ombra
+
+Una **Mappa Ombra** è una mappa pensata per essere rivelata poco alla volta durante la sessione.
+
+Rispetto a una mappa interattiva, non serve principalmente a navigare tra marker, ma a gestire ciò che i giocatori possono vedere:
+
+- la mappa può partire coperta
+- il DM vede una versione oscurata ma ancora leggibile, così può capire cosa sta rivelando
+- le aree possono essere rivelate con pennello circolare o selezione rettangolare
+- si possono aggiungere disegni e frecce sopra la mappa
+- la gomma rimuove le annotazioni senza modificare la nebbia
+
+La Mappa Ombra può essere aperta dal luogo o usata direttamente nella modalità `Ombra` della dashboard luoghi.
+
+Quando usi `Mostra/Aggiorna`, se la mappa non è ancora visibile ai giocatori viene aperta nella finestra giocatori; se è già visibile, viene aggiornata con lo stato corrente della nebbia.
 
 ## Quest nella sezione Luoghi
 

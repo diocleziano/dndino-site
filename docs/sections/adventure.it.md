@@ -311,8 +311,24 @@ Da qui puoi:
 - sfogliarle per pagine
 - mostrarle rapidamente ai giocatori
 - mostrarle rapidamente al master
+- aprire la gestione centralizzata delle immagini dell'avventura
 
 Questa è la zona giusta per tutto il materiale visivo “di campagna” che non appartiene a un singolo luogo.
+
+### Gestione immagini dell'avventura
+
+La gestione centralizzata delle immagini raccoglie in una sola finestra le immagini collegate all'avventura e ai suoi luoghi, evitando duplicati.
+
+Da qui puoi:
+
+- modificare il nome visualizzato dell'immagine
+- mostrarla ai giocatori
+- mostrarla al master
+- condividerla tramite macOS
+- vedere dove è collegata
+- abilitare o disabilitare i flag `Mappa interattiva` e `Mappa Ombra`
+
+È utile quando vuoi controllare rapidamente tutto il materiale visuale della campagna senza entrare in ogni singolo luogo.
 
 ### Mappe
 
@@ -327,6 +343,7 @@ Da questa card puoi:
 
 - sfogliare le mappe dell’avventura
 - mostrarle a giocatori o master
+- filtrare tra tutte le mappe, mappe interattive e Mappe Ombra
 - aprire direttamente la relativa mappa interattiva del luogo, se presente
 
 Questa parte sarà approfondita nella sottopagina dedicata a **Mappe** e **Mappe interattive**.

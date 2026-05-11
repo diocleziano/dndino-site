@@ -340,3 +340,10 @@ A ideia-chave é simples:
 - o **local** continua a ser o registo principal
 - o **mapa** torna-se a superfície visual
 - o **marcador** é a ligação operativa entre imagem e conteúdo
+## Novidades da versão 1.4
+
+A edição dos mapas interativos agora abre numa página dedicada, em vez de um painel lateral dentro dos Locais. Assim a página dos locais fica mais leve e a edição do mapa ganha o seu próprio espaço de trabalho.
+
+Apenas os mapas marcados como interativos mostram a ação para abrir o editor interativo. Os outros continuam disponíveis como mapas normais do local.
+
+Um mapa pode ser marcado como `Mapa interativo`, como `Mapa Sombra` ou como ambos. Os Mapas interativos servem para navegar entre locais com marcadores; os Mapas Sombra servem para revelar gradualmente um mapa aos jogadores durante a sessão.

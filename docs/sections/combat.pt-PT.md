@@ -546,3 +546,13 @@ O combate de DnDino funciona melhor quando:
 
 !!! tip
     Mesmo que DnDino automatize muitas operações, podes continuar a lançar dados físicos. Nesse caso, usa o combate sobretudo para aplicar dano, cura e condições rapidamente, sem recalcular PV e estatísticas à mão.
+## Novidades da versão 1.4
+
+As ligações de Ataque completo podem agora funcionar em dois modos:
+
+- jogada de ataque
+- teste de resistência
+
+No modo jogada de ataque, DnDino pode comparar o resultado com a CA dos alvos selecionados e indicar se o ataque acerta. No modo teste de resistência, a janela foca-se na CD e na aplicação do dano.
+
+A janela de Ataque completo também aceita um tipo de ataque, para indicar se é corpo a corpo, à distância, em área ou personalizado.

@@ -387,3 +387,10 @@ Der Bereich Abenteuer ist genau richtig, wenn du:
 - eine Live-Sitzung starten möchtest
 - schnell zu Orten, Charakteren, Sitzungen, Bildern und Karten der Kampagne gelangen möchtest
 - Statistiken und Diagramme abgeschlossener Kämpfe auswerten möchtest
+## Ergänzungen in Version 1.4
+
+Die Abenteuer-Dashboard enthält jetzt eine zentrale Bildverwaltung.
+
+Dort kannst du Bilder des Abenteuers und der Orte ohne Duplikate prüfen, den Anzeigenamen ändern, sie Spielern oder dem Spielleiter zeigen, über macOS teilen, ihre Verknüpfung sehen und die Markierungen `Interaktive Karte` und `Schattenkarte` aktivieren oder deaktivieren.
+
+Das Kartenpanel kann außerdem nach allen Karten, interaktiven Karten und Schattenkarten filtern.

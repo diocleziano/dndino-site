@@ -359,10 +359,16 @@ Quando lo usi in combattimento:
 - la finestra mostra il nome dell'attacco
 - viene indicato l'attaccante
 - puoi scegliere uno o più bersagli
+- se l'attacco usa un tiro per colpire, DnDino può indicare se il risultato raggiunge la CA dei bersagli selezionati
 - puoi gestire più righe di danno
 - applichi il danno selezionato ai bersagli scelti
 
-In fase di creazione il danno è modulare: puoi aggiungere righe con il pulsante `+` e visualizzare solo quelle valorizzate.
+In fase di creazione puoi scegliere se l'attacco è basato su:
+
+- `Tiro per colpire`
+- `Tiro salvezza`
+
+Nel primo caso imposti modificatore, eventuale soglia di critico e tipo di attacco. Nel secondo caso imposti la CD del tiro salvezza e il tipo di attacco o effetto. In entrambi i casi il danno è modulare: puoi aggiungere righe con il pulsante `+` e visualizzare solo quelle valorizzate.
 
 ## Incantesimi
 

@@ -323,3 +323,12 @@ At the moment it includes in particular the material related to the **System Ref
 
 !!! tip
     If you are configuring DnDino for the first time, the most useful sections to check first are `General`, `Top Bar`, `Combat`, and `Database`. Those are usually the ones that affect day-to-day use and data safety the most.
+## Version 1.4 additions
+
+The `Database` section is now `Database and Media`.
+
+In release builds, DnDino no longer shows internal technical paths. Instead, the section focuses on useful information: database size, number of saved images, total image size, snapshots, backup export, and media export.
+
+Snapshots and app media can be exported to a user-selected location through the standard macOS save panel. Media files still remain copied inside the app sandbox so DnDino does not lose references if the original files are moved or deleted.
+
+The Diagnostics section is reserved for debug builds and is not shown in the release version.

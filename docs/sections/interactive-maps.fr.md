@@ -340,3 +340,10 @@ L’idée de base est simple :
 - le **lieu** reste la fiche principale
 - la **carte** devient la surface visuelle
 - le **marqueur** est le lien opérationnel entre l’image et le contenu
+## Ajouts de la version 1.4
+
+La modification des cartes interactives s’ouvre maintenant dans une page dédiée, au lieu d’un panneau latéral dans les lieux. La page des lieux reste ainsi plus légère, et la modification de la carte dispose d’un espace de travail séparé.
+
+Seules les cartes marquées comme interactives affichent l’action d’ouverture de l’éditeur interactif. Les autres restent disponibles comme cartes normales du lieu.
+
+Une carte peut être marquée comme `Carte interactive`, comme `Carte ombre`, ou les deux. Les Cartes interactives servent à naviguer entre les lieux avec des marqueurs; les Cartes ombre servent à révéler progressivement une carte aux joueurs.

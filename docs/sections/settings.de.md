@@ -327,3 +327,12 @@ Derzeit enthält er insbesondere den Teil zum **System Reference Document 5.2** 
 
 !!! tip
     Wenn du DnDino zum ersten Mal einrichtest, sind die nützlichsten Bereiche, die du sofort prüfen solltest, `Allgemein`, `Topbar`, `Kampf` und `Datenbank`. Das sind in der Regel die Bereiche, die sich am stärksten auf den täglichen Einsatz und auf die Datensicherheit auswirken.
+## Ergänzungen in Version 1.4
+
+Der Bereich `Datenbank` heißt jetzt `Datenbank und Medien`.
+
+In Release-Builds zeigt DnDino keine internen technischen Pfade mehr. Stattdessen konzentriert sich der Bereich auf nützliche Informationen: Datenbankgröße, Anzahl gespeicherter Bilder, Gesamtgröße der Bilder, Snapshots, Backup-Export und Medien-Export.
+
+Snapshots und App-Medien können über den normalen macOS-Speicherdialog an einen vom Benutzer gewählten Ort exportiert werden. Die Medien bleiben trotzdem in der App-Sandbox kopiert, damit DnDino keine Referenzen verliert, wenn Originaldateien verschoben oder gelöscht werden.
+
+Der Diagnosebereich ist Debug-Builds vorbehalten und wird in der Release-Version nicht angezeigt.

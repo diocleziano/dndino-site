@@ -395,3 +395,10 @@ Die Grundlogik ist:
 
 !!! tip
     Wenn du Verwirrung vermeiden willst, merke dir immer diesen Unterschied: Das Basisblatt beschreibt den Charakter, während Abenteuer, Ort und Kampf seinen Zustand in einem bestimmten Kontext beschreiben. Du musst dich nicht zu sehr an der theoretischen Trennung festbeißen; wichtig ist vor allem, dass einige Felder nur in ihrem jeweiligen Kontext existieren.
+## Ergänzungen in Version 1.4
+
+Charakterbögen enthalten jetzt Rettungswürfe für jede Eigenschaft, Übungsbonus, Trefferwürfel und einen bearbeitbaren Initiative-Modifikator.
+
+Rettungswürfe starten mit dem passenden Eigenschaftsmodifikator, können aber unabhängig geändert werden. Das ist nützlich für Übung, besondere Boni, Mali oder Kreaturen, deren Rettungswürfe nicht dem Grundmodifikator entsprechen.
+
+`Vollangriff`-Links können jetzt entweder einen Angriffswurf oder einen Rettungswurf-Effekt darstellen. Außerdem können sie einen Angriffstyp enthalten, zum Beispiel Nahkampf, Fernkampf, Flächeneffekt oder eine freie Beschreibung, sowie modulare Schadenszeilen.

@@ -565,3 +565,12 @@ Das Dashboard `Orte` ist die richtige Stelle, wenn du:
 - Unterorte und Verknüpfungen definieren willst
 - Quests und ihren Status vorbereiten möchtest
 - Anwesende in der Welt platzieren willst
+## Ergänzungen in Version 1.4
+
+Die Orte-Dashboard enthält jetzt auch den Modus `Schatten`, wenn im Abenteuer Schattenkarten vorhanden sind.
+
+Der Modus zeigt eine Schattenkarte links in der Orte-Seite und erlaubt dem Spielleiter, die Karte während der Runde schrittweise aufzudecken. Du kannst Anmerkungen zeichnen, Pfeile setzen, Anmerkungen löschen ohne den Nebel zu verändern, Bereiche mit Kreis- oder Rechteckwerkzeugen aufdecken und die Karte im Spielerfenster anzeigen oder aktualisieren.
+
+Karten können jetzt getrennt als `Interaktive Karte` und `Schattenkarte` markiert werden. Eine Karte ohne Markierung bleibt weiterhin in den Medien des Ortes sichtbar, zeigt aber keine speziellen Befehle für interaktive Karten oder Schattenkarten.
+
+Ortsmedien können außerdem über die macOS-Teilen-Funktion geteilt werden.

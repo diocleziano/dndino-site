@@ -21,7 +21,8 @@ Qui definisci tutto ciò che appartiene al personaggio in modo generale:
 - tipo: `Eroe`, `PNG` o `Mostro`
 - razza, classe, taglia, allineamento
 - caratteristiche
-- CA, PF massimi, velocità, iniziativa
+- CA, PF massimi, dadi punti ferita, velocità, iniziativa e bonus competenza
+- tiri salvezza per caratteristica
 - descrizione, abilità, attacchi
 - immagini collegate
 - incantesimi collegati
@@ -150,25 +151,27 @@ Quando crei questo link, DnDino sa che deve eseguire un **1d20** usando quel mod
 - `Morso +6`
 - `Artigli +4`
 
-### Tiro per colpire e danni
+### Attacco completo
 
-`Tiro per colpire e danni` è il link più potente per la sezione **Attacchi**.
+`Attacco completo` è il link più potente per la sezione **Attacchi**.
 
 È sempre disponibile nel picker e apre un configuratore dedicato in cui puoi impostare:
 
-- modificatore al tiro per colpire
+- se l’attacco usa un tiro per colpire o una CD di tiro salvezza
+- modificatore al tiro per colpire oppure CD del tiro salvezza
+- tipo di attacco, per esempio mischia, distanza, area o un testo libero
 - eventuale soglia di critico
-- fino a tre formule danno
+- più formule danno modulari
 - titolo dei singoli danni
 
 È il modo migliore per costruire un attacco completo da mostro o PNG, perché in un solo link puoi concentrare:
 
-- il tiro per colpire
+- il tiro per colpire o la CD da superare
 - i danni principali
 - eventuali danni secondari
 - eventuali danni aggiuntivi
 
-Nel combattimento questo link è particolarmente utile, perché il popover collegato può essere usato anche per applicare i danni ai bersagli.
+Nel combattimento questo link è particolarmente utile, perché la finestra collegata può essere usata anche per selezionare i bersagli e applicare i danni.
 
 ## Esempio pratico per Attacchi
 
@@ -183,7 +186,7 @@ Poi puoi trasformare:
 - `+6` in `Tiro per colpire`
 - `1d8+4` in `Tira Dadi`
 
-oppure creare direttamente un solo link `Tiro per colpire e danni` sul nome dell’attacco o su una parte del testo.
+oppure creare direttamente un solo link `Attacco completo` sul nome dell’attacco o su una parte del testo.
 
 ## Collegare luoghi, personaggi e altri riferimenti
 
@@ -201,6 +204,24 @@ Quando premi `Link`, il picker prova anche a usare il testo selezionato come fil
 
 - se trova una corrispondenza reale nel nome dei record, apre il picker già filtrato
 - se non trova risultati reali, il filtro iniziale viene svuotato e vedi la lista completa
+
+## Caratteristiche, tiri salvezza e bonus competenza
+
+Nel form del personaggio le caratteristiche sono organizzate in modo da leggere subito:
+
+- valore della caratteristica
+- modificatore calcolato
+- tiro salvezza associato
+
+Il modificatore viene calcolato automaticamente dal valore della caratteristica.
+
+Il tiro salvezza parte dallo stesso valore del modificatore, ma resta modificabile: questo serve per gestire competenze, bonus speciali, penalità o creature con valori diversi da quelli standard.
+
+Il campo `Bonus Competenza` è separato e può essere positivo o negativo. Serve come riferimento della scheda e per importazioni o gestione avanzata.
+
+Il campo `Dadi Punti Ferita` raccoglie la parte descrittiva dei PF, per esempio `6d8 + 12`, utile quando vuoi conservare il formato del manuale.
+
+Il modificatore di iniziativa viene proposto a partire dalla Destrezza, ma resta modificabile. Nei tiri automatici di iniziativa per PNG e mostri DnDino usa il campo iniziativa già valorizzato, senza sommare di nuovo la Destrezza.
 
 ## Personaggi avventura
 

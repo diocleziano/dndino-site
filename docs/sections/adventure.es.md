@@ -387,3 +387,10 @@ La sección Aventura es el lugar adecuado cuando quieres:
 - iniciar una sesión en vivo
 - llegar rápidamente a los lugares, personajes, sesiones, imágenes y mapas de la campaña
 - consultar estadísticas y gráficos de combates completados
+## Novedades de la versión 1.4
+
+La Dashboard de aventura ahora incluye una gestión centralizada de imágenes.
+
+Desde ese gestor puedes revisar imágenes enlazadas a la aventura y a sus lugares sin duplicados, editar su nombre mostrado, enseñarlas a jugadores o al DM, compartirlas con macOS, ver dónde se usan y activar o desactivar las marcas `Mapa interactivo` y `Mapa sombra`.
+
+El panel de mapas también permite filtrar entre todos los mapas, mapas interactivos y Mapas sombra.

@@ -563,3 +563,12 @@ El panel `Lugares` es el lugar adecuado cuando quieres:
 - definir sublugares y enlaces
 - preparar misiones y su estado
 - situar presencias dentro del mundo
+## Novedades de la versión 1.4
+
+La dashboard de lugares ahora también incluye el modo `Sombra` cuando la aventura tiene Mapas sombra disponibles.
+
+Este modo muestra un Mapa sombra en la parte izquierda de la página de lugares y permite al DM revelar la mapa gradualmente durante la partida. Puedes dibujar anotaciones, añadir flechas, borrar anotaciones sin tocar la niebla, revelar zonas con herramientas circulares o rectangulares y mostrar o actualizar la mapa en la ventana de jugadores.
+
+Las mapas pueden marcarse por separado como `Mapa interactivo` y `Mapa sombra`. Una mapa sin marca sigue visible en los medios del lugar, pero no muestra los controles dedicados.
+
+Los medios del lugar también pueden compartirse mediante el sistema de compartir de macOS.

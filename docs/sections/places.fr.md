@@ -569,3 +569,12 @@ La dashboard `Lieux` est le bon endroit lorsque tu veux :
 
 !!! tip
     Si l'aventure devient très grande, la section `Lieux` fonctionne au mieux quand tu l'utilises comme une véritable carte mentale de la campagne : les lieux pour la structure, les quêtes pour les nœuds narratifs, les présences pour savoir qui occupe la scène et les combats pour ce qui s'y déroule.
+## Ajouts de la version 1.4
+
+La dashboard des lieux inclut maintenant aussi le mode `Ombres` quand l’aventure contient des Cartes des ombres.
+
+Ce mode affiche une Carte ombre dans la partie gauche de la page des lieux et permet au MJ de révéler la carte progressivement pendant la partie. Tu peux dessiner des annotations, ajouter des flèches, effacer les annotations sans modifier le brouillard, révéler des zones avec des outils circulaires ou rectangulaires, puis afficher ou mettre à jour la carte dans la fenêtre des joueurs.
+
+Les cartes peuvent maintenant être marquées séparément comme `Carte interactive` et `Carte ombre`. Une carte sans indicateur reste visible dans les médias du lieu, mais n’affiche pas les commandes dédiées.
+
+Les médias du lieu peuvent aussi être partagés via le système de partage de macOS.

@@ -546,3 +546,13 @@ Le combat de DnDino fonctionne au mieux quand tu :
 
 !!! tip
     Même si DnDino automatise de nombreuses opérations, tu peux continuer à lancer de vrais dés. Dans ce cas, utilise surtout le combat pour appliquer rapidement dégâts, soins et états, sans refaire les calculs de PV et de statistiques à la main.
+## Ajouts de la version 1.4
+
+Les liens Attaque complète peuvent maintenant fonctionner en deux modes:
+
+- jet d’attaque
+- jet de sauvegarde
+
+En mode jet d’attaque, DnDino peut comparer le résultat avec la CA des cibles sélectionnées et indiquer si l’attaque touche. En mode jet de sauvegarde, la fenêtre se concentre sur la DD et l’application des dégâts.
+
+La fenêtre d’Attaque complète prend aussi en charge le type d’attaque, pour préciser s’il s’agit d’une attaque au corps à corps, à distance, de zone ou personnalisée.

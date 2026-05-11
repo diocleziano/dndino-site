@@ -546,3 +546,13 @@ El combate de DnDino funciona mejor cuando:
 
 !!! tip
     Aunque DnDino automatiza muchas operaciones, puedes seguir tirando dados físicos. En ese caso, usa el combate sobre todo para aplicar daño, curación y estados rápidamente, sin recalcular PG y estadísticas a mano cada vez.
+## Novedades de la versión 1.4
+
+Los enlaces de Ataque completo ahora pueden funcionar en dos modos:
+
+- tirada de ataque
+- tirada de salvación
+
+En modo tirada de ataque, DnDino puede comparar el resultado con la CA de los objetivos seleccionados e indicar si el ataque impacta. En modo tirada de salvación, la ventana se centra en la CD y en aplicar el daño.
+
+La ventana de Ataque completo también admite un tipo de ataque, para indicar si es cuerpo a cuerpo, a distancia, de área o personalizado.

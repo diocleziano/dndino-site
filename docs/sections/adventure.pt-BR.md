@@ -387,3 +387,10 @@ A seção Aventura é o ponto certo quando você quer:
 - iniciar uma sessão ao vivo
 - chegar rapidamente aos lugares, personagens, sessões, imagens e mapas da campanha
 - consultar estatísticas e gráficos dos combates concluídos
+## Novidades da versão 1.4
+
+O painel da aventura agora inclui gerenciamento centralizado de imagens.
+
+Nesse gerenciador você pode revisar imagens vinculadas à aventura e aos seus locais sem duplicatas, editar o nome exibido, mostrá-las aos jogadores ou ao Mestre, compartilhá-las pelo macOS, ver onde são usadas e ativar ou desativar os marcadores `Mapa interativo` e `Mapa Sombra`.
+
+O painel de mapas também pode filtrar entre todos os mapas, mapas interativos e Mapas Sombra.

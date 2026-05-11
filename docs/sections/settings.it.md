@@ -26,8 +26,7 @@ Le categorie disponibili sono:
 - `Combattimento`
 - `Media`
 - `Tema`
-- `Database`
-- `Diagnostica`
+- `Database e Media`
 - `Supporto`
 - `Licenze`
 
@@ -232,16 +231,20 @@ La sezione `Tema` permette di scegliere la **palette globale** dell'app.
 
 Ogni tema mostra una piccola anteprima visiva con i colori principali, così puoi capire subito come cambierà l'aspetto generale dell'interfaccia.
 
-## Database
+## Database e Media
 
-La sezione `Database` è una delle più importanti per la sicurezza dei dati.
+La sezione `Database e Media` è una delle più importanti per la sicurezza dei dati.
 
 Qui trovi:
 
-- il percorso della cartella dati
-- il percorso del database SQLite
-- il percorso della cartella backup
-- informazioni sugli snapshot più recenti
+- dimensione del database
+- numero di immagini salvate nell'app
+- dimensione totale delle immagini salvate
+- gestione degli snapshot
+- esportazione dei backup
+- esportazione dei media
+
+Nella versione di rilascio DnDino non mostra i percorsi tecnici interni dell'app. Quei dati sono utili solo in debug e non servono nell'uso normale.
 
 ### Backup automatico
 
@@ -285,21 +288,21 @@ Per ciascuno vengono mostrati:
 - data
 - dimensione
 
+### Esportazione snapshot e media
+
+Gli snapshot e i media possono essere esportati in una posizione scelta dall'utente tramite i normali pannelli di salvataggio di macOS.
+
+Questo è utile per:
+
+- conservare una copia esterna dei backup
+- archiviare tutte le immagini salvate dall'app
+- spostare una copia dei dati su un supporto scelto dall'utente
+
+I media usati dall'app restano comunque copiati nella sandbox dell'applicazione, così DnDino non perde i riferimenti se il file originale viene spostato o cancellato dal Mac.
+
 ## Diagnostica
 
-La sezione `Diagnostica` serve a controllare lo stato tecnico del database SQLite usato dall'app.
-
-Qui puoi:
-
-- aggiornare i dati diagnostici
-- vedere il path del database
-- controllare se il file esiste
-- verificarne dimensione e data di modifica
-- vedere la versione SQLite
-
-### Tabelle
-
-La diagnostica mostra anche l'elenco delle tabelle trovate nel database, insieme al numero di record presenti in ciascuna.
+La sezione `Diagnostica` è riservata alla versione di debug e non viene mostrata nella versione di rilascio.
 
 ## Supporto
 

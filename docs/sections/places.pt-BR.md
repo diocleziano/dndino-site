@@ -563,3 +563,12 @@ O painel `Locais` é o lugar certo quando você quer:
 - definir sublocais e vínculos
 - preparar missões e seu estado
 - posicionar presenças no mundo
+## Novidades da versão 1.4
+
+O painel de locais agora também inclui o modo `Sombra` quando a aventura tem Mapas Sombra disponíveis.
+
+Esse modo mostra um Mapa Sombra no lado esquerdo da página de locais e permite ao Mestre revelar o mapa gradualmente durante a sessão. Você pode desenhar anotações, adicionar setas, apagar anotações sem alterar a névoa, revelar áreas com ferramentas circulares ou retangulares e mostrar ou atualizar o mapa na janela dos jogadores.
+
+Os mapas agora podem ser marcados separadamente como `Mapa interativo` e `Mapa Sombra`. Um mapa sem marca continua visível na mídia do local, mas não mostra os controles dedicados.
+
+A mídia do local também pode ser compartilhada pelo sistema de compartilhamento do macOS.

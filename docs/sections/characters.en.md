@@ -397,3 +397,10 @@ The overall logic is:
 
 !!! tip
     If you want to avoid confusion, always remember this distinction: the base sheet describes the character, while adventure, place, and combat describe that character's state in a specific context. You don't need to focus too much on the abstract separation itself; what matters is that some fields only exist in their own context.
+## Version 1.4 additions
+
+Character sheets now include saving throws for each ability, proficiency bonus, hit point dice, and an editable initiative modifier.
+
+Saving throws start from the related ability modifier, but they can be edited independently. This is useful for proficiency, special bonuses, penalties, or creatures whose saving throws do not match the base modifier.
+
+`Full Attack` links can now represent either an attack roll or a saving throw effect. They can also include an attack type, such as melee, ranged, area, or any custom description, plus modular damage rows.

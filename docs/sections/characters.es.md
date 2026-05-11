@@ -395,3 +395,10 @@ La lógica general es:
 
 !!! tip
     Si quieres evitar confusiones, recuerda siempre esta diferencia: la ficha base describe al personaje, mientras que aventura, lugar y combate describen su estado en un contexto concreto. No hace falta obsesionarse con la separación teórica; lo importante es que algunos campos solo existen dentro de su propio contexto.
+## Novedades de la versión 1.4
+
+Las fichas de personaje ahora incluyen tiradas de salvación para cada característica, bonificador de competencia, dados de puntos de golpe y un modificador de iniciativa editable.
+
+Las tiradas de salvación parten del modificador de característica correspondiente, pero pueden editarse por separado. Esto sirve para competencias, bonificadores especiales, penalizaciones o criaturas cuyas salvaciones no coinciden con el modificador base.
+
+Los enlaces `Ataque completo` ahora pueden representar una tirada de ataque o un efecto con tirada de salvación. También pueden incluir un tipo de ataque, como cuerpo a cuerpo, a distancia, área o una descripción libre, además de líneas de daño modulares.

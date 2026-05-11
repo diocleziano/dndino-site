@@ -387,3 +387,10 @@ La section Aventure est le bon point d'entrée quand tu veux :
 - lancer une session live
 - atteindre rapidement les lieux, personnages, sessions, images et cartes de la campagne
 - consulter les statistiques et graphiques des combats terminés
+## Ajouts de la version 1.4
+
+La dashboard d’aventure inclut maintenant une gestion centralisée des images.
+
+Depuis ce gestionnaire, tu peux consulter les images liées à l’aventure et à ses lieux sans doublons, modifier leur nom affiché, les montrer aux joueurs ou au MJ, les partager via macOS, voir où elles sont utilisées et activer ou désactiver les indicateurs `Carte interactive` et `Carte ombre`.
+
+Le panneau des cartes permet aussi de filtrer entre toutes les cartes, les cartes interactives et les Cartes des ombres.

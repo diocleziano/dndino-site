@@ -42,9 +42,9 @@ Le mappe interattive vivono nella sezione **Luoghi e Quest**.
 Possono essere usate in due modi:
 
 - come **modalità interattiva integrata** nella dashboard dei luoghi
-- come **pannello mappa grande** aperto da `Media`
+- come **pagina dedicata di modifica** aperta da `Media`
 
-## Differenza tra modalità integrata e pannello grande
+## Differenza tra modalità integrata e pagina dedicata
 
 ### Modalità interattiva integrata
 
@@ -56,9 +56,9 @@ In questa modalità:
 - il pannello di destra continua a mostrare il dettaglio del luogo selezionato
 - cliccando i marker navighi direttamente nei luoghi
 
-### Pannello mappa grande
+### Pagina dedicata di modifica
 
-Dal pannello `Media` di un luogo puoi anche aprire una mappa interattiva in un pannello dedicato più grande.
+Dal pannello `Media` di un luogo puoi aprire una mappa interattiva in una pagina dedicata.
 
 Questa modalità è utile quando vuoi:
 
@@ -186,11 +186,11 @@ Quando non sei in modalità modifica:
 
 Nella modalità interattiva integrata, aprire un luogo significa aggiornare subito il pannello di destra.
 
-Nel pannello mappa grande, aprire un luogo chiude il pannello della mappa e riporta il focus sul luogo selezionato nella dashboard.
+Nella pagina dedicata puoi tornare al luogo dalla topbar della pagina mappa.
 
 ## Come si crea un marker
 
-Per creare un marker nel pannello mappa grande:
+Per creare un marker nella pagina dedicata:
 
 1. apri la mappa interattiva da `Media`
 2. premi `Modifica`
@@ -200,7 +200,7 @@ Per creare un marker nel pannello mappa grande:
 
 ## Modalità Modifica
 
-Nel pannello grande esiste un vero stato di modifica.
+Nella pagina dedicata esiste un vero stato di modifica.
 
 Quando premi `Modifica`:
 
@@ -256,7 +256,7 @@ Sempre dall’inspector, quando un marker è selezionato, puoi usare:
 
 ## L’inspector della mappa
 
-Il pannello laterale della mappa grande cambia in base allo stato corrente.
+Il pannello laterale della pagina mappa cambia in base allo stato corrente.
 
 ### In lettura
 
@@ -310,9 +310,11 @@ Questo permette scenari come:
 
 ## Come aprire una mappa interattiva da Media
 
-Nel pannello `Media` di un luogo, le mappe di tipo `Mappa` possono mostrare l’azione:
+Nel pannello `Media` di un luogo, le mappe abilitate come mappa interattiva possono mostrare l’azione:
 
 - `Apri mappa interattiva`
+
+Se una mappa non è abilitata come interattiva, resta comunque visibile come mappa del luogo, ma non mostra il pulsante per aprire la modifica interattiva.
 
 ## Quando conviene usare la modalità integrata
 
@@ -322,9 +324,9 @@ Conviene usare la modalità interattiva integrata quando vuoi:
 - lavorare con mappa e pannello luogo affiancati
 - usare la mappa come alternativa all’albero classico
 
-## Quando conviene usare il pannello grande
+## Quando conviene usare la pagina dedicata
 
-Conviene usare il pannello grande quando vuoi:
+Conviene usare la pagina dedicata quando vuoi:
 
 - creare marker
 - spostare marker
@@ -340,3 +342,14 @@ L’idea chiave è semplice:
 - il **luogo** resta il record principale
 - la **mappa** diventa la superficie visiva
 - il **marker** è il collegamento operativo tra immagine e contenuto
+
+## Mappe interattive e Mappe Ombra
+
+Una mappa può essere abilitata come `Mappa interattiva`, come `Mappa Ombra`, oppure entrambe le cose.
+
+La differenza è questa:
+
+- la **Mappa interattiva** serve a navigare tra luoghi tramite marker
+- la **Mappa Ombra** serve a rivelare gradualmente una mappa ai giocatori durante la sessione
+
+Nella dashboard avventura e nei media dei luoghi i filtri evitano duplicati inutili: se una mappa appartiene a più categorie, nella vista `Tutti` viene comunque mostrata una sola volta.

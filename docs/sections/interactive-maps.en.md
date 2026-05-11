@@ -340,3 +340,10 @@ The core idea is simple:
 - the **place** remains the main record
 - the **map** becomes the visual surface
 - the **marker** is the operational link between image and content
+## Version 1.4 additions
+
+Interactive map editing now opens in a dedicated page instead of a side panel inside Places. This keeps the Places page lighter and gives map editing its own workspace.
+
+Only maps marked as interactive show the action to open the interactive editor. Maps that are not interactive remain available as normal place maps.
+
+A map can be marked as an `Interactive Map`, a `Shadow Map`, or both. Interactive Maps are used to navigate places through markers; Shadow Map assets are used to reveal a map gradually to players during the session.

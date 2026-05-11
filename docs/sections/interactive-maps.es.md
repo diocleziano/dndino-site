@@ -340,3 +340,10 @@ La idea clave es simple:
 - el **lugar** sigue siendo el registro principal
 - el **mapa** se convierte en la superficie visual
 - el **marcador** es el vínculo operativo entre imagen y contenido
+## Novedades de la versión 1.4
+
+La edición de mapas interactivos ahora se abre en una página dedicada, en lugar de un panel lateral dentro de Lugares. Así la página de lugares queda más ligera y la edición del mapa tiene su propio espacio de trabajo.
+
+Solo los mapas marcados como interactivos muestran la acción para abrir el editor interactivo. Los demás siguen disponibles como mapas normales del lugar.
+
+Un mapa puede marcarse como `Mapa interactivo`, como `Mapa sombra` o como ambas cosas. Los Mapas interactivos sirven para navegar entre lugares con marcadores; los Mapas sombra sirven para revelar gradualmente una mapa a los jugadores durante la sesión.

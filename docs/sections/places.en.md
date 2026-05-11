@@ -569,3 +569,12 @@ The `Places` dashboard is the right place when you want to:
 
 !!! tip
     If the adventure becomes very large, `Places` works best when you use it as a true mental map of the campaign: places for structure, quests for narrative nodes, occupants for who is present, and combats for what happens in that point of the world.
+## Version 1.4 additions
+
+The Places dashboard now also includes the `Shadow` mode when the adventure has Shadow Map assets available.
+
+Shadow mode shows a Shadow Map in the left side of the Places page and lets the DM reveal the map gradually during play. You can draw annotations, add arrows, erase annotations without changing the fog layer, reveal areas with circular or rectangular tools, and show or update the map in the player window.
+
+Maps can now be marked separately as `Interactive Map` and `Shadow Map`. A regular map with no flag still remains visible in the place media list, but it does not show interactive-map or Shadow Map controls.
+
+Place media can also be shared through the macOS sharing system, using the display name configured in DnDino.

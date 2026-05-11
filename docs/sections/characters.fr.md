@@ -395,3 +395,10 @@ La logique générale est la suivante :
 
 !!! tip
     Pour éviter la confusion, garde toujours cette distinction en tête : la fiche de base décrit le personnage, tandis que l'aventure, le lieu et le combat décrivent son état dans un contexte précis. Il n'est pas nécessaire de trop s'attacher à la séparation théorique : retiens surtout que certains champs n'existent que dans leur propre contexte.
+## Ajouts de la version 1.4
+
+Les fiches de personnage incluent maintenant les jets de sauvegarde pour chaque caractéristique, le bonus de maîtrise, les dés de points de vie et un modificateur d’initiative modifiable.
+
+Les jets de sauvegarde partent du modificateur de caractéristique correspondant, mais peuvent être modifiés séparément. C’est utile pour les maîtrises, bonus spéciaux, pénalités ou créatures dont les sauvegardes ne correspondent pas au modificateur de base.
+
+Les liens `Attaque complète` peuvent maintenant représenter un jet d’attaque ou un effet à jet de sauvegarde. Ils peuvent aussi contenir un type d’attaque, par exemple corps à corps, distance, zone ou une description libre, ainsi que des lignes de dégâts modulaires.

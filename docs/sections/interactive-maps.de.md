@@ -340,3 +340,10 @@ Die Grundidee ist einfach:
 - der **Ort** bleibt der Hauptdatensatz
 - die **Karte** wird zur visuellen Oberfläche
 - der **Marker** ist die operative Verbindung zwischen Bild und Inhalt
+## Ergänzungen in Version 1.4
+
+Die Bearbeitung interaktiver Karten öffnet sich jetzt in einer eigenen Seite statt in einem Seitenpanel innerhalb der Orte. Dadurch bleibt die Orte-Seite leichter, und die Kartenbearbeitung hat einen eigenen Arbeitsbereich.
+
+Nur Karten, die als interaktiv markiert sind, zeigen die Aktion zum Öffnen des interaktiven Editors. Andere Karten bleiben als normale Ortskarten verfügbar.
+
+Eine Karte kann als `Interaktive Karte`, als `Schattenkarte` oder als beides markiert werden. Interaktive Karten dienen der Navigation zwischen Orten über Marker; Schattenkarten dienen dazu, eine Karte während der Sitzung schrittweise für die Spieler aufzudecken.

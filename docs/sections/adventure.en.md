@@ -387,3 +387,10 @@ The Adventure section is the right place when you want to:
 - start a live session
 - quickly reach the campaign's places, characters, sessions, images, and maps
 - review statistics and charts for completed combats
+## Version 1.4 additions
+
+The Adventure Dashboard now includes centralized image management.
+
+From the image manager you can review images linked to the adventure and its places without duplicates, edit their display name, show them to players or the DM, share them through macOS, see where they are used, and enable or disable the `Interactive Map` and `Shadow Map` flags.
+
+The Maps panel can also filter maps by all maps, interactive maps, and Shadow Map assets.

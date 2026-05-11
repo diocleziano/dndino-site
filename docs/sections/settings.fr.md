@@ -323,3 +323,12 @@ Elle inclut actuellement en particulier la partie liée au **System Reference Do
 
 !!! tip
     Si tu configures DnDino pour la première fois, les sections les plus utiles à vérifier tout de suite sont `Général`, `Topbar`, `Combat` et `Base de données`. Ce sont généralement celles qui influencent le plus l’usage quotidien et la sécurité des données.
+## Ajouts de la version 1.4
+
+La section `Base de données` devient `Base de données et médias`.
+
+Dans la version de publication, DnDino n’affiche plus les chemins techniques internes. La section se concentre sur les informations utiles: taille de la base de données, nombre d’images enregistrées, taille totale des images, instantanés, exportation des sauvegardes et exportation des médias.
+
+Les instantanés et les médias de l’app peuvent être exportés vers un emplacement choisi par l’utilisateur avec le panneau de sauvegarde standard de macOS. Les médias restent quand même copiés dans la sandbox de l’app, afin que DnDino ne perde pas les références si les fichiers originaux sont déplacés ou supprimés.
+
+La section Diagnostic est réservée aux versions de debug et n’est pas affichée dans la version publiée.

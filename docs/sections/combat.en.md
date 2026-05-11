@@ -548,3 +548,13 @@ DnDino combat works best when you:
 
 !!! tip
     Even though DnDino automates many operations, you can still roll physical dice. In that case, use combat mainly to apply damage, healing, and conditions quickly, without repeatedly recalculating HP and statistics by hand.
+## Version 1.4 additions
+
+Full Attack links can now work in two modes:
+
+- attack roll
+- saving throw
+
+In attack roll mode, DnDino can compare the result with the AC of selected targets and show whether the attack hits. In saving throw mode, the window focuses on the save DC and damage application.
+
+Full Attack windows also support an attack type field, so the DM can keep track of whether the action is melee, ranged, area-based, or something custom.

@@ -395,3 +395,10 @@ A lógica geral é esta:
 
 !!! tip
     Se você quiser evitar confusão, lembre-se sempre desta distinção: a ficha base descreve o personagem, enquanto aventura, lugar e combate descrevem o seu estado em um contexto específico. Não é preciso se prender demais à separação teórica; o importante é entender que alguns campos só existem dentro do seu próprio contexto.
+## Novidades da versão 1.4
+
+As fichas de personagem agora incluem testes de resistência para cada atributo, bônus de proficiência, dados de pontos de vida e um modificador de iniciativa editável.
+
+Os testes de resistência começam a partir do modificador do atributo correspondente, mas podem ser editados separadamente. Isso é útil para proficiências, bônus especiais, penalidades ou criaturas cujos testes não seguem o modificador base.
+
+Links de `Ataque completo` agora podem representar uma rolagem de ataque ou um efeito com teste de resistência. Eles também podem incluir um tipo de ataque, como corpo a corpo, à distância, área ou uma descrição livre, além de linhas de dano modulares.

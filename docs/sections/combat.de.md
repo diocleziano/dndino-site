@@ -546,3 +546,13 @@ Der Kampf funktioniert am besten, wenn du:
 
 !!! tip
     Auch wenn DnDino viele Vorgänge automatisiert, kannst du weiterhin echte Würfel verwenden. Nutze den Kampf dann vor allem, um Schaden, Heilung und Zustände schnell anzuwenden, ohne TP und Statistiken ständig von Hand nachzurechnen.
+## Ergänzungen in Version 1.4
+
+Vollangriff-Links können jetzt in zwei Modi funktionieren:
+
+- Angriffswurf
+- Rettungswurf
+
+Im Angriffswurfmodus kann DnDino das Ergebnis mit der RK der ausgewählten Ziele vergleichen und anzeigen, ob der Angriff trifft. Im Rettungswurfmodus konzentriert sich das Fenster auf den SG und die Schadensanwendung.
+
+Das Vollangriff-Fenster unterstützt außerdem einen Angriffstyp, damit klar bleibt, ob es sich um Nahkampf, Fernkampf, Fläche oder eine eigene Beschreibung handelt.
