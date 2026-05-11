@@ -670,10 +670,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tiro-per-colpire-e-danni" class="md-nav__link">
+  <a href="#attacco-completo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tiro per colpire e danni
+        Attacco completo
       
     </span>
   </a>
@@ -701,6 +701,17 @@
     <span class="md-ellipsis">
       
         Collegare luoghi, personaggi e altri riferimenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caratteristiche-tiri-salvezza-e-bonus-competenza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caratteristiche, tiri salvezza e bonus competenza
       
     </span>
   </a>
@@ -1432,10 +1443,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tiro-per-colpire-e-danni" class="md-nav__link">
+  <a href="#attacco-completo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tiro per colpire e danni
+        Attacco completo
       
     </span>
   </a>
@@ -1463,6 +1474,17 @@
     <span class="md-ellipsis">
       
         Collegare luoghi, personaggi e altri riferimenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caratteristiche-tiri-salvezza-e-bonus-competenza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caratteristiche, tiri salvezza e bonus competenza
       
     </span>
   </a>
@@ -1737,7 +1759,8 @@
 <li>tipo: <code>Eroe</code>, <code>PNG</code> o <code>Mostro</code></li>
 <li>razza, classe, taglia, allineamento</li>
 <li>caratteristiche</li>
-<li>CA, PF massimi, velocità, iniziativa</li>
+<li>CA, PF massimi, dadi punti ferita, velocità, iniziativa e bonus competenza</li>
+<li>tiri salvezza per caratteristica</li>
 <li>descrizione, abilità, attacchi</li>
 <li>immagini collegate</li>
 <li>incantesimi collegati</li>
@@ -1848,23 +1871,25 @@
 <li><code>Morso +6</code></li>
 <li><code>Artigli +4</code></li>
 </ul>
-<h3 id="tiro-per-colpire-e-danni">Tiro per colpire e danni<a class="headerlink" href="#tiro-per-colpire-e-danni" title="Permanent link">&para;</a></h3>
-<p><code>Tiro per colpire e danni</code> è il link più potente per la sezione <strong>Attacchi</strong>.</p>
+<h3 id="attacco-completo">Attacco completo<a class="headerlink" href="#attacco-completo" title="Permanent link">&para;</a></h3>
+<p><code>Attacco completo</code> è il link più potente per la sezione <strong>Attacchi</strong>.</p>
 <p>È sempre disponibile nel picker e apre un configuratore dedicato in cui puoi impostare:</p>
 <ul>
-<li>modificatore al tiro per colpire</li>
+<li>se l’attacco usa un tiro per colpire o una CD di tiro salvezza</li>
+<li>modificatore al tiro per colpire oppure CD del tiro salvezza</li>
+<li>tipo di attacco, per esempio mischia, distanza, area o un testo libero</li>
 <li>eventuale soglia di critico</li>
-<li>fino a tre formule danno</li>
+<li>più formule danno modulari</li>
 <li>titolo dei singoli danni</li>
 </ul>
 <p>È il modo migliore per costruire un attacco completo da mostro o PNG, perché in un solo link puoi concentrare:</p>
 <ul>
-<li>il tiro per colpire</li>
+<li>il tiro per colpire o la CD da superare</li>
 <li>i danni principali</li>
 <li>eventuali danni secondari</li>
 <li>eventuali danni aggiuntivi</li>
 </ul>
-<p>Nel combattimento questo link è particolarmente utile, perché il popover collegato può essere usato anche per applicare i danni ai bersagli.</p>
+<p>Nel combattimento questo link è particolarmente utile, perché la finestra collegata può essere usata anche per selezionare i bersagli e applicare i danni.</p>
 <h2 id="esempio-pratico-per-attacchi">Esempio pratico per Attacchi<a class="headerlink" href="#esempio-pratico-per-attacchi" title="Permanent link">&para;</a></h2>
 <p>Un modo molto efficace di scrivere un attacco di mostro è usare testo leggibile per il DM e link cliccabili solo nei punti utili.</p>
 <p>Per esempio:</p>
@@ -1876,7 +1901,7 @@
 <li><code>+6</code> in <code>Tiro per colpire</code></li>
 <li><code>1d8+4</code> in <code>Tira Dadi</code></li>
 </ul>
-<p>oppure creare direttamente un solo link <code>Tiro per colpire e danni</code> sul nome dell’attacco o su una parte del testo.</p>
+<p>oppure creare direttamente un solo link <code>Attacco completo</code> sul nome dell’attacco o su una parte del testo.</p>
 <h2 id="collegare-luoghi-personaggi-e-altri-riferimenti">Collegare luoghi, personaggi e altri riferimenti<a class="headerlink" href="#collegare-luoghi-personaggi-e-altri-riferimenti" title="Permanent link">&para;</a></h2>
 <p>Il sistema di link non serve solo per i tiri. Nei campi descrittivi puoi anche creare collegamenti verso altri contenuti dell’app, per esempio:</p>
 <ul>
@@ -1892,6 +1917,18 @@
 <li>se trova una corrispondenza reale nel nome dei record, apre il picker già filtrato</li>
 <li>se non trova risultati reali, il filtro iniziale viene svuotato e vedi la lista completa</li>
 </ul>
+<h2 id="caratteristiche-tiri-salvezza-e-bonus-competenza">Caratteristiche, tiri salvezza e bonus competenza<a class="headerlink" href="#caratteristiche-tiri-salvezza-e-bonus-competenza" title="Permanent link">&para;</a></h2>
+<p>Nel form del personaggio le caratteristiche sono organizzate in modo da leggere subito:</p>
+<ul>
+<li>valore della caratteristica</li>
+<li>modificatore calcolato</li>
+<li>tiro salvezza associato</li>
+</ul>
+<p>Il modificatore viene calcolato automaticamente dal valore della caratteristica.</p>
+<p>Il tiro salvezza parte dallo stesso valore del modificatore, ma resta modificabile: questo serve per gestire competenze, bonus speciali, penalità o creature con valori diversi da quelli standard.</p>
+<p>Il campo <code>Bonus Competenza</code> è separato e può essere positivo o negativo. Serve come riferimento della scheda e per importazioni o gestione avanzata.</p>
+<p>Il campo <code>Dadi Punti Ferita</code> raccoglie la parte descrittiva dei PF, per esempio <code>6d8 + 12</code>, utile quando vuoi conservare il formato del manuale.</p>
+<p>Il modificatore di iniziativa viene proposto a partire dalla Destrezza, ma resta modificabile. Nei tiri automatici di iniziativa per PNG e mostri DnDino usa il campo iniziativa già valorizzato, senza sommare di nuovo la Destrezza.</p>
 <h2 id="personaggi-avventura">Personaggi avventura<a class="headerlink" href="#personaggi-avventura" title="Permanent link">&para;</a></h2>
 <p>Il <strong>personaggio avventura</strong> è il livello che collega una scheda base a una specifica campagna.</p>
 <p>Questo record serve a gestire valori che hanno senso <strong>solo dentro un’avventura</strong>, per esempio:</p>

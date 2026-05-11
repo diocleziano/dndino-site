@@ -1170,15 +1170,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
+  <a href="#database-e-media" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Database
+        Database e Media
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Database">
+    <nav class="md-nav" aria-label="Database e Media">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1236,6 +1236,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#esportazione-snapshot-e-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esportazione snapshot e media
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1249,23 +1260,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Diagnostica">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tabelle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tabelle
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1891,15 +1885,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
+  <a href="#database-e-media" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Database
+        Database e Media
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Database">
+    <nav class="md-nav" aria-label="Database e Media">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1957,6 +1951,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#esportazione-snapshot-e-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esportazione snapshot e media
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1970,23 +1975,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Diagnostica">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tabelle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tabelle
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2054,8 +2042,7 @@
 <li><code>Combattimento</code></li>
 <li><code>Media</code></li>
 <li><code>Tema</code></li>
-<li><code>Database</code></li>
-<li><code>Diagnostica</code></li>
+<li><code>Database e Media</code></li>
 <li><code>Supporto</code></li>
 <li><code>Licenze</code></li>
 </ul>
@@ -2192,15 +2179,18 @@
 <h2 id="tema">Tema<a class="headerlink" href="#tema" title="Permanent link">&para;</a></h2>
 <p>La sezione <code>Tema</code> permette di scegliere la <strong>palette globale</strong> dell'app.</p>
 <p>Ogni tema mostra una piccola anteprima visiva con i colori principali, così puoi capire subito come cambierà l'aspetto generale dell'interfaccia.</p>
-<h2 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
-<p>La sezione <code>Database</code> è una delle più importanti per la sicurezza dei dati.</p>
+<h2 id="database-e-media">Database e Media<a class="headerlink" href="#database-e-media" title="Permanent link">&para;</a></h2>
+<p>La sezione <code>Database e Media</code> è una delle più importanti per la sicurezza dei dati.</p>
 <p>Qui trovi:</p>
 <ul>
-<li>il percorso della cartella dati</li>
-<li>il percorso del database SQLite</li>
-<li>il percorso della cartella backup</li>
-<li>informazioni sugli snapshot più recenti</li>
+<li>dimensione del database</li>
+<li>numero di immagini salvate nell'app</li>
+<li>dimensione totale delle immagini salvate</li>
+<li>gestione degli snapshot</li>
+<li>esportazione dei backup</li>
+<li>esportazione dei media</li>
 </ul>
+<p>Nella versione di rilascio DnDino non mostra i percorsi tecnici interni dell'app. Quei dati sono utili solo in debug e non servono nell'uso normale.</p>
 <h3 id="backup-automatico">Backup automatico<a class="headerlink" href="#backup-automatico" title="Permanent link">&para;</a></h3>
 <p>Puoi scegliere:</p>
 <ul>
@@ -2234,18 +2224,17 @@
 <li>data</li>
 <li>dimensione</li>
 </ul>
-<h2 id="diagnostica">Diagnostica<a class="headerlink" href="#diagnostica" title="Permanent link">&para;</a></h2>
-<p>La sezione <code>Diagnostica</code> serve a controllare lo stato tecnico del database SQLite usato dall'app.</p>
-<p>Qui puoi:</p>
+<h3 id="esportazione-snapshot-e-media">Esportazione snapshot e media<a class="headerlink" href="#esportazione-snapshot-e-media" title="Permanent link">&para;</a></h3>
+<p>Gli snapshot e i media possono essere esportati in una posizione scelta dall'utente tramite i normali pannelli di salvataggio di macOS.</p>
+<p>Questo è utile per:</p>
 <ul>
-<li>aggiornare i dati diagnostici</li>
-<li>vedere il path del database</li>
-<li>controllare se il file esiste</li>
-<li>verificarne dimensione e data di modifica</li>
-<li>vedere la versione SQLite</li>
+<li>conservare una copia esterna dei backup</li>
+<li>archiviare tutte le immagini salvate dall'app</li>
+<li>spostare una copia dei dati su un supporto scelto dall'utente</li>
 </ul>
-<h3 id="tabelle">Tabelle<a class="headerlink" href="#tabelle" title="Permanent link">&para;</a></h3>
-<p>La diagnostica mostra anche l'elenco delle tabelle trovate nel database, insieme al numero di record presenti in ciascuna.</p>
+<p>I media usati dall'app restano comunque copiati nella sandbox dell'applicazione, così DnDino non perde i riferimenti se il file originale viene spostato o cancellato dal Mac.</p>
+<h2 id="diagnostica">Diagnostica<a class="headerlink" href="#diagnostica" title="Permanent link">&para;</a></h2>
+<p>La sezione <code>Diagnostica</code> è riservata alla versione di debug e non viene mostrata nella versione di rilascio.</p>
 <h2 id="supporto">Supporto<a class="headerlink" href="#supporto" title="Permanent link">&para;</a></h2>
 <p>La sezione <code>Supporto</code> raccoglie i canali rapidi per contattare chi sviluppa l'app.</p>
 <p>Qui trovi:</p>

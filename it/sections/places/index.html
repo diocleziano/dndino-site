@@ -692,6 +692,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#modalita-ombra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modalità Ombra
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1112,6 +1123,17 @@
     <span class="md-ellipsis">
       
         Relazione tra Luoghi, Mappe e Mappe Interattive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappa-ombra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mappa Ombra
       
     </span>
   </a>
@@ -1542,6 +1564,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#modalita-ombra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modalità Ombra
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1969,6 +2002,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mappa-ombra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mappa Ombra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#quest-nella-sezione-luoghi" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2042,6 +2086,7 @@
 <ul>
 <li><code>Normale</code></li>
 <li><code>Interattiva</code></li>
+<li><code>Ombra</code></li>
 </ul>
 <p>e in una struttura a due aree:</p>
 <ul>
@@ -2073,6 +2118,18 @@
 <li>è possibile gestire zoom e spostamento sulla mappa</li>
 </ul>
 <p>Dal pannello <code>Media</code> puoi comunque aprire rapidamente la mappa interattiva associata a una mappa del luogo, ma nella modalità <code>Interattiva</code> la mappa diventa proprio il contenuto principale della parte sinistra della dashboard.</p>
+<h3 id="modalita-ombra">Modalità Ombra<a class="headerlink" href="#modalita-ombra" title="Permanent link">&para;</a></h3>
+<p>La modalità <code>Ombra</code> usa una <strong>Mappa Ombra</strong> direttamente nella parte sinistra della dashboard dei luoghi.</p>
+<p>È pensata per gestire una mappa da rivelare gradualmente ai giocatori:</p>
+<ul>
+<li>puoi disegnare annotazioni sopra la mappa</li>
+<li>puoi usare frecce per indicare percorsi o punti importanti</li>
+<li>puoi usare la gomma per cancellare annotazioni senza toccare la nebbia</li>
+<li>puoi rivelare parti della mappa con strumenti circolari o rettangolari</li>
+<li>puoi mostrare o aggiornare la mappa nella finestra giocatori</li>
+</ul>
+<p>Le annotazioni vengono inviate ai giocatori in modo più immediato, mentre la parte di nebbia/rivelazione viene aggiornata quando usi il pulsante di mostra/aggiorna.</p>
+<p>Come per le mappe interattive, DnDino prova a scegliere la mappa più adatta al luogo selezionato: prima cerca una Mappa Ombra del luogo corrente, poi risale ai luoghi padre. Se esistono più Mappe Ombra nell’avventura, puoi sceglierle dal selettore.</p>
 <h2 id="la-colonna-di-sinistra">La colonna di sinistra<a class="headerlink" href="#la-colonna-di-sinistra" title="Permanent link">&para;</a></h2>
 <p>La colonna sinistra è il pannello di navigazione della sezione.</p>
 <p>Qui trovi:</p>
@@ -2273,7 +2330,10 @@
 <li>visibilità per <code>Giocatori</code></li>
 <li>visibilità per <code>Master</code></li>
 <li>testo di presentazione</li>
+<li>se una mappa può essere usata come <code>Mappa interattiva</code></li>
+<li>se una mappa può essere usata come <code>Mappa Ombra</code></li>
 </ul>
+<p>Una mappa non deve essere per forza interattiva. Se una mappa serve solo come immagine da mostrare ai giocatori o al master, puoi lasciarla senza flag: resterà comunque visibile nei media del luogo, ma non mostrerà i comandi dedicati alle mappe interattive o alle Mappe Ombra.</p>
 <h2 id="hero-del-luogo">Hero del luogo<a class="headerlink" href="#hero-del-luogo" title="Permanent link">&para;</a></h2>
 <p>Quando selezioni un luogo, il pannello di destra mostra una hero con:</p>
 <ul>
@@ -2345,7 +2405,9 @@
 <li>sfogliare le mappe</li>
 <li>mostrarle ai giocatori</li>
 <li>mostrarle al master</li>
+<li>condividere le immagini tramite il sistema di condivisione di macOS</li>
 <li>aprire direttamente una mappa interattiva</li>
+<li>aprire o usare una Mappa Ombra quando la mappa è abilitata per quella funzione</li>
 </ul>
 <h3 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h3>
 <p><img alt="Scheda Note" class="img-shot" src="../../../images/en_luoghiequest_note.png" /></p>
@@ -2466,6 +2528,18 @@
 <li>la <strong>mappa</strong> è un asset visuale collegato al luogo</li>
 <li>la <strong>mappa interattiva</strong> è una mappa scelta come supporto navigabile, arricchita da marker</li>
 </ul>
+<h2 id="mappa-ombra">Mappa Ombra<a class="headerlink" href="#mappa-ombra" title="Permanent link">&para;</a></h2>
+<p>Una <strong>Mappa Ombra</strong> è una mappa pensata per essere rivelata poco alla volta durante la sessione.</p>
+<p>Rispetto a una mappa interattiva, non serve principalmente a navigare tra marker, ma a gestire ciò che i giocatori possono vedere:</p>
+<ul>
+<li>la mappa può partire coperta</li>
+<li>il DM vede una versione oscurata ma ancora leggibile, così può capire cosa sta rivelando</li>
+<li>le aree possono essere rivelate con pennello circolare o selezione rettangolare</li>
+<li>si possono aggiungere disegni e frecce sopra la mappa</li>
+<li>la gomma rimuove le annotazioni senza modificare la nebbia</li>
+</ul>
+<p>La Mappa Ombra può essere aperta dal luogo o usata direttamente nella modalità <code>Ombra</code> della dashboard luoghi.</p>
+<p>Quando usi <code>Mostra/Aggiorna</code>, se la mappa non è ancora visibile ai giocatori viene aperta nella finestra giocatori; se è già visibile, viene aggiornata con lo stato corrente della nebbia.</p>
 <h2 id="quest-nella-sezione-luoghi">Quest nella sezione Luoghi<a class="headerlink" href="#quest-nella-sezione-luoghi" title="Permanent link">&para;</a></h2>
 <p>Le quest vivono nella stessa sezione dei luoghi, ma hanno un comportamento dedicato.</p>
 <p>Una quest:</p>
