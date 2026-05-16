@@ -98,7 +98,7 @@ Tu peux choisir d’afficher la topbar :
 
 ### Dé par défaut
 
-Ici, tu peux choisir le **type de dé par défaut** proposé par le lanceur de dés rapide.
+Ici, tu peux choisir le **type de dé par défaut** proposé par le lanceur de dés dans `Outils rapides`.
 
 ### Ouverture rapide des personnages
 

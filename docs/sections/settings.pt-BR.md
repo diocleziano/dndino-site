@@ -98,7 +98,7 @@ Você pode escolher se quer ver a barra superior:
 
 ### Dado padrão
 
-Aqui você pode escolher o **tipo de dado padrão** do rolador rápido.
+Aqui você pode escolher o **tipo de dado padrão** do rolador de dados em `Ferramentas rápidas`.
 
 ### Abertura rápida de personagens
 

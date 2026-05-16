@@ -359,10 +359,19 @@ When used in combat:
 - the window shows the attack name
 - the attacker is clearly shown
 - you can choose one or more targets
+- if the attack uses an attack roll, DnDino can show whether the result reaches the selected targets' AC
 - you can manage multiple damage rows
+- each damage row can include an optional text effect, useful for spells or attacks with extra effects
 - you apply selected damage to the chosen targets
 
-While creating the link, damage is modular: use the `+` button to add rows and show only the rows that have values.
+When creating the link, you can choose whether it is based on:
+
+- `Attack Roll`
+- `Saving Throw`
+
+For an attack roll, you set the modifier, optional critical range, and attack type. For a saving throw, you set the saving throw DC, the required ability, and the attack or effect type.
+
+In both cases, damage is modular: use the `+` button to add rows and show only the rows that have values. Damage formulas also support multiplication and division on the final total, using a clear parenthesized form such as `(1d8+3)/2`. Division rounds down: if the total is 11, `11/2` becomes `5`.
 
 ## Spells
 

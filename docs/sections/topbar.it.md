@@ -66,30 +66,33 @@ Puoi cercare per nome, categoria, prerequisiti, tipo di regola, scuola o descriz
 
 I pulsanti inferiori aprono direttamente le sezioni complete di talenti, glossario e incantesimi.
 
-## Dadi
+## Strumenti rapidi
 
-`Dadi` apre il lanciadadi rapido.
+`Strumenti rapidi` raccoglie in un unico pannello gli strumenti da usare al volo durante preparazione e sessione.
 
-Da qui puoi scegliere:
+Da qui puoi aprire:
 
-- numero di dadi
-- tipo di dado
-- modificatore
+- il **lanciadadi rapido**
+- il **generatore di nomi**
+- i **timer rapidi**
+
+### Lanciadadi
+
+Il lanciadadi permette di scegliere numero di dadi, tipo di dado e modificatore.
 
 Il dado predefinito viene scelto in **Impostazioni**. Il risultato mostra ogni dado tirato e il totale, così puoi usarlo sia per prove rapide sia per tiri improvvisati durante una sessione.
 
-## Nomi
+### Generatore di nomi
 
-`Nomi` apre il generatore rapido di nomi.
-
-Serve quando ti occorre inventare velocemente un nome per:
-
-- PNG
-- mostri
-- luoghi improvvisati
-- incontri non preparati
+Il generatore di nomi serve quando ti occorre inventare velocemente un nome per PNG, mostri, luoghi improvvisati o incontri non preparati.
 
 Puoi scegliere razza e sesso, rigenerare i risultati e copiare un nome con un clic.
+
+### Timer rapidi
+
+I timer rapidi servono per tenere sotto controllo scadenze da tavolo senza uscire dalla schermata corrente.
+
+Puoi impostare un nome, scegliere la durata in stile macOS e avviare fino a quattro timer contemporaneamente. Ogni timer può essere messo in pausa, ripreso, fermato o rimosso.
 
 ## Impostazioni
 
@@ -130,6 +133,5 @@ Usala soprattutto quando:
 - stai lavorando nei luoghi e vuoi tornare subito alla dashboard avventura
 - durante una sessione ti serve cercare una regola senza cambiare schermata
 - vuoi consultare un personaggio o un oggetto al volo
-- ti serve un tiro rapido
-- vuoi generare un nome senza interrompere il flusso
+- ti serve un tiro rapido, un timer o un nome improvvisato
 - hai una sessione live aperta e vuoi gestirla senza lasciare la sezione corrente

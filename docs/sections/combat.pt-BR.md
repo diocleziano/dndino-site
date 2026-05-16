@@ -359,10 +359,19 @@ Quando usado em combate:
 - a janela mostra o nome do ataque
 - o atacante fica indicado claramente
 - você pode escolher um ou mais alvos
+- se o ataque usa uma rolagem de ataque, o DnDino pode indicar se o resultado alcança a CA dos alvos selecionados
 - você pode gerenciar várias linhas de dano
+- cada linha de dano pode ter um efeito textual opcional, útil para magias ou ataques com efeitos adicionais
 - você aplica o dano selecionado aos alvos escolhidos
 
-Ao criar o link, o dano é modular: o botão `+` adiciona linhas e só aparecem as linhas preenchidas.
+Ao criar o link, você pode escolher se ele usa:
+
+- `Rolagem de ataque`
+- `Teste de resistência`
+
+No primeiro caso você define modificador, possível faixa de crítico e tipo de ataque. No segundo define a CD do teste de resistência, o atributo exigido e o tipo de ataque ou efeito.
+
+Em ambos os casos, o dano é modular: o botão `+` adiciona linhas e só aparecem as linhas preenchidas. As fórmulas de dano também aceitam multiplicação e divisão sobre o total final, usando uma forma clara com parênteses, por exemplo `(1d8+3)/2`. A divisão arredonda para baixo: se o total for 11, `11/2` vira `5`.
 
 ## Magias
 

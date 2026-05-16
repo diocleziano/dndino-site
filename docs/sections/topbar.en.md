@@ -64,30 +64,33 @@ You can search by name, category, prerequisites, rule type, school, or descripti
 
 The lower buttons open the full feats, glossary, and spells sections.
 
-## Dice
+## Quick Tools
 
-`Dice` opens the quick dice roller.
+`Quick Tools` brings together the tools you may need immediately while preparing or running a session.
 
-You can choose:
+From here you can open:
 
-- number of dice
-- die type
-- modifier
+- the **quick dice roller**
+- the **name generator**
+- **quick timers**
 
-The default die is configured in **Settings**. Results show each die and the total.
+### Dice Roller
 
-## Names
+The dice roller lets you choose the number of dice, die type, and modifier.
 
-`Names` opens the quick name generator.
+The default die is configured in **Settings**. Results show each die and the total, making it useful for quick checks and improvised rolls during play.
 
-Use it when you need a fast name for:
+### Name Generator
 
-- NPCs
-- monsters
-- improvised places
-- unexpected encounters
+The name generator is useful when you need a fast name for NPCs, monsters, improvised places, or unexpected encounters.
 
 You can choose ancestry and sex, regenerate results, and copy a name with one click.
+
+### Quick Timers
+
+Quick timers help you track table deadlines without leaving the current screen.
+
+You can set a name, choose the duration with a macOS-style control, and run up to four timers at once. Each timer can be paused, resumed, stopped, or removed.
 
 ## Settings
 
@@ -126,6 +129,5 @@ Use the top bar when you want to:
 - return quickly from places to the adventure dashboard
 - look up a rule without changing screen
 - consult a character or item on the fly
-- make a quick roll
-- generate a name without breaking the flow
+- make a quick roll, start a timer, or generate an improvised name
 - manage a live session from the current section

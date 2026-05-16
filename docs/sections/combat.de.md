@@ -359,10 +359,19 @@ Im Kampf:
 - zeigt das Fenster den Namen des Angriffs
 - der Angreifer ist klar sichtbar
 - du wählst ein oder mehrere Ziele
+- bei einem Angriffswurf kann DnDino anzeigen, ob das Ergebnis die RK der ausgewählten Ziele erreicht
 - du verwaltest mehrere Schadenszeilen
+- jede Schadenszeile kann einen optionalen Texteffekt enthalten, nützlich für Zauber oder Angriffe mit Zusatzeffekten
 - du wendest den ausgewählten Schaden auf die gewählten Ziele an
 
-Beim Erstellen ist der Schaden modular: Mit `+` fügst du Zeilen hinzu, angezeigt werden nur ausgefüllte Zeilen.
+Beim Erstellen des Links wählst du, ob er auf Folgendem basiert:
+
+- `Angriffswurf`
+- `Rettungswurf`
+
+Beim Angriffswurf legst du Modifikator, optionalen kritischen Bereich und Angriffstyp fest. Beim Rettungswurf legst du den SG, die geforderte Eigenschaft und den Angriffs- oder Effekttyp fest.
+
+In beiden Fällen ist der Schaden modular: Mit `+` fügst du Zeilen hinzu, angezeigt werden nur ausgefüllte Zeilen. Schadensformeln unterstützen außerdem Multiplikation und Division auf die Endsumme, klar geschrieben mit Klammern, zum Beispiel `(1d8+3)/2`. Division wird abgerundet: Wenn die Summe 11 ist, wird `11/2` zu `5`.
 
 ## Zauber
 

@@ -361,6 +361,7 @@ Quando lo usi in combattimento:
 - puoi scegliere uno o più bersagli
 - se l'attacco usa un tiro per colpire, DnDino può indicare se il risultato raggiunge la CA dei bersagli selezionati
 - puoi gestire più righe di danno
+- ogni riga di danno può avere un effetto testuale opzionale, utile per incantesimi o attacchi con effetti aggiuntivi
 - applichi il danno selezionato ai bersagli scelti
 
 In fase di creazione puoi scegliere se l'attacco è basato su:
@@ -368,7 +369,9 @@ In fase di creazione puoi scegliere se l'attacco è basato su:
 - `Tiro per colpire`
 - `Tiro salvezza`
 
-Nel primo caso imposti modificatore, eventuale soglia di critico e tipo di attacco. Nel secondo caso imposti la CD del tiro salvezza e il tipo di attacco o effetto. In entrambi i casi il danno è modulare: puoi aggiungere righe con il pulsante `+` e visualizzare solo quelle valorizzate.
+Nel primo caso imposti modificatore, eventuale soglia di critico e tipo di attacco. Nel secondo caso imposti la CD del tiro salvezza, la caratteristica richiesta per il tiro salvezza e il tipo di attacco o effetto.
+
+In entrambi i casi il danno è modulare: puoi aggiungere righe con il pulsante `+` e visualizzare solo quelle valorizzate. Le formule danno accettano anche moltiplicazione e divisione sul totale finale, usando una forma chiara con parentesi, per esempio `(1d8+3)/2`. La divisione viene arrotondata per difetto: se il totale è 11, `11/2` diventa `5`.
 
 ## Incantesimi
 

@@ -98,7 +98,7 @@ Du kannst wählen, ob die Topbar angezeigt wird:
 
 ### Standardwürfel
 
-Hier kannst du den **Standardwürfeltyp** des schnellen Würfelrollers festlegen.
+Hier kannst du den **Standardwürfeltyp** des Würfelrollers in den `Schnellwerkzeugen` festlegen.
 
 ### Schnelles Öffnen von Charakteren
 

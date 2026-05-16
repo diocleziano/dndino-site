@@ -97,7 +97,7 @@ Puoi scegliere se visualizzare la topbar:
 
 ### Dado predefinito
 
-Qui puoi scegliere il **tipo di dado predefinito** proposto dal lanciadadi rapido.
+Qui puoi scegliere il **tipo di dado predefinito** proposto dal lanciadadi dentro `Strumenti rapidi`.
 
 ### Apertura rapida personaggi
 

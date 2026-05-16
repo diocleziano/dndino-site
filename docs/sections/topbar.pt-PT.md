@@ -62,30 +62,33 @@ Pesquisa em:
 
 Podes pesquisar por nome, categoria, pré-requisitos, tipo de regra, escola ou descrição. As magias abrem numa janela dedicada; talentos e glossário podem abrir em consulta ou modificação conforme as definições.
 
-## Dados
+## Ferramentas Rápidas
 
-`Dados` abre o lançador rápido de dados.
+`Ferramentas rápidas` reúne as ferramentas que podes precisar de imediato durante a preparação ou a sessão.
 
-Podes escolher:
+Daqui podes abrir:
 
-- número de dados
-- tipo de dado
-- modificador
+- o **lançador rápido de dados**
+- o **gerador de nomes**
+- os **temporizadores rápidos**
 
-O dado predefinido é configurado em **Definições**. O resultado mostra cada dado e o total.
+### Lançador de dados
 
-## Nomes
+O lançador de dados permite escolher número de dados, tipo de dado e modificador.
 
-`Nomes` abre o gerador rápido de nomes.
+O dado predefinido é configurado em **Definições**. O resultado mostra cada dado e o total, útil para testes rápidos e lançamentos improvisados.
 
-Serve para improvisar nomes de:
+### Gerador de nomes
 
-- NPCs
-- monstros
-- locais improvisados
-- encontros inesperados
+O gerador de nomes serve para improvisar nomes de NPCs, monstros, locais improvisados ou encontros inesperados.
 
 Podes escolher linhagem e sexo, regenerar resultados e copiar um nome.
+
+### Temporizadores rápidos
+
+Os temporizadores rápidos ajudam a controlar tempos de mesa sem sair do ecrã atual.
+
+Podes dar um nome ao temporizador, escolher a duração com um controlo ao estilo macOS e executar até quatro temporizadores ao mesmo tempo. Cada temporizador pode ser pausado, retomado, parado ou removido.
 
 ## Definições
 
@@ -122,6 +125,5 @@ Usa a topbar para:
 - voltar rapidamente dos locais ao painel da aventura
 - pesquisar uma regra sem mudar de ecrã
 - consultar uma personagem ou item rapidamente
-- fazer um lançamento rápido
-- gerar um nome sem quebrar o ritmo
+- fazer um lançamento rápido, iniciar um temporizador ou gerar um nome improvisado
 - gerir uma sessão live a partir da secção actual

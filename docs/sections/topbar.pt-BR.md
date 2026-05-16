@@ -62,30 +62,33 @@ Busca em:
 
 Você pode buscar por nome, categoria, pré-requisitos, tipo de regra, escola ou descrição. As magias abrem em uma janela dedicada; talentos e glossário podem abrir em consulta ou modificação conforme as configurações.
 
-## Dados
+## Ferramentas Rápidas
 
-`Dados` abre o rolador rápido de dados.
+`Ferramentas rápidas` reúne as ferramentas que você pode precisar na hora durante a preparação ou a sessão.
 
-Você pode escolher:
+Daqui você pode abrir:
 
-- número de dados
-- tipo de dado
-- modificador
+- o **rolador rápido de dados**
+- o **gerador de nomes**
+- os **temporizadores rápidos**
 
-O dado padrão é configurado em **Configurações**. O resultado mostra cada dado e o total.
+### Rolador de dados
 
-## Nomes
+O rolador de dados permite escolher número de dados, tipo de dado e modificador.
 
-`Nomes` abre o gerador rápido de nomes.
+O dado padrão é configurado em **Configurações**. O resultado mostra cada dado e o total, útil para testes rápidos e rolagens improvisadas.
 
-Serve para improvisar nomes de:
+### Gerador de nomes
 
-- NPCs
-- monstros
-- locais improvisados
-- encontros inesperados
+O gerador de nomes serve para improvisar nomes de NPCs, monstros, locais improvisados ou encontros inesperados.
 
 Você pode escolher linhagem e sexo, gerar novos resultados e copiar um nome.
+
+### Temporizadores rápidos
+
+Os temporizadores rápidos ajudam a controlar tempos de mesa sem sair da tela atual.
+
+Você pode dar um nome ao temporizador, escolher a duração com um controle no estilo macOS e executar até quatro temporizadores ao mesmo tempo. Cada temporizador pode ser pausado, retomado, parado ou removido.
 
 ## Configurações
 
@@ -122,6 +125,5 @@ Use a topbar para:
 - voltar rapidamente dos locais ao painel da aventura
 - buscar uma regra sem mudar de tela
 - consultar um personagem ou item rapidamente
-- fazer uma rolagem rápida
-- gerar um nome sem quebrar o ritmo
+- fazer uma rolagem rápida, iniciar um temporizador ou gerar um nome improvisado
 - gerenciar uma sessão live a partir da seção atual

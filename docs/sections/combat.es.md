@@ -359,10 +359,19 @@ Cuando lo usas en combate:
 - la ventana muestra el nombre del ataque
 - el atacante queda indicado claramente
 - puedes elegir uno o más objetivos
+- si el ataque usa una tirada de ataque, DnDino puede indicar si el resultado alcanza la CA de los objetivos seleccionados
 - puedes gestionar varias líneas de daño
+- cada línea de daño puede incluir un efecto de texto opcional, útil para conjuros o ataques con efectos adicionales
 - aplicas el daño seleccionado a los objetivos elegidos
 
-Al crear el enlace, el daño es modular: con el botón `+` añades filas y solo se muestran las que tienen valores.
+Al crear el enlace, puedes elegir si se basa en:
+
+- `Tirada de ataque`
+- `Tirada de salvación`
+
+En el primer caso configuras modificador, posible rango de crítico y tipo de ataque. En el segundo configuras la CD de la tirada de salvación, la característica requerida y el tipo de ataque o efecto.
+
+En ambos casos, el daño es modular: con el botón `+` añades filas y solo se muestran las que tienen valores. Las fórmulas de daño también admiten multiplicación y división sobre el total final, usando una forma clara con paréntesis, por ejemplo `(1d8+3)/2`. La división redondea hacia abajo: si el total es 11, `11/2` se convierte en `5`.
 
 ## Conjuros
 

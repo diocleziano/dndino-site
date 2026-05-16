@@ -62,30 +62,33 @@ Elle couvre :
 
 Tu peux chercher par nom, catégorie, prérequis, type de règle, école ou description. Les sorts s'ouvrent dans une fenêtre dédiée ; les dons et entrées de glossaire peuvent s'ouvrir en consultation ou modification selon les réglages.
 
-## Dés
+## Outils Rapides
 
-`Dés` ouvre le lanceur de dés rapide.
+`Outils rapides` rassemble les outils utiles immédiatement pendant la préparation ou la session.
 
-Tu peux choisir :
+Depuis ce panneau, tu peux ouvrir :
 
-- nombre de dés
-- type de dé
-- modificateur
+- le **lanceur de dés rapide**
+- le **générateur de noms**
+- les **timers rapides**
 
-Le dé par défaut se règle dans **Réglages**. Le résultat affiche chaque dé et le total.
+### Lanceur de dés
 
-## Noms
+Le lanceur de dés permet de choisir le nombre de dés, le type de dé et le modificateur.
 
-`Noms` ouvre le générateur rapide de noms.
+Le dé par défaut se règle dans **Réglages**. Le résultat affiche chaque dé et le total, utile pour les tests rapides et les jets improvisés.
 
-Il sert à improviser vite un nom pour :
+### Générateur de noms
 
-- PNJ
-- monstres
-- lieux improvisés
-- rencontres inattendues
+Le générateur de noms sert à improviser vite un nom pour un PNJ, un monstre, un lieu improvisé ou une rencontre inattendue.
 
 Tu peux choisir l'ascendance et le sexe, régénérer les résultats et copier un nom.
+
+### Timers rapides
+
+Les timers rapides permettent de suivre des échéances de table sans quitter l'écran courant.
+
+Tu peux donner un nom au timer, choisir une durée avec un contrôle de style macOS et lancer jusqu'à quatre timers en parallèle. Chaque timer peut être mis en pause, repris, arrêté ou supprimé.
 
 ## Réglages
 
@@ -122,6 +125,5 @@ Utilise la topbar pour :
 - revenir rapidement des lieux au tableau de bord d'aventure
 - chercher une règle sans changer d'écran
 - consulter un personnage ou un objet à la volée
-- faire un jet rapide
-- générer un nom sans interrompre le rythme
+- faire un jet rapide, lancer un timer ou générer un nom improvisé
 - gérer une session live depuis la section courante

@@ -359,10 +359,19 @@ Quando usado em combate:
 - a janela mostra o nome do ataque
 - o atacante fica indicado claramente
 - podes escolher um ou mais alvos
+- se o ataque usar uma jogada de ataque, o DnDino pode indicar se o resultado atinge a CA dos alvos seleccionados
 - podes gerir várias linhas de dano
+- cada linha de dano pode ter um efeito textual opcional, útil para magias ou ataques com efeitos adicionais
 - aplicas o dano seleccionado aos alvos escolhidos
 
-Ao criar a ligação, o dano é modular: o botão `+` adiciona linhas e só aparecem as linhas preenchidas.
+Ao criar a ligação, podes escolher se se baseia em:
+
+- `Jogada de ataque`
+- `Teste de resistência`
+
+No primeiro caso defines modificador, eventual intervalo de crítico e tipo de ataque. No segundo defines a CD do teste de resistência, a característica exigida e o tipo de ataque ou efeito.
+
+Em ambos os casos, o dano é modular: o botão `+` adiciona linhas e só aparecem as linhas preenchidas. As fórmulas de dano também aceitam multiplicação e divisão sobre o total final, usando uma forma clara com parênteses, por exemplo `(1d8+3)/2`. A divisão arredonda para baixo: se o total for 11, `11/2` torna-se `5`.
 
 ## Magias
 

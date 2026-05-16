@@ -62,30 +62,33 @@ Busca en:
 
 Puedes buscar por nombre, categoría, prerrequisitos, tipo de regla, escuela o descripción. Los conjuros se abren en una ventana dedicada; dotes y glosario pueden abrirse en consulta o modificación según los ajustes.
 
-## Dados
+## Herramientas Rápidas
 
-`Dados` abre el lanzador rápido de dados.
+`Herramientas rápidas` reúne las herramientas que puedes necesitar de inmediato durante la preparación o la sesión.
 
-Puedes elegir:
+Desde aquí puedes abrir:
 
-- número de dados
-- tipo de dado
-- modificador
+- el **lanzador rápido de dados**
+- el **generador de nombres**
+- los **temporizadores rápidos**
 
-El dado predeterminado se configura en **Ajustes**. El resultado muestra cada dado y el total.
+### Lanzador de dados
 
-## Nombres
+El lanzador de dados permite elegir número de dados, tipo de dado y modificador.
 
-`Nombres` abre el generador rápido de nombres.
+El dado predeterminado se configura en **Ajustes**. El resultado muestra cada dado y el total, útil para pruebas rápidas y tiradas improvisadas.
 
-Sirve para improvisar nombres de:
+### Generador de nombres
 
-- PNJ
-- monstruos
-- lugares improvisados
-- encuentros inesperados
+El generador de nombres sirve para improvisar nombres de PNJ, monstruos, lugares improvisados o encuentros inesperados.
 
 Puedes elegir linaje y sexo, regenerar resultados y copiar un nombre.
+
+### Temporizadores rápidos
+
+Los temporizadores rápidos sirven para controlar tiempos de mesa sin salir de la pantalla actual.
+
+Puedes darles un nombre, elegir la duración con un control de estilo macOS y ejecutar hasta cuatro temporizadores a la vez. Cada temporizador puede pausarse, reanudarse, detenerse o eliminarse.
 
 ## Ajustes
 
@@ -122,6 +125,5 @@ Usa la barra superior para:
 - volver rápido desde lugares a la dashboard de aventura
 - buscar una regla sin cambiar de pantalla
 - consultar un personaje u objeto al vuelo
-- hacer una tirada rápida
-- generar un nombre sin romper el ritmo
+- hacer una tirada rápida, iniciar un temporizador o generar un nombre improvisado
 - gestionar una sesión en vivo desde la sección actual

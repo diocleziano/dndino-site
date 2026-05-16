@@ -359,10 +359,19 @@ Quand tu l'utilises en combat :
 - la fenêtre montre le nom de l'attaque
 - l'attaquant est indiqué clairement
 - tu peux choisir une ou plusieurs cibles
+- si l'attaque utilise un jet d'attaque, DnDino peut indiquer si le résultat atteint la CA des cibles sélectionnées
 - tu peux gérer plusieurs lignes de dégâts
+- chaque ligne de dégâts peut avoir un effet textuel optionnel, utile pour les sorts ou attaques avec effets supplémentaires
 - tu appliques les dégâts sélectionnés aux cibles choisies
 
-Lors de la création du lien, les dégâts sont modulaires : le bouton `+` ajoute des lignes et seules les lignes renseignées sont affichées.
+Lors de la création du lien, tu peux choisir si l'attaque repose sur :
+
+- `Jet d'attaque`
+- `Jet de sauvegarde`
+
+Dans le premier cas, tu définis le modificateur, l'éventuelle plage de critique et le type d'attaque. Dans le second, tu définis la DD du jet de sauvegarde, la caractéristique demandée et le type d'attaque ou d'effet.
+
+Dans les deux cas, les dégâts sont modulaires : le bouton `+` ajoute des lignes et seules les lignes renseignées sont affichées. Les formules de dégâts acceptent aussi multiplication et division sur le total final, avec une écriture claire entre parenthèses, par exemple `(1d8+3)/2`. La division arrondit à l'inférieur : si le total est 11, `11/2` devient `5`.
 
 ## Sorts
 

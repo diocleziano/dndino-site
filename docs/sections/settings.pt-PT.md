@@ -98,7 +98,7 @@ Podes escolher se queres ver a topbar:
 
 ### Dado predefinido
 
-Aqui podes escolher o **tipo de dado predefinido** do lançador de dados rápido.
+Aqui podes escolher o **tipo de dado predefinido** do lançador de dados em `Ferramentas rápidas`.
 
 ### Abertura rápida de personagens
 

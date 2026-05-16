@@ -62,30 +62,33 @@ Sie durchsucht:
 
 Du kannst nach Name, Kategorie, Voraussetzungen, Regeltyp, Schule oder Beschreibung suchen. Zauber öffnen sich in einem eigenen Fenster; Talente und Glossareinträge je nach Einstellung als Ansicht oder Bearbeitung.
 
-## Würfel
+## Schnellwerkzeuge
 
-`Würfel` öffnet den schnellen Würfelroller.
+`Schnellwerkzeuge` bündelt die Werkzeuge, die du beim Vorbereiten oder Leiten sofort brauchst.
 
-Du kannst wählen:
+Von hier öffnest du:
 
-- Anzahl der Würfel
-- Würfeltyp
-- Modifikator
+- den **schnellen Würfelroller**
+- den **Namensgenerator**
+- **Schnelltimer**
 
-Der Standardwürfel wird in **Einstellungen** festgelegt. Das Ergebnis zeigt jeden Wurf und die Summe.
+### Würfelroller
 
-## Namen
+Der Würfelroller lässt dich Anzahl der Würfel, Würfeltyp und Modifikator wählen.
 
-`Namen` öffnet den schnellen Namensgenerator.
+Der Standardwürfel wird in **Einstellungen** festgelegt. Das Ergebnis zeigt jeden Wurf und die Summe, passend für schnelle Proben und improvisierte Würfe.
 
-Er hilft bei Namen für:
+### Namensgenerator
 
-- NSC
-- Monster
-- improvisierte Orte
-- unerwartete Begegnungen
+Der Namensgenerator hilft, schnell Namen für NSC, Monster, improvisierte Orte oder unerwartete Begegnungen zu erstellen.
 
 Du kannst Abstammung und Geschlecht wählen, neue Ergebnisse erzeugen und Namen kopieren.
+
+### Schnelltimer
+
+Schnelltimer helfen, Fristen am Spieltisch zu verfolgen, ohne den aktuellen Bildschirm zu verlassen.
+
+Du kannst einen Namen vergeben, die Dauer mit einer macOS-ähnlichen Steuerung festlegen und bis zu vier Timer gleichzeitig laufen lassen. Jeder Timer kann pausiert, fortgesetzt, gestoppt oder entfernt werden.
 
 ## Einstellungen
 
@@ -122,6 +125,5 @@ Nutze die Topbar, um:
 - von Orten schnell zum Abenteuer-Dashboard zurückzukehren
 - Regeln nachzuschlagen, ohne den Bildschirm zu wechseln
 - Charaktere oder Ausrüstung schnell zu öffnen
-- schnell zu würfeln
-- Namen zu erzeugen, ohne den Spielfluss zu brechen
+- schnell zu würfeln, einen Timer zu starten oder einen Namen zu erzeugen
 - eine Live-Sitzung aus dem aktuellen Bereich zu steuern

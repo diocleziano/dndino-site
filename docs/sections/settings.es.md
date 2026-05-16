@@ -98,7 +98,7 @@ Puedes elegir si la barra superior se muestra:
 
 ### Dado predeterminado
 
-Aquí puedes elegir el **tipo de dado predeterminado** del lanzadados rápido.
+Aquí puedes elegir el **tipo de dado predeterminado** del lanzador de dados dentro de `Herramientas rápidas`.
 
 ### Apertura rápida de personajes
 

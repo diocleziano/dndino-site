@@ -98,7 +98,7 @@ You can choose whether the top bar is displayed:
 
 ### Default Die
 
-Here you can choose the **default die type** shown by the quick dice roller.
+Here you can choose the **default die type** shown by the dice roller inside `Quick Tools`.
 
 ### Quick Character Opening
 
