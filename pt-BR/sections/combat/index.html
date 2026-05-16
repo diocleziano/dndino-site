@@ -1917,10 +1917,18 @@
 <li>a janela mostra o nome do ataque</li>
 <li>o atacante fica indicado claramente</li>
 <li>você pode escolher um ou mais alvos</li>
+<li>se o ataque usa uma rolagem de ataque, o DnDino pode indicar se o resultado alcança a CA dos alvos selecionados</li>
 <li>você pode gerenciar várias linhas de dano</li>
+<li>cada linha de dano pode ter um efeito textual opcional, útil para magias ou ataques com efeitos adicionais</li>
 <li>você aplica o dano selecionado aos alvos escolhidos</li>
 </ul>
-<p>Ao criar o link, o dano é modular: o botão <code>+</code> adiciona linhas e só aparecem as linhas preenchidas.</p>
+<p>Ao criar o link, você pode escolher se ele usa:</p>
+<ul>
+<li><code>Rolagem de ataque</code></li>
+<li><code>Teste de resistência</code></li>
+</ul>
+<p>No primeiro caso você define modificador, possível faixa de crítico e tipo de ataque. No segundo define a CD do teste de resistência, o atributo exigido e o tipo de ataque ou efeito.</p>
+<p>Em ambos os casos, o dano é modular: o botão <code>+</code> adiciona linhas e só aparecem as linhas preenchidas. As fórmulas de dano também aceitam multiplicação e divisão sobre o total final, usando uma forma clara com parênteses, por exemplo <code>(1d8+3)/2</code>. A divisão arredonda para baixo: se o total for 11, <code>11/2</code> vira <code>5</code>.</p>
 <h2 id="magias">Magias<a class="headerlink" href="#magias" title="Permanent link">&para;</a></h2>
 <p>Se o participante tiver magias, a ficha mostra a seção <code>Magias</code>.</p>
 <p>As magias são agrupadas por nível.</p>

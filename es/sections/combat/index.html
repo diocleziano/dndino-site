@@ -1917,10 +1917,18 @@
 <li>la ventana muestra el nombre del ataque</li>
 <li>el atacante queda indicado claramente</li>
 <li>puedes elegir uno o más objetivos</li>
+<li>si el ataque usa una tirada de ataque, DnDino puede indicar si el resultado alcanza la CA de los objetivos seleccionados</li>
 <li>puedes gestionar varias líneas de daño</li>
+<li>cada línea de daño puede incluir un efecto de texto opcional, útil para conjuros o ataques con efectos adicionales</li>
 <li>aplicas el daño seleccionado a los objetivos elegidos</li>
 </ul>
-<p>Al crear el enlace, el daño es modular: con el botón <code>+</code> añades filas y solo se muestran las que tienen valores.</p>
+<p>Al crear el enlace, puedes elegir si se basa en:</p>
+<ul>
+<li><code>Tirada de ataque</code></li>
+<li><code>Tirada de salvación</code></li>
+</ul>
+<p>En el primer caso configuras modificador, posible rango de crítico y tipo de ataque. En el segundo configuras la CD de la tirada de salvación, la característica requerida y el tipo de ataque o efecto.</p>
+<p>En ambos casos, el daño es modular: con el botón <code>+</code> añades filas y solo se muestran las que tienen valores. Las fórmulas de daño también admiten multiplicación y división sobre el total final, usando una forma clara con paréntesis, por ejemplo <code>(1d8+3)/2</code>. La división redondea hacia abajo: si el total es 11, <code>11/2</code> se convierte en <code>5</code>.</p>
 <h2 id="conjuros">Conjuros<a class="headerlink" href="#conjuros" title="Permanent link">&para;</a></h2>
 <p>Si el participante tiene conjuros, la ficha muestra la sección <code>Conjuros</code>.</p>
 <p>Los conjuros se agrupan por nivel.</p>

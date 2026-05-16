@@ -1917,10 +1917,18 @@
 <li>the window shows the attack name</li>
 <li>the attacker is clearly shown</li>
 <li>you can choose one or more targets</li>
+<li>if the attack uses an attack roll, DnDino can show whether the result reaches the selected targets' AC</li>
 <li>you can manage multiple damage rows</li>
+<li>each damage row can include an optional text effect, useful for spells or attacks with extra effects</li>
 <li>you apply selected damage to the chosen targets</li>
 </ul>
-<p>While creating the link, damage is modular: use the <code>+</code> button to add rows and show only the rows that have values.</p>
+<p>When creating the link, you can choose whether it is based on:</p>
+<ul>
+<li><code>Attack Roll</code></li>
+<li><code>Saving Throw</code></li>
+</ul>
+<p>For an attack roll, you set the modifier, optional critical range, and attack type. For a saving throw, you set the saving throw DC, the required ability, and the attack or effect type.</p>
+<p>In both cases, damage is modular: use the <code>+</code> button to add rows and show only the rows that have values. Damage formulas also support multiplication and division on the final total, using a clear parenthesized form such as <code>(1d8+3)/2</code>. Division rounds down: if the total is 11, <code>11/2</code> becomes <code>5</code>.</p>
 <h2 id="spells">Spells<a class="headerlink" href="#spells" title="Permanent link">&para;</a></h2>
 <p>If the participant has spells, the sheet shows the <code>Spells</code> section.</p>
 <p>Spells are grouped by level.</p>

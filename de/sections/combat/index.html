@@ -1917,10 +1917,18 @@
 <li>zeigt das Fenster den Namen des Angriffs</li>
 <li>der Angreifer ist klar sichtbar</li>
 <li>du wählst ein oder mehrere Ziele</li>
+<li>bei einem Angriffswurf kann DnDino anzeigen, ob das Ergebnis die RK der ausgewählten Ziele erreicht</li>
 <li>du verwaltest mehrere Schadenszeilen</li>
+<li>jede Schadenszeile kann einen optionalen Texteffekt enthalten, nützlich für Zauber oder Angriffe mit Zusatzeffekten</li>
 <li>du wendest den ausgewählten Schaden auf die gewählten Ziele an</li>
 </ul>
-<p>Beim Erstellen ist der Schaden modular: Mit <code>+</code> fügst du Zeilen hinzu, angezeigt werden nur ausgefüllte Zeilen.</p>
+<p>Beim Erstellen des Links wählst du, ob er auf Folgendem basiert:</p>
+<ul>
+<li><code>Angriffswurf</code></li>
+<li><code>Rettungswurf</code></li>
+</ul>
+<p>Beim Angriffswurf legst du Modifikator, optionalen kritischen Bereich und Angriffstyp fest. Beim Rettungswurf legst du den SG, die geforderte Eigenschaft und den Angriffs- oder Effekttyp fest.</p>
+<p>In beiden Fällen ist der Schaden modular: Mit <code>+</code> fügst du Zeilen hinzu, angezeigt werden nur ausgefüllte Zeilen. Schadensformeln unterstützen außerdem Multiplikation und Division auf die Endsumme, klar geschrieben mit Klammern, zum Beispiel <code>(1d8+3)/2</code>. Division wird abgerundet: Wenn die Summe 11 ist, wird <code>11/2</code> zu <code>5</code>.</p>
 <h2 id="zauber">Zauber<a class="headerlink" href="#zauber" title="Permanent link">&para;</a></h2>
 <p>Hat der Teilnehmer Zauber, erscheint der Bereich <code>Zauber</code>.</p>
 <p>Zauber sind nach Grad gruppiert.</p>

@@ -1917,10 +1917,18 @@
 <li>la fenêtre montre le nom de l'attaque</li>
 <li>l'attaquant est indiqué clairement</li>
 <li>tu peux choisir une ou plusieurs cibles</li>
+<li>si l'attaque utilise un jet d'attaque, DnDino peut indiquer si le résultat atteint la CA des cibles sélectionnées</li>
 <li>tu peux gérer plusieurs lignes de dégâts</li>
+<li>chaque ligne de dégâts peut avoir un effet textuel optionnel, utile pour les sorts ou attaques avec effets supplémentaires</li>
 <li>tu appliques les dégâts sélectionnés aux cibles choisies</li>
 </ul>
-<p>Lors de la création du lien, les dégâts sont modulaires : le bouton <code>+</code> ajoute des lignes et seules les lignes renseignées sont affichées.</p>
+<p>Lors de la création du lien, tu peux choisir si l'attaque repose sur :</p>
+<ul>
+<li><code>Jet d'attaque</code></li>
+<li><code>Jet de sauvegarde</code></li>
+</ul>
+<p>Dans le premier cas, tu définis le modificateur, l'éventuelle plage de critique et le type d'attaque. Dans le second, tu définis la DD du jet de sauvegarde, la caractéristique demandée et le type d'attaque ou d'effet.</p>
+<p>Dans les deux cas, les dégâts sont modulaires : le bouton <code>+</code> ajoute des lignes et seules les lignes renseignées sont affichées. Les formules de dégâts acceptent aussi multiplication et division sur le total final, avec une écriture claire entre parenthèses, par exemple <code>(1d8+3)/2</code>. La division arrondit à l'inférieur : si le total est 11, <code>11/2</code> devient <code>5</code>.</p>
 <h2 id="sorts">Sorts<a class="headerlink" href="#sorts" title="Permanent link">&para;</a></h2>
 <p>Si le participant possède des sorts, la fiche affiche la section <code>Sorts</code>.</p>
 <p>Les sorts sont regroupés par niveau.</p>
