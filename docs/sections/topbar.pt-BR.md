@@ -80,9 +80,7 @@ O dado padrão é configurado em **Configurações**. O resultado mostra cada da
 
 ### Gerador de nomes
 
-O gerador de nomes serve para improvisar nomes de NPCs, monstros, locais improvisados ou encontros inesperados.
-
-Você pode escolher linhagem e sexo, gerar novos resultados e copiar um nome.
+Escolha espécie, gênero e **nome completo** ou **apenas nome**. Bloqueie nome ou sobrenome para gerar novamente só a outra parte, ou regenere uma proposta individual. Copie um resultado ou recupere-o do histórico recente, compartilhado com o acesso rápido. O histórico pode ser limpo.
 
 ### Temporizadores rápidos
 

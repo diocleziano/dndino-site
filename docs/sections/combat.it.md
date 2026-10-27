@@ -16,6 +16,22 @@ Questa pagina spiega:
 - Finestra Giocatori
 - riepilogo finale e statistiche
 
+## Rinomina per iniziativa
+
+**Rinomina per iniziativa**, accanto a **Ordina**, assegna i numeri in ordine di iniziativa decrescente ai PNG e mostri che condividono la stessa scheda base. Riconosce sia il nome generico senza numero sia i comuni suffissi numerici: `Goblin`, `Goblin 2`, `Goblin (3)`. Nomi realmente diversi, come `Capitano Goblin`, ed eroi vengono esclusi.
+
+Per esempio, il Goblin con iniziativa 20 diventa `Goblin 1`, quello con iniziativa 10 diventa `Goblin 2`. Sono validi anche valori zero o negativi; i pareggi usano Destrezza e ordine corrente. Cambiano solo i nomi nello scontro, non identità, PF, statistiche, schede base o presenze del luogo. **Ordina** riordina invece il tracker.
+
+## Preparazione, dati locali e riepilogo
+
+- **Mostra in anteprima combattimento**, attivo di default per ogni partecipante, controlla soltanto la presentazione iniziale ai giocatori: disattivarlo non rimuove il partecipante dallo scontro. L'aiuto contestuale segue l'impostazione globale dei pulsanti guida.
+- Le presenze locali usano la propria **CA e i propri PF massimi**. Le modifiche contestuali non cambiano la scheda base o le altre copie. Per un partecipante preso direttamente dalla lista generale, la CA resta specifica del combattimento.
+- Le caratteristiche mostrano righe allineate di punteggi, **MOD** e **TS**. I TS sono modificabili anche nell'editor rapido; il tiro usa il TS esplicito, altrimenti il modificatore di caratteristica, oppure zero se manca tutto.
+- I nomi di PNG e mostri sono modificabili nello scontro; passando il mouse su un nome lungo puoi leggerlo in scorrimento. La ricerca dei partecipanti ignora maiuscole/minuscole e torna all'inizio dopo il filtro.
+- Nascondere i nomi dei nemici ai giocatori li nasconde anche nelle animazioni dei danni, sia come attaccanti sia come bersagli.
+
+Nel riepilogo conclusivo trovi **Torna al luogo** e **Modifica orari**. Quest'ultimo imposta manualmente inizio e fine: la fine deve essere successiva all'inizio e la durata diventa l'intervallo scelto, sostituendo le pause registrate. I valori storici di CA e PF massimi dei combattimenti conclusi non vengono riscritti dai successivi cambiamenti delle presenze.
+
 ## Utilizzo con uno o due schermi
 
 Il combattimento funziona bene anche su **schermo singolo**: tutta la parte operativa resta nella schermata principale, con tracker iniziativa, schede compatte e riepilogo.

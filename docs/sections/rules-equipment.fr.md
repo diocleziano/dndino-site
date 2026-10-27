@@ -4,6 +4,10 @@ Cette section regroupe les références de l'app : **Règles**, **Dons**, **Glos
 
 Les champs restent libres, afin de s'adapter à ta campagne. Pour obtenir des filtres plus propres et des regroupements plus utiles, utilise toutefois des valeurs cohérentes.
 
+## Catalogue officiel et objets magiques
+
+Monstres, sorts, dons, armes, armures, outils et matériel SRD 5.2.1 sont disponibles hors ligne. **Équipement d’aventure** inclut aussi **Objets magiques** : 258 entrées avec variantes, rareté et harmonisation. **Contenu officiel** distingue ce catalogue des données personnelles. Voir [Contenus officiels et doublons](official-content.md) pour langues, personnalisation et restauration.
+
 ## Fonctionnement de la recherche
 
 La recherche rapide de la topbar vérifie plusieurs champs à la fois.

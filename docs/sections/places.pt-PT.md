@@ -10,6 +10,29 @@ A secção **Locais** reúne tudo o que está relacionado com os espaços jogáv
 - presenças contextuais
 - acesso rápido a combates
 
+## Gestão rápida de presenças
+
+### CA e PV máximos específicos do local
+
+Ao acrescentar um **PNJ ou monstro**, CA e PV máximos são inicialmente copiados da ficha base e passam a pertencer àquela presença. Podes alterá-los durante a atribuição ou na ficha local sem afetar outras cópias ou a base. Presenças antigas sem estes valores continuam a usar a ficha base. As **personagens da aventura** mantêm o estado partilhado.
+
+**Gerir presenças**, junto ao resumo, abre uma lista agrupada por ficha base. Cada linha edita nome, CA, PV máximos, atuais e temporários, papel e estado. **Aplicar ao grupo** define CA e máximo para todas as suas presenças. Guardar sem alterar estes campos não uniformiza diferenças existentes.
+
+Reduzir o máximo limita PV atuais superiores; aumentá-lo não cura automaticamente. **PV atuais no máximo** preenche cada presença até ao próprio máximo, sem alterar temporários, condições ou estado. Confirma com **Guardar**.
+
+### Consultar, duplicar e mover
+
+- **Ficha compacta** abre um bloco de consulta com atributos, MOD, salvaguardas, feitiços, imagens e ligações usando os valores locais.
+- **Duplicar presença** preserva também CA e PV máximos locais. A segunda cópia numera o nome genérico desde a primeira: `Goblin 1`, `Goblin 2`. Os nomes personalizados mantêm-se.
+- **Mover** mostra o local atual e a árvore recolhível de destinos, já posicionada na origem. A presença mantém os dados.
+- As condições mostram ícone e nome, não texto técnico. A imagem permite ações de apresentação ao mestre e jogadores.
+
+### Navegação e mapas
+
+A pesquisa expande os caminhos dos resultados. **Voltar à aventura** abre o painel. Em **Interativa**, **Editar mapa** abre o mapa realmente apresentado, mesmo herdado de um local ascendente. Em **Sombra**, Nevoeiro/Desenho e Revelar/Ocultar mantêm o espaço necessário; a barra desloca-se horizontalmente quando necessário.
+
+As janelas secundárias mantêm-se ligadas à principal. Fechar a última principal fecha também as secundárias e dos jogadores e coloca os combates ativos em pausa.
+
 ## Para que serve a secção Locais
 
 O painel de locais serve para organizar a aventura tanto do ponto de vista espacial como narrativo.
@@ -36,7 +59,7 @@ A partir desse cartão podes:
 
 ## Estrutura do ecrã
 
-O painel `Locais` está organizado em torno de dois modos principais:
+O painel `Locais` está organizado em torno de três modos principais:
 
 - `Normal`
 - `Interativo`
@@ -448,12 +471,12 @@ Os registos do tipo `Herói` não são selecionáveis neste modo.
 No painel de locais, o DnDino aplica regras muito concretas:
 
 - um `Personagem de aventura` só pode ser colocado uma vez no mesmo local
-- um `PNJ` base só pode ser adicionado uma vez no mesmo local
+- o seletor não volta a propor um PNJ já presente; **Duplicar presença** cria explicitamente cópias adicionais
 - um `Monstro` base pode ser adicionado várias vezes no mesmo local
 
 Quando adicionas várias instâncias do mesmo monstro, o nome apresentado é numerado automaticamente, por exemplo:
 
-- `Goblin`
+- `Goblin 1`
 - `Goblin 2`
 - `Goblin 3`
 

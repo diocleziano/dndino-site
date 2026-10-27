@@ -10,6 +10,12 @@ Sono pensate per i casi in cui la semplice struttura ad albero non basta più e 
 - un dungeon
 - una regione
 
+## Modificare la mappa visualizzata nei luoghi
+
+Nella modalità **Interattiva** dei luoghi, accanto a **Mostra nomi marker**, trovi **Modifica mappa**. Apre la pagina di modifica della mappa effettivamente visualizzata, anche se appartiene a un luogo padre o è stata scelta dal selettore.
+
+Al ritorno vengono aggiornati i marker, mantenendo la stessa mappa, lo zoom e la posizione quando ancora disponibili.
+
 ## A cosa servono
 
 Le mappe interattive sono utili quando vuoi:

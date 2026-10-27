@@ -11,6 +11,16 @@ Esta página é importante porque, no DnDino, existem **vários níveis de perso
 
 Não são duplicações inúteis: servem para manter **dados contextuais separados**, como nome apresentado, pontos de vida, condições, iniciativa e notas do Mestre, sem perder a ligação à ficha original.
 
+## Consulta compacta, duplicados e eliminação segura
+
+A abertura rápida pode mostrar a **ficha compacta**, com atributos, modificadores, salvaguardas, imagens, feitiços e ligações operacionais. Configura-a nas preferências da barra superior.
+
+Os monstros SRD aparecem na lista e podem ser personalizados. **Gerir duplicados** compara fichas pessoais e oficiais sem eliminação automática: ver [Conteúdos oficiais e duplicados](official-content.md).
+
+Não é possível eliminar uma ficha usada num combate ativo. O aviso identifica personagem, combate e aventura e pode abrir o local correspondente. Eliminar uma ficha pessoal também remove todas as suas presenças, incluindo cópias. Retirar uma personagem apenas da aventura é uma ação distinta, sujeita à confirmação global.
+
+A **CA e os PV máximos** de PNJ e monstros locais são copiados na atribuição e depois geridos na presença. Valores antigos ausentes usam a base; os heróis da aventura continuam partilhados. Consulta [Locais](places.md) para edição individual e de grupo.
+
 ## Ficha base
 
 A **ficha base** é o registo principal guardado na secção `Heróis, NPC e Monstros`.
@@ -255,7 +265,7 @@ Este registo tem dados próprios para o local, como:
 Neste caso, o comportamento depende do tipo:
 
 - os **Monstros** podem ter várias presenças locais no mesmo local
-- os **NPC** permanecem únicos no mesmo local e não voltam a ser propostos no seletor
+- o seletor não volta a propor um PNJ já presente; **Duplicar presença** cria explicitamente cópias adicionais
 
 Quando adicionas várias instâncias do mesmo monstro, o DnDino propõe automaticamente um nome incremental, por exemplo:
 

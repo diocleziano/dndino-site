@@ -10,6 +10,12 @@ Sie sind für Fälle gedacht, in denen die einfache Baumstruktur nicht mehr ausr
 - einem Dungeon
 - einer Region
 
+## Die im Ort angezeigte Karte bearbeiten
+
+Im Modus **Interaktiv** der Orte findest du **Karte bearbeiten** neben der Anzeige der Markernamen. Damit öffnest du den Editor der tatsächlich angezeigten Karte, auch wenn sie zu einem übergeordneten Ort gehört oder im Auswahlmenü gewählt wurde.
+
+Bei der Rückkehr werden die Marker aktualisiert. Karte, Zoom und Position bleiben erhalten, sofern sie noch verfügbar sind.
+
 ## Wofür sie gedacht sind
 
 Interaktive Karten sind nützlich, wenn du:

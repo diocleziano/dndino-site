@@ -80,9 +80,7 @@ Der Standardwürfel wird in **Einstellungen** festgelegt. Das Ergebnis zeigt jed
 
 ### Namensgenerator
 
-Der Namensgenerator hilft, schnell Namen für NSC, Monster, improvisierte Orte oder unerwartete Begegnungen zu erstellen.
-
-Du kannst Abstammung und Geschlecht wählen, neue Ergebnisse erzeugen und Namen kopieren.
+Wähle Volk, Geschlecht und **vollständigen Namen** oder **nur Vornamen**. Sperre Vor- oder Nachnamen, um nur den anderen Teil neu zu erzeugen, oder erneuere einen einzelnen Vorschlag. Kopiere Ergebnisse oder finde sie im gemeinsamen Verlauf von Generator und Schnellzugriff wieder. Der Verlauf lässt sich leeren.
 
 ### Schnelltimer
 

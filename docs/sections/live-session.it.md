@@ -12,6 +12,12 @@ La **Sessione live** è il contesto operativo della partita in corso. Non è sem
 
 In pratica, quando una sessione live è attiva, DnDino sa qual è la campagna in corso e usa questo contesto per collegare tra loro varie parti dell’app.
 
+## Modificare e riaprire sessioni salvate
+
+Apri una sessione dalla card **Sessioni** della dashboard: è cliccabile tutta la riga. Puoi modificare **titolo e note DM** anche per le sessioni live già chiuse; per quelle concluse puoi correggere anche inizio e fine. Durante una sessione attiva il controllo dell'intervallo resta distinto da pausa e ripresa.
+
+La cronologia dei combattimenti permette di aprire il relativo riepilogo. I grafici del riepilogo adattano l'asse verticale ai valori presenti. Una sessione ricreata usa i combattimenti realmente registrati nell'intervallo e può elencare i luoghi visitati: non inventa turni o una cronologia di esplorazione mancanti.
+
 ## A cosa serve
 
 La sessione live è utile quando vuoi usare DnDino durante una sessione reale al tavolo, non solo in preparazione.

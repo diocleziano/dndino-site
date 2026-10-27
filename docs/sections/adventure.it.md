@@ -16,6 +16,14 @@ Questa pagina spiega il percorso principale:
 
 Le aree più specifiche, come **Luoghi**, **Mappe concettuali**, **Sessione live**, **Personaggi**, **Immagini** e **Mappe**, verranno invece approfondite nelle pagine figlie dedicate.
 
+## Accessi rapidi e personaggi collegati
+
+La lista delle sessioni apre il dettaglio facendo clic su tutta la riga; da lì puoi aggiornare titolo, note DM e, per le sessioni concluse, intervallo. Dai luoghi il pulsante **Ritorna all'avventura** riporta qui; dal riepilogo dello scontro **Torna al luogo** apre il luogo collegato.
+
+Rimuovere un personaggio dalla dashboard non equivale a eliminare la sua scheda generale. Se le conferme sono abilitate, DnDino chiede conferma prima della rimozione. Nel collegamento con Hero, la connessione non implica consenso alla sincronizzazione automatica: devono abilitarla sia Master sia Hero, nuovamente a ogni nuova connessione. Dove non è supportata resta l'invio manuale della scheda.
+
+La sincronizzazione live richiede iOS/iPadOS 26 o successivo su Hero. Sui sistemi precedenti è disponibile solo l’invio manuale del personaggio, senza sincronizzazione automatica neppure fuori dal combattimento.
+
 ## A cosa serve un’avventura
 
 In DnDino un’avventura è il contenitore principale di una campagna o di un arco narrativo. Serve a raccogliere in un unico contesto:

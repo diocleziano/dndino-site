@@ -4,6 +4,10 @@ Dieser Bereich umfasst die Nachschlageinhalte der App: **Regeln**, **Talente**, 
 
 Die Felder bleiben bewusst frei, damit du sie an deine Kampagne anpassen kannst. Für bessere Filter und klarere Gruppierungen sind aber einheitliche, saubere Werte hilfreich.
 
+## Offizieller Katalog und magische Gegenstände
+
+SRD-5.2.1-Monster, Zauber, Talente, Waffen, Rüstungen, Werkzeuge und Ausrüstung sind offline verfügbar. **Abenteurerausrüstung** enthält auch **Magische Gegenstände** mit 258 Einträgen samt Varianten, Seltenheit und Einstimmung. **Offizielle Inhalte** trennt den Katalog von eigenen Daten. Sprachen, Anpassung und Wiederherstellung: [Offizielle Inhalte und Duplikate](official-content.md).
+
 ## Wie die Suche funktioniert
 
 Die Schnellsuche in der Topbar durchsucht mehrere Felder gleichzeitig.

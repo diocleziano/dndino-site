@@ -10,6 +10,29 @@ C'est l'une des sections les plus riches de l'application, parce qu'elle réunit
 - les présences contextuelles
 - l'accès rapide aux combats
 
+## Gestion rapide des présences
+
+### CA et PV maximum propres au lieu
+
+L’ajout d’un **PNJ ou monstre** copie initialement la CA et les PV maximum de la fiche de base, puis ces valeurs appartiennent à la présence. Tu peux les modifier dès l’ajout ou dans sa fiche locale sans changer les autres copies ni la base. Les anciennes présences sans ces valeurs utilisent toujours la fiche de base. Les **personnages d’aventure** gardent leur état partagé.
+
+**Gérer les présences**, près du récapitulatif, ouvre une liste groupée par fiche de base. Chaque ligne permet de modifier nom, CA, PV maximum, actuels et temporaires, rôle et statut. **Appliquer au groupe** règle CA et maximum pour toutes ses présences. Enregistrer sans modifier ces champs n’uniformise pas les différences existantes.
+
+Réduire le maximum plafonne les PV actuels qui le dépassent ; l’augmenter ne soigne pas automatiquement. **PV actuels au maximum** remplit chaque présence jusqu’à son propre maximum, sans changer PV temporaires, états ou statut. Confirme avec **Enregistrer**.
+
+### Consulter, dupliquer et déplacer
+
+- **Fiche compacte** affiche un profil de consultation avec caractéristiques, MOD, JS, sorts, images et liens, en utilisant les valeurs locales.
+- **Dupliquer la présence** conserve aussi CA et PV maximum locaux. La seconde copie numérote le nom générique dès la première : `Gobelin 1`, `Gobelin 2`. Les noms personnalisés sont préservés.
+- **Déplacer** affiche le lieu actuel et l’arbre repliable des destinations, déjà positionné au départ. La présence conserve ses données.
+- Les états apparaissent avec icône et nom, pas comme texte technique. L’image donne accès aux actions d’affichage MJ/joueurs.
+
+### Navigation et cartes
+
+La recherche développe les chemins des résultats. **Retour à l’aventure** ouvre le tableau de bord. En **Interactif**, **Modifier la carte** ouvre la carte réellement affichée, même héritée d’un parent. En **Ombre**, Brouillard/Dessin et Révéler/Masquer gardent leur espace ; la barre défile horizontalement si nécessaire.
+
+Les fenêtres secondaires restent liées à la principale. Fermer la dernière fenêtre principale ferme aussi les fenêtres secondaires et joueurs et met les combats actifs en pause.
+
 ## À quoi sert la section Lieux
 
 La dashboard des lieux sert à organiser l'aventure sur le plan spatial et narratif.
@@ -36,7 +59,7 @@ Depuis cette carte, tu peux :
 
 ## Structure de l'écran
 
-La dashboard `Lieux` est organisée autour de deux modes principaux :
+La dashboard `Lieux` est organisée autour de trois modes principaux :
 
 - `Normal`
 - `Interactif`
@@ -448,12 +471,12 @@ Les enregistrements de type `Héros` ne sont pas sélectionnables dans ce mode.
 Dans la dashboard des lieux, DnDino applique des règles précises :
 
 - un `Personnage d'aventure` ne peut être placé qu'une seule fois dans le même lieu
-- un `PNJ` de base ne peut être ajouté qu'une seule fois dans le même lieu
+- le sélecteur ne repropose pas un PNJ déjà présent ; **Dupliquer la présence** permet de créer explicitement d’autres copies
 - un `Monstre` de base peut être ajouté plusieurs fois dans le même lieu
 
 Quand tu ajoutes plusieurs instances du même monstre, le nom affiché est numéroté automatiquement, par exemple :
 
-- `Gobelin`
+- `Gobelin 1`
 - `Gobelin 2`
 - `Gobelin 3`
 

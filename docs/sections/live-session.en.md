@@ -12,6 +12,12 @@ The **Live Session** is the operational context of the current game session. It 
 
 In practice, when a live session is active, DnDino knows which campaign is currently running and uses that context to connect different parts of the app.
 
+## Edit and reopen saved sessions
+
+Open a session from the dashboard's **Sessions** card by clicking anywhere on its row. You can edit **title and DM notes** even after a live session closes; completed sessions also allow correcting start and end. For active sessions, interval editing remains separate from pause/resume controls.
+
+Combat history opens the relevant encounter summary. Summary charts fit their vertical axis to the available values. A recreated session uses real recorded encounters within the interval and can list visited places; it does not invent missing turns or an exploration timeline.
+
 ## What It Is For
 
 The live session is useful when you want to use DnDino during an actual table session, not just during preparation.

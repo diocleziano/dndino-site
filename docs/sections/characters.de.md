@@ -11,6 +11,16 @@ Diese Seite ist wichtig, weil DnDino mit **mehreren Charakterebenen** arbeitet, 
 
 Das sind keine sinnlosen Duplikate. Sie dienen dazu, **kontextbezogene Daten getrennt** zu halten, etwa angezeigten Namen, Trefferpunkte, Zustände, Initiative und SL-Notizen, ohne die Verbindung zum ursprünglichen Quelldatensatz zu verlieren.
 
+## Kompakte Ansicht, Duplikate und sicheres Löschen
+
+Die Schnellansicht kann den **kompakten Werteblock** mit Attributen, Modifikatoren, Rettungswürfen, Bildern, Zaubern und Aktionslinks öffnen. Dies wird in den Topbar-Einstellungen festgelegt.
+
+SRD-Monster erscheinen in der Liste und lassen sich anpassen. **Duplikate verwalten** vergleicht persönliche und offizielle Bögen ohne automatisches Löschen: siehe [Offizielle Inhalte und Duplikate](official-content.md).
+
+Ein in einem aktiven Kampf verwendeter Bogen kann nicht gelöscht werden. Der Hinweis nennt Charakter, Kampf und Abenteuer und kann den Ort öffnen. Das Löschen eines persönlichen Bogens entfernt auch alle seine Ortsanwesenheiten einschließlich Kopien. Nur einen Charakter aus einem Abenteuer zu entfernen ist eine separate Aktion mit globaler Bestätigungseinstellung.
+
+Örtliche **RK und maximale TP** von NSC und Monstern werden beim Hinzufügen kopiert und danach in der Anwesenheit verwaltet. Fehlende alte Werte verwenden den Basisbogen; Abenteuerhelden bleiben gemeinsam. Einzel- und Gruppenbearbeitung: [Orte](places.md).
+
 ## Basisblatt
 
 Das **Basisblatt** ist der Hauptdatensatz im Bereich `Helden, NSC und Monster`.
@@ -255,7 +265,7 @@ Dieser Datensatz besitzt eigene ortsspezifische Werte wie:
 Das Verhalten hängt dann vom Typ ab:
 
 - **Monster** dürfen mehrfach lokal am selben Ort vorkommen
-- **NSC** bleiben am selben Ort einzigartig und werden dort im Picker nicht mehrfach angeboten
+- der Picker bietet bereits anwesende NSC nicht erneut an; **Anwesenheit duplizieren** erstellt ausdrücklich weitere Kopien
 
 Wenn du mehrere Instanzen desselben Monsters hinzufügst, schlägt DnDino automatisch einen fortlaufenden Namen vor, zum Beispiel:
 

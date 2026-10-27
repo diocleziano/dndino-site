@@ -16,6 +16,22 @@ Esta página explica:
 - Janela dos Jogadores
 - resumo final e estatísticas
 
+## Renomear por iniciativa
+
+**Renomear por iniciativa**, ao lado de **Ordenar**, numera por iniciativa decrescente PNJs e monstros da mesma ficha base. Reconhece o nome genérico sem número e sufixos numéricos comuns: `Goblin`, `Goblin 2`, `Goblin (3)`. Heróis e nomes realmente diferentes, como `Capitão Goblin`, ficam de fora.
+
+O goblin com iniciativa 20 vira `Goblin 1`, o de 10 vira `Goblin 2`. Zero e valores negativos funcionam; empates usam Destreza e a ordem atual. Só nomes do combate mudam, não identidades, PV, estatísticas, fichas base ou presenças. **Ordenar** reorganiza o rastreador separadamente.
+
+## Preparação, valores locais e resumo
+
+- **Mostrar na prévia do combate**, ativo por padrão para cada participante, controla apenas a apresentação inicial aos jogadores. Desativá-lo não remove o participante do combate. A ajuda segue a configuração global dos botões de guia.
+- Presenças locais usam sua própria **CA e PV máximos**, sem modificar a base ou outras cópias. A CA de participantes adicionados diretamente da lista geral continua específica do combate.
+- Atributos apresentam linhas alinhadas de valores, **MOD** e **salvaguardas**. Salvaguardas também são editáveis no editor rápido; a rolagem usa o valor explícito, senão o modificador do atributo, ou zero se ambos faltarem.
+- Nomes de PNJs e monstros são editáveis; passe o mouse sobre nomes longos para lê-los em rolagem. A busca ignora maiúsculas/minúsculas e volta ao topo após filtrar.
+- Ocultar nomes inimigos também os oculta nas animações de dano, como atacantes e alvos.
+
+O resumo final oferece **Voltar ao local** e **Editar horários**. A segunda ação define início e fim manualmente: o fim deve ser posterior ao início e a duração passa a ser o intervalo escolhido, substituindo pausas registradas. Mudanças posteriores nas presenças não reescrevem CA e PV máximos históricos de combates encerrados.
+
 ## Uma ou Duas Telas
 
 O combate funciona bem em **uma única tela**: todo o trabalho do Mestre fica na janela principal, com rastreador de iniciativa, fichas compactas e resumo.

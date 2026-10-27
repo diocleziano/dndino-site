@@ -48,6 +48,7 @@ plugins:
                 - Home Page: sections/homepage.md
                 - Topbar: sections/topbar.md
                 - Regole ed Equipaggiamento: sections/rules-equipment.md
+                - Contenuti ufficiali SRD e duplicati: sections/official-content.md
                 - Eroi, PNG e Mostri: sections/characters.md
                 - Importazione ed esportazione: sections/import-export.md
                 - Avventura: sections/adventure.md
@@ -80,6 +81,7 @@ plugins:
                 - Home Page: sections/homepage.md
                 - Top Bar: sections/topbar.md
                 - Rules and Equipment: sections/rules-equipment.md
+                - Official SRD Content and Duplicates: sections/official-content.md
                 - Heroes, NPCs, and Monsters: sections/characters.md
                 - Import and Export: sections/import-export.md
                 - Adventure: sections/adventure.md
@@ -111,6 +113,7 @@ plugins:
                 - Page d'accueil: sections/homepage.md
                 - Topbar: sections/topbar.md
                 - Regles et equipement: sections/rules-equipment.md
+                - Contenus SRD officiels et doublons: sections/official-content.md
                 - Heros, PNJ et Monstres: sections/characters.md
                 - Import et export: sections/import-export.md
                 - Aventure: sections/adventure.md
@@ -142,6 +145,7 @@ plugins:
                 - Home: sections/homepage.md
                 - Topbar: sections/topbar.md
                 - Regeln und Ausrustung: sections/rules-equipment.md
+                - Offizielle SRD-Inhalte und Duplikate: sections/official-content.md
                 - Helden, NSCs und Monster: sections/characters.md
                 - Import und Export: sections/import-export.md
                 - Abenteuer: sections/adventure.md
@@ -173,6 +177,7 @@ plugins:
                 - Pagina de inicio: sections/homepage.md
                 - Barra superior: sections/topbar.md
                 - Reglas y equipamiento: sections/rules-equipment.md
+                - Contenido SRD oficial y duplicados: sections/official-content.md
                 - Heroes, PNJ y Monstruos: sections/characters.md
                 - Importacion y exportacion: sections/import-export.md
                 - Aventura: sections/adventure.md
@@ -206,6 +211,7 @@ plugins:
                 - Pagina inicial: sections/homepage.md
                 - Topbar: sections/topbar.md
                 - Regras e equipamento: sections/rules-equipment.md
+                - Conteúdos SRD oficiais e duplicados: sections/official-content.md
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Importacao e exportacao: sections/import-export.md
                 - Aventura: sections/adventure.md
@@ -239,6 +245,7 @@ plugins:
                 - Pagina inicial: sections/homepage.md
                 - Topbar: sections/topbar.md
                 - Regras e equipamento: sections/rules-equipment.md
+                - Conteúdo SRD oficial e duplicatas: sections/official-content.md
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Importacao e exportacao: sections/import-export.md
                 - Aventura: sections/adventure.md
@@ -287,6 +294,7 @@ nav:
       - Home Page: sections/homepage.md
       - Top Bar: sections/topbar.md
       - Rules and Equipment: sections/rules-equipment.md
+      - Official SRD Content and Duplicates: sections/official-content.md
       - Heroes, NPCs, and Monsters: sections/characters.md
       - Import and Export: sections/import-export.md
       - Adventure: sections/adventure.md

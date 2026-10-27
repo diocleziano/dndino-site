@@ -25,6 +25,10 @@ La guida è divisa in due macrosezioni:
 
 </div>
 
+## Guida DnDino 1.5.0
+
+Questa revisione documenta le novità successive alla 1.4.3: [cataloghi SRD e duplicati](sections/official-content.md), [presenze con CA e PF locali](sections/places.md), [combattimento](sections/combat.md), [sessioni modificabili](sections/live-session.md) e [strumenti rapidi](sections/topbar.md). Alcune funzioni richiedono la nuova versione dell'app; questo aggiornamento della guida non cambia il numero di versione installato.
+
 ## DnDino
 
 DnDino è un'app pensata per aiutare il master a gestire in modo rapido e ordinato:

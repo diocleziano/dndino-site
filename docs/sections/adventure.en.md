@@ -16,6 +16,14 @@ This page explains the main flow:
 
 More specific areas, such as **Places**, **Concept Maps**, **Live Session**, **Characters**, **Images**, and **Maps**, are explored in their own dedicated pages.
 
+## Shortcuts and linked characters
+
+Click anywhere on a session row to open its details and edit title, DM notes and, for completed sessions, the interval. **Return to adventure** brings you here from Places; **Return to place** opens the linked place from a combat summary.
+
+Removing a dashboard character does not delete its general sheet. If confirmations are enabled, DnDino asks before removal. A Hero connection does not imply consent to automatic synchronization: Master and Hero must both enable it again for each new connection. Where unsupported, manual sheet sending remains available.
+
+Live synchronization requires iOS/iPadOS 26 or later on Hero. Older systems support manual character sending only, with no automatic synchronization even outside combat.
+
 ## What an Adventure Is For
 
 In DnDino, an adventure is the main container for a campaign or narrative arc. It gathers, in one shared context:

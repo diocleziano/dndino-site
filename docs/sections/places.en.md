@@ -10,6 +10,29 @@ It is one of the richest sections of the app, because it brings together:
 - contextual occupants
 - quick access to combat
 
+## Quick presence management
+
+### Place-specific AC and maximum HP
+
+Assigning an **NPC or monster** initially copies AC and maximum HP from the base sheet; those values then belong to that presence. Edit them during assignment or in the place-character editor without changing other copies or the base sheet. Older presences without these values keep their base-sheet fallback. **Adventure characters** retain their shared state.
+
+**Manage presences**, beside the summary, opens a list grouped by base sheet. Each row edits name, AC, maximum, current and temporary HP, role and status. **Apply to group** sets AC and maximum HP across that group. Saving without changing those fields does not flatten existing differences.
+
+Lowering the maximum caps current HP above the limit; raising it does not heal automatically. **Set HP to maximum** fills each presence to its own maximum without changing temporary HP, conditions or status. Confirm with **Save**.
+
+### View, duplicate and move
+
+- **Compact sheet** opens a read-only stat block with abilities, MOD, saves, spells, images and links, using the presence's contextual values.
+- **Duplicate presence** also retains local AC and maximum HP. Adding a second copy numbers the generic name from the first: `Goblin 1`, `Goblin 2`. Custom names stay unchanged.
+- **Move** shows the current place and a collapsible destination tree already scrolled to the starting place. The presence keeps its data.
+- Conditions display an icon and name instead of technical text. The image provides DM/player display actions.
+
+### Navigation and maps
+
+Tree search expands matching paths. **Return to adventure** opens the dashboard. In **Interactive**, **Edit map** edits the actual displayed map, including an inherited parent map. In **Shadow**, Fog/Drawing and Reveal/Hide keep their own space; the toolbar scrolls horizontally when needed.
+
+Secondary windows stay attached to the main window. Closing the last main window closes secondary and player windows and pauses active combats.
+
 ## What the Places Section Is For
 
 The places dashboard is used to organize the adventure on both the spatial and narrative level.
@@ -36,7 +59,7 @@ From that card you can:
 
 ## Screen Structure
 
-The `Places` dashboard is organized around two main modes:
+The `Places` dashboard is organized around three main modes:
 
 - `Normal`
 - `Interactive`
@@ -448,12 +471,12 @@ Records of type `Hero` are not selectable in this mode.
 In the places dashboard, DnDino applies precise rules:
 
 - an `Adventure Character` can only be placed once in the same place
-- a base `NPC` can only be added once in the same place
+- the picker does not offer an NPC already present; **Duplicate presence** explicitly creates additional copies
 - a base `Monster` can be added multiple times in the same place
 
 When you add multiple instances of the same monster, the display name is automatically numbered, for example:
 
-- `Goblin`
+- `Goblin 1`
 - `Goblin 2`
 - `Goblin 3`
 

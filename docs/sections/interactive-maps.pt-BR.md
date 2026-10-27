@@ -10,6 +10,12 @@ Eles são pensados para os casos em que a simples estrutura em árvore já não 
 - uma masmorra
 - uma região
 
+## Editar o mapa exibido nos locais
+
+No modo **Interativo** dos locais, **Editar mapa** fica ao lado do controle dos nomes dos marcadores. Abre o editor do mapa realmente exibido, mesmo que pertença a um local pai ou tenha sido escolhido no seletor.
+
+Ao voltar, os marcadores são atualizados e o mapa, o zoom e a posição são mantidos sempre que ainda estiverem disponíveis.
+
 ## Para que servem
 
 Os mapas interativos são úteis quando você quer:

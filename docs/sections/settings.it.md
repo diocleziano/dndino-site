@@ -11,6 +11,12 @@ Le impostazioni influenzano soprattutto:
 - la gestione di immagini, backup e snapshot
 - il supporto e la diagnostica del database
 
+## Contenuti, aiuti e nuovi temi
+
+**Generali → Contenuto ufficiale** attiva o nasconde i cataloghi SRD, senza eliminare i dati personali o interrompere i riferimenti esistenti. Il controllo è condiviso con le liste. Vedi [Contenuti ufficiali](official-content.md).
+
+I pulsanti guida **?** si possono disabilitare globalmente e sono attivi di default. La modalità di apertura rapida dei personaggi può usare la nuova scheda compatta. Il tema **Halloween** si aggiunge alle altre palette; **Sistema** continua a seguire l'aspetto effettivo di macOS. Topbar, pulsanti contestuali e menu sono stati uniformati per mantenere leggibili icone e testo.
+
 ## Come è organizzata la schermata
 
 La pagina è divisa in due aree:

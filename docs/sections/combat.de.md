@@ -16,6 +16,22 @@ Diese Seite erklärt:
 - Spielerfenster
 - Abschlussübersicht und Statistiken
 
+## Nach Initiative umbenennen
+
+**Nach Initiative umbenennen** neben **Sortieren** nummeriert NSC und Monster desselben Basisbogens nach absteigender Initiative. Sowohl der generische Name ohne Nummer als auch übliche Zahlensuffixe werden erkannt: `Goblin`, `Goblin 2`, `Goblin (3)`. Wirklich andere Namen wie `Goblinhauptmann` und Helden bleiben unberührt.
+
+Der Goblin mit Initiative 20 wird `Goblin 1`, der mit 10 `Goblin 2`. Auch null und negative Werte gelten; Gleichstände nutzen Geschicklichkeit und die aktuelle Reihenfolge. Nur Kampfnamen ändern sich, nicht Identitäten, TP, Statistiken, Basisbögen oder Ortsanwesenheiten. **Sortieren** ordnet den Tracker separat.
+
+## Vorbereitung, örtliche Werte und Übersicht
+
+- **In Kampfvorschau anzeigen** ist pro Teilnehmer standardmäßig aktiv und betrifft nur die erste Spielerpräsentation. Abschalten entfernt niemanden aus dem Kampf. Die Hilfe folgt der globalen Einstellung für Hilfeschaltflächen.
+- Örtliche Anwesenheiten nutzen ihre eigene **RK und maximalen TP**, ohne Basisbogen oder andere Kopien zu ändern. Bei direkt aus der allgemeinen Liste hinzugefügten Teilnehmern bleibt die RK kampfspezifisch.
+- Attribute zeigen ausgerichtete Zeilen für Werte, **MOD** und **Rettungswürfe**. Rettungswürfe sind auch im Schnelleditor änderbar. Der Wurf nutzt den eingetragenen Rettungswurf, sonst den Attributsmodifikator, sonst null.
+- Namen von NSC und Monstern sind im Kampf änderbar; lange Namen scrollen beim Darüberfahren. Die Suche ignoriert Groß-/Kleinschreibung und springt nach dem Filtern nach oben.
+- Verborgene Gegnernamen bleiben auch in Schadensanimationen als Angreifer und Ziele verborgen.
+
+Die Abschlussübersicht bietet **Zurück zum Ort** und **Zeiten bearbeiten**. Letzteres setzt Beginn und Ende manuell: Ende muss nach Beginn liegen; die Dauer entspricht dem gewählten Intervall und ersetzt gespeicherte Pausen. Spätere Änderungen von Anwesenheiten überschreiben historische RK und maximale TP abgeschlossener Kämpfe nicht.
+
 ## Ein oder Zwei Bildschirme
 
 Der Kampf funktioniert auch auf **einem Bildschirm** gut: Die komplette SL-Arbeit bleibt im Hauptfenster, mit Initiative-Tracker, kompakten Datenkarten und Übersicht.

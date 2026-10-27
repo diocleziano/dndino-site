@@ -11,6 +11,12 @@ As definições influenciam sobretudo:
 - a gestão de imagens, backups e snapshots
 - o suporte e a parte de diagnóstico da base de dados
 
+## Conteúdos, ajuda e novos temas
+
+**Geral → Conteúdo oficial** mostra ou oculta catálogos SRD sem eliminar dados pessoais nem quebrar referências. O controlo é partilhado com as listas. Ver [Conteúdos oficiais](official-content.md).
+
+Os botões de guia **?**, ativos por predefinição, podem ser desativados globalmente. A abertura rápida de personagens pode usar a ficha compacta. **Halloween** junta-se aos temas; **Sistema** continua a seguir a aparência real do macOS. Barra superior, botões contextuais e menus têm disposições coerentes para manter ícones e textos legíveis.
+
 ## Como o ecrã está organizado
 
 A página está dividida em duas áreas:

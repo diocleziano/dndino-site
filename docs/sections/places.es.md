@@ -10,6 +10,29 @@ Es una de las secciones más ricas de la aplicación, porque reúne:
 - presencias contextuales
 - acceso rápido a los combates
 
+## Gestión rápida de presencias
+
+### CA y PG máximos del lugar
+
+Al asignar un **PNJ o monstruo**, CA y PG máximos se copian inicialmente de la ficha base y después pertenecen a esa presencia. Puedes editarlos al asignarla o en su ficha local sin cambiar otras copias ni la base. Las presencias antiguas sin estos valores siguen usando la ficha base. Los **personajes de aventura** mantienen su estado compartido.
+
+**Gestionar presencias**, junto al resumen, abre una lista agrupada por ficha base. Cada fila permite editar nombre, CA, PG máximos, actuales y temporales, papel y estado. **Aplicar al grupo** establece CA y máximo para todas sus presencias. Guardar sin cambiar esos campos no iguala diferencias existentes.
+
+Reducir el máximo limita los PG actuales superiores; aumentarlo no cura automáticamente. **PG actuales al máximo** rellena cada presencia hasta su propio máximo, sin cambiar PG temporales, condiciones ni estado. Confirma con **Guardar**.
+
+### Consultar, duplicar y mover
+
+- **Ficha compacta** abre un perfil de consulta con características, MOD, salvaciones, conjuros, imágenes y vínculos usando los valores locales.
+- **Duplicar presencia** conserva también CA y PG máximos locales. Una segunda copia numera el nombre genérico desde la primera: `Goblin 1`, `Goblin 2`. Los nombres personalizados se conservan.
+- **Mover** muestra el lugar actual y el árbol plegable de destinos, ya desplazado al lugar de origen. La presencia mantiene sus datos.
+- Las condiciones muestran icono y nombre, no texto técnico. La imagen ofrece acciones para mostrar al DM y a los jugadores.
+
+### Navegación y mapas
+
+La búsqueda expande las rutas de resultados. **Volver a la aventura** abre el panel. En **Interactiva**, **Editar mapa** abre el mapa realmente mostrado, incluso heredado de un padre. En **Sombra**, Niebla/Dibujo y Revelar/Ocultar mantienen su espacio; la barra se desplaza horizontalmente si es necesario.
+
+Las ventanas secundarias permanecen vinculadas a la principal. Cerrar la última principal cierra también las secundarias y de jugadores y pausa los combates activos.
+
 ## Para qué sirve la sección Lugares
 
 El panel de lugares sirve para organizar la aventura tanto en el plano espacial como en el narrativo.
@@ -36,7 +59,7 @@ Desde esa tarjeta puedes:
 
 ## Estructura de la pantalla
 
-El panel `Lugares` se organiza en torno a dos modos principales:
+El panel `Lugares` se organiza en torno a tres modos principales:
 
 - `Normal`
 - `Interactivo`
@@ -448,12 +471,12 @@ Los registros de tipo `Héroe` no pueden seleccionarse en este modo.
 En el panel de lugares, DnDino aplica reglas muy concretas:
 
 - un `Personaje de aventura` solo puede colocarse una vez en el mismo lugar
-- un `PNJ` base solo puede añadirse una vez en el mismo lugar
+- el selector no vuelve a ofrecer un PNJ ya presente; **Duplicar presencia** permite crear copias adicionales explícitamente
 - un `Monstruo` base puede añadirse varias veces en el mismo lugar
 
 Cuando añades varias instancias del mismo monstruo, el nombre mostrado se numera automáticamente, por ejemplo:
 
-- `Goblin`
+- `Goblin 1`
 - `Goblin 2`
 - `Goblin 3`
 

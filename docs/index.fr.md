@@ -22,6 +22,10 @@ Ce guide t'accompagne dans les principales fonctions de l'application, des opér
 !!! note
     Le guide est organisé par grandes sections fonctionnelles. Si tu commences tout juste, le mieux est de partir de **Premiers pas**, puis de passer à **Héros, PNJ et Monstres**, **Lieux** et **Combat**.
 
+## Guide DnDino 1.5.0
+
+Cette révision couvre les nouveautés depuis la 1.4.3 : [catalogues SRD et doublons](sections/official-content.md), [CA/PV locaux](sections/places.md), [combat](sections/combat.md), [sessions modifiables](sections/live-session.md) et [outils rapides](sections/topbar.md). Certaines fonctions nécessitent la nouvelle version de l’app ; cette mise à jour du guide ne change pas la version installée.
+
 ## Ce que tu peux faire avec DnDino
 
 Avec DnDino tu peux :

@@ -4,6 +4,14 @@ DnDino permite exportar e importar conteúdos para os mover entre instalações,
 
 As importações não substituem automaticamente os dados existentes: antes de guardar, podes rever o que será adicionado, substituído ou ignorado.
 
+## Catálogos oficiais e dados contextuais
+
+Os originais SRD não podem ser substituídos; as cópias pessoais mantêm-se separadas do catálogo. As exportações evitam duplicar conteúdo integrado sem uso, enquanto as aventuras mantêm as fichas necessárias às ligações.
+
+As importações de personagens e aventuras tratam feitiços antes de personagens e associações. Os grupos **Novos/Correspondências** e ações em massa separam as decisões; as correspondências começam em **Ignorar**. Verifica a comparação e a associação quando existirem nomes duplicados.
+
+Os pacotes de aventura preservam CA e PV máximos locais. Pacotes antigos sem estes campos continuam legíveis e usam a ficha base como alternativa.
+
 ## Feitiços
 
 Os feitiços podem ser exportados num ficheiro JSON.

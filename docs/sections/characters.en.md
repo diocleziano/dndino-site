@@ -11,6 +11,16 @@ This page matters because DnDino uses **multiple character layers**, each with a
 
 These are not pointless duplicates. They exist so DnDino can keep **contextual data separate**, such as display name, hit points, conditions, initiative, and DM notes, while still preserving the link to the original source record.
 
+## Compact viewing, duplicates and safe deletion
+
+Quick viewing can open the **compact sheet** with abilities, modifiers, saves, images, spells and operational links. Configure quick opening in the top-bar preferences.
+
+SRD monsters appear in the list and can be customized. **Manage duplicates** compares personal and official sheets without automatic deletion: see [Official Content and Duplicates](official-content.md).
+
+A sheet used in an active combat cannot be deleted. The warning identifies the character, encounter and adventure and can open the relevant place. Deleting a personal sheet also removes all its place presences, including copies. Removing a character only from an adventure is a separate action, using the global confirmation setting.
+
+For local NPCs and monsters, **AC and maximum HP** are copied on assignment and managed in the presence. Older missing values fall back to the base sheet. Adventure heroes stay shared. See [Places](places.md) for individual and group editing.
+
 ## Base Sheet
 
 The **base sheet** is the main record stored in `Heroes, NPCs, and Monsters`.
@@ -257,7 +267,7 @@ This local record has its own place-specific data, such as:
 The behavior then depends on the type:
 
 - **Monsters** can have multiple local instances in the same place
-- **NPCs** remain unique within the same place and are not offered again in the picker there
+- the picker does not offer an NPC already present; **Duplicate presence** explicitly creates additional copies
 
 When you add multiple instances of the same monster, DnDino automatically proposes an incremental name such as:
 

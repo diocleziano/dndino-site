@@ -11,6 +11,12 @@ Die Einstellungen beeinflussen vor allem:
 - die Verwaltung von Bildern, Backups und Snapshots
 - Support und Diagnose der Datenbank
 
+## Inhalte, Hilfe und zusätzliche Themen
+
+**Allgemein → Offizielle Inhalte** zeigt oder verbirgt SRD-Kataloge, ohne persönliche Daten zu löschen oder Verweise zu beschädigen. Die Einstellung gilt auch für die Listen. Siehe [Offizielle Inhalte](official-content.md).
+
+Die standardmäßig aktiven **?**-Hilfeschaltflächen lassen sich global abschalten. Die Charakter-Schnellansicht kann den kompakten Werteblock verwenden. **Halloween** ergänzt die Themen; **System** folgt weiterhin dem tatsächlichen macOS-Erscheinungsbild. Topbar, Kontextschaltflächen und Menüs verwenden einheitliche Layouts für lesbare Symbole und Texte.
+
 ## Aufbau des Bildschirms
 
 Die Seite ist in zwei Bereiche aufgeteilt:

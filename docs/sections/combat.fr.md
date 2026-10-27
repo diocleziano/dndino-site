@@ -16,6 +16,22 @@ Cette page explique :
 - la Fenêtre Joueurs
 - le résumé final et les statistiques
 
+## Renommer selon l’initiative
+
+**Renommer selon l’initiative**, à côté de **Trier**, numérote par initiative décroissante les PNJ et monstres issus de la même fiche de base. Le nom générique sans numéro et les suffixes numériques courants sont reconnus : `Gobelin`, `Gobelin 2`, `Gobelin (3)`. Les noms réellement différents, comme `Capitaine gobelin`, et les héros sont exclus.
+
+Le gobelin à initiative 20 devient `Gobelin 1`, celui à 10 devient `Gobelin 2`. Zéro et valeurs négatives fonctionnent ; les égalités utilisent Dextérité puis l’ordre actuel. Seuls les noms du combat changent, pas identités, PV, statistiques, fiches de base ou présences. **Trier** réordonne séparément le suivi.
+
+## Préparation, valeurs locales et récapitulatif
+
+- **Afficher dans l’aperçu du combat**, activé par défaut par participant, contrôle seulement la présentation initiale aux joueurs. Le désactiver ne retire pas le participant du combat. L’aide suit le réglage global des boutons guide.
+- Les présences locales utilisent leurs propres **CA et PV maximum** sans modifier la base ou les autres copies. La CA d’un participant ajouté directement depuis la liste générale reste propre au combat.
+- Les caractéristiques présentent des lignes alignées de scores, **MOD** et **JS**. Les JS sont modifiables dans l’éditeur rapide ; le lancer utilise le JS explicite, sinon le modificateur de caractéristique, ou zéro si les deux manquent.
+- Les noms des PNJ et monstres sont modifiables ; survole un nom long pour le lire en défilement. La recherche ignore la casse et revient en haut après filtrage.
+- Masquer les noms ennemis les masque aussi dans les animations de dégâts, comme attaquants et cibles.
+
+Le récapitulatif final propose **Retour au lieu** et **Modifier les horaires**. Cette dernière action règle manuellement début et fin : la fin doit suivre le début et la durée devient l’intervalle choisi, en remplaçant les pauses enregistrées. Les changements ultérieurs des présences ne réécrivent pas CA et PV maximum historiques des combats terminés.
+
 ## Un ou Deux Écrans
 
 Le combat fonctionne très bien sur **un seul écran** : tout le travail du MJ reste dans la fenêtre principale, avec le suivi d'initiative, les fiches compactes et le récapitulatif.

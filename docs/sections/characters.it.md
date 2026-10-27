@@ -11,6 +11,16 @@ Questa pagina è importante perché in DnDino esistono **più livelli di persona
 
 Non sono duplicazioni inutili: servono per mantenere **dati contestuali separati**, come nome visualizzato, punti ferita, condizioni, iniziativa e note DM, senza perdere il collegamento con la scheda originale.
 
+## Consultazione, duplicati ed eliminazione sicura
+
+La visualizzazione rapida può aprire la **scheda compatta**, con caratteristiche, modificatori, tiri salvezza, immagini, incantesimi e link operativi. L'opzione di apertura si imposta dalla topbar nelle preferenze.
+
+I mostri SRD sono disponibili nella lista e possono essere personalizzati. **Gestisci duplicati** consente di confrontare schede personali e ufficiali senza cancellazioni automatiche: vedi [Contenuti ufficiali e duplicati](official-content.md).
+
+Non puoi eliminare una scheda utilizzata da un combattimento attivo: l'avviso indica personaggio, scontro e avventura e può portarti al luogo interessato. Eliminare una scheda personale rimuove anche tutte le sue presenze nei luoghi, comprese le copie. Rimuovere un personaggio dalla sola avventura è invece un'operazione distinta, soggetta alla conferma globale quando abilitata.
+
+Per PNG e mostri del luogo, **CA e PF massimi** sono locali: vengono copiati all'assegnazione e poi gestiti nella presenza. Le vecchie presenze senza valore usano la scheda base. I PG dell'avventura restano condivisi. Consulta [Luoghi](places.md) per modifica singola e di gruppo.
+
 ## Scheda base
 
 La **scheda base** è il record principale salvato nella sezione `Eroi, PNG e Mostri`.
@@ -276,7 +286,7 @@ Questo record ha dati propri per il luogo, come:
 In questo caso il comportamento cambia in base al tipo:
 
 - i **Mostri** possono avere più presenze locali nello stesso luogo
-- i **PNG** restano unici nello stesso luogo e non vengono riproposti più volte nel selettore
+- il selettore non ripropone un PNG già presente; **Duplica presenza** permette di crearne esplicitamente altre copie
 
 Quando aggiungi più istanze dello stesso mostro, DnDino propone automaticamente un nome progressivo, per esempio:
 

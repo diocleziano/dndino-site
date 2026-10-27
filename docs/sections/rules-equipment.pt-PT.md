@@ -4,6 +4,10 @@ Esta secção reúne as áreas de consulta da app: **Regras**, **Talentos**, **G
 
 Os campos são livres, para se adaptarem à tua campanha. Ainda assim, para filtros mais precisos e agrupamentos mais claros, convém usar valores limpos e coerentes.
 
+## Catálogo oficial e objetos mágicos
+
+Monstros, feitiços, talentos, armas, armaduras, ferramentas e equipamento SRD 5.2.1 estão disponíveis offline. **Equipamento de aventura** inclui também **Objetos mágicos**, com 258 entradas, variantes, raridade e sintonização. **Conteúdo oficial** distingue o catálogo dos registos pessoais. Ver [Conteúdos oficiais e duplicados](official-content.md) para idiomas, personalização e reposição.
+
 ## Como funciona a pesquisa
 
 A pesquisa rápida da topbar verifica vários campos ao mesmo tempo.

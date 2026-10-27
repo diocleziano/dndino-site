@@ -22,6 +22,10 @@ This guide walks you through the main features of the app, from the basics to th
 !!! note
     The guide is organized by feature area. If you're just getting started, begin with **Getting Started**, then move on to **Heroes, NPCs, and Monsters**, **Places**, and **Combat**.
 
+## DnDino 1.5.0 Guide
+
+This revision covers additions since 1.4.3: [SRD libraries and duplicates](sections/official-content.md), [place-specific AC/HP](sections/places.md), [combat](sections/combat.md), [editable sessions](sections/live-session.md) and [quick tools](sections/topbar.md). Some features require the new app version; updating this guide does not change the installed app version.
+
 ## What You Can Do with DnDino
 
 With DnDino you can:

@@ -4,6 +4,10 @@ This section covers the app reference areas: **Rules**, **Feats**, **Glossary**,
 
 Fields are intentionally flexible, so you can adapt them to your campaign. For cleaner filters and better grouping, though, use consistent, tidy values.
 
+## Official library and magic items
+
+SRD 5.2.1 monsters, spells, feats, weapons, armor, tools and gear are available offline. **Adventuring Gear** also includes **Magic Items**, with 258 entries and their variants, rarity and attunement requirements. **Official content** distinguishes this library from your personal records. See [Official Content and Duplicates](official-content.md) for languages, customization and restoring originals.
+
 ## How Search Works
 
 The top bar quick search checks several fields at once.

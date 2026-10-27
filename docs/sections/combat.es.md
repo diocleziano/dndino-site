@@ -16,6 +16,22 @@ Esta página explica:
 - Ventana de Jugadores
 - resumen final y estadísticas
 
+## Renombrar por iniciativa
+
+**Renombrar por iniciativa**, junto a **Ordenar**, numera por iniciativa descendente PNJ y monstruos de la misma ficha base. Reconoce el nombre genérico sin número y los sufijos numéricos habituales: `Goblin`, `Goblin 2`, `Goblin (3)`. Excluye héroes y nombres realmente distintos, como `Capitán goblin`.
+
+El goblin con iniciativa 20 pasa a `Goblin 1`, el de 10 a `Goblin 2`. También funcionan cero y valores negativos; los empates usan Destreza y el orden actual. Solo cambian los nombres del combate, no identidades, PG, estadísticas, fichas base o presencias. **Ordenar** reorganiza el seguimiento por separado.
+
+## Preparación, valores locales y resumen
+
+- **Mostrar en vista previa del combate**, activo por defecto por participante, solo controla la presentación inicial a los jugadores. Desactivarlo no retira al participante del combate. La ayuda sigue el ajuste global de botones guía.
+- Las presencias locales usan su propia **CA y PG máximos**, sin modificar la base u otras copias. La CA de participantes añadidos directamente desde la lista general sigue siendo específica del combate.
+- Las características presentan filas alineadas de puntuaciones, **MOD** y **salvaciones**. Las salvaciones pueden editarse en el editor rápido; la tirada usa la salvación explícita, si no el modificador de característica, o cero si faltan ambos.
+- Los nombres de PNJ y monstruos se pueden editar; pasa el ratón por nombres largos para leerlos en desplazamiento. La búsqueda ignora mayúsculas/minúsculas y vuelve arriba tras filtrar.
+- Ocultar nombres enemigos también los oculta en las animaciones de daño, como atacantes y objetivos.
+
+El resumen final ofrece **Volver al lugar** y **Editar horarios**. Esta última acción fija manualmente inicio y fin: el fin debe ser posterior al inicio y la duración pasa a ser el intervalo elegido, sustituyendo las pausas registradas. Cambiar presencias después no reescribe CA y PG máximos históricos de combates terminados.
+
 ## Uno o Dos Monitores
 
 El combate funciona bien en **un solo monitor**: toda la gestión del DJ permanece en la ventana principal, con rastreador de iniciativa, fichas compactas y resumen.

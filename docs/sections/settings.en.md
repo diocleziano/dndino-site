@@ -11,6 +11,12 @@ Settings mostly affect:
 - image, backup, and snapshot management
 - database support and diagnostics
 
+## Content, help and additional themes
+
+**General → Official content** shows or hides SRD libraries without deleting personal data or breaking existing references. The control is shared with the lists. See [Official Content](official-content.md).
+
+Guide **?** buttons can be disabled globally and are enabled by default. Quick character opening can use the compact sheet. **Halloween** joins the other themes; **System** continues to follow macOS's actual appearance. The top bar, contextual buttons and menus use consistent layouts that keep icons and text readable.
+
 ## How the Screen Is Organized
 
 The page is divided into two areas:

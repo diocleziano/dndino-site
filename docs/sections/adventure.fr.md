@@ -16,6 +16,14 @@ Cette page explique le parcours principal :
 
 Les zones plus spécifiques, comme **Lieux**, **Cartes conceptuelles**, **Session live**, **Personnages**, **Images** et **Cartes**, seront approfondies dans leurs pages dédiées.
 
+## Raccourcis et personnages liés
+
+Toute la ligne d’une session ouvre son détail pour modifier titre, notes MJ et, après clôture, intervalle. **Retour à l’aventure** revient ici depuis les lieux ; **Retour au lieu** ouvre le lieu associé depuis un récapitulatif de combat.
+
+Retirer un personnage du tableau de bord ne supprime pas sa fiche générale. Si les confirmations sont actives, DnDino demande confirmation. Une connexion Hero n’implique pas le consentement à la synchronisation automatique : Master et Hero doivent la réactiver à chaque nouvelle connexion. Si elle n’est pas prise en charge, l’envoi manuel de la fiche reste disponible.
+
+La synchronisation live nécessite iOS/iPadOS 26 ou ultérieur sur Hero. Les systèmes antérieurs permettent uniquement l’envoi manuel du personnage, sans synchronisation automatique même hors combat.
+
 ## À quoi sert une aventure
 
 Dans DnDino, une aventure est le conteneur principal d'une campagne ou d'un arc narratif. Elle sert à réunir, dans un même contexte :

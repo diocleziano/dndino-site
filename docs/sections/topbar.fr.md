@@ -80,9 +80,7 @@ Le dé par défaut se règle dans **Réglages**. Le résultat affiche chaque dé
 
 ### Générateur de noms
 
-Le générateur de noms sert à improviser vite un nom pour un PNJ, un monstre, un lieu improvisé ou une rencontre inattendue.
-
-Tu peux choisir l'ascendance et le sexe, régénérer les résultats et copier un nom.
+Choisis espèce, genre et **nom complet** ou **prénom seul**. Verrouille prénom ou nom de famille pour ne régénérer que l’autre partie, ou régénère une proposition seule. Copie un résultat ou retrouve-le dans l’historique récent, partagé avec l’accès rapide. Cet historique peut être vidé.
 
 ### Timers rapides
 

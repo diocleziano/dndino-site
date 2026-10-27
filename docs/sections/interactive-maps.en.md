@@ -10,6 +10,12 @@ They are designed for cases where a simple tree structure is no longer enough an
 - a dungeon
 - a region
 
+## Edit the map displayed in Places
+
+In **Interactive** mode in Places, **Edit map** is beside **Show marker names**. It opens the editor for the map actually displayed, including a parent place's map or one chosen from the selector.
+
+Returning refreshes the markers while preserving the selected map, zoom and position whenever still available.
+
 ## What They Are For
 
 Interactive maps are useful when you want to:

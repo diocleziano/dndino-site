@@ -11,6 +11,12 @@ As configurações influenciam principalmente:
 - a gestão de imagens, backups e snapshots
 - o suporte e a parte de diagnóstico da base de dados
 
+## Conteúdo, ajuda e novos temas
+
+**Geral → Conteúdo oficial** mostra ou oculta catálogos SRD sem excluir dados pessoais nem romper referências. O controle é compartilhado com as listas. Veja [Conteúdo oficial](official-content.md).
+
+Botões de guia **?**, ativos por padrão, podem ser desativados globalmente. A abertura rápida de personagens pode usar a ficha compacta. **Halloween** se junta aos temas; **Sistema** continua seguindo a aparência real do macOS. Barra superior, botões contextuais e menus usam layouts consistentes para manter ícones e textos legíveis.
+
 ## Como a tela está organizada
 
 A página é dividida em duas áreas:

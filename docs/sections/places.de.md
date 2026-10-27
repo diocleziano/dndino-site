@@ -10,6 +10,29 @@ Er gehört zu den umfangreichsten Bereichen der App, weil er Folgendes zusammenf
 - kontextbezogene Anwesende
 - schnellen Zugriff auf Kämpfe
 
+## Anwesenheiten schnell verwalten
+
+### Ortsbezogene RK und maximale TP
+
+Beim Hinzufügen eines **NSC oder Monsters** werden RK und maximale TP zunächst vom Basisbogen übernommen und gehören danach dieser Anwesenheit. Du kannst sie beim Hinzufügen oder im Ortseditor ändern, ohne andere Kopien oder die Basis zu verändern. Alte Anwesenheiten ohne diese Werte verwenden weiterhin den Basisbogen. **Abenteuercharaktere** behalten ihren gemeinsamen Zustand.
+
+Die **Anwesenheitsverwaltung** neben der Zusammenfassung gruppiert nach Basisbogen. Jede Zeile bearbeitet Name, RK, maximale, aktuelle und temporäre TP, Rolle und Status. **Auf Gruppe anwenden** setzt RK und Maximum für alle Anwesenheiten der Gruppe. Unverändertes Speichern vereinheitlicht bestehende Unterschiede nicht.
+
+Ein niedrigeres Maximum begrenzt darüberliegende aktuelle TP; ein höheres heilt nicht automatisch. **Aktuelle TP maximieren** füllt jede Anwesenheit bis zum eigenen Maximum auf, ohne temporäre TP, Zustände oder Status zu ändern. Mit **Speichern** übernehmen.
+
+### Anzeigen, duplizieren und verschieben
+
+- **Kompakte Ansicht** öffnet einen Werteblock mit Attributen, MOD, Rettungswürfen, Zaubern, Bildern und Links anhand der örtlichen Werte.
+- **Anwesenheit duplizieren** erhält auch lokale RK und maximale TP. Die zweite Kopie nummeriert den generischen Namen ab dem ersten Eintrag: `Goblin 1`, `Goblin 2`. Eigene Namen bleiben erhalten.
+- **Verschieben** zeigt den aktuellen Ort und einen einklappbaren Zielbaum, bereits zum Ausgangsort gescrollt. Alle Daten bleiben erhalten.
+- Zustände erscheinen mit Symbol und Namen statt technischem Text. Das Bild bietet Aktionen für SL- und Spieleranzeige.
+
+### Navigation und Karten
+
+Die Suche klappt Ergebnispfade auf. **Zurück zum Abenteuer** öffnet das Dashboard. **Karte bearbeiten** in **Interaktiv** öffnet die tatsächlich angezeigte Karte, auch die eines übergeordneten Orts. In **Schatten** behalten Nebel/Zeichnung und Aufdecken/Verbergen ihren Platz; bei Bedarf scrollt die Leiste horizontal.
+
+Nebenfenster bleiben am Hauptfenster. Das Schließen des letzten Hauptfensters schließt auch Neben- und Spielerfenster und pausiert aktive Kämpfe.
+
 ## Wofür der Bereich Orte gedacht ist
 
 Das Orte-Dashboard dient dazu, ein Abenteuer räumlich und erzählerisch zu organisieren.
@@ -36,7 +59,7 @@ Von dort aus kannst du:
 
 ## Aufbau des Bildschirms
 
-Das Dashboard `Orte` ist um zwei Hauptmodi aufgebaut:
+Das Dashboard `Orte` ist um drei Hauptmodi aufgebaut:
 
 - `Normal`
 - `Interaktiv`
@@ -450,12 +473,12 @@ Einträge vom Typ `Held` sind in diesem Modus nicht auswählbar.
 Im Orte-Dashboard wendet DnDino genaue Regeln an:
 
 - ein `Abenteuercharakter` kann am selben Ort nur einmal platziert werden
-- ein grundlegender `NSC` kann am selben Ort nur einmal hinzugefügt werden
+- der Picker bietet bereits anwesende NSC nicht erneut an; **Anwesenheit duplizieren** erstellt ausdrücklich weitere Kopien
 - ein grundlegendes `Monster` kann am selben Ort mehrfach hinzugefügt werden
 
 Wenn du mehrere Instanzen desselben Monsters hinzufügst, wird der Anzeigename automatisch nummeriert, zum Beispiel:
 
-- `Goblin`
+- `Goblin 1`
 - `Goblin 2`
 - `Goblin 3`
 

@@ -12,6 +12,12 @@ Die **Live-Session** ist der operative Kontext der laufenden Spielsitzung. Sie i
 
 Praktisch bedeutet das: Wenn eine Live-Session aktiv ist, weiß DnDino, welche Kampagne gerade läuft, und nutzt diesen Kontext, um verschiedene Teile der App miteinander zu verbinden.
 
+## Gespeicherte Sitzungen bearbeiten und öffnen
+
+In der Dashboard-Karte **Sitzungen** ist die ganze Zeile anklickbar. **Titel und SL-Notizen** lassen sich auch nach Ende einer Live-Sitzung ändern; bei abgeschlossenen Sitzungen auch Beginn und Ende. Im laufenden Betrieb bleibt die Intervallbearbeitung von Pause/Fortsetzen getrennt.
+
+Der Kampfverlauf öffnet die zugehörige Übersicht. Diagramme passen die vertikale Achse an die Werte an. Eine nachträglich erstellte Sitzung nutzt tatsächlich gespeicherte Kämpfe im Intervall und kann besuchte Orte auflisten; fehlende Züge oder Erkundungsverläufe werden nicht erfunden.
+
 ## Wofür sie gedacht ist
 
 Die Live-Session ist nützlich, wenn du DnDino während einer echten Spielsitzung am Tisch verwenden willst und nicht nur zur Vorbereitung.

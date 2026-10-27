@@ -4,6 +4,14 @@ DnDino permet d'exporter et d'importer du contenu pour le déplacer entre plusie
 
 Les importations ne remplacent jamais automatiquement les données existantes : avant l'enregistrement, tu peux vérifier ce qui sera ajouté, remplacé ou ignoré.
 
+## Catalogues officiels et données locales
+
+Les originaux SRD ne peuvent pas être remplacés ; les copies personnelles restent séparées du catalogue. L’export ne duplique pas les contenus intégrés inutilisés, tandis qu’une aventure conserve les fiches nécessaires à ses liens.
+
+L’import de personnages et d’aventures traite les sorts avant les personnages et associations. Les groupes **Nouveaux/Correspondances** et actions groupées séparent les décisions ; les correspondances sont réglées sur **Ignorer** par défaut. Vérifie comparaison et association en cas de noms identiques.
+
+Les paquets aventure conservent CA et PV maximum locaux. Les anciens paquets sans ces champs restent lisibles et utilisent la fiche de base.
+
 ## Sorts
 
 Les sorts peuvent être exportés dans un fichier JSON.

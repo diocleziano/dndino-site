@@ -11,6 +11,12 @@ Les réglages influencent surtout :
 - la gestion des images, des sauvegardes et des snapshots
 - le support et la partie diagnostique de la base de données
 
+## Contenus, aide et nouveaux thèmes
+
+**Général → Contenu officiel** affiche ou masque les catalogues SRD sans supprimer les données personnelles ni rompre les liens. Le contrôle est partagé avec les listes. Voir [Contenus officiels](official-content.md).
+
+Les boutons guide **?**, activés par défaut, peuvent être désactivés globalement. L’ouverture rapide des personnages peut utiliser la fiche compacte. **Halloween** rejoint les autres thèmes ; **Système** continue de suivre l’apparence réelle de macOS. Topbar, boutons contextuels et menus ont des dispositions cohérentes pour garder icônes et textes lisibles.
+
 ## Comment l’écran est organisé
 
 La page est divisée en deux zones :

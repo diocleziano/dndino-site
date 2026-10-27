@@ -16,6 +16,14 @@ Diese Seite erklärt den Hauptablauf:
 
 Spezifischere Bereiche wie **Orte**, **Konzeptkarten**, **Live-Sitzung**, **Charaktere**, **Bilder** und **Karten** werden auf den jeweiligen Unterseiten vertieft.
 
+## Schnellzugriffe und verknüpfte Charaktere
+
+Die ganze Sitzungszeile öffnet Details für Titel, SL-Notizen und bei abgeschlossenen Sitzungen das Intervall. **Zurück zum Abenteuer** führt von Orten hierher; **Zurück zum Ort** öffnet den zugehörigen Ort aus einer Kampfübersicht.
+
+Das Entfernen eines Dashboard-Charakters löscht nicht seinen allgemeinen Bogen. Bei aktivierten Bestätigungen fragt DnDino vorher nach. Eine Hero-Verbindung ist keine Zustimmung zur automatischen Synchronisierung: Master und Hero müssen diese für jede neue Verbindung erneut aktivieren. Ohne Unterstützung bleibt das manuelle Senden des Bogens möglich.
+
+Live-Synchronisierung erfordert auf Hero iOS/iPadOS 26 oder neuer. Ältere Systeme erlauben nur das manuelle Senden des Charakters, ohne automatische Synchronisierung auch außerhalb von Kämpfen.
+
 ## Wozu ein Abenteuer dient
 
 In DnDino ist ein Abenteuer der Hauptcontainer für eine Kampagne oder einen Erzählbogen. Es sammelt in einem gemeinsamen Kontext:

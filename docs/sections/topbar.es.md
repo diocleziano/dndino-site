@@ -80,9 +80,7 @@ El dado predeterminado se configura en **Ajustes**. El resultado muestra cada da
 
 ### Generador de nombres
 
-El generador de nombres sirve para improvisar nombres de PNJ, monstruos, lugares improvisados o encuentros inesperados.
-
-Puedes elegir linaje y sexo, regenerar resultados y copiar un nombre.
+Elige especie, género y **nombre completo** o **solo nombre**. Bloquea nombre o apellido para regenerar únicamente la otra parte, o regenera una propuesta concreta. Copia un resultado o recupéralo del historial reciente, compartido con el acceso rápido. El historial se puede vaciar.
 
 ### Temporizadores rápidos
 

@@ -84,9 +84,7 @@ Il dado predefinito viene scelto in **Impostazioni**. Il risultato mostra ogni d
 
 ### Generatore di nomi
 
-Il generatore di nomi serve quando ti occorre inventare velocemente un nome per PNG, mostri, luoghi improvvisati o incontri non preparati.
-
-Puoi scegliere razza e sesso, rigenerare i risultati e copiare un nome con un clic.
+Scegli razza, genere e formato **nome completo** oppure **solo nome**. Puoi bloccare nome o cognome e rigenerare soltanto la parte restante, oppure rigenerare una singola proposta. Copia un risultato o recuperalo dalla cronologia recente, condivisa tra il generatore e l'accesso rapido. La cronologia può essere svuotata.
 
 ### Timer rapidi
 

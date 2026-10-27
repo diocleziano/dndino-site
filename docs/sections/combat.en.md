@@ -16,6 +16,22 @@ This page explains:
 - Player Window support
 - final summary and statistics
 
+## Rename by initiative
+
+**Rename by initiative**, beside **Sort**, numbers NPCs and monsters sharing the same base sheet by descending initiative. It accepts the unnumbered generic name and common numeric suffixes: `Goblin`, `Goblin 2`, `Goblin (3)`. Genuinely different names such as `Goblin Captain`, and heroes, are excluded.
+
+The Goblin at initiative 20 becomes `Goblin 1`, the one at 10 becomes `Goblin 2`. Zero and negative values work; ties use Dexterity and the current order. Only combat names change, not identities, HP, statistics, base sheets or place presences. **Sort** separately reorders the tracker.
+
+## Preparation, local values and summary
+
+- **Show in combat preview**, enabled by default per participant, controls only the initial player presentation. Turning it off does not remove that participant from combat. Contextual help follows the global guide-button setting.
+- Local presences use their own **AC and maximum HP**. Contextual edits do not change the base sheet or other copies. AC for participants added directly from the general character list remains combat-specific.
+- Abilities show aligned score, **MOD** and **save** rows. Saves can also be edited in the quick editor; rolls use the explicit save, otherwise the ability modifier, or zero if neither exists.
+- NPC and monster names can be edited during combat; hover over long names to read them as they scroll. Participant search ignores case and returns to the top after filtering.
+- Hiding enemy names from players also hides them in damage animations, as both attackers and targets.
+
+The completed summary offers **Return to place** and **Edit times**. The latter sets start and end manually: end must follow start, and duration becomes the selected interval, replacing recorded pauses. Later changes to presences do not rewrite historical AC and maximum HP in completed combats.
+
 ## One Screen or Two
 
 Combat works well on a **single screen**: the whole DM workflow stays in the main window, with the initiative tracker, compact stat blocks, and summary.

@@ -11,6 +11,16 @@ Esta página es importante porque en DnDino existen **varios niveles de personaj
 
 No son duplicados inútiles: sirven para mantener **datos contextuales separados**, como nombre visible, puntos de golpe, condiciones, iniciativa y notas del DJ, sin perder el vínculo con la ficha original.
 
+## Vista compacta, duplicados y eliminación segura
+
+La apertura rápida puede mostrar la **ficha compacta** con características, modificadores, salvaciones, imágenes, conjuros y vínculos operativos. Se configura en las preferencias de la barra superior.
+
+Los monstruos SRD aparecen en la lista y pueden personalizarse. **Gestionar duplicados** compara fichas personales y oficiales sin eliminación automática: véase [Contenido oficial y duplicados](official-content.md).
+
+No se puede eliminar una ficha usada en un combate activo. El aviso identifica personaje, combate y aventura y puede abrir el lugar correspondiente. Eliminar una ficha personal retira también todas sus presencias, incluidas las copias. Retirar un personaje solo de la aventura es una acción distinta, sujeta a la confirmación global.
+
+La **CA y los PG máximos** de PNJ y monstruos locales se copian al asignarlos y después se gestionan en la presencia. Los valores antiguos ausentes usan la base; los héroes de aventura siguen compartidos. Véase [Lugares](places.md) para edición individual y de grupo.
+
 ## Ficha base
 
 La **ficha base** es el registro principal guardado en la sección `Héroes, PNJ y Monstruos`.
@@ -255,7 +265,7 @@ Este registro tiene sus propios datos locales, como:
 Aquí el comportamiento cambia según el tipo:
 
 - los **Monstruos** pueden tener varias presencias locales en el mismo lugar
-- los **PNJ** se mantienen únicos dentro del mismo lugar y no vuelven a ofrecerse en el selector
+- el selector no vuelve a ofrecer un PNJ ya presente; **Duplicar presencia** permite crear copias adicionales explícitamente
 
 Cuando añades varias instancias del mismo monstruo, DnDino propone automáticamente un nombre incremental, por ejemplo:
 

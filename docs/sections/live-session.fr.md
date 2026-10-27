@@ -12,6 +12,12 @@ La **Session live** est le contexte opérationnel de la partie en cours. Ce n’
 
 En pratique, quand une session live est active, DnDino sait quelle campagne est en cours et utilise ce contexte pour relier entre elles plusieurs parties de l’application.
 
+## Modifier et rouvrir les sessions enregistrées
+
+Clique n’importe où sur une ligne de la carte **Sessions** pour ouvrir son détail. **Titre et notes MJ** restent modifiables après la clôture d’une session live ; pour une session terminée, tu peux aussi corriger début et fin. Pendant une session active, l’intervalle reste distinct des commandes pause/reprise.
+
+L’historique des combats ouvre le récapitulatif correspondant. Les graphiques adaptent leur axe vertical aux valeurs présentes. Une session reconstituée utilise les combats réellement enregistrés dans l’intervalle et peut lister les lieux visités ; elle n’invente ni tours ni chronologie d’exploration manquants.
+
 ## À quoi elle sert
 
 La session live est utile quand tu veux utiliser DnDino pendant une vraie partie à table, et pas seulement pendant la préparation.

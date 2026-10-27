@@ -4,6 +4,14 @@ DnDino kann Inhalte exportieren und importieren, um sie zwischen Installationen 
 
 Importe überschreiben vorhandene Daten nicht automatisch: Vor dem Speichern kannst du prüfen, was hinzugefügt, ersetzt oder übersprungen wird.
 
+## Offizielle Kataloge und örtliche Daten
+
+SRD-Originale werden nicht überschrieben; persönliche Kopien bleiben vom Katalog getrennt. Exporte duplizieren keine ungenutzten integrierten Inhalte, Abenteuer enthalten jedoch die für ihre Verknüpfungen erforderlichen Bögen.
+
+Charakter- und Abenteuerimporte bearbeiten zuerst Zauber, danach Charaktere und Zuordnungen. **Neu/Übereinstimmungen** und Sammelaktionen trennen die Entscheidungen; vorhandene Übereinstimmungen stehen standardmäßig auf **Überspringen**. Bei gleichen Namen Vergleich und gewählte Zuordnung prüfen.
+
+Abenteuerpakete erhalten örtliche RK und maximale TP. Ältere Pakete ohne diese Felder bleiben lesbar und verwenden den Basisbogen als Rückfallwert.
+
 ## Zauber
 
 Zauber können als JSON-Datei exportiert werden.

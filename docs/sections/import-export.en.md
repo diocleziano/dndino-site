@@ -4,6 +4,14 @@ DnDino lets you export and import content to move it between installations, crea
 
 Imports never overwrite existing data automatically: before saving, you can review what will be added, replaced, or skipped.
 
+## Official libraries and contextual data
+
+SRD originals cannot be overwritten; personal copies stay separate from the library. Exports avoid duplicating unused built-in content, while adventures retain the sheets their references need.
+
+Character and adventure imports handle spells before characters and associations. **New/Matches** groups and bulk actions keep the choices separate; matching records default to **Skip**. Always inspect comparisons and the selected association when names are duplicated.
+
+Adventure packages retain place-specific AC and maximum HP. Older packages without these fields remain readable and use the base-sheet fallback.
+
 ## Spells
 
 Spells can be exported as a JSON file.

@@ -11,6 +11,16 @@ Cette page est importante car, dans DnDino, il existe **plusieurs niveaux de per
 
 Ce ne sont pas des doublons inutiles : ils servent à conserver **des données contextuelles séparées**, comme le nom affiché, les points de vie, les conditions, l'initiative et les notes MJ, sans perdre le lien avec la fiche d'origine.
 
+## Consultation compacte, doublons et suppression sûre
+
+L’ouverture rapide peut afficher la **fiche compacte**, avec caractéristiques, modificateurs, JS, images, sorts et liens opérationnels. Ce comportement se règle dans les préférences de la topbar.
+
+Les monstres SRD figurent dans la liste et peuvent être personnalisés. **Gérer les doublons** compare fiches personnelles et officielles sans suppression automatique : voir [Contenus officiels et doublons](official-content.md).
+
+Une fiche utilisée dans un combat actif ne peut pas être supprimée. L’alerte identifie personnage, combat et aventure et peut ouvrir le lieu concerné. Supprimer une fiche personnelle retire aussi toutes ses présences, copies comprises. Retirer un personnage uniquement de l’aventure est une action distincte, soumise à la confirmation globale.
+
+Pour les PNJ et monstres locaux, **CA et PV maximum** sont copiés à l’ajout puis gérés dans la présence. Les anciennes valeurs manquantes utilisent la base ; les héros d’aventure restent partagés. Voir [Lieux](places.md) pour la modification individuelle et groupée.
+
 ## Fiche de base
 
 La **fiche de base** est l'enregistrement principal stocké dans la section `Héros, PNJ et Monstres`.
@@ -255,7 +265,7 @@ Ce nouvel enregistrement possède ses propres données locales, comme :
 Le comportement dépend alors du type :
 
 - les **Monstres** peuvent avoir plusieurs présences locales dans un même lieu
-- les **PNJ** restent uniques dans un même lieu et ne sont pas reproposés plusieurs fois dans le sélecteur
+- le sélecteur ne repropose pas un PNJ déjà présent ; **Dupliquer la présence** permet de créer explicitement d’autres copies
 
 Quand tu ajoutes plusieurs instances d'un même monstre, DnDino propose automatiquement un nom incrémental, par exemple :
 

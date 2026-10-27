@@ -16,6 +16,14 @@ Esta página explica o percurso principal:
 
 As áreas mais específicas, como **Locais**, **Mapas conceptuais**, **Sessão em direto**, **Personagens**, **Imagens** e **Mapas**, serão aprofundadas nas respetivas páginas dedicadas.
 
+## Atalhos e personagens ligadas
+
+Toda a linha de uma sessão abre o detalhe para editar título, notas do mestre e, após terminar, intervalo. **Voltar à aventura** regressa aqui a partir dos locais; **Voltar ao local** abre o local associado a partir do resumo de combate.
+
+Retirar uma personagem do painel não elimina a ficha geral. Com confirmações ativas, o DnDino pede confirmação. Ligar o Hero não implica consentimento para sincronização automática: Master e Hero têm de a reativar a cada nova ligação. Sem suporte, mantém-se o envio manual da ficha.
+
+A sincronização live exige iOS/iPadOS 26 ou posterior no Hero. Sistemas anteriores permitem apenas o envio manual da personagem, sem sincronização automática mesmo fora do combate.
+
 ## Para que serve uma aventura
 
 No DnDino, uma aventura é o contentor principal de uma campanha ou de um arco narrativo. Serve para reunir, num único contexto:

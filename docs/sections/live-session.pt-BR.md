@@ -12,6 +12,12 @@ A **Sessão ao vivo** é o contexto operacional da partida em andamento. Ela nã
 
 Na prática, quando uma sessão ao vivo está ativa, o DnDino sabe qual é a campanha em andamento e usa esse contexto para conectar entre si várias partes do aplicativo.
 
+## Editar e reabrir sessões salvas
+
+Clique em qualquer ponto de uma linha no cartão **Sessões** para abrir o detalhe. **Título e notas do mestre** podem ser editados mesmo após encerrar uma sessão live; sessões concluídas também permitem corrigir início e fim. Durante uma sessão ativa, a edição do intervalo permanece separada dos controles de pausa/retomada.
+
+O histórico de combates abre o resumo correspondente. Gráficos ajustam o eixo vertical aos valores presentes. Uma sessão recriada usa combates realmente registrados no intervalo e pode listar locais visitados; não inventa turnos nem uma cronologia de exploração ausente.
+
 ## Para que serve
 
 A sessão ao vivo é útil quando você quer usar o DnDino durante uma sessão real em mesa, e não apenas na preparação.

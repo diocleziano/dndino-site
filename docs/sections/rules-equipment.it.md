@@ -4,6 +4,10 @@ Questa sezione raccoglie le parti di consultazione dell'app: **Regole**, **Talen
 
 I campi sono liberi, quindi puoi adattarli alla tua campagna. Se però vuoi filtri più precisi e risultati più ordinati, conviene usare nomi puliti e coerenti.
 
+## Catalogo ufficiale e oggetti magici
+
+Mostri, incantesimi, talenti, armi, armature, strumenti e dotazione SRD 5.2.1 sono disponibili offline. In **Equipaggiamento d'Avventura** trovi anche **Oggetti magici**, con 258 voci e relative varianti, rarità e requisiti di sintonia. Il selettore **Contenuto ufficiale** distingue questi contenuti dai tuoi dati personali. Consulta [Contenuti ufficiali e duplicati](official-content.md) per lingue, personalizzazioni e ripristino.
+
 ## Come vengono cercati
 
 La ricerca rapida della topbar controlla più campi contemporaneamente.

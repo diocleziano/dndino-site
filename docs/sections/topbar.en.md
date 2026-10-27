@@ -82,9 +82,7 @@ The default die is configured in **Settings**. Results show each die and the tot
 
 ### Name Generator
 
-The name generator is useful when you need a fast name for NPCs, monsters, improvised places, or unexpected encounters.
-
-You can choose ancestry and sex, regenerate results, and copy a name with one click.
+Choose ancestry, gender and **full name** or **given name only**. Lock the given name or surname to regenerate only the other part, or regenerate a single suggestion. Copy a result or retrieve it from recent history, shared between the full generator and quick access. You can clear that history.
 
 ### Quick Timers
 

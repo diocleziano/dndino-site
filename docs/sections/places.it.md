@@ -10,6 +10,29 @@ La sezione **Luoghi** raccoglie tutto ciò che riguarda gli spazi di gioco di un
 - presenze contestuali
 - accesso rapido ai combattimenti
 
+## Gestione rapida delle presenze
+
+### CA e PF massimi del luogo
+
+Quando assegni un **PNG o mostro**, CA e PF massimi vengono inizializzati dalla scheda base e poi appartengono a quella presenza. Puoi modificarli già durante l'assegnazione e nella modifica del personaggio luogo, senza cambiare altre copie o la scheda base. Per le presenze precedenti prive di questi valori resta il fallback sulla scheda base. I **personaggi avventura** mantengono invece lo stato condiviso.
+
+**Gestione presenze**, vicino al riepilogo, apre una lista raggruppata per scheda base. Ogni riga permette di modificare nome, CA, PF massimi, PF attuali, PF temporanei, ruolo e stato. **Applica al gruppo** consente di impostare CA e massimo su tutte le presenze del gruppo. Salvare senza modificare questi campi non uniforma valori diversi già esistenti.
+
+Abbassare il massimo limita i PF attuali superiori al nuovo valore; aumentarlo non cura automaticamente. **PF attuali al massimo** riempie ciascuna presenza fino al proprio massimo, senza cambiare temporanei, condizioni o stato. Conferma con **Salva**.
+
+### Consultare, duplicare e spostare
+
+- **Scheda compatta** apre un blocco statistiche di consultazione con caratteristiche, MOD, TS, incantesimi, immagini e link; usa i dati contestuali della presenza.
+- **Duplica presenza** mantiene anche CA e PF massimi locali. Aggiungendo una seconda copia, il nome generico diventa numerato fin dalla prima: `Goblin 1`, `Goblin 2`. I nomi personalizzati restano invariati.
+- **Sposta** mostra il luogo attuale e l'albero richiudibile delle destinazioni, già posizionato sul luogo di partenza. La presenza conserva i propri dati.
+- Le condizioni sono mostrate con icona e nome, non come testo tecnico. Dall'immagine puoi richiamare le azioni per DM e giocatori.
+
+### Navigazione e mappe
+
+La ricerca nell'albero espande i percorsi dei risultati. **Ritorna all'avventura** riporta alla dashboard. In **Interattiva**, **Modifica mappa** apre la mappa effettivamente mostrata, anche se ereditata da un genitore. In **Ombra**, i comandi Nebbia/Disegno e Rivela/Nascondi mantengono il proprio spazio; se necessario la barra scorre orizzontalmente.
+
+Le finestre secondarie restano collegate alla principale. Chiudendo l'ultima finestra principale si chiudono anche quelle secondarie e dei giocatori, e i combattimenti attivi vengono messi in pausa.
+
 ## A cosa serve la sezione Luoghi
 
 La dashboard dei luoghi serve per organizzare l’avventura sul piano spaziale e narrativo.
@@ -36,7 +59,7 @@ Da quella card puoi:
 
 ## Struttura della schermata
 
-La dashboard `Luoghi` è organizzata in due modalità principali:
+La dashboard `Luoghi` è organizzata in tre modalità principali:
 
 - `Normale`
 - `Interattiva`
@@ -471,12 +494,12 @@ I record di tipo `Eroe` non sono selezionabili in questa modalità.
 Nella dashboard dei luoghi DnDino applica regole precise:
 
 - un `Personaggio Avventura` può essere collocato una sola volta nello stesso luogo
-- un `PNG` base può essere aggiunto una sola volta nello stesso luogo
+- il selettore non ripropone un PNG già presente; **Duplica presenza** permette di crearne esplicitamente altre copie
 - un `Mostro` base può essere aggiunto più volte nello stesso luogo
 
 Quando aggiungi più istanze dello stesso mostro, il nome visualizzato viene numerato automaticamente, ad esempio:
 
-- `Goblin`
+- `Goblin 1`
 - `Goblin 2`
 - `Goblin 3`
 

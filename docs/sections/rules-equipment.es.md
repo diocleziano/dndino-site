@@ -4,6 +4,10 @@ Esta sección reúne las áreas de consulta de la app: **Reglas**, **Dotes**, **
 
 Los campos son libres para adaptarse a tu campaña. Aun así, si quieres filtros más precisos y agrupaciones más claras, conviene usar valores limpios y coherentes.
 
+## Catálogo oficial y objetos mágicos
+
+Monstruos, conjuros, dotes, armas, armaduras, herramientas y equipo SRD 5.2.1 están disponibles sin conexión. **Equipo de aventuras** incluye **Objetos mágicos**, con 258 entradas y sus variantes, rareza y sintonización. **Contenido oficial** distingue este catálogo de tus registros personales. Véase [Contenido oficial y duplicados](official-content.md) para idiomas, personalización y restauración.
+
 ## Cómo funciona la búsqueda
 
 La búsqueda rápida de la barra superior revisa varios campos a la vez.

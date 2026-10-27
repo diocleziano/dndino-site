@@ -10,6 +10,12 @@ Elles sont pensées pour les cas où la simple structure en arbre ne suffit plus
 - un donjon
 - une région
 
+## Modifier la carte affichée dans les lieux
+
+Dans le mode **Interactif** des lieux, **Modifier la carte** se trouve à côté de l'affichage des noms des marqueurs. Ce bouton ouvre l'éditeur de la carte réellement affichée, même si elle appartient à un lieu parent ou a été choisie dans le sélecteur.
+
+Au retour, les marqueurs sont actualisés en conservant la carte, le zoom et la position lorsqu'ils sont toujours disponibles.
+
 ## À quoi elles servent
 
 Les cartes interactives sont utiles quand tu veux :

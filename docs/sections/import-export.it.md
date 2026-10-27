@@ -4,6 +4,14 @@ DnDino permette di esportare e importare contenuti per spostarli tra installazio
 
 Le importazioni non sovrascrivono automaticamente i dati esistenti: prima di salvare puoi controllare cosa verrà aggiunto, sostituito o ignorato.
 
+## Cataloghi ufficiali e dati contestuali
+
+Gli originali SRD non sono bersagli di sovrascrittura: una copia personale resta separata dal catalogo. Le esportazioni evitano di duplicare tutti i contenuti integrati inutilizzati; le avventure mantengono invece le schede necessarie ai propri collegamenti.
+
+Nelle importazioni di personaggi e avventure, affronta prima gli incantesimi e poi i personaggi e le associazioni. I gruppi **Nuovi/Match** e le azioni massive permettono di gestire separatamente le scelte; i record con corrispondenza partono da **Salta**. Controlla sempre il confronto e la scheda da associare quando i nomi sono duplicati.
+
+CA e PF massimi locali delle presenze vengono conservati nei pacchetti avventura. I vecchi pacchetti che non li contengono restano leggibili e usano il fallback sulla scheda base.
+
 ## Incantesimi
 
 Gli incantesimi possono essere esportati in un file JSON.

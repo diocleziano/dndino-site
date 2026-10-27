@@ -16,6 +16,22 @@ Esta página explica:
 - Janela dos Jogadores
 - resumo final e estatísticas
 
+## Renomear por iniciativa
+
+**Renomear por iniciativa**, junto de **Ordenar**, numera por iniciativa decrescente PNJ e monstros da mesma ficha base. Reconhece o nome genérico sem número e os sufixos numéricos habituais: `Goblin`, `Goblin 2`, `Goblin (3)`. Heróis e nomes realmente diferentes, como `Capitão Goblin`, ficam excluídos.
+
+O goblin com iniciativa 20 torna-se `Goblin 1`, o de 10 torna-se `Goblin 2`. Zero e valores negativos funcionam; os empates usam Destreza e a ordem atual. Só os nomes do combate mudam, não identidades, PV, estatísticas, fichas base ou presenças. **Ordenar** reorganiza separadamente o acompanhamento.
+
+## Preparação, valores locais e resumo
+
+- **Mostrar na pré-visualização do combate**, ativo por predefinição para cada participante, controla apenas a apresentação inicial aos jogadores. Desativá-lo não retira o participante do combate. A ajuda segue a definição global dos botões de guia.
+- As presenças locais usam a sua própria **CA e PV máximos**, sem modificar a base ou outras cópias. A CA de participantes acrescentados diretamente da lista geral continua específica do combate.
+- Os atributos apresentam linhas alinhadas de valores, **MOD** e **salvaguardas**. As salvaguardas também são editáveis no editor rápido; o lançamento usa o valor explícito, senão o modificador do atributo, ou zero se faltarem ambos.
+- Os nomes de PNJ e monstros são editáveis; passa o rato sobre nomes longos para os ler em deslocamento. A pesquisa ignora maiúsculas/minúsculas e regressa ao topo após filtrar.
+- Ocultar nomes inimigos também os oculta nas animações de dano, como atacantes e alvos.
+
+O resumo final oferece **Voltar ao local** e **Editar horários**. A segunda ação define início e fim manualmente: o fim deve ser posterior ao início e a duração passa a ser o intervalo escolhido, substituindo as pausas registadas. Alterações posteriores das presenças não reescrevem CA e PV máximos históricos de combates terminados.
+
 ## Um ou Dois Ecrãs
 
 O combate funciona bem num **único ecrã**: todo o trabalho do Mestre fica na janela principal, com tracker de iniciativa, fichas compactas e resumo.
