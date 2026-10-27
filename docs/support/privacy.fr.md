@@ -1,39 +1,56 @@
-# Confidentialite
+# Politique de confidentialité — DnDino et DnDino Hero
 
-Derniere mise a jour : 9 avril 2026
+Dernière mise à jour : 28 octobre 2026
 
-DnDino est une application macOS concue pour aider les Dungeon Masters a gerer aventures, personnages, lieux, combats, cartes et notes de session.
+Cette politique concerne les deux applications :
 
-## Collecte des donnees
+- **DnDino pour macOS**, destinée aux maîtres de jeu pour gérer aventures, personnages, combats, lieux, cartes et notes.
+- **DnDino Hero pour iPhone et iPad**, destinée aux joueurs pour créer et gérer personnages, sorts, équipement et notes. Le guide et certaines références techniques peuvent également utiliser son ancien nom, **DnDino Companion**.
 
-DnDino ne collecte pas de donnees personnelles a des fins de publicite, de profilage ou de suivi.
+## Données utilisées et finalités
 
-Les donnees saisies dans l'application, comme les aventures, personnages, notes, images et contenus associes, sont stockees localement sur l'appareil de l'utilisateur.
+Les applications traitent les contenus que vous saisissez ou importez : noms de joueurs et de personnages, fiches, aventures, notes, dessins, images, équipement et contenus personnalisés. Les fonctions de séance peuvent aussi utiliser des messages, résultats de dés et mises à jour de l’état des personnages.
+
+Ces données servent aux fonctions demandées : gestion des contenus, enregistrement, sauvegarde, restauration, exportation et partage pendant les séances.
+
+Aucun compte dédié auprès du développeur n’est requis. Les contenus des applications ne sont pas automatiquement envoyés à des serveurs exploités par le développeur.
 
 ## Stockage local
 
-La plupart des donnees gerees par DnDino sont stockees localement sur le Mac de l'utilisateur, dans le conteneur de donnees de l'application.
+DnDino stocke les données principalement sur le Mac de l’utilisateur ; DnDino Hero les stocke principalement sur son iPhone ou iPad. Les applications peuvent conserver bases de données, images, préférences et sauvegardes locales dans leurs conteneurs respectifs. Les fichiers exportés sont enregistrés aux emplacements choisis par l’utilisateur.
 
-## iCloud
+## iCloud et sauvegardes
 
-Si l'utilisateur choisit d'utiliser les fonctions de synchronisation ou de snapshot via iCloud, certaines donnees de l'application peuvent etre stockees dans son compte iCloud uniquement afin de permettre la sauvegarde, la synchronisation ou la restauration du contenu.
+Lorsque iCloud est disponible pour l’application, des contenus et images peuvent être enregistrés dans le compte iCloud de l’utilisateur pour la sauvegarde, la synchronisation ou la restauration. Dans DnDino Hero, ces opérations peuvent être automatiques, notamment au passage en arrière-plan ou à un lancement ultérieur, selon le fonctionnement de l’application et la disponibilité du service.
 
-DnDino n'accede pas aux donnees iCloud de l'utilisateur a d'autres fins que celles necessaires au fonctionnement demande de l'application.
+Vous pouvez gérer l’accès des applications à iCloud dans les réglages Apple. Le développeur ne reçoit pas les identifiants de votre compte Apple et ne dispose pas d’un accès autonome à votre stockage iCloud. Apple fournit ce service selon sa [politique de confidentialité](https://www.apple.com/legal/privacy/).
 
-## Images et fichiers choisis par l'utilisateur
+## Connexion entre DnDino et DnDino Hero
 
-DnDino peut permettre a l'utilisateur de selectionner des images ou des fichiers depuis son appareil. Ces fichiers sont utilises uniquement dans l'application pour les fonctions demandees par l'utilisateur.
+Vous pouvez utiliser Hero sans le connecter à DnDino. Si vous activez une connexion de séance, les applications utilisent les technologies de réseau local Apple pour découvrir et connecter les appareils. Elles peuvent échanger le nom de l’appareil, des identifiants techniques et des informations de séance à cette fin.
 
-## Suivi et tiers
+Selon les fonctions utilisées et les autorisations de partage activées, les appareils connectés peuvent échanger fiches et mises à jour de personnage, images, résultats de dés et messages entre joueur et maître de jeu. Les mises à jour peuvent se poursuivre automatiquement lorsque la synchronisation en direct est active. La connexion utilise le chiffrement fourni par les sessions Multipeer Connectivity d’Apple, sans serveur de séance exploité par le développeur.
 
-DnDino n'utilise pas de systemes de suivi publicitaire et ne vend pas de donnees personnelles a des tiers.
+Vous pouvez vous déconnecter, désactiver la synchronisation en direct ou révoquer l’accès au réseau local dans les réglages système. Ces actions interrompent les échanges suivants, mais ne suppriment pas les copies déjà reçues par les autres participants.
 
-## Securite
+## Images, fichiers et autorisations
 
-Les donnees sont traitees a l'aide des mecanismes de securite standards fournis par macOS et par les technologies Apple utilisees par l'application.
+Les images et fichiers sélectionnés servent aux fonctions demandées et peuvent être inclus dans les sauvegardes ou les contenus que vous choisissez de partager. Les applications ne demandent pas un accès sans restriction à vos contenus personnels. Vous pouvez gérer les autorisations dans les réglages de macOS, iOS ou iPadOS.
 
-## Contact
+## Publicité, assistance et services externes
 
-Si vous avez des questions concernant la confidentialite ou le traitement des donnees liees a DnDino, vous pouvez contacter :
+Les applications n’utilisent pas de suivi publicitaire, ne profilent pas les utilisateurs à des fins publicitaires et ne vendent pas de données personnelles.
 
-`dndino.app@gmail.com`
+Si vous contactez l’assistance, votre message, adresse email et éventuelles pièces jointes servent à traiter votre demande et sont conservés le temps nécessaire à cette fin. L’ouverture de liens externes, dont le guide en ligne, donne accès à des services régis par leurs propres politiques de confidentialité.
+
+## Conservation, suppression et contrôle
+
+Les contenus restent sur les appareils et dans les sauvegardes aussi longtemps que l’utilisateur ou les destinataires du partage les conservent. Vous pouvez les supprimer avec les commandes des applications ; Hero propose aussi **Réinitialiser l’application** pour effacer les données locales et revenir à l’état initial.
+
+Une suppression locale ne supprime pas automatiquement toutes les copies exportées, les sauvegardes iCloud ou les données déjà reçues sur d’autres appareils. Après une réinitialisation de Hero, vous pouvez restaurer une sauvegarde disponible ou repartir de données vides ; dans ce dernier cas, la prochaine sauvegarde peut remplacer la précédente. Utilisez les outils Apple pour gérer ou supprimer les copies iCloud et contactez les destinataires au sujet des copies partagées.
+
+## Sécurité et contact
+
+Les applications utilisent les mécanismes de sécurité et d’autorisation des systèmes et technologies Apple. Protégez aussi les appareils et comptes avec lesquels vous gérez vos données.
+
+Pour toute question sur la confidentialité dans **DnDino ou DnDino Hero**, ou sur les données envoyées à l’assistance : [dndino.app@gmail.com](mailto:dndino.app@gmail.com).
