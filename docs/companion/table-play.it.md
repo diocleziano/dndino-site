@@ -94,7 +94,9 @@ Quando il collegamento è già stato autorizzato, Hero prova a riconnettersi aut
 
 ## Sincronizzazione durante il gioco
 
-La sincronizzazione può essere bidirezionale.
+La sincronizzazione può essere bidirezionale, ma viene attivata o disattivata solo dal Master, separatamente per ogni dispositivo collegato. Su Hero viene mostrato lo stato: il giocatore non deve attivare un secondo interruttore. Di default il Master la riabilita a ogni nuova connessione; può scegliere l'avvio automatico per dispositivi già autorizzati. Aggiorna entrambe le app per utilizzare il nuovo flusso.
+
+La modalità live richiede iOS/iPadOS 26 o successivo. Sui sistemi precedenti resta disponibile solo l'invio manuale del personaggio, senza sincronizzazione automatica neppure fuori dal combattimento.
 
 Hero può inviare a DnDino:
 
@@ -104,7 +106,9 @@ Hero può inviare a DnDino:
 - dadi vita spesi
 - ispirazione eroica
 
-DnDino può aggiornare Hero con gli stessi dati. Se è attivo un combattimento, DnDino considera il personaggio del combattimento come sorgente operativa. Quando Hero si riconnette, DnDino invia lo stato attuale del personaggio collegato.
+DnDino può aggiornare Hero con i valori supportati; in combattimento considera il partecipante collegato. Il nuovo flusso di riconnessione parte invece dalla scheda Hero: se ci sono differenze, il Master sceglie quali valori conservare prima degli scambi live ordinari. Non si presume più che prevalga lo stato precedente del Master.
+
+Per preparazione, primo invio, confronto, progressioni, slot e risoluzione dei problemi, consulta la [guida al collegamento per il giocatore](dndino-sync.md) e la [guida per il Master](../sections/hero-sync.md). Il nuovo allineamento richiede il prossimo aggiornamento di entrambe le app, come indicato nelle guide.
 
 Le notifiche di Hero cercano di descrivere cosa è successo:
 
@@ -117,6 +121,6 @@ Le notifiche di Hero cercano di descrivere cosa è successo:
 
 ## Chat privata
 
-La sezione **Messaggio privato al DM** appare quando Hero è collegato.
+La sezione **Messaggio privato al DM** è disponibile quando la sincronizzazione live è attiva.
 
 Da qui il giocatore può scrivere al DM. Su DnDino il master riceve una notifica e può aprire la conversazione. La chat resta distinta per personaggio e dispositivo, così due dispositivi con lo stesso account possono usare conversazioni diverse.

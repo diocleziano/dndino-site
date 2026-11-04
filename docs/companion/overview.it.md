@@ -67,11 +67,13 @@ Il collegamento può sincronizzare:
 - ispirazione eroica
 - dati principali del personaggio esportato verso DnDino
 
-Quando DnDino è in combattimento, gli aggiornamenti vengono applicati al personaggio del combattimento e restano collegati alla scheda di Hero. Quando Hero torna in primo piano, prova a riconnettersi e DnDino invia di nuovo lo stato autorevole del personaggio.
+Quando DnDino è in combattimento, gli aggiornamenti vengono applicati al partecipante collegato. Hero può tentare di riconnettersi quando torna in primo piano. Con il nuovo aggiornamento di entrambe le app, è Hero a inviare la scheda iniziale: le eventuali differenze vengono risolte dal Master prima della live. Sono inclusi anche progressioni e slot supportati.
+
+Consulta la [guida passo passo al collegamento](dndino-sync.md), disponibile anche dal menu laterale della guida. Nell'app la trovi da **Impostazioni → Supporto → Apri guida online**.
 
 ## Chat privata con il DM
 
-Se il personaggio è collegato a DnDino, puoi usare la sezione **Messaggio privato al DM**.
+Se il personaggio è collegato a DnDino e la live è attiva, puoi usare la sezione **Messaggio privato al DM**.
 
 La chat è testuale, separata per dispositivo e personaggio, e mostra i messaggi con uno stile a bolle. Su DnDino il DM può aprire la chat dal pannello del collegamento, dalla card del personaggio avventura o dalle azioni rapide durante il combattimento.
 

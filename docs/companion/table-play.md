@@ -93,7 +93,9 @@ When the connection has already been authorized, Hero tries to reconnect automat
 
 ## Sync During Play
 
-Synchronization can be bidirectional.
+Synchronization can be bidirectional, but only the DM enables or disables it, separately for each connected device. Hero displays the status: the player does not need to enable a second switch. By default, the DM enables it again after each connection; optional automatic startup is available for already-authorized devices. Update both apps to use the new flow.
+
+Live synchronization requires iOS/iPadOS 26 or later. Older systems only support sending the character manually, without automatic synchronization even outside combat.
 
 Hero can send DnDino:
 
@@ -103,7 +105,9 @@ Hero can send DnDino:
 - spent hit dice
 - Heroic Inspiration
 
-DnDino can update Hero with the same data. If combat is active, DnDino treats the combat participant as the operative source. When Hero reconnects, DnDino sends the current state of the linked character.
+DnDino can update supported values in Hero; combat takes the linked participant into account. The new reconnection flow instead starts with the Hero sheet: when values differ, the DM chooses which to keep before ordinary live exchanges. The earlier Master state is no longer assumed to take precedence.
+
+For setup, first sending, comparison, progressions, slots, and troubleshooting, see the [player connection guide](dndino-sync.md) and [DM guide](../sections/hero-sync.md). The new alignment requires the next update of both apps, as explained in those guides.
 
 Hero notifications try to describe what happened:
 
@@ -116,6 +120,6 @@ Hero notifications try to describe what happened:
 
 ## Private Chat
 
-The **Private Message to DM** section appears when Hero is connected.
+The **Private Message to DM** section is available while live synchronization is active.
 
 The player can write to the DM from there. In DnDino, the DM receives a notification and can open the conversation. The chat remains separate by character and device, so two devices with the same account can use different conversations.

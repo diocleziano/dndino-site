@@ -20,7 +20,9 @@ As áreas mais específicas, como **Locais**, **Mapas conceptuais**, **Sessão e
 
 Toda a linha de uma sessão abre o detalhe para editar título, notas do mestre e, após terminar, intervalo. **Voltar à aventura** regressa aqui a partir dos locais; **Voltar ao local** abre o local associado a partir do resumo de combate.
 
-Retirar uma personagem do painel não elimina a ficha geral. Com confirmações ativas, o DnDino pede confirmação. Ligar o Hero não implica consentimento para sincronização automática: Master e Hero têm de a reativar a cada nova ligação. Sem suporte, mantém-se o envio manual da ficha.
+Retirar uma personagem do painel não elimina a ficha geral. Com confirmações ativas, o DnDino pede confirmação. Apenas o Mestre pode ativar ou desativar a sincronização automática com Hero, separadamente para cada dispositivo. Hero mostra o estado sem exigir que o jogador ative um segundo interruptor. Por predefinição, cada nova ligação exige reativação pelo Mestre; o arranque automático para dispositivos já autorizados é facultativo. Sem suporte, mantém-se o envio manual da ficha.
+
+Para preparação, escolha dos valores ao voltar a ligar, progressões, espaços e dispositivos, consulte [Ligar ao Hero: guia do mestre](hero-sync.md). A página distingue o próximo alinhamento das versões anteriores.
 
 A sincronização live exige iOS/iPadOS 26 ou posterior no Hero. Sistemas anteriores permitem apenas o envio manual da personagem, sem sincronização automática mesmo fora do combate.
 

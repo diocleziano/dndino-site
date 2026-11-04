@@ -42,6 +42,9 @@ jobs:
       - name: Build documentation
         run: python -m mkdocs build
 
+      - name: Check synchronization guides
+        run: python scripts/check_sync_guides.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

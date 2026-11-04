@@ -65,11 +65,13 @@ The connection can synchronize:
 - Heroic Inspiration
 - main character data sent to DnDino
 
-When DnDino is in combat, updates apply to the combat participant and stay linked to the Hero sheet. When Hero returns to the foreground, it tries to reconnect and DnDino sends the current authoritative state back.
+When DnDino is in combat, updates apply to the linked participant. Hero can attempt to reconnect when it returns to the foreground. With the new update of both apps, Hero supplies the initial sheet; the DM resolves any differences before live starts. Supported progressions and slots are included too.
+
+See the [step-by-step connection guide](dndino-sync.md), also available in the guide sidebar. In the app, open **Settings → Support → Open online guide**.
 
 ## Private DM Chat
 
-When the character is connected to DnDino, the **Private Message to DM** section becomes available.
+When the character is connected to DnDino and live is active, the **Private Message to DM** section becomes available.
 
 The chat is text-only, separated by character and device, and uses a bubble-style layout. In DnDino, the DM can open the chat from the connection panel, from the adventure character card, or from combat quick actions.
 

@@ -20,7 +20,9 @@ Las áreas más específicas, como **Lugares**, **Mapas conceptuales**, **Sesió
 
 Toda la fila de una sesión abre su detalle para editar título, notas del DM y, tras terminar, el intervalo. **Volver a la aventura** regresa aquí desde lugares; **Volver al lugar** abre el lugar asociado desde un resumen de combate.
 
-Retirar un personaje del panel no elimina su ficha general. Con confirmaciones activas, DnDino pregunta antes de retirarlo. Una conexión Hero no implica consentimiento a la sincronización automática: Master y Hero deben reactivarla en cada nueva conexión. Si no es compatible, sigue disponible el envío manual de la ficha.
+Retirar un personaje del panel no elimina su ficha general. Con confirmaciones activas, DnDino pregunta antes de retirarlo. Solo el DM puede activar o desactivar la sincronización automática con Hero, por separado para cada dispositivo. Hero muestra el estado sin pedir al jugador que active un segundo interruptor. Por defecto, cada nueva conexión requiere que el DM reactive la sincronización; el inicio automático para dispositivos autorizados es opcional. Si no es compatible, sigue disponible el envío manual de la ficha.
+
+Para preparación, elección de valores al reconectar, progresiones, espacios y dispositivos, consulta [Conectar Hero: guía del DM](hero-sync.md). La página distingue la próxima alineación de versiones anteriores.
 
 La sincronización live requiere iOS/iPadOS 26 o posterior en Hero. Los sistemas anteriores solo permiten enviar el personaje manualmente, sin sincronización automática ni siquiera fuera del combate.
 

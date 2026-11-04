@@ -52,6 +52,7 @@ plugins:
                 - Eroi, PNG e Mostri: sections/characters.md
                 - Importazione ed esportazione: sections/import-export.md
                 - Avventura: sections/adventure.md
+                - Collegamento con Hero: sections/hero-sync.md
                 - Luoghi e Quest: sections/places.md
                 - Mappe concettuali: sections/concept-maps.md
                 - Mappe interattive: sections/interactive-maps.md
@@ -63,6 +64,7 @@ plugins:
                 - Scheda personaggio: companion/character-sheet.md
                 - Librerie riutilizzabili: companion/libraries.md
                 - Combattimento e tavolo: companion/table-play.md
+                - Collegamento con DnDino: companion/dndino-sync.md
                 - Import, export e backup: companion/import-backup.md
             - Supporto:
                 - FAQ: support/faq.md
@@ -85,6 +87,7 @@ plugins:
                 - Heroes, NPCs, and Monsters: sections/characters.md
                 - Import and Export: sections/import-export.md
                 - Adventure: sections/adventure.md
+                - Connecting Hero: sections/hero-sync.md
                 - Places and Quests: sections/places.md
                 - Concept Maps: sections/concept-maps.md
                 - Interactive Maps: sections/interactive-maps.md
@@ -96,6 +99,7 @@ plugins:
                 - Character Sheet: companion/character-sheet.md
                 - Reusable Libraries: companion/libraries.md
                 - Combat and Table Play: companion/table-play.md
+                - Connecting to DnDino: companion/dndino-sync.md
                 - Import, Export, and Backup: companion/import-backup.md
             - Support:
                 - FAQ: support/faq.md
@@ -117,6 +121,7 @@ plugins:
                 - Heros, PNJ et Monstres: sections/characters.md
                 - Import et export: sections/import-export.md
                 - Aventure: sections/adventure.md
+                - Connexion avec Hero: sections/hero-sync.md
                 - Lieux et Quetes: sections/places.md
                 - Cartes conceptuelles: sections/concept-maps.md
                 - Cartes interactives: sections/interactive-maps.md
@@ -128,6 +133,7 @@ plugins:
                 - Fiche personnage: companion/character-sheet.md
                 - Bibliotheques reutilisables: companion/libraries.md
                 - Combat et table: companion/table-play.md
+                - Connexion à DnDino: companion/dndino-sync.md
                 - Import, export et sauvegarde: companion/import-backup.md
             - Support:
                 - FAQ: support/faq.md
@@ -149,6 +155,7 @@ plugins:
                 - Helden, NSCs und Monster: sections/characters.md
                 - Import und Export: sections/import-export.md
                 - Abenteuer: sections/adventure.md
+                - Verbindung mit Hero: sections/hero-sync.md
                 - Orte und Quests: sections/places.md
                 - Konzeptkarten: sections/concept-maps.md
                 - Interaktive Karten: sections/interactive-maps.md
@@ -160,6 +167,7 @@ plugins:
                 - Charakterbogen: companion/character-sheet.md
                 - Wiederverwendbare Bibliotheken: companion/libraries.md
                 - Kampf und Spieltisch: companion/table-play.md
+                - Mit DnDino verbinden: companion/dndino-sync.md
                 - Import, Export und Backup: companion/import-backup.md
             - Support:
                 - FAQ: support/faq.md
@@ -181,6 +189,7 @@ plugins:
                 - Heroes, PNJ y Monstruos: sections/characters.md
                 - Importacion y exportacion: sections/import-export.md
                 - Aventura: sections/adventure.md
+                - Conectar Hero: sections/hero-sync.md
                 - Lugares y Misiones: sections/places.md
                 - Mapas conceptuales: sections/concept-maps.md
                 - Mapas interactivos: sections/interactive-maps.md
@@ -192,6 +201,7 @@ plugins:
                 - Hoja de personaje: companion/character-sheet.md
                 - Bibliotecas reutilizables: companion/libraries.md
                 - Combate y mesa: companion/table-play.md
+                - Conectarse a DnDino: companion/dndino-sync.md
                 - Importacion, exportacion y copia: companion/import-backup.md
             - Soporte:
                 - FAQ: support/faq.md
@@ -215,6 +225,7 @@ plugins:
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Importacao e exportacao: sections/import-export.md
                 - Aventura: sections/adventure.md
+                - Ligar ao Hero: sections/hero-sync.md
                 - Locais e Quests: sections/places.md
                 - Mapas conceptuais: sections/concept-maps.md
                 - Mapas interativos: sections/interactive-maps.md
@@ -226,6 +237,7 @@ plugins:
                 - Ficha de personagem: companion/character-sheet.md
                 - Bibliotecas reutilizaveis: companion/libraries.md
                 - Combate e mesa: companion/table-play.md
+                - Ligar ao DnDino: companion/dndino-sync.md
                 - Importacao, exportacao e backup: companion/import-backup.md
             - Suporte:
                 - FAQ: support/faq.md
@@ -249,6 +261,7 @@ plugins:
                 - Herois, NPCs e Monstros: sections/characters.md
                 - Importacao e exportacao: sections/import-export.md
                 - Aventura: sections/adventure.md
+                - Conectar o Hero: sections/hero-sync.md
                 - Locais e Quests: sections/places.md
                 - Mapas conceituais: sections/concept-maps.md
                 - Mapas interativos: sections/interactive-maps.md
@@ -260,6 +273,7 @@ plugins:
                 - Ficha de personagem: companion/character-sheet.md
                 - Bibliotecas reutilizaveis: companion/libraries.md
                 - Combate e mesa: companion/table-play.md
+                - Conectar ao DnDino: companion/dndino-sync.md
                 - Importacao, exportacao e backup: companion/import-backup.md
             - Suporte:
                 - FAQ: support/faq.md
@@ -298,6 +312,7 @@ nav:
       - Heroes, NPCs, and Monsters: sections/characters.md
       - Import and Export: sections/import-export.md
       - Adventure: sections/adventure.md
+      - Connecting Hero: sections/hero-sync.md
       - Places and Quests: sections/places.md
       - Concept Maps: sections/concept-maps.md
       - Interactive Maps: sections/interactive-maps.md
@@ -309,6 +324,7 @@ nav:
       - Character Sheet: companion/character-sheet.md
       - Reusable Libraries: companion/libraries.md
       - Combat and Table Play: companion/table-play.md
+      - Connecting to DnDino: companion/dndino-sync.md
       - Import, Export, and Backup: companion/import-backup.md
   - Support:
       - FAQ: support/faq.md
