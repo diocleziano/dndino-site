@@ -353,3 +353,13 @@ La edición de mapas interactivos ahora se abre en una página dedicada, en luga
 Solo los mapas marcados como interactivos muestran la acción para abrir el editor interactivo. Los demás siguen disponibles como mapas normales del lugar.
 
 Un mapa puede marcarse como `Mapa interactivo`, como `Mapa sombra` o como ambas cosas. Los Mapas interactivos sirven para navegar entre lugares con marcadores; los Mapas sombra sirven para revelar gradualmente una mapa a los jugadores durante la sesión.
+
+<!-- guide-coverage: MOD-019 MOD-020 -->
+
+## Búsqueda y filtros de lugares para marcadores
+
+La búsqueda del selector de lugar del marcador está lista para escribir. El lugar propietario de la imagen y sus sublugares aparecen antes que los otros lugares de la aventura.
+
+Puedes ocultar por separado los lugares **ya vinculados en este mapa** y **ya vinculados en otros mapas de la aventura**. Solo filtran destinos: no eliminan lugares ni marcadores ni cambian vínculos guardados. Desactívalos para recuperar un lugar excluido; al editar un marcador, su destino actual permanece disponible.
+
+En modo Interactivo, **Editar mapa** abre el editor separado del mapa mostrado, no una copia del panel; **Volver al lugar** permite regresar.

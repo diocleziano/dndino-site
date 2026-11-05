@@ -95,3 +95,11 @@ Before importing important content:
 - import adventures as new, then verify links, places, and images
 
 Import is designed to protect your database: when in doubt, choose `Import as new` or `Skip` instead of replacing.
+
+<!-- guide-coverage: MOD-063 -->
+
+## Hero resources and counters
+
+Character packages also include progressions, descriptions and reference values, resources with remaining counts, and total/used spell slots. Adventures additionally preserve their player characters' contextual counters, separate from base sheets and other campaigns. These are not merely values shown during a Hero connection.
+
+Fields are optional so older packages remain readable; an old file cannot recreate resources that were never exported. Review comparisons before replacing a sheet. See [Characters](characters.md) for structure, saving and base/adventure differences.

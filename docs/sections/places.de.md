@@ -31,7 +31,7 @@ Ein niedrigeres Maximum begrenzt darüberliegende aktuelle TP; ein höheres heil
 
 Die Suche klappt Ergebnispfade auf. **Zurück zum Abenteuer** öffnet das Dashboard. **Karte bearbeiten** in **Interaktiv** öffnet die tatsächlich angezeigte Karte, auch die eines übergeordneten Orts. In **Schatten** behalten Nebel/Zeichnung und Aufdecken/Verbergen ihren Platz; bei Bedarf scrollt die Leiste horizontal.
 
-Nebenfenster bleiben am Hauptfenster. Das Schließen des letzten Hauptfensters schließt auch Neben- und Spielerfenster und pausiert aktive Kämpfe.
+Charakterbögen und -editoren, auch für Ort und Abenteuer, sind unabhängig und minimierbar. Zustände und Vollständiger Angriff haben eigene Fensterregeln und lassen sich nicht minimieren. Das Schließen des letzten Hauptfensters schließt auch Neben- und Spielerfenster und pausiert aktive Kämpfe.
 
 ## Wofür der Bereich Orte gedacht ist
 
@@ -348,7 +348,6 @@ Wenn du einen Ort auswählst, zeigt das rechte Panel einen Hero-Bereich mit:
 - dem Typ (`Ort` oder `Quest`)
 - dem aktuellen Status
 - eventuellen Markierungen
-- der Hierarchiekette des Ortes
 
 Zusätzlich erscheint eine Schnellübersicht mit:
 
@@ -461,7 +460,7 @@ In diesem Fall behält der Anwesende den kampagnenspezifischen Zustand.
 
 ### Grundbogen
 
-Dieser Ursprung klont einen Basiseintrag des Typs:
+Dieser Ursprung erstellt eine lokale Präsenz, die mit einem Basisbogen dieses Typs verknüpft bleibt:
 
 - `NSC`
 - `Monster`
@@ -597,3 +596,29 @@ Der Modus zeigt eine Schattenkarte links in der Orte-Seite und erlaubt dem Spiel
 Karten können jetzt getrennt als `Interaktive Karte` und `Schattenkarte` markiert werden. Eine Karte ohne Markierung bleibt weiterhin in den Medien des Ortes sichtbar, zeigt aber keine speziellen Befehle für interaktive Karten oder Schattenkarten.
 
 Ortsmedien können außerdem über die macOS-Teilen-Funktion geteilt werden.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Eigenständigen Bogen aus einer Präsenz erstellen
+
+In der Zeile eines NSC oder Monsters bietet die Schaltfläche **Person und +** die Aktion **Neuen Charakter aus … erstellen**, getrennt von **Präsenz duplizieren**. Nach Bestätigung entsteht ein persönlicher Bogen mit lokalem Namen, RK und maximalen TP; übrige Daten, Zauber, Angriffe und Bilder werden vom Basisbogen kopiert.
+
+Die Präsenz wird nicht dupliziert: Ort, aktuelle und temporäre TP, Zustände, Rolle, Notizen und Reihenfolge bleiben erhalten; nur die Verknüpfung führt zum neuen Bogen. Original und andere Kopien bleiben unverändert. Bilder erhalten unabhängige Verknüpfungen ohne unnötige Dateikopien. Anschließend öffnet sich sofort die Bearbeitung am Ort.
+
+Auch in einem nicht abgeschlossenen Kampf möglich: Nur die Bogenverknüpfung dieses Teilnehmers ändert sich, nicht TP, RK, Initiative oder Statistiken. Abgeschlossene Kämpfe werden nicht umgeschrieben. Bei einem Fehler werden Erstellung und Neuverknüpfung gemeinsam zurückgenommen.
+
+So wird etwa ein lokaler `Goblin 2` zu einem NSC mit eigenem Bogen. Für eine weitere Kopie am selben Ort verwende **Präsenz duplizieren**.
+
+## Kompakte Übersicht, Bearbeitung und Bilder
+
+Die Übersicht lässt sich über ihre Schaltfläche einblenden: Namen untereinander, Verbündeter/Neutral/Feind-Markierung, NSC-Kennzeichnung oder Monsteranzahl. Unterorte können nach Ort gruppiert einbezogen werden. Tote Charaktere oder solche mit null TP sind durchgestrichen; ein Klick öffnet den kompakten Kontextbogen.
+
+Die Suche der Präsenzauswahl ist sofort per Tastatur bedienbar. Die Bearbeitung trennt Zustand, Hauptinformationen, Details, Zauber und Bilder; temporäre TP stehen vor aktuellen TP. Das Orts-Titelbild bietet Bildaktionen für SL und Spieler.
+
+**Schatten** benötigt eine verfügbare Schattenkarte. Die Kreispfeile zeigen die Karte den Spielern oder aktualisieren den Nebel; Gelb bedeutet ausstehende Änderungen. Priorität und Filter der Marker stehen unter [Interaktive Karten](interactive-maps.md).
+
+## Temporäres Zeichnen auf der Schattenkarte
+
+Unter **Zeichnen** markiert **Temporär** einen Weg oder Punkt und blendet ihn anschließend aus. Jeder neue Strich startet die Frist aller noch sichtbaren temporären Striche neu. Das ersetzt weder den dauerhaften Stift noch ändert es den Nebel.
+
+Bei geteilter Karte sehen Spieler Zeichnungen ohne Bestätigung jedes Strichs. Nebeländerungen erfordern **Anzeigen/Aktualisieren**; dieselbe Schaltfläche startet bei Bedarf die Freigabe.

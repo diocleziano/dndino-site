@@ -24,7 +24,7 @@ Der Goblin mit Initiative 20 wird `Goblin 1`, der mit 10 `Goblin 2`. Auch null u
 
 ## Vorbereitung, örtliche Werte und Übersicht
 
-- **In Kampfvorschau anzeigen** ist pro Teilnehmer standardmäßig aktiv und betrifft nur die erste Spielerpräsentation. Abschalten entfernt niemanden aus dem Kampf. Die Hilfe folgt der globalen Einstellung für Hilfeschaltflächen.
+- **Vorschau** im Bereich **Spielersichtbarkeit** ist für jeden Teilnehmenden zunächst aktiviert und betrifft nur die Anfangspräsentation. Ausschalten entfernt niemanden aus dem Kampf. Die Hilfe über das Fragezeichen folgt der globalen Einstellung für Hilfe-Schaltflächen.
 - Örtliche Anwesenheiten nutzen ihre eigene **RK und maximalen TP**, ohne Basisbogen oder andere Kopien zu ändern. Bei direkt aus der allgemeinen Liste hinzugefügten Teilnehmern bleibt die RK kampfspezifisch.
 - Attribute zeigen ausgerichtete Zeilen für Werte, **MOD** und **Rettungswürfe**. Rettungswürfe sind auch im Schnelleditor änderbar. Der Wurf nutzt den eingetragenen Rettungswurf, sonst den Attributsmodifikator, sonst null.
 - Namen von NSC und Monstern sind im Kampf änderbar; lange Namen scrollen beim Darüberfahren. Die Suche ignoriert Groß-/Kleinschreibung und springt nach dem Filtern nach oben.
@@ -68,7 +68,28 @@ Die Einblendung kann enthalten:
 ![Spielerfenster während des Zugs eines Helden](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Spielerfenster während des Zugs eines Monsters](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Für Helden/Verbündete, NSC und Monster legst du in den Einstellungen getrennt fest, welche Informationen für Spieler sichtbar sind. Wenn ein NSC oder Monster als `Verbündeter` markiert ist, wird es auch im Spielerfenster wie ein Held/Verbündeter behandelt.
+## Zweiten Bildschirm verwalten {#player-screen-options}
+
+Diese Steuerelemente erscheinen nur, wenn **Kampfbildschirm für Spieler aktivieren** unter **Einstellungen > Kampf** eingeschaltet ist. Ausschalten blendet sie in der Vorbereitung und im laufenden Kampf aus; gespeicherte Entscheidungen bleiben erhalten. Ein zweiter Monitor muss weder angeschlossen noch das Spielerfenster bereits geöffnet sein.
+
+Öffne **Zweiten Bildschirm verwalten** über die Aktionsleiste der Vorbereitung; im laufenden Kampf gibt es denselben Befehl in kompakter Form. Aktiviere oder deaktiviere die Präsentation für diesen Kampf und wähle Intro, Endzusammenfassung, Runde, Dauer und nächsten Zug. Bei deaktivierter lokaler Präsentation sind die untergeordneten Steuerelemente gesperrt, bis du sie wieder aktivierst.
+
+Unter jedem Teilnehmenden findest du **Spielersichtbarkeit**:
+
+- **Vorschau**: nimmt ihn in die Anfangspräsentation auf oder schließt ihn aus, ohne ihn aus dem Kampf zu entfernen; nur vor Kampfbeginn änderbar.
+- **Name**: zeigt den echten Namen oder eine allgemeine Bezeichnung.
+- **TP**: zeigt oder verbirgt aktuelle, maximale und temporäre TP.
+- **Zustände**: zeigt oder verbirgt Zustände.
+
+Im laufenden Kampf kannst du die Sichtbarkeit von Name, TP und Zuständen im Detailbereich weiter anpassen. Kopien derselben Kreatur bleiben unabhängig. Das Fragezeichen zur Vorschau erklärt, wie du Feinde oder Verstärkungen nicht vorzeitig verrätst; bei deaktivierten kontextbezogenen Hilfen wird es ausgeblendet.
+
+Mit dem Augensymbol in den Überschriften **Helden** und **Monster und NSC** änderst du mehrere Teilnehmende gemeinsam; diese Befehle sind auch im laufenden Kampf verfügbar. Wähle für NSC und Monster zuerst **Alle**, **NSC** oder **Monster**. Jede Option zeigt den aktuellen Zustand, bei unterschiedlichen Werten auch **Gemischt**: Wende ausdrücklich **Für alle anzeigen** oder **Für alle ausblenden** an. Die Aktion betrifft alle Teilnehmenden der ausgewählten Gruppe, nicht nur sichtbare Zeilen; andere Optionen bleiben unverändert.
+
+Die Darstellungs- und Sichtbarkeitseinstellungen sind **Vorgaben für neue Kämpfe**. Entscheidungen im einzelnen Kampf werden mit diesem gespeichert, ohne globale Vorgaben oder andere Kämpfe zu ändern. Bestehende, nicht abgeschlossene Kämpfe übernehmen die Werte einmalig beim ersten Öffnen. Abgeschlossene Kämpfe bieten keine Bearbeitungssteuerelemente.
+
+**Bildschirmoptionen zurücksetzen** übernimmt nur die lokale Aktivierung und die allgemeinen Bildschirmoptionen aus den Einstellungen; individuelle Entscheidungen bleiben erhalten. Die globale Aktivierung und das Öffnungsverhalten der Fenster bleiben unter [Einstellungen](settings.md).
+
+Die Namenswahl gilt auch für aktuellen und nächsten Zug, Intro, Schadensanimationen als Angreifer oder Ziel und die Zusammenfassung für Spieler. Namen, TP, Initiative, Zustände und Statistiken des SL werden nicht verändert.
 
 ## Nützliche Einstellungen
 
@@ -550,7 +571,7 @@ Dazu gehören:
 - durchschnittliche Zugdauer für Helden und SL
 - Anzahl Kämpfe
 - getötete Gegner
-- Schadensverlauf pro Tag
+- Schadensverlauf pro Sitzung mit Beginn-Datum auf der X-Achse
 - durchschnittliche Sitzungsdauer
 
 Im Abenteuer-Dashboard sammelt **Abenteuerstatistiken** abgeschlossene Kämpfe, auch außerhalb einer einzelnen Live-Sitzung, und gruppiert sie lesbar.
@@ -581,3 +602,19 @@ Vollangriff-Links können jetzt in zwei Modi funktionieren:
 Im Angriffswurfmodus kann DnDino das Ergebnis mit der RK der ausgewählten Ziele vergleichen und anzeigen, ob der Angriff trifft. Im Rettungswurfmodus konzentriert sich das Fenster auf den SG und die Schadensanwendung.
 
 Das Vollangriff-Fenster unterstützt außerdem einen Angriffstyp, damit klar bleibt, ob es sich um Nahkampf, Fernkampf, Fläche oder eine eigene Beschreibung handelt.
+
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+
+## Progressionen, Zauberplätze und Kampffenster
+
+Der ausgewählte/aktive SC hat getrennt einklappbare Bereiche **Klassenressourcen** und **Zauberplätze**. Jede Progression belegt eine Zeile mit Name, Wert und ausklappbarer Beschreibung: **Verbleibend/Gesamt** mit Minus/Plus für Verbrauchswerte, feste Werte nur zur Ansicht. Bei null werden Ressourcen rot. Plätze zeigen **Verwendet/Gesamt**, nach Grad und Quelle getrennt; erschöpfte Zähler werden rot.
+
+Die Werte bleiben gespeichert und benötigen keine Hero-Verbindung. In abgeschlossenen Kämpfen sind sie schreibgeschützt. Für Hero-Charaktere erlaubt die vom Master gesteuerte Live-Sync Zähleränderungen mit Bestätigung der Spieler-App; neue Progressionen oder Maxima erfordern einen vollständigen Bogen. Siehe [Hero-Anleitung](hero-sync.md).
+
+Bei **NSC und Monstern** sind **maximale TP** neben aktuellen TP editierbar. Eine Ortspräsenz aktualisiert ihren lokalen Wert; ein Teilnehmer aus dem allgemeinen Bogen behält die Änderung nur im Kampf. Ein kleineres Maximum begrenzt höhere aktuelle TP; eine Erhöhung heilt nicht. Andere Kopien und deren Statistiken bleiben unverändert.
+
+Zustände öffnen auf dem Bildschirm des Hauptfensters und bleiben vorn. Zustände und **Vollständiger Angriff** sind nicht minimierbar. Es kann nur ein Vollständiger Angriff offen sein; erneutes Aufrufen bewahrt Würfe, Ziele und Änderungen. Über die [untere Leiste](topbar.md) kehrst du zum pausierten Kampf zurück.
+
+## Statistiken nach Sitzung
+
+Die Abenteuerstatistik gruppiert Kämpfe nach Sitzung. Details öffnen im selben Fenster mit Rückkehr zu den Statistiken. Kampfanzahl und ausgeteilter/erlittener Schaden werden pro Sitzung mit dem **Beginn-Datum auf der X-Achse** zusammengefasst: zwei Sitzungen am selben Tag bleiben getrennt, eine Sitzung über Mitternacht bleibt zusammen. Kämpfe ohne Sitzung erhalten keine erfundene Zuordnung.

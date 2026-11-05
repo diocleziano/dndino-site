@@ -353,3 +353,13 @@ A edição dos mapas interativos agora abre numa página dedicada, em vez de um 
 Apenas os mapas marcados como interativos mostram a ação para abrir o editor interativo. Os outros continuam disponíveis como mapas normais do local.
 
 Um mapa pode ser marcado como `Mapa interativo`, como `Mapa Sombra` ou como ambos. Os Mapas interativos servem para navegar entre locais com marcadores; os Mapas Sombra servem para revelar gradualmente um mapa aos jogadores durante a sessão.
+
+<!-- guide-coverage: MOD-019 MOD-020 -->
+
+## Pesquisa e filtros de locais para marcadores
+
+A pesquisa do seletor de local do marcador está pronta para escrever. O local proprietário do mapa e os seus sublocais aparecem antes dos restantes locais da aventura.
+
+É possível ocultar separadamente locais **já associados neste mapa** e **já associados noutros mapas da aventura**. Estes filtros só afetam destinos: não eliminam locais ou marcadores nem alteram associações guardadas. Desativa para reencontrar um local excluído do filtro; ao editar, o destino atual do marcador continua disponível.
+
+No modo Interativo dos locais, **Editar mapa** abre o editor separado do mapa apresentado, não uma cópia da dashboard; **Voltar ao local** permite regressar.

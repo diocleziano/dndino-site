@@ -29,3 +29,13 @@ You can also share only a cover image without merging sheets. Later changing or 
 ## Imports, exports and licenses
 
 Exports do not needlessly replicate the entire built-in library. They retain personal content and customizations supported by that export type; adventures include the sheets they use. Imports cannot overwrite SRD originals. See [Import and Export](import-export.md). Source and attribution appear in **Settings → Licenses**.
+
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+
+## Spell duplicates and usage indicators
+
+The **Spells** list also offers **Manage duplicates**. Matching fields align at the top for comparing values and descriptions. Each record shows detected usage: characters, attacks or text links; character checks also include adventures, location presences, combats and concept maps. An unavailable check does not mean a record is unused.
+
+Choose which sheet to keep and confirm **Apply**. Compatible links from personal duplicates move to it; old text links keep resolving. If a character knows both spells, one association remains with notes and prepared status preserved. Excluded SRD originals are hidden, not deleted. Discarded records' text, statistics and effects are not combined: back up first.
+
+When SRD duplicates exist, the spell-list filter can **hide only duplicated SRD originals**. It is temporary and neither deletes nor permanently hides records. It differs from **Hide** in duplicate management and **Official content**, which controls the whole catalog.

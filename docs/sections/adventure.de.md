@@ -271,6 +271,8 @@ Von hier aus kannst du auch eine neue Textsitzung erstellen. Sitzungen sind dami
 
 Dieser Bereich wird auf der Unterseite **Live-Sitzung** und in den Sitzungsabläufen weiter vertieft.
 
+<!-- guide-coverage: MOD-014 MOD-028 MOD-029 MOD-030 MOD-065 -->
+
 ### Abenteuerstatistiken
 
 ![Übersicht der Abenteuerstatistiken](../images/en_stastisticheavventura_1.png){ .img-shot }
@@ -292,16 +294,11 @@ Zu den wichtigsten Daten gehören:
 - Abenteuercharaktere mit dem meisten verursachten Schaden
 - Abenteuercharaktere mit dem meisten erlittenen Schaden
 
-Diagramme zeigen die Entwicklung über die Zeit:
+Die Chronik gruppiert Kämpfe nach **Sitzung**. Details öffnen im selben Fenster mit Rückkehr zu den Statistiken; Kämpfe ohne Sitzung bleiben getrennt.
 
-- verursachter Schaden pro Kampf
-- erlittener Schaden pro Kampf
-- verursachter Schaden pro Tag
-- erlittener Schaden pro Tag
-- Sitzungsdauer nach Tagen gruppiert
-- durchschnittliche Zugdauer, gruppiert nach Sitzung oder Kampf
+Diagramme zeigen ausgeteilten/erlittenen Schaden je Kampf und Sitzung, Kampfanzahl je Sitzung, Sitzungsdauer und mittlere Zugzeit je Sitzung oder Kampf. Sitzungsansichten nutzen das **Beginn-Datum**: Sitzungen am selben Tag bleiben getrennt, solche über Mitternacht werden nicht geteilt.
 
-In den Tagesdiagrammen kannst du zwischen `Alle` und `Pro Charakter` wechseln. Die Charakteransicht nutzt eine Linie pro beteiligtem Abenteuercharakter; über die Legende kannst du einzelne Charaktere ein- oder ausblenden.
+Bei Schaden wählst du **Alle** oder **Pro Charakter** und blendest Reihen über die Legende ein/aus. Charakterfarben stimmen zwischen Diagramm und Übersicht überein.
 
 Zahlenwerte können über den zugehörigen Schalter angezeigt oder verborgen werden, je nachdem ob du mehr Lesbarkeit oder mehr Detail möchtest. Diagramme können horizontal gescrollt werden und besitzen unabhängige Zoom-Steuerungen, damit du eine Ansicht erweitern oder komprimieren kannst, ohne andere Diagramme zu beeinflussen.
 

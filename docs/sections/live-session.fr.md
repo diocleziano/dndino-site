@@ -342,3 +342,11 @@ La session live est le pont entre :
 - mémoire finale de la session
 
 Bien utilisée, elle réduit fortement le risque de perdre des informations importantes pendant le jeu et rend beaucoup plus simple la reconstruction, après coup, de ce qui s’est réellement passé dans la campagne.
+
+<!-- guide-coverage: MOD-026 MOD-027 MOD-028 MOD-029 MOD-030 -->
+
+## Liste, détail et statistiques des sessions
+
+Chaque ligne affiche **Durée** et **nombre de combats** et est cliquable sur toute sa surface. Le détail peut ouvrir le résumé d'un combat sans la topbar générale de l'app.
+
+L'historique des statistiques d'aventure regroupe les combats par session : ouvre le détail dans la même fenêtre puis reviens aux statistiques. Les graphiques de combats et dégâts par session utilisent la date de début ; les sessions du même jour restent distinctes et celles passant minuit ne sont pas coupées. Les combats non associés restent identifiables. Voir [Combat](combat.md).

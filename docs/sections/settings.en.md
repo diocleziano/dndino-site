@@ -15,7 +15,7 @@ Settings mostly affect:
 
 **General → Official content** shows or hides SRD libraries without deleting personal data or breaking existing references. The control is shared with the lists. See [Official Content](official-content.md).
 
-Guide **?** buttons can be disabled globally and are enabled by default. Quick character opening can use the compact sheet. **Halloween** joins the other themes; **System** continues to follow macOS's actual appearance. The top bar, contextual buttons and menus use consistent layouts that keep icons and text readable.
+Guide **?** buttons can be disabled globally and are enabled by default. **Halloween** joins the other themes; **System** continues to follow macOS's actual appearance. The top bar, contextual buttons and menus use consistent layouts that keep icons and text readable.
 
 ## How the Screen Is Organized
 
@@ -58,6 +58,16 @@ You can choose whether to:
 
 - follow the system language
 - force a specific app language
+
+### Keep the screen awake
+
+In **Settings > General**, enable **Keep the screen awake** to prevent the display from turning off automatically while DnDino is in the foreground. This is useful during a session when you are reading notes or presenting content without constantly using the mouse or keyboard.
+
+The option is **off by default**. It also works on battery power, but increases energy use. Your choice is remembered between launches: switching to another app releases the request; returning to DnDino restores it if the option is still enabled. You can turn it off at any time using the same control.
+
+No special permissions are required, and macOS security settings are not changed. It does not prevent manual locking, user-requested sleep, closing the lid, or system protections; it does not guarantee that independent screensaver or security policies will be prevented.
+
+If macOS cannot activate the feature, a warning appears: turn the option off and on again to retry. Resetting all settings turns it off again.
 
 ### Global Confirmations
 
@@ -108,12 +118,7 @@ Here you can choose the **default die type** shown by the dice roller inside `Qu
 
 ### Quick Character Opening
 
-This setting controls how quick opening of characters behaves.
-
-You can decide whether the shortcut should lead to:
-
-- a more read-oriented view
-- or a mode closer to editing
+Each result has two circular buttons on the right: **View** opens the compact sheet and **Edit** opens the editor. The row itself no longer opens a sheet, and there is no global preference choosing between these actions. [Topbar](topbar.md).
 
 ### Quick Rules Opening
 
@@ -152,13 +157,13 @@ When a place is marked as `Being visited`, the place that was previously `Being 
 
 ## Combat
 
-The `Combat` section gathers the global preferences of the combat system.
+Presentation and visibility preferences define **defaults for new combats**. To change one combat, use [second-screen management and player visibility](combat.md#player-screen-options), including group actions. Saved choices in other combats are not overwritten.
 
-Here you find presentation options and preferences that influence the `Players Window`.
+Enabling the player combat screen and window-opening behavior remain global. Existing unfinished combats store their initial values once, when first opened.
 
 ### Enable Combat Screen for Players
 
-This is the main switch. If disabled, DnDino does not use the players window to show the combat intro, current turn, round, or final summary, and the related options are hidden.
+These controls appear only when **Enable combat screen for players** is on in **Settings > Combat**. Turning it off hides them in both preparation and active combat, while retaining saved choices. A second monitor does not need to be connected, and the Player Window does not need to be open already.
 
 ### Open the Players Window if Closed
 
@@ -170,7 +175,7 @@ This setting appears only when automatic opening is enabled. Use it if you want 
 
 ## Combat Presentation
 
-This subsection controls the general information shown to players during the encounter:
+These options define presentation defaults for new combats; change them within a combat without changing Settings:
 
 - `Show combat intro to players`
 - `Show final summary to players`
@@ -182,14 +187,14 @@ Encounter duration is shown as a readable timer; if combat is paused, the count 
 
 ## Hero Information
 
-These options apply when the active participant is a hero or an ally. An NPC or monster marked as `Ally` therefore uses these settings too. You can decide whether to show:
+These define initial visibility for hero-type participants in new combats. Choose whether to show:
 
 - current, maximum, and temporary HP
 - active conditions
 
 ## NPC Information
 
-These options apply only when the active participant is a non-allied NPC. NPCs marked as `Ally` fall back to the hero/ally settings. You can separately decide whether to show:
+These define initial NPC visibility in new combats, including NPCs with the Ally role. Choose separately whether to show:
 
 - current, maximum, and temporary HP
 - active conditions
@@ -199,7 +204,7 @@ If NPC names are hidden, the `Players Window` uses the generic name `NPC`.
 
 ## Monster Information
 
-These options apply only when the active participant is a non-allied monster. Monsters marked as `Ally` fall back to the hero/ally settings. You can separately decide whether to show:
+These define initial monster visibility in new combats. Monster HP and conditions use these options even for allies; non-enemy monster names initially remain visible. Choose separately whether to show:
 
 - current, maximum, and temporary HP
 - active conditions
@@ -338,3 +343,15 @@ In release builds, DnDino no longer shows internal technical paths. Instead, the
 Snapshots and app media can be exported to a user-selected location through the standard macOS save panel. Media files still remain copied inside the app sandbox so DnDino does not lose references if the original files are moved or deleted.
 
 The Diagnostics section is reserved for debug builds and is not shown in the release version.
+
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+
+## Themes, backgrounds and opacity
+
+Alongside **System**, which follows the Mac's light/dark appearance, themes include **Halloween**, **Christmas**, **Parchment** and **Winter**. Previews show palette and background; **Decorative background** can be disabled without changing theme. Winter uses a snowy landscape. These are theme backgrounds, not a custom-image background importer for Mac.
+
+The opacity slider immediately changes supported panels and sidebars, including Settings and both Places and Quests panels. Panels that were already opaque are excluded. **Default** restores each panel's original opacity, not one shared 50% value.
+
+Changing theme rebuilds the main screen and returns to **Settings → Theme**. Open secondary windows and unsaved drafts remain intact; the bottom bar follows the new theme. Main buttons and sidebar selection use theme colors with contrast-aware text. **System** retains native macOS control behavior.
+
+For authorizations, device history, optional automatic live startup and the difference between disconnecting, removing an association and forgetting a device, see [Connect with Hero](hero-sync.md).

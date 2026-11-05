@@ -271,6 +271,8 @@ A partir daqui também podes criar uma nova sessão textual. As sessões são, p
 
 Esta área será aprofundada na página dedicada à **Sessão em direto** e à gestão de sessões.
 
+<!-- guide-coverage: MOD-014 MOD-028 MOD-029 MOD-030 MOD-065 -->
+
 ### Estatísticas da Aventura
 
 ![Visão geral das estatísticas da aventura](../images/en_stastisticheavventura_1.png){ .img-shot }
@@ -292,16 +294,11 @@ Entre os dados principais podes encontrar:
 - personagens de aventura com mais dano causado
 - personagens de aventura com mais dano sofrido
 
-Os gráficos ajudam a ler a evolução ao longo do tempo:
+O histórico agrupa combates por **sessão**, com detalhe na mesma janela e regresso às estatísticas. Combates sem sessão ficam separados.
 
-- dano causado por combate
-- dano sofrido por combate
-- dano causado por dia
-- dano sofrido por dia
-- duração das sessões agrupada por dia
-- tempo médio dos turnos, agrupado por sessão ou por combate
+Os gráficos mostram danos causados/recebidos por combate e sessão, número de combates por sessão, duração das sessões e tempo médio dos turnos por sessão ou combate. As vistas por sessão usam a **data de início**: sessões do mesmo dia ficam distintas e as que passam da meia-noite não são divididas.
 
-Nos gráficos diários podes alternar entre `Todos` e `Por personagem`. A vista por personagem usa uma linha por cada personagem de aventura envolvida; a legenda permite mostrar ou esconder personagens individuais quando o gráfico fica demasiado cheio.
+Para danos escolhe **Todos** ou **Por personagem** e alterna séries pela legenda. As cores de cada personagem são consistentes entre gráfico e resumo.
 
 Os valores numéricos podem ser mostrados ou ocultados com o controlo dedicado, para escolher entre legibilidade e detalhe. Os gráficos podem deslocar-se horizontalmente e têm controlos de zoom independentes, para expandires ou comprimires uma leitura sem afetar as outras.
 

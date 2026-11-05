@@ -45,6 +45,9 @@ jobs:
       - name: Check synchronization guides
         run: python scripts/check_sync_guides.py
 
+      - name: Check Master guide updates
+        run: python scripts/check_master_guide_updates.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

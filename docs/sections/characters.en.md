@@ -414,3 +414,29 @@ Character sheets now include saving throws for each ability, proficiency bonus, 
 Saving throws start from the related ability modifier, but they can be edited independently. This is useful for proficiency, special bonuses, penalties, or creatures whose saving throws do not match the base modifier.
 
 `Full Attack` links can now represent either an attack roll or a saving throw effect. They can also include an attack type, such as melee, ranged, area, or any custom description, plus modular damage rows.
+
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+
+## Sectioned forms and keyboard navigation
+
+Creation and editing use separate sections: **Main information**, **Details**, **Spells**, **Images**; contextual editors add **adventure or location state**. Switching sections preserves the draft; press **Save** to store changes. Images can also be added from their section.
+
+The name is ready for input. **Tab** visits main fields, all abilities from STR to CHA, all saving throws, then spell fields; **Shift+Tab** goes backward. Rich-text editors are excluded from this route: Tab inside them remains text indentation.
+
+Each result in the topbar's quick character menu has separate **View** and **Edit** buttons; there is no global opening-mode setting. Adventure character cards also offer viewing access.
+
+## Hero progressions and spell slots
+
+For **Hero** characters, even without Hero or an adventure, configure resources in **Details** and slots in **Spells**. A resource has a name, optional description, maximum and **Remaining/Total**: minus consumes, plus restores. Fixed progressions received from Hero are read-only, with no consumption buttons. Spell slots have aligned **Slot count** and **Used** rows by level.
+
+Base-sheet values initialize new adventure links; counters already saved in other adventures are not overwritten. Deleting a resource is also a draft change until **Save**. Compact viewing mode displays resources and slots read-only.
+
+For characters received from Hero, the player owns the structure: a new send/download can update names, descriptions, maxima and current-level progressions, removing entries no longer present. Counters remain available offline; offline edits are not automatically queued to override Hero on reconnect. See [Connect with Hero](hero-sync.md).
+
+To create a personal sheet from a local presence without changing other copies, see [Independent sheets in locations](places.md).
+
+## Full Attack effects and formulas
+
+In **Saving throw** mode, set both the DC and required ability. Each damage entry can include an **Effect** text, displayed only when filled in; use it to describe spell effects without assuming extra automation.
+
+Formulas also accept `*`, `/` and parentheses. To halve the whole damage, use `(1d6+3)/2`, not `1d6+3/2`; results round down. Before rolling, dice show dashes rather than an achieved result. In combat, AC hit checks appear only for selected targets after an attack roll.

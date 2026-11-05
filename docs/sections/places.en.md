@@ -31,7 +31,7 @@ Lowering the maximum caps current HP above the limit; raising it does not heal a
 
 Tree search expands matching paths. **Return to adventure** opens the dashboard. In **Interactive**, **Edit map** edits the actual displayed map, including an inherited parent map. In **Shadow**, Fog/Drawing and Reveal/Hide keep their own space; the toolbar scrolls horizontally when needed.
 
-Secondary windows stay attached to the main window. Closing the last main window closes secondary and player windows and pauses active combats.
+Character sheets and editors, including location and adventure editors, are independent and can be minimized. Conditions and Full Attack use their own window rules and cannot be minimized. Closing the last main window closes secondary and player windows and pauses active combats.
 
 ## What the Places Section Is For
 
@@ -346,7 +346,6 @@ When you select a place, the right panel shows a hero area with:
 - type (`Place` or `Quest`)
 - current state
 - any markers
-- the hierarchical chain of the place
 
 It also shows a quick summary with:
 
@@ -459,7 +458,7 @@ In this case the occupant keeps the campaign-specific state.
 
 ### Base Sheet
 
-This origin clones a base record of type:
+This origin creates a local presence that remains linked to a base sheet of type:
 
 - `NPC`
 - `Monster`
@@ -601,3 +600,29 @@ Shadow mode shows a Shadow Map in the left side of the Places page and lets the 
 Maps can now be marked separately as `Interactive Map` and `Shadow Map`. A regular map with no flag still remains visible in the place media list, but it does not show interactive-map or Shadow Map controls.
 
 Place media can also be shared through the macOS sharing system, using the display name configured in DnDino.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Create an independent sheet from a presence
+
+On an NPC or monster row, the **person and +** button offers **Create new character from…**, separate from **Duplicate presence**. Confirm to create a personal sheet with the presence's local name, AC and maximum HP, copying the rest of the base sheet, spells, attacks and images.
+
+The presence is not duplicated: it keeps its location, current and temporary HP, conditions, role, notes and order, but links to the new sheet. The original and other copies remain unchanged. Images retain independent links without unnecessary file copies. The location character editor opens immediately.
+
+This also works when the presence is in an unfinished combat: only that participant's sheet link changes, not HP, AC, initiative or statistics. Completed combats are not rewritten. If anything fails, creation and relinking roll back together.
+
+Use it to turn a local `Goblin 2` into an NPC with its own sheet. To add another copy in the same location instead, use **Duplicate presence**.
+
+## Compact summary, editing and images
+
+Toggle the presence summary with its button: vertical names, ally/neutral/enemy indicator, NPC label or monster count. Include sublocations to group entries by location. Dead characters or those at zero HP are crossed out; clicking a name opens the contextual compact sheet.
+
+The presence picker's search is ready for keyboard input. Contextual editing separates state, main information, details, spells and images; temporary HP precedes current HP in the local section. The location cover offers image actions for the DM and players.
+
+**Shadow** mode requires an available Shadow Map. The circular-arrows button shows the map to players or updates its fog; yellow indicates changes waiting to be sent. See [Interactive maps](interactive-maps.md) for marker priorities and filters.
+
+## Temporary drawing on the Shadow Map
+
+Under **Drawing**, **Temporary** highlights a route or point, then fades away. Each new stroke restarts the expiry of all still-visible temporary strokes. It does not replace the permanent pen or alter fog.
+
+Once the map is shared, drawings reach players without confirming every stroke. Fog changes still require **Show/Update**; the same button starts sharing if it was not active.

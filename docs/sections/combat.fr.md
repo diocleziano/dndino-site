@@ -24,7 +24,7 @@ Le gobelin à initiative 20 devient `Gobelin 1`, celui à 10 devient `Gobelin 2`
 
 ## Préparation, valeurs locales et récapitulatif
 
-- **Afficher dans l’aperçu du combat**, activé par défaut par participant, contrôle seulement la présentation initiale aux joueurs. Le désactiver ne retire pas le participant du combat. L’aide suit le réglage global des boutons guide.
+- **Apercu**, dans le panneau **Visibilité pour les joueurs**, est activé par défaut pour chaque participant et ne concerne que la présentation initiale. Le désactiver ne retire pas le participant du combat. L’aide du point d’interrogation suit le réglage global des boutons d’aide.
 - Les présences locales utilisent leurs propres **CA et PV maximum** sans modifier la base ou les autres copies. La CA d’un participant ajouté directement depuis la liste générale reste propre au combat.
 - Les caractéristiques présentent des lignes alignées de scores, **MOD** et **JS**. Les JS sont modifiables dans l’éditeur rapide ; le lancer utilise le JS explicite, sinon le modificateur de caractéristique, ou zéro si les deux manquent.
 - Les noms des PNJ et monstres sont modifiables ; survole un nom long pour le lire en défilement. La recherche ignore la casse et revient en haut après filtrage.
@@ -68,7 +68,28 @@ L'affichage peut inclure :
 ![Écran joueurs pendant le tour d'un héros](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Écran joueurs pendant le tour d'un monstre](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Pour les héros/alliés, PNJ et monstres, les réglages permettent de choisir séparément quelles informations sont visibles par les joueurs. Si un PNJ ou un monstre est marqué comme `Allié`, il est aussi traité comme un héros/allié sur l’écran joueurs.
+## Gestion du second écran {#player-screen-options}
+
+Ces commandes apparaissent seulement si **Activer l'écran de combat pour les joueurs** est activé dans **Réglages > Combat**. Le désactiver les masque pendant la préparation et le combat, sans effacer les choix enregistrés. Il n’est pas nécessaire qu’un second moniteur soit connecté ni que la fenêtre joueurs soit déjà ouverte.
+
+Ouvre **Gestion du second écran** depuis la barre d’actions de préparation ; une version compacte reste disponible pendant le combat. Active ou désactive la présentation pour ce combat et choisis l’intro, le résumé final, le round, la durée et le prochain tour. Désactiver la présentation locale désactive ses commandes secondaires jusqu’à sa réactivation.
+
+Sous chaque participant se trouve **Visibilité pour les joueurs** :
+
+- **Apercu** : l’inclut ou l’exclut de la présentation initiale sans le retirer du combat ; modifiable uniquement avant le début.
+- **Nom** : affiche son vrai nom ou une étiquette générique.
+- **PV** : affiche ou masque les PV actuels, maximums et temporaires.
+- **Conditions** : affiche ou masque les états.
+
+Pendant le combat, son panneau de détail permet toujours de régler la visibilité du nom, des PV et des états. Les copies d’une même créature restent indépendantes. Le point d’interrogation de l’aperçu explique comment ne pas dévoiler trop tôt ennemis ou renforts ; il est masqué si l’aide contextuelle est désactivée.
+
+Utilise le bouton œil des en-têtes **Héros** et **Monstres et PNJ** pour modifier plusieurs participants ensemble ; ces commandes existent aussi pendant le combat. Pour les PNJ et monstres, choisis d’abord **Tous**, **PNJ** ou **Monstres**. Chaque option indique son état, y compris **Mixte** si les choix diffèrent : applique explicitement **Afficher pour tous** ou **Masquer pour tous**. L’action concerne tous les participants du groupe choisi, pas seulement les lignes visibles ; les autres options ne changent pas.
+
+Les préférences de présentation et de visibilité sont les **valeurs initiales des nouveaux combats**. Les choix effectués dans un combat sont enregistrés avec celui-ci, sans modifier les valeurs globales ni les autres combats. Les combats existants non terminés initialisent ces valeurs une seule fois, à leur première ouverture. Les commandes de modification ne sont pas disponibles dans les combats terminés.
+
+**Réinitialiser les options d'écran** reprend uniquement l’activation locale et les options générales de l’écran depuis les réglages ; les choix individuels des participants sont conservés. L’activation globale et le comportement d’ouverture des fenêtres restent dans les [Réglages](settings.md).
+
+Le choix du nom s’applique aussi au tour courant, au prochain tour, à l’intro, aux animations de dégâts comme attaquant ou cible et au résumé montré aux joueurs. Il ne modifie pas les noms, PV, initiatives, états ou statistiques du MJ.
 
 ## Réglages Utiles
 
@@ -550,7 +571,7 @@ Les statistiques peuvent inclure :
 - temps moyen des tours pour les héros et le MJ
 - nombre de combats
 - ennemis tués
-- évolution des dégâts par jour
+- évolution des dégâts par session, avec la date de début en abscisse
 - durée moyenne des sessions
 
 Dans le tableau de bord de l'aventure, la vue **Statistiques d'aventure** rassemble les combats terminés, même hors d'une session live unique, et les regroupe de façon lisible.
@@ -581,3 +602,19 @@ Les liens Attaque complète peuvent maintenant fonctionner en deux modes:
 En mode jet d’attaque, DnDino peut comparer le résultat avec la CA des cibles sélectionnées et indiquer si l’attaque touche. En mode jet de sauvegarde, la fenêtre se concentre sur la DD et l’application des dégâts.
 
 La fenêtre d’Attaque complète prend aussi en charge le type d’attaque, pour préciser s’il s’agit d’une attaque au corps à corps, à distance, de zone ou personnalisée.
+
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+
+## Progressions, emplacements et fenêtres de combat
+
+Le panneau du PJ sélectionné ou actif contient **Ressources de classe** et **Emplacements de sorts**, repliables séparément. Chaque progression occupe une ligne avec nom, valeur et description dépliable : **Restants/Total** avec moins/plus pour les consommables, consultation seule pour les fixes. À zéro, la ressource devient rouge. Les emplacements montrent **Utilisés/Total**, séparés par niveau et origine ; le compteur devient rouge lorsqu'ils sont épuisés.
+
+Ces données persistent sans connexion Hero. Elles sont en lecture seule dans les combats terminés. Pour un personnage reçu de Hero, la live contrôlée par le Master permet de modifier les compteurs pris en charge avec confirmation de l'app du joueur ; nouvelles progressions et maxima nécessitent la fiche complète. Voir [guide Hero](hero-sync.md).
+
+Pour les **PNJ et monstres**, les **PV maximum** sont modifiables près des PV actuels. Une présence actualise sa valeur locale ; un participant issu de la fiche générale garde la modification uniquement dans ce combat. Réduire le maximum limite les PV supérieurs ; l'augmenter ne soigne pas. Les autres copies et leurs statistiques restent intactes.
+
+Les états s'ouvrent sur l'écran de la fenêtre principale et restent devant. États et **Attaque complète** ne se minimisent pas. Une seule Attaque complète peut être ouverte ; la rappeler conserve jets, cibles et modifications. La [barre inférieure](topbar.md) permet de revenir au combat en pause.
+
+## Statistiques par session
+
+L'historique des statistiques d'aventure regroupe les combats par session. Le détail s'ouvre dans la même fenêtre, avec retour aux statistiques. Nombre de combats et dégâts infligés/subis sont agrégés par session avec la **date de début en abscisse** : deux sessions le même jour restent distinctes, une session passant minuit reste unie. Les combats sans session ne reçoivent pas d'association inventée.

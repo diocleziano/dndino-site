@@ -29,15 +29,7 @@ Se ti trovi dentro una **dashboard avventura**, nei **luoghi** o in un **combatt
 
 ## Personaggi
 
-`Personaggi` apre la ricerca rapida dei personaggi.
-
-Da qui puoi:
-
-- cercare un personaggio per nome
-- aprire la lista completa
-- aprire rapidamente una scheda personaggio
-
-Il modo in cui una scheda viene aperta dipende dalle impostazioni della topbar: puoi scegliere una visualizzazione orientata alla lettura oppure una finestra di modifica.
+Ogni risultato ha due pulsanti circolari a destra: **Visualizzazione** apre la scheda compatta, **Modifica** apre l'editor. La riga non apre più la scheda da sola e non esiste una preferenza globale per scegliere tra le due modalità.
 
 ## Equip
 
@@ -133,3 +125,13 @@ Usala soprattutto quando:
 - vuoi consultare un personaggio o un oggetto al volo
 - ti serve un tiro rapido, un timer o un nome improvvisato
 - hai una sessione live aperta e vuoi gestirla senza lasciare la sezione corrente
+
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+
+## Barra inferiore e finestre aperte
+
+La barra in basso compare quando ci sono finestre di lavoro o collegamenti da richiamare; la Finestra Giocatori non vi compare. Ogni finestra mostra nome e icona, distinguendo **Modifica** da **Visualizzazione**: clicca per portarla davanti o ripristinarla, usa la X per chiuderla. Le schede/editor dei personaggi sono indipendenti e minimizzabili; condizioni e Attacco completo non si minimizzano.
+
+Uscendo da un combattimento non concluso, lo scontro va in pausa e un collegamento con barretta colorata resta **per primo a sinistra**. Clicca per rientrare. La sua X nasconde solo il collegamento: non termina né elimina il combattimento. Durante quello scontro la scorciatoia non serve e viene nascosta, ma le altre finestre restano elencate.
+
+Le chat ricevute da Hero compaiono anche a finestra chiusa, senza interromperti; un pallino segnala i messaggi non letti. Aprire e leggere la conversazione rimuove l'indicatore. A destra, l'area Hero mantiene i giocatori contattati durante l'apertura corrente dell'app anche dopo una disconnessione: stato, test collegamento, chat, download della scheda, live e scollegamento. Vedi [guida Hero](hero-sync.md).

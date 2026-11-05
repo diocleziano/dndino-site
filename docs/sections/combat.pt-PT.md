@@ -24,7 +24,7 @@ O goblin com iniciativa 20 torna-se `Goblin 1`, o de 10 torna-se `Goblin 2`. Zer
 
 ## Preparação, valores locais e resumo
 
-- **Mostrar na pré-visualização do combate**, ativo por predefinição para cada participante, controla apenas a apresentação inicial aos jogadores. Desativá-lo não retira o participante do combate. A ajuda segue a definição global dos botões de guia.
+- **Visualização**, no painel **Visibilidade para jogadores**, está ativa por predefinição para cada participante e controla apenas a apresentação inicial. Desativá-la não remove o participante do combate. A ajuda do ponto de interrogação segue a definição global dos botões de ajuda.
 - As presenças locais usam a sua própria **CA e PV máximos**, sem modificar a base ou outras cópias. A CA de participantes acrescentados diretamente da lista geral continua específica do combate.
 - Os atributos apresentam linhas alinhadas de valores, **MOD** e **salvaguardas**. As salvaguardas também são editáveis no editor rápido; o lançamento usa o valor explícito, senão o modificador do atributo, ou zero se faltarem ambos.
 - Os nomes de PNJ e monstros são editáveis; passa o rato sobre nomes longos para os ler em deslocamento. A pesquisa ignora maiúsculas/minúsculas e regressa ao topo após filtrar.
@@ -68,7 +68,28 @@ A sobreposição pode incluir:
 ![Ecrã dos jogadores durante o turno de um herói](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Ecrã dos jogadores durante o turno de um monstro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Para heróis/aliados, PNJ e monstros podes decidir separadamente nas definições que informações são mostradas aos jogadores. Se um PNJ ou monstro estiver marcado como `Aliado`, também é tratado como herói/aliado no ecrã dos jogadores.
+## Gerir segundo ecrã {#player-screen-options}
+
+Estes controlos aparecem apenas se **Ativar ecrã de combate para os jogadores** estiver ativo em **Definições > Combate**. Desativar esta opção oculta os controlos na preparação e durante o combate, sem apagar as escolhas guardadas. Não é necessário ter um segundo monitor ligado nem a janela dos jogadores já aberta.
+
+Abre **Gerir segundo ecrã** na barra de ações da preparação; durante o combate tens uma versão compacta. Ativa ou desativa a apresentação para esse combate e escolhe introdução, resumo final, ronda, duração e próximo turno. Desativar a apresentação local desativa os controlos subordinados até voltares a ativá-la.
+
+Cada participante tem um painel **Visibilidade para jogadores**:
+
+- **Visualização**: inclui ou exclui o participante da apresentação inicial sem o remover do combate; só pode ser alterada antes do início.
+- **Nome**: mostra o nome real ou uma identificação genérica.
+- **HP**: mostra ou oculta PV atuais, máximos e temporários.
+- **Condições**: mostra ou oculta condições.
+
+Durante o combate, o painel de detalhe continua a permitir ajustar a visibilidade do nome, dos PV e das condições. As cópias da mesma criatura mantêm-se independentes. O ponto de interrogação explica como evitar revelar inimigos ou reforços antes de tempo; fica oculto se a ajuda contextual estiver desativada.
+
+Usa o botão com o olho nos cabeçalhos **Heróis** e **Monstros e NPC** para alterar vários participantes em conjunto; estes comandos também estão disponíveis durante o combate. Para PNJ e monstros, escolhe primeiro **Todos**, **NPC** ou **Monstros**. Cada opção mostra o estado atual, incluindo **Misto** quando as escolhas diferem: aplica explicitamente **Mostrar para todos** ou **Ocultar para todos**. A ação abrange todos os participantes do grupo selecionado, não apenas as linhas visíveis; as restantes opções não mudam.
+
+As preferências de apresentação e visibilidade são os **valores iniciais dos novos combates**. As escolhas feitas num combate ficam guardadas com ele, sem alterar as predefinições globais nem os outros combates. Os combates anteriores não concluídos inicializam estes valores uma única vez, na primeira abertura. Os controlos de edição não estão disponíveis em combates concluídos.
+
+**Repor opções do ecrã** recupera das definições apenas a ativação local e as opções gerais do ecrã; não repõe as escolhas individuais dos participantes. A ativação global e as preferências de abertura das janelas mantêm-se nas [Definições](settings.md).
+
+A escolha do nome também se aplica ao turno atual, próximo turno, introdução, animações de dano como atacante ou alvo e resumo apresentado aos jogadores. Não altera nomes, PV, iniciativa, condições nem estatísticas do mestre.
 
 ## Definições Úteis
 
@@ -550,7 +571,7 @@ As estatísticas podem incluir:
 - tempo médio dos turnos para heróis e Mestre
 - número de combates
 - inimigos mortos
-- evolução do dano por dia
+- evolução do dano por sessão, com a data de início no eixo horizontal
 - duração média das sessões
 
 No painel da aventura, a vista **Estatísticas da Aventura** reúne combates concluídos, mesmo fora de uma única sessão live, e agrupa-os de forma consultável.
@@ -581,3 +602,19 @@ As ligações de Ataque completo podem agora funcionar em dois modos:
 No modo jogada de ataque, DnDino pode comparar o resultado com a CA dos alvos selecionados e indicar se o ataque acerta. No modo teste de resistência, a janela foca-se na CD e na aplicação do dano.
 
 A janela de Ataque completo também aceita um tipo de ataque, para indicar se é corpo a corpo, à distância, em área ou personalizado.
+
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+
+## Progressões, espaços e janelas de combate
+
+O painel do PJ selecionado ou da vez tem **Recursos de classe** e **Espaços de magia**, recolhíveis separadamente. Cada progressão ocupa uma linha com nome, valor e descrição expansível: **Restantes/Total** com menos/mais para consumíveis, consulta para fixas. Recursos a zero ficam vermelhos. Os espaços mostram **Utilizados/Total**, separados por nível e origem; ficam vermelhos quando esgotados.
+
+Os dados persistem sem ligação Hero. Em combates concluídos ficam apenas para consulta. Para personagens de Hero, a live controlada pelo Master permite alterar contadores compatíveis com confirmação da app do jogador; novas progressões ou máximos exigem a ficha completa. Consulta o [guia Hero](hero-sync.md).
+
+Para **PNJ e monstros**, os **PV máximos** são editáveis ao lado dos atuais. Uma presença atualiza o seu valor local; um participante da ficha geral mantém a alteração apenas nesse combate. Reduzir o máximo limita PV superiores; aumentar não cura. Outras cópias e estatísticas não mudam.
+
+Condições abre no ecrã da janela principal e permanece à frente. Condições e **Ataque completo** não podem ser minimizados. Só pode haver um Ataque completo aberto; regressar mantém lançamentos, alvos e alterações. Usa a [barra inferior](topbar.md) para voltar ao combate em pausa.
+
+## Estatísticas por sessão
+
+O histórico de estatísticas da aventura agrupa combates por sessão. Abre o detalhe na mesma janela e usa o regresso às estatísticas. Combates e danos causados/recebidos são agregados por sessão com a **data de início no eixo horizontal**: sessões do mesmo dia ficam separadas, uma sessão que passa da meia-noite permanece unida. Combates sem sessão não recebem associações inventadas.

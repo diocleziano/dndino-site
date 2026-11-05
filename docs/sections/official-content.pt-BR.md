@@ -29,3 +29,13 @@ Também é possível compartilhar apenas uma capa, sem mesclar fichas. Alterar o
 ## Importação, exportação e licenças
 
 Exportações não duplicam desnecessariamente todo o catálogo integrado. Mantêm conteúdo pessoal e as personalizações previstas pelo tipo de exportação; aventuras incluem as fichas utilizadas. Importações não sobrescrevem originais SRD. Veja [Importação e exportação](import-export.md). Fonte e atribuição ficam em **Configurações → Licenças**.
+
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+
+## Duplicatas de magias e indicadores de uso
+
+A lista **Magias** também oferece **Gerenciar duplicatas**. Campos correspondentes ficam alinhados no topo para comparar valores e descrições. Cada registro mostra usos detectados: personagens, ataques ou links de texto; para personagens, também aventuras, presenças, combates e mapas conceituais. Uma verificação indisponível não significa «sem uso».
+
+Escolha a ficha a manter e confirme **Aplicar**. Vínculos compatíveis das duplicatas pessoais são transferidos e links antigos continuam funcionando. Se um personagem conhece ambas as magias, fica uma associação com notas e preparação preservadas. Originais SRD descartados são ocultados, não excluídos. Textos, estatísticas e efeitos descartados não são somados: faça um backup antes.
+
+Havendo duplicatas SRD, o filtro da lista permite **ocultar apenas os originais SRD duplicados**. É temporário, sem excluir nem ocultar permanentemente registros. É diferente de **Ocultar** na gestão de duplicatas e de **Conteúdo oficial**, que controla todo o catálogo.

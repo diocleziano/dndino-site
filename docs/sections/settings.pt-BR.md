@@ -15,7 +15,7 @@ As configurações influenciam principalmente:
 
 **Geral → Conteúdo oficial** mostra ou oculta catálogos SRD sem excluir dados pessoais nem romper referências. O controle é compartilhado com as listas. Veja [Conteúdo oficial](official-content.md).
 
-Botões de guia **?**, ativos por padrão, podem ser desativados globalmente. A abertura rápida de personagens pode usar a ficha compacta. **Halloween** se junta aos temas; **Sistema** continua seguindo a aparência real do macOS. Barra superior, botões contextuais e menus usam layouts consistentes para manter ícones e textos legíveis.
+Botões de guia **?**, ativos por padrão, podem ser desativados globalmente. **Halloween** se junta aos temas; **Sistema** continua seguindo a aparência real do macOS. Barra superior, botões contextuais e menus usam layouts consistentes para manter ícones e textos legíveis.
 
 ## Como a tela está organizada
 
@@ -58,6 +58,16 @@ Você pode decidir se quer:
 
 - seguir o idioma do sistema
 - forçar um idioma específico do aplicativo
+
+### Manter a tela ligada
+
+Em **Configurações > Geral**, ative **Manter a tela ligada** para evitar que a tela se apague automaticamente enquanto o DnDino está em primeiro plano. É útil durante uma sessão para consultar anotações ou apresentar conteúdo sem usar o mouse ou o teclado o tempo todo.
+
+A opção fica **desativada por padrão**. Também funciona usando bateria, mas aumenta o consumo de energia. Sua escolha é mantida entre aberturas do app: ao mudar para outro aplicativo, a solicitação é liberada; ao voltar ao DnDino, ela é restabelecida se a opção continuar ativa. Você pode desativá-la a qualquer momento no mesmo controle.
+
+Não exige permissões especiais nem altera as configurações de segurança do macOS. Não impede o bloqueio manual, o repouso solicitado pelo usuário, o fechamento da tampa nem as proteções do sistema. Não garante impedir protetores de tela ou bloqueios impostos por políticas independentes.
+
+Se o macOS não conseguir ativar a função, um aviso será exibido: desative e reative a opção para tentar novamente. A redefinição completa das configurações também a desativa.
 
 ### Confirmações globais
 
@@ -108,12 +118,7 @@ Aqui você pode escolher o **tipo de dado padrão** do rolador de dados em `Ferr
 
 ### Abertura rápida de personagens
 
-Esta configuração controla o comportamento da abertura rápida de personagens.
-
-Você pode decidir se o atalho deve abrir:
-
-- uma visualização mais orientada para leitura
-- ou um modo mais próximo da edição
+Cada resultado tem dois botões circulares à direita: **Visualizar** abre a ficha compacta e **Editar** abre o editor. A linha sozinha não abre mais a ficha e não há preferência global escolhendo entre as ações. [Topbar](topbar.md).
 
 ### Abertura rápida de regras
 
@@ -152,13 +157,13 @@ Quando um local é marcado como `Em visita`, o local que antes estava `Em visita
 
 ## Combate
 
-A seção `Combate` reúne as preferências globais do sistema de combate.
+As preferências de apresentação e visibilidade definem os **valores iniciais dos novos combates**. Para alterar um combate, use [o gerenciamento da segunda tela e a visibilidade](combat.md#player-screen-options), inclusive com ações em grupo. As escolhas salvas em outros combates não são sobrescritas.
 
-Aqui você encontra opções de apresentação e preferências que influenciam a `Janela dos Jogadores`.
+A ativação da tela dos jogadores e a abertura das janelas continuam globais. Combates anteriores não concluídos guardam os valores iniciais uma única vez, na primeira abertura.
 
 ### Habilitar tela de combate para os jogadores
 
-Este é o controle principal. Se estiver desativado, o DnDino não usa a janela dos jogadores para mostrar intro, turno atual, round ou resumo final do combate, e as opções relacionadas ficam ocultas.
+Esses controles aparecem apenas se **Ativar tela de combate para os jogadores** estiver ativado em **Configurações > Combate**. Desativar essa opção oculta os controles na preparação e durante o combate, sem apagar as escolhas salvas. Não é necessário ter um segundo monitor conectado nem a janela dos jogadores já aberta.
 
 ### Abrir a janela dos jogadores se estiver fechada
 
@@ -170,7 +175,7 @@ Esta opção aparece apenas se a abertura automática estiver ativa. Use quando 
 
 ## Apresentação do combate
 
-Esta subseção controla as informações gerais mostradas aos jogadores durante o confronto:
+Essas opções definem os valores iniciais de apresentação dos novos combates; você pode alterá-los em um combate sem mudar as configurações:
 
 - `Mostrar intro do combate aos jogadores`
 - `Mostrar resumo final aos jogadores`
@@ -182,14 +187,14 @@ A duração do encontro é mostrada como um temporizador legível; se o combate 
 
 ## Informações dos heróis
 
-Estas opções valem quando o participante ativo é um herói ou aliado. Um NPC ou monstro marcado como `Aliado` também usa essas configurações. Você pode decidir se mostra:
+Essas opções definem a visibilidade inicial dos participantes do tipo herói nos novos combates. Você pode decidir se mostra:
 
 - PV atuais, máximos e temporários
 - condições ativas
 
 ## Informações dos NPCs
 
-Estas opções valem apenas quando o participante ativo é um NPC não aliado. NPCs marcados como `Aliado` usam as configurações de heróis/aliados. Você pode decidir separadamente se mostra:
+Essas opções definem a visibilidade inicial dos NPCs nos novos combates, inclusive quando têm o papel de Aliado. Você pode decidir separadamente se mostra:
 
 - PV atuais, máximos e temporários
 - condições ativas
@@ -199,7 +204,7 @@ Se os nomes dos NPCs estiverem ocultos, a `Janela dos Jogadores` usa o nome gen�
 
 ## Informações dos monstros
 
-Estas opções valem apenas quando o participante ativo é um monstro não aliado. Monstros marcados como `Aliado` usam as configurações de heróis/aliados. Você pode decidir separadamente se mostra:
+Essas opções definem a visibilidade inicial dos monstros nos novos combates. Seus PV e condições seguem essas opções mesmo quando são aliados; nomes de monstros não inimigos ficam inicialmente visíveis. Você pode decidir separadamente se mostra:
 
 - PV atuais, máximos e temporários
 - condições ativas
@@ -338,3 +343,15 @@ Nas versões de lançamento, DnDino não mostra mais caminhos técnicos internos
 Instantâneos e mídias do app podem ser exportados para um local escolhido pelo usuário usando o painel padrão de salvar do macOS. As mídias continuam copiadas dentro da sandbox do app, para que DnDino não perca referências caso os arquivos originais sejam movidos ou apagados.
 
 A seção Diagnóstico fica reservada para builds de debug e não aparece na versão de lançamento.
+
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+
+## Temas, fundos e opacidade
+
+Além de **Sistema**, que segue a aparência clara/escura do Mac, há temas **Halloween**, **Natal**, **Pergaminho** e **Inverno**. As prévias mostram paleta e fundo; **Fundo decorativo** pode ser desativado sem mudar o tema. Inverno usa uma paisagem nevada. São fundos do tema, não um importador de imagens pessoais para o fundo no Mac.
+
+O controle de opacidade altera imediatamente painéis e barras laterais preparados, incluindo Ajustes e os dois painéis de Locais e Missões. Painéis já opacos ficam de fora. **Padrão** restaura as diferentes opacidades originais, não um valor comum de 50%.
+
+Trocar o tema recria a tela principal e volta a **Ajustes → Tema**. Janelas secundárias abertas e rascunhos não salvos ficam intactos; a barra inferior segue o tema. Botões principais e seleção lateral usam cores do tema com texto adaptado ao contraste. **Sistema** mantém os controles nativos do macOS.
+
+Veja [Conexão com Hero](hero-sync.md) para autorizações, histórico, início live automático opcional e diferenças entre desconectar, remover associação e esquecer.

@@ -353,3 +353,13 @@ Interactive map editing now opens in a dedicated page instead of a side panel in
 Only maps marked as interactive show the action to open the interactive editor. Maps that are not interactive remain available as normal place maps.
 
 A map can be marked as an `Interactive Map`, a `Shadow Map`, or both. Interactive Maps are used to navigate places through markers; Shadow Map assets are used to reveal a map gradually to players during the session.
+
+<!-- guide-coverage: MOD-019 MOD-020 -->
+
+## Location search and filters for markers
+
+The marker location picker's search is immediately ready for typing. The map's owning location and its sublocations appear before other locations in the adventure.
+
+You can separately hide locations **already linked on this map** and those **already linked on other adventure maps**. These filter destination choices: they do not delete locations or markers or change saved links. Disable them to find an excluded location; when editing a marker, its current destination remains available.
+
+In a location's Interactive mode, **Edit map** opens the separate editor for the displayed map, not a copy of the dashboard; **Back to location** returns you.

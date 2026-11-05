@@ -95,3 +95,11 @@ Prima di importare contenuti importanti:
 - importa le avventure come nuove e poi verifica collegamenti, luoghi e immagini
 
 L'importazione è pensata per proteggere il database: in caso di dubbio, scegli `Importa come nuovo` o `Ignora` invece di sovrascrivere.
+
+<!-- guide-coverage: MOD-063 -->
+
+## Risorse e contatori degli eroi
+
+I pacchetti dei personaggi comprendono anche progressioni, descrizioni e valori di riferimento, risorse con residui e slot totali/utilizzati. Le avventure conservano inoltre i contatori contestuali dei propri PG, separati dalla scheda base e dalle altre campagne. Non sono soltanto dati visibili durante un collegamento Hero.
+
+I campi sono opzionali per leggere i vecchi pacchetti: un file precedente non può ricostruire risorse mai esportate. Controlla sempre il confronto prima di sostituire una scheda. Per struttura, salvataggio e differenza tra base e avventura vedi [Personaggi](characters.md).

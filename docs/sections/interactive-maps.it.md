@@ -359,3 +359,13 @@ La differenza è questa:
 - la **Mappa Ombra** serve a rivelare gradualmente una mappa ai giocatori durante la sessione
 
 Nella dashboard avventura e nei media dei luoghi i filtri evitano duplicati inutili: se una mappa appartiene a più categorie, nella vista `Tutti` viene comunque mostrata una sola volta.
+
+<!-- guide-coverage: MOD-019 MOD-020 -->
+
+## Ricerca e filtri dei luoghi per i marker
+
+Nel selettore del luogo collegato a un marker, la ricerca è subito pronta per la tastiera. Il luogo proprietario della mappa e i suoi sottoluoghi vengono proposti prima degli altri luoghi dell'avventura.
+
+Puoi nascondere separatamente i luoghi **già collegati alla mappa attuale** e quelli **già collegati ad altre mappe dell'avventura**. Sono filtri dell'elenco delle destinazioni: non cancellano luoghi o marker esistenti e non cambiano i collegamenti già salvati. Disattivali per ritrovare un luogo escluso; quando modifichi un marker, il suo luogo attuale rimane disponibile.
+
+Dalla modalità Interattiva dei luoghi, **Modifica mappa** apre l'editor separato della mappa visualizzata, non una copia della dashboard; **Torna al luogo** permette di rientrare.

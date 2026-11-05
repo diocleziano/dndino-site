@@ -412,3 +412,29 @@ Les fiches de personnage incluent maintenant les jets de sauvegarde pour chaque 
 Les jets de sauvegarde partent du modificateur de caractéristique correspondant, mais peuvent être modifiés séparément. C’est utile pour les maîtrises, bonus spéciaux, pénalités ou créatures dont les sauvegardes ne correspondent pas au modificateur de base.
 
 Les liens `Attaque complète` peuvent maintenant représenter un jet d’attaque ou un effet à jet de sauvegarde. Ils peuvent aussi contenir un type d’attaque, par exemple corps à corps, distance, zone ou une description libre, ainsi que des lignes de dégâts modulaires.
+
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+
+## Formulaires par sections et navigation au clavier
+
+Création et modification séparent **Informations principales**, **Détails**, **Sorts** et **Images** ; les éditeurs contextuels ajoutent l'**état dans l'aventure ou le lieu**. Changer de section conserve le brouillon ; **Enregistrer** sauvegarde les modifications. Les images peuvent aussi être ajoutées depuis leur section.
+
+Le nom est prêt à saisir. **Tab** parcourt les champs principaux, toutes les caractéristiques de FOR à CHA, tous les jets de sauvegarde puis les champs de sorts ; **Maj+Tab** revient en arrière. Les éditeurs enrichis sont exclus de ce parcours : Tab y reste une tabulation.
+
+Chaque résultat du menu rapide Personnages possède des boutons **Visualisation** et **Modification** distincts ; il n'y a plus de réglage global du mode d'ouverture. Les cartes des personnages de l'aventure permettent aussi la consultation.
+
+## Progressions et emplacements des héros
+
+Pour le type **Héros**, même sans Hero ni aventure, configure les ressources dans **Détails** et les emplacements dans **Sorts**. Chaque ressource possède nom, description facultative, maximum et **Restants/Total** : moins consomme, plus restaure. Les progressions fixes reçues de Hero se consultent sans boutons de consommation. Les emplacements affichent des lignes alignées **Nombre** et **Utilisés** par niveau.
+
+Les valeurs de base initialisent les nouvelles associations à l'aventure ; les compteurs déjà enregistrés ailleurs ne sont pas écrasés. Supprimer une ressource reste aussi une modification en brouillon jusqu'à **Enregistrer**. La vue compacte affiche ressources et emplacements en lecture seule.
+
+Pour un personnage reçu de Hero, le joueur gère la structure : un nouvel envoi/téléchargement actualise noms, descriptions, maxima et progressions du niveau actuel, et retire les entrées absentes. Les compteurs restent disponibles hors ligne ; les modifications hors ligne ne sont pas automatiquement imposées à Hero à la reconnexion. Voir [Connexion à Hero](hero-sync.md).
+
+Pour une fiche personnelle issue d'une présence locale, voir [Fiches indépendantes dans les lieux](places.md).
+
+## Effets et formules de l'Attaque complète
+
+En mode **Jet de sauvegarde**, choisis DD et caractéristique. Chaque dégât peut inclure un texte **Effet**, affiché seulement s'il est renseigné : utile pour décrire les effets de sorts sans supposer d'automatismes supplémentaires.
+
+Les formules acceptent `*`, `/` et les parenthèses. Pour diviser tout le dégât par deux, écris `(1d6+3)/2`, pas `1d6+3/2` ; le résultat est arrondi à l'inférieur. Avant le jet, les dés affichent des tirets. Le contrôle contre la CA n'apparaît qu'après le jet d'attaque, pour les cibles sélectionnées.

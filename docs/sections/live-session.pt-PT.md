@@ -343,3 +343,11 @@ A sessão live é a ponte entre:
 - memória final da sessão
 
 Quando bem usada, reduz muito o risco de perder informação importante durante o jogo e torna muito mais simples reconstruir depois o que realmente aconteceu na campanha.
+
+<!-- guide-coverage: MOD-026 MOD-027 MOD-028 MOD-029 MOD-030 -->
+
+## Lista, detalhe e estatísticas de sessões
+
+Cada linha mostra **Duração** e **número de combates** e é clicável em toda a área. Pelo detalhe podes abrir o resumo de um combate sem a barra geral da app.
+
+O histórico de estatísticas da aventura agrupa combates por sessão: abre o detalhe na mesma janela e regressa às estatísticas. Os gráficos de combates e danos por sessão usam a data de início; sessões do mesmo dia ficam separadas e as que passam da meia-noite não são divididas. Combates não associados continuam identificáveis. Consulta [Combate](combat.md).

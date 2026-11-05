@@ -426,3 +426,29 @@ La logica generale è questa:
 
 !!! tip
     Se vuoi evitare confusione, pensa sempre a questa distinzione: la scheda base descrive il personaggio, mentre avventura, luogo e combattimento descrivono il suo stato in un contesto preciso. Non serve fissarsi troppo sulla separazione teorica: considera soprattutto che alcuni campi esistono solo nel loro contesto.
+
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+
+## Form a sezioni e navigazione da tastiera
+
+Creazione e modifica usano sezioni separate: **Informazioni principali**, **Dettagli**, **Incantesimi**, **Immagini**; le modifiche contestuali aggiungono lo **stato nell'avventura o nel luogo**. Cambiare sezione conserva la bozza: premi **Salva** per registrare le modifiche. Le immagini si aggiungono anche dalla loro sezione.
+
+Il nome è pronto alla digitazione. **Tab** attraversa i campi principali, poi tutte le caratteristiche da FOR a CAR, quindi tutti i TS e i campi degli incantesimi; **Maiusc+Tab** torna indietro. I rich text sono esclusi da questo percorso: al loro interno Tab resta una tabulazione.
+
+Nel menu rapido della topbar ogni risultato ha pulsanti distinti **Visualizzazione** e **Modifica**: non serve scegliere una modalità globale nelle impostazioni. La scheda si può consultare anche dalle card dei personaggi avventura.
+
+## Progressioni e slot degli eroi
+
+Per il tipo **Eroe**, anche senza Hero o un'avventura associata, configura le risorse nei **Dettagli** e gli slot negli **Incantesimi**. Ogni risorsa ha nome, descrizione facoltativa, massimo e **Residui/Totale**: meno consuma, più ripristina. Le progressioni fisse ricevute da Hero sono consultabili, senza pulsanti di consumo. Gli slot hanno righe allineate **Nr. slot** e **Utilizzati** per livello.
+
+I valori della scheda inizializzano le nuove associazioni all'avventura; i contatori già salvati nelle altre avventure non vengono sovrascritti. Anche eliminare una risorsa rimane una modifica in bozza fino a **Salva**. La visualizzazione compatta mostra risorse e slot in sola lettura.
+
+Per un personaggio ricevuto da Hero, la struttura proviene dal giocatore: il nuovo invio/download può aggiornare nomi, descrizioni, massimi e progressioni del livello attuale, eliminando quelle non più presenti. I contatori restano disponibili offline; non vengono accodati automaticamente per prevalere su Hero alla riconnessione. Vedi [Collegamento con Hero](hero-sync.md).
+
+Per ottenere una scheda personale da una presenza locale senza cambiare le altre copie, vedi [Creare una scheda indipendente nei luoghi](places.md).
+
+## Effetti e formule nell'Attacco completo
+
+In modalità **Tiro salvezza**, imposta sia la CD sia la caratteristica richiesta. Ogni danno può avere un testo **Effetto**, mostrato soltanto se compilato: è utile per descrivere effetti di incantesimi senza inventare automatismi.
+
+Le formule accettano anche `*`, `/` e parentesi. Per dimezzare tutto il danno scrivi `(1d6+3)/2`, non `1d6+3/2`; il risultato viene arrotondato per difetto. Prima del tiro i dadi mostrano trattini, non un risultato già ottenuto. Nel combattimento la verifica contro CA compare soltanto per i bersagli selezionati dopo un tiro per colpire.

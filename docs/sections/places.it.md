@@ -31,7 +31,7 @@ Abbassare il massimo limita i PF attuali superiori al nuovo valore; aumentarlo n
 
 La ricerca nell'albero espande i percorsi dei risultati. **Ritorna all'avventura** riporta alla dashboard. In **Interattiva**, **Modifica mappa** apre la mappa effettivamente mostrata, anche se ereditata da un genitore. In **Ombra**, i comandi Nebbia/Disegno e Rivela/Nascondi mantengono il proprio spazio; se necessario la barra scorre orizzontalmente.
 
-Le finestre secondarie restano collegate alla principale. Chiudendo l'ultima finestra principale si chiudono anche quelle secondarie e dei giocatori, e i combattimenti attivi vengono messi in pausa.
+Le schede e gli editor dei personaggi, compresi quelli di luogo e avventura, sono indipendenti e riducibili a icona. Condizioni e Attacco completo hanno regole dedicate e non si possono minimizzare. Chiudendo l'ultima finestra principale si chiudono anche quelle secondarie e dei giocatori, e i combattimenti attivi vengono messi in pausa.
 
 ## A cosa serve la sezione Luoghi
 
@@ -367,7 +367,6 @@ Quando selezioni un luogo, il pannello di destra mostra una hero con:
 - tipo (`Luogo` o `Quest`)
 - stato corrente
 - eventuali segnalazioni
-- catena gerarchica del luogo
 
 In più compare un riepilogo rapido con:
 
@@ -482,7 +481,7 @@ In questo caso la presenza mantiene il legame con lo stato contestuale di campag
 
 ### Scheda base
 
-Questa origine clona un record base di tipo:
+Questa origine crea una presenza locale che rimane collegata alla scheda base di tipo:
 
 - `PNG`
 - `Mostro`
@@ -631,3 +630,29 @@ La dashboard `Luoghi` è il punto giusto quando vuoi:
 
 !!! tip
     Se l’avventura è molto grande, la sezione `Luoghi` funziona meglio se la usi come una vera mappa mentale della campagna: luoghi per la struttura, quest per i nodi narrativi, presenze per chi occupa la scena e combattimenti per ciò che succede in quel punto del mondo.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Creare una scheda indipendente da una presenza
+
+Nella riga di un PNG o mostro, il pulsante con **omino e +** offre **Crea nuovo personaggio da…**, distinto da **Duplica presenza**. Conferma l'operazione: viene creata una nuova scheda personale con il nome locale, la CA e i PF massimi della presenza, copiando il resto della scheda base, incantesimi, attacchi ed immagini.
+
+La presenza non viene duplicata: conserva luogo, PF attuali e temporanei, condizioni, ruolo, note e ordine, ma viene collegata alla nuova scheda. L'originale e le altre copie non cambiano. Le immagini mantengono collegamenti indipendenti senza duplicare inutilmente i file. Si apre subito la modifica del personaggio nel luogo.
+
+Funziona anche se questa presenza partecipa a un combattimento non concluso: si aggiorna soltanto il collegamento del relativo partecipante, non PF, CA, iniziativa o statistiche. I combattimenti conclusi non vengono riscritti. In caso di errore, la creazione e il cambio del collegamento vengono annullati insieme.
+
+Usalo per trasformare, per esempio, un `Goblin 2` locale in un PNG con una propria scheda. Per aggiungere soltanto un'altra copia nello stesso luogo usa invece **Duplica presenza**.
+
+## Riepilogo compatto, modifica e immagini
+
+Il riepilogo delle presenze si attiva dal relativo pulsante: nomi in verticale, indicatore alleato/neutrale/nemico, etichetta PNG o contatore dei mostri. Puoi includere i sottoluoghi, raggruppati per luogo. I personaggi morti o a zero PF sono barrati; cliccando il nome si apre la scheda compatta contestuale.
+
+La ricerca del selettore presenze è pronta per la tastiera. La modifica contestuale usa sezioni separate per stato, informazioni principali, dettagli, incantesimi e immagini; nella sezione locale i PF temporanei precedono quelli attuali. La copertina del luogo offre le azioni per mostrare l'immagine a DM o giocatori.
+
+La modalità **Ombra** richiede una Mappa Ombra disponibile. Il pulsante con frecce circolari mostra la mappa ai giocatori o aggiorna la nebbia; diventa giallo se ci sono modifiche da inviare. Per marker, priorità e filtri consulta [Mappe interattive](interactive-maps.md).
+
+## Disegno temporaneo sulla Mappa Ombra
+
+In **Disegno**, lo strumento **Temporaneo** evidenzia un percorso o un punto e poi lo dissolve. Ogni nuovo tratto riavvia la scadenza di tutti i tratti temporanei ancora visibili. Non sostituisce la penna permanente né modifica la nebbia.
+
+Con la mappa già condivisa, i disegni vengono inviati ai giocatori senza confermare ogni tratto. Le modifiche alla nebbia richiedono invece **Mostra/Aggiorna**; lo stesso pulsante avvia la condivisione se non era attiva.

@@ -343,3 +343,11 @@ Die Live-Session ist die Brücke zwischen:
 - finaler Erinnerung an die Sitzung
 
 Gut eingesetzt reduziert sie stark das Risiko, wichtige Informationen während des Spiels zu verlieren, und macht es sehr viel leichter, später nachzuvollziehen, was in der Kampagne tatsächlich passiert ist.
+
+<!-- guide-coverage: MOD-026 MOD-027 MOD-028 MOD-029 MOD-030 -->
+
+## Sitzungsliste, Details und Statistiken
+
+Jede Sitzungszeile zeigt **Dauer** und **Kampfanzahl** und ist auf ganzer Fläche anklickbar. Aus den Details öffnet sich eine Kampfzusammenfassung ohne die allgemeine App-Topbar.
+
+Die Abenteuerstatistik gruppiert Kämpfe nach Sitzung: Details öffnen im selben Fenster mit Rückkehr zu den Statistiken. Kampf- und Schadensdiagramme je Sitzung nutzen das Beginn-Datum; Sitzungen am selben Tag bleiben getrennt, solche über Mitternacht werden nicht geteilt. Nicht zugeordnete Kämpfe bleiben erkennbar. Siehe [Kampf](combat.md).

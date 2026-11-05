@@ -271,6 +271,8 @@ Depuis là, tu peux aussi créer une nouvelle session textuelle. Les sessions co
 
 Cette zone sera approfondie dans la page dédiée à la **Session live** et à la gestion des sessions.
 
+<!-- guide-coverage: MOD-014 MOD-028 MOD-029 MOD-030 MOD-065 -->
+
 ### Statistiques d'aventure
 
 ![Vue d’ensemble des statistiques d’aventure](../images/en_stastisticheavventura_1.png){ .img-shot }
@@ -292,16 +294,11 @@ Parmi les données principales, tu peux trouver :
 - personnages d'aventure ayant infligé le plus de dégâts
 - personnages d'aventure ayant subi le plus de dégâts
 
-Les graphiques aident à lire l'évolution dans le temps :
+L'historique regroupe les combats par **session**, dont le détail s'ouvre dans la même fenêtre avec retour aux statistiques. Les combats sans session restent séparés.
 
-- dégâts infligés par combat
-- dégâts subis par combat
-- dégâts infligés par jour
-- dégâts subis par jour
-- durée des sessions regroupée par jour
-- temps moyen des tours, regroupé par session ou par combat
+Les graphiques montrent dégâts infligés/subis par combat et session, nombre de combats par session, durée des sessions et temps moyen des tours par session ou combat. Les vues par session utilisent la **date de début** : les sessions du même jour restent distinctes et celles passant minuit ne sont pas coupées.
 
-Dans les graphiques journaliers, tu peux passer entre `Tous` et `Par personnage`. La vue par personnage utilise une ligne pour chaque personnage d'aventure impliqué ; la légende permet d'afficher ou masquer certains personnages quand le graphique devient trop chargé.
+Pour les dégâts, choisis **Tous** ou **Par personnage** et active les séries dans la légende. Les couleurs restent cohérentes entre graphique et résumé.
 
 Les valeurs numériques peuvent être affichées ou masquées avec le contrôle dédié, pour choisir entre lisibilité et détail. Les graphiques peuvent défiler horizontalement et disposent de contrôles de zoom indépendants, afin d'agrandir ou de compresser une lecture sans modifier les autres.
 

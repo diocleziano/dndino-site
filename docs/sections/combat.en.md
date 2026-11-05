@@ -24,7 +24,7 @@ The Goblin at initiative 20 becomes `Goblin 1`, the one at 10 becomes `Goblin 2`
 
 ## Preparation, local values and summary
 
-- **Show in combat preview**, enabled by default per participant, controls only the initial player presentation. Turning it off does not remove that participant from combat. Contextual help follows the global guide-button setting.
+- **Preview**, in the **Player visibility** panel, is enabled by default for each participant and controls only the initial player presentation. Turning it off does not remove the participant from combat. Its question-mark help follows the global guide-button setting.
 - Local presences use their own **AC and maximum HP**. Contextual edits do not change the base sheet or other copies. AC for participants added directly from the general character list remains combat-specific.
 - Abilities show aligned score, **MOD** and **save** rows. Saves can also be edited in the quick editor; rolls use the explicit save, otherwise the ability modifier, or zero if neither exists.
 - NPC and monster names can be edited during combat; hover over long names to read them as they scroll. Participant search ignores case and returns to the top after filtering.
@@ -68,7 +68,28 @@ The overlay can include:
 ![Player screen during a hero turn](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Player screen during a monster turn](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-For heroes/allies, NPCs, and monsters you can decide separately which information is shown to players in settings. If an NPC or monster is marked as `Ally`, it is treated as a hero/ally on the player screen too.
+## Second-screen management {#player-screen-options}
+
+These controls appear only when **Enable combat screen for players** is on in **Settings > Combat**. Turning it off hides them in both preparation and active combat, while retaining saved choices. A second monitor does not need to be connected, and the Player Window does not need to be open already.
+
+Open **Second-screen management** from the preparation action bar; a compact version is available during combat. Enable or disable the presentation for this combat and choose the intro, final summary, round, duration and next turn. Turning off the local presentation disables its subordinate controls until you enable it again.
+
+Each participant has a **Player visibility** panel:
+
+- **Preview**: include or exclude them from the initial presentation without removing them from combat; editable only before combat starts.
+- **Name**: show their real name or a generic label.
+- **HP**: show or hide current, maximum and temporary HP.
+- **Conditions**: show or hide conditions.
+
+During combat, their detail panel still lets you adjust name, HP and condition visibility. Copies of the same creature remain independent. The preview question mark explains how to avoid revealing enemies or reinforcements early; it is hidden when contextual help is disabled.
+
+Use the eye button in the **Heroes** and **Monsters and NPCs** headers to change several participants together; these commands are also available during combat. For NPCs and monsters, first choose **All**, **NPC** or **Monsters**. Each option shows its current state, including **Mixed** when choices differ: explicitly apply **Show for all** or **Hide for all**. Actions affect every participant in the selected group, not just visible rows; other options remain unchanged.
+
+Presentation and visibility preferences in Settings are **defaults for new combats**. Choices made within a combat are saved with it, without changing global defaults or other combats. Existing unfinished combats initialize these values once, when first opened. Editing controls are not available in completed combats.
+
+**Reset screen options** restores only local enablement and general screen options from Settings; it does not reset individual participant choices. Global enablement and window-opening preferences remain in [Settings](settings.md).
+
+The name choice also applies to the current turn, next turn, intro, damage animations as attacker or target, and the summary shown to players. It does not change the DM's names, HP, initiative, conditions or statistics.
 
 ## Useful Settings
 
@@ -552,7 +573,7 @@ Statistics can include:
 - average turn time for heroes and the DM
 - number of combats
 - enemies killed
-- damage trends by day
+- damage trends per session, with session start date on the x-axis
 - average session duration
 
 The adventure dashboard includes **Adventure Statistics**, which collects completed combats, even outside a single live session, and groups them in a readable way.
@@ -583,3 +604,19 @@ Full Attack links can now work in two modes:
 In attack roll mode, DnDino can compare the result with the AC of selected targets and show whether the attack hits. In saving throw mode, the window focuses on the save DC and damage application.
 
 Full Attack windows also support an attack type field, so the DM can keep track of whether the action is melee, ranged, area-based, or something custom.
+
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+
+## Progressions, slots and combat windows
+
+The selected/current-turn player character panel has separately collapsible **Class Resources** and **Spell Slots**. Each progression occupies one row with a name, value and expandable description: **Remaining/Total** and minus/plus for consumables, read-only for fixed values. Resources turn red at zero. Slots show **Used/Total**, separated by level and source; the counter turns red when exhausted.
+
+These values persist and do not require a Hero connection. They are read-only in completed combats. For a Hero-imported character, Master-controlled live sync supports counter changes with confirmation from the player's app; new progressions or maxima require a full sheet send/download. See the [Hero guide](hero-sync.md).
+
+For **NPCs and monsters**, **maximum HP** is editable beside current HP. A location presence updates its local value; a participant added from the general sheet keeps the change in that combat only. Lowering the maximum caps higher current HP; raising it does not heal. Other copies' HP and statistics are not rewritten.
+
+Conditions open on the main window's screen and stay in front. Conditions and **Full Attack** cannot be minimized. Only one Full Attack can be open at a time; recalling it preserves rolls, targets and existing edits. Use the [bottom bar](topbar.md) to return to a paused combat.
+
+## Session-based statistics
+
+Adventure-statistics history groups combats by session. Open session details in the same window and use the return control to go back to statistics. Combat counts and damage dealt/taken are aggregated by session with the **session start date on the x-axis**: separate sessions on one day stay separate, while a session crossing midnight stays together. Combats without a session are not assigned to an invented one.

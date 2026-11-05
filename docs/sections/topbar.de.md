@@ -27,15 +27,7 @@ Innerhalb eines **Abenteuer-Dashboards**, der **Orte** oder eines **Kampfes** di
 
 ## Charaktere
 
-`Charaktere` öffnet die schnelle Charaktersuche.
-
-Du kannst:
-
-- nach Namen suchen
-- die vollständige Liste öffnen
-- eine Charakterkarte schnell öffnen
-
-Der Öffnungsmodus hängt von den Topbar-Einstellungen ab: Leseansicht oder Bearbeitungsfenster.
+Jeder Treffer hat rechts zwei runde Schaltflächen: **Anzeige** öffnet den kompakten Bogen, **Bearbeiten** den Editor. Die Zeile selbst öffnet keinen Bogen mehr; eine globale Auswahl zwischen den beiden Aktionen entfällt.
 
 ## Ausrüstung
 
@@ -125,3 +117,13 @@ Nutze die Topbar, um:
 - Charaktere oder Ausrüstung schnell zu öffnen
 - schnell zu würfeln, einen Timer zu starten oder einen Namen zu erzeugen
 - eine Live-Sitzung aus dem aktuellen Bereich zu steuern
+
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+
+## Untere Leiste und offene Fenster
+
+Die untere Leiste erscheint bei Arbeitsfenstern oder Rückkehrverknüpfungen; das Spielerfenster ist ausgenommen. Name und Symbol unterscheiden **Bearbeitung** und **Anzeige**: Klicken bringt das Fenster nach vorn oder stellt es wieder her, X schließt es. Charakterbögen/-editoren sind unabhängig und minimierbar; Zustände und Vollständiger Angriff nicht.
+
+Beim Verlassen eines laufenden Kampfes pausiert dieser. Eine Rückkehrverknüpfung mit Farbstreifen bleibt **ganz links an erster Stelle**. X blendet nur die Verknüpfung aus, ohne den Kampf zu beenden oder zu löschen. Während dieses Kampfes ist sie verborgen; andere Fenster bleiben aufgelistet.
+
+Hero-Chats erscheinen auch bei geschlossenem Fenster, ohne dich zu unterbrechen; ein Punkt kennzeichnet ungelesene Nachrichten. Öffnen und Lesen entfernt die Markierung. Rechts behält der Hero-Bereich die während dieses App-Starts kontaktierten Spieler auch nach einem Verbindungsabbruch: Status, Verbindungstest, Chat, Bogen-Download, Live-Sync und Trennen. Siehe [Hero-Anleitung](hero-sync.md).

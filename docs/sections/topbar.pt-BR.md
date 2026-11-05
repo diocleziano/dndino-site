@@ -27,15 +27,7 @@ Dentro de um **painel de aventura**, dos **locais** ou de um **combate** ligado 
 
 ## Personagens
 
-`Personagens` abre a busca rápida de personagens.
-
-Você pode:
-
-- buscar por nome
-- abrir a lista completa
-- abrir rapidamente uma ficha
-
-O modo de abertura depende das configurações da topbar: janela de consulta ou janela de modificação.
+Cada resultado tem dois botões circulares à direita: **Visualizar** abre a ficha compacta e **Editar** abre o editor. A linha sozinha não abre mais a ficha e não há preferência global escolhendo entre as ações.
 
 ## Equipamento
 
@@ -125,3 +117,13 @@ Use a topbar para:
 - consultar um personagem ou item rapidamente
 - fazer uma rolagem rápida, iniciar um temporizador ou gerar um nome improvisado
 - gerenciar uma sessão live a partir da seção atual
+
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+
+## Barra inferior e janelas abertas
+
+A barra inferior aparece com janelas de trabalho ou atalhos de retorno; a Janela dos Jogadores fica de fora. Título e ícone distinguem **Editar** e **Visualizar**: clique para trazer/restaurar a janela ou X para fechar. Fichas e editores de personagens são independentes e minimizáveis; Condições e Ataque completo não são.
+
+Sair de um combate não concluído o pausa e mantém um atalho **primeiro à esquerda**, com faixa colorida. Clique para voltar. Seu X apenas esconde o atalho: não encerra nem exclui o combate. Durante esse combate ele fica oculto, mas as outras janelas continuam listadas.
+
+Chats recebidos de Hero aparecem mesmo com a janela fechada, sem interromper você; um ponto indica mensagens não lidas. Abrir e ler a conversa remove o indicador. À direita, a área Hero mantém jogadores contatados durante esta execução do app mesmo após desconexão: estado, teste, chat, download da ficha, live e desconexão. Veja o [guia Hero](hero-sync.md).

@@ -29,3 +29,13 @@ También puedes compartir solo una portada sin fusionar fichas. Cambiar o retira
 ## Importación, exportación y licencias
 
 Las exportaciones no duplican innecesariamente todo el catálogo integrado. Conservan contenido personal y las personalizaciones previstas por el tipo de exportación; las aventuras incluyen las fichas utilizadas. La importación no sobrescribe originales SRD. Véase [Importación y exportación](import-export.md). Fuente y atribución están en **Ajustes → Licencias**.
+
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+
+## Duplicados de conjuros e indicadores de uso
+
+La lista **Conjuros** también ofrece **Gestionar duplicados**. Los campos correspondientes se alinean arriba para comparar valores y descripciones. Cada registro indica usos detectados: personajes, ataques o enlaces de texto; para personajes, también aventuras, presencias, combates y mapas conceptuales. Un control no disponible no significa «sin uso».
+
+Elige la ficha que conservar y confirma **Aplicar**. Se transfieren vínculos compatibles de duplicados personales y los enlaces antiguos siguen funcionando. Si un personaje conoce ambos conjuros, queda una asociación con notas y preparación conservadas. Los originales SRD descartados se ocultan, no se eliminan. Los textos, estadísticas y efectos descartados no se suman: haz una copia de seguridad primero.
+
+Si existen duplicados SRD, el filtro de la lista permite **ocultar solo los originales SRD duplicados**. Es temporal y no elimina ni oculta permanentemente registros. No es **Ocultar** de la gestión de duplicados ni **Contenido oficial**, que controla todo el catálogo.

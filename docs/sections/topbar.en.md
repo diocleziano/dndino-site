@@ -27,15 +27,7 @@ From an **adventure dashboard**, **places**, or a **combat** tied to an adventur
 
 ## Characters
 
-`Characters` opens quick character search.
-
-You can:
-
-- search by name
-- open the full character list
-- open a character sheet quickly
-
-The opening mode depends on top bar settings: either a read-oriented window or an edit window.
+Each result has two circular buttons on the right: **View** opens the compact sheet and **Edit** opens the editor. The row itself no longer opens a sheet, and there is no global preference choosing between these actions.
 
 ## Equipment
 
@@ -129,3 +121,13 @@ Use the top bar when you want to:
 - consult a character or item on the fly
 - make a quick roll, start a timer, or generate an improvised name
 - manage a live session from the current section
+
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+
+## Bottom bar and open windows
+
+The bottom bar appears when work windows or return links are available; the Players Window is excluded. Each window has a title and icon distinguishing **Edit** from **View**: click to bring it forward or restore it, or use X to close it. Character sheets/editors are independent and minimizable; Conditions and Full Attack cannot be minimized.
+
+Leaving an unfinished combat pauses it and keeps a return link **first on the left**, with a colored stripe. Click to return. Its X only hides the link: it does not finish or delete the combat. The shortcut is hidden during that combat, while other windows remain listed.
+
+Chats received from Hero appear even with their window closed, without interrupting you; a dot indicates unread messages. Opening and reading the conversation clears it. On the right, the Hero area retains players contacted during the current app run even after disconnection: status, connection test, chat, sheet download, live sync and disconnect. See the [Hero guide](hero-sync.md).

@@ -29,3 +29,13 @@ Puoi anche condividere soltanto una copertina senza unire le schede. Cambiare o 
 ## Importazioni, esportazioni e licenze
 
 Le esportazioni non replicano inutilmente l'intero catalogo integrato. Conservano contenuti personali e le personalizzazioni previste dal tipo di esportazione; un'avventura include le schede che utilizza. L'importazione non sovrascrive gli originali SRD. Vedi [Importazione ed esportazione](import-export.md). Fonte e attribuzione sono disponibili in **Impostazioni → Licenze**.
+
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+
+## Duplicati degli incantesimi e indicatori di utilizzo
+
+Anche la lista **Incantesimi** offre **Gestisci duplicati**. I campi delle due schede sono allineati in alto per confrontare dati e descrizioni. Ogni record indica se è usato e dove: personaggi, attacchi o testi con link; per i personaggi si considerano anche avventure, presenze, combattimenti e mappe concettuali. Un controllo non disponibile non significa che il record sia inutilizzato.
+
+Scegli la scheda da mantenere e conferma **Applica**. Le associazioni compatibili dei duplicati personali vengono trasferite; i vecchi link continuano a risolversi. Se un personaggio conosce già entrambi gli incantesimi resta una sola associazione, conservando note e stato preparato. Gli originali SRD esclusi vengono nascosti, non eliminati. Testi, statistiche ed effetti dei record scartati non vengono sommati: fai prima un backup.
+
+Quando esistono duplicati SRD, il filtro nella lista incantesimi permette di **nascondere soltanto gli originali SRD duplicati**. È temporaneo e non elimina né nasconde permanentemente alcun record. È diverso da **Nascondi** nella gestione duplicati e da **Contenuto ufficiale**, che controlla l'intero catalogo.

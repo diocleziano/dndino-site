@@ -24,7 +24,7 @@ Per esempio, il Goblin con iniziativa 20 diventa `Goblin 1`, quello con iniziati
 
 ## Preparazione, dati locali e riepilogo
 
-- **Mostra in anteprima combattimento**, attivo di default per ogni partecipante, controlla soltanto la presentazione iniziale ai giocatori: disattivarlo non rimuove il partecipante dallo scontro. L'aiuto contestuale segue l'impostazione globale dei pulsanti guida.
+- **Anteprima**, nel pannellino **Visibilità giocatori**, è attiva di default per ogni partecipante e controlla soltanto la presentazione iniziale ai giocatori. Disattivarla non rimuove il partecipante dallo scontro. Il punto interrogativo segue l'impostazione globale dei pulsanti guida.
 - Le presenze locali usano la propria **CA e i propri PF massimi**. Le modifiche contestuali non cambiano la scheda base o le altre copie. Per un partecipante preso direttamente dalla lista generale, la CA resta specifica del combattimento.
 - Le caratteristiche mostrano righe allineate di punteggi, **MOD** e **TS**. I TS sono modificabili anche nell'editor rapido; il tiro usa il TS esplicito, altrimenti il modificatore di caratteristica, oppure zero se manca tutto.
 - I nomi di PNG e mostri sono modificabili nello scontro; passando il mouse su un nome lungo puoi leggerlo in scorrimento. La ricerca dei partecipanti ignora maiuscole/minuscole e torna all'inizio dopo il filtro.
@@ -68,7 +68,28 @@ L'overlay può includere:
 ![Schermata giocatori durante il turno di un eroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
 ![Schermata giocatori durante il turno di un mostro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
-Per eroi/alleati, PNG e mostri puoi scegliere separatamente quali informazioni mostrare ai giocatori dalle impostazioni. Se un PNG o un mostro è marcato come `Alleato`, viene trattato come un eroe/alleato anche nella schermata giocatori.
+## Gestione secondo schermo {#player-screen-options}
+
+Questi controlli compaiono solo se in **Impostazioni > Combattimento** è attiva **Abilita schermata combattimento per i giocatori**. Se la disattivi, i controlli vengono nascosti sia nella preparazione sia durante lo scontro; le scelte salvate restano conservate. Non è necessario che un secondo monitor sia già collegato o che la finestra giocatori sia già aperta.
+
+Dalla barra della preparazione apri **Gestione secondo schermo**. Durante lo scontro trovi lo stesso comando in forma compatta. Puoi abilitare o disabilitare la presentazione per quel combattimento e scegliere intro, riepilogo finale, round, durata e prossimo turno. Se disattivi la presentazione locale, i controlli subordinati restano disabilitati finché non la riattivi.
+
+Sotto ogni partecipante trovi **Visibilità giocatori**:
+
+- **Anteprima**: include o esclude il partecipante dalla presentazione iniziale, senza toccare la sua presenza nel combattimento; si modifica solo prima dell'avvio.
+- **Nome**: mostra il nome reale oppure un'etichetta generica.
+- **PF**: mostra o nasconde PF attuali, massimi e temporanei.
+- **Condizioni**: mostra o nasconde le condizioni.
+
+Durante lo scontro, nel dettaglio del partecipante puoi ancora regolare la visibilità del nome, dei PF e delle condizioni. Le copie della stessa creatura restano indipendenti. Il punto interrogativo dell'anteprima spiega come evitare di anticipare nemici o rinforzi ed è nascosto se disabiliti gli aiuti contestuali.
+
+Per cambiare più partecipanti insieme usa il pulsante con l'occhio nelle intestazioni **Eroi** e **Mostri e PNG**; i comandi sono disponibili anche durante lo scontro. Per PNG e mostri scegli prima **Tutti**, **PNG** o **Mostri**. Ogni voce indica lo stato corrente, anche **Misto** quando le scelte differiscono: applica esplicitamente **Mostra a tutti** o **Nascondi a tutti**. L'azione riguarda tutti i partecipanti del gruppo selezionato, non soltanto le righe visibili; le altre opzioni non cambiano.
+
+Le opzioni di presentazione e visibilità nelle impostazioni sono i **valori iniziali dei nuovi combattimenti**. Le modifiche nel singolo scontro vengono salvate con quello scontro e non cambiano i valori globali o gli altri combattimenti. Per un incontro preesistente non concluso i valori vengono inizializzati una sola volta alla prima apertura. I controlli di modifica non sono disponibili negli incontri conclusi.
+
+**Ripristina opzioni dello schermo** riprende dalle impostazioni soltanto l'abilitazione locale e le opzioni generali dello schermo: non azzera le scelte dei singoli partecipanti. L'abilitazione globale e le preferenze di apertura della finestra restano in [Impostazioni](settings.md).
+
+La scelta del nome vale anche per turno corrente, prossimo turno, intro, animazioni dei danni come attaccante o bersaglio e riepilogo mostrato ai giocatori. Non cambia nomi, PF, iniziativa, condizioni o statistiche del DM.
 
 ## Impostazioni utili
 
@@ -552,7 +573,7 @@ Le statistiche possono includere:
 - tempo medio dei turni per eroi e DM
 - numero di combattimenti
 - nemici uccisi
-- andamento dei danni per giorno
+- andamento dei danni per sessione, con data di inizio sulle ascisse
 - durata media delle sessioni
 
 Nella dashboard dell'avventura è disponibile una vista **Statistiche Avventura** che raccoglie i combattimenti completati, anche fuori da una singola sessione live, e li raggruppa in modo consultabile.
@@ -573,3 +594,19 @@ Il combattimento di DnDino rende al massimo quando:
 
 !!! tip
     Anche se DnDino automatizza molte operazioni, puoi continuare a tirare fisicamente i dadi. In quel caso usa il combattimento soprattutto per applicare danni, cure e condizioni in modo rapido, evitando calcoli manuali ripetuti sui PF e sulle statistiche.
+
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+
+## Progressioni, slot e finestre durante il combattimento
+
+Nel pannello del PG selezionato o di turno trovi **Risorse di classe** e **Slot incantesimi**, richiudibili separatamente. Le progressioni occupano una riga ciascuna con nome, valore e descrizione espandibile: **Residui/Totale** con meno/più per quelle consumabili, sola consultazione per le fisse. Le risorse a zero diventano rosse. Gli slot mostrano **Utilizzati/Totale**, separati per livello e origine; il contatore diventa rosso quando non restano slot.
+
+Questi dati sono persistenti e non richiedono Hero connessa. Negli scontri conclusi sono in sola lettura. Per un PG ricevuto da Hero, la live controllata dal Master permette di modificare i contatori supportati, attendendo la conferma dell'app del giocatore; nuove progressioni o massimi richiedono l'invio/download completo della scheda. Vedi [guida Hero](hero-sync.md).
+
+Per **PNG e mostri**, i **PF massimi** sono modificabili accanto ai PF attuali. Una presenza del luogo aggiorna il proprio valore locale; un partecipante preso dalla scheda generale conserva la modifica solo nel combattimento. Abbassare il massimo limita i PF superiori, aumentarlo non cura automaticamente. Non vengono riscritti PF o statistiche delle altre copie.
+
+Le condizioni si aprono sullo schermo della finestra principale e restano in primo piano. Condizioni e **Attacco completo** non si minimizzano. Può essere aperto un solo Attacco completo alla volta: richiamarlo conserva tiri, bersagli e modifiche già presenti. Per tornare a uno scontro lasciato in pausa usa la [barra inferiore](topbar.md).
+
+## Statistiche per sessione
+
+La cronologia delle statistiche avventura è raggruppata per sessione. Apri il dettaglio nella stessa finestra e usa il ritorno alle statistiche per rientrare. Combattimenti e danni inflitti/subiti sono aggregati per sessione, con la **data di inizio sessione sulle ascisse**: due sessioni nello stesso giorno rimangono distinte, una sessione oltre mezzanotte resta unita. I combattimenti senza sessione non vengono attribuiti a una sessione inventata.

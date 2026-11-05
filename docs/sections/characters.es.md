@@ -412,3 +412,29 @@ Las fichas de personaje ahora incluyen tiradas de salvación para cada caracter�
 Las tiradas de salvación parten del modificador de característica correspondiente, pero pueden editarse por separado. Esto sirve para competencias, bonificadores especiales, penalizaciones o criaturas cuyas salvaciones no coinciden con el modificador base.
 
 Los enlaces `Ataque completo` ahora pueden representar una tirada de ataque o un efecto con tirada de salvación. También pueden incluir un tipo de ataque, como cuerpo a cuerpo, a distancia, área o una descripción libre, además de líneas de daño modulares.
+
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+
+## Formulario por secciones y navegación con teclado
+
+La creación y edición separan **Información principal**, **Detalles**, **Conjuros** e **Imágenes**; los editores contextuales añaden el **estado en la aventura o lugar**. Cambiar de sección conserva el borrador; pulsa **Guardar** para registrar los cambios. También puedes añadir imágenes desde su sección.
+
+El nombre está listo para escribir. **Tab** recorre los campos principales, todas las características de FUE a CAR, todas las salvaciones y después los campos de conjuros; **Mayús+Tab** retrocede. Los editores enriquecidos quedan fuera de este recorrido: dentro, Tab sigue siendo una tabulación.
+
+Cada resultado del menú rápido de personajes tiene botones separados **Ver** y **Editar**; ya no hay un ajuste global del modo de apertura. Las tarjetas de personajes de la aventura también permiten consultar la ficha.
+
+## Progresiones y espacios de los héroes
+
+Para el tipo **Héroe**, incluso sin Hero ni aventura, configura recursos en **Detalles** y espacios en **Conjuros**. Cada recurso tiene nombre, descripción opcional, máximo y **Restantes/Total**: menos consume y más restaura. Las progresiones fijas recibidas de Hero son de consulta, sin botones de consumo. Los espacios muestran filas alineadas **Cantidad** y **Usados** por nivel.
+
+Los valores base inicializan nuevas asociaciones a aventuras; los contadores ya guardados en otras aventuras no se sobrescriben. Eliminar un recurso también queda en borrador hasta **Guardar**. La vista compacta muestra recursos y espacios en modo de consulta.
+
+En personajes recibidos de Hero, el jugador gestiona la estructura: un nuevo envío/descarga actualiza nombres, descripciones, máximos y progresiones del nivel actual, retirando las ausentes. Los contadores siguen disponibles sin conexión; los cambios sin conexión no se imponen automáticamente a Hero al reconectar. Consulta [Conexión con Hero](hero-sync.md).
+
+Para crear una ficha personal desde una presencia local, consulta [Fichas independientes en lugares](places.md).
+
+## Efectos y fórmulas del Ataque completo
+
+En modo **Tirada de salvación**, fija la CD y característica. Cada daño puede tener texto **Efecto**, visible solo si se rellena: sirve para describir efectos de conjuros sin suponer automatismos adicionales.
+
+Las fórmulas aceptan `*`, `/` y paréntesis. Para dividir todo el daño usa `(1d6+3)/2`, no `1d6+3/2`; el resultado redondea hacia abajo. Antes de tirar, los dados muestran guiones. La comprobación contra CA solo aparece para objetivos seleccionados después de una tirada de ataque.

@@ -344,3 +344,11 @@ The live session is the bridge between:
 - final memory of the session
 
 When used well, it greatly reduces the risk of losing important information during play and makes it much easier to reconstruct afterwards what actually happened in the campaign.
+
+<!-- guide-coverage: MOD-026 MOD-027 MOD-028 MOD-029 MOD-030 -->
+
+## Session list, details and statistics
+
+Each session row shows **Duration** and **combat count** and is clickable across its full area. Session details can open a combat summary without the app's general topbar.
+
+Adventure-statistics history groups combats by session: open details in the same window, then return to statistics. Session combat-count and damage charts use the start date; sessions on the same day stay separate, while those crossing midnight are not split. Unassociated combats remain distinguishable. See [Combat](combat.md).

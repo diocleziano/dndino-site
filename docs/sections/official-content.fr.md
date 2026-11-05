@@ -29,3 +29,13 @@ Tu peux aussi partager uniquement une couverture, sans fusionner les fiches. Mod
 ## Import, export et licences
 
 Les exports ne dupliquent pas inutilement tout le catalogue intégré. Ils conservent les données personnelles et personnalisations prévues par le type d’export ; les aventures incluent les fiches utilisées. L’import ne remplace pas les originaux SRD. Voir [Import et export](import-export.md). Source et attribution figurent dans **Réglages → Licences**.
+
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+
+## Doublons de sorts et indicateurs d'utilisation
+
+La liste **Sorts** propose aussi **Gérer les doublons**. Les champs correspondants sont alignés en haut pour comparer valeurs et descriptions. Chaque fiche indique les usages détectés : personnages, attaques ou liens textuels ; pour les personnages, aussi aventures, présences, combats et cartes conceptuelles. Un contrôle indisponible ne signifie pas « inutilisé ».
+
+Choisis la fiche à conserver puis **Appliquer**. Les liens compatibles des doublons personnels sont transférés et les anciens liens restent fonctionnels. Si un personnage connaît les deux sorts, une seule association conserve notes et préparation. Les originaux SRD écartés sont masqués, pas supprimés. Textes, statistiques et effets écartés ne sont pas fusionnés : sauvegarde d'abord.
+
+Si des doublons SRD existent, le filtre des sorts peut **masquer uniquement les originaux SRD en doublon**. C'est temporaire, sans suppression ni masquage permanent. Cela diffère de **Masquer** dans la gestion des doublons et de **Contenu officiel**, qui contrôle tout le catalogue.

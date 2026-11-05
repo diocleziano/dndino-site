@@ -31,7 +31,7 @@ Reduzir o máximo limita PV atuais superiores; aumentá-lo não cura automaticam
 
 A pesquisa expande os caminhos dos resultados. **Voltar à aventura** abre o painel. Em **Interativa**, **Editar mapa** abre o mapa realmente apresentado, mesmo herdado de um local ascendente. Em **Sombra**, Nevoeiro/Desenho e Revelar/Ocultar mantêm o espaço necessário; a barra desloca-se horizontalmente quando necessário.
 
-As janelas secundárias mantêm-se ligadas à principal. Fechar a última principal fecha também as secundárias e dos jogadores e coloca os combates ativos em pausa.
+As fichas e editores de personagens, incluindo de local e aventura, são independentes e podem ser minimizados. Condições e Ataque completo têm regras próprias e não podem ser minimizados. Fechar a última principal fecha também as secundárias e dos jogadores e coloca os combates ativos em pausa.
 
 ## Para que serve a secção Locais
 
@@ -346,7 +346,6 @@ Quando selecionas um local, o painel direito mostra uma área hero com:
 - tipo (`Local` ou `Missão`)
 - estado atual
 - eventuais marcadores
-- a cadeia hierárquica do local
 
 Também aparece um resumo rápido com:
 
@@ -459,7 +458,7 @@ Neste caso, a presença mantém o estado contextual da campanha.
 
 ### Ficha base
 
-Esta origem clona um registo base do tipo:
+Esta origem cria uma presença local que continua associada a uma ficha base do tipo:
 
 - `PNJ`
 - `Monstro`
@@ -595,3 +594,29 @@ Este modo mostra um Mapa Sombra no lado esquerdo da página dos locais e permite
 Os mapas podem agora ser marcados separadamente como `Mapa interativo` e `Mapa Sombra`. Um mapa sem marca continua visível nos media do local, mas não mostra os controlos dedicados.
 
 Os media do local também podem ser partilhados através do sistema de partilha do macOS.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Criar uma ficha independente a partir de uma presença
+
+Na linha de um PNJ ou monstro, o botão de **pessoa e +** oferece **Criar personagem a partir de…**, separado de **Duplicar presença**. Confirma para criar uma ficha pessoal com o nome local, CA e PV máximos, copiando os restantes dados, magias, ataques e imagens da ficha base.
+
+A presença não é duplicada: mantém local, PV atuais e temporários, condições, papel, notas e ordem, mas fica associada à nova ficha. O original e as outras cópias não mudam. As imagens mantêm associações independentes sem cópias desnecessárias de ficheiros. A edição da personagem no local abre imediatamente.
+
+Também funciona em combate por concluir: muda apenas a associação desse participante, não os PV, CA, iniciativa ou estatísticas. Os combates concluídos não são reescritos. Em caso de erro, a criação e a alteração da associação são anuladas em conjunto.
+
+Usa para transformar um `Goblin 2` local num PNJ com ficha própria. Para outra cópia no mesmo local, usa **Duplicar presença**.
+
+## Resumo compacto, edição e imagens
+
+Ativa o resumo das presenças pelo botão: nomes em coluna, indicador aliado/neutro/inimigo, marca PNJ ou contador de monstros. Inclui sublocais agrupados por local. Personagens mortas ou com zero PV ficam riscadas; clica no nome para abrir a ficha compacta contextual.
+
+A pesquisa do seletor está pronta para escrever. A edição separa estado, informações principais, detalhes, magias e imagens; PV temporários precedem os atuais. A capa do local oferece ações de imagem para o Mestre e jogadores.
+
+O modo **Sombra** exige um Mapa Sombra disponível. As setas circulares mostram o mapa aos jogadores ou atualizam a névoa; amarelo indica alterações pendentes. Consulta [Mapas interativos](interactive-maps.md) para prioridades e filtros dos marcadores.
+
+## Desenho temporário no Mapa Sombra
+
+Em **Desenho**, **Temporário** destaca um caminho ou ponto e depois desaparece gradualmente. Cada novo traço reinicia o prazo de todos os traços temporários ainda visíveis. Não substitui a caneta permanente nem altera a névoa.
+
+Com o mapa partilhado, os desenhos chegam aos jogadores sem confirmar cada traço. Alterações na névoa exigem **Mostrar/Atualizar**; o mesmo botão inicia a partilha se necessário.

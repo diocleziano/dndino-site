@@ -412,3 +412,29 @@ Charakterbögen enthalten jetzt Rettungswürfe für jede Eigenschaft, Übungsbon
 Rettungswürfe starten mit dem passenden Eigenschaftsmodifikator, können aber unabhängig geändert werden. Das ist nützlich für Übung, besondere Boni, Mali oder Kreaturen, deren Rettungswürfe nicht dem Grundmodifikator entsprechen.
 
 `Vollangriff`-Links können jetzt entweder einen Angriffswurf oder einen Rettungswurf-Effekt darstellen. Außerdem können sie einen Angriffstyp enthalten, zum Beispiel Nahkampf, Fernkampf, Flächeneffekt oder eine freie Beschreibung, sowie modulare Schadenszeilen.
+
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+
+## Formularbereiche und Tastaturnavigation
+
+Erstellen und Bearbeiten trennen **Hauptinformationen**, **Details**, **Zauber** und **Bilder**; Kontexteditoren ergänzen den **Zustand im Abenteuer oder am Ort**. Bereichswechsel bewahren den Entwurf; erst **Speichern** schreibt Änderungen. Bilder lassen sich auch im Bildbereich hinzufügen.
+
+Der Name ist eingabebereit. **Tab** durchläuft Hauptfelder, alle Attribute von STR bis CHA, alle Rettungswürfe und danach Zauberfelder; **Umschalt+Tab** geht zurück. Rich-Text-Felder sind von diesem Weg ausgenommen: Dort bleibt Tab eine Einrückung.
+
+Jeder Treffer im Charakter-Schnellmenü hat getrennte Schaltflächen für **Anzeige** und **Bearbeitung**; eine globale Öffnungsmodus-Einstellung entfällt. Auch die Charakterkarten des Abenteuers bieten eine Anzeigeaktion.
+
+## Progressionen und Zauberplätze der Helden
+
+Für **Helden**, auch ohne Hero oder Abenteuer, konfiguriere Ressourcen unter **Details** und Zauberplätze unter **Zauber**. Ressourcen haben Name, optionale Beschreibung, Maximum und **Verbleibend/Gesamt**: Minus verbraucht, Plus stellt wieder her. Feste Hero-Progressionen sind ohne Verbrauchsschaltflächen einsehbar. Zauberplätze zeigen ausgerichtete Zeilen **Anzahl** und **Verwendet** je Grad.
+
+Basiswerte initialisieren neue Abenteuerzuordnungen; bereits in anderen Abenteuern gespeicherte Zähler bleiben unverändert. Auch das Löschen einer Ressource bleibt bis **Speichern** ein Entwurf. Die Kompaktansicht zeigt Ressourcen und Plätze schreibgeschützt.
+
+Bei Hero-Charakteren bestimmt der Spieler die Struktur: erneutes Senden/Herunterladen aktualisiert Namen, Beschreibungen, Maxima und Progressionen der aktuellen Stufe und entfernt entfallene Einträge. Zähler bleiben offline verfügbar; Offline-Änderungen werden beim Wiederverbinden nicht automatisch gegenüber Hero durchgesetzt. Siehe [Verbindung mit Hero](hero-sync.md).
+
+Für einen persönlichen Bogen aus einer lokalen Präsenz siehe [Eigenständige Bögen an Orten](places.md).
+
+## Effekte und Formeln im Vollständigen Angriff
+
+Im Modus **Rettungswurf** stellst du SG und Attribut ein. Jeder Schaden kann einen **Effekt**-Text haben, der nur ausgefüllt erscheint; so beschreibst du Zaubereffekte ohne zusätzliche Automatik vorauszusetzen.
+
+Formeln unterstützen `*`, `/` und Klammern. Für halben Gesamtschaden nutze `(1d6+3)/2`, nicht `1d6+3/2`; das Ergebnis wird abgerundet. Vor dem Wurf stehen Striche statt eines Ergebnisses. Trefferprüfungen gegen RK erscheinen im Kampf nur für ausgewählte Ziele nach einem Angriffswurf.

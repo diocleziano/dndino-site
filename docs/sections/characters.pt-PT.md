@@ -412,3 +412,29 @@ As fichas de personagem incluem agora testes de resistência para cada atributo,
 Os testes de resistência começam a partir do modificador do atributo correspondente, mas podem ser editados separadamente. Isto é útil para proficiências, bónus especiais, penalizações ou criaturas cujos testes não seguem o modificador base.
 
 As ligações de `Ataque completo` podem agora representar uma jogada de ataque ou um efeito com teste de resistência. Também podem incluir um tipo de ataque, como corpo a corpo, à distância, área ou uma descrição livre, além de linhas de dano modulares.
+
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+
+## Formulário por secções e navegação pelo teclado
+
+Criação e edição separam **Informações principais**, **Detalhes**, **Magias** e **Imagens**; editores contextuais acrescentam o **estado na aventura ou local**. Mudar de secção mantém o rascunho; **Guardar** grava as alterações. As imagens também podem ser adicionadas na própria secção.
+
+O nome fica pronto para escrever. **Tab** passa pelos campos principais, todas as características de FOR a CAR, todos os testes de resistência e depois os campos de magia; **Shift+Tab** recua. Os editores de texto formatado ficam fora desta sequência: neles Tab continua a ser uma tabulação.
+
+Cada resultado do menu rápido de personagens tem botões separados **Visualizar** e **Editar**; já não há uma definição global do modo de abertura. Os cartões da aventura também permitem consultar a ficha.
+
+## Progressões e espaços dos heróis
+
+Para o tipo **Herói**, mesmo sem Hero ou aventura, configura recursos em **Detalhes** e espaços em **Magias**. Cada recurso tem nome, descrição opcional, máximo e **Restantes/Total**: menos consome e mais repõe. As progressões fixas recebidas de Hero são de consulta, sem botões de consumo. Os espaços mostram linhas alinhadas **Quantidade** e **Utilizados** por nível.
+
+Os valores da base inicializam novas associações à aventura; os contadores já guardados noutras aventuras não são substituídos. Eliminar um recurso também fica no rascunho até **Guardar**. A visualização compacta mostra recursos e espaços apenas para consulta.
+
+Para personagens recebidas de Hero, o jogador gere a estrutura: novo envio/download atualiza nomes, descrições, máximos e progressões do nível atual, removendo entradas ausentes. Os contadores ficam disponíveis offline; alterações offline não são enviadas automaticamente para prevalecer sobre Hero ao voltar a ligar. Consulta [Ligação ao Hero](hero-sync.md).
+
+Para criar uma ficha pessoal a partir de presença local, consulta [Fichas independentes nos locais](places.md).
+
+## Efeitos e fórmulas do Ataque completo
+
+No modo **Teste de resistência**, define CD e característica. Cada dano pode ter texto **Efeito**, visível apenas se preenchido: útil para descrever efeitos de magias sem pressupor automatismos extra.
+
+As fórmulas aceitam `*`, `/` e parênteses. Para dividir todo o dano usa `(1d6+3)/2`, não `1d6+3/2`; o resultado arredonda para baixo. Antes do lançamento, os dados mostram traços. A verificação contra CA aparece apenas para alvos selecionados depois de uma jogada de ataque.

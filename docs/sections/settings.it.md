@@ -15,7 +15,7 @@ Le impostazioni influenzano soprattutto:
 
 **Generali → Contenuto ufficiale** attiva o nasconde i cataloghi SRD, senza eliminare i dati personali o interrompere i riferimenti esistenti. Il controllo è condiviso con le liste. Vedi [Contenuti ufficiali](official-content.md).
 
-I pulsanti guida **?** si possono disabilitare globalmente e sono attivi di default. La modalità di apertura rapida dei personaggi può usare la nuova scheda compatta. Il tema **Halloween** si aggiunge alle altre palette; **Sistema** continua a seguire l'aspetto effettivo di macOS. Topbar, pulsanti contestuali e menu sono stati uniformati per mantenere leggibili icone e testo.
+I pulsanti guida **?** si possono disabilitare globalmente e sono attivi di default. Il tema **Halloween** si aggiunge alle altre palette; **Sistema** continua a seguire l'aspetto effettivo di macOS. Topbar, pulsanti contestuali e menu sono stati uniformati per mantenere leggibili icone e testo.
 
 ## Come è organizzata la schermata
 
@@ -57,6 +57,16 @@ Puoi decidere se:
 
 - seguire la lingua del sistema
 - forzare una lingua specifica dell'app
+
+### Mantieni lo schermo acceso
+
+In **Impostazioni > Generali**, attiva **Mantieni lo schermo acceso** per evitare lo spegnimento automatico del display mentre DnDino è in primo piano. È utile durante una sessione quando stai consultando appunti o mostrando contenuti senza usare continuamente mouse e tastiera.
+
+L’opzione è **disattivata di default**. Funziona anche a batteria, ma aumenta il consumo energetico. La scelta viene ricordata tra gli avvii: passando a un’altra app il vincolo viene rilasciato; tornando a DnDino viene ripristinato se l’opzione è ancora attiva. Puoi disattivarla in qualsiasi momento dallo stesso controllo.
+
+Non richiede permessi speciali e non modifica le impostazioni di sicurezza di macOS. Non impedisce il blocco manuale, la sospensione richiesta dall’utente, la chiusura del coperchio o le protezioni del sistema; non garantisce di impedire salvaschermo o blocchi imposti da policy indipendenti.
+
+Se macOS non riesce ad attivare la funzione, compare un avviso: disattiva e riattiva l’opzione per riprovare. Il ripristino completo delle impostazioni la riporta su disattivato.
 
 ### Conferme globali
 
@@ -107,12 +117,7 @@ Qui puoi scegliere il **tipo di dado predefinito** proposto dal lanciadadi dentr
 
 ### Apertura rapida personaggi
 
-Questa impostazione controlla il comportamento dell'apertura rapida dei personaggi.
-
-Puoi decidere se l'apertura veloce deve portare:
-
-- a una visualizzazione più orientata alla lettura
-- oppure a una modalità più vicina alla modifica
+Ogni risultato ha due pulsanti circolari a destra: **Visualizzazione** apre la scheda compatta, **Modifica** apre l'editor. La riga non apre più la scheda da sola e non esiste una preferenza globale per scegliere tra le due modalità. [Topbar](topbar.md).
 
 ### Apertura rapida regole
 
@@ -151,13 +156,13 @@ Quando un luogo viene segnato `In visita`, il luogo che era prima `In visita` vi
 
 ## Combattimento
 
-La sezione `Combattimento` raccoglie le preferenze globali del sistema di combattimento.
+Le preferenze di presentazione e visibilità definiscono i **valori iniziali dei nuovi combattimenti**. Per cambiarle in un singolo scontro usa [Gestione secondo schermo e Visibilità giocatori](combat.md#player-screen-options), anche con comandi massivi per gruppi. Le scelte già salvate negli altri combattimenti non vengono sovrascritte.
 
-Qui trovi le opzioni di presentazione e le preferenze che influenzano la `Finestra Giocatori`.
+L'abilitazione della schermata giocatori e la politica di apertura delle finestre rimangono globali. Nei combattimenti preesistenti non conclusi i valori iniziali vengono memorizzati una sola volta alla prima apertura.
 
 ### Abilita schermata combattimento per i giocatori
 
-Questa è l'opzione principale. Se è disattivata, DnDino non usa la finestra giocatori per mostrare intro, turno corrente, round o riepilogo finale del combattimento, e le opzioni collegate vengono nascoste.
+Questi controlli compaiono solo se in **Impostazioni > Combattimento** è attiva **Abilita schermata combattimento per i giocatori**. Se la disattivi, i controlli vengono nascosti sia nella preparazione sia durante lo scontro; le scelte salvate restano conservate. Non è necessario che un secondo monitor sia già collegato o che la finestra giocatori sia già aperta.
 
 ### Apri la finestra giocatori se chiusa
 
@@ -169,7 +174,7 @@ Questa preferenza compare solo se l'apertura automatica è attiva. Serve quando 
 
 ## Presentazione combattimento
 
-Questa sottosezione controlla le informazioni generali mostrate ai giocatori durante lo scontro:
+Queste opzioni definiscono i valori iniziali della presentazione dei nuovi combattimenti; puoi modificarli nello scontro senza cambiare le impostazioni:
 
 - `Mostra intro combattimento ai giocatori`
 - `Mostra riepilogo finale ai giocatori`
@@ -181,14 +186,14 @@ La durata dello scontro viene mostrata come timer leggibile; se il combattimento
 
 ## Informazioni eroi
 
-Queste opzioni valgono quando il partecipante di turno è un eroe o un alleato. Anche un PNG o un mostro marcato come `Alleato` usa quindi queste impostazioni. Puoi decidere se mostrare:
+Definiscono la visibilità iniziale per i partecipanti di tipo eroe nei nuovi combattimenti. Puoi decidere se mostrare:
 
 - PF attuali, massimi e temporanei
 - condizioni attive
 
 ## Informazioni PNG
 
-Queste opzioni valgono solo quando il partecipante di turno è un PNG non alleato. I PNG marcati come `Alleato` ricadono nelle impostazioni degli eroi/alleati. Puoi decidere separatamente se mostrare:
+Definiscono la visibilità iniziale dei PNG nei nuovi combattimenti, anche quando il loro ruolo è Alleato. Puoi decidere separatamente se mostrare:
 
 - PF attuali, massimi e temporanei
 - condizioni attive
@@ -198,7 +203,7 @@ Se il nome dei PNG è nascosto, nella `Finestra Giocatori` viene usato il nome g
 
 ## Informazioni mostri
 
-Queste opzioni valgono solo quando il partecipante di turno è un mostro non alleato. I mostri marcati come `Alleato` ricadono nelle impostazioni degli eroi/alleati. Puoi decidere separatamente se mostrare:
+Definiscono la visibilità iniziale dei mostri nei nuovi combattimenti. I loro PF e condizioni seguono queste opzioni anche quando sono alleati; inizialmente i nomi dei mostri non nemici restano visibili. Puoi decidere separatamente se mostrare:
 
 - PF attuali, massimi e temporanei
 - condizioni attive
@@ -332,3 +337,15 @@ Attualmente include in particolare la parte relativa al materiale del **System R
 
 !!! tip
     Se stai configurando DnDino per la prima volta, le sezioni più utili da controllare subito sono `Generali`, `Topbar`, `Combattimento` e `Database`. In genere sono quelle che incidono di più sull'uso quotidiano e sulla sicurezza dei dati.
+
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+
+## Temi, sfondi e opacità
+
+Oltre a **Sistema**, che segue l'aspetto chiaro/scuro del Mac, trovi temi come **Halloween**, **Natale**, **Pergamena** e **Inverno**. Le anteprime mostrano palette e sfondo; **Sfondo decorativo** si può disattivare senza cambiare tema. Inverno usa un paesaggio innevato. Questi sono sfondi del tema, non una funzione per importare uno sfondo personale su Mac.
+
+Il cursore dell'opacità agisce subito sui pannelli e le sidebar predisposti, inclusi impostazioni e i due pannelli di Luoghi e Quest. Non modifica i pannelli che erano già opachi. **Predefinito** ripristina le diverse opacità originali, non un unico valore del 50%.
+
+Al cambio tema la schermata principale viene ricreata e torna a **Impostazioni → Tema**. Le finestre secondarie aperte e le loro bozze non salvate rimangono intatte; la barra inferiore segue il nuovo tema. I pulsanti principali e la selezione della sidebar usano i colori del tema, con testo adattato al contrasto. **Sistema** conserva il comportamento dei controlli di macOS.
+
+Per autorizzazioni, storico dei dispositivi, avvio live automatico facoltativo e differenza tra scollegare, rimuovere l'associazione e dimenticare, consulta [Collegamento con Hero](hero-sync.md).

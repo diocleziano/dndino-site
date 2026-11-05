@@ -27,15 +27,7 @@ Depuis un **tableau de bord d'aventure**, les **lieux** ou un **combat** lié à
 
 ## Personnages
 
-`Personnages` ouvre la recherche rapide des personnages.
-
-Tu peux :
-
-- chercher par nom
-- ouvrir la liste complète
-- ouvrir rapidement une fiche
-
-Le mode d'ouverture dépend des réglages de la topbar : fenêtre de consultation ou fenêtre de modification.
+Chaque résultat possède deux boutons ronds à droite : **Visualisation** ouvre la fiche compacte, **Modification** l'éditeur. La ligne seule n'ouvre plus la fiche et aucun réglage global ne choisit entre les deux actions.
 
 ## Équipement
 
@@ -125,3 +117,13 @@ Utilise la topbar pour :
 - consulter un personnage ou un objet à la volée
 - faire un jet rapide, lancer un timer ou générer un nom improvisé
 - gérer une session live depuis la section courante
+
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+
+## Barre inférieure et fenêtres ouvertes
+
+La barre du bas apparaît lorsqu'il existe des fenêtres de travail ou raccourcis de retour ; la Fenêtre Joueurs en est exclue. Titre et icône distinguent **Modification** et **Visualisation** : clique pour rappeler/restaurer la fenêtre, ou sur X pour la fermer. Les fiches/éditeurs de personnages sont indépendants et minimisables ; les états et l'Attaque complète ne le sont pas.
+
+Quitter un combat non terminé le met en pause et conserve un raccourci **tout à gauche**, avec un trait coloré. Clique pour revenir. Sa X masque seulement le raccourci, sans terminer ni supprimer le combat. Il disparaît pendant ce combat, mais les autres fenêtres restent listées.
+
+Les chats reçus de Hero apparaissent même à fenêtre fermée, sans interrompre ton travail ; un point indique les messages non lus. Ouvrir et lire la conversation efface l'indicateur. À droite, la zone Hero conserve les joueurs contactés pendant l'ouverture actuelle de l'app, même déconnectés : état, test, chat, téléchargement de fiche, live et déconnexion. Voir [guide Hero](hero-sync.md).

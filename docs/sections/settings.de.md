@@ -15,7 +15,7 @@ Die Einstellungen beeinflussen vor allem:
 
 **Allgemein → Offizielle Inhalte** zeigt oder verbirgt SRD-Kataloge, ohne persönliche Daten zu löschen oder Verweise zu beschädigen. Die Einstellung gilt auch für die Listen. Siehe [Offizielle Inhalte](official-content.md).
 
-Die standardmäßig aktiven **?**-Hilfeschaltflächen lassen sich global abschalten. Die Charakter-Schnellansicht kann den kompakten Werteblock verwenden. **Halloween** ergänzt die Themen; **System** folgt weiterhin dem tatsächlichen macOS-Erscheinungsbild. Topbar, Kontextschaltflächen und Menüs verwenden einheitliche Layouts für lesbare Symbole und Texte.
+Die standardmäßig aktiven **?**-Hilfeschaltflächen lassen sich global abschalten. **Halloween** ergänzt die Themen; **System** folgt weiterhin dem tatsächlichen macOS-Erscheinungsbild. Topbar, Kontextschaltflächen und Menüs verwenden einheitliche Layouts für lesbare Symbole und Texte.
 
 ## Aufbau des Bildschirms
 
@@ -58,6 +58,16 @@ Du kannst entscheiden, ob DnDino:
 
 - der Systemsprache folgen soll
 - oder eine bestimmte App-Sprache erzwingen soll
+
+### Bildschirm eingeschaltet lassen
+
+Aktiviere unter **Einstellungen > Allgemein** die Option **Bildschirm eingeschaltet lassen**, damit sich das Display nicht automatisch ausschaltet, solange DnDino im Vordergrund ist. Das ist während einer Sitzung praktisch, wenn du Notizen liest oder Inhalte präsentierst, ohne ständig Maus oder Tastatur zu verwenden.
+
+Die Option ist **standardmäßig ausgeschaltet**. Sie funktioniert auch im Batteriebetrieb, erhöht aber den Energieverbrauch. Deine Auswahl bleibt zwischen App-Starts gespeichert: Beim Wechsel zu einer anderen App wird die Anforderung freigegeben; bei der Rückkehr zu DnDino wird sie wieder aktiviert, sofern die Option noch eingeschaltet ist. Du kannst sie jederzeit über denselben Schalter ausschalten.
+
+Es sind keine besonderen Berechtigungen erforderlich, und die Sicherheitseinstellungen von macOS werden nicht geändert. Manuelles Sperren, vom Benutzer angeforderter Ruhezustand, Zuklappen und Systemschutzfunktionen bleiben möglich. Unabhängige Bildschirmschoner- oder Sicherheitsrichtlinien werden nicht garantiert verhindert.
+
+Kann macOS die Funktion nicht aktivieren, erscheint ein Hinweis. Schalte die Option aus und wieder ein, um es erneut zu versuchen. Beim vollständigen Zurücksetzen der Einstellungen wird sie wieder ausgeschaltet.
 
 ### Globale Bestätigungen
 
@@ -108,14 +118,7 @@ Hier kannst du den **Standardwürfeltyp** des Würfelrollers in den `Schnellwerk
 
 ### Schnelles Öffnen von Charakteren
 
-Diese Einstellung steuert das Verhalten des schnellen Öffnens von Charakteren.
-
-Du kannst entscheiden, ob die Abkürzung zu:
-
-- einer stärker lesefokussierten Ansicht
-- oder zu einem eher bearbeitungsnahen Modus
-
-führen soll.
+Jeder Treffer hat rechts zwei runde Schaltflächen: **Anzeige** öffnet den kompakten Bogen, **Bearbeiten** den Editor. Die Zeile selbst öffnet keinen Bogen mehr; eine globale Auswahl zwischen den beiden Aktionen entfällt. [Topbar](topbar.md).
 
 ### Schnelles Öffnen von Regeln
 
@@ -156,13 +159,13 @@ Wenn ein Ort auf `In Besuch` gesetzt wird, wird der zuvor `In Besuch` befindlich
 
 ## Kampf
 
-Der Bereich `Kampf` bündelt die globalen Einstellungen des Kampfsystems.
+Darstellungs- und Sichtbarkeitsoptionen sind **Vorgaben für neue Kämpfe**. Ändere einzelne Kämpfe über [Verwaltung des zweiten Bildschirms und Sichtbarkeit](combat.md#player-screen-options), auch gruppenweise. Gespeicherte Entscheidungen anderer Kämpfe werden nicht überschrieben.
 
-Hier findest du Darstellungsoptionen und Einstellungen für das `Spielerfenster`.
+Die Aktivierung des Spielerbildschirms und das Öffnungsverhalten der Fenster bleiben global. Bestehende, nicht abgeschlossene Kämpfe speichern die Ausgangswerte einmalig beim ersten Öffnen.
 
 ### Kampfbildschirm für Spieler aktivieren
 
-Das ist der Hauptschalter. Wenn er deaktiviert ist, zeigt DnDino im Spielerfenster kein Kampf-Intro, keinen aktuellen Zug, keine Runde und keine Endzusammenfassung; die zugehörigen Optionen werden ausgeblendet.
+Diese Steuerelemente erscheinen nur, wenn **Kampfbildschirm für Spieler aktivieren** unter **Einstellungen > Kampf** eingeschaltet ist. Ausschalten blendet sie in der Vorbereitung und im laufenden Kampf aus; gespeicherte Entscheidungen bleiben erhalten. Ein zweiter Monitor muss weder angeschlossen noch das Spielerfenster bereits geöffnet sein.
 
 ### Spielerfenster öffnen, wenn es geschlossen ist
 
@@ -174,7 +177,7 @@ Diese Option erscheint nur, wenn das automatische Öffnen aktiv ist. Sie ist fü
 
 ## Kampfpräsentation
 
-Dieser Unterbereich steuert die allgemeinen Informationen, die während der Begegnung angezeigt werden:
+Diese Optionen sind Darstellungsvorgaben für neue Kämpfe; du kannst sie im einzelnen Kampf ändern, ohne die Einstellungen anzupassen:
 
 - `Kampf-Intro für Spielende anzeigen`
 - `Endzusammenfassung für Spielende anzeigen`
@@ -186,14 +189,14 @@ Die Kampfdauer wird als lesbarer Timer angezeigt; wenn der Kampf pausiert ist, h
 
 ## Heldeninformationen
 
-Diese Optionen gelten, wenn der aktive Teilnehmende ein Held oder Verbündeter ist. Ein NSC oder Monster mit der Rolle `Verbündeter` verwendet also ebenfalls diese Einstellungen. Du kannst anzeigen:
+Diese Optionen legen die anfängliche Sichtbarkeit von Teilnehmenden des Typs Held in neuen Kämpfen fest. Du kannst anzeigen:
 
 - aktuelle, maximale und temporäre TP
 - aktive Zustände
 
 ## NSC-Informationen
 
-Diese Optionen gelten nur, wenn der aktive Teilnehmende ein nicht verbündeter NSC ist. NSCs mit der Rolle `Verbündeter` verwenden die Helden-/Verbündeten-Einstellungen. Du kannst getrennt anzeigen:
+Diese Optionen legen die anfängliche Sichtbarkeit von NSC in neuen Kämpfen fest, auch bei der Rolle Verbündeter. Du kannst getrennt anzeigen:
 
 - aktuelle, maximale und temporäre TP
 - aktive Zustände
@@ -203,7 +206,7 @@ Wenn NSC-Namen verborgen sind, verwendet das `Spielerfenster` den generischen Na
 
 ## Monsterinformationen
 
-Diese Optionen gelten nur, wenn der aktive Teilnehmende ein nicht verbündetes Monster ist. Monster mit der Rolle `Verbündeter` verwenden die Helden-/Verbündeten-Einstellungen. Du kannst getrennt anzeigen:
+Diese Optionen legen die anfängliche Sichtbarkeit von Monstern in neuen Kämpfen fest. TP und Zustände verwenden sie auch bei Verbündeten; Namen nicht feindlicher Monster bleiben anfangs sichtbar. Du kannst getrennt anzeigen:
 
 - aktuelle, maximale und temporäre TP
 - aktive Zustände
@@ -342,3 +345,15 @@ In Release-Builds zeigt DnDino keine internen technischen Pfade mehr. Stattdesse
 Snapshots und App-Medien können über den normalen macOS-Speicherdialog an einen vom Benutzer gewählten Ort exportiert werden. Die Medien bleiben trotzdem in der App-Sandbox kopiert, damit DnDino keine Referenzen verliert, wenn Originaldateien verschoben oder gelöscht werden.
 
 Der Diagnosebereich ist Debug-Builds vorbehalten und wird in der Release-Version nicht angezeigt.
+
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+
+## Themen, Hintergründe und Deckkraft
+
+Neben **System**, das dem hellen/dunklen Mac-Erscheinungsbild folgt, gibt es **Halloween**, **Weihnachten**, **Pergament** und **Winter**. Vorschauen zeigen Palette und Hintergrund; **Dekorativer Hintergrund** lässt sich unabhängig abschalten. Winter verwendet eine Schneelandschaft. Das sind Themenhintergründe, kein Import eigener Hintergrundbilder auf dem Mac.
+
+Der Deckkraftregler wirkt sofort auf vorgesehene Bereiche und Seitenleisten, darunter Einstellungen und beide Bereiche von Orte und Quests. Bereits deckende Bereiche bleiben unverändert. **Standard** stellt die jeweils ursprüngliche Deckkraft wieder her, nicht überall 50 %.
+
+Ein Themenwechsel erstellt die Hauptansicht neu und kehrt zu **Einstellungen → Thema** zurück. Offene Nebenfenster und ungespeicherte Entwürfe bleiben erhalten; die untere Leiste übernimmt das Thema. Hauptschaltflächen und Seitenleistenauswahl nutzen Themenfarben mit angepasstem Textkontrast. **System** behält native macOS-Steuerelemente bei.
+
+Berechtigungen, Geräteverlauf, optionaler automatischer Live-Start sowie Trennen, Zuordnung entfernen und Gerät vergessen beschreibt [Verbindung mit Hero](hero-sync.md).

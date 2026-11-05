@@ -343,3 +343,11 @@ La sesión en vivo es el puente entre:
 - memoria final de la sesión
 
 Bien utilizada, reduce mucho el riesgo de perder información importante durante el juego y hace mucho más fácil reconstruir después lo que realmente ocurrió en la campaña.
+
+<!-- guide-coverage: MOD-026 MOD-027 MOD-028 MOD-029 MOD-030 -->
+
+## Lista, detalle y estadísticas de sesiones
+
+Cada fila muestra **Duración** y **número de combates** y se puede pulsar en toda su área. Desde el detalle puedes abrir un resumen de combate sin la barra general de la app.
+
+El historial de estadísticas de aventura agrupa combates por sesión: abre el detalle en la misma ventana y vuelve a estadísticas. Los gráficos de combates y daño por sesión usan la fecha de inicio; las sesiones del mismo día siguen separadas y las que pasan medianoche no se dividen. Los combates no asociados siguen identificables. Consulta [Combate](combat.md).

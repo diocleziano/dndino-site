@@ -271,6 +271,8 @@ From here you can also create a new text session. Sessions therefore serve as bo
 
 This area is explored in more detail in the dedicated **Live Session** page and in the session workflows.
 
+<!-- guide-coverage: MOD-014 MOD-028 MOD-029 MOD-030 MOD-065 -->
+
 ### Adventure Statistics
 
 ![Adventure statistics overview](../images/en_stastisticheavventura_1.png){ .img-shot }
@@ -292,16 +294,11 @@ The main data can include:
 - adventure characters with the most damage dealt
 - adventure characters with the most damage taken
 
-Charts help you read the trend over time:
+History groups combats by **session**, with details opening in the same window and a return to statistics. Combats without a session remain separate.
 
-- damage dealt by combat
-- damage taken by combat
-- damage dealt by day
-- damage taken by day
-- session duration grouped by day
-- average turn time, grouped by session or by combat
+Charts show damage dealt/taken per combat and session, combat counts per session, session duration and average turn time by session or combat. Session views use the **start date**: sessions on one day stay distinct and those crossing midnight are not split.
 
-Daily charts can switch between `All` and `By Character`. The character view uses one line for each involved adventure character; the legend lets you show or hide individual characters when the chart gets too dense.
+For damage, choose **All** or **By character** and toggle series in the legend. Each character's colors stay consistent between chart and summary.
 
 Numeric values can be shown or hidden with the dedicated control, so you can choose between readability and detail. Charts can be scrolled horizontally and have independent zoom controls, letting you expand or compress one chart without affecting the others.
 

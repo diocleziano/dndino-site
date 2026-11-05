@@ -27,15 +27,7 @@ Desde una **dashboard de aventura**, los **lugares** o un **combate** ligado a u
 
 ## Personajes
 
-`Personajes` abre la búsqueda rápida de personajes.
-
-Puedes:
-
-- buscar por nombre
-- abrir la lista completa
-- abrir rápidamente una ficha
-
-El modo de apertura depende de los ajustes de la barra superior: vista de consulta o ventana de modificación.
+Cada resultado tiene dos botones circulares a la derecha: **Ver** abre la ficha compacta y **Editar** el editor. La fila ya no abre la ficha por sí sola y no existe una preferencia global para elegir entre ambas acciones.
 
 ## Equipo
 
@@ -125,3 +117,13 @@ Usa la barra superior para:
 - consultar un personaje u objeto al vuelo
 - hacer una tirada rápida, iniciar un temporizador o generar un nombre improvisado
 - gestionar una sesión en vivo desde la sección actual
+
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+
+## Barra inferior y ventanas abiertas
+
+La barra inferior aparece cuando hay ventanas de trabajo o enlaces de retorno; excluye la Ventana de Jugadores. Título e icono distinguen **Editar** y **Ver**: pulsa para traer/restaurar la ventana o X para cerrarla. Las fichas y editores de personajes son independientes y minimizables; Condiciones y Ataque completo no lo son.
+
+Salir de un combate sin terminar lo pausa y deja un enlace **primero a la izquierda**, con una franja de color. Pulsa para volver. Su X solo oculta el enlace: no termina ni elimina el combate. Se oculta durante ese combate, pero las otras ventanas siguen visibles.
+
+Los chats recibidos de Hero aparecen aunque la ventana esté cerrada, sin interrumpirte; un punto indica mensajes sin leer. Abrir y leer la conversación quita el indicador. A la derecha, el área Hero conserva los jugadores contactados durante esta apertura de la app incluso tras desconectarse: estado, prueba, chat, descarga de ficha, live y desconexión. Consulta la [guía Hero](hero-sync.md).

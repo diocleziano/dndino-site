@@ -271,6 +271,8 @@ Da qui puoi anche creare una nuova sessione testuale. Le sessioni sono quindi la
 
 Questa area sarà approfondita nella sottopagina dedicata alla **Sessione live** e alla gestione delle sessioni.
 
+<!-- guide-coverage: MOD-014 MOD-028 MOD-029 MOD-030 MOD-065 -->
+
 ### Statistiche Avventura
 
 ![Panoramica Statistiche Avventura](../images/en_stastisticheavventura_1.png){ .img-shot }
@@ -292,16 +294,11 @@ Tra i dati principali puoi trovare:
 - personaggi avventura con più danni inflitti
 - personaggi avventura con più danni subiti
 
-I grafici aiutano a leggere l'andamento nel tempo:
+La cronologia è raggruppata per **sessione**, apribile nella stessa finestra con ritorno alle statistiche. I combattimenti senza sessione rimangono separati.
 
-- danni inflitti per combattimento
-- danni subiti per combattimento
-- danni inflitti per giorno
-- danni subiti per giorno
-- durata delle sessioni raggruppata per giorno
-- tempo medio dei turni, raggruppabile per sessione o per combattimento
+I grafici mostrano danni inflitti/subiti per combattimento e per sessione, numero di combattimenti per sessione, durata delle sessioni e tempo medio dei turni per sessione o combattimento. Le viste per sessione usano la **data di inizio**: sessioni dello stesso giorno restano distinte e quelle oltre mezzanotte non vengono spezzate.
 
-Nei grafici giornalieri puoi passare tra vista `Tutti` e `Per Personaggio`. La vista per personaggio usa una linea per ogni personaggio avventura coinvolto; dalla legenda puoi mostrare o nascondere singoli personaggi quando vuoi alleggerire il grafico.
+Per i danni puoi scegliere **Tutti** o **Per personaggio** e gestire le serie dalla legenda. I colori dello stesso personaggio restano coerenti tra grafico e riepilogo.
 
 I valori numerici possono essere mostrati o nascosti dal relativo controllo, utile quando ci sono molti punti e vuoi scegliere tra leggibilità e dettaglio. I grafici possono essere scorsi orizzontalmente e hanno controlli di zoom indipendenti, così puoi allargare o comprimere la lettura senza influenzare gli altri grafici.
 

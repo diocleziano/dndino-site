@@ -353,3 +353,13 @@ Die Bearbeitung interaktiver Karten öffnet sich jetzt in einer eigenen Seite st
 Nur Karten, die als interaktiv markiert sind, zeigen die Aktion zum Öffnen des interaktiven Editors. Andere Karten bleiben als normale Ortskarten verfügbar.
 
 Eine Karte kann als `Interaktive Karte`, als `Schattenkarte` oder als beides markiert werden. Interaktive Karten dienen der Navigation zwischen Orten über Marker; Schattenkarten dienen dazu, eine Karte während der Sitzung schrittweise für die Spieler aufzudecken.
+
+<!-- guide-coverage: MOD-019 MOD-020 -->
+
+## Ortssuche und Filter für Marker
+
+Die Ortssuche eines Markers ist sofort eingabebereit. Der Eigentümerort der Karte und seine Unterorte erscheinen vor den übrigen Abenteuerorten.
+
+Getrennte Filter verbergen Orte, die **bereits auf dieser Karte** oder **auf anderen Abenteuerkarten** verknüpft sind. Sie filtern nur die Zielauswahl: Orte, Marker und gespeicherte Links bleiben unverändert. Ausschalten zeigt ausgeschlossene Orte wieder; beim Bearbeiten bleibt das aktuelle Markerziel verfügbar.
+
+**Karte bearbeiten** im interaktiven Ortsmodus öffnet den separaten Editor der angezeigten Karte, keine Dashboard-Kopie; **Zurück zum Ort** führt zurück.

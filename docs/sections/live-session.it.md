@@ -342,3 +342,11 @@ La sessione live è il ponte tra:
 - memoria finale della sessione
 
 Se usata bene, riduce molto il rischio di perdere informazioni importanti durante il gioco e rende più semplice ricostruire dopo cosa è successo davvero nella campagna.
+
+<!-- guide-coverage: MOD-026 MOD-027 MOD-028 MOD-029 MOD-030 -->
+
+## Lista, dettaglio e statistiche delle sessioni
+
+La riga di una sessione mostra **Durata** e **numero di combattimenti** ed è cliccabile su tutta l'area. Dal dettaglio puoi riaprire il riepilogo di un combattimento senza la topbar generale dell'app.
+
+Nelle statistiche avventura la cronologia è raggruppata per sessione: aprila nella stessa finestra e torna indietro alle statistiche. I grafici dei combattimenti e dei danni per sessione usano la data di inizio; sessioni dello stesso giorno rimangono separate, mentre quelle oltre mezzanotte non vengono spezzate. Gli scontri non associati restano distinguibili. Vedi [Combattimento](combat.md).

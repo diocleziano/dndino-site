@@ -15,7 +15,7 @@ Los ajustes influyen sobre todo en:
 
 **General → Contenido oficial** muestra u oculta catálogos SRD sin eliminar datos personales ni romper referencias. El control se comparte con las listas. Véase [Contenido oficial](official-content.md).
 
-Los botones guía **?**, activos por defecto, pueden desactivarse globalmente. La apertura rápida de personajes puede usar la ficha compacta. **Halloween** se añade a los temas; **Sistema** sigue la apariencia real de macOS. Barra superior, botones contextuales y menús tienen disposiciones coherentes para mantener legibles iconos y texto.
+Los botones guía **?**, activos por defecto, pueden desactivarse globalmente. **Halloween** se añade a los temas; **Sistema** sigue la apariencia real de macOS. Barra superior, botones contextuales y menús tienen disposiciones coherentes para mantener legibles iconos y texto.
 
 ## Cómo está organizada la pantalla
 
@@ -58,6 +58,16 @@ Puedes decidir si:
 
 - seguir el idioma del sistema
 - forzar un idioma concreto de la aplicación
+
+### Mantener la pantalla encendida
+
+En **Ajustes > General**, activa **Mantener la pantalla encendida** para evitar que la pantalla se apague automáticamente mientras DnDino está en primer plano. Resulta útil durante una sesión cuando lees notas o presentas contenido sin utilizar constantemente el ratón o el teclado.
+
+La opción está **desactivada de forma predeterminada**. También funciona con batería, pero aumenta el consumo de energía. La selección se recuerda entre aperturas: al cambiar a otra aplicación se libera la solicitud; al volver a DnDino se restablece si la opción sigue activada. Puedes desactivarla en cualquier momento desde el mismo control.
+
+No requiere permisos especiales y no modifica los ajustes de seguridad de macOS. No impide el bloqueo manual, el reposo solicitado por el usuario, el cierre de la tapa ni las protecciones del sistema. No garantiza impedir salvapantallas o bloqueos impuestos por políticas independientes.
+
+Si macOS no puede activar la función, aparece un aviso: desactiva y vuelve a activar la opción para intentarlo de nuevo. El restablecimiento completo de los ajustes la desactiva.
 
 ### Confirmaciones globales
 
@@ -108,12 +118,7 @@ Aquí puedes elegir el **tipo de dado predeterminado** del lanzador de dados den
 
 ### Apertura rápida de personajes
 
-Este ajuste controla el comportamiento de la apertura rápida de personajes.
-
-Puedes decidir si el acceso rápido debe llevar:
-
-- a una vista más orientada a la lectura
-- o a un modo más cercano a la edición
+Cada resultado tiene dos botones circulares a la derecha: **Ver** abre la ficha compacta y **Editar** el editor. La fila ya no abre la ficha por sí sola y no existe una preferencia global para elegir entre ambas acciones. [Topbar](topbar.md).
 
 ### Apertura rápida de reglas
 
@@ -152,13 +157,13 @@ Cuando un lugar se marca como `En visita`, el lugar que antes estaba `En visita`
 
 ## Combate
 
-La sección `Combate` reúne las preferencias globales del sistema de combate.
+Las preferencias de presentación y visibilidad definen los **valores iniciales de los nuevos combates**. Para cambiar un combate, usa [la gestión de segunda pantalla y la visibilidad](combat.md#player-screen-options), también con acciones por grupo. No se sobrescriben las elecciones guardadas en otros combates.
 
-Aquí encontrarás opciones de presentación y preferencias que influyen en la `Ventana de Jugadores`.
+La activación de la pantalla de jugadores y la apertura de ventanas siguen siendo globales. Los combates anteriores sin terminar guardan sus valores iniciales una sola vez, al abrirlos por primera vez.
 
 ### Activar pantalla de combate para los jugadores
 
-Es el interruptor principal. Si está desactivado, DnDino no usa la ventana de jugadores para mostrar la intro, el turno actual, el asalto o el resumen final del combate, y oculta las opciones relacionadas.
+Estos controles solo aparecen si **Activar pantalla de combate para los jugadores** está activado en **Ajustes > Combate**. Desactivarlo los oculta en la preparación y durante el combate, conservando las elecciones guardadas. No es necesario tener un segundo monitor conectado ni la ventana de jugadores ya abierta.
 
 ### Abrir la ventana de jugadores si está cerrada
 
@@ -170,7 +175,7 @@ Esta opción aparece solo si la apertura automática está activa. Sirve para us
 
 ## Presentación del combate
 
-Esta subsección controla la información general que se muestra a los jugadores durante el enfrentamiento:
+Estas opciones definen los valores iniciales de presentación de los nuevos combates; puedes cambiarlos en cada combate sin modificar Ajustes:
 
 - `Mostrar intro del combate a los jugadores`
 - `Mostrar resumen final a los jugadores`
@@ -182,14 +187,14 @@ La duración del encuentro se muestra como un temporizador legible; si el combat
 
 ## Información de héroes
 
-Estas opciones se aplican cuando el participante activo es un héroe o un aliado. Un PNJ o monstruo marcado como `Aliado` usa también estos ajustes. Puedes decidir si mostrar:
+Estas opciones definen la visibilidad inicial de los participantes de tipo héroe en los nuevos combates. Puedes decidir si mostrar:
 
 - PG actuales, máximos y temporales
 - condiciones activas
 
 ## Información de PNJ
 
-Estas opciones se aplican solo cuando el participante activo es un PNJ no aliado. Los PNJ marcados como `Aliado` usan los ajustes de héroes/aliados. Puedes decidir por separado si mostrar:
+Estas opciones definen la visibilidad inicial de los PNJ en los nuevos combates, también cuando su rol es Aliado. Puedes decidir por separado si mostrar:
 
 - PG actuales, máximos y temporales
 - condiciones activas
@@ -199,7 +204,7 @@ Si los nombres de PNJ están ocultos, la `Ventana de Jugadores` usa el nombre ge
 
 ## Información de monstruos
 
-Estas opciones se aplican solo cuando el participante activo es un monstruo no aliado. Los monstruos marcados como `Aliado` usan los ajustes de héroes/aliados. Puedes decidir por separado si mostrar:
+Estas opciones definen la visibilidad inicial de los monstruos en los nuevos combates. Sus PG y condiciones siguen estos ajustes incluso si son aliados; los nombres de monstruos no enemigos permanecen visibles inicialmente. Puedes decidir por separado si mostrar:
 
 - PG actuales, máximos y temporales
 - condiciones activas
@@ -338,3 +343,15 @@ En las versiones de lanzamiento, DnDino ya no muestra rutas técnicas internas. 
 Las instantáneas y los medios de la app pueden exportarse a una ubicación elegida por el usuario mediante el panel estándar de guardar de macOS. Los medios siguen copiados dentro de la sandbox de la app para que DnDino no pierda referencias si los archivos originales se mueven o eliminan.
 
 La sección Diagnóstico queda reservada para builds de depuración y no se muestra en la versión de lanzamiento.
+
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+
+## Temas, fondos y opacidad
+
+Además de **Sistema**, que sigue el aspecto claro/oscuro del Mac, hay temas como **Halloween**, **Navidad**, **Pergamino** e **Invierno**. Las vistas previas muestran paleta y fondo; **Fondo decorativo** se desactiva sin cambiar de tema. Invierno usa un paisaje nevado. Son fondos del tema, no un importador de fondos personales en Mac.
+
+El control de opacidad actúa al instante sobre paneles y barras laterales preparados, incluidos Ajustes y ambos paneles de Lugares y Misiones. No cambia los paneles que ya eran opacos. **Predeterminado** restaura las distintas opacidades originales, no un 50 % común.
+
+Cambiar de tema recrea la pantalla principal y vuelve a **Ajustes → Tema**. Las ventanas secundarias abiertas y sus borradores sin guardar permanecen intactos; la barra inferior sigue el nuevo tema. Los botones principales y la selección lateral usan los colores del tema con texto adaptado al contraste. **Sistema** conserva los controles nativos de macOS.
+
+Consulta [Conexión con Hero](hero-sync.md) para autorizaciones, historial, inicio live automático opcional y diferencias entre desconectar, quitar asociación y olvidar.

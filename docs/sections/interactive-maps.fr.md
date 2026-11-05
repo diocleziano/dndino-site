@@ -353,3 +353,13 @@ La modification des cartes interactives s’ouvre maintenant dans une page dédi
 Seules les cartes marquées comme interactives affichent l’action d’ouverture de l’éditeur interactif. Les autres restent disponibles comme cartes normales du lieu.
 
 Une carte peut être marquée comme `Carte interactive`, comme `Carte ombre`, ou les deux. Les Cartes interactives servent à naviguer entre les lieux avec des marqueurs; les Cartes ombre servent à révéler progressivement une carte aux joueurs.
+
+<!-- guide-coverage: MOD-019 MOD-020 -->
+
+## Recherche et filtres des lieux pour les marqueurs
+
+La recherche du sélecteur de lieu d'un marqueur est immédiatement prête au clavier. Le lieu propriétaire de la carte et ses sous-lieux précèdent les autres lieux de l'aventure.
+
+Deux filtres masquent séparément les lieux **déjà liés sur cette carte** et **déjà liés sur d'autres cartes de l'aventure**. Ils filtrent les destinations : aucun lieu ni marqueur n'est supprimé et les liens sauvegardés ne changent pas. Désactive-les pour retrouver un lieu exclu ; en modification, la destination actuelle du marqueur reste disponible.
+
+Dans le mode Interactif des lieux, **Modifier la carte** ouvre l'éditeur séparé de la carte affichée, pas une copie de la dashboard ; **Retour au lieu** permet de revenir.

@@ -31,7 +31,7 @@ Réduire le maximum plafonne les PV actuels qui le dépassent ; l’augmenter ne
 
 La recherche développe les chemins des résultats. **Retour à l’aventure** ouvre le tableau de bord. En **Interactif**, **Modifier la carte** ouvre la carte réellement affichée, même héritée d’un parent. En **Ombre**, Brouillard/Dessin et Révéler/Masquer gardent leur espace ; la barre défile horizontalement si nécessaire.
 
-Les fenêtres secondaires restent liées à la principale. Fermer la dernière fenêtre principale ferme aussi les fenêtres secondaires et joueurs et met les combats actifs en pause.
+Les fiches et éditeurs de personnages, y compris ceux de lieu et d'aventure, sont indépendants et minimisables. Les états et l'Attaque complète suivent leurs propres règles et ne peuvent pas être minimisés. Fermer la dernière fenêtre principale ferme aussi les fenêtres secondaires et joueurs et met les combats actifs en pause.
 
 ## À quoi sert la section Lieux
 
@@ -346,7 +346,6 @@ Quand tu sélectionnes un lieu, le panneau de droite montre une zone héro avec 
 - le type (`Lieu` ou `Quête`)
 - l'état courant
 - les signalements éventuels
-- la chaîne hiérarchique du lieu
 
 Un résumé rapide y apparaît aussi avec :
 
@@ -459,7 +458,7 @@ Dans ce cas, la présence conserve l'état contextuel de campagne.
 
 ### Fiche de base
 
-Cette origine clone un enregistrement de base de type :
+Cette origine crée une présence locale qui reste liée à une fiche de base de type :
 
 - `PNJ`
 - `Monstre`
@@ -601,3 +600,29 @@ Ce mode affiche une Carte ombre dans la partie gauche de la page des lieux et pe
 Les cartes peuvent maintenant être marquées séparément comme `Carte interactive` et `Carte ombre`. Une carte sans indicateur reste visible dans les médias du lieu, mais n’affiche pas les commandes dédiées.
 
 Les médias du lieu peuvent aussi être partagés via le système de partage de macOS.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Créer une fiche indépendante depuis une présence
+
+Sur la ligne d'un PNJ ou monstre, le bouton **personnage et +** propose **Créer un personnage à partir de…**, distinct de **Dupliquer la présence**. Confirme pour créer une fiche personnelle avec le nom local, la CA et les PV maximum, en copiant les autres données, sorts, attaques et images de la fiche de base.
+
+La présence n'est pas dupliquée : lieu, PV actuels et temporaires, états, rôle, notes et ordre restent identiques, mais elle est liée à la nouvelle fiche. L'original et les autres copies ne changent pas. Les images conservent des liens indépendants sans copies de fichiers inutiles. La modification du personnage dans le lieu s'ouvre immédiatement.
+
+Cela fonctionne aussi dans un combat non terminé : seul le lien de ce participant change, pas les PV, la CA, l'initiative ni les statistiques. Les combats terminés ne sont pas réécrits. En cas d'erreur, création et changement du lien sont annulés ensemble.
+
+Utilise cette action pour transformer un `Gobelin 2` local en PNJ doté de sa propre fiche. Pour une copie supplémentaire dans le même lieu, utilise **Dupliquer la présence**.
+
+## Résumé compact, modification et images
+
+Active le résumé des présences avec son bouton : noms en colonne, indicateur allié/neutre/ennemi, mention PNJ ou nombre de monstres. Les sous-lieux peuvent être inclus et regroupés par lieu. Les personnages morts ou à zéro PV sont barrés ; cliquer sur le nom ouvre la fiche compacte contextuelle.
+
+La recherche du sélecteur est prête au clavier. La modification sépare état, informations principales, détails, sorts et images ; les PV temporaires précèdent les PV actuels. La couverture du lieu propose les actions d'affichage au MJ et aux joueurs.
+
+Le mode **Ombre** nécessite une Carte Ombre disponible. Les flèches circulaires affichent la carte aux joueurs ou actualisent le brouillard ; le jaune indique des modifications en attente. Voir [Cartes interactives](interactive-maps.md) pour les priorités et filtres des marqueurs.
+
+## Dessin temporaire sur la Carte Ombre
+
+Dans **Dessin**, **Temporaire** signale un trajet ou point puis s'estompe. Chaque nouveau trait relance le délai de tous les traits temporaires encore visibles. Cela ne remplace pas le stylo permanent et ne modifie pas le brouillard.
+
+Sur une carte déjà partagée, les dessins arrivent aux joueurs sans confirmer chaque trait. Le brouillard exige toujours **Afficher/Actualiser** ; le même bouton démarre le partage si nécessaire.

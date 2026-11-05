@@ -95,3 +95,11 @@ Vor dem Import wichtiger Inhalte:
 - importiere Abenteuer als neu und prüfe danach Verknüpfungen, Orte und Bilder
 
 Der Import ist darauf ausgelegt, deine Datenbank zu schützen: Wähle im Zweifel `Als neu importieren` oder `Überspringen`, statt zu ersetzen.
+
+<!-- guide-coverage: MOD-063 -->
+
+## Ressourcen und Zähler der Helden
+
+Charakterpakete enthalten auch Progressionen, Beschreibungen, Referenzwerte, verbleibende Ressourcen sowie gesamte/verwendete Zauberplätze. Abenteuer bewahren zusätzlich die Kontextzähler ihrer SC, getrennt von Basisbögen und anderen Kampagnen. Diese Werte sind nicht nur während einer Hero-Verbindung sichtbar.
+
+Optionale Felder halten ältere Pakete lesbar; alte Dateien können nie exportierte Ressourcen nicht rekonstruieren. Prüfe den Vergleich vor einer Ersetzung. Struktur, Speicherung und Basis-/Abenteuerunterschiede stehen unter [Charaktere](characters.md).

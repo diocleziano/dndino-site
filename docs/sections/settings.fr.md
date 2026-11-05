@@ -15,7 +15,7 @@ Les réglages influencent surtout :
 
 **Général → Contenu officiel** affiche ou masque les catalogues SRD sans supprimer les données personnelles ni rompre les liens. Le contrôle est partagé avec les listes. Voir [Contenus officiels](official-content.md).
 
-Les boutons guide **?**, activés par défaut, peuvent être désactivés globalement. L’ouverture rapide des personnages peut utiliser la fiche compacte. **Halloween** rejoint les autres thèmes ; **Système** continue de suivre l’apparence réelle de macOS. Topbar, boutons contextuels et menus ont des dispositions cohérentes pour garder icônes et textes lisibles.
+Les boutons guide **?**, activés par défaut, peuvent être désactivés globalement. **Halloween** rejoint les autres thèmes ; **Système** continue de suivre l’apparence réelle de macOS. Topbar, boutons contextuels et menus ont des dispositions cohérentes pour garder icônes et textes lisibles.
 
 ## Comment l’écran est organisé
 
@@ -58,6 +58,16 @@ Tu peux choisir de :
 
 - suivre la langue du système
 - forcer une langue spécifique dans l’application
+
+### Garder l’écran allumé
+
+Dans **Réglages > Général**, activez **Garder l’écran allumé** pour empêcher l’extinction automatique de l’écran lorsque DnDino est au premier plan. Cette option est utile pendant une session pour lire des notes ou présenter du contenu sans utiliser constamment la souris ou le clavier.
+
+L’option est **désactivée par défaut**. Elle fonctionne aussi sur batterie, mais augmente la consommation d’énergie. Votre choix est conservé entre les lancements : passer à une autre application libère la demande ; revenir à DnDino la rétablit si l’option est toujours activée. Vous pouvez la désactiver à tout moment avec le même bouton.
+
+Aucune autorisation spéciale n’est nécessaire et les réglages de sécurité de macOS ne sont pas modifiés. Le verrouillage manuel, la mise en veille demandée par l’utilisateur, la fermeture du capot et les protections du système restent possibles. L’option ne garantit pas de bloquer un économiseur d’écran ou une politique de sécurité indépendante.
+
+Si macOS ne peut pas activer la fonction, un avertissement apparaît : désactivez puis réactivez l’option pour réessayer. La réinitialisation complète des réglages la désactive également.
 
 ### Confirmations globales
 
@@ -108,12 +118,7 @@ Ici, tu peux choisir le **type de dé par défaut** proposé par le lanceur de d
 
 ### Ouverture rapide des personnages
 
-Ce réglage contrôle le comportement de l’ouverture rapide des personnages.
-
-Tu peux décider si le raccourci doit mener :
-
-- vers une vue davantage orientée lecture
-- ou vers un mode plus proche de l’édition
+Chaque résultat possède deux boutons ronds à droite : **Visualisation** ouvre la fiche compacte, **Modification** l'éditeur. La ligne seule n'ouvre plus la fiche et aucun réglage global ne choisit entre les deux actions. [Topbar](topbar.md).
 
 ### Ouverture rapide des règles
 
@@ -152,13 +157,13 @@ Quand un lieu est marqué `En visite`, le lieu qui était auparavant `En visite`
 
 ## Combat
 
-La section `Combat` regroupe les préférences globales du système de combat.
+Les préférences de présentation et de visibilité définissent les **valeurs initiales des nouveaux combats**. Pour modifier un combat, utilise [la gestion du second écran et la visibilité](combat.md#player-screen-options), avec des actions groupées si nécessaire. Les choix enregistrés dans les autres combats ne sont pas écrasés.
 
-Tu y trouves les options de présentation et les préférences qui influencent la `Fenêtre Joueurs`.
+L’activation de l’écran joueurs et le comportement d’ouverture des fenêtres restent globaux. Les combats existants non terminés enregistrent leurs valeurs initiales une seule fois, à la première ouverture.
 
 ### Activer l’écran de combat pour les joueurs
 
-C’est l’interrupteur principal. S’il est désactivé, DnDino n’utilise pas la fenêtre joueurs pour afficher l’intro, le tour courant, le round ou le résumé final du combat, et les options liées sont masquées.
+Ces commandes apparaissent seulement si **Activer l'écran de combat pour les joueurs** est activé dans **Réglages > Combat**. Le désactiver les masque pendant la préparation et le combat, sans effacer les choix enregistrés. Il n’est pas nécessaire qu’un second moniteur soit connecté ni que la fenêtre joueurs soit déjà ouverte.
 
 ### Ouvrir la fenêtre joueurs si elle est fermée
 
@@ -170,7 +175,7 @@ Cette option apparaît seulement si l’ouverture automatique est active. Elle s
 
 ## Présentation du combat
 
-Cette sous-section contrôle les informations générales affichées aux joueurs pendant l’affrontement :
+Ces options définissent les valeurs initiales de présentation des nouveaux combats ; tu peux les modifier dans un combat sans changer les réglages :
 
 - `Afficher l’intro du combat aux joueurs`
 - `Afficher le résumé final aux joueurs`
@@ -182,14 +187,14 @@ La durée de l'affrontement est affichée comme un minuteur lisible ; si le comb
 
 ## Informations des héros
 
-Ces options s’appliquent lorsque le participant actif est un héros ou un allié. Un PNJ ou un monstre marqué comme `Allié` utilise donc aussi ces réglages. Tu peux choisir d’afficher :
+Ces options définissent la visibilité initiale des participants de type héros dans les nouveaux combats. Tu peux choisir d’afficher :
 
 - les PV actuels, maximums et temporaires
 - les états actifs
 
 ## Informations des PNJ
 
-Ces options s’appliquent uniquement lorsque le participant actif est un PNJ non allié. Les PNJ marqués comme `Allié` utilisent les réglages héros/alliés. Tu peux choisir séparément d’afficher :
+Ces options définissent la visibilité initiale des PNJ dans les nouveaux combats, y compris ceux ayant le rôle Allié. Tu peux choisir séparément d’afficher :
 
 - les PV actuels, maximums et temporaires
 - les états actifs
@@ -199,7 +204,7 @@ Si les noms des PNJ sont masqués, la `Fenêtre Joueurs` utilise le nom généri
 
 ## Informations des monstres
 
-Ces options s’appliquent uniquement lorsque le participant actif est un monstre non allié. Les monstres marqués comme `Allié` utilisent les réglages héros/alliés. Tu peux choisir séparément d’afficher :
+Ces options définissent la visibilité initiale des monstres dans les nouveaux combats. Leurs PV et états utilisent ces réglages même s’ils sont alliés ; les noms des monstres non ennemis restent initialement visibles. Tu peux choisir séparément d’afficher :
 
 - les PV actuels, maximums et temporaires
 - les états actifs
@@ -338,3 +343,15 @@ Dans la version de publication, DnDino n’affiche plus les chemins techniques i
 Les instantanés et les médias de l’app peuvent être exportés vers un emplacement choisi par l’utilisateur avec le panneau de sauvegarde standard de macOS. Les médias restent quand même copiés dans la sandbox de l’app, afin que DnDino ne perde pas les références si les fichiers originaux sont déplacés ou supprimés.
 
 La section Diagnostic est réservée aux versions de debug et n’est pas affichée dans la version publiée.
+
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+
+## Thèmes, arrière-plans et opacité
+
+En plus de **Système**, qui suit l'apparence claire/sombre du Mac, les thèmes incluent **Halloween**, **Noël**, **Parchemin** et **Hiver**. Les aperçus montrent palette et fond ; **Arrière-plan décoratif** se désactive sans changer de thème. Hiver utilise un paysage enneigé. Ce sont les fonds du thème, pas un import d'image personnelle sur Mac.
+
+Le curseur d'opacité agit immédiatement sur les panneaux et barres latérales prévus, dont Réglages et les deux panneaux Lieux et Quêtes. Les panneaux déjà opaques sont exclus. **Par défaut** restaure leurs opacités originales respectives, pas une valeur commune de 50 %.
+
+Changer de thème recrée l'écran principal et revient à **Réglages → Thème**. Fenêtres secondaires ouvertes et brouillons non enregistrés restent intacts ; la barre inférieure suit le thème. Boutons principaux et sélection latérale utilisent les couleurs du thème et un texte adapté au contraste. **Système** garde le comportement natif des contrôles macOS.
+
+Autorisations, historique des appareils, démarrage live automatique facultatif et différence entre déconnecter, retirer l'association et oublier : voir [Connexion à Hero](hero-sync.md).

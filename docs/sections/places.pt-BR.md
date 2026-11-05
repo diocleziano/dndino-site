@@ -31,7 +31,7 @@ Reduzir o máximo limita PV atuais superiores; aumentá-lo não cura automaticam
 
 A busca expande os caminhos dos resultados. **Voltar à aventura** abre o painel. Em **Interativa**, **Editar mapa** abre o mapa realmente exibido, mesmo herdado de um local pai. Em **Sombra**, Névoa/Desenho e Revelar/Ocultar mantêm seu espaço; a barra rola horizontalmente quando necessário.
 
-Janelas secundárias permanecem vinculadas à principal. Fechar a última principal fecha também as secundárias e dos jogadores e pausa combates ativos.
+Fichas e editores de personagens, inclusive de local e aventura, são independentes e podem ser minimizados. Condições e Ataque completo têm regras próprias e não podem ser minimizados. Fechar a última principal fecha também as secundárias e dos jogadores e pausa combates ativos.
 
 ## Para que serve a seção Locais
 
@@ -346,7 +346,6 @@ Quando você seleciona um local, o painel direito mostra uma área hero com:
 - tipo (`Local` ou `Missão`)
 - estado atual
 - eventuais marcadores
-- a cadeia hierárquica do local
 
 Também aparece um resumo rápido com:
 
@@ -459,7 +458,7 @@ Nesse caso, a presença mantém o estado contextual da campanha.
 
 ### Ficha base
 
-Essa origem clona um registro base do tipo:
+Essa origem cria uma presença local que continua vinculada a uma ficha base do tipo:
 
 - `NPC`
 - `Monstro`
@@ -595,3 +594,29 @@ Esse modo mostra um Mapa Sombra no lado esquerdo da página de locais e permite 
 Os mapas agora podem ser marcados separadamente como `Mapa interativo` e `Mapa Sombra`. Um mapa sem marca continua visível na mídia do local, mas não mostra os controles dedicados.
 
 A mídia do local também pode ser compartilhada pelo sistema de compartilhamento do macOS.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Criar uma ficha independente a partir de uma presença
+
+Na linha de um PNJ ou monstro, o botão de **pessoa e +** oferece **Criar personagem a partir de…**, separado de **Duplicar presença**. Confirme para criar uma ficha pessoal com o nome local, CA e PV máximos, copiando os demais dados, magias, ataques e imagens da ficha base.
+
+A presença não é duplicada: mantém local, PV atuais e temporários, condições, papel, notas e ordem, mas passa a usar a nova ficha. O original e as outras cópias não mudam. As imagens mantêm vínculos independentes sem cópias desnecessárias de arquivos. A edição do personagem no local abre imediatamente.
+
+Também funciona em combate não concluído: muda apenas o vínculo desse participante, não os PV, CA, iniciativa ou estatísticas. Combates concluídos não são reescritos. Em caso de erro, a criação e a troca do vínculo são desfeitas juntas.
+
+Use para transformar um `Goblin 2` local em um PNJ com ficha própria. Para outra cópia no mesmo local, use **Duplicar presença**.
+
+## Resumo compacto, edição e imagens
+
+Ative o resumo das presenças pelo botão: nomes em coluna, indicador aliado/neutro/inimigo, marca PNJ ou contador de monstros. Inclua sublocais agrupados por local. Personagens mortos ou com zero PV ficam riscados; clique no nome para abrir a ficha compacta contextual.
+
+A busca do seletor está pronta para digitar. A edição separa estado, informações principais, detalhes, magias e imagens; PV temporários vêm antes dos atuais. A capa do local oferece ações de imagem para o Mestre e jogadores.
+
+O modo **Sombra** exige um Mapa Sombra disponível. As setas circulares mostram o mapa aos jogadores ou atualizam a névoa; amarelo indica alterações pendentes. Veja [Mapas interativos](interactive-maps.md) para prioridades e filtros dos marcadores.
+
+## Desenho temporário no Mapa Sombra
+
+Em **Desenho**, **Temporário** destaca um caminho ou ponto e depois desaparece gradualmente. Cada novo traço reinicia o prazo de todos os traços temporários ainda visíveis. Não substitui a caneta permanente nem muda a névoa.
+
+Com o mapa compartilhado, desenhos chegam aos jogadores sem confirmar cada traço. Mudanças na névoa exigem **Mostrar/Atualizar**; o mesmo botão inicia o compartilhamento se necessário.

@@ -31,7 +31,7 @@ Reducir el máximo limita los PG actuales superiores; aumentarlo no cura automá
 
 La búsqueda expande las rutas de resultados. **Volver a la aventura** abre el panel. En **Interactiva**, **Editar mapa** abre el mapa realmente mostrado, incluso heredado de un padre. En **Sombra**, Niebla/Dibujo y Revelar/Ocultar mantienen su espacio; la barra se desplaza horizontalmente si es necesario.
 
-Las ventanas secundarias permanecen vinculadas a la principal. Cerrar la última principal cierra también las secundarias y de jugadores y pausa los combates activos.
+Las fichas y editores de personajes, incluidos los de lugar y aventura, son independientes y minimizables. Condiciones y Ataque completo tienen sus propias reglas y no pueden minimizarse. Cerrar la última principal cierra también las secundarias y de jugadores y pausa los combates activos.
 
 ## Para qué sirve la sección Lugares
 
@@ -346,7 +346,6 @@ Cuando seleccionas un lugar, el panel derecho muestra un área hero con:
 - tipo (`Lugar` o `Misión`)
 - estado actual
 - posibles marcadores
-- la cadena jerárquica del lugar
 
 También aparece un resumen rápido con:
 
@@ -459,7 +458,7 @@ En este caso, la presencia mantiene el estado contextual de campaña.
 
 ### Ficha base
 
-Este origen clona un registro base del tipo:
+Este origen crea una presencia local que permanece vinculada a una ficha base del tipo:
 
 - `PNJ`
 - `Monstruo`
@@ -595,3 +594,29 @@ Este modo muestra un Mapa sombra en la parte izquierda de la página de lugares 
 Las mapas pueden marcarse por separado como `Mapa interactivo` y `Mapa sombra`. Una mapa sin marca sigue visible en los medios del lugar, pero no muestra los controles dedicados.
 
 Los medios del lugar también pueden compartirse mediante el sistema de compartir de macOS.
+
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+
+## Crear una ficha independiente desde una presencia
+
+En la fila de un PNJ o monstruo, el botón de **persona y +** ofrece **Crear un personaje a partir de…**, distinto de **Duplicar presencia**. Confirma para crear una ficha personal con el nombre local, la CA y los PG máximos, copiando los demás datos, conjuros, ataques e imágenes de la ficha base.
+
+No se duplica la presencia: conserva lugar, PG actuales y temporales, condiciones, rol, notas y orden, pero se vincula a la ficha nueva. El original y las demás copias no cambian. Las imágenes mantienen vínculos independientes sin copiar archivos innecesariamente. Se abre inmediatamente la edición del personaje del lugar.
+
+También funciona en un combate sin terminar: solo cambia el vínculo de ese participante, no los PG, la CA, la iniciativa ni las estadísticas. No se reescriben combates terminados. Si ocurre un error, se deshacen conjuntamente la creación y el cambio del vínculo.
+
+Úsalo para convertir un `Goblin 2` local en un PNJ con ficha propia. Para otra copia en el mismo lugar, usa **Duplicar presencia**.
+
+## Resumen compacto, edición e imágenes
+
+Activa el resumen de presencias con su botón: nombres en vertical, indicador aliado/neutral/enemigo, etiqueta PNJ o contador de monstruos. Puedes incluir sublugares agrupados por lugar. Los personajes muertos o a cero PG aparecen tachados; pulsa un nombre para abrir su ficha compacta contextual.
+
+La búsqueda del selector está lista para escribir. La edición separa estado, información principal, detalles, conjuros e imágenes; los PG temporales preceden a los actuales. La portada del lugar ofrece acciones para mostrar la imagen al DM y a los jugadores.
+
+El modo **Sombra** requiere un Mapa Sombra disponible. Las flechas circulares muestran la imagen a los jugadores o actualizan la niebla; el amarillo indica cambios pendientes. Consulta [Mapas interactivos](interactive-maps.md) para las prioridades y filtros de marcadores.
+
+## Dibujo temporal en el Mapa Sombra
+
+En **Dibujo**, **Temporal** señala una ruta o punto y luego se desvanece. Cada trazo nuevo reinicia el tiempo de todos los trazos temporales aún visibles. No reemplaza el lápiz permanente ni cambia la niebla.
+
+Con el mapa compartido, los dibujos llegan a los jugadores sin confirmar cada trazo. Los cambios de niebla requieren **Mostrar/Actualizar**; el mismo botón inicia la difusión si no estaba activa.

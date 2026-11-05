@@ -95,3 +95,11 @@ Avant d'importer du contenu important :
 - importe les aventures comme nouvelles, puis vérifie les liens, lieux et images
 
 L'importation est conçue pour protéger la base de données : en cas de doute, choisis `Importer comme nouveau` ou `Ignorer` plutôt que de remplacer.
+
+<!-- guide-coverage: MOD-063 -->
+
+## Ressources et compteurs des héros
+
+Les paquets de personnages comprennent aussi progressions, descriptions, valeurs de référence, ressources restantes et emplacements totaux/utilisés. Les aventures préservent en plus les compteurs contextuels de leurs PJ, séparés des fiches de base et des autres campagnes. Ces données ne sont pas seulement visibles pendant une connexion Hero.
+
+Les champs facultatifs permettent de lire les anciens paquets ; un ancien fichier ne recrée pas des ressources jamais exportées. Vérifie le comparatif avant de remplacer une fiche. Structure, enregistrement et différences base/aventure : [Personnages](characters.md).
