@@ -3,52 +3,24 @@
 DnDino Hero sur iPhone ou iPad permet d'envoyer votre fiche au MJ et de partager des valeurs de jeu lorsqu'il l'autorise. Hero reste utilisable sans connexion. Le [guide du MJ](../sections/hero-sync.md) détaille les commandes du Mac.
 
 !!! info "Versions"
-    Le nouveau rapprochement à la reconnexion est préparé pour la prochaine mise à jour et nécessite des versions des **deux applications qui le prennent en charge**. Le direct exige **iOS/iPadOS 26 ou ultérieur**. Auparavant, seul l'envoi manuel est disponible, même hors combat.
+    Mets les deux apps à jour vers des versions compatibles avec la nouvelle connexion. L’envoi de fiche, le chat et la synchro en direct sont disponibles dès **iOS/iPadOS 17**. Si un appareil n’était associé qu’à l’ancien système, associe-le une fois sans code. Les associations du nouveau système sont conservées lors des mises à jour.
 
-## Première connexion
+## Première association
 
-1. Sélectionnez votre personnage dans Hero et vérifiez sa fiche.
-2. Utilisez le même réseau local que le Mac, autorisez l'accès au réseau local et activez Wi-Fi et Bluetooth.
-3. Demandez au MJ d'ouvrir l'aventure dans DnDino et de démarrer la connexion Hero.
-4. Ouvrez **Réglages → Connexion DnDino**, recherchez DnDino, puis sélectionnez la session en vérifiant MJ et aventure.
-5. Attendez l'autorisation. Si nécessaire, utilisez l'envoi du personnage à DnDino : le MJ choisit nouvelle fiche ou association existante.
+1. Sélectionne le personnage à jouer dans Hero.
+2. Connecte les deux appareils au même réseau local et autorise l’accès si nécessaire.
+3. Demande au MJ d’activer la connexion Hero depuis la barre inférieure de DnDino.
+4. Dans Hero, ouvre **Réglages → Connexion à DnDino**, active la connexion, recherche DnDino et choisis le Mac du MJ par son nom.
+5. Attends l’autorisation du MJ. Il n’y a ni code ni deuxième confirmation. Si le MJ active la synchro en direct, Hero envoie automatiquement la première fiche.
 
-**L'envoi et l'autorisation n'activent pas automatiquement le direct.**
+## Fiche, synchro en direct et chat
 
-## Qui active la synchronisation ?
+- Le bouton d’envoi transmet la fiche complète et ses valeurs de jeu même sans synchro en direct. Le MJ peut aussi demander la fiche d’un PJ déjà associé. Utilise la fiche complète pour un changement de niveau ou de structure.
+- Seul le MJ active la synchro en direct ; Hero indique son état. Les PV, les PV temporaires, la CA, les états, l’inspiration héroïque, les ressources et les emplacements sont synchronisés même en combat. Hero affiche les alertes de début et fin de combat et les repos lancés par le MJ.
+- Ouvre **Chat** dans le panneau de connexion pour écrire au MJ en privé.
 
-**Seul le MJ** l'active ou la désactive, indépendamment pour chaque joueur. Hero affiche le direct actif ou l'attente d'activation sur le Master. Aucun second interrupteur n'est à activer sur Hero.
+## Si la connexion est interrompue
 
-Normalement, le MJ réactive le direct à chaque connexion. Il peut choisir un démarrage automatique pour les appareils déjà autorisés.
+Au retour dans l’app, Hero peut se reconnecter sans nouvelle autorisation tant que l’accès n’a pas été révoqué. Si elle était autorisée, la synchro en direct reprend et les envois en attente arrivent sans doublons. La fiche complète n’est pas renvoyée à la reconnexion. Si la même valeur a changé des deux côtés hors ligne, une modification périmée peut être refusée ; Hero reprend la valeur acceptée par le MJ.
 
-## À la reconnexion
-
-Avec les nouvelles versions, Hero envoie la fiche complète dès la connexion, même si elle était déjà associée. Structure, niveaux et configurations proviennent de Hero.
-
-Si les valeurs diffèrent, le MJ choisit entre DnDino et Hero pour les PV actuels/maximaux/temporaires, CA, inspiration, conditions, ressources restantes et emplacements utilisés. **Hero est présélectionné**. Les conditions ne sont jamais fusionnées automatiquement.
-
-Pendant l'attente d'alignement, évitez les modifications répétées : un changement peut obliger à actualiser le rapprochement. Après confirmation, les valeurs choisies sont appliquées. Le direct démarre seulement si le MJ l'a activé.
-
-Exemple : vos PV corrigés sur Hero peuvent être conservés, tout en gardant une condition encore présente sur DnDino.
-
-## Pendant la partie
-
-Avec le direct actif, les valeurs prises en charge circulent dans les deux sens : PV, PV temporaires, CA, inspiration et conditions. Le MJ peut aussi modifier les compteurs de ressources et d'emplacements pris en charge.
-
-Les ressources affichent **Restant/Total** ; les progressions fixes sont consultables sans consommation. Les emplacements indiquent le total et les utilisations, par origine si nécessaire. Niveaux, descriptions, maxima des ressources et configurations s'actualisent avec une **fiche complète**, pas uniquement avec les compteurs.
-
-Vous restez responsable de votre fiche. Le direct ne donne pas au MJ le droit de modifier tous les champs de Hero.
-
-## Envoi manuel et chat
-
-L'envoi manuel transmet la fiche complète, notamment après un changement de niveau ou de sorts. Vérifiez avec le MJ la fiche à mettre à jour. Avec les versions compatibles, il peut aussi télécharger directement la fiche déjà associée. Ces actions n'activent pas le direct et ne remplacent pas une sauvegarde.
-
-Le **chat privé avec le MJ** est disponible lorsque le direct est actif, indépendamment des transferts et notifications de jeu.
-
-## Si la connexion tombe
-
-Gardez Hero visible pendant la partie : verrouiller l'appareil ou changer d'application peut interrompre la communication. Au retour, Hero peut tenter de se reconnecter. Utilisez aussi le bouton de reconnexion dans les réglages ; après épuisement des tentatives, relancez-le.
-
-Si l'état indique connecté mais rien ne change, demandez au MJ de vérifier activation, association et alignement. Vérifiez réseau, autorisations et écoute sur le Mac si vous ne trouvez pas la session. Le test de connexion n'active pas le direct et n'envoie pas de fiche.
-
-Déconnecter ne supprime pas le personnage. Retrouvez la documentation dans **Réglages → Support → Ouvrir le guide en ligne**.
+Si le Mac n’apparaît pas, vérifie que DnDino attend des demandes, que les deux appareils sont sur le même réseau et que Hero a l’autorisation **Réseau local**.

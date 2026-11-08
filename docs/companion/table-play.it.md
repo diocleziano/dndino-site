@@ -78,37 +78,9 @@ L'app importa la lista delle condizioni da DnDino, ma non applica automaticament
 
 ## Collegamento locale con DnDino
 
-La comunicazione con DnDino è pensata per rimanere locale.
+Il collegamento avviene sulla rete locale. Il giocatore sceglie il Mac in Hero e il Master approva dal pannello **Hero** nella barra inferiore di DnDino. La Live, la chat e l’invio della scheda sono disponibili da iOS/iPadOS 17.
 
-Il master avvia il collegamento dalla sezione dell'avventura in DnDino. Hero cerca la sessione sulla rete locale, mostra master e avventura trovati e permette di inviare il personaggio attivo.
-
-Al primo collegamento DnDino può chiedere conferma:
-
-- per autorizzare il dispositivo
-- per importare il personaggio come nuovo
-- per associarlo a un personaggio già esistente
-
-L'associazione usa identificativi interni, non solo il nome del personaggio. Questo evita problemi se il nome viene modificato in seguito.
-
-Quando il collegamento è già stato autorizzato, Hero prova a riconnettersi automaticamente quando torna in primo piano. La hero della scheda mostra anche l'ultimo DnDino collegato, così puoi ricollegarti più rapidamente.
-
-## Sincronizzazione durante il gioco
-
-La sincronizzazione può essere bidirezionale, ma viene attivata o disattivata solo dal Master, separatamente per ogni dispositivo collegato. Su Hero viene mostrato lo stato: il giocatore non deve attivare un secondo interruttore. Di default il Master la riabilita a ogni nuova connessione; può scegliere l'avvio automatico per dispositivi già autorizzati. Aggiorna entrambe le app per utilizzare il nuovo flusso.
-
-La modalità live richiede iOS/iPadOS 26 o successivo. Sui sistemi precedenti resta disponibile solo l'invio manuale del personaggio, senza sincronizzazione automatica neppure fuori dal combattimento.
-
-Hero può inviare a DnDino:
-
-- PF attuali, massimi e temporanei
-- classe armatura
-- condizioni
-- dadi vita spesi
-- ispirazione eroica
-
-DnDino può aggiornare Hero con i valori supportati; in combattimento considera il partecipante collegato. Il nuovo flusso di riconnessione parte invece dalla scheda Hero: se ci sono differenze, il Master sceglie quali valori conservare prima degli scambi live ordinari. Non si presume più che prevalga lo stato precedente del Master.
-
-Per preparazione, primo invio, confronto, progressioni, slot e risoluzione dei problemi, consulta la [guida al collegamento per il giocatore](dndino-sync.md) e la [guida per il Master](../sections/hero-sync.md). Il nuovo allineamento richiede il prossimo aggiornamento di entrambe le app, come indicato nelle guide.
+Per abbinamento, scheda, Live e chat, consulta la [guida per il giocatore](dndino-sync.md) o la [guida per il Master](../sections/hero-sync.md).
 
 Le notifiche di Hero cercano di descrivere cosa è successo:
 
@@ -121,6 +93,4 @@ Le notifiche di Hero cercano di descrivere cosa è successo:
 
 ## Chat privata
 
-La sezione **Messaggio privato al DM** è disponibile quando la sincronizzazione live è attiva.
-
-Da qui il giocatore può scrivere al DM. Su DnDino il master riceve una notifica e può aprire la conversazione. La chat resta distinta per personaggio e dispositivo, così due dispositivi con lo stesso account possono usare conversazioni diverse.
+Apri **Chat** in **Impostazioni → Collegamento DnDino** dopo l’abbinamento. Quando riceve un messaggio a chat chiusa, il Master vede il badge nella barra inferiore di DnDino. La conversazione è distinta per abbinamento.

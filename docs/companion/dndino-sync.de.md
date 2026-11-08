@@ -3,52 +3,24 @@
 Mit DnDino Hero auf iPhone oder iPad sendest du deinen Bogen an die Spielleitung und teilst nach Freigabe Spielwerte. Hero funktioniert auch ohne Verbindung. Die Mac-Bedienung erklärt die [Anleitung für die Spielleitung](../sections/hero-sync.md).
 
 !!! info "Versionen"
-    Der neue Abgleich bei der Wiederverbindung ist für das nächste Update vorbereitet und benötigt Versionen **beider Apps, die ihn unterstützen**. Live erfordert **iOS/iPadOS 26 oder neuer**. Ältere Systeme können nur manuell senden, auch außerhalb des Kampfes.
+    Aktualisiere beide Apps auf Versionen, die die neue Verbindung unterstützen. Bogenübertragung, Chat und Live-Synchronisierung sind ab **iOS/iPadOS 17** verfügbar. Geräte, die nur mit dem alten System gekoppelt waren, müssen einmal ohne Code neu gekoppelt werden. Kopplungen des neuen Systems bleiben bei App-Updates erhalten.
 
-## Erste Verbindung
+## Erste Kopplung
 
-1. Wähle in Hero deinen Charakter und prüfe den Bogen.
-2. Nutze dasselbe lokale Netzwerk wie der Mac, erlaube den lokalen Netzwerkzugriff und aktiviere WLAN und Bluetooth.
-3. Bitte die Spielleitung, das Abenteuer und die Hero-Verbindung in DnDino zu öffnen.
-4. Öffne **Einstellungen → DnDino-Verbindung**, suche DnDino und wähle nach Prüfung von Spielleitung und Abenteuer die Sitzung.
-5. Warte auf die Autorisierung. Sende bei Bedarf den Charakter an DnDino; die Spielleitung entscheidet zwischen neuem Bogen und bestehender Zuordnung.
+1. Wähle in Hero den Charakter, den du spielen möchtest.
+2. Verbinde beide Geräte mit demselben lokalen Netzwerk und erlaube bei Nachfrage den Zugriff.
+3. Bitte die Spielleitung, die Hero-Verbindung in der unteren Leiste von DnDino zu aktivieren.
+4. Öffne in Hero **Einstellungen → DnDino-Verbindung**, aktiviere die Verbindung, suche nach DnDino und wähle den Mac nach Namen aus.
+5. Warte auf die Freigabe. Du brauchst weder einen Code noch eine zweite Bestätigung. Wenn die Spielleitung Live aktiviert, sendet Hero den ersten Bogen automatisch.
 
-**Autorisierung und Senden aktivieren Live nicht automatisch.**
+## Charakterbogen, Live und Chat
 
-## Wer aktiviert die Synchronisierung?
+- Über die Schaltfläche zum Senden des Bogens überträgst du den vollständigen Bogen mit Spielwerten auch ohne Live. Die Spielleitung kann den Bogen eines gekoppelten Charakters auch anfordern. Neue Stufen und strukturelle Änderungen benötigen den vollständigen Bogen.
+- Nur die Spielleitung aktiviert Live; Hero zeigt den Status. TP, temporäre TP, RK, Zustände, Heroische Inspiration, Klassenressourcen und Zauberplätze werden auch im Kampf synchronisiert. Hero zeigt Hinweise zu Kampfbeginn, Kampfende und von der Spielleitung ausgelösten Rasten.
+- Im **Chat** des Verbindungspanels schreibst du privat mit der Spielleitung.
 
-**Nur die Spielleitung**, getrennt für jeden Spieler. Hero zeigt aktives Live oder die ausstehende Aktivierung durch den Master an. Du musst keinen zweiten Schalter einschalten.
+## Wenn die Verbindung abbricht
 
-Normalerweise wird Live bei jeder neuen Verbindung erneut aktiviert. Die Spielleitung kann für bereits autorisierte Geräte einen automatischen Start wählen.
+Beim Zurückkehren kann sich Hero ohne erneute Freigabe verbinden, solange der Zugriff nicht widerrufen wurde. Erlaubte Live-Synchronisierung läuft weiter, ausstehende Updates werden ohne Duplikate übertragen. Der vollständige Bogen wird dabei nicht erneut gesendet. Wurde derselbe Wert auf beiden Seiten offline geändert, kann eine veraltete Änderung abgelehnt werden; Hero übernimmt dann den von der Spielleitung akzeptierten Wert.
 
-## Bei der Wiederverbindung
-
-Mit den neuen Versionen sendet Hero beim Verbinden den vollständigen Bogen, auch wenn er schon verknüpft war. Struktur, Stufen und Konfiguration kommen aus Hero.
-
-Bei Unterschieden entscheidet die Spielleitung zwischen DnDino und Hero für aktuelle/maximale/temporäre TP, RK, Inspiration, Zustände, verbleibende Ressourcen und verwendete Zauberplätze. **Hero ist vorausgewählt**. Zustände werden nicht automatisch zusammengeführt.
-
-Während der Abgleich aussteht, vermeide wiederholte Änderungen derselben Werte: sie können einen neuen Vergleich nötig machen. Nach Bestätigung werden die gewählten Werte abgeglichen. Live startet nur mit Freigabe der Spielleitung.
-
-Beispiel: Deine nach dem Spiel in Hero korrigierten TP lassen sich übernehmen, während ein Zustand aus DnDino erhalten bleibt.
-
-## Während der Sitzung
-
-Bei aktivem Live werden unterstützte Werte in beide Richtungen übertragen: TP, temporäre TP, RK, Inspiration und Zustände. Die Spielleitung kann auch unterstützte Ressourcen- und Zauberplatzzähler ändern.
-
-Ressourcen zeigen **Verbleibend/Gesamt**; feste Progressionen sind Informationen ohne Verbrauch. Zauberplätze zeigen Gesamt und verwendet, nötigenfalls nach Quelle. Beschreibungen, Ressourcenmaxima, neue Stufen und Konfigurationen benötigen einen **vollständigen Bogen**, nicht nur Live-Zähler.
-
-Du bleibst für den Bogen verantwortlich. Live erlaubt der Spielleitung nicht das freie Ändern sämtlicher Hero-Felder.
-
-## Manuelles Senden und Chat
-
-Manuelles Senden überträgt den vollständigen Bogen, etwa nach Änderungen an Stufen oder Zaubern. Kläre mit der Spielleitung, welcher Bogen aktualisiert werden soll. Kompatible Versionen erlauben ihr auch, den verknüpften Bogen direkt herunterzuladen. Beides aktiviert Live nicht und ersetzt kein Backup.
-
-**Privater Chat mit der Spielleitung** ist bei aktivem Live verfügbar und von Bogenübertragungen und Spielmeldungen getrennt.
-
-## Bei Verbindungsabbruch
-
-Hero während des Spiels sichtbar lassen: Gerätesperre oder App-Wechsel können die Verbindung unterbrechen. Bei Rückkehr kann Hero eine Wiederverbindung versuchen. Nutze auch die Wiederverbinden-Taste in den Einstellungen; nach ausgeschöpften Versuchen starte sie erneut.
-
-Ist das Gerät verbunden, aber Werte ändern sich nicht, bitte um Prüfung von Live-Freigabe, Zuordnung und Abgleich. Bei Suchproblemen prüfe Netzwerk, Berechtigungen und Empfang am Mac. Der Verbindungstest aktiviert Live nicht und sendet keinen Bogen.
-
-Trennen löscht den Charakter nicht. Die Anleitung findest du unter **Einstellungen → Support → Online-Anleitung öffnen**.
+Wenn der Mac nicht erscheint, prüfe, ob DnDino auf Anfragen wartet, beide Geräte im selben lokalen Netzwerk sind und Hero darauf zugreifen darf.

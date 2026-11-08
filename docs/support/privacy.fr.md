@@ -29,7 +29,7 @@ Vous pouvez gérer l’accès des applications à iCloud dans les réglages Appl
 
 Vous pouvez utiliser Hero sans le connecter à DnDino. Si vous activez une connexion de séance, les applications utilisent les technologies de réseau local Apple pour découvrir et connecter les appareils. Elles peuvent échanger le nom de l’appareil, des identifiants techniques et des informations de séance à cette fin.
 
-Selon les fonctions utilisées et les autorisations de partage activées, les appareils connectés peuvent échanger fiches et mises à jour de personnage, images, résultats de dés et messages entre joueur et maître de jeu. Les mises à jour peuvent se poursuivre automatiquement lorsque la synchronisation en direct est active. La connexion utilise le chiffrement fourni par les sessions Multipeer Connectivity d’Apple, sans serveur de séance exploité par le développeur.
+Selon les fonctions utilisées et les autorisations de partage activées, les appareils connectés peuvent échanger fiches et mises à jour de personnage, images, résultats de dés et messages entre joueur et maître de jeu. Les mises à jour peuvent se poursuivre automatiquement lorsque la synchronisation en direct est active. La nouvelle connexion chiffre les données en transit avec TLS, sans utiliser de serveur de session géré par le développeur.
 
 Vous pouvez vous déconnecter, désactiver la synchronisation en direct ou révoquer l’accès au réseau local dans les réglages système. Ces actions interrompent les échanges suivants, mais ne suppriment pas les copies déjà reçues par les autres participants.
 

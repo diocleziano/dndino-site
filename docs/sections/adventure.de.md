@@ -20,11 +20,9 @@ Spezifischere Bereiche wie **Orte**, **Konzeptkarten**, **Live-Sitzung**, **Char
 
 Die ganze Sitzungszeile öffnet Details für Titel, SL-Notizen und bei abgeschlossenen Sitzungen das Intervall. **Zurück zum Abenteuer** führt von Orten hierher; **Zurück zum Ort** öffnet den zugehörigen Ort aus einer Kampfübersicht.
 
-Das Entfernen eines Dashboard-Charakters löscht nicht seinen allgemeinen Bogen. Bei aktivierten Bestätigungen fragt DnDino vorher nach. Nur die Spielleitung kann die automatische Synchronisierung mit Hero für jedes Gerät einzeln aktivieren oder deaktivieren. Hero zeigt den Status an; die Spieler müssen keinen zweiten Schalter betätigen. Standardmäßig muss die Spielleitung die Synchronisierung nach jeder neuen Verbindung erneut aktivieren; der automatische Start für autorisierte Geräte ist optional. Ohne Unterstützung bleibt das manuelle Senden des Bogens möglich.
+Das Entfernen eines Dashboard-Charakters löscht nicht seinen allgemeinen Bogen. Bei aktivierten Bestätigungen fragt DnDino vorher nach.
 
-Vorbereitung, Wertewahl beim Wiederverbinden, Progressionen, Zauberplätze und Geräteverwaltung erklärt [Verbindung mit Hero: Anleitung für die Spielleitung](hero-sync.md). Die Seite unterscheidet den kommenden Abgleich von früheren Versionen.
-
-Live-Synchronisierung erfordert auf Hero iOS/iPadOS 26 oder neuer. Ältere Systeme erlauben nur das manuelle Senden des Charakters, ohne automatische Synchronisierung auch außerhalb von Kämpfen.
+Nur die Spielleitung steuert Live pro Gerät. Eine erteilte Live-Freigabe bleibt beim Wiederverbinden erhalten. Informationen zu Kopplung, Bogenaktualisierung und Chat findest du unter [Verbindung mit Hero: Anleitung für die Spielleitung](hero-sync.md).
 
 ## Wozu ein Abenteuer dient
 

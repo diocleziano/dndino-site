@@ -20,11 +20,9 @@ More specific areas, such as **Places**, **Concept Maps**, **Live Session**, **C
 
 Click anywhere on a session row to open its details and edit title, DM notes and, for completed sessions, the interval. **Return to adventure** brings you here from Places; **Return to place** opens the linked place from a combat summary.
 
-Removing a dashboard character does not delete its general sheet. If confirmations are enabled, DnDino asks before removal. Only the DM can enable or disable automatic synchronization with Hero, separately for each device. Hero shows the status without requiring the player to enable a second switch. By default, a new connection requires the DM to enable synchronization again; automatic startup for already-authorized devices is optional. Where unsupported, manual sheet sending remains available.
+Removing a dashboard character does not delete its general sheet. If confirmations are enabled, DnDino asks before removal.
 
-For setup, reconnection choices, progressions, slots, and device management, see [Connecting Hero: a guide for the DM](hero-sync.md). The page distinguishes upcoming alignment from earlier versions.
-
-Live synchronization requires iOS/iPadOS 26 or later on Hero. Older systems support manual character sending only, with no automatic synchronization even outside combat.
+Only the GM controls Live for each device. Authorized Live resumes when Hero reconnects. For pairing, sheet updates and chat, see [Connecting Hero: a guide for the DM](hero-sync.md).
 
 ## What an Adventure Is For
 

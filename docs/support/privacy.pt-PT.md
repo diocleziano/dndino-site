@@ -29,7 +29,7 @@ Podes gerir o acesso das apps ao iCloud nas definições Apple. O programador n�
 
 Podes usar Hero sem o ligar a DnDino. Se ativares uma ligação de sessão, as apps utilizam as tecnologias de rede local da Apple para descobrir e ligar os dispositivos. Para esse efeito, podem trocar o nome do dispositivo, identificadores técnicos e informações da sessão.
 
-Consoante as funções utilizadas e as permissões de partilha ativadas, os dispositivos ligados podem trocar fichas e atualizações da personagem, imagens, resultados de dados e mensagens entre jogador e Mestre de Jogo. As atualizações podem continuar automaticamente enquanto a sincronização em direto estiver ativa. A ligação utiliza a cifragem das sessões Multipeer Connectivity da Apple, sem um servidor de sessão gerido pelo programador.
+Consoante as funções utilizadas e as permissões de partilha ativadas, os dispositivos ligados podem trocar fichas e atualizações da personagem, imagens, resultados de dados e mensagens entre jogador e Mestre de Jogo. As atualizações podem continuar automaticamente enquanto a sincronização em direto estiver ativa. A nova ligação cifra os dados em trânsito através de TLS, sem usar um servidor de sessão operado pelo programador.
 
 Podes desligar a ligação, desativar a sincronização em direto ou revogar o acesso à rede local nas definições do sistema. Estas ações interrompem as trocas seguintes, mas não eliminam cópias já recebidas por outros participantes.
 

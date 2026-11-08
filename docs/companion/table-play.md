@@ -77,37 +77,9 @@ The app can import the condition list from DnDino, but it does not automatically
 
 ## Local DnDino Connection
 
-The connection with DnDino is local.
+The apps connect over the local network. The player selects the Mac in Hero, and the GM approves from the **Hero** panel in DnDino’s bottom bar. Live, chat and sheet transfer are available on iOS/iPadOS 17 or later.
 
-The DM starts the Hero connection from the adventure in DnDino. Hero searches for the session on the local network, shows the found DM and adventure, and lets you send the active character.
-
-On first connection, DnDino can ask for confirmation:
-
-- to authorize the device
-- to import the character as new
-- to associate it with an existing character
-
-The association uses internal identifiers, not just the character name. This avoids problems if the name changes later.
-
-When the connection has already been authorized, Hero tries to reconnect automatically when it returns to the foreground. The sheet hero area also shows the last connected DnDino session for faster reconnection.
-
-## Sync During Play
-
-Synchronization can be bidirectional, but only the DM enables or disables it, separately for each connected device. Hero displays the status: the player does not need to enable a second switch. By default, the DM enables it again after each connection; optional automatic startup is available for already-authorized devices. Update both apps to use the new flow.
-
-Live synchronization requires iOS/iPadOS 26 or later. Older systems only support sending the character manually, without automatic synchronization even outside combat.
-
-Hero can send DnDino:
-
-- current, maximum, and temporary hit points
-- armor class
-- conditions
-- spent hit dice
-- Heroic Inspiration
-
-DnDino can update supported values in Hero; combat takes the linked participant into account. The new reconnection flow instead starts with the Hero sheet: when values differ, the DM chooses which to keep before ordinary live exchanges. The earlier Master state is no longer assumed to take precedence.
-
-For setup, first sending, comparison, progressions, slots, and troubleshooting, see the [player connection guide](dndino-sync.md) and [DM guide](../sections/hero-sync.md). The new alignment requires the next update of both apps, as explained in those guides.
+For pairing, sheet transfer, Live and chat, see the [player guide](dndino-sync.md) or the [GM guide](../sections/hero-sync.md).
 
 Hero notifications try to describe what happened:
 
@@ -120,6 +92,4 @@ Hero notifications try to describe what happened:
 
 ## Private Chat
 
-The **Private Message to DM** section is available while live synchronization is active.
-
-The player can write to the DM from there. In DnDino, the DM receives a notification and can open the conversation. The chat remains separate by character and device, so two devices with the same account can use different conversations.
+Open **Chat** in **Settings → DnDino Connection** after pairing. When a message arrives with the chat closed, the GM sees an unread badge in DnDino’s bottom bar. Each pairing has its own conversation.

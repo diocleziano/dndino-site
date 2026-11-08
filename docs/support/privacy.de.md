@@ -29,7 +29,7 @@ Den iCloud-Zugriff der Apps kannst du über die Apple-Einstellungen verwalten. D
 
 Du kannst Hero ohne Verbindung zu DnDino verwenden. Aktivierst du eine Sitzungsverbindung, nutzen die Apps Apples lokale Netzwerktechnologien, um Geräte zu finden und zu verbinden. Dafür können Gerätenamen, technische Kennungen und Sitzungsinformationen ausgetauscht werden.
 
-Je nach genutzten Funktionen und aktivierten Freigaben können verbundene Geräte Charakterbögen und Aktualisierungen, Bilder, Würfelergebnisse sowie Nachrichten zwischen Spieler und Spielleitung austauschen. Bei aktiver Live-Synchronisierung können Aktualisierungen automatisch fortgesetzt werden. Die Verbindung verwendet die Verschlüsselung von Apples Multipeer-Connectivity-Sitzungen, ohne einen vom Entwickler betriebenen Sitzungsserver.
+Je nach genutzten Funktionen und aktivierten Freigaben können verbundene Geräte Charakterbögen und Aktualisierungen, Bilder, Würfelergebnisse sowie Nachrichten zwischen Spieler und Spielleitung austauschen. Bei aktiver Live-Synchronisierung können Aktualisierungen automatisch fortgesetzt werden. Die neue Verbindung verschlüsselt übertragene Daten mit TLS und nutzt keinen vom Entwickler betriebenen Sitzungsserver.
 
 Du kannst die Verbindung trennen, die Live-Synchronisierung deaktivieren oder den lokalen Netzwerkzugriff in den Systemeinstellungen widerrufen. Dadurch werden weitere Übertragungen gestoppt, aber bereits von anderen Teilnehmern empfangene Kopien nicht gelöscht.
 
