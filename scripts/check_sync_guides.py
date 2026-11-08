@@ -65,7 +65,8 @@ for page in PAGES:
         suffix = "" if language == "en" else "." + language
         source = ROOT / "docs" / (page + suffix + ".md")
         text = source.read_text()
-        assert "iOS/iPadOS 26" in text and "!!! info" in text, source
+        assert "**iOS/iPadOS 17" in text and "!!! info" in text, source
+        assert "iOS/iPadOS 26" not in text and "Multipeer" not in text, source
         assert all(str(number) + ". " in text for number in range(1, 6)), source
         locale_path = "" if language == "en" else language + "/"
         url = urljoin(BASE_URL, locale_path + page + "/")

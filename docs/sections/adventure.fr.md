@@ -20,11 +20,9 @@ Les zones plus spécifiques, comme **Lieux**, **Cartes conceptuelles**, **Sessio
 
 Toute la ligne d’une session ouvre son détail pour modifier titre, notes MJ et, après clôture, intervalle. **Retour à l’aventure** revient ici depuis les lieux ; **Retour au lieu** ouvre le lieu associé depuis un récapitulatif de combat.
 
-Retirer un personnage du tableau de bord ne supprime pas sa fiche générale. Si les confirmations sont actives, DnDino demande confirmation. Seul le MJ peut activer ou désactiver la synchronisation automatique avec Hero, séparément pour chaque appareil. Hero affiche l’état sans demander au joueur d’activer un second interrupteur. Par défaut, une nouvelle connexion nécessite une réactivation par le MJ ; le démarrage automatique pour les appareils déjà autorisés est facultatif. Si elle n’est pas prise en charge, l’envoi manuel de la fiche reste disponible.
+Retirer un personnage du tableau de bord ne supprime pas sa fiche générale. Si les confirmations sont actives, DnDino demande confirmation.
 
-Pour la préparation, le choix des valeurs à la reconnexion, les progressions, emplacements et appareils, consultez [Connexion avec Hero : guide du MJ](hero-sync.md). La page distingue le prochain alignement des versions précédentes.
-
-La synchronisation live nécessite iOS/iPadOS 26 ou ultérieur sur Hero. Les systèmes antérieurs permettent uniquement l’envoi manuel du personnage, sans synchronisation automatique même hors combat.
+Seul le MJ contrôle la synchro en direct par appareil. Lorsqu’elle est autorisée, elle reprend à la reconnexion de Hero. Pour l’association, la mise à jour de la fiche et le chat, consultez [Connexion avec Hero : guide du MJ](hero-sync.md).
 
 ## À quoi sert une aventure
 

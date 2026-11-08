@@ -20,11 +20,9 @@ Le aree più specifiche, come **Luoghi**, **Mappe concettuali**, **Sessione live
 
 La lista delle sessioni apre il dettaglio facendo clic su tutta la riga; da lì puoi aggiornare titolo, note DM e, per le sessioni concluse, intervallo. Dai luoghi il pulsante **Ritorna all'avventura** riporta qui; dal riepilogo dello scontro **Torna al luogo** apre il luogo collegato.
 
-Rimuovere un personaggio dalla dashboard non equivale a eliminare la sua scheda generale. Se le conferme sono abilitate, DnDino chiede conferma prima della rimozione. Nel collegamento con Hero, solo il Master può attivare o disattivare la sincronizzazione automatica, separatamente per ogni dispositivo. Su Hero il giocatore vede lo stato, senza dover attivare un secondo interruttore. Di default una nuova connessione richiede di riattivare la sincronizzazione sul Master; l'avvio automatico per dispositivi già autorizzati è facoltativo. Dove non è supportata resta l'invio manuale della scheda.
+Rimuovere un personaggio dalla dashboard non equivale a eliminare la sua scheda generale. Se le conferme sono abilitate, DnDino chiede conferma prima della rimozione.
 
-Per preparazione, scelta dei valori alla riconnessione, progressioni, slot e gestione dei dispositivi, consulta [Collegamento con Hero: guida per il Master](hero-sync.md). La pagina distingue il nuovo allineamento in arrivo dalle versioni precedenti.
-
-La sincronizzazione live richiede iOS/iPadOS 26 o successivo su Hero. Sui sistemi precedenti è disponibile solo l’invio manuale del personaggio, senza sincronizzazione automatica neppure fuori dal combattimento.
+Solo il Master controlla la Live per ciascun dispositivo. La Live autorizzata riprende quando Hero si ricollega. Per abbinamento, aggiornamento della scheda e chat, consulta [Collegamento con Hero: guida per il Master](hero-sync.md).
 
 ## A cosa serve un’avventura
 

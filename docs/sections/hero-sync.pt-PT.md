@@ -3,62 +3,26 @@
 Receba as fichas dos jogadores na aventura e gira os valores de jogo a partir do Mac. A ligação é local, sem servidor externo. Consulte também o [guia do jogador Hero](../companion/dndino-sync.md).
 
 !!! info "Disponibilidade"
-    Esta página descreve também a nova comparação de dados, preparada para a próxima atualização. Exige versões do **DnDino e do DnDino Hero que a suportem**. As versões anteriores podem ter opções e comportamento inicial diferentes.
+    Atualiza as duas apps para versões compatíveis com a nova ligação. O envio de fichas, o chat e a sincronização em direto estão disponíveis a partir do **iOS/iPadOS 17**. Se um dispositivo só estava emparelhado no sistema anterior, volta a emparelhá-lo uma vez, sem código. Os emparelhamentos do novo sistema mantêm-se após a atualização.
 
-## Preparação
+## Primeiro emparelhamento
 
-Abra a aventura correta. Utilizem a mesma rede local, autorizem o acesso à rede local e mantenham Wi-Fi e Bluetooth ativos, com os dispositivos próximos. Cada jogador deve selecionar a personagem correta no Hero.
+1. Abre a aventura no DnDino. Abre **Hero** na barra inferior e ativa a ligação. Não é necessário iniciar uma sessão em direto.
+2. Pede ao jogador para selecionar a ficha certa no Hero e ligar-se à mesma rede local. Permite o acesso à rede quando for pedido.
+3. O jogador abre **Definições → Ligação a DnDino**, ativa a ligação, procura o DnDino e escolhe o teu Mac pelo nome.
+4. Autoriza o pedido no painel **Hero**. Verifica o dispositivo, escolhe a aventura e uma personagem de jogador existente, ou importa uma nova. O histórico da personagem existente é preservado.
+5. Ativa a sincronização em direto ao emparelhar ou mais tarde no painel. Na primeira ativação, o DnDino pede automaticamente a ficha ao Hero.
 
-A sincronização em direto exige **iOS/iPadOS 26 ou posterior** no Hero. Nos sistemas anteriores está disponível **apenas o envio manual da ficha**, mesmo fora do combate. **Ligado não significa sincronizado.**
+## Ficha, sincronização em direto e chat
 
-## Primeira ligação
+- O botão para pedir a ficha, ao lado do chat, importa a ficha completa mesmo com a sincronização em direto desligada. Atualiza a personagem num combate em curso sem o reiniciar. O jogador também pode enviar a ficha pelo Hero.
+- Só o mestre controla a sincronização em direto de cada dispositivo. A atualização de PV, PV temporários, CA, condições, inspiração heroica, recursos de classe e espaços de magia funciona dentro e fora do combate. As progressões fixas são apenas para consulta.
+- O chat é privado. Se chegar uma mensagem com a janela fechada, a barra inferior mostra um atalho com um indicador de não lidas. Clica para abrir; o indicador desaparece após a leitura.
 
-1. No painel **Sessão live** do painel da aventura, inicie a ligação na área **DnDino Hero**. Não precisa de iniciar uma sessão de jogo.
-2. O jogador abre **Definições → Ligação DnDino**, procura o DnDino e escolhe a aventura.
-3. Autorize o dispositivo depois de verificar o nome e a personagem.
-4. Importe uma nova ficha ou associe uma existente. Verifique a confirmação de substituição para não substituir a ficha errada.
-5. Ative a **Sincronização automática** para esse dispositivo. **Só o mestre controla a ativação**; o Hero apresenta o estado, sem um segundo interruptor a ativar.
+## Desligar e revogar o acesso
 
-A associação utiliza identificadores, não apenas nomes. Mudar o nome da personagem não exige outra cópia.
+O painel mostra primeiro os dispositivos online. Se um dispositivo estiver desligado mas autorizado, a sincronização em direto é retomada quando voltar. Podes continuar a gerir a personagem no Mac. Ao voltar a ligar, os envios pendentes são retomados sem reimportar a ficha ou abrir uma comparação geral.
 
-## Que dados conservar?
+No menu do dispositivo podes testar a ligação, desligar ou revogar o acesso. A revogação remove o emparelhamento e os envios pendentes, mas não elimina a ficha importada. É necessário um novo pedido para voltar a emparelhar.
 
-**O Hero fornece a estrutura da ficha:** níveis, características, descrições, feitiços e configuração das progressões são responsabilidade do jogador.
-
-Com as novas versões, o Hero envia a ficha completa ao ligar ou voltar a ligar, antes das trocas em direto. Reativar a sincronização também exige alinhamento. Se os valores coincidirem, não surge comparação.
-
-Caso sejam diferentes, a janela compara **PV atuais, máximos e temporários, CA, inspiração heroica, condições, recursos restantes e espaços de feitiço utilizados**. Escolha o valor DnDino ou Hero para cada diferença. **O Hero está pré-selecionado**. As ações globais escolhem todos os valores de uma das aplicações; confirme e aguarde o resultado.
-
-Exemplo: conserve os 18 PV do DnDino em vez dos 24 do Hero, mas escolha as condições do Hero. As condições são escolhidas **como conjunto completo**, nunca unidas automaticamente.
-
-Os máximos e a configuração dos recursos continuam a vir do Hero. As combinações incompatíveis são assinaladas. Só esse dispositivo fica em espera; os outros jogadores continuam. Se os dados mudarem, reveja a comparação atualizada. Tentar novamente pede dados novos. Fechar a janela ou interromper a ligação desliga o dispositivo. **Confirmar não ativa a sincronização em direto por si só.**
-
-## Durante o jogo
-
-O modo em direto troca valores suportados: PV atuais/máximos/temporários, CA, inspiração e condições. No combate é considerado o participante associado.
-
-| Informação | Utilização |
-| --- | --- |
-| Progressões consumíveis | Restantes/Total; menos para gastar, mais para repor |
-| Progressões fixas do nível atual | Cartões de consulta, sem botões de consumo |
-| Espaços de feitiço | Totais e utilizados, separados por origem quando necessário |
-
-Os contadores também são guardados no DnDino. O Hero confirma os comandos suportados do mestre. Se houver alterações simultâneas, confira o resultado antes de tentar novamente; não assuma que um clique sem confirmação foi aplicado. Novos níveis e configurações exigem uma **ficha completa**, não apenas contadores.
-
-## Transferir ficha, conversar e barra inferior
-
-O botão de transferência à direita do chat pede a ficha já associada sem outro envio manual do jogador. Exige Hero compatível, ligado e autorizado; está indisponível durante o alinhamento e não ativa o modo em direto.
-
-A área Hero da barra inferior conserva os dispositivos ligados durante a abertura atual do DnDino, mesmo após perderem a ligação. Permite verificar identidade e estado, testar a ligação, abrir o chat, gerir a sincronização e desligar. O teste não importa dados. O **chat privado exige sincronização em direto ativa**; as mensagens não lidas são assinaladas na barra.
-
-## Voltar a ligar e resolver problemas
-
-Por predefinição, o mestre reativa a sincronização a cada nova ligação. Pode escolher o arranque automático para dispositivos autorizados nas definições; o novo alinhamento continua a ser necessário.
-
-- **Mac não encontrado:** verifique aventura à escuta, rede partilhada, permissões de Rede local e aplicações abertas.
-- **Ligado sem atualizar:** verifique autorização, associação, iOS/iPadOS 26+, alinhamento concluído e ativação pelo mestre.
-- **Ligação perdida:** mantenha o Hero em primeiro plano. Ao regressar pode voltar a ligar; o botão de religação também permite tentar.
-- Desligar termina a ligação atual sem eliminar a ficha importada.
-- Remover a associação revoga autorização e associações nesta aventura; esquecer o dispositivo abrange todas as aventuras. As fichas importadas são conservadas.
-
-Antes da sessão, teste uma pequena alteração de PV com cada jogador e verifique nas duas aplicações.
+Se o Mac não aparecer, verifica se o DnDino está a aceitar pedidos, se os dois dispositivos estão na mesma rede e se o Hero tem permissão de **Rede local**.

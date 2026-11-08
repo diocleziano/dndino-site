@@ -29,7 +29,7 @@ You can manage the apps' iCloud access through Apple's settings. The developer d
 
 You can use Hero without connecting it to DnDino. If you enable a session connection, the apps use Apple's local networking technologies to discover and connect devices. They may exchange the device name, technical identifiers and session information for this purpose.
 
-Depending on the features you use and the sharing permissions enabled, connected devices may exchange character sheets and updates, images, dice results and messages between player and Game Master. Updates may continue automatically while live synchronization is active. The connection uses the encryption provided by Apple's Multipeer Connectivity sessions, without a session server operated by the developer.
+Depending on the features you use and the sharing permissions enabled, connected devices may exchange character sheets and updates, images, dice results and messages between player and Game Master. Updates may continue automatically while live synchronization is active. The new connection encrypts data in transit with TLS and does not use a session server operated by the developer.
 
 You can disconnect, disable live synchronization or revoke local network access in system settings. These actions stop subsequent exchanges but do not delete copies already received by other participants.
 
