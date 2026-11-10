@@ -22,9 +22,9 @@ Dieses Handbuch begleitet dich durch die wichtigsten Funktionen der App, von den
 !!! note
     Das Handbuch ist nach Funktionsbereichen gegliedert. Wenn du gerade erst anfängst, starte am besten mit **Erste Schritte** und gehe dann zu **Helden, NSC und Monster**, **Orte** und **Kampf** weiter.
 
-## DnDino 1.5.0 Handbuch
+## DnDino 2.0.0 Handbuch {#guide-2-0}
 
-Diese Überarbeitung beschreibt Neuerungen seit 1.4.3: [SRD-Kataloge und Duplikate](sections/official-content.md), [örtliche RK/TP](sections/places.md), [Kampf](sections/combat.md), [bearbeitbare Sitzungen](sections/live-session.md) und [Schnellwerkzeuge](sections/topbar.md). Einige Funktionen erfordern die neue App-Version; dieses Handbuch-Update ändert die installierte Version nicht.
+Entdecke das neue [Spielleiterpult](sections/homepage.md), die [Live-Sitzung](sections/live-session.md#live-session-bottom-bar) in der unteren Leiste, Neuerungen für [Kämpfe](sections/combat.md#combat-participant-editor) und [Anwesenheiten](sections/places.md#local-creature-status) sowie die [Hero-Verbindung](sections/hero-sync.md). Die Screenshots stammen aus DnDino für Mac und zeigen Beispieldaten. Neue Funktionen erfordern eine kompatible App-Version.
 
 ## Was du mit DnDino tun kannst
 

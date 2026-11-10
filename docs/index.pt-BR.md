@@ -22,9 +22,9 @@ Este guia acompanha você pelas principais funções do aplicativo, desde as ope
 !!! note
     O guia está organizado por áreas funcionais. Se você está começando agora, vale a pena começar por **Primeiros passos** e depois seguir para **Heróis, NPCs e Monstros**, **Lugares** e **Combate**.
 
-## Guia DnDino 1.5.0
+## Guia DnDino 2.0.0 {#guide-2-0}
 
-Esta revisão documenta novidades desde a 1.4.3: [catálogos SRD e duplicatas](sections/official-content.md), [CA/PV locais](sections/places.md), [combate](sections/combat.md), [sessões editáveis](sections/live-session.md) e [ferramentas rápidas](sections/topbar.md). Algumas funções exigem a nova versão do app; atualizar o guia não altera a versão instalada.
+Conheça a nova [Mesa do Mestre](sections/homepage.md), a [sessão ao vivo](sections/live-session.md#live-session-bottom-bar) na barra inferior, as novidades de [combate](sections/combat.md#combat-participant-editor) e [presenças](sections/places.md#local-creature-status) e a [conexão com o Hero](sections/hero-sync.md). As capturas são do DnDino para Mac com dados de demonstração. As novidades exigem uma versão compatível do app.
 
 ## O que você pode fazer com o DnDino
 

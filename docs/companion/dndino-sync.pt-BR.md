@@ -19,6 +19,8 @@ Use o DnDino Hero no iPhone ou iPad para enviar sua ficha ao mestre e compartilh
 - Só o mestre ativa a sincronização ao vivo; o Hero mostra o estado. PV, PV temporários, CA, condições, inspiração heroica, recursos e espaços de magia também são atualizados em combate. O Hero mostra avisos de início e fim do combate e dos descansos iniciados pelo mestre.
 - Abra **Chat** no painel de conexão para escrever ao mestre em privado.
 
+Se você preencheu o **nome de jogador** no Hero, ele é enviado na conexão e pode atualizar o PJ vinculado no DnDino mesmo sem sincronização. Deixe o campo em branco para manter o nome salvo no Mac.
+
 ## Se a conexão cair
 
 Ao voltar ao app, o Hero pode se reconectar sem nova aprovação, desde que o acesso não tenha sido revogado. Se estava autorizada, a sincronização ao vivo é retomada e os envios pendentes são entregues sem duplicados. Ao reconectar, a ficha completa não é enviada novamente. Se os dois lados mudarem o mesmo valor offline, a alteração desatualizada pode ser recusada; o Hero adota o valor aceito pelo mestre.

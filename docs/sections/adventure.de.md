@@ -165,19 +165,9 @@ Von hier aus kannst du auch **Bearbeiten** öffnen, um zum Abenteuerformular zur
 
 ## Live-Sitzung
 
-Die **Live-Sitzung** liegt nicht mehr in einem festen Dashboard-Panel: sie wird in der Mitte der Topbar gestartet und gesteuert, wenn du dich in einer Abenteuerseite befindest.
+Öffne auf einer Abenteuerseite **Live-Sitzung** in der **unteren Leiste**, links neben Hero. Klicke auf **Starten** und bestätige, um eine Sitzung für das aktuelle Abenteuer zu beginnen.
 
-Die zentrale Steuerung dient dazu:
-
-- eine neue Live-Sitzung für das Abenteuer zu starten
-- zu sehen, ob eine Sitzung läuft oder pausiert ist
-- die verstrichene Zeit zu überwachen
-- die Sitzung zu pausieren
-- sie zu beenden und zu speichern
-
-Wenn die Live-Sitzung des Abenteuers aktiv ist, bleibt die Steuerung auch in Orten und Kämpfen verfügbar, damit du nicht zum Dashboard zurückkehren musst.
-
-Falls bereits in einem anderen Abenteuer eine Live-Sitzung offen ist, macht die Topbar das klar sichtbar und erlaubt kein paralleles Starten einer zweiten Sitzung.
+Eine offene Sitzung bleibt auch außerhalb des Abenteuers erreichbar. Du kannst nicht gleichzeitig eine zweite starten. [Anleitung zur Live-Sitzung](live-session.md#live-session-bottom-bar).
 
 ## Die Panels des Dashboards
 
@@ -242,6 +232,10 @@ Hier kannst du:
 - ihren kampagnenspezifischen Zustand öffnen
 
 Dieser Bereich ersetzt nicht den Basis-Charakterbogen, sondern zeigt die kampagnenspezifische Ebene mit Status, HP und Zuständen im jeweiligen Kontext.
+
+#### Gesundheit und Anwesenheit der Figuren {#character-health-attendance}
+
+In der Übersicht sind **Lebendig**, **Bewusstlos** und **Tot** schreibgeschützte Gesundheitszustände. **Anwesend/Abwesend** ist eine separate Auswahl und ändert weder TP noch Zustände. Bei der Kampfvorbereitung lässt **Alle hinzufügen** abwesende Figuren aus; einzeln kannst du sie weiterhin hinzufügen. Das grüne **Live**-Kennzeichen bedeutet aktive Synchronisierung und nicht nur eine Verbindung zu Hero.
 
 Der Unterschied zwischen:
 

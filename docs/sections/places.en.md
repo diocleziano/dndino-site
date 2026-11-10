@@ -16,9 +16,13 @@ It is one of the richest sections of the app, because it brings together:
 
 Assigning an **NPC or monster** initially copies AC and maximum HP from the base sheet; those values then belong to that presence. Edit them during assignment or in the place-character editor without changing other copies or the base sheet. Older presences without these values keep their base-sheet fallback. **Adventure characters** retain their shared state.
 
-**Manage presences**, beside the summary, opens a list grouped by base sheet. Each row edits name, AC, maximum, current and temporary HP, role and status. **Apply to group** sets AC and maximum HP across that group. Saving without changing those fields does not flatten existing differences.
+**Manage presences**, beside the summary, opens a list grouped by base sheet. Each row edits name, AC, maximum, current and temporary HP and role. **Apply to group** sets AC and maximum HP across that group. Saving without changing those fields does not flatten existing differences.
 
-Lowering the maximum caps current HP above the limit; raising it does not heal automatically. **Set HP to maximum** fills each presence to its own maximum without changing temporary HP, conditions or status. Confirm with **Save**.
+Lowering the maximum caps current HP above the limit; raising it does not heal automatically. **Set HP to maximum** fills each presence to its own maximum without changing temporary HP or conditions. Confirm with **Save**.
+
+### Local NPC and monster status {#local-creature-status}
+
+For NPCs and monsters linked to a base sheet, local status is read-only: **Dead** at 0 current HP, even with temporary HP, and **Alive** above 0. Linked player characters still use their adventure values.
 
 ### View, duplicate and move
 

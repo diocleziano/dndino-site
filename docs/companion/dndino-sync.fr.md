@@ -19,6 +19,8 @@ DnDino Hero sur iPhone ou iPad permet d'envoyer votre fiche au MJ et de partager
 - Seul le MJ active la synchro en direct ; Hero indique son état. Les PV, les PV temporaires, la CA, les états, l’inspiration héroïque, les ressources et les emplacements sont synchronisés même en combat. Hero affiche les alertes de début et fin de combat et les repos lancés par le MJ.
 - Ouvre **Chat** dans le panneau de connexion pour écrire au MJ en privé.
 
+Si tu as renseigné un **nom de joueur** dans Hero, il est envoyé à la connexion et peut mettre à jour le PJ associé dans DnDino même sans synchronisation. Laisse le champ vide pour conserver le nom enregistré sur le Mac.
+
 ## Si la connexion est interrompue
 
 Au retour dans l’app, Hero peut se reconnecter sans nouvelle autorisation tant que l’accès n’a pas été révoqué. Si elle était autorisée, la synchro en direct reprend et les envois en attente arrivent sans doublons. La fiche complète n’est pas renvoyée à la reconnexion. Si la même valeur a changé des deux côtés hors ligne, une modification périmée peut être refusée ; Hero reprend la valeur acceptée par le MJ.

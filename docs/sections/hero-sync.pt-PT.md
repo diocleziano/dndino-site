@@ -19,6 +19,8 @@ Receba as fichas dos jogadores na aventura e gira os valores de jogo a partir do
 - Só o mestre controla a sincronização em direto de cada dispositivo. A atualização de PV, PV temporários, CA, condições, inspiração heroica, recursos de classe e espaços de magia funciona dentro e fora do combate. As progressões fixas são apenas para consulta.
 - O chat é privado. Se chegar uma mensagem com a janela fechada, a barra inferior mostra um atalho com um indicador de não lidas. Clica para abrir; o indicador desaparece após a leitura.
 
+O painel **Hero** abre mesmo com a ligação desativada. Se o Hero enviar um **nome de jogador**, o DnDino atribui-o ao PJ associado ao ligar, mesmo sem sincronização em direto. Um nome vazio ou em falta não substitui o guardado.
+
 ## Desligar e revogar o acesso
 
 O painel mostra primeiro os dispositivos online. Se um dispositivo estiver desligado mas autorizado, a sincronização em direto é retomada quando voltar. Podes continuar a gerir a personagem no Mac. Ao voltar a ligar, os envios pendentes são retomados sem reimportar a ficha ou abrir uma comparação geral.

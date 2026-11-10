@@ -90,23 +90,11 @@ Puoi impostare un nome, scegliere la durata in stile macOS e avviare fino a quat
 
 Da qui gestisci lingua, tema, topbar, comportamento dei pannelli, combattimento, Finestra Giocatori, database, diagnostica e supporto.
 
-## Sessione Live al centro
+## Sessione live nella barra inferiore {#live-session-control}
 
-Nelle pagine di un'avventura, al centro della topbar compare il controllo della **Sessione Live**.
+Nelle pagine di un’avventura, apri **Sessione live** nella **barra inferiore**, a sinistra di Hero. Premi **Avvia** e conferma per iniziare una sessione dell’avventura corrente.
 
-Se non c'è una sessione attiva, il controllo permette di avviarne una per l'avventura corrente. Prima dell'avvio DnDino chiede conferma, così non rischi di aprire una sessione per errore.
-
-Se una sessione live è già attiva, lo stesso controllo mostra lo stato della sessione.
-
-Mostra:
-
-- titolo della sessione
-- timer
-- stato della sessione
-
-Cliccandolo si apre il pannello rapido della sessione. Da lì puoi mettere in pausa o riprendere, chiudere e salvare, aggiungere una nota DM, leggere la timeline e vedere un riepilogo live.
-
-Se apri un'altra avventura mentre una sessione live è già in uso, il controllo centrale lo segnala e indica che la sessione appartiene a un'altra avventura.
+Se una sessione è già aperta, il controllo resta disponibile anche fuori dall’avventura. Non puoi avviarne una seconda in parallelo. [Guida alla Sessione live](live-session.md#live-session-bottom-bar).
 
 ## Finestra Giocatori al centro
 
@@ -125,6 +113,10 @@ Usala soprattutto quando:
 - vuoi consultare un personaggio o un oggetto al volo
 - ti serve un tiro rapido, un timer o un nome improvvisato
 - hai una sessione live aperta e vuoi gestirla senza lasciare la sezione corrente
+
+## Riempire la finestra principale {#fill-main-window}
+
+Se in macOS l’azione del doppio clic sulla barra del titolo è **Riempi**, fai doppio clic in uno spazio vuoto della barra: la finestra principale occupa l’area visibile senza entrare a schermo intero. Ripeti per ripristinare le dimensioni precedenti.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

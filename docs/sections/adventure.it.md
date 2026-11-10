@@ -165,19 +165,9 @@ Da qui puoi anche entrare in **Modifica** per tornare al form dell’avventura e
 
 ## Sessione live
 
-La **Sessione live** non occupa più un pannello fisso della dashboard: si avvia e si controlla dal centro della topbar quando sei dentro una pagina dell'avventura.
+Nelle pagine di un’avventura, apri **Sessione live** nella **barra inferiore**, a sinistra di Hero. Premi **Avvia** e conferma per iniziare una sessione dell’avventura corrente.
 
-Il controllo centrale serve per:
-
-- avviare una nuova sessione live per l’avventura
-- vedere se una sessione è in corso oppure in pausa
-- monitorare il tempo trascorso
-- mettere in pausa la sessione
-- chiuderla e salvarla
-
-Quando la sessione live dell’avventura è attiva, il controllo resta disponibile anche in luoghi e combattimenti, così puoi gestirla senza tornare alla dashboard.
-
-Se esiste già una sessione live aperta in un’altra avventura, la topbar lo segnala chiaramente e non ti lascia avviarne una seconda in parallelo.
+Se una sessione è già aperta, il controllo resta disponibile anche fuori dall’avventura. Non puoi avviarne una seconda in parallelo. [Guida alla Sessione live](live-session.md#live-session-bottom-bar).
 
 ## I pannelli della dashboard
 
@@ -242,6 +232,10 @@ Qui puoi:
 - aprire il loro stato contestuale di campagna
 
 Questa sezione non sostituisce la scheda base del personaggio: mostra il livello di collegamento specifico all’avventura, con stato, PF e condizioni contestuali.
+
+#### Salute e presenza dei personaggi {#character-health-attendance}
+
+Nella dashboard, **Vivo**, **Incosciente** o **Morto** descrive la salute e non si modifica direttamente. Il selettore **Presente/Assente** è separato: non altera PF o condizioni. In preparazione del combattimento, **Aggiungi tutti** salta gli assenti; puoi comunque aggiungerli singolarmente. Il badge verde **Live** indica la sincronizzazione attiva, non il solo collegamento a Hero.
 
 La differenza tra:
 
@@ -406,6 +400,6 @@ La sezione Avventura è il punto giusto quando vuoi:
 - definire copertina, stato e descrizione dell’avventura
 - riprendere il lavoro da una campagna esistente
 - entrare nella dashboard principale
-- avviare una sessione live dalla topbar centrale
+- avviare una sessione live dalla barra inferiore
 - raggiungere velocemente luoghi, personaggi, sessioni, immagini e mappe della campagna
 - consultare statistiche e grafici sui combattimenti completati

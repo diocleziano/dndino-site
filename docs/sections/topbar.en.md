@@ -88,23 +88,11 @@ You can set a name, choose the duration with a macOS-style control, and run up t
 
 This is where you manage language, theme, top bar, panel behavior, combat, Player Window, database, diagnostics, and support.
 
-## Live Session in the Center
+## Live Session in the bottom bar {#live-session-control}
 
-Inside adventure pages, the center of the top bar shows the **Live Session** control.
+On an adventure page, open **Live Session** in the **bottom bar**, to the left of Hero. Click **Start** and confirm to begin a session for the current adventure.
 
-If no live session is active, the control lets you start one for the current adventure. DnDino asks for confirmation first, so you do not start a session by accident.
-
-If a live session is already active, the same control shows its current state.
-
-It shows:
-
-- session title
-- timer
-- session status
-
-Clicking it opens the quick session panel. From there you can pause or resume, close and save, add a DM note, read the timeline, and check a compact live summary.
-
-If you open another adventure while a live session is already running, the central control tells you that the session is currently in use by another adventure.
+If a session is already open, the control stays available even outside the adventure. You cannot start a second one in parallel. [Live Session guide](live-session.md#live-session-bottom-bar).
 
 ## Player Window in the Center
 
@@ -121,6 +109,10 @@ Use the top bar when you want to:
 - consult a character or item on the fly
 - make a quick roll, start a timer, or generate an improvised name
 - manage a live session from the current section
+
+## Fill the main window {#fill-main-window}
+
+If the macOS title-bar double-click action is **Fill**, double-click an empty part of the title bar. The main window fills the visible area without going full screen. Double-click again to restore the previous size.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

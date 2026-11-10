@@ -33,7 +33,7 @@ It is used to:
 
 ## Where It Starts
 
-The live session starts from the control in the center of the **top bar** while you are inside an adventure page, such as the dashboard, places, or combat.
+On an adventure page, open **Live Session** in the **bottom bar**, to the left of Hero. Click **Start** and confirm to begin a session for the current adventure.
 
 If no session is active, the control shows the start action. When you press it, DnDino asks for confirmation and then creates a new live session for the current adventure.
 
@@ -52,7 +52,7 @@ If a session is already open in another adventure:
 
 When a live session is running:
 
-- the top bar shows its status
+- the bottom bar shows its status
 - the timer keeps updating
 - places follow this context
 - the timeline starts collecting events
@@ -74,7 +74,7 @@ This is the normal state while the session is running. The timer keeps moving an
 
 ### Paused
 
-The session can be paused from the top bar.
+You can pause the session from the quick panel in the bottom bar.
 
 When paused:
 
@@ -92,31 +92,13 @@ This makes it possible to:
 - understand that an interruption happened
 - resume work manually
 
-## Live Session Control in the Top Bar
+## Live Session in the bottom bar {#live-session-bottom-bar}
 
-Inside adventure pages, the top bar shows the live session control in the center.
+The bottom bar shows a green indicator while recording and a steady yellow indicator when paused or interrupted, along with the timer. Click the control to see which adventure the session belongs to, pause, resume, or close and save.
 
-If the session belongs to the currently open adventure, the control shows:
+If a session is already open, the control stays available even outside the adventure. You cannot start a second one in parallel.
 
-- session title
-- real-time timer
-- state (`Running` or `Paused`)
-
-If there is no active live session:
-
-- the command to start the current adventure's live session appears
-
-If a session is active but belongs to another adventure:
-
-- the control shows that the live session is currently in use elsewhere
-
-## Live Session in the Top Bar
-
-When a live session is active, the app top bar shows a dedicated indicator.
-
-For the full description of the top bar, see the `Top Bar` page.
-
-![Active live session in the top bar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+![Live indicator and timer to the left of Hero in the bottom bar](../images/homepage/live-session-bottom-bar-2-0.jpg){ .img-shot }
 
 ## The Live Session Quick Panel
 

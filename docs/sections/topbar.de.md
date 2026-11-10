@@ -84,23 +84,11 @@ Du kannst einen Namen vergeben, die Dauer mit einer macOS-ähnlichen Steuerung f
 
 `Einstellungen` öffnet die App-Einstellungen für Sprache, Design, Topbar, Bedienverhalten, Kampf, Spielerfenster, Datenbank, Diagnose und Support.
 
-## Live-Sitzung in der Mitte
+## Live-Sitzung in der unteren Leiste {#live-session-control}
 
-Innerhalb der Abenteuerseiten erscheint die Steuerung der **Live-Sitzung** in der Mitte der Topbar.
+Öffne auf einer Abenteuerseite **Live-Sitzung** in der **unteren Leiste**, links neben Hero. Klicke auf **Starten** und bestätige, um eine Sitzung für das aktuelle Abenteuer zu beginnen.
 
-Wenn keine Live-Sitzung aktiv ist, kannst du dort eine Sitzung für das aktuelle Abenteuer starten. DnDino fragt vorher nach Bestätigung, damit du nicht versehentlich eine Sitzung öffnest.
-
-Wenn bereits eine Live-Sitzung aktiv ist, zeigt dieselbe Steuerung ihren aktuellen Zustand.
-
-Sie zeigt:
-
-- Sitzungstitel
-- Timer
-- Sitzungsstatus
-
-Ein Klick öffnet das Schnellfenster für Pause oder Fortsetzen, Schließen und Speichern, SL-Notiz, Timeline und kompakte Live-Übersicht.
-
-Wenn du ein anderes Abenteuer öffnest, während bereits eine Live-Sitzung läuft, zeigt die zentrale Steuerung an, dass sie von einem anderen Abenteuer verwendet wird.
+Eine offene Sitzung bleibt auch außerhalb des Abenteuers erreichbar. Du kannst nicht gleichzeitig eine zweite starten. [Anleitung zur Live-Sitzung](live-session.md#live-session-bottom-bar).
 
 ## Spielerfenster in der Mitte
 
@@ -117,6 +105,10 @@ Nutze die Topbar, um:
 - Charaktere oder Ausrüstung schnell zu öffnen
 - schnell zu würfeln, einen Timer zu starten oder einen Namen zu erzeugen
 - eine Live-Sitzung aus dem aktuellen Bereich zu steuern
+
+## Hauptfenster füllen {#fill-main-window}
+
+Ist in macOS **Füllen** als Doppelklickaktion der Titelleiste eingestellt, füllt ein Doppelklick auf eine freie Stelle der Leiste den sichtbaren Bereich, ohne in den Vollbildmodus zu wechseln. Ein weiterer Doppelklick stellt die vorige Größe wieder her.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

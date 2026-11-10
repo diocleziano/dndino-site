@@ -19,6 +19,8 @@ Recevez les fiches des joueurs dans votre aventure et gérez les valeurs de jeu 
 - Seul le MJ contrôle la synchro en direct par appareil. Elle met à jour les PV, les PV temporaires, la CA, les états, l’inspiration héroïque, les ressources de classe et les emplacements de sorts, même en combat. Les progressions fixes restent consultables.
 - Le chat est privé. Si un message arrive lorsque le chat est fermé, la barre inférieure affiche un raccourci avec un badge. Un clic ouvre le chat ; la lecture efface le badge.
 
+Le panneau **Hero** s’ouvre même si la liaison est désactivée. Si Hero transmet un **nom de joueur**, DnDino l’attribue au PJ associé lors de la connexion, même sans synchronisation en direct. Un nom vide ou absent ne remplace pas celui qui est enregistré.
+
 ## Déconnexion et révocation
 
 Le panneau affiche d’abord les appareils en ligne. Un appareil déconnecté avec une synchro autorisée la reprend à son retour. Tu peux continuer à gérer le PJ sur le Mac. À la reconnexion, les envois en attente reprennent sans réimporter la fiche ni ouvrir de comparaison générale.

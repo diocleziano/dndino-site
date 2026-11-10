@@ -33,7 +33,7 @@ Sirve para:
 
 ## Dónde se inicia
 
-La sesión en vivo se inicia desde el control situado en el centro de la **barra superior** cuando estás dentro de una página de la aventura, como el panel principal, lugares o combate.
+En una página de la aventura, abre **Sesión en vivo** en la **barra inferior**, a la izquierda de Hero. Pulsa **Iniciar** y confirma para empezar una sesión de la aventura actual.
 
 Si no existe una sesión activa, el control muestra la acción de inicio. Al pulsarla, DnDino pide confirmación y crea una nueva sesión en vivo para la aventura actual.
 
@@ -52,7 +52,7 @@ Si ya hay una sesión abierta en otra aventura:
 
 Cuando una sesión en vivo está en marcha:
 
-- la barra superior muestra su estado
+- la barra inferior muestra su estado
 - el temporizador sigue actualizándose
 - los lugares siguen ese contexto
 - la línea temporal empieza a recoger eventos
@@ -74,7 +74,7 @@ Es el estado normal mientras la sesión está en marcha. El temporizador sigue c
 
 ### En pausa
 
-La sesión puede ponerse en pausa desde la barra superior.
+Puedes pausar la sesión desde el panel rápido de la barra inferior.
 
 Cuando está en pausa:
 
@@ -92,30 +92,13 @@ Esto permite:
 - entender que se produjo una interrupción
 - reanudar el trabajo manualmente
 
-## Control de Sesión en vivo en la barra superior
+## Sesión en directo en la barra inferior {#live-session-bottom-bar}
 
-Dentro de las páginas de la aventura, la barra superior muestra el control de sesión en vivo en el centro.
+La barra inferior muestra un indicador verde durante la grabación y amarillo fijo si la sesión está en pausa o interrumpida, junto con el temporizador. Pulsa el control para ver la aventura asociada, pausar, reanudar o cerrar y guardar.
 
-Si la sesión pertenece a la aventura abierta, el control muestra:
+Si hay una sesión abierta, el control sigue disponible fuera de la aventura. No se puede iniciar una segunda sesión a la vez.
 
-- título de la sesión
-- temporizador en tiempo real
-- estado (`En curso` o `En pausa`)
-Si no hay una sesión en vivo activa:
-
-- aparece el comando para iniciar la sesión en vivo de la aventura actual
-
-Si hay una sesión activa pero pertenece a otra aventura:
-
-- el control muestra que la sesión en vivo está ocupada en otra parte
-
-## La sesión en vivo en la barra superior
-
-Cuando una sesión en vivo está activa, la barra superior de la aplicación muestra un indicador específico.
-
-Para la descripción completa de la barra superior, consulta la página `Barra superior`.
-
-![Sesión en vivo activa en la barra superior](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+![Indicador de sesión en directo y temporizador a la izquierda de Hero en la barra inferior](../images/homepage/live-session-bottom-bar-2-0.jpg){ .img-shot }
 
 ## El panel rápido de la sesión en vivo
 

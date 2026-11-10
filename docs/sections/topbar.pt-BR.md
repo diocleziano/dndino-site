@@ -84,23 +84,11 @@ Você pode dar um nome ao temporizador, escolher a duração com um controle no 
 
 `Configurações` abre as preferências do aplicativo: idioma, tema, topbar, painéis, combate, Janela dos Jogadores, banco de dados, diagnóstico e suporte.
 
-## Sessão Live no Centro
+## Sessão ao vivo na barra inferior {#live-session-control}
 
-Dentro das páginas de uma aventura, a topbar mostra no centro o controle da **Sessão ao vivo**.
+Em uma página da aventura, abra **Sessão ao vivo** na **barra inferior**, à esquerda do Hero. Clique em **Iniciar** e confirme para começar uma sessão da aventura atual.
 
-Se não houver uma sessão ao vivo ativa, esse controle permite iniciar uma para a aventura atual. O DnDino pede confirmação antes, para evitar iniciar uma sessão por engano.
-
-Se já houver uma sessão ao vivo ativa, o mesmo controle mostra o estado atual.
-
-Mostra:
-
-- título da sessão
-- temporizador
-- estado
-
-Ao clicar, abre o painel rápido: pausa ou retomada, fechar e salvar, nota do Mestre, timeline e resumo live compacto.
-
-Se você abrir outra aventura enquanto uma sessão ao vivo já está em andamento, o controle central indica que ela está sendo usada por outra aventura.
+Se uma sessão já estiver aberta, o controle continua disponível fora da aventura. Não é possível iniciar uma segunda em paralelo. [Guia da sessão ao vivo](live-session.md#live-session-bottom-bar).
 
 ## Janela dos Jogadores no Centro
 
@@ -117,6 +105,10 @@ Use a topbar para:
 - consultar um personagem ou item rapidamente
 - fazer uma rolagem rápida, iniciar um temporizador ou gerar um nome improvisado
 - gerenciar uma sessão live a partir da seção atual
+
+## Preencher a janela principal {#fill-main-window}
+
+Se a ação de clique duplo na barra de título do macOS estiver em **Preencher**, clique duas vezes em uma área vazia da barra. A janela ocupa a área visível sem entrar em tela cheia. Repita para restaurar o tamanho anterior.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

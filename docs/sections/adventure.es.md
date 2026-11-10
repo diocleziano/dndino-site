@@ -165,19 +165,9 @@ Desde aquí también puedes entrar en **Editar** para volver al formulario de la
 
 ## Sesión en vivo
 
-La **Sesión en vivo** ya no ocupa un panel fijo del dashboard: se inicia y se controla desde el centro de la barra superior cuando estás dentro de una página de la aventura.
+En una página de la aventura, abre **Sesión en vivo** en la **barra inferior**, a la izquierda de Hero. Pulsa **Iniciar** y confirma para empezar una sesión de la aventura actual.
 
-El control central sirve para:
-
-- iniciar una nueva sesión en vivo para la aventura
-- ver si una sesión está en curso o en pausa
-- controlar el tiempo transcurrido
-- pausar la sesión
-- cerrarla y guardarla
-
-Cuando la sesión en vivo de la aventura está activa, el control sigue disponible también en lugares y combates, para gestionarla sin volver al dashboard.
-
-Si ya existe una sesión en vivo abierta en otra aventura, la barra superior lo señala claramente y no te permite iniciar una segunda en paralelo.
+Si hay una sesión abierta, el control sigue disponible fuera de la aventura. No se puede iniciar una segunda sesión a la vez. [Guía de la sesión en directo](live-session.md#live-session-bottom-bar).
 
 ## Los paneles del dashboard
 
@@ -242,6 +232,10 @@ Aquí puedes:
 - abrir su estado contextual de campaña
 
 Esta sección no sustituye la ficha base del personaje: muestra la capa específica de la campaña, con estado, PG y condiciones contextuales.
+
+#### Salud y asistencia de los personajes {#character-health-attendance}
+
+En el panel, **Vivo**, **Inconsciente** y **Muerto** describen la salud y son de solo lectura. **Presente/Ausente** es una selección separada que no cambia los PG ni las condiciones. Al preparar un combate, **Añadir todos** omite a los ausentes, aunque puedes añadirlos de uno en uno. La insignia verde **Live** indica sincronización activa, no solo conexión con Hero.
 
 La diferencia entre:
 

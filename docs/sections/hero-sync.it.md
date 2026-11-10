@@ -21,6 +21,8 @@ Per le istruzioni sul telefono o tablet, consulta la [guida per chi usa Hero](..
 - Solo il Master decide quali dispositivi usano la Live. Con la Live attiva si aggiornano PF, PF temporanei, CA, condizioni, ispirazione eroica, residui di classe e slot incantesimo, dentro e fuori dal combattimento. Le progressioni fisse si consultano senza contatori.
 - La chat è privata. Quando arriva un messaggio a chat chiusa, la barra inferiore mostra una scorciatoia con badge. La finestra si apre solo al clic e il badge si azzera quando leggi.
 
+Il pannello **Hero** si apre anche con il collegamento spento. Se Hero invia un **Nome giocatore**, DnDino lo assegna al PG abbinato al collegamento, anche a Live spenta. Un nome vuoto o assente non sovrascrive quello già salvato.
+
 ## Disconnessione e revoca
 
 Il pannello mostra prima i dispositivi online. **Disconnesso · Live autorizzata** indica che il dispositivo è offline, ma la Live riprenderà quando torna. Puoi continuare a gestire il PG sul Mac. Alla riconnessione riprendono gli invii in attesa, senza reimportare la scheda né mostrare un confronto generale.

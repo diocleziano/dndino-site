@@ -613,7 +613,11 @@ Ces données persistent sans connexion Hero. Elles sont en lecture seule dans le
 
 Pour les **PNJ et monstres**, les **PV maximum** sont modifiables près des PV actuels. Une présence actualise sa valeur locale ; un participant issu de la fiche générale garde la modification uniquement dans ce combat. Réduire le maximum limite les PV supérieurs ; l'augmenter ne soigne pas. Les autres copies et leurs statistiques restent intactes.
 
-Les états s'ouvrent sur l'écran de la fenêtre principale et restent devant. États et **Attaque complète** ne se minimisent pas. Une seule Attaque complète peut être ouverte ; la rappeler conserve jets, cibles et modifications. La [barre inférieure](topbar.md) permet de revenir au combat en pause.
+En combat tactique, la fenêtre **États** s’ouvre sur l’écran de la fenêtre principale mais peut passer derrière elle. Rappelle-la depuis la barre inférieure ou depuis l’action du même participant, sans ouvrir de doublon. États et **Attaque complète** ne se minimisent pas. Une seule Attaque complète peut être ouverte ; la rappeler conserve jets, cibles et modifications. La [barre inférieure](topbar.md) permet de revenir au combat en pause.
+
+### Participants, cibles et initiative {#combat-participant-editor}
+
+L’éditeur des participants comporte un onglet **Combat** pour les données de la rencontre et des onglets séparés pour la fiche de base. Le sélecteur de cibles affiche la CA et les PV dans des colonnes distinctes. Un PJ à 0 PV reste dans l’initiative s’il est inconscient ; les PJ morts sont ignorés.
 
 ## Statistiques par session
 

@@ -21,6 +21,8 @@ Il Master trova le proprie istruzioni nella [guida DnDino](../sections/hero-sync
 - Solo il Master abilita la Live; Hero ne mostra lo stato. PF, PF temporanei, CA, condizioni, ispirazione eroica, residui di classe e slot incantesimo possono aggiornarsi anche durante il combattimento. Hero mostra gli avvisi di inizio e fine combattimento e i riposi avviati dal Master.
 - Apri **Chat** nel pannello di collegamento per scrivere in privato al Master.
 
+Il **Nome giocatore** di Hero, se impostato, viene trasmesso al collegamento e può aggiornare il PG abbinato in DnDino anche senza Live. Lasciare il campo vuoto conserva il nome già salvato sul Mac.
+
 ## Quando cade la connessione
 
 Tornando nell’app, Hero può ricollegarsi senza una nuova approvazione, finché il Master non revoca l’accesso. Se la Live era autorizzata, riprende e le modifiche in coda vengono consegnate senza duplicati. Una riconnessione normale non invia da sola l’intera scheda. Se entrambi avete cambiato lo stesso valore mentre eravate offline, una modifica superata può essere respinta e Hero si riallinea al valore accettato dal Master.

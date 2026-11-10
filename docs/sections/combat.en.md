@@ -615,7 +615,11 @@ These values persist and do not require a Hero connection. They are read-only in
 
 For **NPCs and monsters**, **maximum HP** is editable beside current HP. A location presence updates its local value; a participant added from the general sheet keeps the change in that combat only. Lowering the maximum caps higher current HP; raising it does not heal. Other copies' HP and statistics are not rewritten.
 
-Conditions open on the main window's screen and stay in front. Conditions and **Full Attack** cannot be minimized. Only one Full Attack can be open at a time; recalling it preserves rolls, targets and existing edits. Use the [bottom bar](topbar.md) to return to a paused combat.
+In Tactical combat, **Conditions** opens on the main window’s display but can move behind it. Bring it forward from the bottom bar or use the same participant’s Conditions action; this does not open a duplicate. Conditions and **Full Attack** cannot be minimized. Only one Full Attack can be open at a time; recalling it preserves rolls, targets and existing edits. Use the [bottom bar](topbar.md) to return to a paused combat.
+
+### Participants, targets and initiative {#combat-participant-editor}
+
+The participant editor has a **Combat** tab for encounter values and separate tabs for the base sheet. The target picker shows AC and HP in separate columns. A player character at 0 HP remains in initiative if unconscious; dead player characters are skipped.
 
 ## Session-based statistics
 

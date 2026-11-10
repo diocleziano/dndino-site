@@ -25,9 +25,9 @@ La guida è divisa in due macrosezioni:
 
 </div>
 
-## Guida DnDino 1.5.0
+## Guida DnDino 2.0.0 {#guide-2-0}
 
-Questa revisione documenta le novità successive alla 1.4.3: [cataloghi SRD e duplicati](sections/official-content.md), [presenze con CA e PF locali](sections/places.md), [combattimento](sections/combat.md), [sessioni modificabili](sections/live-session.md) e [strumenti rapidi](sections/topbar.md). Alcune funzioni richiedono la nuova versione dell'app; questo aggiornamento della guida non cambia il numero di versione installato.
+Scopri il nuovo [Tavolo di regia](sections/homepage.md), il controllo [Sessione live](sections/live-session.md#live-session-bottom-bar) nella barra inferiore, le novità di [combattimento](sections/combat.md#combat-participant-editor) e [presenze](sections/places.md#local-creature-status) e il [collegamento Hero](sections/hero-sync.md). Le schermate sono tratte da DnDino per Mac con dati dimostrativi. Per usare le nuove funzioni occorre una versione compatibile dell’app.
 
 ## DnDino
 

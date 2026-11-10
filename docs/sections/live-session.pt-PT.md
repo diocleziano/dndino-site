@@ -33,7 +33,7 @@ Serve para:
 
 ## Onde se inicia
 
-A sessão live é iniciada a partir do controlo no centro da **topbar** quando estás dentro de uma página da aventura, como dashboard, locais ou combate.
+Numa página da aventura, abre **Sessão em direto** na **barra inferior**, à esquerda do Hero. Clica em **Iniciar** e confirma para começar uma sessão da aventura atual.
 
 Se não existir uma sessão ativa, o controlo mostra a ação de início. Ao carregares nela, o DnDino pede confirmação e cria uma nova sessão live para a aventura atual.
 
@@ -52,7 +52,7 @@ Se já existir uma sessão aberta noutra aventura:
 
 Quando uma sessão live está a decorrer:
 
-- a barra superior mostra o seu estado
+- a barra inferior mostra o seu estado
 - o temporizador continua a atualizar-se
 - os locais seguem esse contexto
 - a timeline começa a recolher acontecimentos
@@ -74,7 +74,7 @@ A sessão live pode encontrar-se em três estados:
 
 ### Em pausa
 
-A sessão pode ser colocada em pausa a partir da topbar.
+Podes colocar a sessão em pausa através do painel rápido da barra inferior.
 
 Quando está em pausa:
 
@@ -92,30 +92,13 @@ Isto permite:
 - perceber que houve uma interrupção
 - retomar o trabalho manualmente
 
-## Controlo Sessão live na topbar
+## Sessão em direto na barra inferior {#live-session-bottom-bar}
 
-Nas páginas da aventura, a topbar mostra o controlo da sessão live ao centro.
+A barra inferior mostra um indicador verde durante a gravação e amarelo fixo quando a sessão está em pausa ou interrompida, além do temporizador. Clica no controlo para ver a aventura associada, colocar em pausa, retomar ou fechar e guardar.
 
-Se a sessão pertencer à aventura aberta, o controlo mostra:
+Se houver uma sessão aberta, o controlo continua acessível fora da aventura. Não é possível iniciar uma segunda em paralelo.
 
-- título da sessão
-- temporizador em tempo real
-- estado (`Em curso` ou `Em pausa`)
-Se não existir nenhuma sessão live ativa:
-
-- aparece o comando para iniciar a sessão live da aventura atual
-
-Se existir uma sessão ativa, mas pertencer a outra aventura:
-
-- o controlo mostra que a sessão live está ocupada noutro lado
-
-## A sessão live na topbar
-
-Quando uma sessão live está ativa, a barra superior da aplicação mostra um indicador dedicado.
-
-Para a descrição completa da topbar, consulta a página `Topbar`.
-
-![Sessão live ativa na topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+![Indicador em direto e temporizador à esquerda do Hero na barra inferior](../images/homepage/live-session-bottom-bar-2-0.jpg){ .img-shot }
 
 ## O painel rápido da sessão live
 

@@ -19,6 +19,8 @@ Empfange die Charakterbögen der Spieler im Abenteuer und verwalte Spielwerte au
 - Nur die Spielleitung steuert Live pro Gerät. TP, temporäre TP, RK, Zustände, Heroische Inspiration, Klassenressourcen und Zauberplätze werden auch im Kampf synchronisiert. Feste Klassenprogressionen sind nur zur Ansicht da.
 - Der Chat ist privat. Bei einer Nachricht im geschlossenen Chat zeigt die untere Leiste eine Verknüpfung mit Hinweis auf Ungelesenes. Erst ein Klick öffnet den Chat; Lesen entfernt den Hinweis.
 
+Der **Hero**-Bereich lässt sich auch bei deaktivierter Verbindung öffnen. Übermittelt Hero einen **Spielernamen**, übernimmt DnDino ihn beim Verbindungsaufbau für die gekoppelte Figur, auch ohne Live. Ein fehlender oder leerer Name überschreibt den gespeicherten Namen nicht.
+
 ## Verbindung trennen und Zugriff widerrufen
 
 Das Panel listet Online-Geräte zuerst. Ein getrenntes Gerät mit Live-Freigabe synchronisiert automatisch weiter, sobald es zurückkehrt. Du kannst den Charakter am Mac weiter verwalten. Beim Wiederverbinden werden ausstehende Updates übertragen, ohne den Bogen erneut zu importieren oder einen allgemeinen Vergleich zu öffnen.

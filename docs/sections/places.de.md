@@ -16,9 +16,13 @@ Er gehört zu den umfangreichsten Bereichen der App, weil er Folgendes zusammenf
 
 Beim Hinzufügen eines **NSC oder Monsters** werden RK und maximale TP zunächst vom Basisbogen übernommen und gehören danach dieser Anwesenheit. Du kannst sie beim Hinzufügen oder im Ortseditor ändern, ohne andere Kopien oder die Basis zu verändern. Alte Anwesenheiten ohne diese Werte verwenden weiterhin den Basisbogen. **Abenteuercharaktere** behalten ihren gemeinsamen Zustand.
 
-Die **Anwesenheitsverwaltung** neben der Zusammenfassung gruppiert nach Basisbogen. Jede Zeile bearbeitet Name, RK, maximale, aktuelle und temporäre TP, Rolle und Status. **Auf Gruppe anwenden** setzt RK und Maximum für alle Anwesenheiten der Gruppe. Unverändertes Speichern vereinheitlicht bestehende Unterschiede nicht.
+Die **Anwesenheitsverwaltung** neben der Zusammenfassung gruppiert nach Basisbogen. Jede Zeile bearbeitet Name, RK, maximale, aktuelle und temporäre TP und Rolle. **Auf Gruppe anwenden** setzt RK und Maximum für alle Anwesenheiten der Gruppe. Unverändertes Speichern vereinheitlicht bestehende Unterschiede nicht.
 
-Ein niedrigeres Maximum begrenzt darüberliegende aktuelle TP; ein höheres heilt nicht automatisch. **Aktuelle TP maximieren** füllt jede Anwesenheit bis zum eigenen Maximum auf, ohne temporäre TP, Zustände oder Status zu ändern. Mit **Speichern** übernehmen.
+Ein niedrigeres Maximum begrenzt darüberliegende aktuelle TP; ein höheres heilt nicht automatisch. **Aktuelle TP maximieren** füllt jede Anwesenheit bis zum eigenen Maximum auf, ohne temporäre TP oder Zustände zu ändern. Mit **Speichern** übernehmen.
+
+### Lokaler Status von NSC und Monstern {#local-creature-status}
+
+Bei NSC und Monstern mit Basisbogen ist der Ortsstatus schreibgeschützt: **Tot** bei 0 aktuellen TP, auch mit temporären TP, und **Lebendig** über 0. Verknüpfte Spielerfiguren verwenden weiterhin die Werte des Abenteuers.
 
 ### Anzeigen, duplizieren und verschieben
 

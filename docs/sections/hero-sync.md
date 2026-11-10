@@ -21,6 +21,8 @@ For phone and tablet instructions, see the [Hero player's guide](../companion/dn
 - Only the GM decides which devices use Live. Live updates HP, temporary HP, AC, conditions, Heroic Inspiration, class resources and spell slots in and out of combat. Fixed class progressions remain read-only.
 - Chat is private. When a message arrives with the chat closed, the bottom bar shows a shortcut with an unread badge. Click to open the chat; reading it clears the badge.
 
+The **Hero** panel opens even when the link is off. If Hero sends a **Player name**, DnDino assigns it to the paired character on connection, even with Live off. A blank or missing name does not overwrite the saved one.
+
 ## Disconnecting and revoking access
 
 The panel lists online devices first. **Disconnected · Live authorized** means the device is offline but Live will resume when it returns. You can keep managing the character on the Mac. Reconnecting delivers queued updates without reimporting the sheet or opening a general comparison.

@@ -16,9 +16,13 @@ C'est l'une des sections les plus riches de l'application, parce qu'elle réunit
 
 L’ajout d’un **PNJ ou monstre** copie initialement la CA et les PV maximum de la fiche de base, puis ces valeurs appartiennent à la présence. Tu peux les modifier dès l’ajout ou dans sa fiche locale sans changer les autres copies ni la base. Les anciennes présences sans ces valeurs utilisent toujours la fiche de base. Les **personnages d’aventure** gardent leur état partagé.
 
-**Gérer les présences**, près du récapitulatif, ouvre une liste groupée par fiche de base. Chaque ligne permet de modifier nom, CA, PV maximum, actuels et temporaires, rôle et statut. **Appliquer au groupe** règle CA et maximum pour toutes ses présences. Enregistrer sans modifier ces champs n’uniformise pas les différences existantes.
+**Gérer les présences**, près du récapitulatif, ouvre une liste groupée par fiche de base. Chaque ligne permet de modifier nom, CA, PV maximum, actuels et temporaires et rôle. **Appliquer au groupe** règle CA et maximum pour toutes ses présences. Enregistrer sans modifier ces champs n’uniformise pas les différences existantes.
 
-Réduire le maximum plafonne les PV actuels qui le dépassent ; l’augmenter ne soigne pas automatiquement. **PV actuels au maximum** remplit chaque présence jusqu’à son propre maximum, sans changer PV temporaires, états ou statut. Confirme avec **Enregistrer**.
+Réduire le maximum plafonne les PV actuels qui le dépassent ; l’augmenter ne soigne pas automatiquement. **PV actuels au maximum** remplit chaque présence jusqu’à son propre maximum, sans changer les PV temporaires ni les états. Confirme avec **Enregistrer**.
+
+### État local des PNJ et des monstres {#local-creature-status}
+
+Pour les PNJ et monstres associés à une fiche de base, l’état dans le lieu est en lecture seule : **Mort** à 0 PV actuels, même avec des PV temporaires, et **Vivant** au-dessus de 0. Les PJ associés gardent les valeurs de l’aventure.
 
 ### Consulter, dupliquer et déplacer
 

@@ -16,9 +16,13 @@ La sezione **Luoghi** raccoglie tutto ciò che riguarda gli spazi di gioco di un
 
 Quando assegni un **PNG o mostro**, CA e PF massimi vengono inizializzati dalla scheda base e poi appartengono a quella presenza. Puoi modificarli già durante l'assegnazione e nella modifica del personaggio luogo, senza cambiare altre copie o la scheda base. Per le presenze precedenti prive di questi valori resta il fallback sulla scheda base. I **personaggi avventura** mantengono invece lo stato condiviso.
 
-**Gestione presenze**, vicino al riepilogo, apre una lista raggruppata per scheda base. Ogni riga permette di modificare nome, CA, PF massimi, PF attuali, PF temporanei, ruolo e stato. **Applica al gruppo** consente di impostare CA e massimo su tutte le presenze del gruppo. Salvare senza modificare questi campi non uniforma valori diversi già esistenti.
+**Gestione presenze**, vicino al riepilogo, apre una lista raggruppata per scheda base. Ogni riga permette di modificare nome, CA, PF massimi, PF attuali, PF temporanei e ruolo. **Applica al gruppo** consente di impostare CA e massimo su tutte le presenze del gruppo. Salvare senza modificare questi campi non uniforma valori diversi già esistenti.
 
-Abbassare il massimo limita i PF attuali superiori al nuovo valore; aumentarlo non cura automaticamente. **PF attuali al massimo** riempie ciascuna presenza fino al proprio massimo, senza cambiare temporanei, condizioni o stato. Conferma con **Salva**.
+Abbassare il massimo limita i PF attuali superiori al nuovo valore; aumentarlo non cura automaticamente. **PF attuali al massimo** riempie ciascuna presenza fino al proprio massimo, senza cambiare PF temporanei o condizioni. Conferma con **Salva**.
+
+### Stato locale di PNG e mostri {#local-creature-status}
+
+Per PNG e mostri associati a una scheda base, lo stato nel luogo è in sola lettura: **Morto** a 0 PF attuali, anche con PF temporanei, **Vivo** sopra 0. I PG collegati continuano a usare i dati dell’avventura.
 
 ### Consultare, duplicare e spostare
 

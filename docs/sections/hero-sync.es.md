@@ -19,6 +19,8 @@ Recibe las fichas de los jugadores en tu aventura y gestiona los valores de jueg
 - Solo el DJ controla la sincronización en directo por dispositivo. Se actualizan PG, PG temporales, CA, estados, inspiración heroica, recursos de clase y espacios de conjuro, dentro y fuera del combate. Las progresiones fijas son de consulta.
 - El chat es privado. Si llega un mensaje con el chat cerrado, la barra inferior muestra un acceso con un indicador de no leídos. Haz clic para abrirlo; el indicador se borra al leer.
 
+El panel **Hero** se abre incluso con el enlace desactivado. Si Hero envía un **nombre de jugador**, DnDino se lo asigna al PJ vinculado al conectarse, incluso sin sincronización en directo. Un nombre vacío o ausente no sustituye al guardado.
+
 ## Desconexión y revocación
 
 El panel muestra primero los dispositivos conectados. Si un dispositivo está desconectado pero autorizado, la sincronización se reanudará cuando vuelva. Puedes seguir gestionando al PJ en el Mac. Al reconectar se recuperan los envíos pendientes, sin volver a importar la ficha ni abrir una comparación general.

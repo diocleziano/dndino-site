@@ -613,7 +613,11 @@ Los datos persisten sin conexión Hero. En combates terminados son de consulta. 
 
 En **PNJ y monstruos**, los **PG máximos** se editan junto a los actuales. Una presencia actualiza su valor local; un participante de la ficha general conserva el cambio solo en ese combate. Reducir el máximo limita PG superiores; aumentarlo no cura. Las demás copias y estadísticas no cambian.
 
-Condiciones se abre en la pantalla de la ventana principal y permanece delante. Condiciones y **Ataque completo** no se minimizan. Solo puede haber un Ataque completo abierto; volver a él conserva tiradas, objetivos y cambios. Usa la [barra inferior](topbar.md) para volver al combate pausado.
+En combate táctico, **Condiciones** se abre en la pantalla de la ventana principal, pero puede quedar detrás. Tráela al frente desde la barra inferior o desde la acción del mismo participante, sin abrir un duplicado. Condiciones y **Ataque completo** no se minimizan. Solo puede haber un Ataque completo abierto; volver a él conserva tiradas, objetivos y cambios. Usa la [barra inferior](topbar.md) para volver al combate pausado.
+
+### Participantes, objetivos e iniciativa {#combat-participant-editor}
+
+El editor tiene una pestaña **Combate** para los valores del encuentro y pestañas independientes para la ficha base. La selección de objetivos muestra la CA y los PG en columnas distintas. Un PJ con 0 PG sigue en iniciativa si está inconsciente; los PJ muertos se omiten.
 
 ## Estadísticas por sesión
 

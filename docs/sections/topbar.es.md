@@ -84,23 +84,11 @@ Puedes darles un nombre, elegir la duración con un control de estilo macOS y ej
 
 `Ajustes` abre las preferencias de la app: idioma, tema, barra superior, paneles, combate, Ventana de Jugadores, base de datos, diagnóstico y soporte.
 
-## Sesión en Vivo en el Centro
+## Sesión en directo en la barra inferior {#live-session-control}
 
-Dentro de las páginas de una aventura, la barra superior muestra en el centro el control de **Sesión en vivo**.
+En una página de la aventura, abre **Sesión en vivo** en la **barra inferior**, a la izquierda de Hero. Pulsa **Iniciar** y confirma para empezar una sesión de la aventura actual.
 
-Si no hay una sesión en vivo activa, ese control permite iniciar una para la aventura actual. DnDino pide confirmación antes, para evitar iniciar una sesión por error.
-
-Si ya hay una sesión en vivo activa, el mismo control muestra su estado.
-
-Muestra:
-
-- título de la sesión
-- temporizador
-- estado
-
-Al hacer clic se abre el panel rápido: pausa o reanudación, cerrar y guardar, nota del DJ, timeline y resumen compacto.
-
-Si abres otra aventura mientras ya hay una sesión en vivo en curso, el control central indica que está siendo usada por otra aventura.
+Si hay una sesión abierta, el control sigue disponible fuera de la aventura. No se puede iniciar una segunda sesión a la vez. [Guía de la sesión en directo](live-session.md#live-session-bottom-bar).
 
 ## Ventana de Jugadores en el Centro
 
@@ -117,6 +105,10 @@ Usa la barra superior para:
 - consultar un personaje u objeto al vuelo
 - hacer una tirada rápida, iniciar un temporizador o generar un nombre improvisado
 - gestionar una sesión en vivo desde la sección actual
+
+## Rellenar la ventana principal {#fill-main-window}
+
+Si la acción de doble clic en la barra de título de macOS es **Rellenar**, haz doble clic en una zona vacía de la barra. La ventana ocupa el área visible sin pasar a pantalla completa. Repite para restaurar el tamaño anterior.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

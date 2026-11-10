@@ -605,7 +605,11 @@ Questi dati sono persistenti e non richiedono Hero connessa. Negli scontri concl
 
 Per **PNG e mostri**, i **PF massimi** sono modificabili accanto ai PF attuali. Una presenza del luogo aggiorna il proprio valore locale; un partecipante preso dalla scheda generale conserva la modifica solo nel combattimento. Abbassare il massimo limita i PF superiori, aumentarlo non cura automaticamente. Non vengono riscritti PF o statistiche delle altre copie.
 
-Le condizioni si aprono sullo schermo della finestra principale e restano in primo piano. Condizioni e **Attacco completo** non si minimizzano. Può essere aperto un solo Attacco completo alla volta: richiamarlo conserva tiri, bersagli e modifiche già presenti. Per tornare a uno scontro lasciato in pausa usa la [barra inferiore](topbar.md).
+Nel layout Tattico, la finestra **Condizioni** si apre sullo schermo della finestra principale ma può passare dietro. Richiamala dalla barra inferiore o dall’azione Condizioni dello stesso partecipante: non si crea un duplicato. Condizioni e **Attacco completo** non si minimizzano. Può essere aperto un solo Attacco completo alla volta: richiamarlo conserva tiri, bersagli e modifiche già presenti. Per tornare a uno scontro lasciato in pausa usa la [barra inferiore](topbar.md).
+
+### Partecipanti, bersagli e iniziativa {#combat-participant-editor}
+
+L’editor dei partecipanti ha una scheda **Combattimento** per i dati dello scontro e schede distinte per il contenuto della scheda base. Nel selettore bersagli, CA e PF sono in colonne separate. Un PG a 0 PF resta nell’iniziativa se incosciente; i PG morti vengono saltati.
 
 ## Statistiche per sessione
 

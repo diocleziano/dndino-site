@@ -165,19 +165,9 @@ From here you can also enter **Edit** to return to the adventure form and update
 
 ## Live Session
 
-The **Live Session** no longer lives in a fixed dashboard panel: it is started and controlled from the center of the top bar while you are inside an adventure page.
+On an adventure page, open **Live Session** in the **bottom bar**, to the left of Hero. Click **Start** and confirm to begin a session for the current adventure.
 
-The central control is used to:
-
-- start a new live session for the adventure
-- see whether a session is running or paused
-- monitor elapsed time
-- pause the session
-- close and save it
-
-When the adventure's live session is active, the control remains available in places and combat too, so you can manage it without returning to the dashboard.
-
-If another adventure already has an active live session, the top bar makes that clear and won't let you start a second one in parallel.
+If a session is already open, the control stays available even outside the adventure. You cannot start a second one in parallel. [Live Session guide](live-session.md#live-session-bottom-bar).
 
 ## Dashboard Panels
 
@@ -242,6 +232,10 @@ Here you can:
 - open their campaign-specific state
 
 This section does not replace the base character sheet. Instead, it shows the campaign-specific layer, with contextual state, hit points, and conditions.
+
+#### Character health and attendance {#character-health-attendance}
+
+In the dashboard, **Alive**, **Unconscious** and **Dead** describe health and are read-only. The **Present/Absent** selector is separate and does not change HP or conditions. When setting up combat, **Add All** skips absent characters; you can still add them individually. The green **Live** badge means sync is active, not just that Hero is connected.
 
 The difference between:
 

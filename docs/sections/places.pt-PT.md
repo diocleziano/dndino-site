@@ -16,9 +16,13 @@ A secção **Locais** reúne tudo o que está relacionado com os espaços jogáv
 
 Ao acrescentar um **PNJ ou monstro**, CA e PV máximos são inicialmente copiados da ficha base e passam a pertencer àquela presença. Podes alterá-los durante a atribuição ou na ficha local sem afetar outras cópias ou a base. Presenças antigas sem estes valores continuam a usar a ficha base. As **personagens da aventura** mantêm o estado partilhado.
 
-**Gerir presenças**, junto ao resumo, abre uma lista agrupada por ficha base. Cada linha edita nome, CA, PV máximos, atuais e temporários, papel e estado. **Aplicar ao grupo** define CA e máximo para todas as suas presenças. Guardar sem alterar estes campos não uniformiza diferenças existentes.
+**Gerir presenças**, junto ao resumo, abre uma lista agrupada por ficha base. Cada linha edita nome, CA, PV máximos, atuais e temporários e papel. **Aplicar ao grupo** define CA e máximo para todas as suas presenças. Guardar sem alterar estes campos não uniformiza diferenças existentes.
 
-Reduzir o máximo limita PV atuais superiores; aumentá-lo não cura automaticamente. **PV atuais no máximo** preenche cada presença até ao próprio máximo, sem alterar temporários, condições ou estado. Confirma com **Guardar**.
+Reduzir o máximo limita PV atuais superiores; aumentá-lo não cura automaticamente. **PV atuais no máximo** preenche cada presença até ao próprio máximo, sem alterar PV temporários ou condições. Confirma com **Guardar**.
+
+### Estado local de PNJ e monstros {#local-creature-status}
+
+Para PNJ e monstros com ficha base, o estado local é apenas de leitura: **Morto** com 0 PV atuais, mesmo com PV temporários, e **Vivo** acima de 0. PJ associados continuam a usar os valores da aventura.
 
 ### Consultar, duplicar e mover
 

@@ -84,23 +84,11 @@ Podes dar um nome ao temporizador, escolher a duração com um controlo ao estil
 
 `Definições` abre as preferências da aplicação: idioma, tema, topbar, painéis, combate, Janela dos Jogadores, base de dados, diagnóstico e suporte.
 
-## Sessão Live ao Centro
+## Sessão em direto na barra inferior {#live-session-control}
 
-Dentro das páginas de uma aventura, a topbar mostra ao centro o controlo da **Sessão live**.
+Numa página da aventura, abre **Sessão em direto** na **barra inferior**, à esquerda do Hero. Clica em **Iniciar** e confirma para começar uma sessão da aventura atual.
 
-Se não existir uma sessão live ativa, esse controlo permite iniciar uma para a aventura atual. O DnDino pede confirmação antes, para evitar iniciar uma sessão por engano.
-
-Se já existir uma sessão live ativa, o mesmo controlo mostra o estado atual.
-
-Mostra:
-
-- título da sessão
-- temporizador
-- estado
-
-Ao clicar, abre o painel rápido: pausa ou retoma, fechar e guardar, nota do Mestre, timeline e resumo live compacto.
-
-Se abrires outra aventura enquanto uma sessão live já está em curso, o controlo central indica que ela está a ser usada por outra aventura.
+Se houver uma sessão aberta, o controlo continua acessível fora da aventura. Não é possível iniciar uma segunda em paralelo. [Guia da sessão em direto](live-session.md#live-session-bottom-bar).
 
 ## Janela dos Jogadores ao Centro
 
@@ -117,6 +105,10 @@ Usa a topbar para:
 - consultar uma personagem ou item rapidamente
 - fazer um lançamento rápido, iniciar um temporizador ou gerar um nome improvisado
 - gerir uma sessão live a partir da secção actual
+
+## Preencher a janela principal {#fill-main-window}
+
+Se a ação de duplo clique na barra de título do macOS for **Preencher**, faz duplo clique numa zona vazia da barra. A janela ocupa a área visível sem entrar em ecrã completo. Repete para repor o tamanho anterior.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

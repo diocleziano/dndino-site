@@ -19,6 +19,8 @@ Receba as fichas dos jogadores na aventura e gerencie valores de jogo pelo Mac. 
 - Só o mestre controla a sincronização ao vivo de cada dispositivo. Ela atualiza PV, PV temporários, CA, condições, inspiração heroica, recursos de classe e espaços de magia, dentro e fora do combate. As progressões fixas são apenas para consulta.
 - O bate-papo é privado. Se chegar uma mensagem com a janela fechada, a barra inferior exibe um atalho com indicador de não lidas. Clique para abrir; o indicador some após a leitura.
 
+O painel **Hero** abre mesmo com o vínculo desativado. Se o Hero enviar um **nome de jogador**, o DnDino o atribui ao PJ vinculado na conexão, mesmo sem sincronização ao vivo. Um nome vazio ou ausente não substitui o salvo.
+
 ## Desconexão e revogação
 
 O painel mostra primeiro os dispositivos online. Se um dispositivo está desconectado, mas autorizado, a sincronização ao vivo continua quando ele voltar. Você pode continuar gerenciando o personagem no Mac. Ao reconectar, os envios pendentes são retomados sem reimportar a ficha ou abrir uma comparação geral.

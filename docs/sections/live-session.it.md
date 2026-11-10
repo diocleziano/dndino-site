@@ -33,7 +33,7 @@ Serve per:
 
 ## Dove si avvia
 
-La sessione live si avvia dal controllo al centro della **topbar** quando sei dentro una pagina dell'avventura, per esempio dashboard, luoghi o combattimenti.
+Nelle pagine di un’avventura, apri **Sessione live** nella **barra inferiore**, a sinistra di Hero. Premi **Avvia** e conferma per iniziare una sessione dell’avventura corrente.
 
 Se non esiste una sessione attiva, il controllo mostra l'azione di avvio. Quando la premi, DnDino chiede conferma e poi crea una nuova sessione live per l'avventura corrente.
 
@@ -52,7 +52,7 @@ Se una sessione è già aperta in un’altra avventura:
 
 Quando una sessione live è in corso:
 
-- la barra superiore mostra il suo stato
+- la barra inferiore mostra il suo stato
 - il timer continua ad aggiornarsi
 - i luoghi seguono questo contesto
 - la timeline inizia a raccogliere eventi
@@ -74,7 +74,7 @@ La sessione live può trovarsi in tre stati:
 
 ### In pausa
 
-La sessione può essere messa in pausa dalla dashboard avventura o dalla barra superiore.
+La sessione può essere messa in pausa dal pannello rapido nella barra inferiore.
 
 Quando è in pausa:
 
@@ -92,29 +92,13 @@ Questo permette di:
 - capire che si è verificata un’interruzione
 - riprendere manualmente il lavoro
 
-## Controllo Sessione Live nella topbar
+## Sessione live nella barra inferiore {#live-session-bottom-bar}
 
-Nelle pagine dell'avventura, la topbar mostra il controllo della sessione live al centro.
+La barra inferiore mostra un indicatore verde durante la registrazione e giallo fisso quando la sessione è in pausa o interrotta. Mostra anche il timer. Clicca il controllo per vedere a quale avventura appartiene la sessione e per mettere in pausa, riprendere o chiudere e salvare.
 
-Se la sessione appartiene all’avventura aperta, il controllo mostra:
+Se una sessione è già aperta, il controllo resta disponibile anche fuori dall’avventura. Non puoi avviarne una seconda in parallelo.
 
-- titolo della sessione
-- timer in tempo reale
-- stato (`In corso` oppure `In pausa`)
-
-Se invece non c’è una sessione live attiva:
-
-- compare il comando per avviare la sessione live dell'avventura corrente
-
-Se una sessione è attiva ma appartiene a un’altra avventura:
-
-- il controllo segnala che la sessione live è in uso altrove
-
-## La sessione live nella topbar
-
-Quando una sessione live è attiva, la topbar mostra un controllo dedicato con stato e timer. La descrizione completa della topbar è nella pagina `Topbar`.
-
-![Sessione live attiva nella topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+![Indicatore Live e timer a sinistra di Hero nella barra inferiore](../images/homepage/live-session-bottom-bar-2-0.jpg){ .img-shot }
 
 ## Il pannello rapido della sessione live
 

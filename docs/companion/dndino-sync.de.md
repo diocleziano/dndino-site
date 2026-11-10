@@ -19,6 +19,8 @@ Mit DnDino Hero auf iPhone oder iPad sendest du deinen Bogen an die Spielleitung
 - Nur die Spielleitung aktiviert Live; Hero zeigt den Status. TP, temporäre TP, RK, Zustände, Heroische Inspiration, Klassenressourcen und Zauberplätze werden auch im Kampf synchronisiert. Hero zeigt Hinweise zu Kampfbeginn, Kampfende und von der Spielleitung ausgelösten Rasten.
 - Im **Chat** des Verbindungspanels schreibst du privat mit der Spielleitung.
 
+Der in Hero eingetragene **Spielername** wird beim Verbindungsaufbau gesendet und kann die gekoppelte Figur in DnDino auch ohne Live aktualisieren. Ein leeres Feld lässt den auf dem Mac gespeicherten Namen unverändert.
+
 ## Wenn die Verbindung abbricht
 
 Beim Zurückkehren kann sich Hero ohne erneute Freigabe verbinden, solange der Zugriff nicht widerrufen wurde. Erlaubte Live-Synchronisierung läuft weiter, ausstehende Updates werden ohne Duplikate übertragen. Der vollständige Bogen wird dabei nicht erneut gesendet. Wurde derselbe Wert auf beiden Seiten offline geändert, kann eine veraltete Änderung abgelehnt werden; Hero übernimmt dann den von der Spielleitung akzeptierten Wert.

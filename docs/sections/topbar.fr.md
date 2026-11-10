@@ -84,23 +84,11 @@ Tu peux donner un nom au timer, choisir une durée avec un contrôle de style ma
 
 `Réglages` ouvre les préférences de l'application : langue, thème, topbar, panneaux, combat, Fenêtre Joueurs, base de données, diagnostic et support.
 
-## Session Live au Centre
+## Session en direct dans la barre inférieure {#live-session-control}
 
-Dans les pages d'une aventure, la topbar affiche le contrôle de **Session live** au centre.
+Sur une page d’aventure, ouvre la **Session live** dans la **barre inférieure**, à gauche de Hero. Clique sur **Démarrer** et confirme pour commencer une session de l’aventure actuelle.
 
-Si aucune session live n'est active, ce contrôle permet d'en lancer une pour l'aventure courante. DnDino demande d'abord confirmation, pour éviter de démarrer une session par erreur.
-
-Si une session live est déjà active, le même contrôle affiche son état.
-
-Il montre :
-
-- titre de la session
-- chronomètre
-- état de la session
-
-Un clic ouvre le panneau rapide : pause ou reprise, fermeture et sauvegarde, note MJ, timeline et résumé live compact.
-
-Si tu ouvres une autre aventure alors qu'une session live est déjà en cours, le contrôle central indique qu'elle est utilisée par une autre aventure.
+Si une session est ouverte, la commande reste accessible en dehors de l’aventure. Tu ne peux pas en lancer une deuxième en parallèle. [Guide de la session en direct](live-session.md#live-session-bottom-bar).
 
 ## Fenêtre Joueurs au Centre
 
@@ -117,6 +105,10 @@ Utilise la topbar pour :
 - consulter un personnage ou un objet à la volée
 - faire un jet rapide, lancer un timer ou générer un nom improvisé
 - gérer une session live depuis la section courante
+
+## Remplir la fenêtre principale {#fill-main-window}
+
+Si l’action macOS de double-clic sur la barre de titre est **Remplir**, double-clique dans une zone vide de la barre. La fenêtre principale occupe la zone visible sans passer en plein écran. Un second double-clic rétablit la taille précédente.
 
 <!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
 

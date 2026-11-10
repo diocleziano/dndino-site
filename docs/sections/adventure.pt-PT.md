@@ -165,19 +165,9 @@ A partir daqui também podes entrar em **Editar** para voltar ao formulário da 
 
 ## Sessão em direto
 
-A **Sessão em direto** já não ocupa um painel fixo da dashboard: é iniciada e controlada a partir do centro da topbar quando estás dentro de uma página da aventura.
+Numa página da aventura, abre **Sessão em direto** na **barra inferior**, à esquerda do Hero. Clica em **Iniciar** e confirma para começar uma sessão da aventura atual.
 
-O controlo central serve para:
-
-- iniciar uma nova sessão em direto para a aventura
-- ver se uma sessão está em curso ou em pausa
-- acompanhar o tempo decorrido
-- colocar a sessão em pausa
-- fechá-la e guardá-la
-
-Quando a sessão em direto da aventura está ativa, o controlo continua disponível também em locais e combates, para a gerires sem voltar à dashboard.
-
-Se já existir uma sessão em direto aberta noutra aventura, a topbar assinala-o claramente e não te deixa iniciar uma segunda em paralelo.
+Se houver uma sessão aberta, o controlo continua acessível fora da aventura. Não é possível iniciar uma segunda em paralelo. [Guia da sessão em direto](live-session.md#live-session-bottom-bar).
 
 ## Os painéis da dashboard
 
@@ -242,6 +232,10 @@ Aqui podes:
 - abrir o seu estado contextual de campanha
 
 Esta secção não substitui a ficha base da personagem: mostra a camada específica da campanha, com estado, PV e condições contextuais.
+
+#### Saúde e presença das personagens {#character-health-attendance}
+
+No painel, **Vivo**, **Inconsciente** e **Morto** descrevem a saúde e são apenas de leitura. **Presente/Ausente** é uma seleção separada, que não altera PV ou condições. Na preparação do combate, **Adicionar todos** ignora os ausentes, mas podes adicioná-los individualmente. O indicador verde **Em direto** significa sincronização ativa, não apenas ligação ao Hero.
 
 A diferença entre:
 

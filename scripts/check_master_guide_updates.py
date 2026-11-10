@@ -18,6 +18,7 @@ BASE_URL = CONFIG["site_url"]
 BASE_PATH = urlsplit(BASE_URL).path
 LANGUAGES = ("it", "en", "de", "fr", "es", "pt-BR", "pt-PT")
 COVERAGE = {
+    "homepage": {"MOD-144"},
     "places": {"MOD-015", "MOD-016", "MOD-018", "MOD-031", "MOD-035", "MOD-036", "MOD-087"},
     "characters": {"MOD-021", "MOD-022", "MOD-031", "MOD-063", "MOD-064", "MOD-065"},
     "topbar": {"MOD-023", "MOD-024", "MOD-025", "MOD-034", "MOD-038", "MOD-039", "MOD-044", "MOD-045", "MOD-048", "MOD-054", "MOD-067", "MOD-069"},
@@ -95,6 +96,7 @@ class Page(HTMLParser):
     def __init__(self, source):
         super().__init__()
         self.links = []
+        self.images = []
         self.anchors = set()
         self.headings = []
         self.text = []
@@ -107,6 +109,8 @@ class Page(HTMLParser):
             self.anchors.add(attrs["id"])
         if tag == "a" and attrs.get("href"):
             self.links.append(attrs["href"])
+        if tag == "img" and attrs.get("src"):
+            self.images.append((attrs["src"], attrs.get("alt", "")))
         if tag in ("h1", "h2", "h3"):
             self.current = []
 
@@ -135,7 +139,7 @@ for page, expected_ids in COVERAGE.items():
         assert len(markers) == 1, (source, "coverage marker")
         assert set(markers[0].split()) == expected_ids, (source, "coverage IDs")
         after_marker = text.split("<!-- guide-coverage:", 1)[1].split("-->", 1)[1]
-        heading = re.search(r"^#{2,3} (.+)$", after_marker, re.M).group(1)
+        heading = re.sub(r" \{#[^}]+\}$", "", re.search(r"^#{2,3} (.+)$", after_marker, re.M).group(1))
         assert heading not in localized_headings or language == "pt-PT", (source, "untranslated heading")
         localized_headings.add(heading)
         assert text.count("\n" + re.search(r"^#{2,3} .+$", after_marker, re.M).group(0) + "\n") == 1, (source, "duplicate section")
@@ -172,3 +176,36 @@ for page, expected_ids in COVERAGE.items():
             assert "MOD-087" in text and "MOD-087" in output.read_text(), source
 
 print(f"PASS: {len(COVERAGE) * len(LANGUAGES)} localized Master pages, coverage markers, localized rendered sections, formulas and all internal links/anchors. Runtime behavior is not tested by this check.")
+
+V2_ANCHORS = {
+    "homepage": {"resume-adventure", "adventure-heroes", "first-adventure", "quick-access"},
+    "adventure": {"character-health-attendance"},
+    "combat": {"combat-participant-editor"},
+    "places": {"local-creature-status"},
+    "live-session": {"live-session-bottom-bar"},
+    "topbar": {"live-session-control", "fill-main-window"},
+}
+V2_SCREENSHOTS = {
+    "homepage": {"command-desk-2-0.jpg", "first-adventure-2-0.jpg"},
+    "live-session": {"live-session-bottom-bar-2-0.jpg"},
+}
+for language in LANGUAGES:
+    prefix = "" if language == "en" else language + "/"
+    index = rendered(SITE / prefix / "index.html")
+    assert "guide-2-0" in index.anchors, language
+    for section in ("homepage", "live-session", "combat", "places", "hero-sync"):
+        assert any(urlsplit(link).path.rstrip("/").endswith(f"sections/{section}") for link in index.links), (language, section)
+    for section, anchors in V2_ANCHORS.items():
+        output = SITE / prefix / "sections" / section / "index.html"
+        html = rendered(output)
+        assert anchors <= html.anchors, (language, section, anchors - html.anchors)
+        for expected in V2_SCREENSHOTS.get(section, ()):
+            sources = [(src, alt) for src, alt in html.images if src.endswith("/" + expected)]
+            assert len(sources) == 1 and sources[0][1].strip(), (language, section, expected)
+            src, _ = sources[0]
+            url = urlsplit(urljoin(BASE_URL + prefix + "sections/" + section + "/", src))
+            assert url.path.startswith(BASE_PATH)
+            assert (SITE / unquote(url.path[len(BASE_PATH):])).is_file(), (language, section, src)
+        assert not any(src.endswith(("/en_home.png", "/en_sessionelive_attiva_topbar.png")) for src, _ in html.images), output
+
+print("PASS: DnDino 2.0.0 overview links, guide anchors and screenshots in all seven languages.")

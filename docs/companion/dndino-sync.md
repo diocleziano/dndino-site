@@ -21,6 +21,8 @@ The DM's instructions are in the [DnDino guide](../sections/hero-sync.md).
 - Only the GM enables Live; Hero displays its status. HP, temporary HP, AC, conditions, Heroic Inspiration, class resources and spell slots can update during combat too. Hero shows combat start and end alerts and rests triggered by the GM.
 - Open **Chat** in the connection panel to message the GM privately.
 
+Hero sends your **Player name** on connection if you have set one. It can update the paired character in DnDino even without Live. Leave the field blank to keep the name already saved on the Mac.
+
 ## If the connection drops
 
 When you return to the app, Hero can reconnect without a new approval unless access was revoked. If Live was authorized, it resumes and queued updates are delivered without duplicates. A normal reconnection does not send the full sheet again. If both sides changed the same value offline, an outdated change may be rejected and Hero will match the value accepted by the GM.

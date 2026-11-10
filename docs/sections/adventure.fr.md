@@ -165,19 +165,9 @@ Depuis cette zone, tu peux aussi entrer dans **Modifier** pour revenir au formul
 
 ## Session live
 
-La **Session live** n'occupe plus un panneau fixe de la dashboard : elle se lance et se contrôle depuis le centre de la topbar quand tu es dans une page de l'aventure.
+Sur une page d’aventure, ouvre la **Session live** dans la **barre inférieure**, à gauche de Hero. Clique sur **Démarrer** et confirme pour commencer une session de l’aventure actuelle.
 
-Le contrôle central sert à :
-
-- lancer une nouvelle session live pour l'aventure
-- voir si une session est en cours ou en pause
-- suivre le temps écoulé
-- mettre la session en pause
-- la fermer et l'enregistrer
-
-Quand la session live de l'aventure est active, le contrôle reste disponible aussi dans les lieux et les combats, pour la gérer sans revenir à la dashboard.
-
-S'il existe déjà une session live ouverte dans une autre aventure, la topbar le signale clairement et ne te laisse pas en démarrer une deuxième en parallèle.
+Si une session est ouverte, la commande reste accessible en dehors de l’aventure. Tu ne peux pas en lancer une deuxième en parallèle. [Guide de la session en direct](live-session.md#live-session-bottom-bar).
 
 ## Les panneaux de la dashboard
 
@@ -242,6 +232,10 @@ Ici tu peux :
 - ouvrir leur état contextuel de campagne
 
 Cette section ne remplace pas la fiche de base du personnage : elle montre la couche spécifique à l'aventure, avec état, PV et conditions contextuels.
+
+#### Santé et présence des personnages {#character-health-attendance}
+
+Dans le tableau de bord, **Vivant**, **Inconscient** et **Mort** décrivent la santé et sont en lecture seule. Le sélecteur **Présent/Absent** est séparé et ne change ni les PV ni les états. En préparation du combat, **Tout ajouter** ignore les personnages absents ; ils restent ajoutables un par un. Le badge vert **Live** indique une synchronisation active, pas une simple connexion à Hero.
 
 La différence entre :
 

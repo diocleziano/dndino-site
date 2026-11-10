@@ -33,7 +33,7 @@ Sie dient dazu:
 
 ## Wo sie gestartet wird
 
-Die Live-Session wird über die Steuerung in der Mitte der **Topbar** gestartet, wenn du dich in einer Abenteuerseite befindest, etwa Dashboard, Orte oder Kampf.
+Öffne auf einer Abenteuerseite **Live-Sitzung** in der **unteren Leiste**, links neben Hero. Klicke auf **Starten** und bestätige, um eine Sitzung für das aktuelle Abenteuer zu beginnen.
 
 Wenn keine Sitzung aktiv ist, zeigt die Steuerung die Startaktion. Beim Auslösen fragt DnDino nach Bestätigung und erstellt danach eine neue Live-Sitzung für das aktuelle Abenteuer.
 
@@ -52,7 +52,7 @@ Wenn bereits in einem anderen Abenteuer eine Sitzung geöffnet ist:
 
 Wenn eine Live-Session läuft:
 
-- zeigt die obere Leiste ihren Status
+- die untere Leiste zeigt ihren Status
 - aktualisiert sich der Timer weiter
 - folgen Orte diesem Kontext
 - beginnt die Timeline Ereignisse zu sammeln
@@ -74,7 +74,7 @@ Das ist der normale Zustand, solange die Sitzung läuft. Der Timer zählt weiter
 
 ### Pausiert
 
-Die Sitzung kann über die Topbar pausiert werden.
+Du kannst die Sitzung im Schnellfenster der unteren Leiste pausieren.
 
 Wenn sie pausiert ist:
 
@@ -92,30 +92,13 @@ Das macht es möglich:
 - zu erkennen, dass eine Unterbrechung stattgefunden hat
 - die Arbeit manuell wieder aufzunehmen
 
-## Live-Sitzungssteuerung in der Topbar
+## Live-Sitzung in der unteren Leiste {#live-session-bottom-bar}
 
-Auf den Abenteuerseiten zeigt die Topbar die Live-Sitzungssteuerung in der Mitte.
+Die untere Leiste zeigt bei der Aufzeichnung eine grüne Anzeige, bei einer Pause oder Unterbrechung eine gelbe Daueranzeige sowie den Timer. Mit einem Klick siehst du das zugehörige Abenteuer und kannst pausieren, fortsetzen, beenden und speichern.
 
-Wenn die Sitzung zum geöffneten Abenteuer gehört, zeigt die Steuerung:
+Eine offene Sitzung bleibt auch außerhalb des Abenteuers erreichbar. Du kannst nicht gleichzeitig eine zweite starten.
 
-- Sitzungstitel
-- Echtzeit-Timer
-- Status (`Läuft` oder `Pausiert`)
-Wenn keine Live-Session aktiv ist:
-
-- erscheint der Befehl zum Starten der Live-Sitzung des aktuellen Abenteuers
-
-Wenn eine Sitzung aktiv ist, aber zu einem anderen Abenteuer gehört:
-
-- zeigt die Steuerung, dass die Live-Session derzeit anderswo belegt ist
-
-## Die Live-Session in der Topbar
-
-Wenn eine Live-Session aktiv ist, zeigt die obere Leiste der App einen eigenen Indikator an.
-
-Die vollständige Beschreibung der Topbar findest du auf der Seite `Topbar`.
-
-![Aktive Live-Session in der Topbar](../images/en_sessionelive_attiva_topbar.png){ .img-shot }
+![Live-Anzeige und Timer links neben Hero in der unteren Leiste](../images/homepage/live-session-bottom-bar-2-0.jpg){ .img-shot }
 
 ## Schnellfenster der Live-Sitzung
 

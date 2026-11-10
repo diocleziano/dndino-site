@@ -16,9 +16,13 @@ Es una de las secciones más ricas de la aplicación, porque reúne:
 
 Al asignar un **PNJ o monstruo**, CA y PG máximos se copian inicialmente de la ficha base y después pertenecen a esa presencia. Puedes editarlos al asignarla o en su ficha local sin cambiar otras copias ni la base. Las presencias antiguas sin estos valores siguen usando la ficha base. Los **personajes de aventura** mantienen su estado compartido.
 
-**Gestionar presencias**, junto al resumen, abre una lista agrupada por ficha base. Cada fila permite editar nombre, CA, PG máximos, actuales y temporales, papel y estado. **Aplicar al grupo** establece CA y máximo para todas sus presencias. Guardar sin cambiar esos campos no iguala diferencias existentes.
+**Gestionar presencias**, junto al resumen, abre una lista agrupada por ficha base. Cada fila permite editar nombre, CA, PG máximos, actuales y temporales y papel. **Aplicar al grupo** establece CA y máximo para todas sus presencias. Guardar sin cambiar esos campos no iguala diferencias existentes.
 
-Reducir el máximo limita los PG actuales superiores; aumentarlo no cura automáticamente. **PG actuales al máximo** rellena cada presencia hasta su propio máximo, sin cambiar PG temporales, condiciones ni estado. Confirma con **Guardar**.
+Reducir el máximo limita los PG actuales superiores; aumentarlo no cura automáticamente. **PG actuales al máximo** rellena cada presencia hasta su propio máximo, sin cambiar PG temporales ni condiciones. Confirma con **Guardar**.
+
+### Estado local de PNJ y monstruos {#local-creature-status}
+
+Para los PNJ y monstruos con ficha base, el estado en el lugar es de solo lectura: **Muerto** con 0 PG actuales, incluso con PG temporales, y **Vivo** por encima de 0. Los PJ vinculados siguen usando los valores de la aventura.
 
 ### Consultar, duplicar y mover
 

@@ -613,7 +613,11 @@ Os dados persistem sem conexão Hero. Em combates concluídos ficam somente para
 
 Para **PNJs e monstros**, **PV máximos** são editáveis ao lado dos atuais. Uma presença atualiza seu valor local; um participante da ficha geral mantém a mudança apenas nesse combate. Reduzir o máximo limita PV superiores; aumentar não cura. Outras cópias e estatísticas não mudam.
 
-Condições abre na tela da janela principal e permanece à frente. Condições e **Ataque completo** não podem ser minimizados. Só pode haver um Ataque completo aberto; retornar mantém rolagens, alvos e mudanças. Use a [barra inferior](topbar.md) para voltar ao combate pausado.
+No combate tático, **Condições** abre na tela da janela principal, mas pode ficar atrás dela. Traga a janela de volta pela barra inferior ou pela ação do mesmo participante, sem criar duplicatas. Condições e **Ataque completo** não podem ser minimizados. Só pode haver um Ataque completo aberto; retornar mantém rolagens, alvos e mudanças. Use a [barra inferior](topbar.md) para voltar ao combate pausado.
+
+### Participantes, alvos e iniciativa {#combat-participant-editor}
+
+O editor tem uma aba **Combate** para os valores do encontro e abas separadas para a ficha base. O seletor de alvos exibe CA e PV em colunas distintas. Um PJ com 0 PV continua na iniciativa se estiver inconsciente; PJs mortos são ignorados.
 
 ## Estatísticas por sessão
 

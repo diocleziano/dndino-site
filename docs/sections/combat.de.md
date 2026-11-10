@@ -613,7 +613,11 @@ Die Werte bleiben gespeichert und benötigen keine Hero-Verbindung. In abgeschlo
 
 Bei **NSC und Monstern** sind **maximale TP** neben aktuellen TP editierbar. Eine Ortspräsenz aktualisiert ihren lokalen Wert; ein Teilnehmer aus dem allgemeinen Bogen behält die Änderung nur im Kampf. Ein kleineres Maximum begrenzt höhere aktuelle TP; eine Erhöhung heilt nicht. Andere Kopien und deren Statistiken bleiben unverändert.
 
-Zustände öffnen auf dem Bildschirm des Hauptfensters und bleiben vorn. Zustände und **Vollständiger Angriff** sind nicht minimierbar. Es kann nur ein Vollständiger Angriff offen sein; erneutes Aufrufen bewahrt Würfe, Ziele und Änderungen. Über die [untere Leiste](topbar.md) kehrst du zum pausierten Kampf zurück.
+Im taktischen Kampf öffnet sich **Zustände** auf dem Bildschirm des Hauptfensters, kann aber dahinter geraten. Rufe das Fenster über die untere Leiste oder die Aktion derselben Figur erneut auf, ohne ein Duplikat zu öffnen. Zustände und **Vollständiger Angriff** sind nicht minimierbar. Es kann nur ein Vollständiger Angriff offen sein; erneutes Aufrufen bewahrt Würfe, Ziele und Änderungen. Über die [untere Leiste](topbar.md) kehrst du zum pausierten Kampf zurück.
+
+### Teilnehmende, Ziele und Initiative {#combat-participant-editor}
+
+Der Teilnehmereditor hat einen Tab **Kampf** für Begegnungswerte und eigene Tabs für den Basisbogen. Die Zielauswahl zeigt RK und TP in getrennten Spalten. Eine bewusstlose Spielerfigur mit 0 TP bleibt in der Initiative; tote Spielerfiguren werden übersprungen.
 
 ## Statistiken nach Sitzung
 

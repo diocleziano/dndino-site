@@ -19,6 +19,8 @@ Usa DnDino Hero en iPhone o iPad para enviar tu ficha al DM y compartir valores 
 - Solo el DJ activa la sincronización en directo; Hero muestra su estado. Los PG, PG temporales, CA, estados, inspiración heroica, recursos y espacios de conjuro se actualizan también en combate. Hero muestra los avisos de inicio y fin de combate y los descansos iniciados por el DJ.
 - Abre **Chat** en el panel de conexión para escribir al DJ en privado.
 
+Si has indicado un **nombre de jugador** en Hero, se envía al conectarte y puede actualizar el PJ vinculado en DnDino incluso sin sincronización. Deja el campo vacío para conservar el nombre guardado en el Mac.
+
 ## Si se interrumpe la conexión
 
 Al volver a la app, Hero puede reconectarse sin nueva autorización mientras no se revoque el acceso. Si estaba autorizada, la sincronización se reanuda y recupera los envíos pendientes sin duplicados. Al reconectar no se reenvía la ficha completa. Si ambos cambiáis el mismo valor sin conexión, el cambio desactualizado puede rechazarse y Hero adopta el valor aceptado por el DJ.
