@@ -199,13 +199,14 @@ for language in LANGUAGES:
         output = SITE / prefix / "sections" / section / "index.html"
         html = rendered(output)
         assert anchors <= html.anchors, (language, section, anchors - html.anchors)
-        for expected in V2_SCREENSHOTS.get(section, ()):
+        expected_screenshots = {f"dashboard-{language}.jpg"} if section == "adventure" else V2_SCREENSHOTS.get(section, ())
+        for expected in expected_screenshots:
             sources = [(src, alt) for src, alt in html.images if src.endswith("/" + expected)]
             assert len(sources) == 1 and sources[0][1].strip(), (language, section, expected)
             src, _ = sources[0]
             url = urlsplit(urljoin(BASE_URL + prefix + "sections/" + section + "/", src))
             assert url.path.startswith(BASE_PATH)
             assert (SITE / unquote(url.path[len(BASE_PATH):])).is_file(), (language, section, src)
-        assert not any(src.endswith(("/en_home.png", "/en_sessionelive_attiva_topbar.png")) for src, _ in html.images), output
+        assert not any(src.endswith(("/en_home.png", "/en_sessionelive_attiva_topbar.png", "/en_dashboardavventura.png")) for src, _ in html.images), output
 
 print("PASS: DnDino 2.0.0 overview links, guide anchors and screenshots in all seven languages.")

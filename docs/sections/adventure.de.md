@@ -1,6 +1,6 @@
 # Abenteuer
 
-![Abenteuer-Dashboard](../images/en_dashboardavventura.png){ .img-hero }
+![Abenteuer-Dashboard](../images/adventure/dashboard-de.jpg){ .img-hero }
 
 Der Bereich **Abenteuer** ist das organisatorische Zentrum einer Kampagne in DnDino. Hier entsteht die Hauptstruktur deiner Arbeit: der Titel der Kampagne, ihre visuelle Identität, die verknüpften Charaktere, Sitzungen, Orte, gemeinsame Bilder, Karten und die Schnellzugriffe auf Kämpfe.
 

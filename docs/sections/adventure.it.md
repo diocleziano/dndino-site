@@ -1,6 +1,6 @@
 # Avventura
 
-![Dashboard Avventura](../images/en_dashboardavventura.png){ .img-hero }
+![Dashboard Avventura](../images/adventure/dashboard-it.jpg){ .img-hero }
 
 La sezione **Avventura** è il centro organizzativo di una campagna in DnDino. Qui nasce la struttura principale del tuo lavoro: il titolo della campagna, la sua identità visiva, i personaggi collegati, le sessioni, i luoghi, le immagini condivise, le mappe e gli accessi rapidi ai combattimenti.
 
