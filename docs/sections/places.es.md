@@ -571,6 +571,8 @@ Conviene pensar en estos tres elementos como capas distintas:
 - el **mapa** es un recurso visual vinculado al lugar
 - el **mapa interactivo** es un mapa elegido como soporte navegable, enriquecido con marcadores
 
+Vincula un marcador a la sala del combate para volver a consultar la zona sin salir del encuentro. [Cómo funciona la vista previa del mapa](interactive-maps.md#marker-combat-preview).
+
 ## Misiones en la sección Lugares
 
 Las misiones viven en la misma sección que los lugares, pero siguen su propio comportamiento.

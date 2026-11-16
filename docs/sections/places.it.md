@@ -594,6 +594,8 @@ Conviene pensare a queste tre cose come a livelli diversi:
 - la **mappa** è un asset visuale collegato al luogo
 - la **mappa interattiva** è una mappa scelta come supporto navigabile, arricchita da marker
 
+Collega un marker alla stanza in cui si svolge il combattimento per rivedere la zona direttamente dallo scontro. [Come funziona l’anteprima della mappa](interactive-maps.md#marker-combat-preview).
+
 ## Mappa Ombra
 
 Una **Mappa Ombra** è una mappa pensata per essere rivelata poco alla volta durante la sessione.

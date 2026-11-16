@@ -236,6 +236,12 @@ Depuis là, tu peux :
 - voir les lieux organisés dans une structure hiérarchique
 - assigner le marqueur au bon lieu
 
+### Utiliser un marqueur pendant le combat {#marker-combat-preview}
+
+Place le marqueur dans la salle ou la zone que tu veux retrouver et choisis comme destination le lieu précis du combat. Donner au marqueur le nom du lieu ne suffit pas : il faut sélectionner le lieu dans le sélecteur. Une fois le combat lancé à cet endroit, **Carte** dans les commandes du combat affiche les environs du marqueur, uniquement pour le MJ.
+
+[Voir l’aperçu en combat](combat.md#encounter-map-preview).
+
 ## Modifier un marqueur existant
 
 Quand un marqueur est sélectionné en mode édition, tu peux modifier dans l’inspector :

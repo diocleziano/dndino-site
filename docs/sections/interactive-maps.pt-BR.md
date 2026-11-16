@@ -236,6 +236,12 @@ A partir daí você pode:
 - ver os locais organizados em estrutura hierárquica
 - atribuir o marcador ao local correto
 
+### Usar um marcador durante o combate {#marker-combat-preview}
+
+Coloque o marcador na sala ou na área que deseja consultar e escolha como destino o local exato do combate. Dar ao marcador o nome do local não basta: selecione o local no seletor. Quando o combate começar ali, **Mapa** nos controles abre um recorte ao redor do marcador, visível apenas para o mestre.
+
+[Ver a prévia no combate](combat.md#encounter-map-preview).
+
 ## Modificar um marcador existente
 
 Quando um marcador está selecionado em modo de edição, no inspetor você pode alterar:

@@ -236,6 +236,12 @@ Desde ahí puedes:
 - ver los lugares organizados en estructura jerárquica
 - asignar el marcador al lugar correcto
 
+### Usar un marcador durante el combate {#marker-combat-preview}
+
+Coloca el marcador en la sala o zona que quieras volver a consultar y elige como destino el lugar exacto del combate. Ponerle al marcador el nombre del lugar no basta: selecciona el lugar en el selector. Cuando comience el combate allí, **Mapa** en los controles abre una vista de la zona alrededor del marcador, visible solo para el DJ.
+
+[Ver la vista previa en combate](combat.md#encounter-map-preview).
+
 ## Modificar un marcador existente
 
 Cuando un marcador está seleccionado en modo edición, en el inspector puedes modificar:

@@ -236,6 +236,12 @@ Qui puoi:
 - vedere i luoghi organizzati in struttura gerarchica
 - assegnare il marker al luogo corretto
 
+### Usare il marker durante il combattimento {#marker-combat-preview}
+
+Posiziona il marker nella stanza o nella zona che vuoi ritrovare e collega come destinazione il luogo esatto in cui si svolgerà lo scontro. Un titolo uguale al nome del luogo non basta: il collegamento va scelto nel selettore. Dopo aver avviato lo scontro in quel luogo, **Mappa** nei controlli del combattimento apre un ritaglio centrato sulla zona del marker, solo per il Master.
+
+[Vedi l’anteprima in combattimento](combat.md#encounter-map-preview).
+
 ## Modificare un marker esistente
 
 Quando un marker è selezionato in modalità editing, nell’inspector puoi modificare:

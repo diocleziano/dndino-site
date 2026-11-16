@@ -571,6 +571,8 @@ It helps to think of these three as different layers:
 - the **map** is a visual asset linked to the place
 - the **interactive map** is a chosen navigable map enriched with markers
 
+Link a marker to the room where the encounter takes place to see that area without leaving combat. [How the map preview works](interactive-maps.md#marker-combat-preview).
+
 ## Quests in the Places Section
 
 Quests live in the same section as places, but they follow their own behavior.

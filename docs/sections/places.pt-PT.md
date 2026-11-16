@@ -571,6 +571,8 @@ Convém pensar nestes três elementos como camadas diferentes:
 - o **mapa** é um recurso visual ligado ao local
 - o **mapa interativo** é um mapa escolhido como suporte navegável, enriquecido com marcadores
 
+Associa um marcador à sala onde decorre o combate para consultares a zona sem sair do encontro. [Como funciona a pré-visualização do mapa](interactive-maps.md#marker-combat-preview).
+
 ## Missões na secção Locais
 
 As missões vivem na mesma secção que os locais, mas seguem um comportamento próprio.

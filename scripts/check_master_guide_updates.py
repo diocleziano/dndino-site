@@ -180,7 +180,8 @@ print(f"PASS: {len(COVERAGE) * len(LANGUAGES)} localized Master pages, coverage 
 V2_ANCHORS = {
     "homepage": {"resume-adventure", "adventure-heroes", "first-adventure", "quick-access"},
     "adventure": {"character-health-attendance"},
-    "combat": {"combat-participant-editor"},
+    "combat": {"combat-participant-editor", "encounter-map-preview"},
+    "interactive-maps": {"marker-combat-preview"},
     "places": {"local-creature-status"},
     "live-session": {"live-session-bottom-bar"},
     "topbar": {"live-session-control", "fill-main-window"},
@@ -189,12 +190,21 @@ V2_SCREENSHOTS = {
     "homepage": {"command-desk-2-0.jpg", "first-adventure-2-0.jpg"},
     "live-session": {"live-session-bottom-bar-2-0.jpg"},
 }
+MAP_PREVIEW_LINKS = {
+    "combat": ("interactive-maps", "marker-combat-preview"),
+    "interactive-maps": ("combat", "encounter-map-preview"),
+    "places": ("interactive-maps", "marker-combat-preview"),
+}
 for language in LANGUAGES:
     prefix = "" if language == "en" else language + "/"
     index = rendered(SITE / prefix / "index.html")
     assert "guide-2-0" in index.anchors, language
     for section in ("homepage", "live-session", "combat", "places", "hero-sync"):
         assert any(urlsplit(link).path.rstrip("/").endswith(f"sections/{section}") for link in index.links), (language, section)
+    for section, (target, anchor) in MAP_PREVIEW_LINKS.items():
+        html = rendered(SITE / prefix / "sections" / section / "index.html")
+        assert any(urlsplit(link).path.rstrip("/").endswith("/" + target)
+                   and urlsplit(link).fragment == anchor for link in html.links), (language, section, target, anchor)
     for section, anchors in V2_ANCHORS.items():
         output = SITE / prefix / "sections" / section / "index.html"
         html = rendered(output)

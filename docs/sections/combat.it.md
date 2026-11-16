@@ -150,7 +150,7 @@ Le azioni principali sono:
 
 `Aggiungi` apre il selettore dei partecipanti.
 
-`Avvia scontro` avvia il combattimento. Se almeno un partecipante ha iniziativa `0`, DnDino chiede conferma.
+Quando l’iniziativa è pronta, usa **Avvia scontro**, il pulsante principale della schermata, riconoscibile dal fondo pieno e dall’icona Play. Nelle viste Tattica e Flat, se almeno un partecipante ha iniziativa `0`, DnDino chiede conferma.
 
 `Init PNG/Mostri` tira automaticamente l'iniziativa solo per mostri e PNG. Gli eroi restano pensati per l'inserimento manuale, perché di solito il valore arriva dal tavolo.
 
@@ -212,6 +212,12 @@ La struttura è divisa in tre zone:
 - a destra il **riepilogo** di salute, danni ed eventi
 
 L'obiettivo è vedere più informazioni possibili senza aprire pannelli enormi.
+
+## Anteprima della mappa durante il combattimento {#encounter-map-preview}
+
+Se un marker di una mappa interattiva dell’avventura è collegato al luogo dello scontro, nei controlli del combattimento trovi **Mappa** subito a destra di **Aggiungi**. Aprilo per vedere la porzione di mappa intorno al marker, per esempio la stanza e i suoi accessi, senza lasciare il combattimento. L’anteprima è visibile solo al Master e non viene inviata allo schermo dei giocatori.
+
+[Come collegare il marker al luogo](interactive-maps.md#marker-combat-preview).
 
 ## Controlli del turno
 

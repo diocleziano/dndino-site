@@ -145,12 +145,12 @@ Les cartes des participants utilisent déjà la couleur du rôle dans cette phas
 Les actions principales sont :
 
 - `Ajouter`
-- `Démarrer l'affrontement`
+- `Lancer le combat`
 - `Init PNJ/Monstres`, dans la colonne monstres et PNJ
 
 `Ajouter` ouvre le sélecteur de participants.
 
-`Démarrer l'affrontement` lance le combat. Si au moins un participant a une initiative à `0`, DnDino demande confirmation.
+Une fois l’initiative prête, clique sur **Lancer le combat**. Ce bouton principal se distingue par son fond coloré et son icône de lecture. En vue tactique ou Flat, si au moins un participant a une initiative de `0`, DnDino demande confirmation.
 
 `Init PNJ/Monstres` lance automatiquement l'initiative uniquement pour les monstres et PNJ. Les héros restent prévus pour une saisie manuelle, car leur initiative vient généralement de la table.
 
@@ -212,6 +212,12 @@ Il est divisé en trois zones :
 - à droite, le **récapitulatif** de santé, dégâts et événements
 
 L'objectif est de garder un maximum d'informations utiles visibles sans ouvrir de grands panneaux.
+
+## Aperçu de la carte pendant le combat {#encounter-map-preview}
+
+Lorsqu’un marqueur d’une carte interactive de l’aventure est lié au lieu du combat, **Carte** apparaît juste à droite d’**Ajouter**. Ce bouton affiche la zone autour du marqueur, par exemple la salle et ses accès, sans quitter le combat. Seul le MJ voit cet aperçu : rien n’est envoyé à l’écran des joueurs.
+
+[Comment lier un marqueur à un lieu](interactive-maps.md#marker-combat-preview).
 
 ## Contrôles du Tour
 

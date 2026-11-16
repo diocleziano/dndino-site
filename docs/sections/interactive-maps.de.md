@@ -236,6 +236,12 @@ Von dort aus kannst du:
 - Orte in hierarchischer Struktur sehen
 - den Marker dem richtigen Ort zuweisen
 
+### Einen Marker im Kampf verwenden {#marker-combat-preview}
+
+Setze den Marker in den Raum oder Bereich, den du wiederfinden möchtest, und wähle als Ziel den genauen Ort des Kampfes aus. Ein gleichlautender Titel reicht nicht: Wähle den Ort in der Ortsauswahl aus. Sobald der Kampf dort beginnt, öffnet **Karte** in der Kampfsteuerung einen Ausschnitt um den Marker, den nur die Spielleitung sieht.
+
+[Zur Kartenvorschau im Kampf](combat.md#encounter-map-preview).
+
 ## Einen bestehenden Marker bearbeiten
 
 Wenn ein Marker im Bearbeitungsmodus ausgewählt ist, kannst du im Inspector ändern:

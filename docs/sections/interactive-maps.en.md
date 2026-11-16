@@ -236,6 +236,12 @@ From here you can:
 - see places arranged in a hierarchy
 - assign the marker to the correct place
 
+### Using a marker during combat {#marker-combat-preview}
+
+Place the marker in the room or area you want to find again and select the exact location where the encounter will take place as its destination. Naming a marker after the location is not enough: select the location in the picker. Once combat starts there, **Map** in the combat controls opens a close-up around the marker, visible only to the GM.
+
+[See the preview in combat](combat.md#encounter-map-preview).
+
 ## Editing an Existing Marker
 
 When a marker is selected in edit mode, you can modify in the inspector:

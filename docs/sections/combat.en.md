@@ -145,12 +145,12 @@ Participant cards already use role colors in this phase, so you can immediately 
 The main actions are:
 
 - `Add`
-- `Start Encounter`
+- `Start encounter`
 - `NPC/Monster Init`, inside the monsters and NPCs column
 
 `Add` opens the participant picker.
 
-`Start Encounter` begins combat. If at least one participant has initiative `0`, DnDino asks for confirmation.
+When initiative is ready, click **Start encounter**, the main button with a solid background and a play icon. In Tactical and Flat, if any participant has initiative `0`, DnDino asks for confirmation.
 
 `NPC/Monster Init` rolls initiative automatically only for monsters and NPCs. Heroes are normally entered manually, because their initiative usually comes from the table.
 
@@ -212,6 +212,12 @@ It is divided into three zones:
 - right: the **summary** with health, damage, and recent events
 
 The goal is to keep as much useful information visible as possible without opening oversized panels.
+
+## Map preview during combat {#encounter-map-preview}
+
+If a marker on an interactive map in the adventure links to the encounter location, **Map** appears immediately to the right of **Add** in the combat controls. Click it to see the area around the marker, such as the room and its entrances, without leaving combat. Only the GM can see the preview; it is not shown on the players’ screen.
+
+[How to link the marker to a place](interactive-maps.md#marker-combat-preview).
 
 ## Turn Controls
 

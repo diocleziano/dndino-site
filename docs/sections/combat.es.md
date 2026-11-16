@@ -145,12 +145,12 @@ Las tarjetas de participantes ya usan el color del rol en esta fase, para distin
 Las acciones principales son:
 
 - `Añadir`
-- `Iniciar encuentro`
+- `Iniciar combate`
 - `Init PNJ/Monstruos`, en la columna de monstruos y PNJ
 
 `Añadir` abre el selector de participantes.
 
-`Iniciar encuentro` comienza el combate. Si al menos un participante tiene iniciativa `0`, DnDino pide confirmación.
+Cuando la iniciativa esté lista, pulsa **Iniciar combate**, el botón principal con fondo de color e icono de reproducción. En las vistas Táctica y Flat, si al menos un participante tiene iniciativa `0`, DnDino pide confirmación.
 
 `Init PNJ/Monstruos` tira automáticamente la iniciativa solo para monstruos y PNJ. Los héroes están pensados para entrada manual, porque su valor suele venir de la mesa.
 
@@ -212,6 +212,12 @@ Se divide en tres zonas:
 - a la derecha, el **resumen** de salud, daño y eventos
 
 El objetivo es ver la mayor cantidad de información útil posible sin abrir paneles enormes.
+
+## Vista previa del mapa durante el combate {#encounter-map-preview}
+
+Si un marcador de un mapa interactivo de la aventura está vinculado al lugar del encuentro, **Mapa** aparece justo a la derecha de **Añadir**. Pulsa para ver la zona alrededor del marcador, por ejemplo la sala y sus accesos, sin salir del combate. Solo el DJ puede ver la vista previa; no se muestra en la pantalla de los jugadores.
+
+[Cómo vincular el marcador a un lugar](interactive-maps.md#marker-combat-preview).
 
 ## Controles del Turno
 

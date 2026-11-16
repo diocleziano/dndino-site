@@ -573,6 +573,8 @@ Es hilft, diese drei Dinge als unterschiedliche Ebenen zu betrachten:
 - die **Karte** ist ein visuelles Asset, das mit dem Ort verknüpft ist
 - die **interaktive Karte** ist eine ausgewählte navigierbare Karte, angereichert mit Markern
 
+Verknüpfe einen Marker mit dem Raum, in dem der Kampf stattfindet, um den Bereich direkt im Kampf nachzuschlagen. [So funktioniert die Kartenvorschau](interactive-maps.md#marker-combat-preview).
+
 ## Quests im Bereich Orte
 
 Quests leben im selben Bereich wie Orte, folgen aber ihrem eigenen Verhalten.

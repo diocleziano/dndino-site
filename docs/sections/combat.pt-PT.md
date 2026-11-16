@@ -145,12 +145,12 @@ Os cartões dos participantes já usam a cor do papel nesta fase, para distingui
 As acções principais são:
 
 - `Adicionar`
-- `Iniciar encontro`
+- `Iniciar combate`
 - `Init NPCs/Monstros`, na coluna de monstros e NPCs
 
 `Adicionar` abre o selector de participantes.
 
-`Iniciar encontro` começa o combate. Se pelo menos um participante tiver iniciativa `0`, DnDino pede confirmação.
+Quando a iniciativa estiver pronta, clica em **Iniciar combate**, o botão principal com fundo colorido e ícone de reprodução. Nas vistas Tática e Flat, se pelo menos um participante tiver iniciativa `0`, o DnDino pede confirmação.
 
 `Init NPCs/Monstros` lança automaticamente a iniciativa apenas para monstros e NPCs. Os heróis são normalmente introduzidos manualmente, porque o valor costuma vir da mesa.
 
@@ -212,6 +212,12 @@ Está dividido em três zonas:
 - à direita, o **resumo** de saúde, dano e eventos
 
 O objectivo é manter visível o máximo de informação útil sem abrir painéis enormes.
+
+## Pré-visualização do mapa durante o combate {#encounter-map-preview}
+
+Se um marcador de um mapa interativo da aventura estiver associado ao local do encontro, **Mapa** aparece logo à direita de **Adicionar**. Clica para ver a zona em torno do marcador, como a sala e os seus acessos, sem sair do combate. A pré-visualização é exclusiva do mestre de jogo e não aparece no ecrã dos jogadores.
+
+[Como associar o marcador a um local](interactive-maps.md#marker-combat-preview).
 
 ## Controlos do Turno
 

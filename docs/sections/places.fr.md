@@ -571,6 +571,8 @@ Il est utile de considérer ces trois éléments comme des niveaux différents :
 - la **carte** est un asset visuel lié au lieu
 - la **carte interactive** est une carte choisie comme support navigable, enrichie de marqueurs
 
+Lie un marqueur à la salle où se déroule le combat pour retrouver la zone sans quitter l’affrontement. [Fonctionnement de l’aperçu de la carte](interactive-maps.md#marker-combat-preview).
+
 ## Quêtes dans la section Lieux
 
 Les quêtes vivent dans la même section que les lieux, mais elles suivent un comportement dédié.

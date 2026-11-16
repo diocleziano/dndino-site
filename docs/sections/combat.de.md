@@ -145,12 +145,12 @@ Die Teilnehmerkarten nutzen bereits in dieser Phase Rollenfarben, damit du Helde
 Die Hauptaktionen sind:
 
 - `Hinzufügen`
-- `Begegnung starten`
+- `Kampf starten`
 - `NSC/Monster-Initiative`, in der Spalte Monster und NSC
 
 `Hinzufügen` öffnet die Teilnehmerauswahl.
 
-`Begegnung starten` startet den Kampf. Hat mindestens ein Teilnehmer Initiative `0`, fragt DnDino nach Bestätigung.
+Sobald die Initiative feststeht, klicke auf **Kampf starten**. Die Hauptschaltfläche ist an der farbigen Fläche und dem Wiedergabesymbol zu erkennen. Hat in der taktischen oder der Flat-Ansicht mindestens ein Teilnehmer Initiative `0`, fragt DnDino nach einer Bestätigung.
 
 `NSC/Monster-Initiative` würfelt automatisch nur für Monster und NSC. Helden sind meist für manuelle Eingabe gedacht, weil ihre Initiative vom Tisch kommt.
 
@@ -212,6 +212,12 @@ Sie ist in drei Zonen gegliedert:
 - rechts die **Übersicht** mit Gesundheit, Schaden und Ereignissen
 
 Ziel ist, möglichst viele nützliche Informationen sichtbar zu halten, ohne große Fenster zu öffnen.
+
+## Kartenvorschau im Kampf {#encounter-map-preview}
+
+Wenn ein Marker auf einer interaktiven Karte des Abenteuers mit dem Kampfort verknüpft ist, erscheint **Karte** rechts neben **Hinzufügen**. Die Vorschau zeigt den Ausschnitt um den Marker, etwa den Raum und seine Zugänge, ohne den Kampf zu verlassen. Sie bleibt der Spielleitung vorbehalten und wird nicht auf dem Spielerbildschirm angezeigt.
+
+[So verknüpfst du den Marker mit einem Ort](interactive-maps.md#marker-combat-preview).
 
 ## Zugsteuerung
 
