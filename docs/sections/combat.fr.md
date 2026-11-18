@@ -65,8 +65,6 @@ L'affichage peut inclure :
 - états
 - prochain tour
 
-![Écran joueurs pendant le tour d'un héros](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
-![Écran joueurs pendant le tour d'un monstre](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 ## Gestion du second écran {#player-screen-options}
 
@@ -609,13 +607,13 @@ En mode jet d’attaque, DnDino peut comparer le résultat avec la CA des cibles
 
 La fenêtre d’Attaque complète prend aussi en charge le type d’attaque, pour préciser s’il s’agit d’une attaque au corps à corps, à distance, de zone ou personnalisée.
 
-<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 MOD-156 MOD-167 MOD-171 MOD-172 -->
 
 ## Progressions, emplacements et fenêtres de combat
 
-Le panneau du PJ sélectionné ou actif contient **Ressources de classe** et **Emplacements de sorts**, repliables séparément. Chaque progression occupe une ligne avec nom, valeur et description dépliable : **Restants/Total** avec moins/plus pour les consommables, consultation seule pour les fixes. À zéro, la ressource devient rouge. Les emplacements montrent **Utilisés/Total**, séparés par niveau et origine ; le compteur devient rouge lorsqu'ils sont épuisés.
+Le panneau du PJ sélectionné ou actif propose des sections repliables distinctes pour les progressions et emplacements. Les progressions compactes occupent deux colonnes : nom, description consultable et valeur. Les consommables montrent **Restants/Total** avec moins/plus ; les entrées fixes n'ont pas de boutons de consommation. Les dés de vie indiquent aussi la classe. Ressources et emplacements épuisés deviennent rouges ; moins, restants, plus et indicateur Live partagent une ligne pour les emplacements.
 
-Ces données persistent sans connexion Hero. Elles sont en lecture seule dans les combats terminés. Pour un personnage reçu de Hero, la live contrôlée par le Master permet de modifier les compteurs pris en charge avec confirmation de l'app du joueur ; nouvelles progressions et maxima nécessitent la fiche complète. Voir [guide Hero](hero-sync.md).
+Ces compteurs restent utilisables sans Hero connectée. Avec la Live autorisée, les valeurs prises en charge sont synchronisées et identifiables ; une reconnexion reprend la file sans réimporter automatiquement la fiche. Un envoi/téléchargement explicite aligne au contraire les valeurs Live, en combat ou hors combat, même Live désactivée. Pour modifier structure et maxima, utilisez la mise à jour complète. Voir [Connexion avec Hero](hero-sync.md).
 
 Pour les **PNJ et monstres**, les **PV maximum** sont modifiables près des PV actuels. Une présence actualise sa valeur locale ; un participant issu de la fiche générale garde la modification uniquement dans ce combat. Réduire le maximum limite les PV supérieurs ; l'augmenter ne soigne pas. Les autres copies et leurs statistiques restent intactes.
 
@@ -628,3 +626,23 @@ L’éditeur des participants comporte un onglet **Combat** pour les données de
 ## Statistiques par session
 
 L'historique des statistiques d'aventure regroupe les combats par session. Le détail s'ouvre dans la même fenêtre, avec retour aux statistiques. Nombre de combats et dégâts infligés/subis sont agrégés par session avec la **date de début en abscisse** : deux sessions le même jour restent distinctes, une session passant minuit reste unie. Les combats sans session ne reçoivent pas d'association inventée.
+
+## Écran joueurs scénique {#scenic-player-screen}
+
+Pendant le combat, la Fenêtre Joueurs utilise la nouvelle présentation scénique, sans sélecteur de mode. Une couverture ou image du lieu visible des joueurs remplit le fond, recadrée sans déformation ; à défaut, le fond est neutre. Le participant actif dispose d'un grand portrait centré verticalement, y compris les PNJ et monstres.
+
+Round, durée et prochain tour respectent les options du combat ; le chronomètre s'arrête en pause. PV et états suivent des réglages de visibilité indépendants par participant. Les héros affichent aussi leurs ressources consommables et emplacements, compacts et sans défilement ; les dés de vie ne figurent pas ici.
+
+Les attaques montrent de grandes cibles et un encart de dégâts qui les rejoint, avec une brève secousse du portrait. Au-delà de quatre cibles, les pages défilent automatiquement. Les ennemis morts portent **Vaincu** ; les héros distinguent **Inconscient** et **Mort**. Au tour d'un héros inconscient, **Essaie de résister** accompagne les réussites et échecs des jets contre la mort ; le message change après stabilisation. Aucun dé n'est lancé automatiquement. Les indications liées aux PV respectent leur visibilité. **Réduire les animations** limite les mouvements.
+
+L'introduction et le bilan final restent disponibles. Les réglages initialisent les nouveaux combats ; pour un combat existant, utilisez **Gestion du second écran** et le panneau repliable de visibilité du participant.
+
+## Actions du tour {#turn-action-tracking}
+
+Sous initiative et vitesse, cliquez sur toute la zone **Action**, **Déplacement**, **Bonus** ou **Réaction** pour la marquer utilisée. Ce sont des rappels manuels et réversibles, sans consommation automatique de ressources ni blocage des attaques. Ils restent modifiables hors tour ou en pause.
+
+Les indicateurs sont enregistrés avec le combat et réinitialisés seulement au début du prochain tour de ce participant. Les autres conservent les leurs, réactions comprises. Revenir au tour précédent ne les efface pas. Les joueurs les voient en lecture seule pour le héros actif ; ils ne sont pas synchronisés avec Hero. Un combat terminé n'est plus modifiable.
+
+## Dégâts, annulations et sessions {#session-damage-accounting}
+
+Les mises à jour Live des PV ne suppriment pas les dégâts enregistrés. **Annuler l'événement** soustrait les dégâts de l'attaque du bilan du combat et des totaux de session, sans toucher aux autres rencontres. Les totaux de session correspondent à la somme des combats inclus ; modifier les PV ne constitue pas une nouvelle attaque.

@@ -118,7 +118,7 @@ Usala soprattutto quando:
 
 Se in macOS l’azione del doppio clic sulla barra del titolo è **Riempi**, fai doppio clic in uno spazio vuoto della barra: la finestra principale occupa l’area visibile senza entrare a schermo intero. Ripeti per ripristinare le dimensioni precedenti.
 
-<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 MOD-153 MOD-168 MOD-169 -->
 
 ## Barra inferiore e finestre aperte
 
@@ -127,3 +127,13 @@ La barra in basso compare quando ci sono finestre di lavoro o collegamenti da ri
 Uscendo da un combattimento non concluso, lo scontro va in pausa e un collegamento con barretta colorata resta **per primo a sinistra**. Clicca per rientrare. La sua X nasconde solo il collegamento: non termina né elimina il combattimento. Durante quello scontro la scorciatoia non serve e viene nascosta, ma le altre finestre restano elencate.
 
 Le chat ricevute da Hero compaiono anche a finestra chiusa, senza interromperti; un pallino segnala i messaggi non letti. Aprire e leggere la conversazione rimuove l'indicatore. A destra, l'area Hero mantiene i giocatori contattati durante l'apertura corrente dell'app anche dopo una disconnessione: stato, test collegamento, chat, download della scheda, live e scollegamento. Vedi [guida Hero](hero-sync.md).
+
+## Notifiche {#notification-history}
+
+La **campanella**, all'estremità destra dopo Hero, apre le ultime **20 notifiche**, con mittente, testo e orario, più recenti in alto e indicatore di novità. I banner appaiono in alto a destra per richieste, connessioni, disconnessioni, riconnessioni, messaggi e variazioni Live ricevute da Hero; la cronologia include anche gli avvisi del combattimento. Modifiche del Master e reinvii senza nuove variazioni non producono notifiche Live duplicate.
+
+La cronologia è temporanea: si svuota al riavvio o al cambio archivio. Ricevere un messaggio non apre automaticamente la chat, che mantiene il proprio indicatore di non letti. Per nascondere la campanella o disattivare il suono usa [le impostazioni](settings.md#notification-settings).
+
+## Richiamo delle finestre {#window-bar-toggle}
+
+Cliccando una finestra nella barra inferiore, la porti davanti se era dietro o ridotta a icona. Se è già in primo piano, la riduci a icona. Per **Condizioni** e **Attacco completo**, che non si minimizzano, il clic serve solo a richiamarle. Questo comando non minimizza la finestra principale.

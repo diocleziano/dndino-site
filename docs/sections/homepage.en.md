@@ -4,7 +4,7 @@ In DnDino 2.0.0, Home is the **GM Command Desk**. The greeting uses your Dungeon
 
 ![GM Command Desk with four heroes and shortcuts to the latest location and combat](../images/homepage/command-desk-2-0.jpg){ .img-hero }
 
-<!-- guide-coverage: MOD-144 -->
+<!-- guide-coverage: MOD-144 MOD-165 MOD-166 -->
 
 ## Resume a campaign {#resume-adventure}
 
@@ -27,3 +27,7 @@ When the library is empty, **Create your first adventure** opens the form direct
 ## Quick Access {#quick-access}
 
 Open **Adventures**, **Heroes, NPCs and Monsters**, **Equipment**, **Rules**, **Name Generator** and **Settings** directly from Home.
+
+## Cover and launch {#adventure-cover-opening}
+
+In the **Control Table** Home layout, clicking the adventure cover opens the adventure, just like its dedicated button. The loading screen displays the DnDino wordmark on a translucent panel for at least about three seconds.

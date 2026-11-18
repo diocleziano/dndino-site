@@ -4,7 +4,7 @@ In DnDino 2.0.0 ist die Startseite das **Spielleiterpult**. Ist ein Name für di
 
 ![Spielleiterpult mit vier Helden und Schnellzugriff auf Ort und Kampf](../images/homepage/command-desk-2-0.jpg){ .img-hero }
 
-<!-- guide-coverage: MOD-144 -->
+<!-- guide-coverage: MOD-144 MOD-165 MOD-166 -->
 
 ## Eine Kampagne fortsetzen {#resume-adventure}
 
@@ -27,3 +27,7 @@ Bei einer leeren Bibliothek öffnet die Schaltfläche zum Erstellen des ersten A
 ## Schnellzugriff {#quick-access}
 
 Von hier erreichst du **Abenteuer**, **Helden, NSC und Monster**, **Ausrüstung**, **Regeln**, **Namensgenerator** und **Einstellungen**.
+
+## Titelbild und Start {#adventure-cover-opening}
+
+Auf der **Regietisch**-Startseite öffnet auch ein Klick auf das Abenteuertitelbild das Abenteuer. Der Ladebildschirm zeigt den DnDino-Schriftzug auf einem durchscheinenden Bereich für mindestens etwa drei Sekunden.

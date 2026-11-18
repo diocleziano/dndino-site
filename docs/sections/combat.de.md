@@ -65,8 +65,6 @@ Die Einblendung kann enthalten:
 - Zustände
 - nächster Zug
 
-![Spielerfenster während des Zugs eines Helden](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
-![Spielerfenster während des Zugs eines Monsters](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 ## Zweiten Bildschirm verwalten {#player-screen-options}
 
@@ -609,13 +607,13 @@ Im Angriffswurfmodus kann DnDino das Ergebnis mit der RK der ausgewählten Ziele
 
 Das Vollangriff-Fenster unterstützt außerdem einen Angriffstyp, damit klar bleibt, ob es sich um Nahkampf, Fernkampf, Fläche oder eine eigene Beschreibung handelt.
 
-<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 MOD-156 MOD-167 MOD-171 MOD-172 -->
 
 ## Progressionen, Zauberplätze und Kampffenster
 
-Der ausgewählte/aktive SC hat getrennt einklappbare Bereiche **Klassenressourcen** und **Zauberplätze**. Jede Progression belegt eine Zeile mit Name, Wert und ausklappbarer Beschreibung: **Verbleibend/Gesamt** mit Minus/Plus für Verbrauchswerte, feste Werte nur zur Ansicht. Bei null werden Ressourcen rot. Plätze zeigen **Verwendet/Gesamt**, nach Grad und Quelle getrennt; erschöpfte Zähler werden rot.
+Der Bereich des ausgewählten oder aktiven SC bietet getrennt einklappbare Fortschritte und Zauberplätze. Kompakte Fortschritte stehen in zwei Spalten mit Name, abrufbarer Beschreibung und Wert. Verbrauchbare Einträge zeigen **Verbleibend/Gesamt** mit Minus/Plus; feste Einträge haben keine Verbrauchsschaltflächen. Trefferwürfel nennen auch die Klasse. Erschöpfte Ressourcen und Plätze werden rot; Minus, Restwert, Plus und Live-Anzeige der Plätze stehen in einer Zeile.
 
-Die Werte bleiben gespeichert und benötigen keine Hero-Verbindung. In abgeschlossenen Kämpfen sind sie schreibgeschützt. Für Hero-Charaktere erlaubt die vom Master gesteuerte Live-Sync Zähleränderungen mit Bestätigung der Spieler-App; neue Progressionen oder Maxima erfordern einen vollständigen Bogen. Siehe [Hero-Anleitung](hero-sync.md).
+Zähler bleiben ohne verbundenes Hero nutzbar. Bei autorisiertem Live werden unterstützte Werte synchronisiert und markiert; eine Wiederverbindung setzt die Warteschlange ohne automatischen Bogenimport fort. Explizites Senden/Herunterladen gleicht Live-Werte auch im Kampf und bei ausgeschaltetem Live an. Struktur und Höchstwerte des Spielers ändern Sie durch ein vollständiges Update. Siehe [Mit Hero verbinden](hero-sync.md).
 
 Bei **NSC und Monstern** sind **maximale TP** neben aktuellen TP editierbar. Eine Ortspräsenz aktualisiert ihren lokalen Wert; ein Teilnehmer aus dem allgemeinen Bogen behält die Änderung nur im Kampf. Ein kleineres Maximum begrenzt höhere aktuelle TP; eine Erhöhung heilt nicht. Andere Kopien und deren Statistiken bleiben unverändert.
 
@@ -628,3 +626,23 @@ Der Teilnehmereditor hat einen Tab **Kampf** für Begegnungswerte und eigene Tab
 ## Statistiken nach Sitzung
 
 Die Abenteuerstatistik gruppiert Kämpfe nach Sitzung. Details öffnen im selben Fenster mit Rückkehr zu den Statistiken. Kampfanzahl und ausgeteilter/erlittener Schaden werden pro Sitzung mit dem **Beginn-Datum auf der X-Achse** zusammengefasst: zwei Sitzungen am selben Tag bleiben getrennt, eine Sitzung über Mitternacht bleibt zusammen. Kämpfe ohne Sitzung erhalten keine erfundene Zuordnung.
+
+## Szenischer Spielerbildschirm {#scenic-player-screen}
+
+Im Kampf verwendet das Spielerfenster die neue szenische Darstellung ohne Modusauswahl. Ein für Spieler sichtbares Titelbild oder Bild des Ortes füllt den Hintergrund, unverzerrt zugeschnitten; andernfalls bleibt er neutral. Der aktive Teilnehmer erhält ein großes, vertikal zentriertes Porträt, auch NSC und Monster.
+
+Runde, Dauer und nächster Zug folgen den Kampfoptionen; bei Pause stoppt die Uhr. TP und Zustände haben unabhängige Sichtbarkeitseinstellungen pro Teilnehmer. Helden zeigen zusätzlich kompakte verbrauchbare Ressourcen und Zauberplätze ohne Scrollen; Trefferwürfel werden hier nicht angezeigt.
+
+Angriffe zeigen große Ziele und eine Schadensanzeige, die jedes Ziel erreicht und dessen Porträt kurz erschüttert. Bei mehr als vier Zielen wechseln die Seiten automatisch. Tote Gegner tragen **Besiegt**, Helden **Bewusstlos** oder **Tot**. Im Zug eines bewusstlosen Helden begleitet **Versuche durchzuhalten** die gespeicherten Erfolge und Fehlschläge der Todesrettungswürfe; nach Stabilisierung ändert sich der Text. Es wird nicht automatisch gewürfelt. TP-abhängige Anzeigen beachten die TP-Sichtbarkeit. **Bewegung reduzieren** begrenzt Animationen.
+
+Einleitung und Abschlussübersicht bleiben erhalten. Globale Einstellungen initialisieren neue Kämpfe; vorhandene Kämpfe passen Sie über **Zweiten Bildschirm verwalten** und den einklappbaren Sichtbarkeitsbereich des Teilnehmers an.
+
+## Aktionen im Zug {#turn-action-tracking}
+
+Unter Initiative und Geschwindigkeit markieren Sie **Aktion**, **Bewegung**, **Bonus** und **Reaktion** durch Klick auf die gesamte Schaltfläche. Diese manuellen, umkehrbaren Merkhilfen verbrauchen keine Ressourcen und verhindern keine Angriffe. Änderungen sind auch außerhalb des eigenen Zuges und bei Pause möglich.
+
+Markierungen werden mit dem Kampf gespeichert und erst zu Beginn des nächsten Zuges dieses Teilnehmers zurückgesetzt. Die übrigen behalten ihre Markierungen, einschließlich Reaktionen. Ein Schritt zum vorherigen Zug setzt nichts zurück. Spieler sehen sie beim aktiven Helden schreibgeschützt; keine Synchronisierung mit Hero. Abgeschlossene Kämpfe sind nicht bearbeitbar.
+
+## Schaden, Rückgängig und Sitzungen {#session-damage-accounting}
+
+Live-TP-Updates entfernen keinen in Ereignissen erfassten Schaden. **Ereignis rückgängig** zieht Angriffsschaden von Kampf- und Sitzungssummen ab, ohne andere Begegnungen zu verändern. Sitzungssummen entsprechen der Summe der enthaltenen Kämpfe; eine reine TP-Änderung ist kein neuer Angriff.

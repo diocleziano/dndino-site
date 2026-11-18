@@ -607,7 +607,7 @@ Les cartes peuvent maintenant être marquées séparément comme `Carte interact
 
 Les médias du lieu peuvent aussi être partagés via le système de partage de macOS.
 
-<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 MOD-149 MOD-150 MOD-154 MOD-159 MOD-160 -->
 
 ## Créer une fiche indépendante depuis une présence
 
@@ -632,3 +632,11 @@ Le mode **Ombre** nécessite une Carte Ombre disponible. Les flèches circulaire
 Dans **Dessin**, **Temporaire** signale un trajet ou point puis s'estompe. Chaque nouveau trait relance le délai de tous les traits temporaires encore visibles. Cela ne remplace pas le stylo permanent et ne modifie pas le brouillard.
 
 Sur une carte déjà partagée, les dessins arrivent aux joueurs sans confirmer chaque trait. Le brouillard exige toujours **Afficher/Actualiser** ; le même bouton démarre le partage si nécessaire.
+
+## Éditeur à sections et images {#tabbed-location-editor}
+
+Création et modification séparent **Informations principales**, **Lieux parents**, **Descriptions**, **Détails**, **Notes** et **Médias**. Changer de section conserve le brouillon ; **Enregistrer** confirme. Dans **Médias**, Images et Cartes ont des panneaux et boutons d'ajout distincts, désormais absents de la barre supérieure.
+
+Pour organiser un donjon, créez le lieu parent, ajoutez sa carte et créez salles ou zones comme sous-lieux. Associez chaque marqueur au lieu exact : ce lien permet aussi au MJ de consulter la salle pendant le combat via **Carte**. Couvertures et vignettes des présences sont agrandies et recadrées sans bandes noires. Le menu des personnages du lieu utilise les mêmes cartes de héros que le tableau de bord de l'aventure.
+
+Le tableau de bord de l'aventure utilise aussi une couverture panoramique à côté du titre, sans déformation.

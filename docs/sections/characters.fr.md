@@ -413,7 +413,7 @@ Les jets de sauvegarde partent du modificateur de caractéristique correspondant
 
 Les liens `Attaque complète` peuvent maintenant représenter un jet d’attaque ou un effet à jet de sauvegarde. Ils peuvent aussi contenir un type d’attaque, par exemple corps à corps, distance, zone ou une description libre, ainsi que des lignes de dégâts modulaires.
 
-<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 MOD-155 -->
 
 ## Formulaires par sections et navigation au clavier
 
@@ -425,13 +425,14 @@ Chaque résultat du menu rapide Personnages possède des boutons **Visualisation
 
 ## Progressions et emplacements des héros
 
-Pour le type **Héros**, même sans Hero ni aventure, configure les ressources dans **Détails** et les emplacements dans **Sorts**. Chaque ressource possède nom, description facultative, maximum et **Restants/Total** : moins consomme, plus restaure. Les progressions fixes reçues de Hero se consultent sans boutons de consommation. Les emplacements affichent des lignes alignées **Nombre** et **Utilisés** par niveau.
+Pour les **Héros**, **Privilèges et Dés de vie** est disponible en création et modification, même sans Hero. Ajoutez, modifiez ou retirez des progressions fixes ou consommables, avec nom et description facultative. Les consommables séparent le maximum de **Restants/Total**, avec moins/plus. Toute la ligne de description est cliquable.
 
-Les valeurs de base initialisent les nouvelles associations à l'aventure ; les compteurs déjà enregistrés ailleurs ne sont pas écrasés. Supprimer une ressource reste aussi une modification en brouillon jusqu'à **Enregistrer**. La vue compacte affiche ressources et emplacements en lecture seule.
+Configurez classes et niveaux, y compris le multiclassage, et les dés de vie par classe avec type de dé, total et restants. La classe accompagne le dé. Les emplacements se règlent dans **Sorts**, avec lignes **Nombre d'emplacements** et **Utilisés** alignées par niveau. Les changements restent en brouillon jusqu'à **Enregistrer** ; la visualisation montre ressources et dés de vie en lecture seule.
 
-Pour un personnage reçu de Hero, le joueur gère la structure : un nouvel envoi/téléchargement actualise noms, descriptions, maxima et progressions du niveau actuel, et retire les entrées absentes. Les compteurs restent disponibles hors ligne ; les modifications hors ligne ne sont pas automatiquement imposées à Hero à la reconnexion. Voir [Connexion à Hero](hero-sync.md).
+Les ressources reçues de Hero sont identifiables et remplacées lors des mises à jour suivantes. **Toujours conserver** est réservé aux ressources créées sur Mac et les préserve lors de l'import Hero. Un import explicite aligne aussi les valeurs Live du PJ associé sans créer une nouvelle identité ; une reconnexion reprend uniquement la file d'envoi. Voir [Connexion avec Hero](hero-sync.md).
 
-Pour une fiche personnelle issue d'une présence locale, voir [Fiches indépendantes dans les lieux](places.md).
+La fiche de base initialise les nouvelles associations à l'aventure sans réécrire automatiquement les compteurs des autres aventures. Pour créer une fiche indépendante depuis une présence, voir [Lieux](places.md).
+
 
 ## Effets et formules de l'Attaque complète
 

@@ -601,7 +601,7 @@ Las mapas pueden marcarse por separado como `Mapa interactivo` y `Mapa sombra`. 
 
 Los medios del lugar también pueden compartirse mediante el sistema de compartir de macOS.
 
-<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 MOD-149 MOD-150 MOD-154 MOD-159 MOD-160 -->
 
 ## Crear una ficha independiente desde una presencia
 
@@ -626,3 +626,11 @@ El modo **Sombra** requiere un Mapa Sombra disponible. Las flechas circulares mu
 En **Dibujo**, **Temporal** señala una ruta o punto y luego se desvanece. Cada trazo nuevo reinicia el tiempo de todos los trazos temporales aún visibles. No reemplaza el lápiz permanente ni cambia la niebla.
 
 Con el mapa compartido, los dibujos llegan a los jugadores sin confirmar cada trazo. Los cambios de niebla requieren **Mostrar/Actualizar**; el mismo botón inicia la difusión si no estaba activa.
+
+## Editor por secciones e imágenes {#tabbed-location-editor}
+
+Creación y edición separan **Información principal**, **Lugares padre**, **Descripciones**, **Detalles**, **Notas** y **Multimedia**. Cambiar de sección conserva el borrador; **Guardar** confirma. En **Multimedia**, Imágenes y Mapas tienen paneles y botones propios para añadir, ya no en la barra superior.
+
+Para organizar una mazmorra, crea un lugar padre con mapa y habitaciones o zonas como sublugares. Asocia cada marcador al lugar correcto: ese enlace permite al Master consultar la habitación en combate con **Mapa**. Portadas y miniaturas de presencias son más amplias, recortadas proporcionalmente sin bandas negras. El menú de personajes del lugar usa las tarjetas de héroes del panel de aventura.
+
+El panel de aventura también muestra una portada panorámica junto al título, sin deformarla.

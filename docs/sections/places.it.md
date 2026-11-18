@@ -637,7 +637,7 @@ La dashboard `Luoghi` è il punto giusto quando vuoi:
 !!! tip
     Se l’avventura è molto grande, la sezione `Luoghi` funziona meglio se la usi come una vera mappa mentale della campagna: luoghi per la struttura, quest per i nodi narrativi, presenze per chi occupa la scena e combattimenti per ciò che succede in quel punto del mondo.
 
-<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 MOD-149 MOD-150 MOD-154 MOD-159 MOD-160 -->
 
 ## Creare una scheda indipendente da una presenza
 
@@ -662,3 +662,11 @@ La modalità **Ombra** richiede una Mappa Ombra disponibile. Il pulsante con fre
 In **Disegno**, lo strumento **Temporaneo** evidenzia un percorso o un punto e poi lo dissolve. Ogni nuovo tratto riavvia la scadenza di tutti i tratti temporanei ancora visibili. Non sostituisce la penna permanente né modifica la nebbia.
 
 Con la mappa già condivisa, i disegni vengono inviati ai giocatori senza confermare ogni tratto. Le modifiche alla nebbia richiedono invece **Mostra/Aggiorna**; lo stesso pulsante avvia la condivisione se non era attiva.
+
+## Editor a sezioni e immagini {#tabbed-location-editor}
+
+Creazione e modifica separano **Informazioni principali**, **Luoghi padre**, **Descrizioni**, **Dettagli**, **Note** e **Media**. Cambiare sezione conserva la bozza; **Salva** conferma le modifiche. In **Media**, Immagini e Mappe hanno riquadri distinti con i rispettivi pulsanti di aggiunta, non più nella barra superiore.
+
+Per organizzare un dungeon, crea il luogo padre, aggiungigli la mappa e crea stanze o zone come sottoluoghi. Nell'editor della mappa interattiva collega ogni marker al luogo corretto: quello stesso collegamento permette al Master di vedere la stanza durante il combattimento dal pulsante **Mappa**. Le copertine dei luoghi e le miniature delle presenze sono più ampie, con ritaglio proporzionale senza bande nere. Il menu dei personaggi del luogo usa le stesse card degli eroi della dashboard avventura.
+
+La dashboard avventura usa inoltre una copertina panoramica accanto al titolo, riempita senza deformazioni.

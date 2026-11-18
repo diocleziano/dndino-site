@@ -110,7 +110,7 @@ Nutze die Topbar, um:
 
 Ist in macOS **Füllen** als Doppelklickaktion der Titelleiste eingestellt, füllt ein Doppelklick auf eine freie Stelle der Leiste den sichtbaren Bereich, ohne in den Vollbildmodus zu wechseln. Ein weiterer Doppelklick stellt die vorige Größe wieder her.
 
-<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 MOD-153 MOD-168 MOD-169 -->
 
 ## Untere Leiste und offene Fenster
 
@@ -119,3 +119,13 @@ Die untere Leiste erscheint bei Arbeitsfenstern oder Rückkehrverknüpfungen; da
 Beim Verlassen eines laufenden Kampfes pausiert dieser. Eine Rückkehrverknüpfung mit Farbstreifen bleibt **ganz links an erster Stelle**. X blendet nur die Verknüpfung aus, ohne den Kampf zu beenden oder zu löschen. Während dieses Kampfes ist sie verborgen; andere Fenster bleiben aufgelistet.
 
 Hero-Chats erscheinen auch bei geschlossenem Fenster, ohne dich zu unterbrechen; ein Punkt kennzeichnet ungelesene Nachrichten. Öffnen und Lesen entfernt die Markierung. Rechts behält der Hero-Bereich die während dieses App-Starts kontaktierten Spieler auch nach einem Verbindungsabbruch: Status, Verbindungstest, Chat, Bogen-Download, Live-Sync und Trennen. Siehe [Hero-Anleitung](hero-sync.md).
+
+## Benachrichtigungen {#notification-history}
+
+Die **Glocke** ganz rechts nach Hero öffnet die letzten **20 Meldungen** mit Absender, Text und Uhrzeit, neueste zuerst und mit Neuigkeitsanzeige. Banner oben rechts melden Hero-Anfragen, Verbindungen, Trennungen, Wiederverbindungen, Nachrichten und eingehende Live-Änderungen; der Verlauf enthält auch Kampfhinweise. SL-Änderungen und unveränderte Wiederholungen erzeugen keine doppelten Live-Meldungen.
+
+Der Verlauf ist temporär und leert sich beim Neustart oder Archivwechsel. Nachrichten öffnen nicht automatisch den Chat, der seine eigene Ungelesen-Anzeige behält. Glocke und Ton regeln Sie in [Einstellungen](settings.md#notification-settings).
+
+## Fenster aufrufen {#window-bar-toggle}
+
+Ein Klick auf ein Fenster in der unteren Leiste holt es nach vorn, wenn es verdeckt oder minimiert ist. Liegt es bereits vorne, wird es minimiert. **Zustände** und **Vollständiger Angriff** können nicht minimiert werden; der Klick ruft sie nur auf. Das Hauptfenster wird dadurch nie minimiert.

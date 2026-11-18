@@ -413,7 +413,7 @@ Rettungswürfe starten mit dem passenden Eigenschaftsmodifikator, können aber u
 
 `Vollangriff`-Links können jetzt entweder einen Angriffswurf oder einen Rettungswurf-Effekt darstellen. Außerdem können sie einen Angriffstyp enthalten, zum Beispiel Nahkampf, Fernkampf, Flächeneffekt oder eine freie Beschreibung, sowie modulare Schadenszeilen.
 
-<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 MOD-155 -->
 
 ## Formularbereiche und Tastaturnavigation
 
@@ -425,13 +425,14 @@ Jeder Treffer im Charakter-Schnellmenü hat getrennte Schaltflächen für **Anze
 
 ## Progressionen und Zauberplätze der Helden
 
-Für **Helden**, auch ohne Hero oder Abenteuer, konfiguriere Ressourcen unter **Details** und Zauberplätze unter **Zauber**. Ressourcen haben Name, optionale Beschreibung, Maximum und **Verbleibend/Gesamt**: Minus verbraucht, Plus stellt wieder her. Feste Hero-Progressionen sind ohne Verbrauchsschaltflächen einsehbar. Zauberplätze zeigen ausgerichtete Zeilen **Anzahl** und **Verwendet** je Grad.
+Für **Helden** ist **Merkmale und Trefferwürfel** beim Erstellen und Bearbeiten verfügbar, auch ohne Hero. Feste und verbrauchbare Fortschritte lassen sich mit Name und optionaler Beschreibung hinzufügen, ändern oder entfernen. Verbrauchbare Einträge trennen Höchstwert und **Verbleibend/Gesamt**, mit Minus/Plus. Die ganze Beschreibungszeile ist anklickbar.
 
-Basiswerte initialisieren neue Abenteuerzuordnungen; bereits in anderen Abenteuern gespeicherte Zähler bleiben unverändert. Auch das Löschen einer Ressource bleibt bis **Speichern** ein Entwurf. Die Kompaktansicht zeigt Ressourcen und Plätze schreibgeschützt.
+Klassen und Stufen einschließlich Mehrklassigkeit sowie Trefferwürfel je Klasse mit Würfeltyp, Gesamt- und Restzahl sind konfigurierbar. Die Klasse steht beim Würfel. Zauberplätze werden unter **Zauber** mit ausgerichteten Zeilen **Anzahl** und **Verbraucht** je Grad bearbeitet. Änderungen bleiben bis **Speichern** im Entwurf; in der Ansicht sind Ressourcen und Trefferwürfel schreibgeschützt.
 
-Bei Hero-Charakteren bestimmt der Spieler die Struktur: erneutes Senden/Herunterladen aktualisiert Namen, Beschreibungen, Maxima und Progressionen der aktuellen Stufe und entfernt entfallene Einträge. Zähler bleiben offline verfügbar; Offline-Änderungen werden beim Wiederverbinden nicht automatisch gegenüber Hero durchgesetzt. Siehe [Verbindung mit Hero](hero-sync.md).
+Hero-Ressourcen sind erkennbar und werden durch spätere Bogenupdates ersetzt. **Immer behalten** ist nur für auf dem Mac erstellte Ressourcen verfügbar und erhält sie beim Hero-Import. Ein expliziter Import gleicht auch die Live-Werte des zugeordneten SC ohne neue Identität an; Wiederverbindung setzt nur ausstehende Sendungen fort. Siehe [Mit Hero verbinden](hero-sync.md).
 
-Für einen persönlichen Bogen aus einer lokalen Präsenz siehe [Eigenständige Bögen an Orten](places.md).
+Basiswerte initialisieren neue Abenteuerzuordnungen, ohne Zähler anderer Abenteuer automatisch zu überschreiben. Unabhängige Bögen aus Präsenzen beschreibt [Orte](places.md).
+
 
 ## Effekte und Formeln im Vollständigen Angriff
 

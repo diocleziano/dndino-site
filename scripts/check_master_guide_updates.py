@@ -18,13 +18,13 @@ BASE_URL = CONFIG["site_url"]
 BASE_PATH = urlsplit(BASE_URL).path
 LANGUAGES = ("it", "en", "de", "fr", "es", "pt-BR", "pt-PT")
 COVERAGE = {
-    "homepage": {"MOD-144"},
-    "places": {"MOD-015", "MOD-016", "MOD-018", "MOD-031", "MOD-035", "MOD-036", "MOD-087"},
-    "characters": {"MOD-021", "MOD-022", "MOD-031", "MOD-063", "MOD-064", "MOD-065"},
-    "topbar": {"MOD-023", "MOD-024", "MOD-025", "MOD-034", "MOD-038", "MOD-039", "MOD-044", "MOD-045", "MOD-048", "MOD-054", "MOD-067", "MOD-069"},
-    "settings": {"MOD-042", "MOD-043", "MOD-049", "MOD-051", "MOD-060", "MOD-061", "MOD-062", "MOD-070", "MOD-071", "MOD-073", "MOD-077", "MOD-078", "MOD-079", "MOD-080", "MOD-086", "MOD-088"},
-    "combat": {"MOD-025", "MOD-026", "MOD-028", "MOD-029", "MOD-030", "MOD-039", "MOD-044", "MOD-055", "MOD-058", "MOD-059", "MOD-063", "MOD-069", "MOD-081", "MOD-082", "MOD-083", "MOD-088"},
-    "official-content": {"MOD-009", "MOD-010", "MOD-013"},
+    "homepage": {"MOD-144", "MOD-165", "MOD-166"},
+    "places": {"MOD-015", "MOD-016", "MOD-018", "MOD-031", "MOD-035", "MOD-036", "MOD-087", "MOD-149", "MOD-150", "MOD-154", "MOD-159", "MOD-160"},
+    "characters": {"MOD-021", "MOD-022", "MOD-031", "MOD-063", "MOD-064", "MOD-065", "MOD-155"},
+    "topbar": {"MOD-023", "MOD-024", "MOD-025", "MOD-034", "MOD-038", "MOD-039", "MOD-044", "MOD-045", "MOD-048", "MOD-054", "MOD-067", "MOD-069", "MOD-153", "MOD-168", "MOD-169"},
+    "settings": {"MOD-042", "MOD-043", "MOD-049", "MOD-051", "MOD-060", "MOD-061", "MOD-062", "MOD-070", "MOD-071", "MOD-073", "MOD-077", "MOD-078", "MOD-079", "MOD-080", "MOD-086", "MOD-088", "MOD-145", "MOD-146", "MOD-147", "MOD-148", "MOD-163", "MOD-164", "MOD-168", "MOD-170"},
+    "combat": {"MOD-025", "MOD-026", "MOD-028", "MOD-029", "MOD-030", "MOD-039", "MOD-044", "MOD-055", "MOD-058", "MOD-059", "MOD-063", "MOD-069", "MOD-081", "MOD-082", "MOD-083", "MOD-088", "MOD-156", "MOD-167", "MOD-171", "MOD-172"},
+    "official-content": {"MOD-009", "MOD-010", "MOD-013", "MOD-151"},
     "interactive-maps": {"MOD-019", "MOD-020"},
     "live-session": {"MOD-026", "MOD-027", "MOD-028", "MOD-029", "MOD-030"},
     "import-export": {"MOD-063"},
@@ -176,6 +176,29 @@ for page, expected_ids in COVERAGE.items():
             assert "MOD-087" in text and "MOD-087" in output.read_text(), source
 
 print(f"PASS: {len(COVERAGE) * len(LANGUAGES)} localized Master pages, coverage markers, localized rendered sections, formulas and all internal links/anchors. Runtime behavior is not tested by this check.")
+
+RECENT_GUIDE_ANCHORS = {
+    "combat": ("scenic-player-screen", "turn-action-tracking", "session-damage-accounting"),
+    "settings": ("notification-settings", "app-and-guide-reset"),
+    "places": ("tabbed-location-editor",),
+    "topbar": ("notification-history", "window-bar-toggle"),
+    "official-content": ("bundled-monster-portraits",),
+    "homepage": ("adventure-cover-opening",),
+}
+for page, anchors in RECENT_GUIDE_ANCHORS.items():
+    for language in LANGUAGES:
+        source = ROOT / f"docs/sections/{page}.{language}.md"
+        prefix = "" if language == "en" else language + "/"
+        output = SITE / prefix / "sections" / page / "index.html"
+        text = source.read_text()
+        html = rendered(output)
+        for anchor in anchors:
+            assert text.count("{#" + anchor + "}") == 1, (source, anchor)
+            assert anchor in html.anchors, (output, anchor, "new section not rendered")
+        if page == "combat":
+            assert "en_combat_schermogiocatori_turnoeroi.png" not in text, source
+            assert "en_combat_schermogiocatori_turnomostri.png" not in text, source
+print("PASS: recent combat, notification, reset, theme, location and portrait sections rendered in seven languages; obsolete player-turn screenshots removed.")
 
 V2_ANCHORS = {
     "homepage": {"resume-adventure", "adventure-heroes", "first-adventure", "quick-access"},

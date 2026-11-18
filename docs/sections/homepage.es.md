@@ -4,7 +4,7 @@ En DnDino 2.0.0, Inicio es la **Mesa de dirección**. El saludo usa el nombre de
 
 ![Mesa de dirección con cuatro héroes y accesos al último lugar y combate](../images/homepage/command-desk-2-0.jpg){ .img-hero }
 
-<!-- guide-coverage: MOD-144 -->
+<!-- guide-coverage: MOD-144 MOD-165 MOD-166 -->
 
 ## Retomar una campaña {#resume-adventure}
 
@@ -27,3 +27,7 @@ Si la biblioteca está vacía, el botón para crear tu primera aventura abre dir
 ## Acceso rápido {#quick-access}
 
 Desde Inicio puedes abrir **Aventuras**, **Héroes, PNJ y monstruos**, **Equipo**, **Reglas**, **Generador de nombres** y **Ajustes**.
+
+## Portada e inicio {#adventure-cover-opening}
+
+En Inicio **Mesa de control**, pulsar la portada también abre la aventura, como su botón dedicado. La pantalla de carga muestra el logotipo DnDino sobre un panel translúcido durante al menos unos tres segundos.

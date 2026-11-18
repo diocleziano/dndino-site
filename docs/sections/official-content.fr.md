@@ -30,7 +30,7 @@ Tu peux aussi partager uniquement une couverture, sans fusionner les fiches. Mod
 
 Les exports ne dupliquent pas inutilement tout le catalogue intégré. Ils conservent les données personnelles et personnalisations prévues par le type d’export ; les aventures incluent les fiches utilisées. L’import ne remplace pas les originaux SRD. Voir [Import et export](import-export.md). Source et attribution figurent dans **Réglages → Licences**.
 
-<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 MOD-151 -->
 
 ## Doublons de sorts et indicateurs d'utilisation
 
@@ -39,3 +39,7 @@ La liste **Sorts** propose aussi **Gérer les doublons**. Les champs corresponda
 Choisis la fiche à conserver puis **Appliquer**. Les liens compatibles des doublons personnels sont transférés et les anciens liens restent fonctionnels. Si un personnage connaît les deux sorts, une seule association conserve notes et préparation. Les originaux SRD écartés sont masqués, pas supprimés. Textes, statistiques et effets écartés ne sont pas fusionnés : sauvegarde d'abord.
 
 Si des doublons SRD existent, le filtre des sorts peut **masquer uniquement les originaux SRD en doublon**. C'est temporaire, sans suppression ni masquage permanent. Cela diffère de **Masquer** dans la gestion des doublons et de **Contenu officiel**, qui contrôle tout le catalogue.
+
+## Portraits inclus {#bundled-monster-portraits}
+
+Les **330 monstres SRD** disposent d'un portrait léger inclus dans l'app et disponible hors ligne. Les images personnelles déjà attribuées restent prioritaires et ne sont jamais remplacées.

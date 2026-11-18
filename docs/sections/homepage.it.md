@@ -4,7 +4,7 @@ La Home di DnDino 2.0.0 è il **Tavolo di regia**. Il saluto usa il nome del Dun
 
 ![Tavolo di regia con quattro eroi e scorciatoie per luogo e combattimento](../images/homepage/command-desk-2-0.jpg){ .img-hero }
 
-<!-- guide-coverage: MOD-144 -->
+<!-- guide-coverage: MOD-144 MOD-165 MOD-166 -->
 
 ## Riprendere una campagna {#resume-adventure}
 
@@ -27,3 +27,7 @@ Se l’archivio è vuoto, **Crea la tua prima avventura** apre subito il modulo.
 ## Accesso rapido {#quick-access}
 
 Dalla Home puoi aprire **Avventure**, **Eroi, PNG e Mostri**, **Equipaggiamento**, **Regole**, **Generatore Nomi** e **Impostazioni**.
+
+## Copertina e avvio {#adventure-cover-opening}
+
+Nella Home **Tavolo di regia** puoi aprire l'avventura anche cliccando sulla sua copertina, oltre al pulsante dedicato. La schermata di caricamento mostra il marchio DnDino su un riquadro traslucido per almeno circa tre secondi.

@@ -97,9 +97,7 @@ Inside `General`, the **currently selected theme** is also shown as a quick summ
 
 ### Introductory Guides
 
-From here you can restore the app’s first-use behavior.
-
-The `Reset First Use` button tells DnDino to consider contextual guides and onboarding flows as unseen again.
+Manage guides under [App and guide reset](#app-and-guide-reset): reopening onboarding and resetting contextual guides are separate commands that do not delete data.
 
 ## Top Bar
 
@@ -344,14 +342,33 @@ Snapshots and app media can be exported to a user-selected location through the 
 
 The Diagnostics section is reserved for debug builds and is not shown in the release version.
 
-<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 MOD-145 MOD-146 MOD-147 MOD-148 MOD-163 MOD-164 MOD-168 MOD-170 -->
 
 ## Themes, backgrounds and opacity
 
-Alongside **System**, which follows the Mac's light/dark appearance, themes include **Halloween**, **Christmas**, **Parchment** and **Winter**. Previews show palette and background; **Decorative background** can be disabled without changing theme. Winter uses a snowy landscape. These are theme backgrounds, not a custom-image background importer for Mac.
+**System** appears first and follows macOS. Other themes are grouped into **Color palettes**, **Special** and **Seasons**. Special includes **Inferno** and **Magic**; all four seasons use illustrated fantasy landscapes with adventurers. The same themes and images are available in Hero.
 
-The opacity slider immediately changes supported panels and sidebars, including Settings and both Places and Quests panels. Panels that were already opaque are excluded. **Default** restores each panel's original opacity, not one shared 50% value.
+Disable the decorative background or import a **custom background**. Only one image is stored; a new image replaces it. Changing theme disables the custom background but keeps the file.
+
+The opacity slider immediately updates supported panels, including location titles and search, the adventure header, hero cards and sessions. These surfaces retain a darker tint or attenuated transparency for readability; text, images and controls do not become transparent. Other panels remain opaque. **Default** restores original per-panel opacity and the correct slider position, not one shared 50% value.
 
 Changing theme rebuilds the main screen and returns to **Settings → Theme**. Open secondary windows and unsaved drafts remain intact; the bottom bar follows the new theme. Main buttons and sidebar selection use theme colors with contrast-aware text. **System** retains native macOS control behavior.
 
 For authorizations, device history, optional automatic live startup and the difference between disconnecting, removing an association and forgetting a device, see [Connect with Hero](hero-sync.md).
+
+## Notifications and sound {#notification-settings}
+
+In **Settings → Hero devices**, hide bottom-bar history without disabling banners. A separate switch, enabled by default, controls sound for **new messages and pairing requests**. Live updates, connections/disconnections and combat alerts remain silent. See [Bottom-bar notifications](topbar.md#notification-history).
+
+## App and guide reset {#app-and-guide-reset}
+
+These operations have different effects. Read the explanation before confirming.
+
+- **Open introductory guide** reopens onboarding without deleting data or resetting contextual guides. The new 2.0.0 introduction also appears for users who completed the earlier one.
+- **Show contextual guides again** resets guides for their respective screens, not onboarding. Guides scroll to off-screen areas and open required sections.
+- **Reset app data**, also available under Database and Media, deletes the archive and media but keeps profile, preferences, guides and local/iCloud backups.
+- **Delete local backups** removes DnDino-managed manual and automatic copies, not current data or files exported elsewhere.
+- **Delete iCloud copy** removes only the app snapshot, when available. Future cloud backups can recreate it if enabled.
+- **Full reset**, separated at the bottom with double confirmation, deletes data, media, managed backups, custom background, Hero credentials, profile, preferences and guides, then closes the app. Externally exported files remain untouched.
+
+Close the live session and secondary windows before archive operations. If iCloud is unavailable, full reset requires explicitly choosing local-only reset; if requested cloud deletion fails, local data is not deleted. These operations cannot be undone: export anything you wish to keep first.

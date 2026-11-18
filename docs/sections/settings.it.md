@@ -96,9 +96,7 @@ In `Generali` viene anche mostrato il **tema attualmente selezionato** come riep
 
 ### Guide introduttive
 
-Da qui puoi ripristinare il comportamento di primo utilizzo dell'app.
-
-Il pulsante `Ripristina Primo Utilizzo` fa in modo che DnDino consideri di nuovo come non ancora viste le guide contestuali e i percorsi introduttivi.
+Le guide si gestiscono in [Reset app e guide](#app-and-guide-reset): riaprire l'introduzione e ripristinare le guide contestuali sono due comandi distinti, senza cancellazione dei dati.
 
 ## Topbar
 
@@ -338,14 +336,33 @@ Attualmente include in particolare la parte relativa al materiale del **System R
 !!! tip
     Se stai configurando DnDino per la prima volta, le sezioni più utili da controllare subito sono `Generali`, `Topbar`, `Combattimento` e `Database`. In genere sono quelle che incidono di più sull'uso quotidiano e sulla sicurezza dei dati.
 
-<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 MOD-145 MOD-146 MOD-147 MOD-148 MOD-163 MOD-164 MOD-168 MOD-170 -->
 
 ## Temi, sfondi e opacità
 
-Oltre a **Sistema**, che segue l'aspetto chiaro/scuro del Mac, trovi temi come **Halloween**, **Natale**, **Pergamena** e **Inverno**. Le anteprime mostrano palette e sfondo; **Sfondo decorativo** si può disattivare senza cambiare tema. Inverno usa un paesaggio innevato. Questi sono sfondi del tema, non una funzione per importare uno sfondo personale su Mac.
+**Sistema** è la prima scelta e segue macOS. Gli altri temi sono raggruppati in **Palette di colori**, **Speciali** e **Stagioni**. Negli Speciali trovi anche **Inferno** e **Magia**; le quattro stagioni hanno paesaggi fantasy illustrati con avventurieri. Gli stessi temi e immagini sono disponibili su Hero.
 
-Il cursore dell'opacità agisce subito sui pannelli e le sidebar predisposti, inclusi impostazioni e i due pannelli di Luoghi e Quest. Non modifica i pannelli che erano già opachi. **Predefinito** ripristina le diverse opacità originali, non un unico valore del 50%.
+Puoi disattivare lo sfondo decorativo o importare uno **sfondo personalizzato**. Viene conservata una sola immagine: una nuova sostituisce la precedente. Cambiare tema disattiva lo sfondo personale ma non lo elimina.
+
+Il cursore di opacità aggiorna subito i pannelli predisposti, compresi titoli e ricerca dei luoghi, intestazione dell'avventura, card degli eroi e sessioni. Queste superfici conservano una tonalità più scura o un'opacità attenuata per la leggibilità; testo, immagini e controlli non diventano trasparenti. I pannelli non predisposti rimangono opachi. **Predefinito** ripristina le diverse opacità originali e la posizione corretta del cursore, non un valore comune del 50%.
 
 Al cambio tema la schermata principale viene ricreata e torna a **Impostazioni → Tema**. Le finestre secondarie aperte e le loro bozze non salvate rimangono intatte; la barra inferiore segue il nuovo tema. I pulsanti principali e la selezione della sidebar usano i colori del tema, con testo adattato al contrasto. **Sistema** conserva il comportamento dei controlli di macOS.
 
 Per autorizzazioni, storico dei dispositivi, avvio live automatico facoltativo e differenza tra scollegare, rimuovere l'associazione e dimenticare, consulta [Collegamento con Hero](hero-sync.md).
+
+## Notifiche e suoni {#notification-settings}
+
+In **Impostazioni → Dispositivi Hero**, puoi nascondere la cronologia nella barra inferiore senza disabilitare i banner. Un interruttore separato, attivo di default, abilita il suono per **nuovi messaggi e richieste di abbinamento**. Aggiornamenti Live, collegamenti/disconnessioni e avvisi di combattimento restano silenziosi. Vedi [Notifiche nella barra inferiore](topbar.md#notification-history).
+
+## Reset app e guide {#app-and-guide-reset}
+
+La sezione distingue operazioni diverse: leggi la spiegazione prima di confermare.
+
+- **Apri guida introduttiva** riapre il percorso iniziale senza eliminare dati o azzerare le guide contestuali. La nuova introduzione della 2.0.0 compare anche per chi aveva già visto quella precedente.
+- **Mostra di nuovo le guide contestuali** le rende nuovamente disponibili nelle relative schermate, senza azzerare l'introduzione. Le guide scorrono verso le aree fuori vista e aprono le sezioni richieste.
+- **Reimposta dati applicazione**, presente anche in Database e Media, cancella archivio e media ma conserva profilo, preferenze, guide e backup locali/iCloud.
+- **Elimina backup locali** cancella le copie manuali e automatiche gestite da DnDino, non i dati correnti né i file esportati altrove.
+- **Elimina copia iCloud** rimuove solo lo snapshot dell'app, quando disponibile. Se il backup cloud rimane attivo, un salvataggio futuro può ricrearlo.
+- **Ripristino completo**, separato in fondo e con doppia conferma, cancella dati, media, backup gestiti, sfondo personale, credenziali Hero, profilo, preferenze e guide, poi chiude l'app. I file esportati altrove restano intatti.
+
+Chiudi sessione live e finestre secondarie prima delle operazioni sull'archivio. Se iCloud non è disponibile, il ripristino completo richiede di scegliere esplicitamente quello locale; se la cancellazione cloud richiesta fallisce, i dati locali non vengono cancellati. Non è un'operazione annullabile: esporta prima ciò che vuoi conservare.

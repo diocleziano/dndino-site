@@ -97,9 +97,7 @@ Dentro de `General` también se muestra el **tema actualmente seleccionado** com
 
 ### Guías introductorias
 
-Desde aquí puedes restaurar el comportamiento de primer uso de la aplicación.
-
-El botón `Restablecer primer uso` hace que DnDino vuelva a considerar como no vistas las guías contextuales y los recorridos introductorios.
+Gestiona las guías en [Restablecer app y guías](#app-and-guide-reset): reabrir la introducción y reiniciar guías contextuales son comandos separados que no borran datos.
 
 ## Barra superior
 
@@ -344,14 +342,33 @@ Las instantáneas y los medios de la app pueden exportarse a una ubicación eleg
 
 La sección Diagnóstico queda reservada para builds de depuración y no se muestra en la versión de lanzamiento.
 
-<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 MOD-145 MOD-146 MOD-147 MOD-148 MOD-163 MOD-164 MOD-168 MOD-170 -->
 
 ## Temas, fondos y opacidad
 
-Además de **Sistema**, que sigue el aspecto claro/oscuro del Mac, hay temas como **Halloween**, **Navidad**, **Pergamino** e **Invierno**. Las vistas previas muestran paleta y fondo; **Fondo decorativo** se desactiva sin cambiar de tema. Invierno usa un paisaje nevado. Son fondos del tema, no un importador de fondos personales en Mac.
+**Sistema** aparece primero y sigue macOS. Los demás temas se agrupan en **Paletas de colores**, **Especiales** y **Estaciones**. Especiales incluye **Infierno** y **Magia**; las cuatro estaciones usan paisajes fantásticos ilustrados con aventureros. Hero ofrece los mismos temas e imágenes.
 
-El control de opacidad actúa al instante sobre paneles y barras laterales preparados, incluidos Ajustes y ambos paneles de Lugares y Misiones. No cambia los paneles que ya eran opacos. **Predeterminado** restaura las distintas opacidades originales, no un 50 % común.
+Puedes desactivar el fondo decorativo o importar un **fondo personalizado**. Solo se guarda una imagen; la nueva reemplaza la anterior. Cambiar de tema desactiva el fondo personal, pero lo conserva.
+
+El control de opacidad actualiza al instante los paneles compatibles, incluidos títulos y búsqueda de lugares, cabecera de aventura, tarjetas de héroes y sesiones. Conservan un tono más oscuro o transparencia atenuada para facilitar la lectura; textos, imágenes y controles no se vuelven transparentes. Otros paneles siguen opacos. **Predeterminado** restaura las opacidades originales y la posición correcta del control, no un 50 % común.
 
 Cambiar de tema recrea la pantalla principal y vuelve a **Ajustes → Tema**. Las ventanas secundarias abiertas y sus borradores sin guardar permanecen intactos; la barra inferior sigue el nuevo tema. Los botones principales y la selección lateral usan los colores del tema con texto adaptado al contraste. **Sistema** conserva los controles nativos de macOS.
 
 Consulta [Conexión con Hero](hero-sync.md) para autorizaciones, historial, inicio live automático opcional y diferencias entre desconectar, quitar asociación y olvidar.
+
+## Notificaciones y sonido {#notification-settings}
+
+En **Ajustes → Dispositivos Hero**, oculta el historial inferior sin desactivar los avisos. Otro interruptor, activo por defecto, controla el sonido de **nuevos mensajes y solicitudes de vinculación**. Cambios Live, conexiones/desconexiones y avisos de combate son silenciosos. Consulta [Notificaciones](topbar.md#notification-history).
+
+## Restablecer app y guías {#app-and-guide-reset}
+
+Estas operaciones tienen efectos distintos. Lee la explicación antes de confirmar.
+
+- **Abrir guía inicial** reabre la introducción sin borrar datos ni reiniciar guías contextuales. La nueva introducción 2.0.0 aparece también si completaste la anterior.
+- **Mostrar de nuevo las guías contextuales** reinicia las guías de cada pantalla, no la introducción. Se desplazan a áreas fuera de vista y abren las secciones necesarias.
+- **Restablecer datos**, también en Base de datos y Multimedia, borra archivo y medios, conservando perfil, preferencias, guías y copias locales/iCloud.
+- **Eliminar copias locales** borra copias manuales y automáticas gestionadas por DnDino, no los datos actuales ni los archivos exportados.
+- **Eliminar copia iCloud** borra solo la instantánea de la app, si está disponible. Una copia futura puede recrearla si siguen activadas.
+- **Restablecimiento completo**, separado al final con doble confirmación, elimina datos, medios, copias gestionadas, fondo personal, credenciales Hero, perfil, preferencias y guías, y cierra la app. Los archivos exportados quedan intactos.
+
+Cierra la sesión live y ventanas secundarias antes de actuar sobre el archivo. Sin iCloud, debes elegir explícitamente un restablecimiento local; si falla el borrado cloud solicitado, no se borran los datos locales. Son acciones irreversibles: exporta antes lo que quieras conservar.

@@ -607,7 +607,7 @@ Maps can now be marked separately as `Interactive Map` and `Shadow Map`. A regul
 
 Place media can also be shared through the macOS sharing system, using the display name configured in DnDino.
 
-<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 MOD-149 MOD-150 MOD-154 MOD-159 MOD-160 -->
 
 ## Create an independent sheet from a presence
 
@@ -632,3 +632,11 @@ The presence picker's search is ready for keyboard input. Contextual editing sep
 Under **Drawing**, **Temporary** highlights a route or point, then fades away. Each new stroke restarts the expiry of all still-visible temporary strokes. It does not replace the permanent pen or alter fog.
 
 Once the map is shared, drawings reach players without confirming every stroke. Fog changes still require **Show/Update**; the same button starts sharing if it was not active.
+
+## Sectioned editor and images {#tabbed-location-editor}
+
+Creation and editing separate **Main information**, **Parent locations**, **Descriptions**, **Details**, **Notes** and **Media**. Changing sections keeps your draft; **Save** stores changes. Under **Media**, Images and Maps have separate panels with their own add buttons, no longer in the top bar.
+
+To organize a dungeon, create a parent location, add its map and create rooms or areas as child locations. Link each interactive-map marker to the correct location: that link also lets the Master inspect the room during combat using **Map**. Location covers and presence thumbnails are larger, proportionally cropped without black bars. The location character menu uses the same hero cards as the adventure dashboard.
+
+The adventure dashboard also uses a wide cover next to its title, filled without distortion.

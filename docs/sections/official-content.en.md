@@ -30,7 +30,7 @@ You can also share only a cover image without merging sheets. Later changing or 
 
 Exports do not needlessly replicate the entire built-in library. They retain personal content and customizations supported by that export type; adventures include the sheets they use. Imports cannot overwrite SRD originals. See [Import and Export](import-export.md). Source and attribution appear in **Settings → Licenses**.
 
-<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 MOD-151 -->
 
 ## Spell duplicates and usage indicators
 
@@ -39,3 +39,7 @@ The **Spells** list also offers **Manage duplicates**. Matching fields align at 
 Choose which sheet to keep and confirm **Apply**. Compatible links from personal duplicates move to it; old text links keep resolving. If a character knows both spells, one association remains with notes and prepared status preserved. Excluded SRD originals are hidden, not deleted. Discarded records' text, statistics and effects are not combined: back up first.
 
 When SRD duplicates exist, the spell-list filter can **hide only duplicated SRD originals**. It is temporary and neither deletes nor permanently hides records. It differs from **Hide** in duplicate management and **Official content**, which controls the whole catalog.
+
+## Included portraits {#bundled-monster-portraits}
+
+All **330 SRD monsters** have a lightweight portrait bundled with the app and available offline. Existing custom images take priority: built-in portraits never replace them.

@@ -110,7 +110,7 @@ Usa la barra superior para:
 
 Si la acción de doble clic en la barra de título de macOS es **Rellenar**, haz doble clic en una zona vacía de la barra. La ventana ocupa el área visible sin pasar a pantalla completa. Repite para restaurar el tamaño anterior.
 
-<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 MOD-153 MOD-168 MOD-169 -->
 
 ## Barra inferior y ventanas abiertas
 
@@ -119,3 +119,13 @@ La barra inferior aparece cuando hay ventanas de trabajo o enlaces de retorno; e
 Salir de un combate sin terminar lo pausa y deja un enlace **primero a la izquierda**, con una franja de color. Pulsa para volver. Su X solo oculta el enlace: no termina ni elimina el combate. Se oculta durante ese combate, pero las otras ventanas siguen visibles.
 
 Los chats recibidos de Hero aparecen aunque la ventana esté cerrada, sin interrumpirte; un punto indica mensajes sin leer. Abrir y leer la conversación quita el indicador. A la derecha, el área Hero conserva los jugadores contactados durante esta apertura de la app incluso tras desconectarse: estado, prueba, chat, descarga de ficha, live y desconexión. Consulta la [guía Hero](hero-sync.md).
+
+## Notificaciones {#notification-history}
+
+La **campana**, a la derecha después de Hero, abre las últimas **20 notificaciones**, con remitente, texto y hora, recientes primero e indicador de novedades. Los avisos superiores derechos muestran solicitudes Hero, conexiones, desconexiones, reconexiones, mensajes y cambios Live recibidos; el historial incluye avisos de combate. Las ediciones del Master y reenvíos sin cambios no duplican notificaciones Live.
+
+El historial es temporal: se borra al reiniciar o cambiar de archivo. Los mensajes no abren el chat automáticamente; este mantiene su indicador de no leídos. Oculta la campana o desactiva el sonido en [Ajustes](settings.md#notification-settings).
+
+## Recuperar ventanas {#window-bar-toggle}
+
+Pulsar una ventana en la barra inferior la trae al frente si estaba detrás o minimizada. Si ya estaba delante, la minimiza. **Estados** y **Ataque completo** no se minimizan: el clic solo las recupera. Nunca se minimiza la ventana principal.

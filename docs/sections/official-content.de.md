@@ -30,7 +30,7 @@ Du kannst auch nur ein Titelbild teilen, ohne Bögen zusammenzuführen. Spätere
 
 Exporte duplizieren nicht unnötig den gesamten integrierten Katalog. Sie enthalten eigene Inhalte und die vom Exporttyp unterstützten Anpassungen; Abenteuer enthalten ihre verwendeten Bögen. Importe überschreiben keine SRD-Originale. Siehe [Import und Export](import-export.md). Quelle und Namensnennung stehen unter **Einstellungen → Lizenzen**.
 
-<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 MOD-151 -->
 
 ## Zauberduplikate und Nutzungsanzeigen
 
@@ -39,3 +39,7 @@ Auch die Liste **Zauber** bietet **Duplikate verwalten**. Entsprechende Felder s
 Wähle den beizubehaltenden Bogen und bestätige **Anwenden**. Kompatible Verknüpfungen persönlicher Duplikate werden übertragen; alte Textlinks funktionieren weiter. Kennt ein Charakter beide Zauber, bleibt eine Verbindung mit Notizen und Vorbereitungsstatus. Ausgeschlossene SRD-Originale werden verborgen, nicht gelöscht. Texte, Werte und Effekte verworfener Einträge werden nicht zusammengeführt: vorher sichern.
 
 Bei SRD-Duplikaten kann der Zauberlistenfilter **nur doppelte SRD-Originale ausblenden**. Er wirkt vorübergehend und löscht oder verbirgt nichts dauerhaft. Das unterscheidet ihn von **Ausblenden** in der Duplikatverwaltung und **Offizielle Inhalte** für den gesamten Katalog.
+
+## Enthaltene Porträts {#bundled-monster-portraits}
+
+Alle **330 SRD-Monster** besitzen ein kompaktes, mitgeliefertes Porträt für die Offline-Nutzung. Bereits zugeordnete eigene Bilder haben Vorrang und werden nicht ersetzt.

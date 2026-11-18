@@ -65,8 +65,6 @@ L'overlay può includere:
 - condizioni
 - prossimo turno
 
-![Schermata giocatori durante il turno di un eroe](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
-![Schermata giocatori durante il turno di un mostro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 ## Gestione secondo schermo {#player-screen-options}
 
@@ -601,13 +599,13 @@ Il combattimento di DnDino rende al massimo quando:
 !!! tip
     Anche se DnDino automatizza molte operazioni, puoi continuare a tirare fisicamente i dadi. In quel caso usa il combattimento soprattutto per applicare danni, cure e condizioni in modo rapido, evitando calcoli manuali ripetuti sui PF e sulle statistiche.
 
-<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 MOD-156 MOD-167 MOD-171 MOD-172 -->
 
 ## Progressioni, slot e finestre durante il combattimento
 
-Nel pannello del PG selezionato o di turno trovi **Risorse di classe** e **Slot incantesimi**, richiudibili separatamente. Le progressioni occupano una riga ciascuna con nome, valore e descrizione espandibile: **Residui/Totale** con meno/più per quelle consumabili, sola consultazione per le fisse. Le risorse a zero diventano rosse. Gli slot mostrano **Utilizzati/Totale**, separati per livello e origine; il contatore diventa rosso quando non restano slot.
+Nel pannello del PG selezionato o di turno, progressioni e slot hanno pannelli richiudibili separati. Le progressioni sono compatte, su due colonne: nome, descrizione consultabile e valore. Quelle a consumo mostrano **Residui/Totale** con meno/più; quelle fisse non hanno pulsanti di consumo. I dadi vita indicano anche la classe. Slot e risorse esaurite sono rossi; negli slot meno, residui, più e indicatore Live stanno sulla stessa riga.
 
-Questi dati sono persistenti e non richiedono Hero connessa. Negli scontri conclusi sono in sola lettura. Per un PG ricevuto da Hero, la live controllata dal Master permette di modificare i contatori supportati, attendendo la conferma dell'app del giocatore; nuove progressioni o massimi richiedono l'invio/download completo della scheda. Vedi [guida Hero](hero-sync.md).
+Questi contatori restano disponibili anche senza Hero connessa. Con Live autorizzata, i valori supportati sono sincronizzati e riconoscibili; alla riconnessione riprende la coda senza reimportare automaticamente la scheda. Un invio o download esplicito della scheda allinea invece anche i valori Live, dentro e fuori dal combattimento, anche a Live spenta. Per cambiare struttura e massimi delle risorse del giocatore usa l'aggiornamento completo. Vedi [Collegamento con Hero](hero-sync.md).
 
 Per **PNG e mostri**, i **PF massimi** sono modificabili accanto ai PF attuali. Una presenza del luogo aggiorna il proprio valore locale; un partecipante preso dalla scheda generale conserva la modifica solo nel combattimento. Abbassare il massimo limita i PF superiori, aumentarlo non cura automaticamente. Non vengono riscritti PF o statistiche delle altre copie.
 
@@ -620,3 +618,23 @@ L’editor dei partecipanti ha una scheda **Combattimento** per i dati dello sco
 ## Statistiche per sessione
 
 La cronologia delle statistiche avventura è raggruppata per sessione. Apri il dettaglio nella stessa finestra e usa il ritorno alle statistiche per rientrare. Combattimenti e danni inflitti/subiti sono aggregati per sessione, con la **data di inizio sessione sulle ascisse**: due sessioni nello stesso giorno rimangono distinte, una sessione oltre mezzanotte resta unita. I combattimenti senza sessione non vengono attribuiti a una sessione inventata.
+
+## Schermata giocatori scenica {#scenic-player-screen}
+
+Durante lo scontro, la Finestra Giocatori usa la nuova presentazione scenica: non occorre scegliere una modalità. La copertina o un'immagine del luogo visibile ai giocatori diventa lo sfondo, ritagliato senza deformazioni; se manca viene usato uno sfondo neutro. Il partecipante di turno ha un ritratto grande e centrato in altezza, anche per PNG e mostri.
+
+Round, durata e prossimo turno rispettano le opzioni dello scontro; il timer si ferma in pausa. PF e condizioni sono indipendenti e seguono le scelte per ciascun partecipante. Per gli eroi si vedono anche le risorse a consumo e gli slot, compatti e senza scorrimento; i dadi vita non sono mostrati qui.
+
+Gli attacchi presentano bersagli grandi e un riquadro del danno che raggiunge ogni bersaglio, con un breve movimento del ritratto. Più di quattro bersagli vengono distribuiti automaticamente su più pagine. I nemici morti sono contrassegnati **Sconfitto**; per gli eroi si distinguono **Incosciente** e **Morto**. Nel turno di un eroe incosciente, **Prova a resistere** accompagna i tiri salvezza contro la morte, con successi e fallimenti registrati; se stabilizzato, il messaggio cambia. Questi promemoria non tirano dadi automaticamente. Le indicazioni dipendenti dai PF rispettano la relativa visibilità. **Riduci movimento** attenua le animazioni.
+
+Intro e riepilogo finale restano disponibili. Le preferenze in Impostazioni inizializzano i nuovi scontri: per uno già aperto usa **Gestione secondo schermo** e il pannello richiudibile di visibilità del partecipante.
+
+## Azioni del turno {#turn-action-tracking}
+
+Nella scheda del partecipante, sotto iniziativa e velocità, puoi segnare **Azione**, **Movimento**, **Bonus** e **Reazione** cliccando sull'intera voce. Sono promemoria manuali, reversibili e non vincolanti: non consumano automaticamente risorse e non impediscono attacchi. Puoi aggiornarli anche fuori turno o in pausa.
+
+Gli indicatori sono salvati con lo scontro e si azzerano solo quando inizia il prossimo turno di quel partecipante. Gli altri conservano i propri indicatori, comprese le reazioni. Tornare al turno precedente non li azzera. Nella schermata giocatori sono mostrati in sola lettura per l'eroe di turno; non vengono sincronizzati con Hero. Negli scontri conclusi non sono modificabili.
+
+## Danni, annullamenti e sessioni {#session-damage-accounting}
+
+Gli aggiornamenti Live dei PF non cancellano i danni registrati negli eventi. **Annulla evento** rimuove i danni dell'attacco dal riepilogo dello scontro e dai totali della sessione, senza modificare gli altri incontri. I totali della sessione corrispondono alla somma degli scontri inclusi; un semplice cambio dei PF non equivale a un nuovo attacco.

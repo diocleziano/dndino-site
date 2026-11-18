@@ -427,7 +427,7 @@ La logica generale è questa:
 !!! tip
     Se vuoi evitare confusione, pensa sempre a questa distinzione: la scheda base descrive il personaggio, mentre avventura, luogo e combattimento descrivono il suo stato in un contesto preciso. Non serve fissarsi troppo sulla separazione teorica: considera soprattutto che alcuni campi esistono solo nel loro contesto.
 
-<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 MOD-155 -->
 
 ## Form a sezioni e navigazione da tastiera
 
@@ -439,13 +439,14 @@ Nel menu rapido della topbar ogni risultato ha pulsanti distinti **Visualizzazio
 
 ## Progressioni e slot degli eroi
 
-Per il tipo **Eroe**, anche senza Hero o un'avventura associata, configura le risorse nei **Dettagli** e gli slot negli **Incantesimi**. Ogni risorsa ha nome, descrizione facoltativa, massimo e **Residui/Totale**: meno consuma, più ripristina. Le progressioni fisse ricevute da Hero sono consultabili, senza pulsanti di consumo. Gli slot hanno righe allineate **Nr. slot** e **Utilizzati** per livello.
+Per gli **Eroi**, la sezione **Privilegi e Dadi Vita** è disponibile nella creazione e modifica della scheda, anche senza Hero. Puoi aggiungere, modificare o rimuovere progressioni fisse o a consumo, con nome e descrizione facoltativa. Quelle a consumo separano il massimo dai **Residui/Totale** e offrono meno/più. La riga della descrizione è cliccabile per intero.
 
-I valori della scheda inizializzano le nuove associazioni all'avventura; i contatori già salvati nelle altre avventure non vengono sovrascritti. Anche eliminare una risorsa rimane una modifica in bozza fino a **Salva**. La visualizzazione compatta mostra risorse e slot in sola lettura.
+Configura classi e livelli, anche multiclasse, e i dadi vita per classe con tipo di dado, totale e residui. Il nome della classe accompagna il dado. Gli slot si configurano in **Incantesimi**, con righe allineate **Nr. slot** e **Utilizzati** per livello. Le modifiche rimangono in bozza fino a **Salva**; nella visualizzazione risorse e dadi vita sono consultabili senza modifica.
 
-Per un personaggio ricevuto da Hero, la struttura proviene dal giocatore: il nuovo invio/download può aggiornare nomi, descrizioni, massimi e progressioni del livello attuale, eliminando quelle non più presenti. I contatori restano disponibili offline; non vengono accodati automaticamente per prevalere su Hero alla riconnessione. Vedi [Collegamento con Hero](hero-sync.md).
+Le risorse ricevute da Hero sono riconoscibili e vengono sostituite dai successivi aggiornamenti della scheda. **Conserva sempre** è disponibile soltanto per le risorse create sul Mac: permette di mantenerle durante l'importazione da Hero. Un import esplicito allinea anche i valori Live del PG associato, senza creare una nuova identità; una semplice riconnessione recupera invece gli invii in coda. Vedi [Collegamento con Hero](hero-sync.md).
 
-Per ottenere una scheda personale da una presenza locale senza cambiare le altre copie, vedi [Creare una scheda indipendente nei luoghi](places.md).
+I valori della scheda inizializzano nuove associazioni all'avventura, senza riscrivere automaticamente i contatori delle altre avventure. Per creare una scheda indipendente da una presenza, vedi [Luoghi](places.md).
+
 
 ## Effetti e formule nell'Attacco completo
 

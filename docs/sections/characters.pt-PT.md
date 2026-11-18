@@ -291,7 +291,7 @@ Um participante pode nascer de três fontes diferentes:
 - uma **presença do local**
 - uma **ficha base**
 
-Cada participante no combate tem o seu próprio registo específico do confronto, com dados como:
+Cada participante no combate tem o o seu próprio registo específico do confronto, com dados como:
 
 - nome apresentado
 - iniciativa
@@ -404,7 +404,7 @@ A lógica geral é esta:
 - o **participante no combate** torna-a operacional no confronto
 
 !!! tip
-    Se quiseres evitar confusão, lembra-te sempre desta distinção: a ficha base descreve a personagem, enquanto aventura, local e combate descrevem o seu estado num contexto específico. Não precisas de te fixar demasiado na separação teórica; o importante é perceber que alguns campos só existem no seu próprio contexto.
+    Se quiseres evitar confusão, lembra-te sempre desta distinção: a ficha base descreve a personagem, enquanto aventura, local e combate descrevem o seu estado num contexto específico. Não precisas de te fixar demasiado na separação teórica; o importante é perceber que alguns campos só existem no o seu próprio contexto.
 ## Novidades da versão 1.4
 
 As fichas de personagem incluem agora testes de resistência para cada atributo, bónus de proficiência, dados de pontos de vida e um modificador de iniciativa editável.
@@ -413,7 +413,7 @@ Os testes de resistência começam a partir do modificador do atributo correspon
 
 As ligações de `Ataque completo` podem agora representar uma jogada de ataque ou um efeito com teste de resistência. Também podem incluir um tipo de ataque, como corpo a corpo, à distância, área ou uma descrição livre, além de linhas de dano modulares.
 
-<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 MOD-155 -->
 
 ## Formulário por secções e navegação pelo teclado
 
@@ -425,13 +425,14 @@ Cada resultado do menu rápido de personagens tem botões separados **Visualizar
 
 ## Progressões e espaços dos heróis
 
-Para o tipo **Herói**, mesmo sem Hero ou aventura, configura recursos em **Detalhes** e espaços em **Magias**. Cada recurso tem nome, descrição opcional, máximo e **Restantes/Total**: menos consome e mais repõe. As progressões fixas recebidas de Hero são de consulta, sem botões de consumo. Os espaços mostram linhas alinhadas **Quantidade** e **Utilizados** por nível.
+Para **Heróis**, **Características e Dados de vida** está disponível na criação e edição, mesmo sem Hero. Adiciona, altere ou remova progressões fixas ou consumíveis com nome e descrição opcional. Consumíveis separam o máximo de **Restantes/Total**, com menos/mais. Toda a linha de descrição é clicável.
 
-Os valores da base inicializam novas associações à aventura; os contadores já guardados noutras aventuras não são substituídos. Eliminar um recurso também fica no rascunho até **Guardar**. A visualização compacta mostra recursos e espaços apenas para consulta.
+Configure classes e níveis, incluindo multiclasse, e dados de vida por classe com tipo de dado, total e restantes. A classe acompanha o dado. Espaços são configurados em **Magias**, com linhas alinhadas **Número de espaços** e **Usados** por nível. Alterações ficam em rascunho até **Guardar**; a visualização mostra recursos e dados de vida em modo de leitura.
 
-Para personagens recebidas de Hero, o jogador gere a estrutura: novo envio/download atualiza nomes, descrições, máximos e progressões do nível atual, removendo entradas ausentes. Os contadores ficam disponíveis offline; alterações offline não são enviadas automaticamente para prevalecer sobre Hero ao voltar a ligar. Consulta [Ligação ao Hero](hero-sync.md).
+Recursos recebidos de Hero são identificados e substituídos por atualizações posteriores. **Manter sempre** existe apenas para recursos criados no Mac, preservando-os na importação de Hero. Uma importação explícita também alinha valores Live do PJ associado sem criar outra identidade; voltar a ligar retoma apenas os envios em fila. Veja [Ligação ao Hero](hero-sync.md).
 
-Para criar uma ficha pessoal a partir de presença local, consulta [Fichas independentes nos locais](places.md).
+A ficha base inicializa novas associações à aventura sem reescrever automaticamente contadores de outras aventuras. Para criar uma ficha independente de uma presença, veja [Locais](places.md).
+
 
 ## Efeitos e fórmulas do Ataque completo
 

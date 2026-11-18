@@ -30,7 +30,7 @@ Também podes partilhar apenas uma capa, sem unir as fichas. Alterar ou remover 
 
 As exportações não duplicam desnecessariamente todo o catálogo integrado. Mantêm conteúdo pessoal e as personalizações previstas pelo tipo de exportação; as aventuras incluem as fichas utilizadas. A importação não substitui originais SRD. Ver [Importação e exportação](import-export.md). Fonte e atribuição estão em **Definições → Licenças**.
 
-<!-- guide-coverage: MOD-009 MOD-010 MOD-013 -->
+<!-- guide-coverage: MOD-009 MOD-010 MOD-013 MOD-151 -->
 
 ## Duplicados de magias e indicadores de utilização
 
@@ -39,3 +39,7 @@ A lista **Magias** também oferece **Gerir duplicados**. Os campos correspondent
 Escolhe a ficha a manter e confirma **Aplicar**. As associações compatíveis dos duplicados pessoais são transferidas e as ligações antigas continuam a funcionar. Se uma personagem conhece ambas as magias, fica uma associação com notas e preparação preservadas. Os originais SRD descartados são ocultados, não eliminados. Textos, estatísticas e efeitos descartados não são somados: faz uma cópia de segurança antes.
 
 Havendo duplicados SRD, o filtro da lista permite **ocultar apenas os originais SRD duplicados**. É temporário, sem eliminar nem ocultar permanentemente registos. É diferente de **Ocultar** na gestão de duplicados e de **Conteúdo oficial**, que controla todo o catálogo.
+
+## Retratos incluídos {#bundled-monster-portraits}
+
+Todos os **330 monstros SRD** têm retratos leves incluídos na aplicação e disponíveis offline. Imagens pessoais já atribuídas têm prioridade e nunca são substituídas.

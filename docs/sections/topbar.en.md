@@ -114,7 +114,7 @@ Use the top bar when you want to:
 
 If the macOS title-bar double-click action is **Fill**, double-click an empty part of the title bar. The main window fills the visible area without going full screen. Double-click again to restore the previous size.
 
-<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 MOD-153 MOD-168 MOD-169 -->
 
 ## Bottom bar and open windows
 
@@ -123,3 +123,13 @@ The bottom bar appears when work windows or return links are available; the Play
 Leaving an unfinished combat pauses it and keeps a return link **first on the left**, with a colored stripe. Click to return. Its X only hides the link: it does not finish or delete the combat. The shortcut is hidden during that combat, while other windows remain listed.
 
 Chats received from Hero appear even with their window closed, without interrupting you; a dot indicates unread messages. Opening and reading the conversation clears it. On the right, the Hero area retains players contacted during the current app run even after disconnection: status, connection test, chat, sheet download, live sync and disconnect. See the [Hero guide](hero-sync.md).
+
+## Notifications {#notification-history}
+
+The **bell** at the far right, after Hero, opens the latest **20 notifications**, with sender, text and time, newest first and an unread indicator. Top-right banners report Hero requests, connections, disconnections, reconnections, messages and incoming Live changes; history also includes combat alerts. Master edits and unchanged retransmissions do not create duplicate Live notifications.
+
+History is temporary: restarting the app or changing archives clears it. Incoming messages do not automatically open chat, which keeps its own unread indicator. Hide the bell or disable sound in [Settings](settings.md#notification-settings).
+
+## Window recall {#window-bar-toggle}
+
+Clicking a bottom-bar window brings it forward if it was behind or minimized. If already in front, it minimizes it. **Conditions** and **Full Attack** cannot be minimized, so clicking only recalls them. This never minimizes the main window.

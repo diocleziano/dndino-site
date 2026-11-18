@@ -110,7 +110,7 @@ Utilise la topbar pour :
 
 Si l’action macOS de double-clic sur la barre de titre est **Remplir**, double-clique dans une zone vide de la barre. La fenêtre principale occupe la zone visible sans passer en plein écran. Un second double-clic rétablit la taille précédente.
 
-<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 MOD-153 MOD-168 MOD-169 -->
 
 ## Barre inférieure et fenêtres ouvertes
 
@@ -119,3 +119,13 @@ La barre du bas apparaît lorsqu'il existe des fenêtres de travail ou raccourci
 Quitter un combat non terminé le met en pause et conserve un raccourci **tout à gauche**, avec un trait coloré. Clique pour revenir. Sa X masque seulement le raccourci, sans terminer ni supprimer le combat. Il disparaît pendant ce combat, mais les autres fenêtres restent listées.
 
 Les chats reçus de Hero apparaissent même à fenêtre fermée, sans interrompre ton travail ; un point indique les messages non lus. Ouvrir et lire la conversation efface l'indicateur. À droite, la zone Hero conserve les joueurs contactés pendant l'ouverture actuelle de l'app, même déconnectés : état, test, chat, téléchargement de fiche, live et déconnexion. Voir [guide Hero](hero-sync.md).
+
+## Notifications {#notification-history}
+
+La **cloche**, tout à droite après Hero, ouvre les **20 dernières notifications**, avec expéditeur, texte et heure, les plus récentes en haut et un indicateur de nouveautés. Les bannières en haut à droite signalent demandes Hero, connexions, déconnexions, reconnexions, messages et changements Live reçus ; l'historique inclut les alertes de combat. Les modifications du MJ et renvois sans changement ne dupliquent pas les notifications Live.
+
+L'historique est temporaire : redémarrer l'app ou changer d'archive le vide. Un message n'ouvre pas automatiquement la conversation, qui conserve son propre indicateur de non-lus. Masquez la cloche ou coupez le son dans [Réglages](settings.md#notification-settings).
+
+## Rappel des fenêtres {#window-bar-toggle}
+
+Cliquer une fenêtre dans la barre inférieure la ramène devant si elle était derrière ou réduite. Déjà au premier plan, elle se réduit. **États** et **Attaque complète** ne se réduisent pas : le clic les rappelle uniquement. La fenêtre principale n'est jamais réduite par cette commande.

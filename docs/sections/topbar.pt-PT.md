@@ -110,7 +110,7 @@ Usa a topbar para:
 
 Se a ação de duplo clique na barra de título do macOS for **Preencher**, faz duplo clique numa zona vazia da barra. A janela ocupa a área visível sem entrar em ecrã completo. Repete para repor o tamanho anterior.
 
-<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 -->
+<!-- guide-coverage: MOD-023 MOD-024 MOD-025 MOD-034 MOD-038 MOD-039 MOD-044 MOD-045 MOD-048 MOD-054 MOD-067 MOD-069 MOD-153 MOD-168 MOD-169 -->
 
 ## Barra inferior e janelas abertas
 
@@ -119,3 +119,13 @@ A barra inferior aparece com janelas de trabalho ou atalhos de regresso; a Janel
 Sair de um combate por concluir coloca-o em pausa e mantém um atalho **primeiro à esquerda**, com faixa colorida. Clica para regressar. O X apenas oculta o atalho: não termina nem elimina o combate. Durante esse combate fica oculto, mas as outras janelas continuam listadas.
 
 Os chats recebidos de Hero aparecem mesmo com a janela fechada, sem te interromper; um ponto indica mensagens não lidas. Abrir e ler a conversa remove o indicador. À direita, a área Hero mantém jogadores contactados durante esta execução da app mesmo após desligarem: estado, teste, chat, download da ficha, live e desligar. Consulta o [guia Hero](hero-sync.md).
+
+## Notificações {#notification-history}
+
+O **sino**, na extremidade direita após Hero, abre as últimas **20 notificações**, com remetente, texto e horário, recentes primeiro e indicador de novidades. Avisos no alto à direita mostram pedidos Hero, ligações, desligações, restabelecimentos de ligação, mensagens e alterações Live recebidas; o histórico inclui alertas de combate. Edições do Mestre e reenvios sem alteração não duplicam notificações Live.
+
+O histórico é temporário: reiniciar ou trocar de arquivo o apaga. Mensagens não abrem o chat automaticamente; ele mantém o seu próprio indicador de não lidos. Oculte o sino ou desative o som em [Definições](settings.md#notification-settings).
+
+## Recuperar janelas {#window-bar-toggle}
+
+Clicar numa janela na barra inferior a traz para a frente se estava atrás ou minimizada. Se já estava em primeiro plano, ela é minimizada. **Condições** e **Ataque completo** não podem ser minimizados: o clique apenas os recupera. A janela principal nunca é minimizada por esse comando.

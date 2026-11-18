@@ -413,7 +413,7 @@ Os testes de resistência começam a partir do modificador do atributo correspon
 
 Links de `Ataque completo` agora podem representar uma rolagem de ataque ou um efeito com teste de resistência. Eles também podem incluir um tipo de ataque, como corpo a corpo, à distância, área ou uma descrição livre, além de linhas de dano modulares.
 
-<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 MOD-155 -->
 
 ## Formulário por seções e navegação pelo teclado
 
@@ -425,13 +425,14 @@ Cada resultado do menu rápido de personagens tem botões separados **Visualizar
 
 ## Progressões e espaços dos heróis
 
-Para o tipo **Herói**, mesmo sem Hero ou aventura, configure recursos em **Detalhes** e espaços em **Magias**. Cada recurso tem nome, descrição opcional, máximo e **Restantes/Total**: menos consome e mais restaura. Progressões fixas recebidas de Hero são de consulta, sem botões de consumo. Espaços mostram linhas alinhadas **Quantidade** e **Utilizados** por nível.
+Para **Heróis**, **Características e Dados de vida** está disponível na criação e edição, mesmo sem Hero. Adicione, altere ou remova progressões fixas ou consumíveis com nome e descrição opcional. Consumíveis separam o máximo de **Restantes/Total**, com menos/mais. Toda a linha de descrição é clicável.
 
-Valores da base inicializam novas associações à aventura; contadores já salvos em outras aventuras não são sobrescritos. Excluir um recurso também fica no rascunho até **Salvar**. A visualização compacta mostra recursos e espaços somente para consulta.
+Configure classes e níveis, incluindo multiclasse, e dados de vida por classe com tipo de dado, total e restantes. A classe acompanha o dado. Espaços são configurados em **Magias**, com linhas alinhadas **Número de espaços** e **Usados** por nível. Alterações ficam em rascunho até **Salvar**; a visualização mostra recursos e dados de vida em somente leitura.
 
-Para personagens recebidos de Hero, o jogador gerencia a estrutura: novo envio/download atualiza nomes, descrições, máximos e progressões do nível atual, removendo entradas ausentes. Contadores ficam disponíveis offline; mudanças offline não são enviadas automaticamente para prevalecer sobre Hero ao reconectar. Veja [Conexão com Hero](hero-sync.md).
+Recursos recebidos de Hero são identificados e substituídos por atualizações posteriores. **Manter sempre** existe apenas para recursos criados no Mac, preservando-os na importação de Hero. Uma importação explícita também alinha valores Live do PJ associado sem criar outra identidade; reconectar retoma apenas os envios em fila. Veja [Conexão com Hero](hero-sync.md).
 
-Para criar uma ficha pessoal a partir de presença local, veja [Fichas independentes nos locais](places.md).
+A ficha base inicializa novas associações à aventura sem reescrever automaticamente contadores de outras aventuras. Para criar uma ficha independente de uma presença, veja [Locais](places.md).
+
 
 ## Efeitos e fórmulas do Ataque completo
 

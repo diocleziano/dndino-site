@@ -65,8 +65,6 @@ A sobreposição pode incluir:
 - condições
 - próximo turno
 
-![Ecrã dos jogadores durante o turno de um herói](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
-![Ecrã dos jogadores durante o turno de um monstro](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 ## Gerir segundo ecrã {#player-screen-options}
 
@@ -609,13 +607,13 @@ No modo jogada de ataque, DnDino pode comparar o resultado com a CA dos alvos se
 
 A janela de Ataque completo também aceita um tipo de ataque, para indicar se é corpo a corpo, à distância, em área ou personalizado.
 
-<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 MOD-156 MOD-167 MOD-171 MOD-172 -->
 
 ## Progressões, espaços e janelas de combate
 
-O painel do PJ selecionado ou da vez tem **Recursos de classe** e **Espaços de magia**, recolhíveis separadamente. Cada progressão ocupa uma linha com nome, valor e descrição expansível: **Restantes/Total** com menos/mais para consumíveis, consulta para fixas. Recursos a zero ficam vermelhos. Os espaços mostram **Utilizados/Total**, separados por nível e origem; ficam vermelhos quando esgotados.
+O painel do PJ selecionado ou do turno tem secções recolhíveis separadas para progressões e espaços. Progressões compactas ocupam duas colunas: nome, descrição consultável e valor. Consumíveis mostram **Restantes/Total** com menos/mais; entradas fixas não têm botões de consumo. Dados de vida também indicam a classe. Recursos e espaços esgotados ficam vermelhos; menos, restantes, mais e indicador Live compartilham uma linha nos espaços.
 
-Os dados persistem sem ligação Hero. Em combates concluídos ficam apenas para consulta. Para personagens de Hero, a live controlada pelo Master permite alterar contadores compatíveis com confirmação da app do jogador; novas progressões ou máximos exigem a ficha completa. Consulta o [guia Hero](hero-sync.md).
+Os contadores permanecem disponíveis sem Hero ligado. Com Live autorizada, valores compatíveis são sincronizados e identificados; voltar a ligar retoma a fila sem reimportar a ficha automaticamente. Um envio ou download explícito alinha os valores Live dentro e fora do combate, mesmo com Live desligada. Use uma atualização completa para alterar estrutura e máximos dos recursos do jogador. Veja [Ligação ao Hero](hero-sync.md).
 
 Para **PNJ e monstros**, os **PV máximos** são editáveis ao lado dos atuais. Uma presença atualiza o seu valor local; um participante da ficha geral mantém a alteração apenas nesse combate. Reduzir o máximo limita PV superiores; aumentar não cura. Outras cópias e estatísticas não mudam.
 
@@ -628,3 +626,23 @@ O editor tem um separador **Combate** para os valores do encontro e outros para 
 ## Estatísticas por sessão
 
 O histórico de estatísticas da aventura agrupa combates por sessão. Abre o detalhe na mesma janela e usa o regresso às estatísticas. Combates e danos causados/recebidos são agregados por sessão com a **data de início no eixo horizontal**: sessões do mesmo dia ficam separadas, uma sessão que passa da meia-noite permanece unida. Combates sem sessão não recebem associações inventadas.
+
+## Ecrã cénico dos jogadores {#scenic-player-screen}
+
+Durante o combate, a janela dos jogadores usa a nova apresentação cénica, sem seletor de modo. Uma capa ou imagem do local visível aos jogadores preenche o fundo, recortada sem distorção; sem imagem, o fundo é neutro. O participante do turno tem um retrato grande e centrado na vertical, inclusive PNJ e monstros.
+
+Ronda, duração e próximo turno respeitam as opções do encontro; o relógio para durante a pausa. PV e condições têm visibilidade independente por participante. Heróis também mostram recursos consumíveis e espaços compactos, sem deslocamento; dados de vida não aparecem aqui.
+
+Os ataques mostram alvos grandes e um quadro de dano que atinge cada alvo, com uma breve tremida do retrato. Mais de quatro alvos são distribuídos automaticamente em páginas. Inimigos mortos mostram **Derrotado**; heróis distinguem **Inconsciente** e **Morto**. No turno de um herói inconsciente, **Tenta resistir** acompanha sucessos e falhas das salvaguardas contra a morte; a mensagem muda após estabilização. Nenhum dado é rolado automaticamente. Indicações dependentes de PV respeitam sua visibilidade. **Reduzir movimento** limita as animações.
+
+A introdução e o resumo final continuam disponíveis. Definições inicializam encontros novos; para um encontro existente, use **Gerir segundo ecrã** e o painel recolhível de visibilidade do participante.
+
+## Ações do turno {#turn-action-tracking}
+
+Abaixo de iniciativa e velocidade, clique em qualquer parte de **Ação**, **Movimento**, **Bónus** ou **Reação** para marcar o uso. São lembretes manuais e reversíveis: não consomem recursos nem bloqueiam ataques. Podem ser alterados fora do turno ou em pausa.
+
+Os marcadores são guardados no encontro e reiniciados apenas no início do próximo turno daquele participante. Os demais mantêm os seus, incluindo reações. Voltar ao turno anterior não os reinicia. Jogadores veem os marcadores do herói do turno em modo de leitura; eles não são sincronizados com Hero. Encontros concluídos não podem ser editados.
+
+## Dano, desfazer e sessões {#session-damage-accounting}
+
+Atualizações Live de PV não apagam danos registados em eventos. **Desfazer evento** subtrai o dano do ataque do resumo do encontro e dos totais da sessão sem alterar outros encontros. Totais da sessão correspondem à soma dos encontros incluídos; alterar PV não equivale a um novo ataque.

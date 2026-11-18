@@ -601,7 +601,7 @@ Os mapas agora podem ser marcados separadamente como `Mapa interativo` e `Mapa S
 
 A mídia do local também pode ser compartilhada pelo sistema de compartilhamento do macOS.
 
-<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 MOD-149 MOD-150 MOD-154 MOD-159 MOD-160 -->
 
 ## Criar uma ficha independente a partir de uma presença
 
@@ -626,3 +626,11 @@ O modo **Sombra** exige um Mapa Sombra disponível. As setas circulares mostram 
 Em **Desenho**, **Temporário** destaca um caminho ou ponto e depois desaparece gradualmente. Cada novo traço reinicia o prazo de todos os traços temporários ainda visíveis. Não substitui a caneta permanente nem muda a névoa.
 
 Com o mapa compartilhado, desenhos chegam aos jogadores sem confirmar cada traço. Mudanças na névoa exigem **Mostrar/Atualizar**; o mesmo botão inicia o compartilhamento se necessário.
+
+## Editor por seções e imagens {#tabbed-location-editor}
+
+Criação e edição separam **Informações principais**, **Locais pais**, **Descrições**, **Detalhes**, **Notas** e **Mídia**. Trocar de seção mantém o rascunho; **Salvar** confirma. Em **Mídia**, Imagens e Mapas têm painéis e botões próprios para adicionar, não mais na barra superior.
+
+Para organizar uma masmorra, crie um local pai com mapa e salas ou áreas como sublocais. Associe cada marcador ao local correto: esse vínculo permite ao Mestre consultar a sala no combate com **Mapa**. Capas e miniaturas de presenças são maiores, recortadas proporcionalmente sem barras pretas. O menu de personagens do local usa os cartões de heróis do painel da aventura.
+
+O painel da aventura também usa uma capa panorâmica ao lado do título, sem distorção.

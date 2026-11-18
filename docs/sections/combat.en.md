@@ -65,8 +65,6 @@ The overlay can include:
 - conditions
 - next turn
 
-![Player screen during a hero turn](../images/en_combat_schermogiocatori_turnoeroi.png){ .img-shot }
-![Player screen during a monster turn](../images/en_combat_schermogiocatori_turnomostri.png){ .img-shot }
 
 ## Second-screen management {#player-screen-options}
 
@@ -611,13 +609,13 @@ In attack roll mode, DnDino can compare the result with the AC of selected targe
 
 Full Attack windows also support an attack type field, so the DM can keep track of whether the action is melee, ranged, area-based, or something custom.
 
-<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 -->
+<!-- guide-coverage: MOD-025 MOD-026 MOD-028 MOD-029 MOD-030 MOD-039 MOD-044 MOD-055 MOD-058 MOD-059 MOD-063 MOD-069 MOD-081 MOD-082 MOD-083 MOD-088 MOD-156 MOD-167 MOD-171 MOD-172 -->
 
 ## Progressions, slots and combat windows
 
-The selected/current-turn player character panel has separately collapsible **Class Resources** and **Spell Slots**. Each progression occupies one row with a name, value and expandable description: **Remaining/Total** and minus/plus for consumables, read-only for fixed values. Resources turn red at zero. Slots show **Used/Total**, separated by level and source; the counter turns red when exhausted.
+The selected or current PC panel has separately collapsible progression and spell-slot sections. Compact progressions use two columns: name, viewable description and value. Consumables show **Remaining/Total** with minus/plus; fixed entries have no consumption buttons. Hit dice also identify the class. Depleted resources and slots turn red; slot minus, remaining value, plus and Live indicator share one row.
 
-These values persist and do not require a Hero connection. They are read-only in completed combats. For a Hero-imported character, Master-controlled live sync supports counter changes with confirmation from the player's app; new progressions or maxima require a full sheet send/download. See the [Hero guide](hero-sync.md).
+Counters remain available without Hero connected. With authorized Live, supported values are synchronized and marked accordingly; reconnecting resumes the queue without automatically reimporting the sheet. An explicit sheet send/download aligns Live values both in and out of combat, even with Live off. Use a full sheet update to change the player's resource structure and maxima. See [Connect with Hero](hero-sync.md).
 
 For **NPCs and monsters**, **maximum HP** is editable beside current HP. A location presence updates its local value; a participant added from the general sheet keeps the change in that combat only. Lowering the maximum caps higher current HP; raising it does not heal. Other copies' HP and statistics are not rewritten.
 
@@ -630,3 +628,23 @@ The participant editor has a **Combat** tab for encounter values and separate ta
 ## Session-based statistics
 
 Adventure-statistics history groups combats by session. Open session details in the same window and use the return control to go back to statistics. Combat counts and damage dealt/taken are aggregated by session with the **session start date on the x-axis**: separate sessions on one day stay separate, while a session crossing midnight stays together. Combats without a session are not assigned to an invented one.
+
+## Scenic player screen {#scenic-player-screen}
+
+During combat, the Player Window uses the new scenic presentation without a mode selector. A player-visible location cover or image fills the background, cropped without distortion; a neutral background is used when none is available. The current participant has a large, vertically centered portrait, including NPCs and monsters.
+
+Round, duration and next turn respect encounter options; the timer stops when paused. HP and conditions follow independent per-participant visibility settings. Heroes also show compact consumable resources and slots, without scrolling; hit dice are not displayed here.
+
+Attacks show large targets and a damage tile traveling to each target, with a short portrait shake. More than four targets are paged automatically. Dead enemies show **Defeated**; heroes distinguish **Unconscious** and **Dead**. On an unconscious hero's turn, **Try to hold on** accompanies recorded death save successes and failures; the message changes when stabilized. These reminders never roll dice automatically. HP-dependent status displays respect HP visibility. **Reduce Motion** limits animations.
+
+The intro and final summary remain available. Settings initialize new encounters; use **Second screen management** and each participant's collapsible visibility panel for an existing encounter.
+
+## Turn actions {#turn-action-tracking}
+
+Below initiative and speed, click anywhere on **Action**, **Movement**, **Bonus** or **Reaction** to mark it used. These are manual, reversible reminders, not gameplay restrictions: they do not consume resources or block attacks. They can be changed out of turn or while paused.
+
+Flags are saved with the encounter and reset only at the start of that participant's next turn. Other participants retain their flags, including reactions. Going to the previous turn does not reset them. Players see read-only flags for the current hero; they are not synchronized with Hero. Completed encounters cannot be edited.
+
+## Damage, undo and sessions {#session-damage-accounting}
+
+Live HP updates do not remove damage recorded in events. **Undo event** subtracts the attack's damage from the encounter summary and session totals without changing other encounters. Session totals match the sum of included encounters; simply changing HP is not a new attack.

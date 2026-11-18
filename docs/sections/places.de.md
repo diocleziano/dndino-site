@@ -603,7 +603,7 @@ Karten können jetzt getrennt als `Interaktive Karte` und `Schattenkarte` markie
 
 Ortsmedien können außerdem über die macOS-Teilen-Funktion geteilt werden.
 
-<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 -->
+<!-- guide-coverage: MOD-015 MOD-016 MOD-018 MOD-031 MOD-035 MOD-036 MOD-087 MOD-149 MOD-150 MOD-154 MOD-159 MOD-160 -->
 
 ## Eigenständigen Bogen aus einer Präsenz erstellen
 
@@ -628,3 +628,11 @@ Die Suche der Präsenzauswahl ist sofort per Tastatur bedienbar. Die Bearbeitung
 Unter **Zeichnen** markiert **Temporär** einen Weg oder Punkt und blendet ihn anschließend aus. Jeder neue Strich startet die Frist aller noch sichtbaren temporären Striche neu. Das ersetzt weder den dauerhaften Stift noch ändert es den Nebel.
 
 Bei geteilter Karte sehen Spieler Zeichnungen ohne Bestätigung jedes Strichs. Nebeländerungen erfordern **Anzeigen/Aktualisieren**; dieselbe Schaltfläche startet bei Bedarf die Freigabe.
+
+## Editor mit Registerkarten und Bildern {#tabbed-location-editor}
+
+Erstellen und Bearbeiten trennen **Hauptinformationen**, **Übergeordnete Orte**, **Beschreibungen**, **Details**, **Notizen** und **Medien**. Registerwechsel erhalten den Entwurf; **Speichern** übernimmt Änderungen. Unter **Medien** haben Bilder und Karten getrennte Bereiche mit eigenen Hinzufügen-Schaltflächen statt in der oberen Leiste.
+
+Erstellen Sie für einen Dungeon einen übergeordneten Ort mit Karte und Räume oder Zonen als Unterorte. Verknüpfen Sie Kartenmarker mit dem richtigen Ort: Über **Karte** kann die Spielleitung damit den Raum im Kampf ansehen. Titelbilder und Präsenzminiaturen sind größer, proportional zugeschnitten ohne schwarze Balken. Das Figurenmenü im Ort nutzt die Heldenkarten des Abenteuer-Dashboards.
+
+Das Abenteuer-Dashboard zeigt neben dem Titel außerdem ein breites Titelbild ohne Verzerrung.

@@ -97,9 +97,7 @@ Unter `Allgemein` wird außerdem das **aktuell ausgewählte Thema** als schnelle
 
 ### Einführungshinweise
 
-Von hier aus kannst du das Erstverhalten der App zurücksetzen.
-
-Die Schaltfläche `Erstnutzung zurücksetzen` weist DnDino an, kontextbezogene Hilfen und Onboarding-Abläufe erneut als ungesehen zu behandeln.
+Anleitungen verwalten Sie unter [App und Anleitungen zurücksetzen](#app-and-guide-reset): Einführung erneut öffnen und kontextbezogene Hilfen zurücksetzen sind getrennte Aktionen ohne Datenlöschung.
 
 ## Topbar
 
@@ -346,14 +344,33 @@ Snapshots und App-Medien können über den normalen macOS-Speicherdialog an eine
 
 Der Diagnosebereich ist Debug-Builds vorbehalten und wird in der Release-Version nicht angezeigt.
 
-<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 -->
+<!-- guide-coverage: MOD-042 MOD-043 MOD-049 MOD-051 MOD-060 MOD-061 MOD-062 MOD-070 MOD-071 MOD-073 MOD-077 MOD-078 MOD-079 MOD-080 MOD-086 MOD-088 MOD-145 MOD-146 MOD-147 MOD-148 MOD-163 MOD-164 MOD-168 MOD-170 -->
 
 ## Themen, Hintergründe und Deckkraft
 
-Neben **System**, das dem hellen/dunklen Mac-Erscheinungsbild folgt, gibt es **Halloween**, **Weihnachten**, **Pergament** und **Winter**. Vorschauen zeigen Palette und Hintergrund; **Dekorativer Hintergrund** lässt sich unabhängig abschalten. Winter verwendet eine Schneelandschaft. Das sind Themenhintergründe, kein Import eigener Hintergrundbilder auf dem Mac.
+**System** steht zuerst und folgt macOS. Weitere Themen sind in **Farbpaletten**, **Spezial** und **Jahreszeiten** gruppiert. Spezial enthält **Inferno** und **Magie**; alle vier Jahreszeiten zeigen illustrierte Fantasy-Landschaften mit Abenteurern. Hero verwendet dieselben Themen und Bilder.
 
-Der Deckkraftregler wirkt sofort auf vorgesehene Bereiche und Seitenleisten, darunter Einstellungen und beide Bereiche von Orte und Quests. Bereits deckende Bereiche bleiben unverändert. **Standard** stellt die jeweils ursprüngliche Deckkraft wieder her, nicht überall 50 %.
+Dekorative Hintergründe sind abschaltbar; alternativ importieren Sie einen **eigenen Hintergrund**. Ein neues Bild ersetzt das bisherige. Ein Themenwechsel deaktiviert den eigenen Hintergrund, löscht ihn aber nicht.
+
+Der Deckkraftregler aktualisiert unterstützte Bereiche sofort, darunter Ortstitel und Suche, Abenteuerkopf, Heldenkarten und Sitzungen. Für Lesbarkeit behalten diese Flächen einen dunkleren Farbton oder abgeschwächte Transparenz; Texte, Bilder und Bedienelemente werden nicht transparent. Andere Bereiche bleiben undurchsichtig. **Standard** stellt die ursprünglichen Deckkräfte und die passende Reglerposition wieder her, nicht einen gemeinsamen Wert von 50 %.
 
 Ein Themenwechsel erstellt die Hauptansicht neu und kehrt zu **Einstellungen → Thema** zurück. Offene Nebenfenster und ungespeicherte Entwürfe bleiben erhalten; die untere Leiste übernimmt das Thema. Hauptschaltflächen und Seitenleistenauswahl nutzen Themenfarben mit angepasstem Textkontrast. **System** behält native macOS-Steuerelemente bei.
 
 Berechtigungen, Geräteverlauf, optionaler automatischer Live-Start sowie Trennen, Zuordnung entfernen und Gerät vergessen beschreibt [Verbindung mit Hero](hero-sync.md).
+
+## Benachrichtigungen und Ton {#notification-settings}
+
+Unter **Einstellungen → Hero-Geräte** lässt sich der Verlauf in der unteren Leiste ausblenden, ohne Banner abzuschalten. Ein separater, standardmäßig aktiver Schalter steuert Töne für **neue Nachrichten und Kopplungsanfragen**. Live-Änderungen, Verbindungen/Trennungen und Kampfhinweise bleiben lautlos. Siehe [Benachrichtigungen](topbar.md#notification-history).
+
+## App und Anleitungen zurücksetzen {#app-and-guide-reset}
+
+Diese Aktionen unterscheiden sich. Lesen Sie vor der Bestätigung die Erläuterung.
+
+- **Einführung öffnen** startet die Einführung erneut, ohne Daten oder kontextbezogene Anleitungen zurückzusetzen. Die neue Einführung für 2.0.0 erscheint auch nach Abschluss der vorherigen.
+- **Kontextbezogene Anleitungen erneut anzeigen** setzt nur Bildschirmhilfen zurück. Diese scrollen zu verdeckten Bereichen und öffnen benötigte Abschnitte.
+- **App-Daten zurücksetzen**, auch unter Datenbank und Medien, löscht Archiv und Medien, behält aber Profil, Einstellungen, Anleitungen sowie lokale/iCloud-Backups.
+- **Lokale Backups löschen** entfernt verwaltete manuelle und automatische Kopien, nicht aktuelle Daten oder extern exportierte Dateien.
+- **iCloud-Kopie löschen** entfernt nur den App-Snapshot, sofern verfügbar. Aktivierte Cloud-Backups können ihn später neu erstellen.
+- **Vollständig zurücksetzen**, unten getrennt mit doppelter Bestätigung, löscht Daten, Medien, verwaltete Backups, eigenen Hintergrund, Hero-Zugangsdaten, Profil, Einstellungen und Anleitungen und beendet die App. Externe Exporte bleiben unberührt.
+
+Vor Archivaktionen Live-Sitzung und Nebenfenster schließen. Ohne iCloud muss lokales Zurücksetzen ausdrücklich gewählt werden; schlägt eine angeforderte Cloud-Löschung fehl, bleiben lokale Daten erhalten. Nicht rückgängig zu machen: Erhaltenswertes zuerst exportieren.

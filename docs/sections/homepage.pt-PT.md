@@ -4,7 +4,7 @@ No DnDino 2.0.0, o ecrã inicial é a **Mesa do Mestre**. A saudação usa o nom
 
 ![Mesa do Mestre com quatro heróis e atalhos para o último local e combate](../images/homepage/command-desk-2-0.jpg){ .img-hero }
 
-<!-- guide-coverage: MOD-144 -->
+<!-- guide-coverage: MOD-144 MOD-165 MOD-166 -->
 
 ## Retomar uma campanha {#resume-adventure}
 
@@ -27,3 +27,7 @@ Se a biblioteca estiver vazia, o botão para criar a primeira aventura abre dire
 ## Acesso rápido {#quick-access}
 
 Do ecrã inicial podes abrir **Aventuras**, **Heróis, PNJ e monstros**, **Equipamento**, **Regras**, **Gerador de nomes** e **Definições**.
+
+## Capa e início {#adventure-cover-opening}
+
+Na página inicial **Mesa de controlo**, clicar na capa também abre a aventura, como o botão dedicado. A ecrã de carregamento mostra o logótipo DnDino num painel translúcido por pelo menos cerca de três segundos.

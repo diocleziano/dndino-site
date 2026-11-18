@@ -415,7 +415,7 @@ Saving throws start from the related ability modifier, but they can be edited in
 
 `Full Attack` links can now represent either an attack roll or a saving throw effect. They can also include an attack type, such as melee, ranged, area, or any custom description, plus modular damage rows.
 
-<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 -->
+<!-- guide-coverage: MOD-021 MOD-022 MOD-031 MOD-063 MOD-064 MOD-065 MOD-155 -->
 
 ## Sectioned forms and keyboard navigation
 
@@ -427,13 +427,14 @@ Each result in the topbar's quick character menu has separate **View** and **Edi
 
 ## Hero progressions and spell slots
 
-For **Hero** characters, even without Hero or an adventure, configure resources in **Details** and slots in **Spells**. A resource has a name, optional description, maximum and **Remaining/Total**: minus consumes, plus restores. Fixed progressions received from Hero are read-only, with no consumption buttons. Spell slots have aligned **Slot count** and **Used** rows by level.
+For **Hero** characters, **Features and Hit Dice** is available when creating or editing a sheet, even without Hero. Add, edit or remove fixed or consumable progressions with a name and optional description. Consumables separate the maximum from **Remaining/Total** and offer minus/plus. The whole description header is clickable.
 
-Base-sheet values initialize new adventure links; counters already saved in other adventures are not overwritten. Deleting a resource is also a draft change until **Save**. Compact viewing mode displays resources and slots read-only.
+Configure class levels, including multiclass characters, and hit dice per class with die type, total and remaining count. The class name accompanies the die. Spell slots are configured under **Spells**, with aligned **Slot count** and **Used** rows per level. Changes remain drafts until **Save**; viewing mode displays resources and hit dice read-only.
 
-For characters received from Hero, the player owns the structure: a new send/download can update names, descriptions, maxima and current-level progressions, removing entries no longer present. Counters remain available offline; offline edits are not automatically queued to override Hero on reconnect. See [Connect with Hero](hero-sync.md).
+Resources received from Hero are identifiable and replaced by subsequent sheet updates. **Always keep** is available only for resources created on the Mac, preserving them during Hero imports. An explicit import also aligns the associated PC's Live values without creating a new identity; reconnection only resumes queued sends. See [Connect with Hero](hero-sync.md).
 
-To create a personal sheet from a local presence without changing other copies, see [Independent sheets in locations](places.md).
+Base-sheet values initialize new adventure links without automatically rewriting counters in other adventures. To create an independent sheet from a presence, see [Locations](places.md).
+
 
 ## Full Attack effects and formulas
 

@@ -4,7 +4,7 @@ Dans DnDino 2.0.0, l’accueil est la **Table de régie**. Il salue le MJ par so
 
 ![Table de régie avec quatre héros et des raccourcis vers le dernier lieu et le dernier combat](../images/homepage/command-desk-2-0.jpg){ .img-hero }
 
-<!-- guide-coverage: MOD-144 -->
+<!-- guide-coverage: MOD-144 MOD-165 MOD-166 -->
 
 ## Reprendre une campagne {#resume-adventure}
 
@@ -27,3 +27,7 @@ Si la bibliothèque est vide, le bouton de création de ta première aventure ou
 ## Accès rapide {#quick-access}
 
 Depuis l’accueil, ouvre **Aventures**, **Héros, PNJ et monstres**, **Équipement**, **Règles**, **Générateur de noms** et **Réglages**.
+
+## Couverture et démarrage {#adventure-cover-opening}
+
+Dans l'accueil **Table de régie**, un clic sur la couverture ouvre aussi l'aventure, comme le bouton dédié. L'écran de chargement présente le logo DnDino sur un panneau translucide pendant au moins environ trois secondes.
